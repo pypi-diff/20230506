@@ -239,3 +239,63 @@
 [2023-05-06 00:17:49] INFO root fetch - main [MainThread]: End processing [medspacy]: success
 [2023-05-06 00:18:17] INFO root fetch - main [MainThread]: End processing [gammath-spot]: success
 [2023-05-06 00:18:17] INFO root fetch - main [MainThread]: Store serial: [17993504]
+[2023-05-06 00:23:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993504]
+[2023-05-06 00:23:26] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: joern-lib
+[2023-05-06 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: azure-functions
+[2023-05-06 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mp-api
+[2023-05-06 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: evals-nightly
+[2023-05-06 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyswitchbee
+[2023-05-06 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyNukiBT
+[2023-05-06 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: neon-stt-plugin-nemo
+[2023-05-06 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rapidocr-openvinogpu
+[2023-05-06 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyaprilaire
+[2023-05-06 00:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pydantic-core
+[2023-05-06 00:23:26] WARNING root fetch - processPackages [rapidocr-openvinogpu]: Skipping, unable to determine old version
+[2023-05-06 00:23:26] INFO root fetch - main [MainThread]: End processing [rapidocr-openvinogpu] error
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyswitchbee]: New version: [1.7.9] Old Version: [1.7.8]
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pydantic-core]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-06 00:23:26] INFO root fetch - processPackages [azure-functions]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-06 00:23:26] INFO root fetch - processPackages [evals-nightly]: New version: [1.0.3.dev20230505] Old Version: [1.0.3.dev20230504]
+[2023-05-06 00:23:26] INFO root fetch - processPackages [neon-stt-plugin-nemo]: New version: [0.0.3a1] Old Version: [0.0.2a7]
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyNukiBT]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyaprilaire]: New version: [0.6.0b3] Old Version: [0.6.0b2]
+[2023-05-06 00:23:26] INFO root fetch - processPackages [joern-lib]: New version: [0.8.0] Old Version: [0.7.2]
+[2023-05-06 00:23:26] INFO root fetch - processPackages [mp-api]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyswitchbee]: executing diffoscope
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyswitchbee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyswitchbee-1.7.8.tar.gz tmp/pyswitchbee-1.7.9.tar.gz --markdown 20230506/p/pyswitchbee/1.7.8-1.7.9/diff.md --exclude *.pyd
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyaprilaire]: Downloading https://files.pythonhosted.org/packages/4f/da/702aedd7c38d0493de17dabd7d32eefbd38568cbba9c07c62cd24e20fb99/pyaprilaire-0.6.0b2.tar.gz
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyNukiBT]: Downloading https://files.pythonhosted.org/packages/a4/81/f8c363faad0426a20b608832ee385d611ac1a2dfb4fb23fa9788f03254b3/pynukibt-0.0.3.tar.gz
+[2023-05-06 00:23:26] INFO root fetch - processPackages [azure-functions]: Downloading https://files.pythonhosted.org/packages/3c/3c/c4e17165fd6b5b03977cd0cde66146f6faea9d172d0328ba52f04dc24b84/azure-functions-1.8.0.tar.gz
+[2023-05-06 00:23:26] INFO root fetch - processPackages [neon-stt-plugin-nemo]: Downloading https://files.pythonhosted.org/packages/8e/74/9fe98339e166c05e8fef85b73ca8c7c5c7de787a4f394293612c73969301/neon_stt_plugin_nemo-0.0.2a7-py3-none-any.whl
+[2023-05-06 00:23:26] INFO root fetch - processPackages [evals-nightly]: Downloading https://files.pythonhosted.org/packages/dc/e1/f14fea155ccb2569c11a2de850a87b52e6396b2539b0a241dbfd7b1e65ec/evals-nightly-1.0.3.dev20230505.tar.gz
+[2023-05-06 00:23:26] INFO root fetch - processPackages [joern-lib]: Downloading https://files.pythonhosted.org/packages/b8/6d/949d48236fbf7ae5d82795d754f869e505dfcefe0085e98a19a24c7eb817/joern_lib-0.8.0.tar.gz
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pydantic-core]: executing diffoscope
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pydantic-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_core-0.8.2.tar.gz tmp/pydantic_core-0.9.0.tar.gz --markdown 20230506/p/pydantic-core/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyaprilaire]: executing diffoscope
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyaprilaire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaprilaire-0.6.0b2.tar.gz tmp/pyaprilaire-0.6.0b3.tar.gz --markdown 20230506/p/pyaprilaire/0.6.0b2-0.6.0b3/diff.md --exclude *.pyd
+[2023-05-06 00:23:26] INFO root fetch - processPackages [evals-nightly]: executing diffoscope
+[2023-05-06 00:23:26] INFO root fetch - processPackages [evals-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evals-nightly-1.0.3.dev20230504.tar.gz tmp/evals-nightly-1.0.3.dev20230505.tar.gz --markdown 20230506/e/evals-nightly/1.0.3.dev20230504-1.0.3.dev20230505/diff.md --exclude *.pyd
+[2023-05-06 00:23:26] INFO root fetch - processPackages [joern-lib]: executing diffoscope
+[2023-05-06 00:23:26] INFO root fetch - processPackages [mp-api]: executing diffoscope
+[2023-05-06 00:23:26] INFO root fetch - processPackages [mp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mp-api-0.9.0.tar.gz tmp/mp-api-0.9.1.tar.gz --markdown 20230506/m/mp-api/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-06 00:23:26] INFO root fetch - processPackages [joern-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joern_lib-0.7.2.tar.gz tmp/joern_lib-0.8.0.tar.gz --markdown 20230506/j/joern-lib/0.7.2-0.8.0/diff.md --exclude *.pyd
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyNukiBT]: Downloading https://files.pythonhosted.org/packages/e5/ab/07306c9d89f1c9a7e70a9fd4f2377c9eb9b41e4e5bc15e5faaf5a1e01d3b/pynukibt-0.0.4.tar.gz
+[2023-05-06 00:23:26] INFO root fetch - processPackages [azure-functions]: Downloading https://files.pythonhosted.org/packages/6b/d4/8785842fbd937b2ee077478b7ac3eed6f545c330851a850860c3c2e2a300/azure-functions-1.9.0.tar.gz
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyNukiBT]: executing diffoscope
+[2023-05-06 00:23:26] INFO root fetch - processPackages [pyNukiBT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynukibt-0.0.3.tar.gz tmp/pynukibt-0.0.4.tar.gz --markdown 20230506/p/pyNukiBT/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 00:23:27] INFO root fetch - processPackages [neon-stt-plugin-nemo]: Downloading https://files.pythonhosted.org/packages/e3/cf/f9ef611b6a4bbb61d67b6fd8da8a4da5448dfa5795eda68cd29d87e58123/neon_stt_plugin_nemo-0.0.3a1-py3-none-any.whl
+[2023-05-06 00:23:27] INFO root fetch - processPackages [azure-functions]: executing diffoscope
+[2023-05-06 00:23:27] INFO root fetch - processPackages [azure-functions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-functions-1.8.0.tar.gz tmp/azure-functions-1.9.0.tar.gz --markdown 20230506/a/azure-functions/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-06 00:23:27] INFO root fetch - processPackages [neon-stt-plugin-nemo]: executing diffoscope
+[2023-05-06 00:23:27] INFO root fetch - processPackages [neon-stt-plugin-nemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_stt_plugin_nemo-0.0.2a7-py3-none-any.whl.zip tmp/neon_stt_plugin_nemo-0.0.3a1-py3-none-any.whl.zip --markdown 20230506/n/neon-stt-plugin-nemo/0.0.2a7-0.0.3a1/diff.md --exclude *.pyd
+[2023-05-06 00:23:28] INFO root fetch - main [MainThread]: End processing [pyswitchbee]: success
+[2023-05-06 00:23:28] INFO root fetch - main [MainThread]: End processing [pyaprilaire]: success
+[2023-05-06 00:23:28] INFO root fetch - main [MainThread]: End processing [joern-lib]: success
+[2023-05-06 00:23:28] INFO root fetch - main [MainThread]: End processing [neon-stt-plugin-nemo]: success
+[2023-05-06 00:23:28] INFO root fetch - main [MainThread]: End processing [pyNukiBT]: success
+[2023-05-06 00:23:30] INFO root fetch - main [MainThread]: End processing [azure-functions]: success
+[2023-05-06 00:23:30] INFO root fetch - main [MainThread]: End processing [pydantic-core]: success
+[2023-05-06 00:23:30] INFO root fetch - main [MainThread]: End processing [mp-api]: success
+[2023-05-06 00:23:55] INFO root fetch - main [MainThread]: End processing [evals-nightly]: success
+[2023-05-06 00:23:55] INFO root fetch - main [MainThread]: Store serial: [17993535]
