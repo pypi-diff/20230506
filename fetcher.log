@@ -1072,3 +1072,32 @@
 [2023-05-06 01:48:06] INFO root fetch - main [MainThread]: End processing [vanoma-api-utils]: success
 [2023-05-06 01:48:06] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
 [2023-05-06 01:48:06] INFO root fetch - main [MainThread]: Store serial: [17994060]
+[2023-05-06 01:53:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17994060]
+[2023-05-06 01:53:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 01:53:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: impipy
+[2023-05-06 01:53:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NikeCA
+[2023-05-06 01:53:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: magpylib-material-response
+[2023-05-06 01:53:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FlipperNested
+[2023-05-06 01:53:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: popdelta
+[2023-05-06 01:53:14] INFO root fetch - processPackages [popdelta]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 01:53:14] WARNING root fetch - processPackages [impipy]: Skipping, unable to determine old version
+[2023-05-06 01:53:14] INFO root fetch - main [MainThread]: End processing [impipy] error
+[2023-05-06 01:53:14] WARNING root fetch - processPackages [magpylib-material-response]: Skipping, unable to determine old version
+[2023-05-06 01:53:14] INFO root fetch - processPackages [FlipperNested]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-06 01:53:14] INFO root fetch - main [MainThread]: End processing [magpylib-material-response] error
+[2023-05-06 01:53:14] INFO root fetch - processPackages [NikeCA]: New version: [0.1.96b0] Old Version: [0.1.96a0]
+[2023-05-06 01:53:15] INFO root fetch - processPackages [popdelta]: Downloading https://files.pythonhosted.org/packages/5c/3c/c4c1ebe4aa9e47559612c359f2d6caa3fea6fb8dcb6669a02c8e686bf59c/popdelta-0.0.1.tar.gz
+[2023-05-06 01:53:15] INFO root fetch - processPackages [FlipperNested]: Downloading https://files.pythonhosted.org/packages/5a/55/863f9ab7e2901815c4984e6be02b941e0f71e359617442a31cf4be752869/FlipperNested-2.3.0.tar.gz
+[2023-05-06 01:53:15] INFO root fetch - processPackages [NikeCA]: Downloading https://files.pythonhosted.org/packages/f8/9b/9f658fa2c8aafa8bdb56edabfbed8c4b0a7daca5b241de8e07345dd0a7ee/NikeCA-0.1.96b0.tar.gz
+[2023-05-06 01:53:15] INFO root fetch - processPackages [NikeCA]: executing diffoscope
+[2023-05-06 01:53:15] INFO root fetch - processPackages [NikeCA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NikeCA-0.1.96a0.tar.gz tmp/NikeCA-0.1.96b0.tar.gz --markdown 20230506/N/NikeCA/0.1.96a0-0.1.96b0/diff.md --exclude *.pyd
+[2023-05-06 01:53:15] INFO root fetch - processPackages [FlipperNested]: Downloading https://files.pythonhosted.org/packages/61/27/a7f0bb3d350cee77400198d90f5944a6e40d7c681e358e2d7165a9a83761/FlipperNested-2.3.1.tar.gz
+[2023-05-06 01:53:15] INFO root fetch - processPackages [FlipperNested]: executing diffoscope
+[2023-05-06 01:53:15] INFO root fetch - processPackages [FlipperNested]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlipperNested-2.3.0.tar.gz tmp/FlipperNested-2.3.1.tar.gz --markdown 20230506/F/FlipperNested/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-05-06 01:53:15] INFO root fetch - processPackages [popdelta]: Downloading https://files.pythonhosted.org/packages/79/c9/29248e833a129600062f68e8253a5211abe6b0b620466182d300fefd3fca/popdelta-0.0.2.tar.gz
+[2023-05-06 01:53:15] INFO root fetch - processPackages [popdelta]: executing diffoscope
+[2023-05-06 01:53:15] INFO root fetch - processPackages [popdelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popdelta-0.0.1.tar.gz tmp/popdelta-0.0.2.tar.gz --markdown 20230506/p/popdelta/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 01:53:17] INFO root fetch - main [MainThread]: End processing [NikeCA]: success
+[2023-05-06 01:53:17] INFO root fetch - main [MainThread]: End processing [FlipperNested]: success
+[2023-05-06 01:53:17] INFO root fetch - main [MainThread]: End processing [popdelta]: success
+[2023-05-06 01:53:17] INFO root fetch - main [MainThread]: Store serial: [17994109]
