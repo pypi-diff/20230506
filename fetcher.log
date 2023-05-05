@@ -299,3 +299,56 @@
 [2023-05-06 00:23:30] INFO root fetch - main [MainThread]: End processing [mp-api]: success
 [2023-05-06 00:23:55] INFO root fetch - main [MainThread]: End processing [evals-nightly]: success
 [2023-05-06 00:23:55] INFO root fetch - main [MainThread]: Store serial: [17993535]
+[2023-05-06 00:28:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993535]
+[2023-05-06 00:29:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 00:29:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gdsfactory
+[2023-05-06 00:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pds.sumo-tools
+[2023-05-06 00:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fusion-engine-client
+[2023-05-06 00:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-roborock
+[2023-05-06 00:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: OctoBot-Tulipy
+[2023-05-06 00:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dfdb
+[2023-05-06 00:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autoanki
+[2023-05-06 00:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: transcribe-anything
+[2023-05-06 00:29:04] INFO root fetch - processPackages [python-roborock]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-05-06 00:29:04] INFO root fetch - processPackages [dfdb]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 00:29:04] INFO root fetch - processPackages [fusion-engine-client]: New version: [1.19.0] Old Version: [1.18.1rc3]
+[2023-05-06 00:29:04] INFO root fetch - processPackages [pds.sumo-tools]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-06 00:29:04] INFO root fetch - processPackages [autoanki]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-05-06 00:29:04] INFO root fetch - processPackages [transcribe-anything]: New version: [2.3.1] Old Version: [2.2.1]
+[2023-05-06 00:29:04] INFO root fetch - processPackages [OctoBot-Tulipy]: New version: [0.4.5] Old Version: [0.4.3]
+[2023-05-06 00:29:04] INFO root fetch - processPackages [gdsfactory]: New version: [6.91.0] Old Version: [6.90.9]
+[2023-05-06 00:29:04] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-05-06 00:29:04] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.9.0.tar.gz tmp/python_roborock-0.9.0rc0.tar.gz --markdown 20230506/p/python-roborock/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-05-06 00:29:04] INFO root fetch - processPackages [autoanki]: executing diffoscope
+[2023-05-06 00:29:04] INFO root fetch - processPackages [autoanki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoanki-1.0.7.tar.gz tmp/autoanki-1.0.9.tar.gz --markdown 20230506/a/autoanki/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 00:29:04] INFO root fetch - processPackages [OctoBot-Tulipy]: Downloading https://files.pythonhosted.org/packages/42/ce/d65b2e2b07417388ed3fdc984051e710e0fccf5e21860e3dc30a5660d27f/OctoBot-Tulipy-0.4.3.tar.gz
+[2023-05-06 00:29:04] INFO root fetch - processPackages [dfdb]: Downloading https://files.pythonhosted.org/packages/ba/de/b800817288bd63a5a82408b227d8c0a49f15c7eebd9701d66f6496e681d3/dfdb-0.1.8.tar.gz
+[2023-05-06 00:29:04] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/a3/96/aa36d4139e53a4404c907bce9d295aa71a1cc920152ae5e75a3224f6fd8c/gdsfactory-6.90.9.tar.gz
+[2023-05-06 00:29:04] INFO root fetch - processPackages [transcribe-anything]: Downloading https://files.pythonhosted.org/packages/1b/6a/a482438536c85a060ae245b1a180bd8771747a0e7893b22663636b9bcbd4/transcribe-anything-2.3.1.tar.gz
+[2023-05-06 00:29:04] INFO root fetch - processPackages [pds.sumo-tools]: Downloading https://files.pythonhosted.org/packages/b4/7b/1808c3771475d5c53dda46a75666bde068426aae6462a6ecdca295034790/pds.sumo_tools-0.2.5-py3-none-any.whl
+[2023-05-06 00:29:04] INFO root fetch - processPackages [fusion-engine-client]: Downloading https://files.pythonhosted.org/packages/10/c2/f3d370a31817de17fb88d7c5abb12fc15602417d19dc85b4e07cdc4457dd/fusion-engine-client-1.19.0.tar.gz
+[2023-05-06 00:29:04] INFO root fetch - processPackages [transcribe-anything]: executing diffoscope
+[2023-05-06 00:29:04] INFO root fetch - processPackages [transcribe-anything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transcribe-anything-2.2.1.tar.gz tmp/transcribe-anything-2.3.1.tar.gz --markdown 20230506/t/transcribe-anything/2.2.1-2.3.1/diff.md --exclude *.pyd
+[2023-05-06 00:29:04] INFO root fetch - processPackages [dfdb]: Downloading https://files.pythonhosted.org/packages/1f/89/df271baa6c32eeb6736c0b43dff864f68fb20791e545aab0262e1b1f7ce6/dfdb-0.1.9.tar.gz
+[2023-05-06 00:29:04] INFO root fetch - processPackages [pds.sumo-tools]: Downloading https://files.pythonhosted.org/packages/b5/bd/151da76d0e80430e64d3bd305819e1a13b1e9fbd2cccd07795012cf38f18/pds.sumo_tools-0.2.6-py3-none-any.whl
+[2023-05-06 00:29:04] INFO root fetch - processPackages [OctoBot-Tulipy]: Downloading https://files.pythonhosted.org/packages/38/db/86cf335f5dd91154b967b6fd5b0c7461a845dc2515b0f93ab4951e648012/OctoBot-Tulipy-0.4.5.tar.gz
+[2023-05-06 00:29:04] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/e3/c1/a8da5473135a98a4a38df44bfe18c8ef79b8b12670ea2e7a7ed2009d828a/gdsfactory-6.91.0.tar.gz
+[2023-05-06 00:29:04] INFO root fetch - processPackages [fusion-engine-client]: executing diffoscope
+[2023-05-06 00:29:04] INFO root fetch - processPackages [dfdb]: executing diffoscope
+[2023-05-06 00:29:04] INFO root fetch - processPackages [fusion-engine-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusion-engine-client-1.18.1rc3.tar.gz tmp/fusion-engine-client-1.19.0.tar.gz --markdown 20230506/f/fusion-engine-client/1.18.1rc3-1.19.0/diff.md --exclude *.pyd
+[2023-05-06 00:29:04] INFO root fetch - processPackages [dfdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfdb-0.1.8.tar.gz tmp/dfdb-0.1.9.tar.gz --markdown 20230506/d/dfdb/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 00:29:04] INFO root fetch - processPackages [pds.sumo-tools]: executing diffoscope
+[2023-05-06 00:29:04] INFO root fetch - processPackages [pds.sumo-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pds.sumo_tools-0.2.5-py3-none-any.whl.zip tmp/pds.sumo_tools-0.2.6-py3-none-any.whl.zip --markdown 20230506/p/pds.sumo-tools/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-06 00:29:04] INFO root fetch - processPackages [OctoBot-Tulipy]: executing diffoscope
+[2023-05-06 00:29:04] INFO root fetch - processPackages [OctoBot-Tulipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Tulipy-0.4.3.tar.gz tmp/OctoBot-Tulipy-0.4.5.tar.gz --markdown 20230506/O/OctoBot-Tulipy/0.4.3-0.4.5/diff.md --exclude *.pyd
+[2023-05-06 00:29:04] INFO root fetch - processPackages [gdsfactory]: executing diffoscope
+[2023-05-06 00:29:04] INFO root fetch - processPackages [gdsfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdsfactory-6.90.9.tar.gz tmp/gdsfactory-6.91.0.tar.gz --markdown 20230506/g/gdsfactory/6.90.9-6.91.0/diff.md --exclude *.pyd
+[2023-05-06 00:29:05] INFO root fetch - main [MainThread]: End processing [transcribe-anything]: success
+[2023-05-06 00:29:05] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
+[2023-05-06 00:29:05] INFO root fetch - main [MainThread]: End processing [autoanki]: success
+[2023-05-06 00:29:05] INFO root fetch - main [MainThread]: End processing [pds.sumo-tools]: success
+[2023-05-06 00:29:05] INFO root fetch - main [MainThread]: End processing [fusion-engine-client]: success
+[2023-05-06 00:29:06] INFO root fetch - main [MainThread]: End processing [OctoBot-Tulipy]: success
+[2023-05-06 00:29:06] INFO root fetch - main [MainThread]: End processing [dfdb]: success
+[2023-05-06 00:29:11] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
+[2023-05-06 00:29:11] INFO root fetch - main [MainThread]: Store serial: [17993636]
