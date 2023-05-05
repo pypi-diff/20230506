@@ -523,3 +523,68 @@
 [2023-05-06 00:49:58] INFO root fetch - main [MainThread]: End processing [NikeCA]: success
 [2023-05-06 00:50:02] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
 [2023-05-06 00:50:02] INFO root fetch - main [MainThread]: Store serial: [17993779]
+[2023-05-06 00:55:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993779]
+[2023-05-06 00:55:10] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-06 00:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-aws
+[2023-05-06 00:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: system-data
+[2023-05-06 00:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lora-adapters
+[2023-05-06 00:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-roborock
+[2023-05-06 00:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flowtask
+[2023-05-06 00:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: los-docusign
+[2023-05-06 00:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pibble
+[2023-05-06 00:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pydantic
+[2023-05-06 00:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: paquete-fe
+[2023-05-06 00:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: system-data
+[2023-05-06 00:55:10] WARNING root fetch - processPackages [system-data]: Skipping, unable to determine old version
+[2023-05-06 00:55:10] INFO root fetch - processPackages [system-data]: Start processing: nvm
+[2023-05-06 00:55:10] INFO root fetch - main [MainThread]: End processing [system-data] error
+[2023-05-06 00:55:10] WARNING root fetch - processPackages [lora-adapters]: Skipping, unable to determine old version
+[2023-05-06 00:55:10] INFO root fetch - processPackages [lora-adapters]: Start processing: edge-distance-aabb
+[2023-05-06 00:55:10] INFO root fetch - main [MainThread]: End processing [lora-adapters] error
+[2023-05-06 00:55:10] INFO root fetch - processPackages [pibble]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-06 00:55:10] INFO root fetch - processPackages [python-roborock]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-05-06 00:55:10] WARNING root fetch - processPackages [system-data]: Skipping, unable to determine old version
+[2023-05-06 00:55:10] INFO root fetch - processPackages [paquete-fe]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 00:55:10] INFO root fetch - main [MainThread]: End processing [system-data] error
+[2023-05-06 00:55:10] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-05-06 00:55:10] INFO root fetch - processPackages [los-docusign]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-05-06 00:55:10] INFO root fetch - processPackages [nvm]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-05-06 00:55:10] INFO root fetch - processPackages [pulumi-aws]: New version: [5.9.2] Old Version: [5.9.1]
+[2023-05-06 00:55:10] INFO root fetch - processPackages [pydantic]: New version: [2.0a4] Old Version: [2.0a3]
+[2023-05-06 00:55:10] WARNING root fetch - processPackages [edge-distance-aabb]: Skipping, unable to determine old version
+[2023-05-06 00:55:10] INFO root fetch - main [MainThread]: End processing [edge-distance-aabb] error
+[2023-05-06 00:55:10] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-05-06 00:55:10] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.9.0.tar.gz tmp/python_roborock-0.9.0rc0.tar.gz --markdown 20230506/p/python-roborock/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-05-06 00:55:10] INFO root fetch - processPackages [paquete-fe]: Downloading https://files.pythonhosted.org/packages/18/a3/06e285feed1c13f2075c0f84ac7fa651d167cc34157b8583f28786b7d54a/paquete-fe-0.1.0.tar.gz
+[2023-05-06 00:55:10] INFO root fetch - processPackages [pibble]: Downloading https://files.pythonhosted.org/packages/39/61/898eb6641b477356789ddc2ec98763adcfbc72731ca0fed48bbc2c02dfc1/pibble-0.5.4.tar.gz
+[2023-05-06 00:55:10] INFO root fetch - processPackages [los-docusign]: Downloading https://files.pythonhosted.org/packages/93/fe/6f382a4b97c6057dec5e75e7de30840669b320cb3e4f431d262bc60e9814/los_docusign-0.6.5.tar.gz
+[2023-05-06 00:55:10] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/e5/69/3ce582391765ac681b8fe873c7c0edc5e4d4d60649195f04a5f5359a24fb/pulumi_aws-5.9.1.tar.gz
+[2023-05-06 00:55:10] INFO root fetch - processPackages [nvm]: Downloading https://files.pythonhosted.org/packages/a7/19/87d6904909d95d1bad4feea0909353ffb6ee0ac538d1aa05677eadc953cd/nvm-1.0.0.tar.gz
+[2023-05-06 00:55:10] INFO root fetch - processPackages [pydantic]: Downloading https://files.pythonhosted.org/packages/18/14/da31afdc5cc93a4b80a42cf78595fc15f5e9847b3acd8e6e0267d9568a93/pydantic-2.0a3.tar.gz
+[2023-05-06 00:55:10] INFO root fetch - processPackages [pibble]: executing diffoscope
+[2023-05-06 00:55:10] INFO root fetch - processPackages [pibble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pibble-0.5.3.tar.gz tmp/pibble-0.5.4.tar.gz --markdown 20230506/p/pibble/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-06 00:55:11] INFO root fetch - processPackages [nvm]: executing diffoscope
+[2023-05-06 00:55:11] INFO root fetch - processPackages [nvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvm-0.1.0.tar.gz tmp/nvm-1.0.0.tar.gz --markdown 20230506/n/nvm/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 00:55:11] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-05-06 00:55:11] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230506/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-05-06 00:55:11] INFO root fetch - processPackages [paquete-fe]: Downloading https://files.pythonhosted.org/packages/c6/59/fda7874113b3a93b44c1316f7e69b075db866cfdd323d1f080e090789e20/paquete_fe-0.1.1.tar.gz
+[2023-05-06 00:55:11] INFO root fetch - processPackages [los-docusign]: Downloading https://files.pythonhosted.org/packages/2a/76/159214b94244b01ede026fd8921df40349661fbc428b9d6283faa25946e8/los_docusign-0.6.6.tar.gz
+[2023-05-06 00:55:11] INFO root fetch - processPackages [paquete-fe]: executing diffoscope
+[2023-05-06 00:55:11] INFO root fetch - processPackages [paquete-fe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paquete-fe-0.1.0.tar.gz tmp/paquete_fe-0.1.1.tar.gz --markdown 20230506/p/paquete-fe/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 00:55:11] INFO root fetch - processPackages [pydantic]: Downloading https://files.pythonhosted.org/packages/17/36/6c0ce37f62463bafd0b954b271dafc499f20016f31d3692ca15695cec9ff/pydantic-2.0a4.tar.gz
+[2023-05-06 00:55:11] INFO root fetch - processPackages [los-docusign]: executing diffoscope
+[2023-05-06 00:55:11] INFO root fetch - processPackages [los-docusign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/los_docusign-0.6.5.tar.gz tmp/los_docusign-0.6.6.tar.gz --markdown 20230506/l/los-docusign/0.6.5-0.6.6/diff.md --exclude *.pyd
+[2023-05-06 00:55:11] INFO root fetch - processPackages [pydantic]: executing diffoscope
+[2023-05-06 00:55:11] INFO root fetch - processPackages [pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic-2.0a3.tar.gz tmp/pydantic-2.0a4.tar.gz --markdown 20230506/p/pydantic/2.0a3-2.0a4/diff.md --exclude *.pyd
+[2023-05-06 00:55:11] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/b5/2d/3bb0c09182c2672c439edaba78942269f26ed68f8f3385d942e13fb37ce5/pulumi_aws-5.9.2.tar.gz
+[2023-05-06 00:55:12] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
+[2023-05-06 00:55:12] INFO root fetch - processPackages [pulumi-aws]: executing diffoscope
+[2023-05-06 00:55:12] INFO root fetch - processPackages [pulumi-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws-5.9.1.tar.gz tmp/pulumi_aws-5.9.2.tar.gz --markdown 20230506/p/pulumi-aws/5.9.1-5.9.2/diff.md --exclude *.pyd
+[2023-05-06 00:55:12] INFO root fetch - main [MainThread]: End processing [los-docusign]: success
+[2023-05-06 00:55:12] INFO root fetch - main [MainThread]: End processing [nvm]: success
+[2023-05-06 00:55:12] INFO root fetch - main [MainThread]: End processing [pibble]: success
+[2023-05-06 00:55:14] INFO root fetch - main [MainThread]: End processing [pydantic]: success
+[2023-05-06 00:55:15] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-05-06 00:55:36] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
+[2023-05-06 00:55:53] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
+[2023-05-06 00:55:53] INFO root fetch - main [MainThread]: Store serial: [17993831]
