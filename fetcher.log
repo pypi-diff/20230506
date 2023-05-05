@@ -1058,3 +1058,17 @@
 [2023-05-06 01:42:55] INFO root fetch - main [MainThread]: End processing [fvgp]: success
 [2023-05-06 01:42:56] INFO root fetch - main [MainThread]: End processing [astro-sdk-python]: success
 [2023-05-06 01:42:56] INFO root fetch - main [MainThread]: Store serial: [17994055]
+[2023-05-06 01:47:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17994055]
+[2023-05-06 01:48:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-06 01:48:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paquete-fe
+[2023-05-06 01:48:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vanoma-api-utils
+[2023-05-06 01:48:04] INFO root fetch - processPackages [paquete-fe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 01:48:04] INFO root fetch - processPackages [vanoma-api-utils]: New version: [0.9.0] Old Version: [0.89.0]
+[2023-05-06 01:48:05] INFO root fetch - processPackages [paquete-fe]: executing diffoscope
+[2023-05-06 01:48:05] INFO root fetch - processPackages [paquete-fe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paquete-fe-0.1.8.tar.gz tmp/paquete_fe-0.1.9.tar.gz --markdown 20230506/p/paquete-fe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 01:48:05] INFO root fetch - processPackages [vanoma-api-utils]: Downloading https://files.pythonhosted.org/packages/b5/c6/945e45f2474c5d0e674b6d700f41caa97bd8ebabb985c6a144f7591452b6/vanoma_api_utils-0.89.0.tar.gz
+[2023-05-06 01:48:05] INFO root fetch - processPackages [vanoma-api-utils]: executing diffoscope
+[2023-05-06 01:48:05] INFO root fetch - processPackages [vanoma-api-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vanoma_api_utils-0.89.0.tar.gz tmp/vanoma-api-utils-0.9.0.tar.gz --markdown 20230506/v/vanoma-api-utils/0.89.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 01:48:06] INFO root fetch - main [MainThread]: End processing [vanoma-api-utils]: success
+[2023-05-06 01:48:06] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
+[2023-05-06 01:48:06] INFO root fetch - main [MainThread]: Store serial: [17994060]
