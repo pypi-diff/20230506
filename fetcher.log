@@ -1036,3 +1036,25 @@
 [2023-05-06 01:37:44] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
 [2023-05-06 01:37:45] INFO root fetch - main [MainThread]: End processing [networking-arista]: success
 [2023-05-06 01:37:45] INFO root fetch - main [MainThread]: Store serial: [17994041]
+[2023-05-06 01:42:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17994041]
+[2023-05-06 01:42:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 01:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: promethium
+[2023-05-06 01:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arches
+[2023-05-06 01:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: astro-sdk-python
+[2023-05-06 01:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fvgp
+[2023-05-06 01:42:54] INFO root fetch - processPackages [astro-sdk-python]: New version: [1.7.0a2] Old Version: [1.7.0a1]
+[2023-05-06 01:42:54] WARNING root fetch - processPackages [promethium]: Skipping, unable to determine old version
+[2023-05-06 01:42:54] INFO root fetch - main [MainThread]: End processing [promethium] error
+[2023-05-06 01:42:54] INFO root fetch - processPackages [arches]: New version: [7.3.0] Old Version: [7.2.1]
+[2023-05-06 01:42:54] INFO root fetch - processPackages [fvgp]: New version: [7.4.9] Old Version: [7.4.8]
+[2023-05-06 01:42:54] INFO root fetch - processPackages [fvgp]: executing diffoscope
+[2023-05-06 01:42:54] INFO root fetch - processPackages [fvgp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fvgp-7.4.8.tar.gz tmp/fvgp-7.4.9.tar.gz --markdown 20230506/f/fvgp/7.4.8-7.4.9/diff.md --exclude *.pyd
+[2023-05-06 01:42:54] INFO root fetch - processPackages [astro-sdk-python]: Downloading https://files.pythonhosted.org/packages/92/fe/77720c77d344fe957551f80055fed7f99da268e4d8985d8d6f66774cb08f/astro-sdk-python-1.7.0a2.tar.gz
+[2023-05-06 01:42:54] INFO root fetch - processPackages [arches]: Downloading https://files.pythonhosted.org/packages/94/18/7b962e1d2d626b75c4ef9189772caf5fd9dbd4c042054668ca9febc66726/arches-7.2.1.tar.gz
+[2023-05-06 01:42:54] INFO root fetch - processPackages [astro-sdk-python]: executing diffoscope
+[2023-05-06 01:42:54] INFO root fetch - processPackages [astro-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astro-sdk-python-1.7.0a1.tar.gz tmp/astro-sdk-python-1.7.0a2.tar.gz --markdown 20230506/a/astro-sdk-python/1.7.0a1-1.7.0a2/diff.md --exclude *.pyd
+[2023-05-06 01:42:55] WARNING root fetch - processPackages [arches]: Skipping package: exceeds size limit 28271589>=10485760
+[2023-05-06 01:42:55] INFO root fetch - main [MainThread]: End processing [arches] error
+[2023-05-06 01:42:55] INFO root fetch - main [MainThread]: End processing [fvgp]: success
+[2023-05-06 01:42:56] INFO root fetch - main [MainThread]: End processing [astro-sdk-python]: success
+[2023-05-06 01:42:56] INFO root fetch - main [MainThread]: Store serial: [17994055]
