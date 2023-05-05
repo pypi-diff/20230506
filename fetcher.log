@@ -715,3 +715,73 @@
 [2023-05-06 01:06:19] INFO root fetch - main [MainThread]: End processing [bigraph-schema]: success
 [2023-05-06 01:06:19] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
 [2023-05-06 01:06:19] INFO root fetch - main [MainThread]: Store serial: [17993892]
+[2023-05-06 01:11:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993892]
+[2023-05-06 01:11:28] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 01:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyvmomi
+[2023-05-06 01:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paquete-fe
+[2023-05-06 01:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-06 01:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: paquete-fe
+[2023-05-06 01:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mp-api
+[2023-05-06 01:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulsectl
+[2023-05-06 01:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nvm
+[2023-05-06 01:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: module-qc-analysis-tools
+[2023-05-06 01:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: StrainFacts
+[2023-05-06 01:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyBibX
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pyvmomi]: New version: [8.0.1.0] Old Version: [8.0.0.1.2]
+[2023-05-06 01:11:28] INFO root fetch - processPackages [paquete-fe]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-06 01:11:28] INFO root fetch - processPackages [paquete-fe]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pyBibX]: New version: [2.9.5] Old Version: [2.9.4]
+[2023-05-06 01:11:28] INFO root fetch - processPackages [nvm]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-06 01:11:28] WARNING root fetch - processPackages [StrainFacts]: Skipping, unable to determine old version
+[2023-05-06 01:11:28] INFO root fetch - processPackages [module-qc-analysis-tools]: New version: [1.3.1rc6] Old Version: [1.3.1rc5]
+[2023-05-06 01:11:28] INFO root fetch - processPackages [StrainFacts]: Start processing: odc-geo
+[2023-05-06 01:11:28] INFO root fetch - main [MainThread]: End processing [StrainFacts] error
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pulsectl]: New version: [23.5.0] Old Version: [22.3.2]
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.305] Old Version: [0.3.304]
+[2023-05-06 01:11:28] INFO root fetch - processPackages [mp-api]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-06 01:11:28] INFO root fetch - processPackages [odc-geo]: New version: [0.4.0a1] Old Version: [0.3.3]
+[2023-05-06 01:11:28] INFO root fetch - processPackages [paquete-fe]: Downloading https://files.pythonhosted.org/packages/42/d2/fdd4432b024c1ec0200fb8fa607907667b6e5a109c58111a9ac1f8e20d06/paquete-fe-0.1.5.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pyBibX]: executing diffoscope
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pyBibX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyBibX-2.9.4.tar.gz tmp/pyBibX-2.9.5.tar.gz --markdown 20230506/p/pyBibX/2.9.4-2.9.5/diff.md --exclude *.pyd
+[2023-05-06 01:11:28] INFO root fetch - processPackages [paquete-fe]: Downloading https://files.pythonhosted.org/packages/42/d2/fdd4432b024c1ec0200fb8fa607907667b6e5a109c58111a9ac1f8e20d06/paquete-fe-0.1.5.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [mp-api]: executing diffoscope
+[2023-05-06 01:11:28] INFO root fetch - processPackages [mp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mp-api-0.9.0.tar.gz tmp/mp-api-0.9.1.tar.gz --markdown 20230506/m/mp-api/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pyvmomi]: Downloading https://files.pythonhosted.org/packages/37/4a/d4ad903901cac48a396d6a566a1355814852544ae0f15c088480ff86a68c/pyvmomi-8.0.0.1.2.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [nvm]: Downloading https://files.pythonhosted.org/packages/08/c2/eb828c9685ae35467fe6551494e3f606385580178bf761c3fe8930cc8540/nvm-1.0.1.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pulsectl]: Downloading https://files.pythonhosted.org/packages/38/b5/7fb041271e9db6ad54a74eecbc84f8c9a9faf696c267b63dfc9fbbf63d49/pulsectl-22.3.2.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/48/7c/0b140737a288238f422f5bf35377acb71b4a6748d1549dc7eca92f77cf21/pepperize.cdk-ses-smtp-credentials-0.3.305.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [module-qc-analysis-tools]: Downloading https://files.pythonhosted.org/packages/90/79/fa11444f680c888a453b86a92c8e4094beecd0b1d3ae049a9cb14ddfa6cb/module_qc_analysis_tools-1.3.1rc6.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [odc-geo]: Downloading https://files.pythonhosted.org/packages/a9/60/fb54a0f2ac2aec47993b35739bd0c055439b62646c7de5db601fa5d0c45f/odc-geo-0.3.3.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [paquete-fe]: Downloading https://files.pythonhosted.org/packages/e2/e7/4521a4ec371fcdbaf5760f194f03aad33fd885987b4056602dd82e22d83e/paquete_fe-0.1.6.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [paquete-fe]: Downloading https://files.pythonhosted.org/packages/e2/e7/4521a4ec371fcdbaf5760f194f03aad33fd885987b4056602dd82e22d83e/paquete_fe-0.1.6.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pulsectl]: Downloading https://files.pythonhosted.org/packages/b8/8a/33d65a855c0707aab7b79212732420aca177339f61d1634d21fd15efa64f/pulsectl-23.5.0.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.304.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.305.tar.gz --markdown 20230506/p/pepperize.cdk-ses-smtp-credentials/0.3.304-0.3.305/diff.md --exclude *.pyd
+[2023-05-06 01:11:28] INFO root fetch - processPackages [nvm]: Downloading https://files.pythonhosted.org/packages/0c/e9/1d35952027bf07c77ba6689b03b95961353ec21b4298db7b7f79221ab227/nvm-1.0.2.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pyvmomi]: Downloading https://files.pythonhosted.org/packages/8d/d1/f5860ebd8d68106eb312714c6eaf188ee6f51b47b6ba8bb4a660d6972730/pyvmomi-8.0.1.0.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [paquete-fe]: executing diffoscope
+[2023-05-06 01:11:28] INFO root fetch - processPackages [paquete-fe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paquete-fe-0.1.5.tar.gz tmp/paquete_fe-0.1.6.tar.gz --markdown 20230506/p/paquete-fe/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-06 01:11:28] INFO root fetch - processPackages [paquete-fe]: executing diffoscope
+[2023-05-06 01:11:28] INFO root fetch - processPackages [paquete-fe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paquete-fe-0.1.5.tar.gz tmp/paquete_fe-0.1.6.tar.gz --markdown 20230506/p/paquete-fe/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-06 01:11:28] INFO root fetch - processPackages [module-qc-analysis-tools]: executing diffoscope
+[2023-05-06 01:11:28] INFO root fetch - processPackages [module-qc-analysis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/module_qc_analysis_tools-1.3.1rc5.tar.gz tmp/module_qc_analysis_tools-1.3.1rc6.tar.gz --markdown 20230506/m/module-qc-analysis-tools/1.3.1rc5-1.3.1rc6/diff.md --exclude *.pyd
+[2023-05-06 01:11:28] INFO root fetch - processPackages [odc-geo]: Downloading https://files.pythonhosted.org/packages/fa/e2/3533927d33b8608ae5beee850d4e58b3d144a8cf7d2dbf4a4d5f3580f15c/odc-geo-0.4.0a1.tar.gz
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pulsectl]: executing diffoscope
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pulsectl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsectl-22.3.2.tar.gz tmp/pulsectl-23.5.0.tar.gz --markdown 20230506/p/pulsectl/22.3.2-23.5.0/diff.md --exclude *.pyd
+[2023-05-06 01:11:28] INFO root fetch - processPackages [nvm]: executing diffoscope
+[2023-05-06 01:11:28] INFO root fetch - processPackages [nvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvm-1.0.1.tar.gz tmp/nvm-1.0.2.tar.gz --markdown 20230506/n/nvm/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pyvmomi]: executing diffoscope
+[2023-05-06 01:11:28] INFO root fetch - processPackages [pyvmomi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvmomi-8.0.0.1.2.tar.gz tmp/pyvmomi-8.0.1.0.tar.gz --markdown 20230506/p/pyvmomi/8.0.0.1.2-8.0.1.0/diff.md --exclude *.pyd
+[2023-05-06 01:11:29] INFO root fetch - processPackages [odc-geo]: executing diffoscope
+[2023-05-06 01:11:29] INFO root fetch - processPackages [odc-geo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odc-geo-0.3.3.tar.gz tmp/odc-geo-0.4.0a1.tar.gz --markdown 20230506/o/odc-geo/0.3.3-0.4.0a1/diff.md --exclude *.pyd
+[2023-05-06 01:11:29] INFO root fetch - main [MainThread]: End processing [pyBibX]: success
+[2023-05-06 01:11:30] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-06 01:11:30] INFO root fetch - main [MainThread]: End processing [pulsectl]: success
+[2023-05-06 01:11:30] INFO root fetch - main [MainThread]: End processing [module-qc-analysis-tools]: success
+[2023-05-06 01:11:31] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
+[2023-05-06 01:11:31] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
+[2023-05-06 01:11:32] INFO root fetch - main [MainThread]: End processing [nvm]: success
+[2023-05-06 01:11:32] INFO root fetch - main [MainThread]: End processing [odc-geo]: success
+[2023-05-06 01:11:34] INFO root fetch - main [MainThread]: End processing [mp-api]: success
+[2023-05-06 01:11:34] INFO root fetch - main [MainThread]: End processing [pyvmomi]: success
+[2023-05-06 01:11:34] INFO root fetch - main [MainThread]: Store serial: [17993928]
