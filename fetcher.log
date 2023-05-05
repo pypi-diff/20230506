@@ -866,3 +866,51 @@
 [2023-05-06 01:16:49] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
 [2023-05-06 01:16:49] INFO root fetch - main [MainThread]: End processing [prunerr]: success
 [2023-05-06 01:16:49] INFO root fetch - main [MainThread]: Store serial: [17993968]
+[2023-05-06 01:21:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993968]
+[2023-05-06 01:21:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 01:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypreql
+[2023-05-06 01:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-06 01:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nvm
+[2023-05-06 01:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: networking-arista
+[2023-05-06 01:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: i8-terminal
+[2023-05-06 01:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-stt-http-server
+[2023-05-06 01:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nvm
+[2023-05-06 01:21:58] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.307] Old Version: [0.3.306]
+[2023-05-06 01:21:58] INFO root fetch - processPackages [ovos-stt-http-server]: New version: [0.0.2a5] Old Version: [0.0.2a4]
+[2023-05-06 01:21:58] INFO root fetch - processPackages [nvm]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-06 01:21:58] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2023-05-06 01:21:58] INFO root fetch - processPackages [nvm]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-06 01:21:58] INFO root fetch - processPackages [networking-arista]: New version: [2022.2.1] Old Version: [2022.2.0]
+[2023-05-06 01:21:58] INFO root fetch - processPackages [i8-terminal]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 01:21:58] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/a1/15/d5a679884217abff16fc2bc104f36637be28bb2650c6052d9d67f61437b8/pepperize.cdk-ses-smtp-credentials-0.3.307.tar.gz
+[2023-05-06 01:21:58] INFO root fetch - processPackages [networking-arista]: Downloading https://files.pythonhosted.org/packages/7d/6c/338acb7afc33c487404f9740ae60f99818fe2961fea10f4745862470f64e/networking_arista-2022.2.0.tar.gz
+[2023-05-06 01:21:58] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/43/b8/2abb29f2547d81aff3f05e6578226b18359897a8e67919d46a46231d0bed/pypreql-0.0.1rc8.tar.gz
+[2023-05-06 01:21:58] INFO root fetch - processPackages [ovos-stt-http-server]: Downloading https://files.pythonhosted.org/packages/27/fd/90b27e44bb35f1e6fe421e86b40b09b92ff555f4b632503b9e5d70108a93/ovos-stt-http-server-0.0.2a5.tar.gz
+[2023-05-06 01:21:58] INFO root fetch - processPackages [nvm]: Downloading https://files.pythonhosted.org/packages/07/c4/c445ecf155501be96b8edeb6939c88dd604db9039cf59d73fad14c26da83/nvm-1.0.3.tar.gz
+[2023-05-06 01:21:58] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-06 01:21:58] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.306.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.307.tar.gz --markdown 20230506/p/pepperize.cdk-ses-smtp-credentials/0.3.306-0.3.307/diff.md --exclude *.pyd
+[2023-05-06 01:21:58] INFO root fetch - processPackages [nvm]: Downloading https://files.pythonhosted.org/packages/07/c4/c445ecf155501be96b8edeb6939c88dd604db9039cf59d73fad14c26da83/nvm-1.0.3.tar.gz
+[2023-05-06 01:21:58] INFO root fetch - processPackages [i8-terminal]: Downloading https://files.pythonhosted.org/packages/17/ed/437eca7f98a91c1fe623b01cc46ad940298accd927ce5b20c803f00f7eaa/i8-terminal-0.2.8.tar.gz
+[2023-05-06 01:21:58] INFO root fetch - processPackages [nvm]: executing diffoscope
+[2023-05-06 01:21:58] INFO root fetch - processPackages [nvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvm-1.0.2.tar.gz tmp/nvm-1.0.3.tar.gz --markdown 20230506/n/nvm/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-06 01:21:58] INFO root fetch - processPackages [nvm]: executing diffoscope
+[2023-05-06 01:21:58] INFO root fetch - processPackages [nvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvm-1.0.2.tar.gz tmp/nvm-1.0.3.tar.gz --markdown 20230506/n/nvm/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-06 01:21:59] INFO root fetch - processPackages [ovos-stt-http-server]: executing diffoscope
+[2023-05-06 01:21:59] INFO root fetch - processPackages [ovos-stt-http-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-stt-http-server-0.0.2a4.tar.gz tmp/ovos-stt-http-server-0.0.2a5.tar.gz --markdown 20230506/o/ovos-stt-http-server/0.0.2a4-0.0.2a5/diff.md --exclude *.pyd
+[2023-05-06 01:21:59] INFO root fetch - processPackages [networking-arista]: Downloading https://files.pythonhosted.org/packages/5e/a9/53458bbc9a068ac60a58da8914e72e78bc1ee3e12fcd0186097adc917fb1/networking_arista-2022.2.1.tar.gz
+[2023-05-06 01:21:59] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/1a/ce/33794a7ef68067e22a883f6d200722a8ccfc530b6b40d7ba9956ed4ff8bf/pypreql-0.0.1rc9.tar.gz
+[2023-05-06 01:21:59] INFO root fetch - processPackages [networking-arista]: executing diffoscope
+[2023-05-06 01:21:59] INFO root fetch - processPackages [networking-arista]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networking_arista-2022.2.0.tar.gz tmp/networking_arista-2022.2.1.tar.gz --markdown 20230506/n/networking-arista/2022.2.0-2022.2.1/diff.md --exclude *.pyd
+[2023-05-06 01:21:59] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2023-05-06 01:21:59] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20230506/p/pypreql/0.0.1rc8-0.0.1rc9/diff.md --exclude *.pyd
+[2023-05-06 01:21:59] INFO root fetch - processPackages [i8-terminal]: Downloading https://files.pythonhosted.org/packages/3a/4e/059b0e0994331c6b3c544b088856473010361bbdd6bcf135283c19003870/i8-terminal-0.2.9.tar.gz
+[2023-05-06 01:21:59] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-06 01:22:00] INFO root fetch - main [MainThread]: End processing [ovos-stt-http-server]: success
+[2023-05-06 01:22:00] INFO root fetch - processPackages [i8-terminal]: executing diffoscope
+[2023-05-06 01:22:00] INFO root fetch - processPackages [i8-terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i8-terminal-0.2.8.tar.gz tmp/i8-terminal-0.2.9.tar.gz --markdown 20230506/i/i8-terminal/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 01:22:00] INFO root fetch - main [MainThread]: End processing [nvm]: success
+[2023-05-06 01:22:00] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2023-05-06 01:22:01] INFO root fetch - main [MainThread]: End processing [i8-terminal]: success
+[2023-05-06 01:22:01] INFO root fetch - main [MainThread]: End processing [nvm]: success
+[2023-05-06 01:22:02] INFO root fetch - main [MainThread]: End processing [networking-arista]: success
+[2023-05-06 01:22:02] INFO root fetch - main [MainThread]: Store serial: [17993988]
