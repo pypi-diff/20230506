@@ -494,3 +494,32 @@
 [2023-05-06 00:44:47] INFO root fetch - main [MainThread]: End processing [valo-api]: success
 [2023-05-06 00:44:48] INFO root fetch - main [MainThread]: End processing [nautobot-golden-config]: success
 [2023-05-06 00:44:48] INFO root fetch - main [MainThread]: Store serial: [17993747]
+[2023-05-06 00:49:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993747]
+[2023-05-06 00:49:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 00:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: system-data
+[2023-05-06 00:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NikeCA
+[2023-05-06 00:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paquete-fe
+[2023-05-06 00:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xyzssh
+[2023-05-06 00:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NikeCA
+[2023-05-06 00:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: investor8-sdk
+[2023-05-06 00:49:56] WARNING root fetch - processPackages [paquete-fe]: Skipping, unable to determine old version
+[2023-05-06 00:49:56] INFO root fetch - processPackages [NikeCA]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-05-06 00:49:56] INFO root fetch - main [MainThread]: End processing [paquete-fe] error
+[2023-05-06 00:49:56] INFO root fetch - processPackages [NikeCA]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-05-06 00:49:57] WARNING root fetch - processPackages [system-data]: Skipping, unable to determine old version
+[2023-05-06 00:49:57] INFO root fetch - main [MainThread]: End processing [system-data] error
+[2023-05-06 00:49:57] WARNING root fetch - processPackages [xyzssh]: Skipping, unable to determine old version
+[2023-05-06 00:49:57] INFO root fetch - main [MainThread]: End processing [xyzssh] error
+[2023-05-06 00:49:57] INFO root fetch - processPackages [investor8-sdk]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-06 00:49:57] INFO root fetch - processPackages [NikeCA]: executing diffoscope
+[2023-05-06 00:49:57] INFO root fetch - processPackages [NikeCA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NikeCA-0.1.94.tar.gz tmp/NikeCA-0.1.95.tar.gz --markdown 20230506/N/NikeCA/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-05-06 00:49:57] INFO root fetch - processPackages [NikeCA]: executing diffoscope
+[2023-05-06 00:49:57] INFO root fetch - processPackages [NikeCA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NikeCA-0.1.94.tar.gz tmp/NikeCA-0.1.95.tar.gz --markdown 20230506/N/NikeCA/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-05-06 00:49:57] INFO root fetch - processPackages [investor8-sdk]: Downloading https://files.pythonhosted.org/packages/49/74/c2561dfd8e7b3cf177a16d8fba3fa6c15e2a0f276794da12b7b95e6c8135/investor8-sdk-1.1.8.tar.gz
+[2023-05-06 00:49:57] INFO root fetch - processPackages [investor8-sdk]: Downloading https://files.pythonhosted.org/packages/e1/47/bce97e7b7f029c51614461015e4e7e67b15aa1d08c9f6d2d8c3f7e259616/investor8-sdk-1.1.9.tar.gz
+[2023-05-06 00:49:57] INFO root fetch - processPackages [investor8-sdk]: executing diffoscope
+[2023-05-06 00:49:57] INFO root fetch - processPackages [investor8-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/investor8-sdk-1.1.8.tar.gz tmp/investor8-sdk-1.1.9.tar.gz --markdown 20230506/i/investor8-sdk/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-06 00:49:58] INFO root fetch - main [MainThread]: End processing [NikeCA]: success
+[2023-05-06 00:49:58] INFO root fetch - main [MainThread]: End processing [NikeCA]: success
+[2023-05-06 00:50:02] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
+[2023-05-06 00:50:02] INFO root fetch - main [MainThread]: Store serial: [17993779]
