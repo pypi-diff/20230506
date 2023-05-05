@@ -673,3 +673,45 @@
 [2023-05-06 01:01:07] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
 [2023-05-06 01:01:08] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
 [2023-05-06 01:01:08] INFO root fetch - main [MainThread]: Store serial: [17993871]
+[2023-05-06 01:06:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993871]
+[2023-05-06 01:06:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt-cu101
+[2023-05-06 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigraph-schema
+[2023-05-06 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmnt
+[2023-05-06 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: paquete-fe
+[2023-05-06 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: coastseg
+[2023-05-06 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: transcribe-anything
+[2023-05-06 01:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mpl-smithchart
+[2023-05-06 01:06:17] INFO root fetch - processPackages [bigraph-schema]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-06 01:06:17] INFO root fetch - processPackages [coastseg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 01:06:17] INFO root fetch - processPackages [paquete-fe]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-06 01:06:17] WARNING root fetch - processPackages [mpl-smithchart]: Skipping, unable to determine old version
+[2023-05-06 01:06:17] INFO root fetch - main [MainThread]: End processing [mpl-smithchart] error
+[2023-05-06 01:06:17] INFO root fetch - processPackages [transcribe-anything]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-06 01:06:17] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230505] Old Version: [0.7.0b20230504]
+[2023-05-06 01:06:17] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230505] Old Version: [0.7.0b20230504]
+[2023-05-06 01:06:17] INFO root fetch - processPackages [coastseg]: Downloading https://files.pythonhosted.org/packages/75/3b/19efffac60ef69a861417a37a370dc3f3a497cb93009fe8fff8dda38b476/coastseg-0.0.8.tar.gz
+[2023-05-06 01:06:17] WARNING root fetch - processPackages [coastseg]: Skipping package: exceeds size limit 38421077>=10485760
+[2023-05-06 01:06:17] INFO root fetch - main [MainThread]: End processing [coastseg] error
+[2023-05-06 01:06:17] INFO root fetch - processPackages [bigraph-schema]: Downloading https://files.pythonhosted.org/packages/93/61/27077f0c7bc6ebb33616f86fd85aed94c9e70207d87e8c0f90d9c3c777bb/bigraph-schema-0.0.6.tar.gz
+[2023-05-06 01:06:17] INFO root fetch - processPackages [paquete-fe]: Downloading https://files.pythonhosted.org/packages/b5/08/d12bcf640592b83d7e9c4bec41dbb40791b086cb08364334e2a225664617/paquete-fe-0.1.4.tar.gz
+[2023-05-06 01:06:17] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/b2/bf/1697c482a30ed2671d3d388a90c866a24bcb0f92adff4ba0f21463bc484a/tmnt-cu101-0.7.0b20230505.tar.gz
+[2023-05-06 01:06:17] INFO root fetch - processPackages [transcribe-anything]: Downloading https://files.pythonhosted.org/packages/2f/9d/df366b8315134e2d7659f9989200f87b6bbc938e8e1d5dc8c415b737bd08/transcribe-anything-2.3.2.tar.gz
+[2023-05-06 01:06:17] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/8b/a8/56cfc803772fc7d06ff9dea6d13e25ea7ad9cc8586fdef10ee509dae6198/tmnt-0.7.0b20230505.tar.gz
+[2023-05-06 01:06:17] INFO root fetch - processPackages [transcribe-anything]: executing diffoscope
+[2023-05-06 01:06:17] INFO root fetch - processPackages [transcribe-anything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transcribe-anything-2.3.1.tar.gz tmp/transcribe-anything-2.3.2.tar.gz --markdown 20230506/t/transcribe-anything/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-05-06 01:06:17] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-05-06 01:06:17] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230504.tar.gz tmp/tmnt-cu101-0.7.0b20230505.tar.gz --markdown 20230506/t/tmnt-cu101/0.7.0b20230504-0.7.0b20230505/diff.md --exclude *.pyd
+[2023-05-06 01:06:17] INFO root fetch - processPackages [paquete-fe]: executing diffoscope
+[2023-05-06 01:06:17] INFO root fetch - processPackages [paquete-fe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paquete_fe-0.1.3.tar.gz tmp/paquete-fe-0.1.4.tar.gz --markdown 20230506/p/paquete-fe/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-06 01:06:17] INFO root fetch - processPackages [bigraph-schema]: Downloading https://files.pythonhosted.org/packages/b2/bc/ab886cf6ac6b1a84be05ad9065c46bbb65e9840f3e8ad804d65741865ebd/bigraph-schema-0.0.7.tar.gz
+[2023-05-06 01:06:17] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-05-06 01:06:17] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230504.tar.gz tmp/tmnt-0.7.0b20230505.tar.gz --markdown 20230506/t/tmnt/0.7.0b20230504-0.7.0b20230505/diff.md --exclude *.pyd
+[2023-05-06 01:06:17] INFO root fetch - processPackages [bigraph-schema]: executing diffoscope
+[2023-05-06 01:06:17] INFO root fetch - processPackages [bigraph-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigraph-schema-0.0.6.tar.gz tmp/bigraph-schema-0.0.7.tar.gz --markdown 20230506/b/bigraph-schema/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-06 01:06:18] INFO root fetch - main [MainThread]: End processing [transcribe-anything]: success
+[2023-05-06 01:06:18] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-05-06 01:06:19] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-05-06 01:06:19] INFO root fetch - main [MainThread]: End processing [bigraph-schema]: success
+[2023-05-06 01:06:19] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
+[2023-05-06 01:06:19] INFO root fetch - main [MainThread]: Store serial: [17993892]
