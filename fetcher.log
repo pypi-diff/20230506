@@ -435,3 +435,62 @@
 [2023-05-06 00:39:37] INFO root fetch - main [MainThread]: End processing [pyBibX]: success
 [2023-05-06 00:39:37] INFO root fetch - main [MainThread]: End processing [spotlight-dev]: success
 [2023-05-06 00:39:37] INFO root fetch - main [MainThread]: Store serial: [17993682]
+[2023-05-06 00:44:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993682]
+[2023-05-06 00:44:45] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 00:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tpcollections
+[2023-05-06 00:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mango-cli
+[2023-05-06 00:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: akellogpt
+[2023-05-06 00:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: NikeCA
+[2023-05-06 00:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: valo-api
+[2023-05-06 00:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: OctoBot-Tulipy
+[2023-05-06 00:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nautobot-golden-config
+[2023-05-06 00:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: datalift
+[2023-05-06 00:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: compresso
+[2023-05-06 00:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-kafka
+[2023-05-06 00:44:45] INFO root fetch - processPackages [mango-cli]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-06 00:44:45] WARNING root fetch - processPackages [tpcollections]: Skipping, unable to determine old version
+[2023-05-06 00:44:45] INFO root fetch - main [MainThread]: End processing [tpcollections] error
+[2023-05-06 00:44:45] WARNING root fetch - processPackages [akellogpt]: Skipping, unable to determine old version
+[2023-05-06 00:44:45] INFO root fetch - main [MainThread]: End processing [akellogpt] error
+[2023-05-06 00:44:45] INFO root fetch - processPackages [nautobot-golden-config]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-06 00:44:45] INFO root fetch - processPackages [OctoBot-Tulipy]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-05-06 00:44:45] INFO root fetch - processPackages [NikeCA]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-05-06 00:44:45] INFO root fetch - processPackages [valo-api]: New version: [2.0.0] Old Version: [1.7.0]
+[2023-05-06 00:44:45] INFO root fetch - processPackages [compresso]: New version: [3.2.1] Old Version: [3.2.0]
+[2023-05-06 00:44:45] INFO root fetch - processPackages [datalift]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 00:44:45] INFO root fetch - processPackages [pulumi-kafka]: New version: [3.5.0a1683321065] Old Version: [3.5.0a1683265326]
+[2023-05-06 00:44:45] INFO root fetch - processPackages [mango-cli]: Downloading https://files.pythonhosted.org/packages/5d/5f/225fade4d7ce68fe72412276037db7a6583183980bf7cdc1b7f24d517d53/mango-cli-0.3.1.tar.gz
+[2023-05-06 00:44:45] INFO root fetch - processPackages [nautobot-golden-config]: Downloading https://files.pythonhosted.org/packages/0e/59/5dfd1eed4a6ce6aed3e11ff133fa94dd92914171387963d2026d7f694ee7/nautobot_golden_config-1.4.1.tar.gz
+[2023-05-06 00:44:45] INFO root fetch - processPackages [NikeCA]: Downloading https://files.pythonhosted.org/packages/c7/8c/0d12c8ee1e04cec5a209da31f390c5f9e7f37b802e95f39c032a16103053/NikeCA-0.1.94.tar.gz
+[2023-05-06 00:44:46] INFO root fetch - processPackages [datalift]: Downloading https://files.pythonhosted.org/packages/73/e2/d593f2c3d3eef55d31c4af8331f9a8615cb3c24c35a86d8aa3b257e609a2/datalift-0.1.2-py3-none-any.whl
+[2023-05-06 00:44:46] INFO root fetch - processPackages [OctoBot-Tulipy]: Downloading https://files.pythonhosted.org/packages/f6/2e/b8523b840d3b1d5e8c0678f2a9c1d08b52cbb8e529c40c52d7335e9affa1/OctoBot-Tulipy-0.4.6.tar.gz
+[2023-05-06 00:44:46] INFO root fetch - processPackages [valo-api]: Downloading https://files.pythonhosted.org/packages/4d/dd/b63a5e61e92608dcf4d7ab519c2b0043f5b3b1d20b15e3db1b8c8a817ca0/valo_api-1.7.0.tar.gz
+[2023-05-06 00:44:46] INFO root fetch - processPackages [pulumi-kafka]: Downloading https://files.pythonhosted.org/packages/50/37/06eec958025539a799afa1a63e6743d5f5270b02f90fe7f2c86c9bc1c033/pulumi_kafka-3.5.0a1683321065.tar.gz
+[2023-05-06 00:44:46] INFO root fetch - processPackages [compresso]: Downloading https://files.pythonhosted.org/packages/4f/2c/08c89254af8e3e8bef5e64603ea4ff8304a40327dd16277024589d01de97/compresso-3.2.1-cp39-cp39-macosx_10_9_x86_64.whl
+[2023-05-06 00:44:46] INFO root fetch - processPackages [mango-cli]: executing diffoscope
+[2023-05-06 00:44:46] INFO root fetch - processPackages [mango-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango-cli-0.3.0.tar.gz tmp/mango-cli-0.3.1.tar.gz --markdown 20230506/m/mango-cli/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-06 00:44:46] INFO root fetch - processPackages [nautobot-golden-config]: executing diffoscope
+[2023-05-06 00:44:46] INFO root fetch - processPackages [nautobot-golden-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautobot_golden_config-1.4.0.tar.gz tmp/nautobot_golden_config-1.4.1.tar.gz --markdown 20230506/n/nautobot-golden-config/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-06 00:44:46] INFO root fetch - processPackages [OctoBot-Tulipy]: executing diffoscope
+[2023-05-06 00:44:46] INFO root fetch - processPackages [OctoBot-Tulipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Tulipy-0.4.5.tar.gz tmp/OctoBot-Tulipy-0.4.6.tar.gz --markdown 20230506/O/OctoBot-Tulipy/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-05-06 00:44:46] INFO root fetch - processPackages [pulumi-kafka]: executing diffoscope
+[2023-05-06 00:44:46] INFO root fetch - processPackages [pulumi-kafka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kafka-3.5.0a1683265326.tar.gz tmp/pulumi_kafka-3.5.0a1683321065.tar.gz --markdown 20230506/p/pulumi-kafka/3.5.0a1683265326-3.5.0a1683321065/diff.md --exclude *.pyd
+[2023-05-06 00:44:46] INFO root fetch - processPackages [datalift]: executing diffoscope
+[2023-05-06 00:44:46] INFO root fetch - processPackages [datalift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datalift-0.1.1-py3-none-any.whl.zip tmp/datalift-0.1.2-py3-none-any.whl.zip --markdown 20230506/d/datalift/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 00:44:46] INFO root fetch - processPackages [NikeCA]: Downloading https://files.pythonhosted.org/packages/eb/6b/1fd7340825acaea7c9eb9ed07c14ef3f80c6ef887169006d8c4c2ddad458/NikeCA-0.1.95.tar.gz
+[2023-05-06 00:44:46] INFO root fetch - processPackages [compresso]: executing diffoscope
+[2023-05-06 00:44:46] INFO root fetch - processPackages [compresso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compresso-3.2.0.tar.gz tmp/compresso-3.2.1-cp39-cp39-macosx_10_9_x86_64.whl.zip --markdown 20230506/c/compresso/3.2.0-3.2.1/diff.md --exclude *.pyd
+[2023-05-06 00:44:46] INFO root fetch - processPackages [NikeCA]: executing diffoscope
+[2023-05-06 00:44:46] INFO root fetch - processPackages [NikeCA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NikeCA-0.1.94.tar.gz tmp/NikeCA-0.1.95.tar.gz --markdown 20230506/N/NikeCA/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-05-06 00:44:46] INFO root fetch - processPackages [valo-api]: Downloading https://files.pythonhosted.org/packages/09/77/b4f75f400bb91ac1418469c9866c6a918f726f8fc26f21bbfb9db68bb4d2/valo_api-2.0.0.tar.gz
+[2023-05-06 00:44:46] INFO root fetch - processPackages [valo-api]: executing diffoscope
+[2023-05-06 00:44:46] INFO root fetch - processPackages [valo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valo_api-1.7.0.tar.gz tmp/valo_api-2.0.0.tar.gz --markdown 20230506/v/valo-api/1.7.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-06 00:44:47] INFO root fetch - main [MainThread]: End processing [OctoBot-Tulipy]: success
+[2023-05-06 00:44:47] INFO root fetch - main [MainThread]: End processing [mango-cli]: success
+[2023-05-06 00:44:47] INFO root fetch - main [MainThread]: End processing [pulumi-kafka]: success
+[2023-05-06 00:44:47] INFO root fetch - main [MainThread]: End processing [datalift]: success
+[2023-05-06 00:44:47] INFO root fetch - main [MainThread]: End processing [NikeCA]: success
+[2023-05-06 00:44:47] INFO root fetch - main [MainThread]: End processing [compresso]: success
+[2023-05-06 00:44:47] INFO root fetch - main [MainThread]: End processing [valo-api]: success
+[2023-05-06 00:44:48] INFO root fetch - main [MainThread]: End processing [nautobot-golden-config]: success
+[2023-05-06 00:44:48] INFO root fetch - main [MainThread]: Store serial: [17993747]
