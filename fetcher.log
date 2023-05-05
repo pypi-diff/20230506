@@ -182,3 +182,60 @@
 [2023-05-06 00:12:38] INFO root fetch - main [MainThread]: End processing [anatools]: success
 [2023-05-06 00:12:38] INFO root fetch - main [MainThread]: End processing [emmet-api]: success
 [2023-05-06 00:12:38] INFO root fetch - main [MainThread]: Store serial: [17993473]
+[2023-05-06 00:17:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993473]
+[2023-05-06 00:17:47] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 00:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chgnet
+[2023-05-06 00:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-serverless-cluster-from-snapshot
+[2023-05-06 00:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: retroperm
+[2023-05-06 00:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: medspacy
+[2023-05-06 00:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-barn
+[2023-05-06 00:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: harlequin
+[2023-05-06 00:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hyperfast-python-template
+[2023-05-06 00:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sentient-switchblade
+[2023-05-06 00:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gammath-spot
+[2023-05-06 00:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fusion-engine-client
+[2023-05-06 00:17:47] INFO root fetch - processPackages [python-barn]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-06 00:17:47] INFO root fetch - processPackages [medspacy]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-06 00:17:47] INFO root fetch - processPackages [sentient-switchblade]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-06 00:17:47] INFO root fetch - processPackages [hyperfast-python-template]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-06 00:17:47] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 00:17:47] INFO root fetch - processPackages [python-barn]: executing diffoscope
+[2023-05-06 00:17:47] INFO root fetch - processPackages [python-barn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-barn-0.4.0.tar.gz tmp/python-barn-0.5.0.tar.gz --markdown 20230506/p/python-barn/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-06 00:17:47] WARNING root fetch - processPackages [chgnet]: Skipping, unable to determine old version
+[2023-05-06 00:17:47] INFO root fetch - main [MainThread]: End processing [chgnet] error
+[2023-05-06 00:17:47] INFO root fetch - processPackages [retroperm]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-05-06 00:17:47] INFO root fetch - processPackages [harlequin]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 00:17:47] INFO root fetch - processPackages [hyperfast-python-template]: executing diffoscope
+[2023-05-06 00:17:47] INFO root fetch - processPackages [hyperfast-python-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfast_python_template-0.4.8.tar.gz tmp/hyperfast_python_template-0.4.9.tar.gz --markdown 20230506/h/hyperfast-python-template/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-06 00:17:47] INFO root fetch - processPackages [sentient-switchblade]: executing diffoscope
+[2023-05-06 00:17:47] INFO root fetch - processPackages [sentient-switchblade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentient_switchblade-0.3.2.tar.gz tmp/sentient_switchblade-0.3.3.tar.gz --markdown 20230506/s/sentient-switchblade/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-06 00:17:47] INFO root fetch - processPackages [gammath-spot]: New version: [9.5] Old Version: [9.3]
+[2023-05-06 00:17:47] INFO root fetch - processPackages [fusion-engine-client]: New version: [1.18.1rc3] Old Version: [1.18.1rc2]
+[2023-05-06 00:17:47] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-05-06 00:17:47] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230506/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 00:17:47] INFO root fetch - processPackages [medspacy]: Downloading https://files.pythonhosted.org/packages/8e/b0/b7ac4a5ef451fdf618afd0554086cf17723f962fc5e810bb3fa539abd81a/medspacy-1.0.0.tar.gz
+[2023-05-06 00:17:47] INFO root fetch - processPackages [retroperm]: Downloading https://files.pythonhosted.org/packages/25/ec/d4cbd11c2364742aa15e9e0b29a17b99c32a51ee64796b1a85a3b01abdf7/retroperm-0.0.3.tar.gz
+[2023-05-06 00:17:47] INFO root fetch - processPackages [gammath-spot]: Downloading https://files.pythonhosted.org/packages/c0/03/1dd78e5b03ecddece33b22a8cdc345eb1180ba3cce1414f4ccf4e71746f1/gammath_spot-9.3.tar.gz
+[2023-05-06 00:17:47] INFO root fetch - processPackages [harlequin]: Downloading https://files.pythonhosted.org/packages/6a/27/e78fe8e9d3b450c4d5be648b2a46da4044eae907bb3f41ab0aba577807a4/harlequin-0.0.4.tar.gz
+[2023-05-06 00:17:47] INFO root fetch - processPackages [fusion-engine-client]: executing diffoscope
+[2023-05-06 00:17:47] INFO root fetch - processPackages [fusion-engine-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusion-engine-client-1.18.1rc2.tar.gz tmp/fusion-engine-client-1.18.1rc3.tar.gz --markdown 20230506/f/fusion-engine-client/1.18.1rc2-1.18.1rc3/diff.md --exclude *.pyd
+[2023-05-06 00:17:47] INFO root fetch - processPackages [retroperm]: Downloading https://files.pythonhosted.org/packages/8b/6d/bd3a08dc8853c01fb852f933bd8a6d674746f8e3d65c470c844240ac7106/retroperm-0.1.0.tar.gz
+[2023-05-06 00:17:47] INFO root fetch - processPackages [harlequin]: executing diffoscope
+[2023-05-06 00:17:47] INFO root fetch - processPackages [harlequin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harlequin-0.0.3.tar.gz tmp/harlequin-0.0.4.tar.gz --markdown 20230506/h/harlequin/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 00:17:47] INFO root fetch - processPackages [medspacy]: executing diffoscope
+[2023-05-06 00:17:47] INFO root fetch - processPackages [medspacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medspacy-1.0.0.tar.gz tmp/medspacy-1.0.1.tar.gz --markdown 20230506/m/medspacy/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 00:17:47] INFO root fetch - processPackages [retroperm]: executing diffoscope
+[2023-05-06 00:17:47] INFO root fetch - processPackages [retroperm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retroperm-0.0.3.tar.gz tmp/retroperm-0.1.0.tar.gz --markdown 20230506/r/retroperm/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-05-06 00:17:47] INFO root fetch - processPackages [gammath-spot]: Downloading https://files.pythonhosted.org/packages/d1/8e/4faa5f1670eb9302dfb910ff09d828b562f2b0b2f0be10504f69fac9e2f6/gammath_spot-9.5.tar.gz
+[2023-05-06 00:17:47] INFO root fetch - processPackages [gammath-spot]: executing diffoscope
+[2023-05-06 00:17:47] INFO root fetch - processPackages [gammath-spot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammath_spot-9.3.tar.gz tmp/gammath_spot-9.5.tar.gz --markdown 20230506/g/gammath-spot/9.3-9.5/diff.md --exclude *.pyd
+[2023-05-06 00:17:48] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
+[2023-05-06 00:17:48] INFO root fetch - main [MainThread]: End processing [python-barn]: success
+[2023-05-06 00:17:48] INFO root fetch - main [MainThread]: End processing [sentient-switchblade]: success
+[2023-05-06 00:17:49] INFO root fetch - main [MainThread]: End processing [harlequin]: success
+[2023-05-06 00:17:49] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
+[2023-05-06 00:17:49] INFO root fetch - main [MainThread]: End processing [fusion-engine-client]: success
+[2023-05-06 00:17:49] INFO root fetch - main [MainThread]: End processing [retroperm]: success
+[2023-05-06 00:17:49] INFO root fetch - main [MainThread]: End processing [medspacy]: success
+[2023-05-06 00:18:17] INFO root fetch - main [MainThread]: End processing [gammath-spot]: success
+[2023-05-06 00:18:17] INFO root fetch - main [MainThread]: Store serial: [17993504]
