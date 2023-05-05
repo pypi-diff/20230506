@@ -1101,3 +1101,50 @@
 [2023-05-06 01:53:17] INFO root fetch - main [MainThread]: End processing [FlipperNested]: success
 [2023-05-06 01:53:17] INFO root fetch - main [MainThread]: End processing [popdelta]: success
 [2023-05-06 01:53:17] INFO root fetch - main [MainThread]: Store serial: [17994109]
+[2023-05-06 01:58:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17994109]
+[2023-05-06 01:58:25] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 01:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchsisso
+[2023-05-06 01:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyqt-openai
+[2023-05-06 01:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: evalplus
+[2023-05-06 01:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coastseg
+[2023-05-06 01:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lora-adapters
+[2023-05-06 01:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: argovisHelpers
+[2023-05-06 01:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: circuit-knitting-toolbox
+[2023-05-06 01:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: NikeCA
+[2023-05-06 01:58:26] INFO root fetch - processPackages [pyqt-openai]: New version: [0.1.21] Old Version: [0.1.2]
+[2023-05-06 01:58:26] INFO root fetch - processPackages [coastseg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 01:58:26] WARNING root fetch - processPackages [torchsisso]: Skipping, unable to determine old version
+[2023-05-06 01:58:26] WARNING root fetch - processPackages [evalplus]: Skipping, unable to determine old version
+[2023-05-06 01:58:26] INFO root fetch - main [MainThread]: End processing [torchsisso] error
+[2023-05-06 01:58:26] INFO root fetch - processPackages [lora-adapters]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-06 01:58:26] INFO root fetch - main [MainThread]: End processing [evalplus] error
+[2023-05-06 01:58:26] INFO root fetch - processPackages [circuit-knitting-toolbox]: New version: [0.1.0] Old Version: [0.0.0]
+[2023-05-06 01:58:26] INFO root fetch - processPackages [argovisHelpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 01:58:26] INFO root fetch - processPackages [NikeCA]: New version: [0.1.96rc0] Old Version: [0.1.96b0]
+[2023-05-06 01:58:26] INFO root fetch - processPackages [coastseg]: Downloading https://files.pythonhosted.org/packages/75/3b/19efffac60ef69a861417a37a370dc3f3a497cb93009fe8fff8dda38b476/coastseg-0.0.8.tar.gz
+[2023-05-06 01:58:26] WARNING root fetch - processPackages [coastseg]: Skipping package: exceeds size limit 38421077>=10485760
+[2023-05-06 01:58:26] INFO root fetch - main [MainThread]: End processing [coastseg] error
+[2023-05-06 01:58:26] INFO root fetch - processPackages [argovisHelpers]: Downloading https://files.pythonhosted.org/packages/dc/fb/015a17f5953024b0ebd76d1f15a17c2d90e91891e9cc15d866d196c97a26/argovisHelpers-0.0.8.tar.gz
+[2023-05-06 01:58:26] INFO root fetch - processPackages [lora-adapters]: Downloading https://files.pythonhosted.org/packages/89/b3/3201ed805313b642ec337adec33f05655e71ee3ed249957f92de8d41a2a8/lora_adapters-0.1.3.tar.gz
+[2023-05-06 01:58:26] INFO root fetch - processPackages [circuit-knitting-toolbox]: Downloading https://files.pythonhosted.org/packages/21/0d/db97f6fc47624c3b350220554c14dc18341b54de24d81b9a772ce6404793/circuit_knitting_toolbox-0.0.0.tar.gz
+[2023-05-06 01:58:26] INFO root fetch - processPackages [pyqt-openai]: Downloading https://files.pythonhosted.org/packages/2f/ea/a308a4007c6f41f9b3a9e13fcd72f832f76c8fae0362fab0583206db8f24/pyqt-openai-0.1.21.tar.gz
+[2023-05-06 01:58:26] INFO root fetch - processPackages [NikeCA]: Downloading https://files.pythonhosted.org/packages/0c/91/521c38e4cf7bee3986580d0b0ab0b1d5e05cafdfa52ecbd233b2a7a0b73b/NikeCA-0.1.96rc0.tar.gz
+[2023-05-06 01:58:26] INFO root fetch - processPackages [pyqt-openai]: executing diffoscope
+[2023-05-06 01:58:26] INFO root fetch - processPackages [pyqt-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt-openai-0.1.2.tar.gz tmp/pyqt-openai-0.1.21.tar.gz --markdown 20230506/p/pyqt-openai/0.1.2-0.1.21/diff.md --exclude *.pyd
+[2023-05-06 01:58:26] INFO root fetch - processPackages [NikeCA]: executing diffoscope
+[2023-05-06 01:58:26] INFO root fetch - processPackages [NikeCA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NikeCA-0.1.96b0.tar.gz tmp/NikeCA-0.1.96rc0.tar.gz --markdown 20230506/N/NikeCA/0.1.96b0-0.1.96rc0/diff.md --exclude *.pyd
+[2023-05-06 01:58:26] INFO root fetch - processPackages [lora-adapters]: Downloading https://files.pythonhosted.org/packages/e1/d4/b46977de1f0184ba5ec9e73d40c09986b34ec1b2ddbfe2229fa60f54e27e/lora_adapters-0.1.4.tar.gz
+[2023-05-06 01:58:26] INFO root fetch - processPackages [circuit-knitting-toolbox]: Downloading https://files.pythonhosted.org/packages/52/34/29779d740475ca23525ce7168b322ea8cd3c7cd634e0a56d8037d49c0c88/circuit-knitting-toolbox-0.1.0.tar.gz
+[2023-05-06 01:58:26] INFO root fetch - processPackages [argovisHelpers]: Downloading https://files.pythonhosted.org/packages/c4/9b/69aa0ac205011a5c0353157c71c7c7d7418cfde221bcf8db32db64d593e8/argovisHelpers-0.0.9.tar.gz
+[2023-05-06 01:58:26] INFO root fetch - processPackages [lora-adapters]: executing diffoscope
+[2023-05-06 01:58:26] INFO root fetch - processPackages [lora-adapters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lora_adapters-0.1.3.tar.gz tmp/lora_adapters-0.1.4.tar.gz --markdown 20230506/l/lora-adapters/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-06 01:58:26] INFO root fetch - processPackages [argovisHelpers]: executing diffoscope
+[2023-05-06 01:58:26] INFO root fetch - processPackages [argovisHelpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argovisHelpers-0.0.8.tar.gz tmp/argovisHelpers-0.0.9.tar.gz --markdown 20230506/a/argovisHelpers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 01:58:26] INFO root fetch - processPackages [circuit-knitting-toolbox]: executing diffoscope
+[2023-05-06 01:58:26] INFO root fetch - processPackages [circuit-knitting-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuit_knitting_toolbox-0.0.0.tar.gz tmp/circuit-knitting-toolbox-0.1.0.tar.gz --markdown 20230506/c/circuit-knitting-toolbox/0.0.0-0.1.0/diff.md --exclude *.pyd
+[2023-05-06 01:58:27] INFO root fetch - main [MainThread]: End processing [pyqt-openai]: success
+[2023-05-06 01:58:27] INFO root fetch - main [MainThread]: End processing [argovisHelpers]: success
+[2023-05-06 01:58:27] INFO root fetch - main [MainThread]: End processing [NikeCA]: success
+[2023-05-06 01:58:27] INFO root fetch - main [MainThread]: End processing [lora-adapters]: success
+[2023-05-06 01:58:30] INFO root fetch - main [MainThread]: End processing [circuit-knitting-toolbox]: success
+[2023-05-06 01:58:30] INFO root fetch - main [MainThread]: Store serial: [17994137]
