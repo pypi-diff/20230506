@@ -398,3 +398,40 @@
 [2023-05-06 00:34:25] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
 [2023-05-06 00:34:26] INFO root fetch - main [MainThread]: End processing [nebari]: success
 [2023-05-06 00:34:26] INFO root fetch - main [MainThread]: Store serial: [17993658]
+[2023-05-06 00:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993658]
+[2023-05-06 00:39:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 00:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotlight-dev
+[2023-05-06 00:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: visualblocks
+[2023-05-06 00:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mango-cli
+[2023-05-06 00:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slashml
+[2023-05-06 00:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: loggerml
+[2023-05-06 00:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyBibX
+[2023-05-06 00:39:35] INFO root fetch - processPackages [spotlight-dev]: New version: [0.0.1b5] Old Version: [0.0.1b4]
+[2023-05-06 00:39:35] INFO root fetch - processPackages [pyBibX]: New version: [2.9.5] Old Version: [2.9.4]
+[2023-05-06 00:39:35] INFO root fetch - processPackages [visualblocks]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-06 00:39:35] WARNING root fetch - processPackages [slashml]: Skipping, unable to determine old version
+[2023-05-06 00:39:35] INFO root fetch - processPackages [loggerml]: New version: [1.0.0] Old Version: [0.6.2]
+[2023-05-06 00:39:35] INFO root fetch - main [MainThread]: End processing [slashml] error
+[2023-05-06 00:39:35] INFO root fetch - processPackages [mango-cli]: New version: [0.3.0] Old Version: [0.1.0]
+[2023-05-06 00:39:35] INFO root fetch - processPackages [visualblocks]: Downloading https://files.pythonhosted.org/packages/19/93/9160218891894378fd59dce3d95cf3ec8d8854d19c9920a791867c80b5df/visualblocks-0.0.6.tar.gz
+[2023-05-06 00:39:35] INFO root fetch - processPackages [mango-cli]: Downloading https://files.pythonhosted.org/packages/2d/53/91edd0b8bcf507ce3ff5fb49f20720a96edb82f56a21e8d571c5b57eb739/mango-cli-0.1.0.tar.gz
+[2023-05-06 00:39:35] INFO root fetch - processPackages [loggerml]: Downloading https://files.pythonhosted.org/packages/25/e4/6a342e0624f0bc89624bc44bfde35c77c96d5299e1cd9d01d3eaf3bf124b/loggerml-0.6.2.tar.gz
+[2023-05-06 00:39:35] INFO root fetch - processPackages [pyBibX]: Downloading https://files.pythonhosted.org/packages/82/05/199152fdac0c10c85fd7ad93fd66792d39bf3fa3dcb0dcf22ce52578914e/pyBibX-2.9.5.tar.gz
+[2023-05-06 00:39:35] INFO root fetch - processPackages [pyBibX]: executing diffoscope
+[2023-05-06 00:39:35] INFO root fetch - processPackages [pyBibX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyBibX-2.9.4.tar.gz tmp/pyBibX-2.9.5.tar.gz --markdown 20230506/p/pyBibX/2.9.4-2.9.5/diff.md --exclude *.pyd
+[2023-05-06 00:39:35] WARNING root fetch - processPackages [loggerml]: Skipping package: exceeds size limit 28492282>=10485760
+[2023-05-06 00:39:35] INFO root fetch - processPackages [spotlight-dev]: Downloading https://files.pythonhosted.org/packages/f1/5b/53fe8d93e6d3af1dfd93cc4dda3619ea2c1b14c489b859d1dc3211c9634a/spotlight-dev-0.0.1b5.tar.gz
+[2023-05-06 00:39:35] INFO root fetch - main [MainThread]: End processing [loggerml] error
+[2023-05-06 00:39:35] INFO root fetch - processPackages [mango-cli]: Downloading https://files.pythonhosted.org/packages/b0/08/edc223d315d77263c788e025f79f2a76e3a2bd5ccfab80ccdb7c011b3e30/mango-cli-0.3.0.tar.gz
+[2023-05-06 00:39:35] INFO root fetch - processPackages [visualblocks]: Downloading https://files.pythonhosted.org/packages/39/28/89cc8dc67d6f33f62bfd24caaaa02fbd7569ad6c5e550219a99ddfa1c0d2/visualblocks-0.0.7.tar.gz
+[2023-05-06 00:39:35] INFO root fetch - processPackages [mango-cli]: executing diffoscope
+[2023-05-06 00:39:35] INFO root fetch - processPackages [mango-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango-cli-0.1.0.tar.gz tmp/mango-cli-0.3.0.tar.gz --markdown 20230506/m/mango-cli/0.1.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-06 00:39:35] INFO root fetch - processPackages [spotlight-dev]: executing diffoscope
+[2023-05-06 00:39:35] INFO root fetch - processPackages [spotlight-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotlight-dev-0.0.1b4.tar.gz tmp/spotlight-dev-0.0.1b5.tar.gz --markdown 20230506/s/spotlight-dev/0.0.1b4-0.0.1b5/diff.md --exclude *.pyd
+[2023-05-06 00:39:36] INFO root fetch - processPackages [visualblocks]: executing diffoscope
+[2023-05-06 00:39:36] INFO root fetch - processPackages [visualblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visualblocks-0.0.6.tar.gz tmp/visualblocks-0.0.7.tar.gz --markdown 20230506/v/visualblocks/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-06 00:39:36] INFO root fetch - main [MainThread]: End processing [mango-cli]: success
+[2023-05-06 00:39:37] INFO root fetch - main [MainThread]: End processing [visualblocks]: success
+[2023-05-06 00:39:37] INFO root fetch - main [MainThread]: End processing [pyBibX]: success
+[2023-05-06 00:39:37] INFO root fetch - main [MainThread]: End processing [spotlight-dev]: success
+[2023-05-06 00:39:37] INFO root fetch - main [MainThread]: Store serial: [17993682]
