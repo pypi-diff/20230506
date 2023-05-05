@@ -588,3 +588,88 @@
 [2023-05-06 00:55:36] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
 [2023-05-06 00:55:53] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2023-05-06 00:55:53] INFO root fetch - main [MainThread]: Store serial: [17993831]
+[2023-05-06 01:00:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993831]
+[2023-05-06 01:01:02] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-06 01:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mango-cli
+[2023-05-06 01:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paquete-fe
+[2023-05-06 01:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: project-structure
+[2023-05-06 01:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastapi-poe
+[2023-05-06 01:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiohttp-poe
+[2023-05-06 01:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gnss-lib-py
+[2023-05-06 01:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: graphql-service-framework
+[2023-05-06 01:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: domolibrary
+[2023-05-06 01:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: noisepy-seis
+[2023-05-06 01:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: domolibrary
+[2023-05-06 01:01:02] INFO root fetch - processPackages [fastapi-poe]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-06 01:01:02] INFO root fetch - processPackages [aiohttp-poe]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-06 01:01:02] INFO root fetch - processPackages [mango-cli]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-06 01:01:02] INFO root fetch - processPackages [paquete-fe]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-06 01:01:02] INFO root fetch - processPackages [project-structure]: New version: [0.8.28b0] Old Version: [0.8.27]
+[2023-05-06 01:01:02] INFO root fetch - processPackages [graphql-service-framework]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-06 01:01:02] INFO root fetch - processPackages [gnss-lib-py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 01:01:02] INFO root fetch - processPackages [domolibrary]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 01:01:02] INFO root fetch - processPackages [noisepy-seis]: New version: [0.8.0] Old Version: [0.7.1]
+[2023-05-06 01:01:02] INFO root fetch - processPackages [domolibrary]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 01:01:02] INFO root fetch - processPackages [graphql-service-framework]: executing diffoscope
+[2023-05-06 01:01:02] INFO root fetch - processPackages [graphql-service-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_service_framework-1.1.8.tar.gz tmp/graphql_service_framework-1.1.9.tar.gz --markdown 20230506/g/graphql-service-framework/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-06 01:01:02] INFO root fetch - processPackages [domolibrary]: executing diffoscope
+[2023-05-06 01:01:02] INFO root fetch - processPackages [domolibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domolibrary-0.1.8.tar.gz tmp/domolibrary-0.1.9.tar.gz --markdown 20230506/d/domolibrary/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 01:01:02] INFO root fetch - processPackages [domolibrary]: executing diffoscope
+[2023-05-06 01:01:02] INFO root fetch - processPackages [domolibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domolibrary-0.1.8.tar.gz tmp/domolibrary-0.1.9.tar.gz --markdown 20230506/d/domolibrary/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 01:01:03] INFO root fetch - processPackages [mango-cli]: Downloading https://files.pythonhosted.org/packages/36/66/53fc3685e0e7c78c43f78eafc5a868a64dc953ab9e0b9b8aa04fc78d9421/mango-cli-0.3.4.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [paquete-fe]: Downloading https://files.pythonhosted.org/packages/3f/21/66b1744f1a2973be2dad047906eb32f90f03b5457060326306eccf45a336/paquete_fe-0.1.2.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [aiohttp-poe]: Downloading https://files.pythonhosted.org/packages/4d/46/7c619d4e2c3d8ee07507b13bc12224eb405f5c721aab29f0147dfd8cfff5/aiohttp_poe-0.0.7.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [gnss-lib-py]: Downloading https://files.pythonhosted.org/packages/1f/f4/c2e78b86409dc2ba369a7cd4ac05b3e4b7cc548ee5b26721ddf1d07c3f13/gnss_lib_py-0.1.8.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [fastapi-poe]: Downloading https://files.pythonhosted.org/packages/4b/25/bea38e86b4c9277e953c90a822f4861c62b230a69e700bd9b0151876b6c1/fastapi_poe-0.0.7.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [project-structure]: Downloading https://files.pythonhosted.org/packages/15/75/4d2aafb3905c391abc1ff3fa84f182682194d385f4160f8823c315958a7a/project-structure-0.8.27.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [noisepy-seis]: Downloading https://files.pythonhosted.org/packages/91/91/6d806f601892b5c6320a6057d866efa998ee40bd7baba0ecc42d00b3643f/noisepy_seis-0.8.0.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [noisepy-seis]: executing diffoscope
+[2023-05-06 01:01:03] INFO root fetch - processPackages [noisepy-seis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noisepy_seis-0.7.1.tar.gz tmp/noisepy_seis-0.8.0.tar.gz --markdown 20230506/n/noisepy-seis/0.7.1-0.8.0/diff.md --exclude *.pyd
+[2023-05-06 01:01:03] INFO root fetch - processPackages [mango-cli]: Downloading https://files.pythonhosted.org/packages/1f/78/c86e373c61be222f13d5cea0d118c606ba93f293094392a805a6f0eb8986/mango-cli-0.3.5.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [mango-cli]: executing diffoscope
+[2023-05-06 01:01:03] INFO root fetch - processPackages [mango-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango-cli-0.3.4.tar.gz tmp/mango-cli-0.3.5.tar.gz --markdown 20230506/m/mango-cli/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-06 01:01:03] INFO root fetch - processPackages [project-structure]: Downloading https://files.pythonhosted.org/packages/16/25/e8b9dd071b5a3bf8d9974a0eed663507c718c39d03dc68635473250aa12f/project-structure-0.8.28b0.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [paquete-fe]: Downloading https://files.pythonhosted.org/packages/02/2e/509a6c21863cabc1eea2aa128193cf29c730e11996064c8296cdf7ef23a2/paquete_fe-0.1.3.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [aiohttp-poe]: Downloading https://files.pythonhosted.org/packages/04/68/444fb0eb07030554b46080cc35d4975228fd7bff22d2f7b19b7e5c08dd5b/aiohttp_poe-0.0.9.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [gnss-lib-py]: Downloading https://files.pythonhosted.org/packages/8c/a4/93a452c96ab4badf06171b93822da3c16717c667cb4d2e4305309e87f40d/gnss_lib_py-0.1.9.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [fastapi-poe]: Downloading https://files.pythonhosted.org/packages/45/b6/a2d0467846df0a1202add666fe039e49680698de1e4b3718bae5354e8e85/fastapi_poe-0.0.9.tar.gz
+[2023-05-06 01:01:03] INFO root fetch - processPackages [paquete-fe]: executing diffoscope
+[2023-05-06 01:01:03] INFO root fetch - processPackages [paquete-fe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paquete_fe-0.1.2.tar.gz tmp/paquete_fe-0.1.3.tar.gz --markdown 20230506/p/paquete-fe/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-06 01:01:03] INFO root fetch - processPackages [aiohttp-poe]: executing diffoscope
+[2023-05-06 01:01:03] INFO root fetch - processPackages [aiohttp-poe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiohttp_poe-0.0.7.tar.gz tmp/aiohttp_poe-0.0.9.tar.gz --markdown 20230506/a/aiohttp-poe/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 01:01:03] INFO root fetch - processPackages [gnss-lib-py]: executing diffoscope
+[2023-05-06 01:01:03] INFO root fetch - processPackages [gnss-lib-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnss_lib_py-0.1.8.tar.gz tmp/gnss_lib_py-0.1.9.tar.gz --markdown 20230506/g/gnss-lib-py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 01:01:03] INFO root fetch - processPackages [project-structure]: executing diffoscope
+[2023-05-06 01:01:03] INFO root fetch - processPackages [project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/project-structure-0.8.27.tar.gz tmp/project-structure-0.8.28b0.tar.gz --markdown 20230506/p/project-structure/0.8.27-0.8.28b0/diff.md --exclude *.pyd
+[2023-05-06 01:01:03] INFO root fetch - processPackages [fastapi-poe]: executing diffoscope
+[2023-05-06 01:01:03] INFO root fetch - processPackages [fastapi-poe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_poe-0.0.7.tar.gz tmp/fastapi_poe-0.0.9.tar.gz --markdown 20230506/f/fastapi-poe/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 01:01:04] INFO root fetch - processPackages [graphql-service-framework]: Start processing: mango-cli
+[2023-05-06 01:01:04] INFO root fetch - main [MainThread]: End processing [graphql-service-framework]: success
+[2023-05-06 01:01:04] INFO root fetch - processPackages [mango-cli]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-06 01:01:04] INFO root fetch - processPackages [mango-cli]: Start processing: graphql-api
+[2023-05-06 01:01:04] INFO root fetch - main [MainThread]: End processing [mango-cli]: success
+[2023-05-06 01:01:04] INFO root fetch - processPackages [graphql-api]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-05-06 01:01:04] INFO root fetch - processPackages [mango-cli]: executing diffoscope
+[2023-05-06 01:01:04] INFO root fetch - processPackages [mango-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango-cli-0.3.4.tar.gz tmp/mango-cli-0.3.5.tar.gz --markdown 20230506/m/mango-cli/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-06 01:01:04] INFO root fetch - processPackages [graphql-api]: Downloading https://files.pythonhosted.org/packages/7a/1a/679a90283a30e45fbc0aae8dac25626a76e1fe4ef8b4434a2b46f877750c/graphql-api-1.3.3.tar.gz
+[2023-05-06 01:01:04] INFO root fetch - processPackages [graphql-api]: executing diffoscope
+[2023-05-06 01:01:04] INFO root fetch - processPackages [graphql-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql-api-1.3.2.tar.gz tmp/graphql-api-1.3.3.tar.gz --markdown 20230506/g/graphql-api/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-05-06 01:01:04] INFO root fetch - processPackages [aiohttp-poe]: Start processing: system-data
+[2023-05-06 01:01:04] INFO root fetch - main [MainThread]: End processing [aiohttp-poe]: success
+[2023-05-06 01:01:04] ERROR root fetch - processPackages [system-data]: Unable to get metadata: No such project 'system-data'
+[2023-05-06 01:01:04] INFO root fetch - processPackages [system-data]: Start processing: coastseg
+[2023-05-06 01:01:04] INFO root fetch - main [MainThread]: End processing [system-data] error
+[2023-05-06 01:01:04] INFO root fetch - main [MainThread]: End processing [fastapi-poe]: success
+[2023-05-06 01:01:04] INFO root fetch - processPackages [coastseg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 01:01:05] INFO root fetch - main [MainThread]: End processing [gnss-lib-py]: success
+[2023-05-06 01:01:05] INFO root fetch - processPackages [coastseg]: Downloading https://files.pythonhosted.org/packages/75/3b/19efffac60ef69a861417a37a370dc3f3a497cb93009fe8fff8dda38b476/coastseg-0.0.8.tar.gz
+[2023-05-06 01:01:05] WARNING root fetch - processPackages [coastseg]: Skipping package: exceeds size limit 38421077>=10485760
+[2023-05-06 01:01:05] INFO root fetch - main [MainThread]: End processing [coastseg] error
+[2023-05-06 01:01:05] INFO root fetch - main [MainThread]: End processing [noisepy-seis]: success
+[2023-05-06 01:01:05] INFO root fetch - main [MainThread]: End processing [project-structure]: success
+[2023-05-06 01:01:05] INFO root fetch - main [MainThread]: End processing [mango-cli]: success
+[2023-05-06 01:01:06] INFO root fetch - main [MainThread]: End processing [graphql-api]: success
+[2023-05-06 01:01:07] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
+[2023-05-06 01:01:07] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
+[2023-05-06 01:01:08] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
+[2023-05-06 01:01:08] INFO root fetch - main [MainThread]: Store serial: [17993871]
