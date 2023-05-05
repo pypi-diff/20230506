@@ -1,0 +1,98 @@
+[2023-05-06 00:06:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993347]
+[2023-05-06 00:06:49] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tyba-cvxpy
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compresso
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: q2terminal
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mango-cli
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kappaschedules
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbt-coves
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tera-toolbox
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hyperfast-python-template
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ovos-stt-http-server
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dreamai
+[2023-05-06 00:06:49] INFO root fetch - processPackages [hyperfast-python-template]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-06 00:06:49] INFO root fetch - processPackages [compresso]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-05-06 00:06:49] INFO root fetch - processPackages [q2terminal]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 00:06:49] INFO root fetch - processPackages [kappaschedules]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 00:06:49] INFO root fetch - processPackages [mango-cli]: New version: [0.0.9a2] Old Version: [0.0.9a1]
+[2023-05-06 00:06:49] INFO root fetch - processPackages [tera-toolbox]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 00:06:49] INFO root fetch - processPackages [tyba-cvxpy]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-05-06 00:06:49] INFO root fetch - processPackages [dbt-coves]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ovos-stt-http-server]: New version: [0.0.2a4] Old Version: [0.0.2a1]
+[2023-05-06 00:06:49] INFO root fetch - processPackages [hyperfast-python-template]: executing diffoscope
+[2023-05-06 00:06:49] INFO root fetch - processPackages [hyperfast-python-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfast_python_template-0.4.8.tar.gz tmp/hyperfast_python_template-0.4.9.tar.gz --markdown 20230506/h/hyperfast-python-template/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-06 00:06:49] INFO root fetch - processPackages [dreamai]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-06 00:06:49] INFO root fetch - processPackages [tera-toolbox]: executing diffoscope
+[2023-05-06 00:06:49] INFO root fetch - processPackages [tera-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tera-toolbox-0.0.2.tar.gz tmp/tera-toolbox-0.0.3.tar.gz --markdown 20230506/t/tera-toolbox/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 00:06:49] INFO root fetch - processPackages [compresso]: Downloading https://files.pythonhosted.org/packages/6e/ed/b69b46e88059bc3204035228cbd71795e6de3bca980c18f4f03872c9fa76/compresso-3.1.0-cp39-cp39-win_amd64.whl
+[2023-05-06 00:06:49] INFO root fetch - processPackages [q2terminal]: Downloading https://files.pythonhosted.org/packages/ac/a3/9a42d3a50386b802dd25ee91cdbe2a7c6ac4419beb7ba7e08020cdd772cc/q2terminal-0.1.1.tar.gz
+[2023-05-06 00:06:49] INFO root fetch - processPackages [kappaschedules]: Downloading https://files.pythonhosted.org/packages/80/d3/59917bee87db2d991ac28ee5406bce08f6bd5fb9607f27c6adf8e1104bb5/kappaschedules-0.0.8.tar.gz
+[2023-05-06 00:06:49] INFO root fetch - processPackages [tyba-cvxpy]: Downloading https://files.pythonhosted.org/packages/20/3c/793d75c67e1677307e739bb696090b946e30cb05906e5113670b5cb93cea/tyba-cvxpy-1.4.2.tar.gz
+[2023-05-06 00:06:49] INFO root fetch - processPackages [ovos-stt-http-server]: Downloading https://files.pythonhosted.org/packages/41/dc/184008be65189bbe831547e95929042ada738cbbb454f5a1700ad6ea56fa/ovos-stt-http-server-0.0.2a1.tar.gz
+[2023-05-06 00:06:49] INFO root fetch - processPackages [mango-cli]: executing diffoscope
+[2023-05-06 00:06:49] INFO root fetch - processPackages [mango-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango-cli-0.0.9a1.tar.gz tmp/mango-cli-0.0.9a2.tar.gz --markdown 20230506/m/mango-cli/0.0.9a1-0.0.9a2/diff.md --exclude *.pyd
+[2023-05-06 00:06:49] INFO root fetch - processPackages [dbt-coves]: executing diffoscope
+[2023-05-06 00:06:49] INFO root fetch - processPackages [dbt-coves]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_coves-1.4.8.tar.gz tmp/dbt_coves-1.4.9.tar.gz --markdown 20230506/d/dbt-coves/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-06 00:06:50] INFO root fetch - processPackages [dreamai]: executing diffoscope
+[2023-05-06 00:06:50] INFO root fetch - processPackages [dreamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai-0.8.0.tar.gz tmp/dreamai-0.9.0.tar.gz --markdown 20230506/d/dreamai/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 00:06:50] INFO root fetch - processPackages [q2terminal]: Downloading https://files.pythonhosted.org/packages/fa/60/cf672c5cf367d091ac90160328c0271aa7e209f825d43316ea0ff9f5e212/q2terminal-0.1.2.tar.gz
+[2023-05-06 00:06:50] INFO root fetch - processPackages [kappaschedules]: Downloading https://files.pythonhosted.org/packages/23/c2/e9e2653e206134d160cab76dea124544a616ea8484276c686372afdd7bb6/kappaschedules-0.0.9.tar.gz
+[2023-05-06 00:06:50] INFO root fetch - processPackages [compresso]: Downloading https://files.pythonhosted.org/packages/e3/b2/2206215bfc7a14b025198983ca6e7c9ee45762a33cd93e35a1575b629796/compresso-3.2.0.tar.gz
+[2023-05-06 00:06:50] INFO root fetch - processPackages [kappaschedules]: executing diffoscope
+[2023-05-06 00:06:50] INFO root fetch - processPackages [kappaschedules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappaschedules-0.0.8.tar.gz tmp/kappaschedules-0.0.9.tar.gz --markdown 20230506/k/kappaschedules/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 00:06:50] INFO root fetch - processPackages [q2terminal]: executing diffoscope
+[2023-05-06 00:06:50] INFO root fetch - processPackages [q2terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2terminal-0.1.1.tar.gz tmp/q2terminal-0.1.2.tar.gz --markdown 20230506/q/q2terminal/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 00:06:50] INFO root fetch - processPackages [ovos-stt-http-server]: Downloading https://files.pythonhosted.org/packages/53/f6/4f6ec08c74d114758bee1d7015577615f6431a9d6cf38c7da92302409076/ovos-stt-http-server-0.0.2a4.tar.gz
+[2023-05-06 00:06:50] INFO root fetch - processPackages [tyba-cvxpy]: Downloading https://files.pythonhosted.org/packages/da/f0/fda465921f16be51d27317ce1d493c0f99177bae7f06a1987b9e1b3f8755/tyba_cvxpy-1.4.3-cp39-cp39-win_amd64.whl
+[2023-05-06 00:06:50] INFO root fetch - processPackages [compresso]: executing diffoscope
+[2023-05-06 00:06:50] INFO root fetch - processPackages [compresso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compresso-3.1.0-cp39-cp39-win_amd64.whl.zip tmp/compresso-3.2.0.tar.gz --markdown 20230506/c/compresso/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-05-06 00:06:50] INFO root fetch - processPackages [ovos-stt-http-server]: executing diffoscope
+[2023-05-06 00:06:50] INFO root fetch - processPackages [ovos-stt-http-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-stt-http-server-0.0.2a1.tar.gz tmp/ovos-stt-http-server-0.0.2a4.tar.gz --markdown 20230506/o/ovos-stt-http-server/0.0.2a1-0.0.2a4/diff.md --exclude *.pyd
+[2023-05-06 00:06:50] INFO root fetch - processPackages [tyba-cvxpy]: executing diffoscope
+[2023-05-06 00:06:50] INFO root fetch - processPackages [tyba-cvxpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tyba-cvxpy-1.4.2.tar.gz tmp/tyba_cvxpy-1.4.3-cp39-cp39-win_amd64.whl.zip --markdown 20230506/t/tyba-cvxpy/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-05-06 00:06:51] INFO root fetch - processPackages [mango-cli]: Start processing: earthmover
+[2023-05-06 00:06:51] INFO root fetch - main [MainThread]: End processing [mango-cli]: success
+[2023-05-06 00:06:51] INFO root fetch - processPackages [tera-toolbox]: Start processing: certora-cli-alpha-eric-fp
+[2023-05-06 00:06:51] INFO root fetch - main [MainThread]: End processing [tera-toolbox]: success
+[2023-05-06 00:06:51] INFO root fetch - processPackages [q2terminal]: Start processing: paquete-fe
+[2023-05-06 00:06:51] INFO root fetch - main [MainThread]: End processing [q2terminal]: success
+[2023-05-06 00:06:51] INFO root fetch - processPackages [hyperfast-python-template]: Start processing: OctoBot-Commons
+[2023-05-06 00:06:51] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
+[2023-05-06 00:06:51] INFO root fetch - processPackages [earthmover]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-06 00:06:51] INFO root fetch - processPackages [certora-cli-alpha-eric-fp]: New version: [20230505.22.5.783378] Old Version: [20230505.17.37.532026]
+[2023-05-06 00:06:51] WARNING root fetch - processPackages [paquete-fe]: Skipping, unable to determine old version
+[2023-05-06 00:06:51] INFO root fetch - processPackages [paquete-fe]: Start processing: FlowIO
+[2023-05-06 00:06:51] INFO root fetch - main [MainThread]: End processing [paquete-fe] error
+[2023-05-06 00:06:51] INFO root fetch - processPackages [OctoBot-Commons]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-05-06 00:06:51] INFO root fetch - processPackages [dreamai]: Start processing: VAE-G2P
+[2023-05-06 00:06:51] INFO root fetch - main [MainThread]: End processing [dreamai]: success
+[2023-05-06 00:06:51] INFO root fetch - processPackages [FlowIO]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-06 00:06:51] INFO root fetch - processPackages [certora-cli-alpha-eric-fp]: Downloading https://files.pythonhosted.org/packages/fe/c0/bf445575efc85cfe531327d02032bb553aebd90c16abd9e3eaf5daef1c2c/certora-cli-alpha-eric-fp-20230505.17.37.532026.tar.gz
+[2023-05-06 00:06:51] INFO root fetch - processPackages [OctoBot-Commons]: Downloading https://files.pythonhosted.org/packages/1e/33/6e0d24993a31344c4bc1f17aaaa465c9b3e44cc381b6b0c679b8940ff960/OctoBot-Commons-1.9.2.tar.gz
+[2023-05-06 00:06:51] INFO root fetch - processPackages [earthmover]: Downloading https://files.pythonhosted.org/packages/32/4f/f0ebffc0d87d0718e61aeaf5d0d60260983961c6fb9e51e88a87a7d3b10f/earthmover-0.1.3-py3-none-any.whl
+[2023-05-06 00:06:51] INFO root fetch - processPackages [VAE-G2P]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-06 00:06:51] WARNING root fetch - processPackages [certora-cli-alpha-eric-fp]: Skipping package: exceeds size limit 38476355>=10485760
+[2023-05-06 00:06:51] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-fp] error
+[2023-05-06 00:06:51] INFO root fetch - main [MainThread]: End processing [kappaschedules]: success
+[2023-05-06 00:06:51] INFO root fetch - processPackages [FlowIO]: Downloading https://files.pythonhosted.org/packages/2c/df/e42c7c9a7106b1bd6fcac47ccc47ba52c7c43565fa6cc1870dcf27b5f1ca/FlowIO-1.1.1.tar.gz
+[2023-05-06 00:06:52] INFO root fetch - processPackages [earthmover]: executing diffoscope
+[2023-05-06 00:06:52] INFO root fetch - processPackages [earthmover]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/earthmover-0.1.2-py3-none-any.whl.zip tmp/earthmover-0.1.3-py3-none-any.whl.zip --markdown 20230506/e/earthmover/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-06 00:06:52] INFO root fetch - processPackages [OctoBot-Commons]: Downloading https://files.pythonhosted.org/packages/99/3a/f1393efc5676e60420c18714f8010f2637faede6f157cd29f8f45f759ce9/OctoBot-Commons-1.9.3.tar.gz
+[2023-05-06 00:06:52] INFO root fetch - processPackages [VAE-G2P]: Downloading https://files.pythonhosted.org/packages/c9/ad/c2c4bea976d8c527c8dfb413e519abd9ed301451852207f3b5a2bacfdb69/VAE_G2P-0.0.9.tar.gz
+[2023-05-06 00:06:52] INFO root fetch - main [MainThread]: End processing [compresso]: success
+[2023-05-06 00:06:52] INFO root fetch - processPackages [OctoBot-Commons]: executing diffoscope
+[2023-05-06 00:06:52] INFO root fetch - processPackages [OctoBot-Commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Commons-1.9.2.tar.gz tmp/OctoBot-Commons-1.9.3.tar.gz --markdown 20230506/O/OctoBot-Commons/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-05-06 00:06:52] INFO root fetch - processPackages [FlowIO]: Downloading https://files.pythonhosted.org/packages/68/75/97fad219b27e5ef5715863fed016e0a0f67e60e6d83c08cf55696e4a3d18/FlowIO-1.2.0.tar.gz
+[2023-05-06 00:06:52] INFO root fetch - main [MainThread]: End processing [dbt-coves]: success
+[2023-05-06 00:06:52] INFO root fetch - processPackages [VAE-G2P]: Downloading https://files.pythonhosted.org/packages/37/41/c6bb5414dd677dc30278fce7fb834be55effe289636cd22d0bbea3aa870f/VAE_G2P-0.1.0.tar.gz
+[2023-05-06 00:06:52] INFO root fetch - processPackages [FlowIO]: executing diffoscope
+[2023-05-06 00:06:52] INFO root fetch - processPackages [FlowIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlowIO-1.1.1.tar.gz tmp/FlowIO-1.2.0.tar.gz --markdown 20230506/F/FlowIO/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-06 00:06:52] INFO root fetch - processPackages [VAE-G2P]: executing diffoscope
+[2023-05-06 00:06:52] INFO root fetch - processPackages [VAE-G2P]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VAE_G2P-0.0.9.tar.gz tmp/VAE_G2P-0.1.0.tar.gz --markdown 20230506/V/VAE-G2P/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-06 00:06:52] INFO root fetch - main [MainThread]: End processing [tyba-cvxpy]: success
+[2023-05-06 00:06:53] INFO root fetch - main [MainThread]: End processing [ovos-stt-http-server]: success
+[2023-05-06 00:06:53] INFO root fetch - main [MainThread]: End processing [VAE-G2P]: success
+[2023-05-06 00:06:54] INFO root fetch - main [MainThread]: End processing [OctoBot-Commons]: success
+[2023-05-06 00:07:23] INFO root fetch - main [MainThread]: End processing [earthmover]: success
+[2023-05-06 00:07:23] INFO root fetch - main [MainThread]: End processing [FlowIO]: success
+[2023-05-06 00:07:23] INFO root fetch - main [MainThread]: Store serial: [17993418]
