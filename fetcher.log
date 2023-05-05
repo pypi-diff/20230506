@@ -96,3 +96,89 @@
 [2023-05-06 00:07:23] INFO root fetch - main [MainThread]: End processing [earthmover]: success
 [2023-05-06 00:07:23] INFO root fetch - main [MainThread]: End processing [FlowIO]: success
 [2023-05-06 00:07:23] INFO root fetch - main [MainThread]: Store serial: [17993418]
+[2023-05-06 00:12:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993418]
+[2023-05-06 00:12:32] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-06 00:12:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepperize.cdk-serverless-cluster-from-snapshot
+[2023-05-06 00:12:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OctoBot-Tentacles-Manager
+[2023-05-06 00:12:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-view-manager
+[2023-05-06 00:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mango-cli
+[2023-05-06 00:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mcgtpy
+[2023-05-06 00:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kosh
+[2023-05-06 00:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: estela
+[2023-05-06 00:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyswitchbee
+[2023-05-06 00:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: emmet-core
+[2023-05-06 00:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: anatools
+[2023-05-06 00:12:33] INFO root fetch - processPackages [kosh]: New version: [3.0] Old Version: [2.2]
+[2023-05-06 00:12:33] INFO root fetch - processPackages [mango-cli]: New version: [0.0.9a2] Old Version: [0.0.9a1]
+[2023-05-06 00:12:33] INFO root fetch - processPackages [pyswitchbee]: New version: [1.7.9] Old Version: [1.7.8]
+[2023-05-06 00:12:33] INFO root fetch - processPackages [mcgtpy]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-06 00:12:33] INFO root fetch - processPackages [django-view-manager]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-06 00:12:33] INFO root fetch - processPackages [estela]: New version: [0.2.1] Old Version: [0.2]
+[2023-05-06 00:12:33] INFO root fetch - processPackages [anatools]: New version: [3.1.2] Old Version: [3.1.1]
+[2023-05-06 00:12:33] INFO root fetch - processPackages [emmet-core]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-06 00:12:33] INFO root fetch - processPackages [OctoBot-Tentacles-Manager]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-06 00:12:33] INFO root fetch - processPackages [pyswitchbee]: executing diffoscope
+[2023-05-06 00:12:33] INFO root fetch - processPackages [pyswitchbee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyswitchbee-1.7.8.tar.gz tmp/pyswitchbee-1.7.9.tar.gz --markdown 20230506/p/pyswitchbee/1.7.8-1.7.9/diff.md --exclude *.pyd
+[2023-05-06 00:12:33] INFO root fetch - processPackages [mango-cli]: executing diffoscope
+[2023-05-06 00:12:33] INFO root fetch - processPackages [mango-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango-cli-0.0.9a1.tar.gz tmp/mango-cli-0.0.9a2.tar.gz --markdown 20230506/m/mango-cli/0.0.9a1-0.0.9a2/diff.md --exclude *.pyd
+[2023-05-06 00:12:33] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 00:12:33] INFO root fetch - processPackages [kosh]: Downloading https://files.pythonhosted.org/packages/1c/e3/c2f14a5a768ab65adc3ba65cc7399cffbb1b5b40de534ae92ebd2a8820ff/kosh-2.2.tar.gz
+[2023-05-06 00:12:33] INFO root fetch - processPackages [django-view-manager]: Downloading https://files.pythonhosted.org/packages/37/92/53ec573735e1f38bad02cefda71f7e09152601003cd5851a29a5dc40bd10/django_view_manager-1.0.0-py3-none-any.whl
+[2023-05-06 00:12:33] INFO root fetch - processPackages [estela]: Downloading https://files.pythonhosted.org/packages/43/65/152a58599e63b5eb97a5e586aa615353ff494fe6f4d3929f91f290cce5a4/estela-0.2.tar.gz
+[2023-05-06 00:12:33] INFO root fetch - processPackages [mcgtpy]: Downloading https://files.pythonhosted.org/packages/93/d7/35efc9eb38a7ffcc8891b0101c20cb3e8ac55ec1e40f8f9845a577a06f5f/mcgtpy-0.0.6.tar.gz
+[2023-05-06 00:12:33] INFO root fetch - processPackages [anatools]: Downloading https://files.pythonhosted.org/packages/d5/b7/8b507621819b4fb27b25b73676a3d448b274309aa910f24f8b1b3a4efdb3/anatools-3.1.1.tar.gz
+[2023-05-06 00:12:33] INFO root fetch - processPackages [emmet-core]: Downloading https://files.pythonhosted.org/packages/79/85/be17b500afc3d15c1ca6b73b0cf8b7564ecc06d89b27d59ca86581efa254/emmet-core-0.9.2.tar.gz
+[2023-05-06 00:12:33] INFO root fetch - processPackages [mcgtpy]: executing diffoscope
+[2023-05-06 00:12:33] INFO root fetch - processPackages [mcgtpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcgtpy-0.0.5.tar.gz tmp/mcgtpy-0.0.6.tar.gz --markdown 20230506/m/mcgtpy/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-06 00:12:33] INFO root fetch - processPackages [OctoBot-Tentacles-Manager]: Downloading https://files.pythonhosted.org/packages/a4/8d/d3050f37541966c5949c57d1210928389f9258707d88c150bf61cf8107a1/OctoBot-Tentacles-Manager-2.9.1.tar.gz
+[2023-05-06 00:12:33] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-05-06 00:12:33] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230506/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 00:12:33] INFO root fetch - processPackages [estela]: Downloading https://files.pythonhosted.org/packages/6e/46/a5b18f256ecbfc68d7c37fa5b42b02124a0307c2d29ac58d89dbcde31bee/estela-0.2.1.tar.gz
+[2023-05-06 00:12:33] INFO root fetch - processPackages [OctoBot-Tentacles-Manager]: executing diffoscope
+[2023-05-06 00:12:33] INFO root fetch - processPackages [OctoBot-Tentacles-Manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Tentacles-Manager-2.9.0.tar.gz tmp/OctoBot-Tentacles-Manager-2.9.1.tar.gz --markdown 20230506/O/OctoBot-Tentacles-Manager/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-06 00:12:33] INFO root fetch - processPackages [anatools]: Downloading https://files.pythonhosted.org/packages/40/7f/7e7e94dcc4bfbfe0d9c6c0328bbd7ce69d324218f5a06e21a5e788d8703b/anatools-3.1.2.tar.gz
+[2023-05-06 00:12:33] INFO root fetch - processPackages [django-view-manager]: Downloading https://files.pythonhosted.org/packages/45/0c/e6b46b1f1068277a7d0a110c6ed3985f55a15e0f586e24f4d60f273cc911/django_view_manager-1.0.1-py3-none-any.whl
+[2023-05-06 00:12:33] INFO root fetch - processPackages [estela]: executing diffoscope
+[2023-05-06 00:12:33] INFO root fetch - processPackages [estela]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/estela-0.2.tar.gz tmp/estela-0.2.1.tar.gz --markdown 20230506/e/estela/0.2-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 00:12:33] INFO root fetch - processPackages [emmet-core]: Downloading https://files.pythonhosted.org/packages/a8/71/fb3a5816288c941fd4a8039c02a612bdb6b1e002843cb9c029f1a4210aaa/emmet-core-0.9.3.tar.gz
+[2023-05-06 00:12:33] INFO root fetch - processPackages [anatools]: executing diffoscope
+[2023-05-06 00:12:33] INFO root fetch - processPackages [anatools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anatools-3.1.1.tar.gz tmp/anatools-3.1.2.tar.gz --markdown 20230506/a/anatools/3.1.1-3.1.2/diff.md --exclude *.pyd
+[2023-05-06 00:12:33] INFO root fetch - processPackages [django-view-manager]: executing diffoscope
+[2023-05-06 00:12:33] INFO root fetch - processPackages [django-view-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_view_manager-1.0.0-py3-none-any.whl.zip tmp/django_view_manager-1.0.1-py3-none-any.whl.zip --markdown 20230506/d/django-view-manager/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 00:12:33] INFO root fetch - processPackages [emmet-core]: executing diffoscope
+[2023-05-06 00:12:33] INFO root fetch - processPackages [emmet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emmet-core-0.9.2.tar.gz tmp/emmet-core-0.9.3.tar.gz --markdown 20230506/e/emmet-core/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-06 00:12:34] INFO root fetch - processPackages [kosh]: Downloading https://files.pythonhosted.org/packages/1e/75/e763d13b5f12583df620531ac54ca9014a21587dcb18756b48a50f6b9045/kosh-3.0.tar.gz
+[2023-05-06 00:12:34] INFO root fetch - processPackages [kosh]: executing diffoscope
+[2023-05-06 00:12:34] INFO root fetch - processPackages [kosh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kosh-2.2.tar.gz tmp/kosh-3.0.tar.gz --markdown 20230506/k/kosh/2.2-3.0/diff.md --exclude *.pyd
+[2023-05-06 00:12:34] INFO root fetch - processPackages [pyswitchbee]: Start processing: emmet-builders
+[2023-05-06 00:12:34] INFO root fetch - main [MainThread]: End processing [pyswitchbee]: success
+[2023-05-06 00:12:34] INFO root fetch - processPackages [mango-cli]: Start processing: q2terminal
+[2023-05-06 00:12:34] INFO root fetch - main [MainThread]: End processing [mango-cli]: success
+[2023-05-06 00:12:34] INFO root fetch - processPackages [q2terminal]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 00:12:34] INFO root fetch - processPackages [emmet-builders]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-06 00:12:34] INFO root fetch - processPackages [q2terminal]: executing diffoscope
+[2023-05-06 00:12:34] INFO root fetch - processPackages [q2terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2terminal-0.1.1.tar.gz tmp/q2terminal-0.1.2.tar.gz --markdown 20230506/q/q2terminal/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 00:12:34] INFO root fetch - processPackages [mcgtpy]: Start processing: rapidocr-openvinogpu
+[2023-05-06 00:12:34] INFO root fetch - main [MainThread]: End processing [mcgtpy]: success
+[2023-05-06 00:12:34] INFO root fetch - processPackages [emmet-builders]: Downloading https://files.pythonhosted.org/packages/b3/9f/ec08c5daefc1dab5587b18b933f8845a69362d5e4f4cd605e3028250efa8/emmet-builders-0.9.2.tar.gz
+[2023-05-06 00:12:35] WARNING root fetch - processPackages [rapidocr-openvinogpu]: Skipping, unable to determine old version
+[2023-05-06 00:12:35] INFO root fetch - processPackages [rapidocr-openvinogpu]: Start processing: emmet-api
+[2023-05-06 00:12:35] INFO root fetch - main [MainThread]: End processing [rapidocr-openvinogpu] error
+[2023-05-06 00:12:35] INFO root fetch - processPackages [emmet-api]: New version: [0.54.2] Old Version: [0.54.1]
+[2023-05-06 00:12:35] INFO root fetch - main [MainThread]: End processing [estela]: success
+[2023-05-06 00:12:35] INFO root fetch - main [MainThread]: End processing [django-view-manager]: success
+[2023-05-06 00:12:35] INFO root fetch - processPackages [emmet-builders]: Downloading https://files.pythonhosted.org/packages/d3/8a/c73672eb055bc5323b006090ad1112b6027d2d5cbbe46b35eaa33b3924be/emmet-builders-0.9.3.tar.gz
+[2023-05-06 00:12:35] INFO root fetch - processPackages [emmet-builders]: executing diffoscope
+[2023-05-06 00:12:35] INFO root fetch - processPackages [emmet-builders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emmet-builders-0.9.2.tar.gz tmp/emmet-builders-0.9.3.tar.gz --markdown 20230506/e/emmet-builders/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-06 00:12:35] INFO root fetch - processPackages [emmet-api]: Downloading https://files.pythonhosted.org/packages/7d/64/a3ac67fb9945d19a1612dc676f687a080312df5e77ea23ef41b3d9ceff90/emmet-api-0.54.2.tar.gz
+[2023-05-06 00:12:35] INFO root fetch - processPackages [emmet-api]: executing diffoscope
+[2023-05-06 00:12:35] INFO root fetch - processPackages [emmet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emmet-api-0.54.1.tar.gz tmp/emmet-api-0.54.2.tar.gz --markdown 20230506/e/emmet-api/0.54.1-0.54.2/diff.md --exclude *.pyd
+[2023-05-06 00:12:35] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
+[2023-05-06 00:12:35] INFO root fetch - main [MainThread]: End processing [q2terminal]: success
+[2023-05-06 00:12:35] INFO root fetch - main [MainThread]: End processing [kosh]: success
+[2023-05-06 00:12:36] INFO root fetch - main [MainThread]: End processing [emmet-builders]: success
+[2023-05-06 00:12:36] INFO root fetch - main [MainThread]: End processing [OctoBot-Tentacles-Manager]: success
+[2023-05-06 00:12:38] INFO root fetch - main [MainThread]: End processing [emmet-core]: success
+[2023-05-06 00:12:38] INFO root fetch - main [MainThread]: End processing [anatools]: success
+[2023-05-06 00:12:38] INFO root fetch - main [MainThread]: End processing [emmet-api]: success
+[2023-05-06 00:12:38] INFO root fetch - main [MainThread]: Store serial: [17993473]
