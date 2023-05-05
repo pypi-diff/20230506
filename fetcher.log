@@ -924,3 +924,62 @@
 [2023-05-06 01:27:12] INFO root fetch - processPackages [serializer-for-igi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serializer_for_igi-1.2.tar.gz tmp/serializer_for_igi-1.9.tar.gz --markdown 20230506/s/serializer-for-igi/1.2-1.9/diff.md --exclude *.pyd
 [2023-05-06 01:27:13] INFO root fetch - main [MainThread]: End processing [serializer-for-igi]: success
 [2023-05-06 01:27:13] INFO root fetch - main [MainThread]: Store serial: [17993991]
+[2023-05-06 01:32:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17993991]
+[2023-05-06 01:32:21] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 01:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: networking-arista
+[2023-05-06 01:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iricore
+[2023-05-06 01:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: networking-arista
+[2023-05-06 01:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: heaserver-trash-aws-s3
+[2023-05-06 01:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: networking-arista
+[2023-05-06 01:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pandasai
+[2023-05-06 01:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: networking-arista
+[2023-05-06 01:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: causalforge
+[2023-05-06 01:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: networking-arista
+[2023-05-06 01:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: networking-arista
+[2023-05-06 01:32:21] INFO root fetch - processPackages [pandasai]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-06 01:32:21] INFO root fetch - processPackages [heaserver-trash-aws-s3]: New version: [1.0.0a5] Old Version: [1.0.0a4]
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: New version: [2022.2.1] Old Version: [2022.2.0]
+[2023-05-06 01:32:21] INFO root fetch - processPackages [iricore]: New version: [1.4.0] Old Version: [1.3.1]
+[2023-05-06 01:32:21] INFO root fetch - processPackages [causalforge]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: New version: [2022.2.1] Old Version: [2022.2.0]
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: New version: [2022.2.1] Old Version: [2022.2.0]
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: New version: [2022.2.1] Old Version: [2022.2.0]
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: New version: [2022.2.1] Old Version: [2022.2.0]
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: New version: [2022.2.1] Old Version: [2022.2.0]
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: executing diffoscope
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networking_arista-2022.2.0.tar.gz tmp/networking_arista-2022.2.1.tar.gz --markdown 20230506/n/networking-arista/2022.2.0-2022.2.1/diff.md --exclude *.pyd
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: executing diffoscope
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: executing diffoscope
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networking_arista-2022.2.0.tar.gz tmp/networking_arista-2022.2.1.tar.gz --markdown 20230506/n/networking-arista/2022.2.0-2022.2.1/diff.md --exclude *.pyd
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networking_arista-2022.2.0.tar.gz tmp/networking_arista-2022.2.1.tar.gz --markdown 20230506/n/networking-arista/2022.2.0-2022.2.1/diff.md --exclude *.pyd
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: executing diffoscope
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networking_arista-2022.2.0.tar.gz tmp/networking_arista-2022.2.1.tar.gz --markdown 20230506/n/networking-arista/2022.2.0-2022.2.1/diff.md --exclude *.pyd
+[2023-05-06 01:32:21] INFO root fetch - processPackages [causalforge]: Downloading https://files.pythonhosted.org/packages/bb/3f/5ee21202ced634992afbed902cc46439c94bc5f2b4438e6c052a5b063d36/causalforge-0.0.7.tar.gz
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: executing diffoscope
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networking_arista-2022.2.0.tar.gz tmp/networking_arista-2022.2.1.tar.gz --markdown 20230506/n/networking-arista/2022.2.0-2022.2.1/diff.md --exclude *.pyd
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: executing diffoscope
+[2023-05-06 01:32:21] INFO root fetch - processPackages [networking-arista]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networking_arista-2022.2.0.tar.gz tmp/networking_arista-2022.2.1.tar.gz --markdown 20230506/n/networking-arista/2022.2.0-2022.2.1/diff.md --exclude *.pyd
+[2023-05-06 01:32:21] INFO root fetch - processPackages [iricore]: Downloading https://files.pythonhosted.org/packages/a0/ec/f56eee620c29f90de9e6b755d25bc1fc345397ea364aa723e799bcc878e9/iricore-1.3.1.tar.gz
+[2023-05-06 01:32:21] INFO root fetch - processPackages [heaserver-trash-aws-s3]: Downloading https://files.pythonhosted.org/packages/82/62/e08d41ee1d0fa4699033ae36b15501d7150f497cb476a08b817dbcbe07de/heaserver-trash-aws-s3-1.0.0a5.tar.gz
+[2023-05-06 01:32:21] INFO root fetch - processPackages [pandasai]: Downloading https://files.pythonhosted.org/packages/5d/e2/24a8cf7b9dcbf163fbaced4ae19f03518158238b8b5190e14e9c173b5ecc/pandasai-0.2.3.tar.gz
+[2023-05-06 01:32:21] INFO root fetch - processPackages [pandasai]: executing diffoscope
+[2023-05-06 01:32:21] INFO root fetch - processPackages [pandasai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasai-0.2.2.tar.gz tmp/pandasai-0.2.3.tar.gz --markdown 20230506/p/pandasai/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-06 01:32:21] INFO root fetch - processPackages [heaserver-trash-aws-s3]: executing diffoscope
+[2023-05-06 01:32:21] INFO root fetch - processPackages [heaserver-trash-aws-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-trash-aws-s3-1.0.0a4.tar.gz tmp/heaserver-trash-aws-s3-1.0.0a5.tar.gz --markdown 20230506/h/heaserver-trash-aws-s3/1.0.0a4-1.0.0a5/diff.md --exclude *.pyd
+[2023-05-06 01:32:22] INFO root fetch - processPackages [causalforge]: Downloading https://files.pythonhosted.org/packages/a6/b8/b674845bd067ae4ae34ae54cb76b358aceb813ea85e4744dc62fb51336cb/causalforge-0.0.8.tar.gz
+[2023-05-06 01:32:22] INFO root fetch - processPackages [causalforge]: executing diffoscope
+[2023-05-06 01:32:22] INFO root fetch - processPackages [causalforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/causalforge-0.0.7.tar.gz tmp/causalforge-0.0.8.tar.gz --markdown 20230506/c/causalforge/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 01:32:22] INFO root fetch - processPackages [iricore]: Downloading https://files.pythonhosted.org/packages/cd/b3/894cc12f2d8963886c2014c69a894db52e0038667bdd92408328be2688db/iricore-1.4.0.tar.gz
+[2023-05-06 01:32:22] INFO root fetch - processPackages [iricore]: executing diffoscope
+[2023-05-06 01:32:22] INFO root fetch - processPackages [iricore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iricore-1.3.1.tar.gz tmp/iricore-1.4.0.tar.gz --markdown 20230506/i/iricore/1.3.1-1.4.0/diff.md --exclude *.pyd
+[2023-05-06 01:32:23] INFO root fetch - main [MainThread]: End processing [heaserver-trash-aws-s3]: success
+[2023-05-06 01:32:23] INFO root fetch - main [MainThread]: End processing [causalforge]: success
+[2023-05-06 01:32:23] INFO root fetch - main [MainThread]: End processing [pandasai]: success
+[2023-05-06 01:32:23] INFO root fetch - main [MainThread]: End processing [networking-arista]: success
+[2023-05-06 01:32:25] INFO root fetch - main [MainThread]: End processing [networking-arista]: success
+[2023-05-06 01:32:25] INFO root fetch - main [MainThread]: End processing [networking-arista]: success
+[2023-05-06 01:32:25] INFO root fetch - main [MainThread]: End processing [networking-arista]: success
+[2023-05-06 01:32:25] INFO root fetch - main [MainThread]: End processing [networking-arista]: success
+[2023-05-06 01:32:25] INFO root fetch - main [MainThread]: End processing [networking-arista]: success
+[2023-05-06 01:32:31] INFO root fetch - main [MainThread]: End processing [iricore]: success
+[2023-05-06 01:32:31] INFO root fetch - main [MainThread]: Store serial: [17994020]
