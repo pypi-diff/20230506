@@ -4404,3 +4404,30 @@
 [2023-05-06 04:07:32] INFO root fetch - main [MainThread]: End processing [flyteidl]: success
 [2023-05-06 04:07:33] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-05-06 04:07:33] INFO root fetch - main [MainThread]: Store serial: [17996022]
+[2023-05-06 04:12:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996022]
+[2023-05-06 04:12:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 04:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superlive
+[2023-05-06 04:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: esdbclient
+[2023-05-06 04:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ExcelAlchemy
+[2023-05-06 04:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: editanything
+[2023-05-06 04:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: excelcolumnizer
+[2023-05-06 04:12:42] WARNING root fetch - processPackages [superlive]: Skipping, unable to determine old version
+[2023-05-06 04:12:42] INFO root fetch - main [MainThread]: End processing [superlive] error
+[2023-05-06 04:12:42] INFO root fetch - processPackages [excelcolumnizer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 04:12:42] INFO root fetch - processPackages [ExcelAlchemy]: New version: [1.0.0] Old Version: [0.1a2]
+[2023-05-06 04:12:42] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 04:12:42] INFO root fetch - processPackages [esdbclient]: New version: [0.9] Old Version: [0.8]
+[2023-05-06 04:12:42] INFO root fetch - processPackages [excelcolumnizer]: executing diffoscope
+[2023-05-06 04:12:42] INFO root fetch - processPackages [excelcolumnizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/excelcolumnizer-0.0.8.tar.gz tmp/excelcolumnizer-0.0.9.tar.gz --markdown 20230506/e/excelcolumnizer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 04:12:42] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 04:12:42] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 04:12:43] INFO root fetch - processPackages [ExcelAlchemy]: Downloading https://files.pythonhosted.org/packages/39/6a/3306e15c76709d2c385f9375c928e17165799e995308107e24e60ff87495/ExcelAlchemy-1.0.0.tar.gz
+[2023-05-06 04:12:43] INFO root fetch - processPackages [ExcelAlchemy]: executing diffoscope
+[2023-05-06 04:12:43] INFO root fetch - processPackages [ExcelAlchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ExcelAlchemy-0.1a2.tar.gz tmp/ExcelAlchemy-1.0.0.tar.gz --markdown 20230506/E/ExcelAlchemy/0.1a2-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 04:12:43] INFO root fetch - processPackages [esdbclient]: executing diffoscope
+[2023-05-06 04:12:43] INFO root fetch - processPackages [esdbclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esdbclient-0.8.tar.gz tmp/esdbclient-0.9.tar.gz --markdown 20230506/e/esdbclient/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-06 04:12:43] INFO root fetch - main [MainThread]: End processing [excelcolumnizer]: success
+[2023-05-06 04:12:43] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 04:12:44] INFO root fetch - main [MainThread]: End processing [esdbclient]: success
+[2023-05-06 04:12:44] INFO root fetch - main [MainThread]: End processing [ExcelAlchemy]: success
+[2023-05-06 04:12:44] INFO root fetch - main [MainThread]: Store serial: [17996037]
