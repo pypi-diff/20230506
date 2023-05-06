@@ -10024,3 +10024,42 @@ EOFError: EOF read where object expected
 [2023-05-06 13:45:34] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
 [2023-05-06 13:45:37] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
 [2023-05-06 13:45:37] INFO root fetch - main [MainThread]: Store serial: [17999361]
+[2023-05-06 13:50:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999361]
+[2023-05-06 13:50:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 13:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaaql-monitor
+[2023-05-06 13:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xdrlib3
+[2023-05-06 13:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hcpdiff
+[2023-05-06 13:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hyperfetch
+[2023-05-06 13:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nlpashto
+[2023-05-06 13:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: merqube-client-lib
+[2023-05-06 13:50:46] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.47] Old Version: [1.2.46]
+[2023-05-06 13:50:46] INFO root fetch - processPackages [hcpdiff]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-06 13:50:46] INFO root fetch - processPackages [xdrlib3]: New version: [0.1.1] Old Version: [0.1.0.dev1]
+[2023-05-06 13:50:46] INFO root fetch - processPackages [hyperfetch]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 13:50:46] INFO root fetch - processPackages [merqube-client-lib]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-06 13:50:46] INFO root fetch - processPackages [nlpashto]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 13:50:46] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/34/f3/e30c7764c8c93795c187bd2812caf92d5bd9f21f0846bc15f90e9d387fc7/hcpdiff-0.3.4.tar.gz
+[2023-05-06 13:50:46] INFO root fetch - processPackages [nlpashto]: Downloading https://files.pythonhosted.org/packages/44/2a/827e21b8c1d67647a86e3ec8cef90f2d2dff4678a34eed927478453ad250/nlpashto-0.0.7.tar.gz
+[2023-05-06 13:50:46] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/b3/8f/e18da8f81da6f7866429acb5fe6ce3136ad343e8cdae50558d312cb40d1b/jaaql-monitor-1.2.47.tar.gz
+[2023-05-06 13:50:46] INFO root fetch - processPackages [xdrlib3]: Downloading https://files.pythonhosted.org/packages/97/8e/aab54b230c9f021678c75365d8247ac40bf5beaf5b08a7d88d6706b80e3a/xdrlib3-0.1.1.tar.gz
+[2023-05-06 13:50:46] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:50:46] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.46.tar.gz tmp/jaaql-monitor-1.2.47.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.46-1.2.47/diff.md --exclude *.pyd
+[2023-05-06 13:50:46] INFO root fetch - processPackages [merqube-client-lib]: Downloading https://files.pythonhosted.org/packages/f7/8c/447b6af67d70585d7cca01438fc3934769681e104460200b54362be94933/merqube_client_lib-0.5.2.tar.gz
+[2023-05-06 13:50:46] INFO root fetch - processPackages [hyperfetch]: executing diffoscope
+[2023-05-06 13:50:46] INFO root fetch - processPackages [xdrlib3]: executing diffoscope
+[2023-05-06 13:50:46] INFO root fetch - processPackages [hyperfetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfetch-1.0.8.tar.gz tmp/hyperfetch-1.0.9.tar.gz --markdown 20230506/h/hyperfetch/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 13:50:46] INFO root fetch - processPackages [xdrlib3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdrlib3-0.1.0.dev1.tar.gz tmp/xdrlib3-0.1.1.tar.gz --markdown 20230506/x/xdrlib3/0.1.0.dev1-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 13:50:46] INFO root fetch - processPackages [hcpdiff]: executing diffoscope
+[2023-05-06 13:50:46] INFO root fetch - processPackages [hcpdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcpdiff-0.3.3.tar.gz tmp/hcpdiff-0.3.4.tar.gz --markdown 20230506/h/hcpdiff/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-06 13:50:47] INFO root fetch - processPackages [merqube-client-lib]: executing diffoscope
+[2023-05-06 13:50:47] INFO root fetch - processPackages [merqube-client-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/merqube_client_lib-0.5.1.tar.gz tmp/merqube_client_lib-0.5.2.tar.gz --markdown 20230506/m/merqube-client-lib/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-06 13:50:47] INFO root fetch - processPackages [nlpashto]: Downloading https://files.pythonhosted.org/packages/db/2e/a9ef012d7323462bbefcbbe86583ceb7cf7c1902e05c2e70a94a61f96eca/nlpashto-0.0.8.tar.gz
+[2023-05-06 13:50:47] INFO root fetch - processPackages [nlpashto]: executing diffoscope
+[2023-05-06 13:50:47] INFO root fetch - processPackages [nlpashto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpashto-0.0.7.tar.gz tmp/nlpashto-0.0.8.tar.gz --markdown 20230506/n/nlpashto/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 13:50:48] INFO root fetch - main [MainThread]: End processing [xdrlib3]: success
+[2023-05-06 13:50:48] INFO root fetch - main [MainThread]: End processing [hyperfetch]: success
+[2023-05-06 13:50:48] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:50:48] INFO root fetch - main [MainThread]: End processing [merqube-client-lib]: success
+[2023-05-06 13:50:48] INFO root fetch - main [MainThread]: End processing [nlpashto]: success
+[2023-05-06 13:50:48] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
+[2023-05-06 13:50:48] INFO root fetch - main [MainThread]: Store serial: [17999381]
