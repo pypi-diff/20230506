@@ -11024,3 +11024,36 @@ EOFError: EOF read where object expected
 [2023-05-06 15:46:31] INFO root fetch - main [MainThread]: End processing [irails]: success
 [2023-05-06 15:46:32] INFO root fetch - main [MainThread]: End processing [tweety-ns]: success
 [2023-05-06 15:46:32] INFO root fetch - main [MainThread]: Store serial: [17999995]
+[2023-05-06 15:51:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999995]
+[2023-05-06 15:51:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 15:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: evalAIRR
+[2023-05-06 15:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maturin
+[2023-05-06 15:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LordPath
+[2023-05-06 15:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylabolt
+[2023-05-06 15:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: so-vits-svc-fork
+[2023-05-06 15:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: evalAIRR
+[2023-05-06 15:51:41] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 15:51:41] WARNING root fetch - processPackages [pylabolt]: Skipping, unable to determine old version
+[2023-05-06 15:51:41] INFO root fetch - main [MainThread]: End processing [pylabolt] error
+[2023-05-06 15:51:41] INFO root fetch - processPackages [LordPath]: New version: [2023.5.6.4] Old Version: [2023.5.4]
+[2023-05-06 15:51:41] INFO root fetch - processPackages [maturin]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-05-06 15:51:41] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 15:51:41] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.5] Old Version: [3.9.4]
+[2023-05-06 15:51:41] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-05-06 15:51:41] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.9.4.tar.gz tmp/so_vits_svc_fork-3.9.5.tar.gz --markdown 20230506/s/so-vits-svc-fork/3.9.4-3.9.5/diff.md --exclude *.pyd
+[2023-05-06 15:51:41] INFO root fetch - processPackages [maturin]: Downloading https://files.pythonhosted.org/packages/08/0e/774c5b7935e8a4932a786ed23abdadd50663a54807939f95b3ce21f3f174/maturin-1.0.0b9.tar.gz
+[2023-05-06 15:51:41] INFO root fetch - processPackages [LordPath]: Downloading https://files.pythonhosted.org/packages/8e/b1/51006634a148a165d21e98745a7e6fde4eb4615ee83a4a3506431ab20b78/LordPath-2023.5.6.4.tar.gz
+[2023-05-06 15:51:41] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-05-06 15:51:41] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230506/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 15:51:41] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-05-06 15:51:41] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230506/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 15:51:41] INFO root fetch - processPackages [LordPath]: executing diffoscope
+[2023-05-06 15:51:41] INFO root fetch - processPackages [LordPath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LordPath-2023.5.4.tar.gz tmp/LordPath-2023.5.6.4.tar.gz --markdown 20230506/L/LordPath/2023.5.4-2023.5.6.4/diff.md --exclude *.pyd
+[2023-05-06 15:51:41] INFO root fetch - processPackages [maturin]: executing diffoscope
+[2023-05-06 15:51:41] INFO root fetch - processPackages [maturin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maturin-1.0.0b8.tar.gz tmp/maturin-1.0.0b9.tar.gz --markdown 20230506/m/maturin/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-05-06 15:51:42] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-05-06 15:51:42] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-05-06 15:51:42] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-05-06 15:51:42] INFO root fetch - main [MainThread]: End processing [LordPath]: success
+[2023-05-06 15:51:43] INFO root fetch - main [MainThread]: End processing [maturin]: success
+[2023-05-06 15:51:43] INFO root fetch - main [MainThread]: Store serial: [18000026]
