@@ -11300,3 +11300,35 @@ EOFError: EOF read where object expected
 [2023-05-06 16:18:08] INFO root fetch - main [MainThread]: End processing [scribber]: success
 [2023-05-06 16:18:18] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
 [2023-05-06 16:18:18] INFO root fetch - main [MainThread]: Store serial: [18000209]
+[2023-05-06 16:23:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000209]
+[2023-05-06 16:23:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 16:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-05-06 16:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stlog
+[2023-05-06 16:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-06 16:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vmilog-py
+[2023-05-06 16:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ccxt
+[2023-05-06 16:23:27] INFO root fetch - processPackages [vmilog-py]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-06 16:23:27] INFO root fetch - processPackages [stlog]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 16:23:27] INFO root fetch - processPackages [ccxt]: New version: [3.0.96] Old Version: [3.0.95]
+[2023-05-06 16:23:27] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-06 16:23:27] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-06 16:23:27] INFO root fetch - processPackages [vmilog-py]: Downloading https://files.pythonhosted.org/packages/29/99/01b837d98d4425966b9f285ff82c72553f669c3767804fbe1cab97f4ebaa/vmilog-py-0.7.0.tar.gz
+[2023-05-06 16:23:27] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-06 16:23:27] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230506/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-06 16:23:27] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-06 16:23:27] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230506/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-06 16:23:27] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/1f/74/6dd387158822652c461b40bbb0bca2550af90534d004622edef6ee79b42d/ccxt-3.0.96.tar.gz
+[2023-05-06 16:23:27] INFO root fetch - processPackages [stlog]: Downloading https://files.pythonhosted.org/packages/1b/71/13c64878b8b6f1466884be637fb557d456c7b7c078f7c868e0669c0476b5/stlog-0.1.1.tar.gz
+[2023-05-06 16:23:27] INFO root fetch - processPackages [stlog]: executing diffoscope
+[2023-05-06 16:23:27] INFO root fetch - processPackages [stlog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stlog-0.1.0.tar.gz tmp/stlog-0.1.1.tar.gz --markdown 20230506/s/stlog/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 16:23:28] INFO root fetch - processPackages [vmilog-py]: Downloading https://files.pythonhosted.org/packages/73/c2/b91de83de0c0928e416cf123272ca57c556c94dbf6a3dfb21ec20aa71846/vmilog-py-0.8.0.tar.gz
+[2023-05-06 16:23:28] INFO root fetch - processPackages [vmilog-py]: executing diffoscope
+[2023-05-06 16:23:28] INFO root fetch - processPackages [vmilog-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmilog-py-0.7.0.tar.gz tmp/vmilog-py-0.8.0.tar.gz --markdown 20230506/v/vmilog-py/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-06 16:23:28] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-05-06 16:23:28] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.95.tar.gz tmp/ccxt-3.0.96.tar.gz --markdown 20230506/c/ccxt/3.0.95-3.0.96/diff.md --exclude *.pyd
+[2023-05-06 16:23:29] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-06 16:23:29] INFO root fetch - main [MainThread]: End processing [stlog]: success
+[2023-05-06 16:23:29] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-06 16:23:29] INFO root fetch - main [MainThread]: End processing [vmilog-py]: success
+[2023-05-06 16:23:36] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-05-06 16:23:36] INFO root fetch - main [MainThread]: Store serial: [18000224]
