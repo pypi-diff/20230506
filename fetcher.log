@@ -8868,3 +8868,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 11:55:25] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
 [2023-05-06 11:55:25] INFO root fetch - main [MainThread]: End processing [sysexecute]: success
 [2023-05-06 11:55:25] INFO root fetch - main [MainThread]: Store serial: [17998739]
+[2023-05-06 12:00:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998739]
+[2023-05-06 12:00:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 12:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agent-link
+[2023-05-06 12:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: masonite-ready-auth
+[2023-05-06 12:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lnsync
+[2023-05-06 12:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-travelmanager
+[2023-05-06 12:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hcpdiff
+[2023-05-06 12:00:34] INFO root fetch - processPackages [masonite-ready-auth]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 12:00:34] INFO root fetch - processPackages [agent-link]: New version: [0.1.9] Old Version: [0.1.2]
+[2023-05-06 12:00:34] INFO root fetch - processPackages [lnsync]: New version: [0.8.6rc2] Old Version: [0.8.5]
+[2023-05-06 12:00:34] INFO root fetch - processPackages [agent-link]: Downloading https://files.pythonhosted.org/packages/ed/5c/57931bbb971a921efd05480fefcb72397a18b345031387764c69c27b90fc/agent_link-0.1.2.tar.gz
+[2023-05-06 12:00:34] INFO root fetch - processPackages [python-travelmanager]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-06 12:00:34] INFO root fetch - processPackages [hcpdiff]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-06 12:00:34] WARNING root fetch - processPackages [agent-link]: Skipping package: exceeds size limit 15899943>=10485760
+[2023-05-06 12:00:34] INFO root fetch - main [MainThread]: End processing [agent-link] error
+[2023-05-06 12:00:34] INFO root fetch - processPackages [masonite-ready-auth]: Downloading https://files.pythonhosted.org/packages/b5/4f/d6098f61742772d3dcbaaa0d0867adb4760e44c632e4ebac400a80591a10/masonite-ready_auth-0.0.3.tar.gz
+[2023-05-06 12:00:34] INFO root fetch - processPackages [python-travelmanager]: Downloading https://files.pythonhosted.org/packages/96/12/5a83c599e694d7833377c67a30d696db523d5b7e7c961ccf4f10b7831fcc/python_travelmanager-0.2.2.tar.gz
+[2023-05-06 12:00:34] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/29/c5/e1edb6b4ca66a73b7cee7d94ec9b0700c0cdf5010ec7d9662191ba1807f5/hcpdiff-0.3.2.tar.gz
+[2023-05-06 12:00:34] INFO root fetch - processPackages [lnsync]: Downloading https://files.pythonhosted.org/packages/a3/67/a7a12bb64e3adc6e811572171f1711f6b810d41c1c00c27dcb64d89bfde9/lnsync-0.8.6rc2.tar.gz
+[2023-05-06 12:00:34] INFO root fetch - processPackages [masonite-ready-auth]: executing diffoscope
+[2023-05-06 12:00:34] INFO root fetch - processPackages [masonite-ready-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masonite-ready_auth-0.0.2.tar.gz tmp/masonite-ready_auth-0.0.3.tar.gz --markdown 20230506/m/masonite-ready-auth/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 12:00:34] INFO root fetch - processPackages [lnsync]: executing diffoscope
+[2023-05-06 12:00:34] INFO root fetch - processPackages [lnsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnsync-0.8.5.tar.gz tmp/lnsync-0.8.6rc2.tar.gz --markdown 20230506/l/lnsync/0.8.5-0.8.6rc2/diff.md --exclude *.pyd
+[2023-05-06 12:00:34] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/d3/5b/043533bf35bf8d315dff3933ccd09eab3c8b019d685bfd14b64f84c7f5b5/hcpdiff-0.3.3.tar.gz
+[2023-05-06 12:00:34] INFO root fetch - processPackages [python-travelmanager]: Downloading https://files.pythonhosted.org/packages/7b/f6/63b78ecea46be2c35d61dcf9e8eb37c6f03e90cca0471ca3aa014f7bff20/python_travelmanager-0.2.3.tar.gz
+[2023-05-06 12:00:34] INFO root fetch - processPackages [python-travelmanager]: executing diffoscope
+[2023-05-06 12:00:34] INFO root fetch - processPackages [python-travelmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_travelmanager-0.2.2.tar.gz tmp/python_travelmanager-0.2.3.tar.gz --markdown 20230506/p/python-travelmanager/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-06 12:00:34] INFO root fetch - processPackages [hcpdiff]: executing diffoscope
+[2023-05-06 12:00:34] INFO root fetch - processPackages [hcpdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcpdiff-0.3.2.tar.gz tmp/hcpdiff-0.3.3.tar.gz --markdown 20230506/h/hcpdiff/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-06 12:00:35] INFO root fetch - main [MainThread]: End processing [masonite-ready-auth]: success
+[2023-05-06 12:00:35] INFO root fetch - main [MainThread]: End processing [python-travelmanager]: success
+[2023-05-06 12:00:35] INFO root fetch - main [MainThread]: End processing [lnsync]: success
+[2023-05-06 12:00:36] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
+[2023-05-06 12:00:36] INFO root fetch - main [MainThread]: Store serial: [17998754]
