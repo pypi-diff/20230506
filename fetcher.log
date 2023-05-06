@@ -4867,3 +4867,43 @@
 [2023-05-06 04:52:36] INFO root fetch - main [MainThread]: End processing [whl]: success
 [2023-05-06 04:52:42] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
 [2023-05-06 04:52:42] INFO root fetch - main [MainThread]: Store serial: [17996343]
+[2023-05-06 04:57:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996343]
+[2023-05-06 04:57:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 04:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: f5-openstack-lbaasv2-inventory
+[2023-05-06 04:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neosekai-api
+[2023-05-06 04:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bell-avr-libraries
+[2023-05-06 04:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chalkpy
+[2023-05-06 04:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: excel-cleaner
+[2023-05-06 04:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: interval-tools
+[2023-05-06 04:57:51] INFO root fetch - processPackages [f5-openstack-lbaasv2-inventory]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-06 04:57:51] INFO root fetch - processPackages [excel-cleaner]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-05-06 04:57:51] INFO root fetch - processPackages [chalkpy]: New version: [2.2.0] Old Version: [2.1.9]
+[2023-05-06 04:57:51] INFO root fetch - processPackages [neosekai-api]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-05-06 04:57:51] INFO root fetch - processPackages [interval-tools]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-06 04:57:51] INFO root fetch - processPackages [bell-avr-libraries]: New version: [0.2.0a1] Old Version: [0.2.0a0]
+[2023-05-06 04:57:51] INFO root fetch - processPackages [interval-tools]: executing diffoscope
+[2023-05-06 04:57:51] INFO root fetch - processPackages [interval-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interval-tools-0.9.0.tar.gz tmp/interval-tools-0.9.1.tar.gz --markdown 20230506/i/interval-tools/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-06 04:57:51] INFO root fetch - processPackages [f5-openstack-lbaasv2-inventory]: Downloading https://files.pythonhosted.org/packages/da/57/76eb3ebb2f8a2b26573bbf249a46d8b4336c2161c3f1f403741fada2ef43/f5-openstack-lbaasv2-inventory-1.0.1.tar.gz
+[2023-05-06 04:57:51] INFO root fetch - processPackages [neosekai-api]: Downloading https://files.pythonhosted.org/packages/58/9f/c91cc72b5bb65252e1e6ac1765cb94969d1641d113eedc407e78188838ce/neosekai_api-2.1.0-py3-none-any.whl
+[2023-05-06 04:57:51] INFO root fetch - processPackages [excel-cleaner]: Downloading https://files.pythonhosted.org/packages/60/a0/f3a3983793812038d9b65c7bd0a993b928fbe3a75997706ff667e779e73d/excel_cleaner-0.0.16.tar.gz
+[2023-05-06 04:57:51] INFO root fetch - processPackages [bell-avr-libraries]: Downloading https://files.pythonhosted.org/packages/e3/f7/9a71121709ca6e04366df6f85dd80b7e587fe2df4865a09794315ec46d8d/bell_avr_libraries-0.2.0a0.tar.gz
+[2023-05-06 04:57:51] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/dd/89/be527b8d299d1d2d3c7930d21022f1238fddc197b2491020a1082f5d1a0a/chalkpy-2.2.0.tar.gz
+[2023-05-06 04:57:51] INFO root fetch - processPackages [excel-cleaner]: executing diffoscope
+[2023-05-06 04:57:51] INFO root fetch - processPackages [excel-cleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/excel_cleaner-0.0.15.tar.gz tmp/excel_cleaner-0.0.16.tar.gz --markdown 20230506/e/excel-cleaner/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-05-06 04:57:51] INFO root fetch - processPackages [neosekai-api]: executing diffoscope
+[2023-05-06 04:57:51] INFO root fetch - processPackages [neosekai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neosekai_api-2.0.0-py3-none-any.whl.zip tmp/neosekai_api-2.1.0-py3-none-any.whl.zip --markdown 20230506/n/neosekai-api/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-05-06 04:57:51] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-05-06 04:57:51] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.1.9.tar.gz tmp/chalkpy-2.2.0.tar.gz --markdown 20230506/c/chalkpy/2.1.9-2.2.0/diff.md --exclude *.pyd
+[2023-05-06 04:57:51] INFO root fetch - processPackages [bell-avr-libraries]: Downloading https://files.pythonhosted.org/packages/9b/6a/7840ab9861165a7afd529bd810e3ff2be733d20ef3d0c39b784d0f4e0912/bell_avr_libraries-0.2.0a1.tar.gz
+[2023-05-06 04:57:51] INFO root fetch - processPackages [f5-openstack-lbaasv2-inventory]: Downloading https://files.pythonhosted.org/packages/75/d8/9c0f0fbc6224522976515f98c591e00d20a9a48ebfdca78773a52ce57390/f5-openstack-lbaasv2-inventory-1.1.0.tar.gz
+[2023-05-06 04:57:51] INFO root fetch - processPackages [f5-openstack-lbaasv2-inventory]: executing diffoscope
+[2023-05-06 04:57:51] INFO root fetch - processPackages [f5-openstack-lbaasv2-inventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/f5-openstack-lbaasv2-inventory-1.0.1.tar.gz tmp/f5-openstack-lbaasv2-inventory-1.1.0.tar.gz --markdown 20230506/f/f5-openstack-lbaasv2-inventory/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-06 04:57:51] INFO root fetch - processPackages [bell-avr-libraries]: executing diffoscope
+[2023-05-06 04:57:51] INFO root fetch - processPackages [bell-avr-libraries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bell_avr_libraries-0.2.0a0.tar.gz tmp/bell_avr_libraries-0.2.0a1.tar.gz --markdown 20230506/b/bell-avr-libraries/0.2.0a0-0.2.0a1/diff.md --exclude *.pyd
+[2023-05-06 04:57:52] INFO root fetch - main [MainThread]: End processing [interval-tools]: success
+[2023-05-06 04:57:52] INFO root fetch - main [MainThread]: End processing [excel-cleaner]: success
+[2023-05-06 04:57:52] INFO root fetch - main [MainThread]: End processing [neosekai-api]: success
+[2023-05-06 04:57:53] INFO root fetch - main [MainThread]: End processing [bell-avr-libraries]: success
+[2023-05-06 04:57:53] INFO root fetch - main [MainThread]: End processing [f5-openstack-lbaasv2-inventory]: success
+[2023-05-06 04:57:58] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-05-06 04:57:58] INFO root fetch - main [MainThread]: Store serial: [17996361]
