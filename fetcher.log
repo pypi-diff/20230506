@@ -4933,3 +4933,26 @@
 [2023-05-06 05:03:09] INFO root fetch - main [MainThread]: End processing [just-jobs]: success
 [2023-05-06 05:03:09] INFO root fetch - main [MainThread]: End processing [yz-core2]: success
 [2023-05-06 05:03:09] INFO root fetch - main [MainThread]: Store serial: [17996375]
+[2023-05-06 05:08:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996375]
+[2023-05-06 05:08:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-06 05:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: c-shelph
+[2023-05-06 05:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: halmos
+[2023-05-06 05:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: appmesh
+[2023-05-06 05:08:17] INFO root fetch - processPackages [c-shelph]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-06 05:08:17] INFO root fetch - processPackages [appmesh]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-06 05:08:17] INFO root fetch - processPackages [halmos]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 05:08:18] INFO root fetch - processPackages [c-shelph]: Downloading https://files.pythonhosted.org/packages/98/fd/4548ac3dd575fda89d9bba8c951718fc06a92f2c5c7e2e605e35d4e47b4d/c-shelph-2.1.1.tar.gz
+[2023-05-06 05:08:18] INFO root fetch - processPackages [halmos]: Downloading https://files.pythonhosted.org/packages/10/3c/004ad0094baa80d2e41e043f3b7ac8a5b82c00e54fa717d6a7a5b6db2483/halmos-0.0.7.tar.gz
+[2023-05-06 05:08:18] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/68/89/315392b503f2199db1ae29c3a608ac87fcad7fc8847b2223ced4e83e86e6/appmesh-0.4.4-py3-none-any.whl
+[2023-05-06 05:08:18] INFO root fetch - processPackages [appmesh]: executing diffoscope
+[2023-05-06 05:08:18] INFO root fetch - processPackages [appmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appmesh-0.4.3-py3-none-any.whl.zip tmp/appmesh-0.4.4-py3-none-any.whl.zip --markdown 20230506/a/appmesh/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-06 05:08:18] INFO root fetch - processPackages [c-shelph]: Downloading https://files.pythonhosted.org/packages/1a/c0/61fc15acb6b80fd52238c7bf97706495fcce5e9806446608df8e730c2938/c-shelph-2.1.2.tar.gz
+[2023-05-06 05:08:18] INFO root fetch - processPackages [c-shelph]: executing diffoscope
+[2023-05-06 05:08:18] INFO root fetch - processPackages [c-shelph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c-shelph-2.1.1.tar.gz tmp/c-shelph-2.1.2.tar.gz --markdown 20230506/c/c-shelph/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-06 05:08:18] INFO root fetch - processPackages [halmos]: Downloading https://files.pythonhosted.org/packages/68/4c/fe80dae1007589b7b91b828e1087eb97a8fcb6c5e9a4384c95bddf6fe1f6/halmos-0.0.8.tar.gz
+[2023-05-06 05:08:18] INFO root fetch - processPackages [halmos]: executing diffoscope
+[2023-05-06 05:08:18] INFO root fetch - processPackages [halmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/halmos-0.0.7.tar.gz tmp/halmos-0.0.8.tar.gz --markdown 20230506/h/halmos/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 05:08:19] INFO root fetch - main [MainThread]: End processing [c-shelph]: success
+[2023-05-06 05:08:19] INFO root fetch - main [MainThread]: End processing [appmesh]: success
+[2023-05-06 05:08:19] INFO root fetch - main [MainThread]: End processing [halmos]: success
+[2023-05-06 05:08:19] INFO root fetch - main [MainThread]: Store serial: [17996383]
