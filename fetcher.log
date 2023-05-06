@@ -13653,3 +13653,15 @@ EOFError: EOF read where object expected
 [2023-05-06 21:10:17] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
 [2023-05-06 21:10:17] INFO root fetch - main [MainThread]: End processing [pyaipersonality]: success
 [2023-05-06 21:10:17] INFO root fetch - main [MainThread]: Store serial: [18001666]
+[2023-05-06 21:15:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001666]
+[2023-05-06 21:15:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-06 21:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaipersonality
+[2023-05-06 21:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syssqlite3liberyV1
+[2023-05-06 21:15:26] INFO root fetch - processPackages [pyaipersonality]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-06 21:15:26] WARNING root fetch - processPackages [syssqlite3liberyV1]: Skipping, unable to determine old version
+[2023-05-06 21:15:26] INFO root fetch - main [MainThread]: End processing [syssqlite3liberyV1] error
+[2023-05-06 21:15:26] INFO root fetch - processPackages [pyaipersonality]: Downloading https://files.pythonhosted.org/packages/19/bc/ac3a2b3a0ff34c270270d7fafa68a0ce877be1f1170263e2b545a134d88e/pyaipersonality-0.0.7.tar.gz
+[2023-05-06 21:15:27] INFO root fetch - processPackages [pyaipersonality]: executing diffoscope
+[2023-05-06 21:15:27] INFO root fetch - processPackages [pyaipersonality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaipersonality-0.0.6.tar.gz tmp/pyaipersonality-0.0.7.tar.gz --markdown 20230506/p/pyaipersonality/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-06 21:15:28] INFO root fetch - main [MainThread]: End processing [pyaipersonality]: success
+[2023-05-06 21:15:28] INFO root fetch - main [MainThread]: Store serial: [18001678]
