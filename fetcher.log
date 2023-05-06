@@ -9142,3 +9142,61 @@ EOFError: EOF read where object expected
 
 [2023-05-06 12:22:16] INFO root fetch - main [MainThread]: End processing [brocolli-caffe] error
 [2023-05-06 12:22:16] INFO root fetch - main [MainThread]: Store serial: [17998849]
+[2023-05-06 12:27:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998849]
+[2023-05-06 12:27:25] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 12:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyNAVIS
+[2023-05-06 12:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cxmlinvbot
+[2023-05-06 12:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sarf-simple-crud
+[2023-05-06 12:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deptry
+[2023-05-06 12:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kynaylibs
+[2023-05-06 12:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: TorchEase
+[2023-05-06 12:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: semisup-segmentation
+[2023-05-06 12:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: oenv2config
+[2023-05-06 12:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: typed-stream
+[2023-05-06 12:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: masonite-ready-auth
+[2023-05-06 12:27:25] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 12:27:25] INFO root fetch - processPackages [pyNAVIS]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-06 12:27:25] WARNING root fetch - processPackages [sarf-simple-crud]: Skipping, unable to determine old version
+[2023-05-06 12:27:25] INFO root fetch - processPackages [TorchEase]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-06 12:27:25] INFO root fetch - main [MainThread]: End processing [sarf-simple-crud] error
+[2023-05-06 12:27:25] INFO root fetch - processPackages [masonite-ready-auth]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 12:27:25] INFO root fetch - processPackages [deptry]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-06 12:27:25] INFO root fetch - processPackages [kynaylibs]: New version: [7.0.1] Old Version: [3.0.0]
+[2023-05-06 12:27:25] INFO root fetch - processPackages [cxmlinvbot]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-06 12:27:26] INFO root fetch - processPackages [typed-stream]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-06 12:27:26] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 12:27:26] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 12:27:26] WARNING root fetch - processPackages [oenv2config]: Skipping, unable to determine old version
+[2023-05-06 12:27:26] INFO root fetch - main [MainThread]: End processing [oenv2config] error
+[2023-05-06 12:27:26] INFO root fetch - processPackages [masonite-ready-auth]: executing diffoscope
+[2023-05-06 12:27:26] INFO root fetch - processPackages [masonite-ready-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masonite-ready_auth-0.0.3.tar.gz tmp/masonite-ready_auth-0.0.4.tar.gz --markdown 20230506/m/masonite-ready-auth/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 12:27:26] INFO root fetch - processPackages [pyNAVIS]: Downloading https://files.pythonhosted.org/packages/53/27/75c4820db4dae7fa78a2b33198020be731808a7a1de1786d145594f21b06/pyNAVIS-1.1.2.tar.gz
+[2023-05-06 12:27:26] INFO root fetch - processPackages [TorchEase]: Downloading https://files.pythonhosted.org/packages/8d/15/6d1abde6260790d23e35a20e6623ec980f8f607248bd158b4b33fdf8db26/TorchEase-0.0.6.tar.gz
+[2023-05-06 12:27:26] INFO root fetch - processPackages [kynaylibs]: Downloading https://files.pythonhosted.org/packages/2b/98/d2b6e6d5d561b839bab3180655c0edfd53d787dc88c5b9ccfbee2bcec992/kynaylibs-3.0.0.tar.gz
+[2023-05-06 12:27:26] INFO root fetch - processPackages [cxmlinvbot]: Downloading https://files.pythonhosted.org/packages/43/53/64503ec116c846696d38ce12aeac32a86903604d54b142581a74b2faf278/cxmlinvbot-1.0.2.tar.gz
+[2023-05-06 12:27:26] INFO root fetch - processPackages [deptry]: Downloading https://files.pythonhosted.org/packages/de/fe/b5985f57c830d35d507ddd861e19f7201ddff8b33d08f694fefd4457cabe/deptry-0.8.0.tar.gz
+[2023-05-06 12:27:26] INFO root fetch - processPackages [typed-stream]: Downloading https://files.pythonhosted.org/packages/10/f3/9ca887bf05fe3aa24b638a70a59a310bd2e51bcc51db98fcce7555184246/typed_stream-0.8.1.tar.gz
+[2023-05-06 12:27:26] INFO root fetch - processPackages [TorchEase]: executing diffoscope
+[2023-05-06 12:27:26] INFO root fetch - processPackages [TorchEase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TorchEase-0.0.5.tar.gz tmp/TorchEase-0.0.6.tar.gz --markdown 20230506/T/TorchEase/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-06 12:27:26] INFO root fetch - processPackages [cxmlinvbot]: executing diffoscope
+[2023-05-06 12:27:26] INFO root fetch - processPackages [cxmlinvbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxmlinvbot-1.0.1.tar.gz tmp/cxmlinvbot-1.0.2.tar.gz --markdown 20230506/c/cxmlinvbot/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-06 12:27:26] INFO root fetch - processPackages [pyNAVIS]: executing diffoscope
+[2023-05-06 12:27:26] INFO root fetch - processPackages [pyNAVIS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyNAVIS-1.1.1.tar.gz tmp/pyNAVIS-1.1.2.tar.gz --markdown 20230506/p/pyNAVIS/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-06 12:27:26] INFO root fetch - processPackages [kynaylibs]: Downloading https://files.pythonhosted.org/packages/5f/f4/c58b2d934133f37530b1b6ae469db11228af42dee420c5b8eb5ab38ed690/kynaylibs-7.0.1.tar.gz
+[2023-05-06 12:27:26] INFO root fetch - processPackages [deptry]: Downloading https://files.pythonhosted.org/packages/7d/f1/3a75933ef9d125752e88df7a58ac4c9224bdf9165fe1d886f90e56d45b7f/deptry-0.9.0.tar.gz
+[2023-05-06 12:27:26] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-06 12:27:26] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-3.0.0.tar.gz tmp/kynaylibs-7.0.1.tar.gz --markdown 20230506/k/kynaylibs/3.0.0-7.0.1/diff.md --exclude *.pyd
+[2023-05-06 12:27:26] INFO root fetch - processPackages [typed-stream]: Downloading https://files.pythonhosted.org/packages/bb/24/f83cc57bb674412ca23bf059d7fda90ee02a53f9e08c6abc49d9a6b56408/typed_stream-0.8.2.tar.gz
+[2023-05-06 12:27:26] INFO root fetch - processPackages [deptry]: executing diffoscope
+[2023-05-06 12:27:26] INFO root fetch - processPackages [deptry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deptry-0.8.0.tar.gz tmp/deptry-0.9.0.tar.gz --markdown 20230506/d/deptry/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 12:27:26] INFO root fetch - processPackages [typed-stream]: executing diffoscope
+[2023-05-06 12:27:26] INFO root fetch - processPackages [typed-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typed_stream-0.8.1.tar.gz tmp/typed_stream-0.8.2.tar.gz --markdown 20230506/t/typed-stream/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-06 12:27:27] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 12:27:27] INFO root fetch - main [MainThread]: End processing [masonite-ready-auth]: success
+[2023-05-06 12:27:27] INFO root fetch - main [MainThread]: End processing [cxmlinvbot]: success
+[2023-05-06 12:27:27] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-06 12:27:27] INFO root fetch - main [MainThread]: End processing [TorchEase]: success
+[2023-05-06 12:27:28] INFO root fetch - main [MainThread]: End processing [deptry]: success
+[2023-05-06 12:27:28] INFO root fetch - main [MainThread]: End processing [pyNAVIS]: success
+[2023-05-06 12:27:28] INFO root fetch - main [MainThread]: End processing [typed-stream]: success
+[2023-05-06 12:27:28] INFO root fetch - main [MainThread]: Store serial: [17998882]
