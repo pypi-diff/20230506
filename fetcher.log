@@ -8755,3 +8755,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 11:44:54] INFO root fetch - main [MainThread]: End processing [dune-fem]: success
 [2023-05-06 11:44:54] INFO root fetch - main [MainThread]: End processing [dune-fem-dg]: success
 [2023-05-06 11:44:54] INFO root fetch - main [MainThread]: Store serial: [17998677]
+[2023-05-06 11:49:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998677]
+[2023-05-06 11:50:03] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 11:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dxsp
+[2023-05-06 11:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dzen-urls-validator
+[2023-05-06 11:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frankAllSkyCam
+[2023-05-06 11:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: meta-package-manager
+[2023-05-06 11:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clubscore
+[2023-05-06 11:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: agent-link
+[2023-05-06 11:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hcpdiff
+[2023-05-06 11:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cikuu
+[2023-05-06 11:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: barbell2-bodycomp
+[2023-05-06 11:50:03] INFO root fetch - processPackages [meta-package-manager]: New version: [5.9.0] Old Version: [5.8.0]
+[2023-05-06 11:50:03] INFO root fetch - processPackages [dxsp]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-06 11:50:03] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-05-06 11:50:03] INFO root fetch - processPackages [barbell2-bodycomp]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-06 11:50:03] WARNING root fetch - processPackages [dzen-urls-validator]: Skipping, unable to determine old version
+[2023-05-06 11:50:03] INFO root fetch - processPackages [agent-link]: New version: [0.1.9] Old Version: [0.1.2]
+[2023-05-06 11:50:03] INFO root fetch - processPackages [hcpdiff]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-06 11:50:03] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-06 11:50:03] INFO root fetch - main [MainThread]: End processing [dzen-urls-validator] error
+[2023-05-06 11:50:03] INFO root fetch - processPackages [clubscore]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-05-06 11:50:03] INFO root fetch - processPackages [agent-link]: Downloading https://files.pythonhosted.org/packages/ed/5c/57931bbb971a921efd05480fefcb72397a18b345031387764c69c27b90fc/agent_link-0.1.2.tar.gz
+[2023-05-06 11:50:03] WARNING root fetch - processPackages [agent-link]: Skipping package: exceeds size limit 15899943>=10485760
+[2023-05-06 11:50:03] INFO root fetch - main [MainThread]: End processing [agent-link] error
+[2023-05-06 11:50:03] INFO root fetch - processPackages [cikuu]: New version: [2022.8.2] Old Version: [2022.8.1]
+[2023-05-06 11:50:03] INFO root fetch - processPackages [hcpdiff]: executing diffoscope
+[2023-05-06 11:50:03] INFO root fetch - processPackages [hcpdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcpdiff-0.3.0.tar.gz tmp/hcpdiff-0.3.1.tar.gz --markdown 20230506/h/hcpdiff/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-06 11:50:03] INFO root fetch - processPackages [barbell2-bodycomp]: executing diffoscope
+[2023-05-06 11:50:03] INFO root fetch - processPackages [barbell2-bodycomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barbell2_bodycomp-0.8.0.tar.gz tmp/barbell2_bodycomp-0.9.0.tar.gz --markdown 20230506/b/barbell2-bodycomp/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 11:50:03] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/cd/76/f2a4aab09b1b0030390acb0004581003bf1461437a3b281ba79e6f35e899/dxsp-1.9.6.tar.gz
+[2023-05-06 11:50:03] INFO root fetch - processPackages [meta-package-manager]: Downloading https://files.pythonhosted.org/packages/dd/3f/566450f35f936ebe0f413ca9a59ad8fd4ecaa727ded9c510115908eb21a9/meta-package-manager-5.8.0.tar.gz
+[2023-05-06 11:50:03] INFO root fetch - processPackages [clubscore]: Downloading https://files.pythonhosted.org/packages/b5/d9/769559ff9db59df52a3e6adb9a0cdedc3c7e97291e852554330d2019802a/clubscore-0.1.0.tar.gz
+[2023-05-06 11:50:03] INFO root fetch - processPackages [cikuu]: Downloading https://files.pythonhosted.org/packages/7a/f8/003dc2a9e92d34b3f339118128ecbf084672b38158e85013006814188ae9/cikuu-2022.8.1.tar.gz
+[2023-05-06 11:50:03] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-06 11:50:03] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.9.5.tar.gz tmp/dxsp-1.9.6.tar.gz --markdown 20230506/d/dxsp/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-06 11:50:03] INFO root fetch - processPackages [clubscore]: Downloading https://files.pythonhosted.org/packages/c7/6c/d7d3e721f23fd287278c854ae9bea187b128a38c6311e7c1013a1e525db1/clubscore-0.1.2.tar.gz
+[2023-05-06 11:50:03] INFO root fetch - processPackages [clubscore]: executing diffoscope
+[2023-05-06 11:50:03] INFO root fetch - processPackages [clubscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clubscore-0.1.0.tar.gz tmp/clubscore-0.1.2.tar.gz --markdown 20230506/c/clubscore/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 11:50:04] INFO root fetch - processPackages [meta-package-manager]: Downloading https://files.pythonhosted.org/packages/e2/0f/dbabd52223f4775e3371eb6ed387b6c5b8c512745b719be36a3baa0f4029/meta_package_manager-5.9.0.tar.gz
+[2023-05-06 11:50:04] INFO root fetch - processPackages [meta-package-manager]: executing diffoscope
+[2023-05-06 11:50:04] INFO root fetch - processPackages [meta-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta-package-manager-5.8.0.tar.gz tmp/meta_package_manager-5.9.0.tar.gz --markdown 20230506/m/meta-package-manager/5.8.0-5.9.0/diff.md --exclude *.pyd
+[2023-05-06 11:50:04] INFO root fetch - main [MainThread]: End processing [clubscore]: success
+[2023-05-06 11:50:04] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-06 11:50:05] INFO root fetch - main [MainThread]: End processing [barbell2-bodycomp]: success
+[2023-05-06 11:50:05] INFO root fetch - processPackages [cikuu]: Downloading https://files.pythonhosted.org/packages/cd/6d/3687f0345a6d1a7e3ebe51b37c74f7f8973f58a3688264519e5c73d83e8a/cikuu-2022.8.2.tar.gz
+[2023-05-06 11:50:06] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
+[2023-05-06 11:50:06] INFO root fetch - main [MainThread]: End processing [meta-package-manager]: success
+[2023-05-06 11:50:06] INFO root fetch - processPackages [cikuu]: executing diffoscope
+[2023-05-06 11:50:06] INFO root fetch - processPackages [cikuu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cikuu-2022.8.1.tar.gz tmp/cikuu-2022.8.2.tar.gz --markdown 20230506/c/cikuu/2022.8.1-2022.8.2/diff.md --exclude *.pyd
+[2023-05-06 11:50:13] INFO root fetch - main [MainThread]: End processing [cikuu]: success
+[2023-05-06 11:50:13] INFO root fetch - main [MainThread]: Store serial: [17998705]
