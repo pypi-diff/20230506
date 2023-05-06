@@ -14226,3 +14226,37 @@ EOFError: EOF read where object expected
 [2023-05-06 22:24:08] INFO root fetch - main [MainThread]: End processing [babi]: success
 [2023-05-06 22:24:08] INFO root fetch - main [MainThread]: End processing [SenseLink]: success
 [2023-05-06 22:24:08] INFO root fetch - main [MainThread]: Store serial: [18001977]
+[2023-05-06 22:29:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001977]
+[2023-05-06 22:29:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 22:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cookiecutter-autodocs
+[2023-05-06 22:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qbwc
+[2023-05-06 22:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: faucetconfrpc
+[2023-05-06 22:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyAPplus64
+[2023-05-06 22:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: screenshots-pagepixels
+[2023-05-06 22:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tsp-wrapper
+[2023-05-06 22:29:16] INFO root fetch - processPackages [cookiecutter-autodocs]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 22:29:16] WARNING root fetch - processPackages [qbwc]: Skipping, unable to determine old version
+[2023-05-06 22:29:16] INFO root fetch - main [MainThread]: End processing [qbwc] error
+[2023-05-06 22:29:16] INFO root fetch - processPackages [faucetconfrpc]: New version: [0.9] Old Version: [0.8]
+[2023-05-06 22:29:17] INFO root fetch - processPackages [tsp-wrapper]: New version: [1.0.1] Old Version: [0.1.0]
+[2023-05-06 22:29:17] WARNING root fetch - processPackages [screenshots-pagepixels]: Skipping, unable to determine old version
+[2023-05-06 22:29:17] INFO root fetch - main [MainThread]: End processing [screenshots-pagepixels] error
+[2023-05-06 22:29:17] INFO root fetch - processPackages [PyAPplus64]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-06 22:29:17] INFO root fetch - processPackages [cookiecutter-autodocs]: Downloading https://files.pythonhosted.org/packages/53/77/dbf9c8e86a32beb023a0ab5cf64e7a1ce81107739f8f23368f9efb69932a/cookiecutter_autodocs-0.1.1.tar.gz
+[2023-05-06 22:29:17] INFO root fetch - processPackages [tsp-wrapper]: Downloading https://files.pythonhosted.org/packages/71/61/2565b1fd1be81594d68f966ddcff998e4b08f2ee4c1b0f76ecc00e5ecf57/tsp_wrapper-0.1.0.tar.gz
+[2023-05-06 22:29:17] INFO root fetch - processPackages [cookiecutter-autodocs]: executing diffoscope
+[2023-05-06 22:29:17] INFO root fetch - processPackages [cookiecutter-autodocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter_autodocs-0.1.0.tar.gz tmp/cookiecutter_autodocs-0.1.1.tar.gz --markdown 20230506/c/cookiecutter-autodocs/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 22:29:17] INFO root fetch - processPackages [PyAPplus64]: Downloading https://files.pythonhosted.org/packages/30/61/0739d6544da32506b874b86a55b70d52dbc2a1851189bf55eb405b70dc26/PyAPplus64-1.0.0.tar.gz
+[2023-05-06 22:29:17] INFO root fetch - processPackages [faucetconfrpc]: executing diffoscope
+[2023-05-06 22:29:17] INFO root fetch - processPackages [faucetconfrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faucetconfrpc-0.8.tar.gz tmp/faucetconfrpc-0.9.tar.gz --markdown 20230506/f/faucetconfrpc/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-06 22:29:17] INFO root fetch - processPackages [tsp-wrapper]: Downloading https://files.pythonhosted.org/packages/f6/27/aad0ad7745005fce04a6b9545cc9b1441fe8767ff6e97a8a6f391ca4aafd/tsp_wrapper-1.0.1.tar.gz
+[2023-05-06 22:29:17] INFO root fetch - processPackages [PyAPplus64]: Downloading https://files.pythonhosted.org/packages/30/01/e257c90e4fc681bb19176e307ef2b7c0151d3547d2d4b341768c66aba521/PyAPplus64-1.0.1.tar.gz
+[2023-05-06 22:29:17] INFO root fetch - processPackages [tsp-wrapper]: executing diffoscope
+[2023-05-06 22:29:17] INFO root fetch - processPackages [tsp-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsp_wrapper-0.1.0.tar.gz tmp/tsp_wrapper-1.0.1.tar.gz --markdown 20230506/t/tsp-wrapper/0.1.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 22:29:17] INFO root fetch - processPackages [PyAPplus64]: executing diffoscope
+[2023-05-06 22:29:17] INFO root fetch - processPackages [PyAPplus64]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAPplus64-1.0.0.tar.gz tmp/PyAPplus64-1.0.1.tar.gz --markdown 20230506/P/PyAPplus64/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 22:29:18] INFO root fetch - main [MainThread]: End processing [cookiecutter-autodocs]: success
+[2023-05-06 22:29:18] INFO root fetch - main [MainThread]: End processing [faucetconfrpc]: success
+[2023-05-06 22:29:18] INFO root fetch - main [MainThread]: End processing [tsp-wrapper]: success
+[2023-05-06 22:29:26] INFO root fetch - main [MainThread]: End processing [PyAPplus64]: success
+[2023-05-06 22:29:26] INFO root fetch - main [MainThread]: Store serial: [18002008]
