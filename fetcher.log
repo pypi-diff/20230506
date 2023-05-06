@@ -14299,3 +14299,60 @@ EOFError: EOF read where object expected
 [2023-05-06 22:34:37] INFO root fetch - main [MainThread]: End processing [pitv]: success
 [2023-05-06 22:34:38] INFO root fetch - main [MainThread]: End processing [invesytoolbox]: success
 [2023-05-06 22:34:38] INFO root fetch - main [MainThread]: Store serial: [18002028]
+[2023-05-06 22:39:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002028]
+[2023-05-06 22:39:46] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: optical-dispersion-relations
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-dinkum-listener
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dead
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yetl-framework
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-beta
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nyckel
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: screenshots-pagepixels
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo14-addon-account-due-list
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: robolson
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: syssqlitedbextension
+[2023-05-06 22:39:46] INFO root fetch - processPackages [optical-dispersion-relations]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-06 22:39:46] INFO root fetch - processPackages [nyckel]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-06 22:39:46] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2023-05-06 22:39:47] INFO root fetch - processPackages [yetl-framework]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-06 22:39:47] INFO root fetch - processPackages [dead]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-06 22:39:47] WARNING root fetch - processPackages [screenshots-pagepixels]: Skipping, unable to determine old version
+[2023-05-06 22:39:47] INFO root fetch - main [MainThread]: End processing [screenshots-pagepixels] error
+[2023-05-06 22:39:47] INFO root fetch - processPackages [certora-cli-beta]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-05-06 22:39:47] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2023-05-06 22:39:47] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_dinkum_listener-0.0.2a8-py3-none-any.whl.zip tmp/ovos_dinkum_listener-0.0.2a9-py3-none-any.whl.zip --markdown 20230506/o/ovos-dinkum-listener/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2023-05-06 22:39:47] INFO root fetch - processPackages [odoo14-addon-account-due-list]: New version: [14.0.1.2.0] Old Version: [14.0.1.1.2.dev3]
+[2023-05-06 22:39:47] ERROR root fetch - processPackages [syssqlitedbextension]: Unable to get metadata: No such project 'syssqlitedbextension'
+[2023-05-06 22:39:47] INFO root fetch - main [MainThread]: End processing [syssqlitedbextension] error
+[2023-05-06 22:39:47] INFO root fetch - processPackages [robolson]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-06 22:39:47] INFO root fetch - processPackages [certora-cli-beta]: Downloading https://files.pythonhosted.org/packages/6c/2b/743c1583851c07f76c749e180f891109f4c8429b1301285a732886672e8a/certora-cli-beta-4.0.0.tar.gz
+[2023-05-06 22:39:47] INFO root fetch - processPackages [nyckel]: Downloading https://files.pythonhosted.org/packages/23/7d/8c332502143601ca71c68e0663c5cd5624c5213999b9d7c7ac4ec6bf18c6/nyckel-0.0.7.tar.gz
+[2023-05-06 22:39:47] INFO root fetch - processPackages [optical-dispersion-relations]: Downloading https://files.pythonhosted.org/packages/48/9e/52f502ba712911d5da6da22dfcfe8c57329aa79d7a629c6e20dbec672a31/optical_dispersion_relations-0.1.1.tar.gz
+[2023-05-06 22:39:47] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/2b/c8/c8b4407233404a513aa8f6fdce9af331fe47681ca19392e511ec2d539ddf/yetl-framework-1.2.2.tar.gz
+[2023-05-06 22:39:47] INFO root fetch - processPackages [dead]: Downloading https://files.pythonhosted.org/packages/1f/60/687f15608bbd880ed1519d0d871969ebd9611762df080ae7d92e974c7a31/dead-1.5.0.tar.gz
+[2023-05-06 22:39:47] WARNING root fetch - processPackages [certora-cli-beta]: Skipping package: exceeds size limit 38372754>=10485760
+[2023-05-06 22:39:47] INFO root fetch - main [MainThread]: End processing [certora-cli-beta] error
+[2023-05-06 22:39:47] INFO root fetch - processPackages [odoo14-addon-account-due-list]: Downloading https://files.pythonhosted.org/packages/fa/0a/14e773f810b64e928abee6f7ddbccde3cca85c3be2455159ba1def8c0ccc/odoo14_addon_account_due_list-14.0.1.1.2.dev3-py3-none-any.whl
+[2023-05-06 22:39:47] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-05-06 22:39:47] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.2.1.tar.gz tmp/yetl-framework-1.2.2.tar.gz --markdown 20230506/y/yetl-framework/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-06 22:39:47] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-06 22:39:47] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.6.tar.gz tmp/nyckel-0.0.7.tar.gz --markdown 20230506/n/nyckel/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-06 22:39:47] INFO root fetch - processPackages [optical-dispersion-relations]: Downloading https://files.pythonhosted.org/packages/fa/d3/cee72b3c7ea2b067ac2f8fdb4ab88cdb49486435ae83ae298bf9c0b03d3a/optical_dispersion_relations-0.2.0.tar.gz
+[2023-05-06 22:39:47] INFO root fetch - processPackages [dead]: Downloading https://files.pythonhosted.org/packages/a8/8b/54c17c5fe4dcd68780e770befc3254985208840105f34447a59b455d5d52/dead-1.5.1.tar.gz
+[2023-05-06 22:39:47] INFO root fetch - processPackages [robolson]: executing diffoscope
+[2023-05-06 22:39:47] INFO root fetch - processPackages [robolson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robolson-0.3.8.tar.gz tmp/robolson-0.3.9.tar.gz --markdown 20230506/r/robolson/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-06 22:39:47] INFO root fetch - processPackages [optical-dispersion-relations]: executing diffoscope
+[2023-05-06 22:39:47] INFO root fetch - processPackages [optical-dispersion-relations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optical_dispersion_relations-0.1.1.tar.gz tmp/optical_dispersion_relations-0.2.0.tar.gz --markdown 20230506/o/optical-dispersion-relations/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 22:39:47] INFO root fetch - processPackages [dead]: executing diffoscope
+[2023-05-06 22:39:47] INFO root fetch - processPackages [dead]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dead-1.5.0.tar.gz tmp/dead-1.5.1.tar.gz --markdown 20230506/d/dead/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-06 22:39:47] INFO root fetch - processPackages [odoo14-addon-account-due-list]: Downloading https://files.pythonhosted.org/packages/77/2c/a2f9ca89c00ad2b7b33d9a3c740f340a34bed85c3ee6f1f6ac9ce58a87bb/odoo14_addon_account_due_list-14.0.1.2.0-py3-none-any.whl
+[2023-05-06 22:39:47] INFO root fetch - processPackages [odoo14-addon-account-due-list]: executing diffoscope
+[2023-05-06 22:39:47] INFO root fetch - processPackages [odoo14-addon-account-due-list]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_due_list-14.0.1.1.2.dev3-py3-none-any.whl.zip tmp/odoo14_addon_account_due_list-14.0.1.2.0-py3-none-any.whl.zip --markdown 20230506/o/odoo14-addon-account-due-list/14.0.1.1.2.dev3-14.0.1.2.0/diff.md --exclude *.pyd
+[2023-05-06 22:39:48] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2023-05-06 22:39:48] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-06 22:39:48] INFO root fetch - main [MainThread]: End processing [robolson]: success
+[2023-05-06 22:39:48] INFO root fetch - main [MainThread]: End processing [dead]: success
+[2023-05-06 22:39:48] INFO root fetch - main [MainThread]: End processing [optical-dispersion-relations]: success
+[2023-05-06 22:39:48] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-05-06 22:39:49] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-due-list]: success
+[2023-05-06 22:39:49] INFO root fetch - main [MainThread]: Store serial: [18002058]
