@@ -11528,3 +11528,31 @@ EOFError: EOF read where object expected
 [2023-05-06 16:49:32] INFO root fetch - main [MainThread]: End processing [hitchstory]: success
 [2023-05-06 16:49:32] INFO root fetch - main [MainThread]: End processing [compose-viz]: success
 [2023-05-06 16:49:32] INFO root fetch - main [MainThread]: Store serial: [18000353]
+[2023-05-06 16:54:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000353]
+[2023-05-06 16:54:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 16:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: markdown-to-respec
+[2023-05-06 16:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: irails
+[2023-05-06 16:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sanwei
+[2023-05-06 16:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: manrodri-test-titanic-classification-model
+[2023-05-06 16:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: operbot
+[2023-05-06 16:54:41] INFO root fetch - processPackages [manrodri-test-titanic-classification-model]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-06 16:54:41] INFO root fetch - processPackages [operbot]: New version: [180] Old Version: [172]
+[2023-05-06 16:54:41] WARNING root fetch - processPackages [sanwei]: Skipping, unable to determine old version
+[2023-05-06 16:54:41] INFO root fetch - processPackages [irails]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-06 16:54:41] INFO root fetch - main [MainThread]: End processing [sanwei] error
+[2023-05-06 16:54:41] WARNING root fetch - processPackages [markdown-to-respec]: Skipping, unable to determine old version
+[2023-05-06 16:54:41] INFO root fetch - main [MainThread]: End processing [markdown-to-respec] error
+[2023-05-06 16:54:41] INFO root fetch - processPackages [manrodri-test-titanic-classification-model]: Downloading https://files.pythonhosted.org/packages/9b/58/5342803f6147ada1b0f28271ea4b7e82bd73b8b6b684ec06319f1f9a2dad/manrodri-test-titanic-classification-model-0.0.5.tar.gz
+[2023-05-06 16:54:41] INFO root fetch - processPackages [operbot]: Downloading https://files.pythonhosted.org/packages/d3/f6/6ee2a2ece369b8f68f70a4cc33df772c007f765f541e89affc272a668bd1/operbot-172.tar.gz
+[2023-05-06 16:54:41] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/d1/19/5bdd113472fae156cc470975d5ee7c9c1ce3ba834eb68c46ac451c626bef/irails-1.1.8.tar.gz
+[2023-05-06 16:54:41] INFO root fetch - processPackages [manrodri-test-titanic-classification-model]: executing diffoscope
+[2023-05-06 16:54:41] INFO root fetch - processPackages [manrodri-test-titanic-classification-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manrodri-test-titanic-classification-model-0.0.4.tar.gz tmp/manrodri-test-titanic-classification-model-0.0.5.tar.gz --markdown 20230506/m/manrodri-test-titanic-classification-model/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-06 16:54:41] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-06 16:54:41] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.1.7.tar.gz tmp/irails-1.1.8.tar.gz --markdown 20230506/i/irails/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-06 16:54:41] INFO root fetch - processPackages [operbot]: Downloading https://files.pythonhosted.org/packages/8b/24/d63d96b66331bde007a04e213512c439c6cf4559badf7f2f0a23787c5eab/operbot-180.tar.gz
+[2023-05-06 16:54:41] INFO root fetch - processPackages [operbot]: executing diffoscope
+[2023-05-06 16:54:41] INFO root fetch - processPackages [operbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/operbot-172.tar.gz tmp/operbot-180.tar.gz --markdown 20230506/o/operbot/172-180/diff.md --exclude *.pyd
+[2023-05-06 16:54:42] INFO root fetch - main [MainThread]: End processing [manrodri-test-titanic-classification-model]: success
+[2023-05-06 16:54:43] INFO root fetch - main [MainThread]: End processing [operbot]: success
+[2023-05-06 16:54:43] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-06 16:54:43] INFO root fetch - main [MainThread]: Store serial: [18000372]
