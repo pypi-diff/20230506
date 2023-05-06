@@ -12238,3 +12238,39 @@ EOFError: EOF read where object expected
 [2023-05-06 18:18:48] INFO root fetch - main [MainThread]: End processing [csgo-case-simulator-nonebot]: success
 [2023-05-06 18:19:17] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
 [2023-05-06 18:19:17] INFO root fetch - main [MainThread]: Store serial: [18000776]
+[2023-05-06 18:24:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000776]
+[2023-05-06 18:24:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 18:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rayserverdl
+[2023-05-06 18:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecgai-drawing
+[2023-05-06 18:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamflow-postgresql
+[2023-05-06 18:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Flet-StoryBoard
+[2023-05-06 18:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: semisup-segmentation
+[2023-05-06 18:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pointclass
+[2023-05-06 18:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pipcolortoolkit
+[2023-05-06 18:24:30] INFO root fetch - processPackages [ecgai-drawing]: New version: [0.1.13] Old Version: [0.1.1]
+[2023-05-06 18:24:30] WARNING root fetch - processPackages [streamflow-postgresql]: Skipping, unable to determine old version
+[2023-05-06 18:24:30] INFO root fetch - main [MainThread]: End processing [streamflow-postgresql] error
+[2023-05-06 18:24:30] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 18:24:30] INFO root fetch - processPackages [Flet-StoryBoard]: New version: [1.3] Old Version: [1.2]
+[2023-05-06 18:24:30] WARNING root fetch - processPackages [rayserverdl]: Skipping, unable to determine old version
+[2023-05-06 18:24:30] INFO root fetch - main [MainThread]: End processing [rayserverdl] error
+[2023-05-06 18:24:30] INFO root fetch - processPackages [pointclass]: New version: [1.1] Old Version: [1.0]
+[2023-05-06 18:24:30] WARNING root fetch - processPackages [pipcolortoolkit]: Skipping, unable to determine old version
+[2023-05-06 18:24:30] INFO root fetch - main [MainThread]: End processing [pipcolortoolkit] error
+[2023-05-06 18:24:30] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 18:24:30] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 18:24:30] INFO root fetch - processPackages [ecgai-drawing]: Downloading https://files.pythonhosted.org/packages/e7/27/3aab2d38e5dbcc7a6723b23660dc955e9cbfdbc4de47f0fb104094302cf3/ecgai-drawing-0.1.1.tar.gz
+[2023-05-06 18:24:30] INFO root fetch - processPackages [pointclass]: Downloading https://files.pythonhosted.org/packages/63/6f/b79157468a7099f9a510911436e38cc99a40c8629f776f78fc75c0a158f0/pointclass-1.1.tar.gz
+[2023-05-06 18:24:30] INFO root fetch - processPackages [Flet-StoryBoard]: Downloading https://files.pythonhosted.org/packages/c6/39/84eacb7a23ff71cfdae43e0d2c57bbb2d9afc0f44d75ab54fa3c2bc4f54d/Flet%20StoryBoard-1.3.tar.gz
+[2023-05-06 18:24:31] INFO root fetch - processPackages [pointclass]: executing diffoscope
+[2023-05-06 18:24:31] INFO root fetch - processPackages [pointclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointclass-1.0.tar.gz tmp/pointclass-1.1.tar.gz --markdown 20230506/p/pointclass/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-06 18:24:31] INFO root fetch - processPackages [ecgai-drawing]: Downloading https://files.pythonhosted.org/packages/05/b2/7941c19a4927a3b65e0cf72f9970d87285062215c165198bbcc7c16ff39c/ecgai_drawing-0.1.13.tar.gz
+[2023-05-06 18:24:31] INFO root fetch - processPackages [ecgai-drawing]: executing diffoscope
+[2023-05-06 18:24:31] INFO root fetch - processPackages [ecgai-drawing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecgai-drawing-0.1.1.tar.gz tmp/ecgai_drawing-0.1.13.tar.gz --markdown 20230506/e/ecgai-drawing/0.1.1-0.1.13/diff.md --exclude *.pyd
+[2023-05-06 18:24:31] INFO root fetch - processPackages [Flet-StoryBoard]: executing diffoscope
+[2023-05-06 18:24:31] INFO root fetch - processPackages [Flet-StoryBoard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flet StoryBoard-1.2.tar.gz tmp/Flet StoryBoard-1.3.tar.gz --markdown 20230506/F/Flet-StoryBoard/1.2-1.3/diff.md --exclude *.pyd
+[2023-05-06 18:24:31] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 18:24:32] INFO root fetch - main [MainThread]: End processing [pointclass]: success
+[2023-05-06 18:24:32] INFO root fetch - main [MainThread]: End processing [ecgai-drawing]: success
+[2023-05-06 18:24:32] INFO root fetch - main [MainThread]: End processing [Flet-StoryBoard]: success
+[2023-05-06 18:24:32] INFO root fetch - main [MainThread]: Store serial: [18000803]
