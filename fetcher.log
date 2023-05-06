@@ -14185,3 +14185,44 @@ EOFError: EOF read where object expected
 [2023-05-06 22:18:49] INFO root fetch - main [MainThread]: End processing [instld]: success
 [2023-05-06 22:18:56] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-05-06 22:18:56] INFO root fetch - main [MainThread]: Store serial: [18001945]
+[2023-05-06 22:24:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001945]
+[2023-05-06 22:24:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 22:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-05-06 22:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2023-05-06 22:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-callapi
+[2023-05-06 22:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: babi
+[2023-05-06 22:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SenseLink
+[2023-05-06 22:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pitv
+[2023-05-06 22:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyaipersonality
+[2023-05-06 22:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: solarkit
+[2023-05-06 22:24:05] INFO root fetch - processPackages [pyaipersonality]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 22:24:05] INFO root fetch - processPackages [babi]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-05-06 22:24:05] WARNING root fetch - processPackages [nonebot-plugin-callapi]: Skipping, unable to determine old version
+[2023-05-06 22:24:05] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-callapi] error
+[2023-05-06 22:24:05] WARNING root fetch - processPackages [pitv]: Skipping, unable to determine old version
+[2023-05-06 22:24:05] INFO root fetch - main [MainThread]: End processing [pitv] error
+[2023-05-06 22:24:05] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-06 22:24:05] WARNING root fetch - processPackages [solarkit]: Skipping, unable to determine old version
+[2023-05-06 22:24:05] INFO root fetch - main [MainThread]: End processing [solarkit] error
+[2023-05-06 22:24:05] INFO root fetch - processPackages [SenseLink]: New version: [2.1.0] Old Version: [2.0.3]
+[2023-05-06 22:24:05] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-06 22:24:05] INFO root fetch - processPackages [babi]: Downloading https://files.pythonhosted.org/packages/5c/ac/adb2a33103268deec1b99391a8ef4952b33261760066701881b2b2a8c3a9/babi-1.5.3.tar.gz
+[2023-05-06 22:24:05] INFO root fetch - processPackages [pyaipersonality]: executing diffoscope
+[2023-05-06 22:24:05] INFO root fetch - processPackages [pyaipersonality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaipersonality-0.0.8.tar.gz tmp/pyaipersonality-0.0.9.tar.gz --markdown 20230506/p/pyaipersonality/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 22:24:05] INFO root fetch - processPackages [SenseLink]: Downloading https://files.pythonhosted.org/packages/c9/40/fa9f08a4ecee4080d4b6a2aef6c7a37c6b08f7e46d47b0afaabe611f4565/SenseLink-2.0.3.tar.gz
+[2023-05-06 22:24:05] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-06 22:24:05] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230506/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-06 22:24:06] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-06 22:24:06] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230506/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-06 22:24:06] INFO root fetch - processPackages [babi]: Downloading https://files.pythonhosted.org/packages/00/4e/d4897dbd7552c78f97f079dfa057ae794307b9403b43d28de38c54dfa0b0/babi-1.5.4.tar.gz
+[2023-05-06 22:24:06] INFO root fetch - processPackages [babi]: executing diffoscope
+[2023-05-06 22:24:06] INFO root fetch - processPackages [babi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/babi-1.5.3.tar.gz tmp/babi-1.5.4.tar.gz --markdown 20230506/b/babi/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-05-06 22:24:06] INFO root fetch - processPackages [SenseLink]: Downloading https://files.pythonhosted.org/packages/06/63/5749f45c429f419274ba109315effd86a7ff3831d49d7f2156f5e5ffcb69/SenseLink-2.1.0.tar.gz
+[2023-05-06 22:24:06] INFO root fetch - processPackages [SenseLink]: executing diffoscope
+[2023-05-06 22:24:06] INFO root fetch - processPackages [SenseLink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SenseLink-2.0.3.tar.gz tmp/SenseLink-2.1.0.tar.gz --markdown 20230506/S/SenseLink/2.0.3-2.1.0/diff.md --exclude *.pyd
+[2023-05-06 22:24:07] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-06 22:24:07] INFO root fetch - main [MainThread]: End processing [pyaipersonality]: success
+[2023-05-06 22:24:07] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-06 22:24:08] INFO root fetch - main [MainThread]: End processing [babi]: success
+[2023-05-06 22:24:08] INFO root fetch - main [MainThread]: End processing [SenseLink]: success
+[2023-05-06 22:24:08] INFO root fetch - main [MainThread]: Store serial: [18001977]
