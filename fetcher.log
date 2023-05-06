@@ -7167,3 +7167,53 @@
 [2023-05-06 09:31:39] INFO root fetch - main [MainThread]: End processing [ntscraper]: success
 [2023-05-06 09:31:43] INFO root fetch - main [MainThread]: End processing [astk]: success
 [2023-05-06 09:31:43] INFO root fetch - main [MainThread]: Store serial: [17997759]
+[2023-05-06 09:36:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997759]
+[2023-05-06 09:36:52] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 09:36:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sinabs-dynapcnn
+[2023-05-06 09:36:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qgate-perf
+[2023-05-06 09:36:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RoInfo
+[2023-05-06 09:36:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-stock-move-common-dest
+[2023-05-06 09:36:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: astk
+[2023-05-06 09:36:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: frankAllSkyCam
+[2023-05-06 09:36:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-rke
+[2023-05-06 09:36:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lalsuite
+[2023-05-06 09:36:52] INFO root fetch - processPackages [odoo-addon-stock-move-common-dest]: New version: [16.0.1.0.1.2] Old Version: [16.0.1.0.1]
+[2023-05-06 09:36:52] INFO root fetch - processPackages [sinabs-dynapcnn]: New version: [1.0.9.dev97] Old Version: [1.0.9.dev9]
+[2023-05-06 09:36:52] INFO root fetch - processPackages [qgate-perf]: New version: [0.1.7rc2] Old Version: [0.1.7rc1]
+[2023-05-06 09:36:52] INFO root fetch - processPackages [RoInfo]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 09:36:52] INFO root fetch - processPackages [astk]: New version: [0.1.3b0] Old Version: [0.1.2]
+[2023-05-06 09:36:52] INFO root fetch - processPackages [pulumi-rke]: New version: [3.3.0a1683356306] Old Version: [3.3.0a1683268105]
+[2023-05-06 09:36:52] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-06 09:36:52] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-05-06 09:36:52] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-06 09:36:52] INFO root fetch - processPackages [RoInfo]: Downloading https://files.pythonhosted.org/packages/e4/63/5d939405c5615b23c2c049298ce3f7cc2c5aef3be90e1e271d41e3d08a3f/RoInfo-0.0.1.tar.gz
+[2023-05-06 09:36:52] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-06 09:36:52] INFO root fetch - processPackages [odoo-addon-stock-move-common-dest]: Downloading https://files.pythonhosted.org/packages/f6/b9/9f437c58dc2541da08fcf37579ffe5f35d5abe72a25b8ef89f2e310b2836/odoo_addon_stock_move_common_dest-16.0.1.0.1-py3-none-any.whl
+[2023-05-06 09:36:52] INFO root fetch - processPackages [sinabs-dynapcnn]: Downloading https://files.pythonhosted.org/packages/82/bf/ec8e2cab4ffce5ad7925db9b678d19ccf571f8aecd864f2c15534b204553/sinabs-dynapcnn-1.0.9.dev9.tar.gz
+[2023-05-06 09:36:53] INFO root fetch - processPackages [qgate-perf]: Downloading https://files.pythonhosted.org/packages/84/d1/76538e48d958367242ff2f330d3d887b5777db0f9bb9a48ed6e0a5ee1ab1/qgate_perf-0.1.7rc2-py3-none-any.whl
+[2023-05-06 09:36:53] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-06 09:36:53] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-06 09:36:53] INFO root fetch - processPackages [RoInfo]: Downloading https://files.pythonhosted.org/packages/c0/67/79a002ad7dae790445c2e93d9159602b655bd746f324ee5f3376d18f0286/RoInfo-0.0.2.tar.gz
+[2023-05-06 09:36:53] INFO root fetch - processPackages [astk]: Downloading https://files.pythonhosted.org/packages/9b/a5/caabc6029e3e5131c8d6139775aa10202b995f44495f4f984ff38d5eeacb/astk-0.1.3b0.tar.gz
+[2023-05-06 09:36:53] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/ab/b8/f44784cd4c4c3bb52d4b900141553d082021eb575b0b35067a66310db118/pulumi_rke-3.3.0a1683356306.tar.gz
+[2023-05-06 09:36:53] INFO root fetch - processPackages [RoInfo]: executing diffoscope
+[2023-05-06 09:36:53] INFO root fetch - processPackages [RoInfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RoInfo-0.0.1.tar.gz tmp/RoInfo-0.0.2.tar.gz --markdown 20230506/R/RoInfo/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 09:36:53] INFO root fetch - processPackages [qgate-perf]: executing diffoscope
+[2023-05-06 09:36:53] INFO root fetch - processPackages [qgate-perf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgate_perf-0.1.7rc1-py3-none-any.whl.zip tmp/qgate_perf-0.1.7rc2-py3-none-any.whl.zip --markdown 20230506/q/qgate-perf/0.1.7rc1-0.1.7rc2/diff.md --exclude *.pyd
+[2023-05-06 09:36:53] INFO root fetch - processPackages [sinabs-dynapcnn]: Downloading https://files.pythonhosted.org/packages/1c/1e/ed5b2ee8f910d900e5e7f01220f393cf59ffac99dd0e6a4170b4c6be2a10/sinabs-dynapcnn-1.0.9.dev97.tar.gz
+[2023-05-06 09:36:53] INFO root fetch - processPackages [odoo-addon-stock-move-common-dest]: Downloading https://files.pythonhosted.org/packages/5f/a7/6c4554f1455708920ca3f540393e444a88ff6066f78305ee09172fb15904/odoo_addon_stock_move_common_dest-16.0.1.0.1.2-py3-none-any.whl
+[2023-05-06 09:36:53] INFO root fetch - processPackages [pulumi-rke]: executing diffoscope
+[2023-05-06 09:36:53] INFO root fetch - processPackages [pulumi-rke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rke-3.3.0a1683268105.tar.gz tmp/pulumi_rke-3.3.0a1683356306.tar.gz --markdown 20230506/p/pulumi-rke/3.3.0a1683268105-3.3.0a1683356306/diff.md --exclude *.pyd
+[2023-05-06 09:36:53] INFO root fetch - processPackages [odoo-addon-stock-move-common-dest]: executing diffoscope
+[2023-05-06 09:36:53] INFO root fetch - processPackages [odoo-addon-stock-move-common-dest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_move_common_dest-16.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_stock_move_common_dest-16.0.1.0.1.2-py3-none-any.whl.zip --markdown 20230506/o/odoo-addon-stock-move-common-dest/16.0.1.0.1-16.0.1.0.1.2/diff.md --exclude *.pyd
+[2023-05-06 09:36:53] INFO root fetch - processPackages [astk]: executing diffoscope
+[2023-05-06 09:36:53] INFO root fetch - processPackages [astk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astk-0.1.2.tar.gz tmp/astk-0.1.3b0.tar.gz --markdown 20230506/a/astk/0.1.2-0.1.3b0/diff.md --exclude *.pyd
+[2023-05-06 09:36:53] INFO root fetch - processPackages [sinabs-dynapcnn]: executing diffoscope
+[2023-05-06 09:36:53] INFO root fetch - processPackages [sinabs-dynapcnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinabs-dynapcnn-1.0.9.dev9.tar.gz tmp/sinabs-dynapcnn-1.0.9.dev97.tar.gz --markdown 20230506/s/sinabs-dynapcnn/1.0.9.dev9-1.0.9.dev97/diff.md --exclude *.pyd
+[2023-05-06 09:36:54] INFO root fetch - main [MainThread]: End processing [RoInfo]: success
+[2023-05-06 09:36:54] INFO root fetch - main [MainThread]: End processing [qgate-perf]: success
+[2023-05-06 09:36:54] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
+[2023-05-06 09:36:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-move-common-dest]: success
+[2023-05-06 09:36:56] INFO root fetch - main [MainThread]: End processing [sinabs-dynapcnn]: success
+[2023-05-06 09:36:59] INFO root fetch - main [MainThread]: End processing [astk]: success
+[2023-05-06 09:36:59] INFO root fetch - main [MainThread]: Store serial: [17997814]
