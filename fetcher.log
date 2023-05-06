@@ -12501,3 +12501,54 @@ EOFError: EOF read where object expected
 [2023-05-06 18:50:55] INFO root fetch - main [MainThread]: End processing [maptasker]: success
 [2023-05-06 18:51:23] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
 [2023-05-06 18:51:23] INFO root fetch - main [MainThread]: Store serial: [18000950]
+[2023-05-06 18:56:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000950]
+[2023-05-06 18:56:32] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 18:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docker-sand
+[2023-05-06 18:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-grouplock
+[2023-05-06 18:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: automation-common-test
+[2023-05-06 18:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: foledol-django
+[2023-05-06 18:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sparse-filter-convolution
+[2023-05-06 18:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: semisup-segmentation
+[2023-05-06 18:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: quasinet
+[2023-05-06 18:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: thermal-conductivity-step
+[2023-05-06 18:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: discord-py-interactions
+[2023-05-06 18:56:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: interactions.py
+[2023-05-06 18:56:32] INFO root fetch - processPackages [interactions.py]: New version: [5.3.0] Old Version: [5.2.0]
+[2023-05-06 18:56:32] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 18:56:32] INFO root fetch - processPackages [quasinet]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-06 18:56:32] INFO root fetch - processPackages [discord-py-interactions]: New version: [5.3.0] Old Version: [5.2.0]
+[2023-05-06 18:56:32] INFO root fetch - processPackages [quasinet]: Downloading https://files.pythonhosted.org/packages/7d/2e/7b0db3aa17fdad566c3b172c1b43dd87711b20fc3aa7d26cb2d9c7c2be37/quasinet-0.1.7.tar.gz
+[2023-05-06 18:56:32] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 18:56:32] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 18:56:32] INFO root fetch - processPackages [foledol-django]: New version: [0.0.9] Old Version: [0.0.81]
+[2023-05-06 18:56:32] WARNING root fetch - processPackages [nonebot-plugin-grouplock]: Skipping, unable to determine old version
+[2023-05-06 18:56:32] WARNING root fetch - processPackages [automation-common-test]: Skipping, unable to determine old version
+[2023-05-06 18:56:32] INFO root fetch - processPackages [docker-sand]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-05-06 18:56:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-grouplock] error
+[2023-05-06 18:56:32] INFO root fetch - processPackages [interactions.py]: executing diffoscope
+[2023-05-06 18:56:32] INFO root fetch - main [MainThread]: End processing [automation-common-test] error
+[2023-05-06 18:56:32] WARNING root fetch - processPackages [sparse-filter-convolution]: Skipping, unable to determine old version
+[2023-05-06 18:56:32] INFO root fetch - processPackages [interactions.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interactions.py-5.2.0.tar.gz tmp/interactions.py-5.3.0.tar.gz --markdown 20230506/i/interactions.py/5.2.0-5.3.0/diff.md --exclude *.pyd
+[2023-05-06 18:56:32] INFO root fetch - main [MainThread]: End processing [sparse-filter-convolution] error
+[2023-05-06 18:56:32] INFO root fetch - processPackages [thermal-conductivity-step]: New version: [2023.5.6] Old Version: [2023.5.5]
+[2023-05-06 18:56:32] INFO root fetch - processPackages [discord-py-interactions]: executing diffoscope
+[2023-05-06 18:56:32] INFO root fetch - processPackages [discord-py-interactions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-py-interactions-5.2.0.tar.gz tmp/discord-py-interactions-5.3.0.tar.gz --markdown 20230506/d/discord-py-interactions/5.2.0-5.3.0/diff.md --exclude *.pyd
+[2023-05-06 18:56:32] INFO root fetch - processPackages [foledol-django]: Downloading https://files.pythonhosted.org/packages/78/29/d1f36d6c9739b1c63fa2ccd156f9c6bfff8096f51e38863f206fc0b6a448/foledol-django-0.0.81.tar.gz
+[2023-05-06 18:56:33] INFO root fetch - processPackages [docker-sand]: Downloading https://files.pythonhosted.org/packages/f6/28/681d2594a5c473cc0412d1fe93d2bc165607df1f55b964f527a8f7fbc3da/docker-sand-0.0.5.tar.gz
+[2023-05-06 18:56:33] INFO root fetch - processPackages [thermal-conductivity-step]: Downloading https://files.pythonhosted.org/packages/55/96/4348d00124f16c8293c3852b793fcb47f32dc753b40468fed741e9f443d2/thermal_conductivity_step-2023.5.6.tar.gz
+[2023-05-06 18:56:33] WARNING root fetch - processPackages [quasinet]: Skipping package: exceeds size limit 14408911>=10485760
+[2023-05-06 18:56:33] INFO root fetch - main [MainThread]: End processing [quasinet] error
+[2023-05-06 18:56:33] INFO root fetch - processPackages [docker-sand]: executing diffoscope
+[2023-05-06 18:56:33] INFO root fetch - processPackages [docker-sand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker-sand-0.0.3.tar.gz tmp/docker-sand-0.0.5.tar.gz --markdown 20230506/d/docker-sand/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-05-06 18:56:33] INFO root fetch - processPackages [foledol-django]: Downloading https://files.pythonhosted.org/packages/dc/13/0dca19976e5924d4112ad94b560221bd8f77a427b07742765b62291e7521/foledol-django-0.0.9.tar.gz
+[2023-05-06 18:56:33] INFO root fetch - processPackages [thermal-conductivity-step]: executing diffoscope
+[2023-05-06 18:56:33] INFO root fetch - processPackages [thermal-conductivity-step]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thermal_conductivity_step-2023.5.5.tar.gz tmp/thermal_conductivity_step-2023.5.6.tar.gz --markdown 20230506/t/thermal-conductivity-step/2023.5.5-2023.5.6/diff.md --exclude *.pyd
+[2023-05-06 18:56:33] INFO root fetch - processPackages [foledol-django]: executing diffoscope
+[2023-05-06 18:56:33] INFO root fetch - processPackages [foledol-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foledol-django-0.0.81.tar.gz tmp/foledol-django-0.0.9.tar.gz --markdown 20230506/f/foledol-django/0.0.81-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 18:56:33] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 18:56:34] INFO root fetch - main [MainThread]: End processing [docker-sand]: success
+[2023-05-06 18:56:34] INFO root fetch - main [MainThread]: End processing [thermal-conductivity-step]: success
+[2023-05-06 18:56:34] INFO root fetch - main [MainThread]: End processing [foledol-django]: success
+[2023-05-06 18:56:35] INFO root fetch - main [MainThread]: End processing [interactions.py]: success
+[2023-05-06 18:56:35] INFO root fetch - main [MainThread]: End processing [discord-py-interactions]: success
+[2023-05-06 18:56:35] INFO root fetch - main [MainThread]: Store serial: [18000991]
