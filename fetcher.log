@@ -9527,3 +9527,59 @@ EOFError: EOF read where object expected
 [2023-05-06 13:03:51] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
 [2023-05-06 13:03:52] INFO root fetch - main [MainThread]: End processing [pyebsdindex]: success
 [2023-05-06 13:03:52] INFO root fetch - main [MainThread]: Store serial: [17999072]
+[2023-05-06 13:08:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999072]
+[2023-05-06 13:09:01] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 13:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaaql-monitor
+[2023-05-06 13:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaaql-monitor
+[2023-05-06 13:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aioworkers-sentry
+[2023-05-06 13:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: batch-face
+[2023-05-06 13:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: avnet-scotty
+[2023-05-06 13:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nlptoolssna
+[2023-05-06 13:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kindenty-base
+[2023-05-06 13:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jaaql-monitor
+[2023-05-06 13:09:01] INFO root fetch - processPackages [aioworkers-sentry]: New version: [0.4] Old Version: [0.3a3]
+[2023-05-06 13:09:01] INFO root fetch - processPackages [nlptoolssna]: New version: [0.7.8] Old Version: [0.7.7]
+[2023-05-06 13:09:01] INFO root fetch - processPackages [batch-face]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.36] Old Version: [1.2.35]
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.36] Old Version: [1.2.35]
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.36] Old Version: [1.2.35]
+[2023-05-06 13:09:01] INFO root fetch - processPackages [avnet-scotty]: New version: [2023.4.1] Old Version: [2023.4]
+[2023-05-06 13:09:01] INFO root fetch - processPackages [kindenty-base]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 13:09:01] INFO root fetch - processPackages [aioworkers-sentry]: Downloading https://files.pythonhosted.org/packages/12/d7/d9e549ad2b1f84abd91f9854ed79b1e0869bd3546bcc8c948d419250ca40/aioworkers-sentry-0.3a3.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/fe/24/3a649f4193a623909d0b27b3863e45911713dd9bfec3bf917974fcf74d6a/nlptoolssna-0.7.8.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [batch-face]: Downloading https://files.pythonhosted.org/packages/ae/57/ea33757c129a279da9f065a4ce02e88b4bc78c91700985c7a2aa68e219b0/batch_face-1.3.0-py3-none-any.whl
+[2023-05-06 13:09:01] INFO root fetch - processPackages [kindenty-base]: Downloading https://files.pythonhosted.org/packages/d8/f1/25fd412ec34280da66e11935b1afdf4a96d789bb145544262bc9541d69e2/kindenty_base-0.1.8.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/78/7f/59d1acb144011deeb7abd9ae62dc4648734712d7437f4651ac7d0cc91794/jaaql-monitor-1.2.35.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/78/7f/59d1acb144011deeb7abd9ae62dc4648734712d7437f4651ac7d0cc91794/jaaql-monitor-1.2.35.tar.gz
+[2023-05-06 13:09:01] WARNING root fetch - processPackages [batch-face]: Skipping package: exceeds size limit 30618955>=10485760
+[2023-05-06 13:09:01] INFO root fetch - main [MainThread]: End processing [batch-face] error
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/78/7f/59d1acb144011deeb7abd9ae62dc4648734712d7437f4651ac7d0cc91794/jaaql-monitor-1.2.35.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [avnet-scotty]: Downloading https://files.pythonhosted.org/packages/6f/a4/3d0494a0c976798c2f0fa54985c1155b42cab0bc0e16a272209c7a3c18bf/avnet-scotty-2023.4.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 13:09:01] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.7.7.tar.gz tmp/nlptoolssna-0.7.8.tar.gz --markdown 20230506/n/nlptoolssna/0.7.7-0.7.8/diff.md --exclude *.pyd
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/7b/fc/48db3efef6429a6b3b9fc6079ab6814fba9d9bdacd9651fd31f95627e284/jaaql-monitor-1.2.36.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/7b/fc/48db3efef6429a6b3b9fc6079ab6814fba9d9bdacd9651fd31f95627e284/jaaql-monitor-1.2.36.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [aioworkers-sentry]: Downloading https://files.pythonhosted.org/packages/d4/5e/8f5af51a85086f744c7fba059772858e1e39f94f20eb78110ce68edc8950/aioworkers-sentry-0.4.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/7b/fc/48db3efef6429a6b3b9fc6079ab6814fba9d9bdacd9651fd31f95627e284/jaaql-monitor-1.2.36.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [avnet-scotty]: Downloading https://files.pythonhosted.org/packages/c1/d4/234232cf8ca8d5da1518453b6f5b862a9f3ae3df558c0461a559e36bd70b/avnet-scotty-2023.4.1.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [aioworkers-sentry]: executing diffoscope
+[2023-05-06 13:09:01] INFO root fetch - processPackages [aioworkers-sentry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioworkers-sentry-0.3a3.tar.gz tmp/aioworkers-sentry-0.4.tar.gz --markdown 20230506/a/aioworkers-sentry/0.3a3-0.4/diff.md --exclude *.pyd
+[2023-05-06 13:09:01] INFO root fetch - processPackages [kindenty-base]: Downloading https://files.pythonhosted.org/packages/7e/3a/fbcbd1cbd8d43f51b059906b8c8f55792fd62ddb6409cc657177f32ac622/kindenty_base-0.1.9.tar.gz
+[2023-05-06 13:09:01] INFO root fetch - processPackages [avnet-scotty]: executing diffoscope
+[2023-05-06 13:09:01] INFO root fetch - processPackages [avnet-scotty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avnet-scotty-2023.4.tar.gz tmp/avnet-scotty-2023.4.1.tar.gz --markdown 20230506/a/avnet-scotty/2023.4-2023.4.1/diff.md --exclude *.pyd
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.35.tar.gz tmp/jaaql-monitor-1.2.36.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.35-1.2.36/diff.md --exclude *.pyd
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.35.tar.gz tmp/jaaql-monitor-1.2.36.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.35-1.2.36/diff.md --exclude *.pyd
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:09:01] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.35.tar.gz tmp/jaaql-monitor-1.2.36.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.35-1.2.36/diff.md --exclude *.pyd
+[2023-05-06 13:09:02] INFO root fetch - processPackages [kindenty-base]: executing diffoscope
+[2023-05-06 13:09:02] INFO root fetch - processPackages [kindenty-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kindenty_base-0.1.8.tar.gz tmp/kindenty_base-0.1.9.tar.gz --markdown 20230506/k/kindenty-base/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 13:09:02] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 13:09:03] INFO root fetch - main [MainThread]: End processing [aioworkers-sentry]: success
+[2023-05-06 13:09:03] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:09:03] INFO root fetch - main [MainThread]: End processing [avnet-scotty]: success
+[2023-05-06 13:09:03] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:09:03] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:09:03] INFO root fetch - main [MainThread]: End processing [kindenty-base]: success
+[2023-05-06 13:09:03] INFO root fetch - main [MainThread]: Store serial: [17999107]
