@@ -8577,3 +8577,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 11:28:25] INFO root fetch - main [MainThread]: End processing [cjen]: success
 [2023-05-06 11:28:29] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
 [2023-05-06 11:28:29] INFO root fetch - main [MainThread]: Store serial: [17998564]
+[2023-05-06 11:33:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998564]
+[2023-05-06 11:33:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 11:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alethiometer
+[2023-05-06 11:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nkust-ucl-k12-bot
+[2023-05-06 11:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: test-add-python
+[2023-05-06 11:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Office-helper-functions
+[2023-05-06 11:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aliyun-python-sdk-nlp-automl
+[2023-05-06 11:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-travelmanager
+[2023-05-06 11:33:38] INFO root fetch - processPackages [Office-helper-functions]: New version: [0.1.131] Old Version: [0.1.13]
+[2023-05-06 11:33:38] INFO root fetch - processPackages [aliyun-python-sdk-nlp-automl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 11:33:38] INFO root fetch - processPackages [alethiometer]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-06 11:33:38] WARNING root fetch - processPackages [nkust-ucl-k12-bot]: Skipping, unable to determine old version
+[2023-05-06 11:33:38] WARNING root fetch - processPackages [test-add-python]: Skipping, unable to determine old version
+[2023-05-06 11:33:38] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot] error
+[2023-05-06 11:33:38] INFO root fetch - processPackages [python-travelmanager]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-06 11:33:38] INFO root fetch - main [MainThread]: End processing [test-add-python] error
+[2023-05-06 11:33:38] INFO root fetch - processPackages [Office-helper-functions]: Downloading https://files.pythonhosted.org/packages/f7/85/bd32e5c7de2e2e8209f33bc72f320cf3067175993471c1550aa00ee870e0/Office_helper_functions-0.1.131.tar.gz
+[2023-05-06 11:33:38] INFO root fetch - processPackages [aliyun-python-sdk-nlp-automl]: Downloading https://files.pythonhosted.org/packages/ca/81/233be695ced0b1ac2507199ec930398931be9e16720ed385bcb5127c269f/aliyun-python-sdk-nlp-automl-0.0.8.tar.gz
+[2023-05-06 11:33:38] INFO root fetch - processPackages [alethiometer]: Downloading https://files.pythonhosted.org/packages/0f/a3/cd0512be53f056ac9a6e0a2c41551cd48c9e696cb5be61286acb32f65ef0/alethiometer-1.1.2.tar.gz
+[2023-05-06 11:33:38] INFO root fetch - processPackages [python-travelmanager]: Downloading https://files.pythonhosted.org/packages/fe/30/e2a8363f0bb2d7a4a8eb1ddc93b25259573398c959844e181d30e3cccac0/python_travelmanager-0.2.1.tar.gz
+[2023-05-06 11:33:38] INFO root fetch - processPackages [Office-helper-functions]: executing diffoscope
+[2023-05-06 11:33:38] INFO root fetch - processPackages [Office-helper-functions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Office_helper_functions-0.1.13.tar.gz tmp/Office_helper_functions-0.1.131.tar.gz --markdown 20230506/O/Office-helper-functions/0.1.13-0.1.131/diff.md --exclude *.pyd
+[2023-05-06 11:33:38] INFO root fetch - processPackages [alethiometer]: executing diffoscope
+[2023-05-06 11:33:38] INFO root fetch - processPackages [alethiometer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alethiometer-1.1.1.tar.gz tmp/alethiometer-1.1.2.tar.gz --markdown 20230506/a/alethiometer/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-06 11:33:38] INFO root fetch - processPackages [python-travelmanager]: executing diffoscope
+[2023-05-06 11:33:38] INFO root fetch - processPackages [python-travelmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_travelmanager-0.2.0.tar.gz tmp/python_travelmanager-0.2.1.tar.gz --markdown 20230506/p/python-travelmanager/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 11:33:38] INFO root fetch - processPackages [aliyun-python-sdk-nlp-automl]: Downloading https://files.pythonhosted.org/packages/09/9c/543393ebbb657cd7120e8d955f6400e3a1c874f96132c8c1f41462ca09c8/aliyun-python-sdk-nlp-automl-0.0.9.tar.gz
+[2023-05-06 11:33:38] INFO root fetch - processPackages [aliyun-python-sdk-nlp-automl]: executing diffoscope
+[2023-05-06 11:33:38] INFO root fetch - processPackages [aliyun-python-sdk-nlp-automl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-nlp-automl-0.0.8.tar.gz tmp/aliyun-python-sdk-nlp-automl-0.0.9.tar.gz --markdown 20230506/a/aliyun-python-sdk-nlp-automl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 11:33:39] INFO root fetch - main [MainThread]: End processing [Office-helper-functions]: success
+[2023-05-06 11:33:39] INFO root fetch - main [MainThread]: End processing [python-travelmanager]: success
+[2023-05-06 11:33:40] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-nlp-automl]: success
+[2023-05-06 11:34:08] INFO root fetch - main [MainThread]: End processing [alethiometer]: success
+[2023-05-06 11:34:08] INFO root fetch - main [MainThread]: Store serial: [17998588]
