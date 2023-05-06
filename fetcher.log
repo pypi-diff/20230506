@@ -14260,3 +14260,42 @@ EOFError: EOF read where object expected
 [2023-05-06 22:29:18] INFO root fetch - main [MainThread]: End processing [tsp-wrapper]: success
 [2023-05-06 22:29:26] INFO root fetch - main [MainThread]: End processing [PyAPplus64]: success
 [2023-05-06 22:29:26] INFO root fetch - main [MainThread]: Store serial: [18002008]
+[2023-05-06 22:34:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002008]
+[2023-05-06 22:34:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 22:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nyckel
+[2023-05-06 22:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: databricks-mosaic
+[2023-05-06 22:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: invesytoolbox
+[2023-05-06 22:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hyfi-template
+[2023-05-06 22:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pitv
+[2023-05-06 22:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nats-nsc
+[2023-05-06 22:34:35] INFO root fetch - processPackages [databricks-mosaic]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-06 22:34:35] INFO root fetch - processPackages [invesytoolbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 22:34:35] INFO root fetch - processPackages [nyckel]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-06 22:34:35] INFO root fetch - processPackages [nats-nsc]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-06 22:34:35] INFO root fetch - processPackages [pitv]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 22:34:35] INFO root fetch - processPackages [hyfi-template]: New version: [0.3.0] Old Version: [0.2.4]
+[2023-05-06 22:34:35] INFO root fetch - processPackages [nats-nsc]: executing diffoscope
+[2023-05-06 22:34:35] INFO root fetch - processPackages [nats-nsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nats_nsc-0.2.0.tar.gz tmp/nats_nsc-0.2.1.tar.gz --markdown 20230506/n/nats-nsc/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 22:34:35] INFO root fetch - processPackages [databricks-mosaic]: Downloading https://files.pythonhosted.org/packages/c4/96/f85b86b29569492c62343bf8385f9786433dfcf247abcfc7eee6064a7a20/databricks-mosaic-0.3.8.tar.gz
+[2023-05-06 22:34:35] INFO root fetch - processPackages [pitv]: Downloading https://files.pythonhosted.org/packages/60/17/1593c761ce1ce733f36ed24b4dbc97af0ef777a046eda27a9e97ff93e079/pitv-0.0.2.tar.gz
+[2023-05-06 22:34:35] INFO root fetch - processPackages [invesytoolbox]: Downloading https://files.pythonhosted.org/packages/97/3e/e9f178b336c7b6fe59a899d3330f95aa09d6729980e77713eabfe03277f8/invesytoolbox-0.0.8.tar.gz
+[2023-05-06 22:34:35] INFO root fetch - processPackages [hyfi-template]: Downloading https://files.pythonhosted.org/packages/c4/da/f518fe3d9122d80d1f0118f9c22ffd8f48fbfff3cf6d86b9086bc1e46767/hyfi_template-0.3.0.tar.gz
+[2023-05-06 22:34:35] INFO root fetch - processPackages [nyckel]: Downloading https://files.pythonhosted.org/packages/84/2a/50d44353d6249a5e6cdd6d2aff895b5eeedbf13e2036dd5b46a16ee9ef70/nyckel-0.0.6.tar.gz
+[2023-05-06 22:34:35] WARNING root fetch - processPackages [databricks-mosaic]: Skipping package: exceeds size limit 18896121>=10485760
+[2023-05-06 22:34:35] INFO root fetch - main [MainThread]: End processing [databricks-mosaic] error
+[2023-05-06 22:34:35] INFO root fetch - processPackages [hyfi-template]: executing diffoscope
+[2023-05-06 22:34:35] INFO root fetch - processPackages [hyfi-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyfi_template-0.2.4.tar.gz tmp/hyfi_template-0.3.0.tar.gz --markdown 20230506/h/hyfi-template/0.2.4-0.3.0/diff.md --exclude *.pyd
+[2023-05-06 22:34:35] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2023-05-06 22:34:35] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.0.5.tar.gz tmp/nyckel-0.0.6.tar.gz --markdown 20230506/n/nyckel/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-06 22:34:35] INFO root fetch - processPackages [pitv]: Downloading https://files.pythonhosted.org/packages/8c/9a/ae12c95af71320642c5c4e710c94f1d8a026550455cd9db83957442279f3/pitv-0.0.3.tar.gz
+[2023-05-06 22:34:36] INFO root fetch - processPackages [pitv]: executing diffoscope
+[2023-05-06 22:34:36] INFO root fetch - processPackages [pitv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pitv-0.0.2.tar.gz tmp/pitv-0.0.3.tar.gz --markdown 20230506/p/pitv/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 22:34:36] INFO root fetch - processPackages [invesytoolbox]: Downloading https://files.pythonhosted.org/packages/8a/88/dda905ac81837002d29e9cae38ba2d125d746a5324c8a20fb186f1987a9e/invesytoolbox-0.0.9.tar.gz
+[2023-05-06 22:34:36] INFO root fetch - processPackages [invesytoolbox]: executing diffoscope
+[2023-05-06 22:34:36] INFO root fetch - processPackages [invesytoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invesytoolbox-0.0.8.tar.gz tmp/invesytoolbox-0.0.9.tar.gz --markdown 20230506/i/invesytoolbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 22:34:36] INFO root fetch - main [MainThread]: End processing [nats-nsc]: success
+[2023-05-06 22:34:36] INFO root fetch - main [MainThread]: End processing [hyfi-template]: success
+[2023-05-06 22:34:37] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2023-05-06 22:34:37] INFO root fetch - main [MainThread]: End processing [pitv]: success
+[2023-05-06 22:34:38] INFO root fetch - main [MainThread]: End processing [invesytoolbox]: success
+[2023-05-06 22:34:38] INFO root fetch - main [MainThread]: Store serial: [18002028]
