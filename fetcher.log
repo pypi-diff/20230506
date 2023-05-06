@@ -5761,3 +5761,40 @@
 [2023-05-06 06:53:47] INFO root fetch - processPackages [segment-geospatial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segment-geospatial-0.3.0.tar.gz tmp/segment-geospatial-0.4.0.tar.gz --markdown 20230506/s/segment-geospatial/0.3.0-0.4.0/diff.md --exclude *.pyd
 [2023-05-06 06:53:48] INFO root fetch - main [MainThread]: End processing [segment-geospatial]: success
 [2023-05-06 06:53:48] INFO root fetch - main [MainThread]: Store serial: [17996966]
+[2023-05-06 06:58:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996966]
+[2023-05-06 06:58:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 06:58:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Slpapy
+[2023-05-06 06:58:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: silero-api-server
+[2023-05-06 06:58:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkilint
+[2023-05-06 06:58:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellmap
+[2023-05-06 06:58:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jsepp
+[2023-05-06 06:58:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: IMDbTraktSyncer
+[2023-05-06 06:58:56] INFO root fetch - processPackages [jsepp]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 06:58:56] INFO root fetch - processPackages [Slpapy]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 06:58:56] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202305060457] Old Version: [1.0.1.dev202305060213]
+[2023-05-06 06:58:56] INFO root fetch - processPackages [pkilint]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-06 06:58:56] WARNING root fetch - processPackages [silero-api-server]: Skipping, unable to determine old version
+[2023-05-06 06:58:56] INFO root fetch - main [MainThread]: End processing [silero-api-server] error
+[2023-05-06 06:58:56] INFO root fetch - processPackages [IMDbTraktSyncer]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-06 06:58:56] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/ae/00/3d10acdf9755a947ce22d50f40e9398278c328814d9927c062c6021ccc42/cellmap-1.0.1.dev202305060457-py3-none-any.whl
+[2023-05-06 06:58:56] INFO root fetch - processPackages [jsepp]: Downloading https://files.pythonhosted.org/packages/87/2d/0ff371198a6f172a9282f92a2179313ca5a3ae76f231072db988084572d0/jsepp-0.1.1.tar.gz
+[2023-05-06 06:58:56] INFO root fetch - processPackages [IMDbTraktSyncer]: Downloading https://files.pythonhosted.org/packages/e3/5c/6cd0240d595d85e90d3e87cca946e0618836b2d3a6cb0686cde0170a8273/IMDbTraktSyncer-1.0.8.tar.gz
+[2023-05-06 06:58:57] INFO root fetch - processPackages [Slpapy]: Downloading https://files.pythonhosted.org/packages/06/4d/ecfc567b0acb571b78843101e4348cdef30a98fbf3da9a90913ce0b8f203/Slpapy-0.2.9.tar.gz
+[2023-05-06 06:58:57] INFO root fetch - processPackages [pkilint]: Downloading https://files.pythonhosted.org/packages/c6/9e/3c4f88e10f231898435d4a335e84c24df62cc83115746db798344dd08cc3/pkilint-0.8.2.tar.gz
+[2023-05-06 06:58:57] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-05-06 06:58:57] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202305060213-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202305060457-py3-none-any.whl.zip --markdown 20230506/c/cellmap/1.0.1.dev202305060213-1.0.1.dev202305060457/diff.md --exclude *.pyd
+[2023-05-06 06:58:57] INFO root fetch - processPackages [IMDbTraktSyncer]: executing diffoscope
+[2023-05-06 06:58:57] INFO root fetch - processPackages [IMDbTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDbTraktSyncer-1.0.7.tar.gz tmp/IMDbTraktSyncer-1.0.8.tar.gz --markdown 20230506/I/IMDbTraktSyncer/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-06 06:58:57] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-05-06 06:58:57] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.2.8.tar.gz tmp/Slpapy-0.2.9.tar.gz --markdown 20230506/S/Slpapy/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 06:58:57] INFO root fetch - processPackages [jsepp]: Downloading https://files.pythonhosted.org/packages/c7/ab/7628cf79af5713b30c82e73a03bc4ee0bb66196cccd98411eb2a93536f0a/jsepp-0.1.2.tar.gz
+[2023-05-06 06:58:57] INFO root fetch - processPackages [pkilint]: executing diffoscope
+[2023-05-06 06:58:57] INFO root fetch - processPackages [pkilint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkilint-0.8.1.tar.gz tmp/pkilint-0.8.2.tar.gz --markdown 20230506/p/pkilint/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-06 06:58:57] INFO root fetch - processPackages [jsepp]: executing diffoscope
+[2023-05-06 06:58:57] INFO root fetch - processPackages [jsepp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsepp-0.1.1.tar.gz tmp/jsepp-0.1.2.tar.gz --markdown 20230506/j/jsepp/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 06:58:58] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-05-06 06:58:58] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
+[2023-05-06 06:58:58] INFO root fetch - main [MainThread]: End processing [IMDbTraktSyncer]: success
+[2023-05-06 06:58:58] INFO root fetch - main [MainThread]: End processing [jsepp]: success
+[2023-05-06 06:58:58] INFO root fetch - main [MainThread]: End processing [pkilint]: success
+[2023-05-06 06:58:58] INFO root fetch - main [MainThread]: Store serial: [17996996]
