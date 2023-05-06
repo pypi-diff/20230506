@@ -6877,3 +6877,66 @@
 [2023-05-06 08:59:16] INFO root fetch - main [MainThread]: End processing [pulumi-vault]: success
 [2023-05-06 08:59:40] INFO root fetch - main [MainThread]: End processing [pulumi-tls]: success
 [2023-05-06 08:59:40] INFO root fetch - main [MainThread]: Store serial: [17997578]
+[2023-05-06 09:04:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997578]
+[2023-05-06 09:04:49] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 09:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-sale-order-line-price-history
+[2023-05-06 09:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyroporn
+[2023-05-06 09:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hk-libs
+[2023-05-06 09:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nalyst
+[2023-05-06 09:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-signalfx
+[2023-05-06 09:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: seqio-nightly
+[2023-05-06 09:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: trade-slang
+[2023-05-06 09:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-vault-share
+[2023-05-06 09:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo-addon-vault
+[2023-05-06 09:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo-addons-oca-server-auth
+[2023-05-06 09:04:49] WARNING root fetch - processPackages [hk-libs]: Skipping, unable to determine old version
+[2023-05-06 09:04:49] INFO root fetch - processPackages [pyroporn]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-06 09:04:49] INFO root fetch - main [MainThread]: End processing [hk-libs] error
+[2023-05-06 09:04:49] INFO root fetch - processPackages [nalyst]: New version: [0.3.0] Old Version: [0.2.7]
+[2023-05-06 09:04:49] INFO root fetch - processPackages [trade-slang]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-vault-share]: New version: [15.0.1.1.0.7] Old Version: [15.0.1.1.0.4]
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-vault]: New version: [15.0.1.6.1.6] Old Version: [15.0.1.6.1.4]
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: New version: [15.0.1.0.0.7] Old Version: [15.0.1.0.0.6]
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addons-oca-server-auth]: New version: [16.0.20230505.0] Old Version: [16.0.20230417.0]
+[2023-05-06 09:04:49] INFO root fetch - processPackages [pulumi-signalfx]: New version: [5.9.0a1678179334] Old Version: [5.9.0a1678129624]
+[2023-05-06 09:04:49] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-05-06 09:04:49] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-05-06 09:04:49] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230506/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-05-06 09:04:49] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/cd/16/9c64d33d8277619445c54732ac863394e3c0a05c11d338624790101d895b/pyroporn-0.1.7.tar.gz
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-vault]: Downloading https://files.pythonhosted.org/packages/c0/b5/670888c4bf4b08baf3fe3900e3fb4d9ba00dd8e4eef6e93730bffbc28b94/odoo_addon_vault-15.0.1.6.1.4-py3-none-any.whl
+[2023-05-06 09:04:49] INFO root fetch - processPackages [trade-slang]: Downloading https://files.pythonhosted.org/packages/63/db/16b5540ce69985c10518a1376c370b3cfd65485510fc813efcec0a711d49/trade_slang-0.1.0.tar.gz
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-vault-share]: Downloading https://files.pythonhosted.org/packages/b9/e5/a0504052955d77ea22433b9415c3ecc335fe2c56200ceb586c1193f47eaa/odoo_addon_vault_share-15.0.1.1.0.4-py3-none-any.whl
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addons-oca-server-auth]: Downloading https://files.pythonhosted.org/packages/42/68/9ad4200a821cec540d6b457be106c21d7862023be3db7896fa54202667c3/odoo_addons_oca_server_auth-16.0.20230417.0-py3-none-any.whl
+[2023-05-06 09:04:49] INFO root fetch - processPackages [nalyst]: Downloading https://files.pythonhosted.org/packages/69/d8/d9039a83476814161e054b5c4b26fc7f41ee6292373cf8922e36e58f3c81/nalyst-0.3.0.tar.gz
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: Downloading https://files.pythonhosted.org/packages/6f/8e/642eb8557d6ec5a97ea968ca48ea219509f84ec0134e7c0cc5a55782822e/odoo_addon_sale_order_line_price_history-15.0.1.0.0.7-py3-none-any.whl
+[2023-05-06 09:04:49] INFO root fetch - processPackages [nalyst]: executing diffoscope
+[2023-05-06 09:04:49] INFO root fetch - processPackages [nalyst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nalyst-0.2.7.tar.gz tmp/nalyst-0.3.0.tar.gz --markdown 20230506/n/nalyst/0.2.7-0.3.0/diff.md --exclude *.pyd
+[2023-05-06 09:04:49] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/c9/8e/afa9d4e8d89dff2096511a0e6b14b23536f635f0fd55e609105d6460539e/pyroporn-0.1.8.tar.gz
+[2023-05-06 09:04:49] INFO root fetch - processPackages [pulumi-signalfx]: executing diffoscope
+[2023-05-06 09:04:49] INFO root fetch - processPackages [pulumi-signalfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_signalfx-5.9.0a1678129624.tar.gz tmp/pulumi_signalfx-5.9.0a1678179334.tar.gz --markdown 20230506/p/pulumi-signalfx/5.9.0a1678129624-5.9.0a1678179334/diff.md --exclude *.pyd
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: executing diffoscope
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_order_line_price_history-15.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_sale_order_line_price_history-15.0.1.0.0.7-py3-none-any.whl.zip --markdown 20230506/o/odoo-addon-sale-order-line-price-history/15.0.1.0.0.6-15.0.1.0.0.7/diff.md --exclude *.pyd
+[2023-05-06 09:04:49] INFO root fetch - processPackages [trade-slang]: Downloading https://files.pythonhosted.org/packages/a5/0a/7ae35d00b8107cf5e7670aa41e3dfbc6860d817b85212b86ce2f5360e581/trade_slang-0.2.0.tar.gz
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-vault-share]: Downloading https://files.pythonhosted.org/packages/b4/e0/307e79852e929cd63341a43d1ce3ba27fe1f0772256e4495883cf929a63d/odoo_addon_vault_share-15.0.1.1.0.7-py3-none-any.whl
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-vault]: Downloading https://files.pythonhosted.org/packages/16/1e/a004af8beb0d11883728b61b47dba07dee6a583f1ed70c75082bcb39af87/odoo_addon_vault-15.0.1.6.1.6-py3-none-any.whl
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-vault-share]: executing diffoscope
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-vault-share]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_vault_share-15.0.1.1.0.4-py3-none-any.whl.zip tmp/odoo_addon_vault_share-15.0.1.1.0.7-py3-none-any.whl.zip --markdown 20230506/o/odoo-addon-vault-share/15.0.1.1.0.4-15.0.1.1.0.7/diff.md --exclude *.pyd
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addons-oca-server-auth]: Downloading https://files.pythonhosted.org/packages/cd/e6/f992a2276ee38c7ebe43ebbf4857589b3db754871f8f5011e439314d9562/odoo_addons_oca_server_auth-16.0.20230505.0-py3-none-any.whl
+[2023-05-06 09:04:49] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-06 09:04:49] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.1.7.tar.gz tmp/pyroporn-0.1.8.tar.gz --markdown 20230506/p/pyroporn/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-vault]: executing diffoscope
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addon-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_vault-15.0.1.6.1.4-py3-none-any.whl.zip tmp/odoo_addon_vault-15.0.1.6.1.6-py3-none-any.whl.zip --markdown 20230506/o/odoo-addon-vault/15.0.1.6.1.4-15.0.1.6.1.6/diff.md --exclude *.pyd
+[2023-05-06 09:04:49] INFO root fetch - processPackages [trade-slang]: executing diffoscope
+[2023-05-06 09:04:49] INFO root fetch - processPackages [trade-slang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trade_slang-0.1.0.tar.gz tmp/trade_slang-0.2.0.tar.gz --markdown 20230506/t/trade-slang/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addons-oca-server-auth]: executing diffoscope
+[2023-05-06 09:04:49] INFO root fetch - processPackages [odoo-addons-oca-server-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_server_auth-16.0.20230417.0-py3-none-any.whl.zip tmp/odoo_addons_oca_server_auth-16.0.20230505.0-py3-none-any.whl.zip --markdown 20230506/o/odoo-addons-oca-server-auth/16.0.20230417.0-16.0.20230505.0/diff.md --exclude *.pyd
+[2023-05-06 09:04:51] INFO root fetch - main [MainThread]: End processing [nalyst]: success
+[2023-05-06 09:04:51] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-order-line-price-history]: success
+[2023-05-06 09:04:51] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-server-auth]: success
+[2023-05-06 09:04:51] INFO root fetch - main [MainThread]: End processing [trade-slang]: success
+[2023-05-06 09:04:51] INFO root fetch - main [MainThread]: End processing [odoo-addon-vault-share]: success
+[2023-05-06 09:04:51] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-06 09:04:51] INFO root fetch - main [MainThread]: End processing [pulumi-signalfx]: success
+[2023-05-06 09:04:51] INFO root fetch - main [MainThread]: End processing [odoo-addon-vault]: success
+[2023-05-06 09:04:52] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-05-06 09:04:52] INFO root fetch - main [MainThread]: Store serial: [17997612]
