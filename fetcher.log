@@ -8700,3 +8700,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 11:39:24] INFO root fetch - main [MainThread]: End processing [mlrun]: success
 [2023-05-06 11:39:29] INFO root fetch - main [MainThread]: End processing [holoviews]: success
 [2023-05-06 11:39:29] INFO root fetch - main [MainThread]: Store serial: [17998650]
+[2023-05-06 11:44:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998650]
+[2023-05-06 11:44:38] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parquet2lance
+[2023-05-06 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sparrow-order-lib
+[2023-05-06 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qfinuwa
+[2023-05-06 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nkust-ucl-k12-bot
+[2023-05-06 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dune-fem
+[2023-05-06 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dune-fem-dg
+[2023-05-06 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dune-vem
+[2023-05-06 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: certora-cli-alpha-rahav-cert-1987-update-regTest
+[2023-05-06 11:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: p-ttauto-crawler
+[2023-05-06 11:44:38] WARNING root fetch - processPackages [parquet2lance]: Skipping, unable to determine old version
+[2023-05-06 11:44:38] INFO root fetch - main [MainThread]: End processing [parquet2lance] error
+[2023-05-06 11:44:38] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: New version: [20230506.9.42.516242] Old Version: [20230506.2.36.941865]
+[2023-05-06 11:44:38] INFO root fetch - processPackages [dune-vem]: New version: [2.9.dev20220529] Old Version: [2.9.0rc1]
+[2023-05-06 11:44:38] INFO root fetch - processPackages [qfinuwa]: New version: [1.1.9.1] Old Version: [1.1.9]
+[2023-05-06 11:44:38] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.9] Old Version: [0.1.89]
+[2023-05-06 11:44:38] INFO root fetch - processPackages [nkust-ucl-k12-bot]: New version: [1.0.0] Old Version: [0.0.2]
+[2023-05-06 11:44:38] INFO root fetch - processPackages [dune-fem-dg]: New version: [2.9.dev20220529] Old Version: [2.9.0rc1]
+[2023-05-06 11:44:38] INFO root fetch - processPackages [dune-fem]: New version: [2.9.dev20220529] Old Version: [2.9.0rc1]
+[2023-05-06 11:44:38] INFO root fetch - processPackages [p-ttauto-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 11:44:39] INFO root fetch - processPackages [p-ttauto-crawler]: executing diffoscope
+[2023-05-06 11:44:39] INFO root fetch - processPackages [p-ttauto-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-ttauto-crawler-0.0.8.tar.gz tmp/p-ttauto-crawler-0.0.9.tar.gz --markdown 20230506/p/p-ttauto-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 11:44:39] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/6c/f7/193ce150870adcf5fb3d77b4bc076734f246a23af105b54015fb836b3728/sparrow-order-lib-0.1.89.tar.gz
+[2023-05-06 11:44:39] INFO root fetch - processPackages [qfinuwa]: Downloading https://files.pythonhosted.org/packages/64/8f/8053f1e7f016d335eeab8f3dd157397585c40e7a5dd3a23bbced3d51008d/qfinuwa-1.1.9.1.tar.gz
+[2023-05-06 11:44:39] INFO root fetch - processPackages [dune-vem]: Downloading https://files.pythonhosted.org/packages/7c/35/b1a4408e61ad6c883f5bc402ed566ea25adb286771efd4d34dac6cc54d4c/dune-vem-2.9.0rc1.tar.gz
+[2023-05-06 11:44:39] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Downloading https://files.pythonhosted.org/packages/2c/8e/34647eef8ff7f6ed5b9beeb6df90ac32b6f31113507ff0b5f20651456635/certora-cli-alpha-rahav-cert-1987_update_regTest-20230506.2.36.941865.tar.gz
+[2023-05-06 11:44:39] INFO root fetch - processPackages [dune-fem-dg]: Downloading https://files.pythonhosted.org/packages/d1/d8/6881b8b65b90e311082b519871dc36c4c1d976e91bd0e37b87f9c0d44b9a/dune-fem-dg-2.9.0rc1.tar.gz
+[2023-05-06 11:44:39] INFO root fetch - processPackages [dune-fem]: Downloading https://files.pythonhosted.org/packages/48/31/f0471d534d27896706ac44cf910620c66cbff476ce9359a067c3d562f247/dune-fem-2.9.0rc1.tar.gz
+[2023-05-06 11:44:39] WARNING root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Skipping package: exceeds size limit 38472912>=10485760
+[2023-05-06 11:44:39] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-rahav-cert-1987-update-regTest] error
+[2023-05-06 11:44:39] INFO root fetch - processPackages [qfinuwa]: executing diffoscope
+[2023-05-06 11:44:39] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-05-06 11:44:39] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.89.tar.gz tmp/sparrow-order-lib-0.1.9.tar.gz --markdown 20230506/s/sparrow-order-lib/0.1.89-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 11:44:39] INFO root fetch - processPackages [qfinuwa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qfinuwa-1.1.9.tar.gz tmp/qfinuwa-1.1.9.1.tar.gz --markdown 20230506/q/qfinuwa/1.1.9-1.1.9.1/diff.md --exclude *.pyd
+[2023-05-06 11:44:39] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/4a/31/ec7dbdff9b708d925e457cb156ed1ace88d1dfd16acfd5097b2550448177/nkust-ucl-k12-bot-1.0.0.tar.gz
+[2023-05-06 11:44:39] INFO root fetch - processPackages [nkust-ucl-k12-bot]: executing diffoscope
+[2023-05-06 11:44:39] INFO root fetch - processPackages [nkust-ucl-k12-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkust-ucl-k12-bot-0.0.2.tar.gz tmp/nkust-ucl-k12-bot-1.0.0.tar.gz --markdown 20230506/n/nkust-ucl-k12-bot/0.0.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 11:44:40] INFO root fetch - processPackages [dune-vem]: Downloading https://files.pythonhosted.org/packages/48/1a/066e9b13e4769f6c6eb731b95f15ae55361c1e5567a3500477a49228ab98/dune-vem-2.9.dev20220529.tar.gz
+[2023-05-06 11:44:40] INFO root fetch - processPackages [dune-fem]: Downloading https://files.pythonhosted.org/packages/1d/2e/975cdf51e1ad09f4f1512323893742c25221badb76bb6bd2638b2cd9d5c1/dune-fem-2.9.dev20220529.tar.gz
+[2023-05-06 11:44:40] INFO root fetch - main [MainThread]: End processing [p-ttauto-crawler]: success
+[2023-05-06 11:44:40] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
+[2023-05-06 11:44:40] INFO root fetch - main [MainThread]: End processing [qfinuwa]: success
+[2023-05-06 11:44:40] INFO root fetch - processPackages [dune-fem-dg]: Downloading https://files.pythonhosted.org/packages/80/ec/a96c55b604e09e34f320e429d7deb59aa758dd4f3c0425fbaaafd30615e6/dune-fem-dg-2.9.dev20220529.tar.gz
+[2023-05-06 11:44:40] INFO root fetch - processPackages [dune-vem]: executing diffoscope
+[2023-05-06 11:44:40] INFO root fetch - processPackages [dune-vem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune-vem-2.9.0rc1.tar.gz tmp/dune-vem-2.9.dev20220529.tar.gz --markdown 20230506/d/dune-vem/2.9.0rc1-2.9.dev20220529/diff.md --exclude *.pyd
+[2023-05-06 11:44:40] INFO root fetch - main [MainThread]: End processing [sparrow-order-lib]: success
+[2023-05-06 11:44:41] INFO root fetch - processPackages [dune-fem]: executing diffoscope
+[2023-05-06 11:44:41] INFO root fetch - processPackages [dune-fem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune-fem-2.9.0rc1.tar.gz tmp/dune-fem-2.9.dev20220529.tar.gz --markdown 20230506/d/dune-fem/2.9.0rc1-2.9.dev20220529/diff.md --exclude *.pyd
+[2023-05-06 11:44:41] INFO root fetch - processPackages [dune-fem-dg]: executing diffoscope
+[2023-05-06 11:44:41] INFO root fetch - processPackages [dune-fem-dg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune-fem-dg-2.9.0rc1.tar.gz tmp/dune-fem-dg-2.9.dev20220529.tar.gz --markdown 20230506/d/dune-fem-dg/2.9.0rc1-2.9.dev20220529/diff.md --exclude *.pyd
+[2023-05-06 11:44:54] INFO root fetch - main [MainThread]: End processing [dune-vem]: success
+[2023-05-06 11:44:54] INFO root fetch - main [MainThread]: End processing [dune-fem]: success
+[2023-05-06 11:44:54] INFO root fetch - main [MainThread]: End processing [dune-fem-dg]: success
+[2023-05-06 11:44:54] INFO root fetch - main [MainThread]: Store serial: [17998677]
