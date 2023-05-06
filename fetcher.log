@@ -6106,3 +6106,53 @@
 [2023-05-06 07:49:56] INFO root fetch - main [MainThread]: End processing [dumbo-asp]: success
 [2023-05-06 07:50:00] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
 [2023-05-06 07:50:00] INFO root fetch - main [MainThread]: Store serial: [17997182]
+[2023-05-06 07:55:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997182]
+[2023-05-06 07:55:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 07:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-cloudflare
+[2023-05-06 07:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: VonPylib
+[2023-05-06 07:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sparrow-order-lib
+[2023-05-06 07:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jiuming-tools
+[2023-05-06 07:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-dnsimple
+[2023-05-06 07:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: trilium-py
+[2023-05-06 07:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-consul
+[2023-05-06 07:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-aiven
+[2023-05-06 07:55:08] INFO root fetch - processPackages [pulumi-cloudflare]: New version: [5.1.0a1683350427] Old Version: [5.1.0a1683264195]
+[2023-05-06 07:55:08] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.9] Old Version: [0.1.86]
+[2023-05-06 07:55:08] INFO root fetch - processPackages [pulumi-dnsimple]: New version: [3.5.0a1683350830] Old Version: [3.5.0a1683264845]
+[2023-05-06 07:55:08] INFO root fetch - processPackages [jiuming-tools]: New version: [2.9] Old Version: [2.8]
+[2023-05-06 07:55:08] INFO root fetch - processPackages [VonPylib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 07:55:08] INFO root fetch - processPackages [trilium-py]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-05-06 07:55:08] INFO root fetch - processPackages [pulumi-consul]: New version: [3.9.0a1683350538] Old Version: [3.9.0a1683264351]
+[2023-05-06 07:55:08] INFO root fetch - processPackages [pulumi-aiven]: New version: [6.2.0a1683264247] Old Version: [6.2.0a1682634031]
+[2023-05-06 07:55:08] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/a3/be/389090daa785c0f619a1ba8322afc304bf0c1bf8b1dbbb58fd6eb8447e8c/sparrow-order-lib-0.1.86.tar.gz
+[2023-05-06 07:55:08] INFO root fetch - processPackages [pulumi-aiven]: executing diffoscope
+[2023-05-06 07:55:08] INFO root fetch - processPackages [pulumi-aiven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aiven-6.2.0a1682634031.tar.gz tmp/pulumi_aiven-6.2.0a1683264247.tar.gz --markdown 20230506/p/pulumi-aiven/6.2.0a1682634031-6.2.0a1683264247/diff.md --exclude *.pyd
+[2023-05-06 07:55:08] INFO root fetch - processPackages [VonPylib]: executing diffoscope
+[2023-05-06 07:55:08] INFO root fetch - processPackages [VonPylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VonPylib-0.1.8.tar.gz tmp/VonPylib-0.1.9.tar.gz --markdown 20230506/V/VonPylib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 07:55:08] INFO root fetch - processPackages [trilium-py]: Downloading https://files.pythonhosted.org/packages/94/d5/2e509620217fb644a444ee0457449de1b7ffd0c4a9b1b0cbdceaf9e7abc7/trilium_py-0.7.4-py3-none-any.whl
+[2023-05-06 07:55:08] INFO root fetch - processPackages [jiuming-tools]: executing diffoscope
+[2023-05-06 07:55:08] INFO root fetch - processPackages [jiuming-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jiuming-tools-2.8.tar.gz tmp/jiuming-tools-2.9.tar.gz --markdown 20230506/j/jiuming-tools/2.8-2.9/diff.md --exclude *.pyd
+[2023-05-06 07:55:08] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/4f/cc/133b6e5145eca08b4a77c1dcab26bcfad8b4973b3198454fab70e4fdafc7/pulumi_dnsimple-3.5.0a1683350830.tar.gz
+[2023-05-06 07:55:09] INFO root fetch - processPackages [pulumi-consul]: Downloading https://files.pythonhosted.org/packages/89/16/93e2c3ea0e3faf83080a001c706dbde3fc9f92773361dec9a46595f0572f/pulumi_consul-3.9.0a1683350538.tar.gz
+[2023-05-06 07:55:09] INFO root fetch - processPackages [pulumi-cloudflare]: Downloading https://files.pythonhosted.org/packages/bd/64/6fcdcd5125558867f47a5937eca46e1eb64526b2b47dd14d4f508ec1436a/pulumi_cloudflare-5.1.0a1683350427.tar.gz
+[2023-05-06 07:55:09] INFO root fetch - processPackages [pulumi-cloudflare]: executing diffoscope
+[2023-05-06 07:55:09] INFO root fetch - processPackages [pulumi-cloudflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudflare-5.1.0a1683264195.tar.gz tmp/pulumi_cloudflare-5.1.0a1683350427.tar.gz --markdown 20230506/p/pulumi-cloudflare/5.1.0a1683264195-5.1.0a1683350427/diff.md --exclude *.pyd
+[2023-05-06 07:55:09] INFO root fetch - processPackages [pulumi-dnsimple]: executing diffoscope
+[2023-05-06 07:55:09] INFO root fetch - processPackages [pulumi-dnsimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_dnsimple-3.5.0a1683264845.tar.gz tmp/pulumi_dnsimple-3.5.0a1683350830.tar.gz --markdown 20230506/p/pulumi-dnsimple/3.5.0a1683264845-3.5.0a1683350830/diff.md --exclude *.pyd
+[2023-05-06 07:55:09] INFO root fetch - processPackages [pulumi-consul]: executing diffoscope
+[2023-05-06 07:55:09] INFO root fetch - processPackages [pulumi-consul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_consul-3.9.0a1683264351.tar.gz tmp/pulumi_consul-3.9.0a1683350538.tar.gz --markdown 20230506/p/pulumi-consul/3.9.0a1683264351-3.9.0a1683350538/diff.md --exclude *.pyd
+[2023-05-06 07:55:09] INFO root fetch - processPackages [trilium-py]: Downloading https://files.pythonhosted.org/packages/75/2b/b9d124901b6669d42928191eb233c541a52aaea52aeb40d17578cfdb8760/trilium_py-0.7.5-py3-none-any.whl
+[2023-05-06 07:55:09] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/a9/2c/b12f3c4993a0eaaf36185b68638fdd679d5f7439756590886545fcd2b7e7/sparrow-order-lib-0.1.9.tar.gz
+[2023-05-06 07:55:09] INFO root fetch - processPackages [trilium-py]: executing diffoscope
+[2023-05-06 07:55:09] INFO root fetch - processPackages [trilium-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trilium_py-0.7.4-py3-none-any.whl.zip tmp/trilium_py-0.7.5-py3-none-any.whl.zip --markdown 20230506/t/trilium-py/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-05-06 07:55:09] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-05-06 07:55:09] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.86.tar.gz tmp/sparrow-order-lib-0.1.9.tar.gz --markdown 20230506/s/sparrow-order-lib/0.1.86-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 07:55:10] INFO root fetch - main [MainThread]: End processing [jiuming-tools]: success
+[2023-05-06 07:55:10] INFO root fetch - main [MainThread]: End processing [VonPylib]: success
+[2023-05-06 07:55:10] INFO root fetch - main [MainThread]: End processing [pulumi-dnsimple]: success
+[2023-05-06 07:55:10] INFO root fetch - main [MainThread]: End processing [trilium-py]: success
+[2023-05-06 07:55:11] INFO root fetch - main [MainThread]: End processing [pulumi-consul]: success
+[2023-05-06 07:55:11] INFO root fetch - main [MainThread]: End processing [sparrow-order-lib]: success
+[2023-05-06 07:55:11] INFO root fetch - main [MainThread]: End processing [pulumi-cloudflare]: success
+[2023-05-06 07:55:12] INFO root fetch - main [MainThread]: End processing [pulumi-aiven]: success
+[2023-05-06 07:55:12] INFO root fetch - main [MainThread]: Store serial: [17997199]
