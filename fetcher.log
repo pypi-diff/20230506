@@ -8902,3 +8902,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 12:00:35] INFO root fetch - main [MainThread]: End processing [lnsync]: success
 [2023-05-06 12:00:36] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
 [2023-05-06 12:00:36] INFO root fetch - main [MainThread]: Store serial: [17998754]
+[2023-05-06 12:05:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998754]
+[2023-05-06 12:05:44] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 12:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sparrow-order-lib
+[2023-05-06 12:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kynaylibs
+[2023-05-06 12:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agent-link
+[2023-05-06 12:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cxmlinvbot
+[2023-05-06 12:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: audiconnectpy
+[2023-05-06 12:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: parquet2lance
+[2023-05-06 12:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Flask-Helper
+[2023-05-06 12:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-common-task-system
+[2023-05-06 12:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: p-ttauto-crawler
+[2023-05-06 12:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: getdefgw
+[2023-05-06 12:05:45] INFO root fetch - processPackages [agent-link]: New version: [0.1.9] Old Version: [0.1.2]
+[2023-05-06 12:05:45] INFO root fetch - processPackages [audiconnectpy]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-05-06 12:05:45] WARNING root fetch - processPackages [kynaylibs]: Skipping, unable to determine old version
+[2023-05-06 12:05:45] WARNING root fetch - processPackages [parquet2lance]: Skipping, unable to determine old version
+[2023-05-06 12:05:45] INFO root fetch - processPackages [cxmlinvbot]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-06 12:05:45] INFO root fetch - main [MainThread]: End processing [kynaylibs] error
+[2023-05-06 12:05:45] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.90] Old Version: [0.1.9]
+[2023-05-06 12:05:45] INFO root fetch - main [MainThread]: End processing [parquet2lance] error
+[2023-05-06 12:05:45] INFO root fetch - processPackages [agent-link]: Downloading https://files.pythonhosted.org/packages/ed/5c/57931bbb971a921efd05480fefcb72397a18b345031387764c69c27b90fc/agent_link-0.1.2.tar.gz
+[2023-05-06 12:05:45] WARNING root fetch - processPackages [agent-link]: Skipping package: exceeds size limit 15899943>=10485760
+[2023-05-06 12:05:45] INFO root fetch - main [MainThread]: End processing [agent-link] error
+[2023-05-06 12:05:45] INFO root fetch - processPackages [Flask-Helper]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-06 12:05:45] INFO root fetch - processPackages [django-common-task-system]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-05-06 12:05:45] WARNING root fetch - processPackages [getdefgw]: Skipping, unable to determine old version
+[2023-05-06 12:05:45] INFO root fetch - main [MainThread]: End processing [getdefgw] error
+[2023-05-06 12:05:45] INFO root fetch - processPackages [p-ttauto-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 12:05:45] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/6f/a6/17366b18936dbfc4c1aefe4f29cfc3284e7395ad4beb045f4723cb7da1ab/audiconnectpy-1.3.3.tar.gz
+[2023-05-06 12:05:45] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/be/59/f0c13cfb162b8649f3bd8989a0831ddd101d682fbc4dd34558719e5f9d13/sparrow-order-lib-0.1.90.tar.gz
+[2023-05-06 12:05:45] INFO root fetch - processPackages [cxmlinvbot]: Downloading https://files.pythonhosted.org/packages/3b/b0/893212fabb1b312b965f2103f924fa7db4dfb081853cd804b173af2aa451/cxmlinvbot-1.0.0.win-amd64.zip
+[2023-05-06 12:05:45] INFO root fetch - processPackages [Flask-Helper]: Downloading https://files.pythonhosted.org/packages/f1/0f/7f0e9c23943ef7f942756db189ceff19f44ad332616724dc60e85860836f/Flask-Helper-2.0.3.tar.gz
+[2023-05-06 12:05:45] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-05-06 12:05:45] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.9.tar.gz tmp/sparrow-order-lib-0.1.90.tar.gz --markdown 20230506/s/sparrow-order-lib/0.1.9-0.1.90/diff.md --exclude *.pyd
+[2023-05-06 12:05:45] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/dc/b5/6f90d5a19ac68ddb89d4cc627a8c3961315b330ad803782479ad88c19fa6/audiconnectpy-1.3.4.tar.gz
+[2023-05-06 12:05:45] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2023-05-06 12:05:45] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.3.3.tar.gz tmp/audiconnectpy-1.3.4.tar.gz --markdown 20230506/a/audiconnectpy/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-05-06 12:05:45] INFO root fetch - processPackages [cxmlinvbot]: Downloading https://files.pythonhosted.org/packages/cd/2a/ebc0e4275c35e29ff9048fc08a531322d35c45ddccaf25d0d907f8aa3b49/cxmlinvbot-1.0.1.tar.gz
+[2023-05-06 12:05:45] INFO root fetch - processPackages [django-common-task-system]: Downloading https://files.pythonhosted.org/packages/cd/2d/8a9925d217673c0d016c8e7325ac00612ca06d97105a4c8de51df696a0b8/django-common-task-system-1.2.8.tar.gz
+[2023-05-06 12:05:45] INFO root fetch - processPackages [Flask-Helper]: Downloading https://files.pythonhosted.org/packages/95/d8/6b67cf7878452d74f4349bbebf0c9fb131f2b8b274d0d9c59ffac7159f3f/Flask-Helper-2.0.4.tar.gz
+[2023-05-06 12:05:45] INFO root fetch - processPackages [p-ttauto-crawler]: executing diffoscope
+[2023-05-06 12:05:45] INFO root fetch - processPackages [p-ttauto-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-ttauto-crawler-0.0.8.tar.gz tmp/p-ttauto-crawler-0.0.9.tar.gz --markdown 20230506/p/p-ttauto-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 12:05:45] INFO root fetch - processPackages [cxmlinvbot]: executing diffoscope
+[2023-05-06 12:05:45] INFO root fetch - processPackages [cxmlinvbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxmlinvbot-1.0.0.win-amd64.zip tmp/cxmlinvbot-1.0.1.tar.gz --markdown 20230506/c/cxmlinvbot/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 12:05:45] INFO root fetch - processPackages [django-common-task-system]: executing diffoscope
+[2023-05-06 12:05:45] INFO root fetch - processPackages [django-common-task-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-common-task-system-1.2.7.tar.gz tmp/django-common-task-system-1.2.8.tar.gz --markdown 20230506/d/django-common-task-system/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-05-06 12:05:45] INFO root fetch - processPackages [Flask-Helper]: executing diffoscope
+[2023-05-06 12:05:45] INFO root fetch - processPackages [Flask-Helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Helper-2.0.3.tar.gz tmp/Flask-Helper-2.0.4.tar.gz --markdown 20230506/F/Flask-Helper/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-06 12:05:46] INFO root fetch - main [MainThread]: End processing [p-ttauto-crawler]: success
+[2023-05-06 12:05:46] INFO root fetch - main [MainThread]: End processing [cxmlinvbot]: success
+[2023-05-06 12:05:46] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2023-05-06 12:05:47] INFO root fetch - main [MainThread]: End processing [Flask-Helper]: success
+[2023-05-06 12:05:47] INFO root fetch - main [MainThread]: End processing [django-common-task-system]: success
+[2023-05-06 12:05:47] INFO root fetch - main [MainThread]: End processing [sparrow-order-lib]: success
+[2023-05-06 12:05:47] INFO root fetch - main [MainThread]: Store serial: [17998787]
