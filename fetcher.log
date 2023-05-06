@@ -13115,3 +13115,40 @@ EOFError: EOF read where object expected
 [2023-05-06 19:59:19] INFO root fetch - main [MainThread]: End processing [pytagi]: success
 [2023-05-06 19:59:19] INFO root fetch - main [MainThread]: End processing [drop-analysis]: success
 [2023-05-06 19:59:19] INFO root fetch - main [MainThread]: Store serial: [18001319]
+[2023-05-06 20:04:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001319]
+[2023-05-06 20:04:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 20:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TelePol
+[2023-05-06 20:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pointclass
+[2023-05-06 20:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ilpy
+[2023-05-06 20:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whereval
+[2023-05-06 20:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: solution-harsha
+[2023-05-06 20:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: semisup-segmentation
+[2023-05-06 20:04:28] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 20:04:28] INFO root fetch - processPackages [solution-harsha]: New version: [0.2] Old Version: [0.1]
+[2023-05-06 20:04:28] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 20:04:28] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 20:04:28] INFO root fetch - processPackages [pointclass]: New version: [1.4] Old Version: [1.2]
+[2023-05-06 20:04:28] INFO root fetch - processPackages [ilpy]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-06 20:04:28] WARNING root fetch - processPackages [TelePol]: Skipping, unable to determine old version
+[2023-05-06 20:04:28] INFO root fetch - main [MainThread]: End processing [TelePol] error
+[2023-05-06 20:04:28] INFO root fetch - processPackages [whereval]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-06 20:04:28] INFO root fetch - processPackages [solution-harsha]: Downloading https://files.pythonhosted.org/packages/1b/6d/704aec13ec17263931a6bc0cbbee6f748497d660c65f240647cc27a4790c/solution_harsha-0.1.tar.gz
+[2023-05-06 20:04:28] INFO root fetch - processPackages [whereval]: Downloading https://files.pythonhosted.org/packages/00/73/a4473082234402020f66b780d68e3f23ecdf52501a393bfc271895a71ba2/whereval-0.1.7.tar.gz
+[2023-05-06 20:04:29] INFO root fetch - processPackages [pointclass]: Downloading https://files.pythonhosted.org/packages/1a/58/fe202549f2ca3404aad90399bc90701f8af8e409a65b791c1f20b68f172d/pointclass-1.4.tar.gz
+[2023-05-06 20:04:29] INFO root fetch - processPackages [ilpy]: Downloading https://files.pythonhosted.org/packages/fb/dd/1ad4c7b27b9d3d07c0eacef5466f0065c1af14dd9128201debf36b067336/ilpy-0.3.1.tar.gz
+[2023-05-06 20:04:29] INFO root fetch - processPackages [solution-harsha]: Downloading https://files.pythonhosted.org/packages/58/34/2de394decc89820cf20d25aed51e205e1d3d044feb31cfcc7866bc092936/solution_harsha-0.2.tar.gz
+[2023-05-06 20:04:29] INFO root fetch - processPackages [pointclass]: executing diffoscope
+[2023-05-06 20:04:29] INFO root fetch - processPackages [pointclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointclass-1.2.tar.gz tmp/pointclass-1.4.tar.gz --markdown 20230506/p/pointclass/1.2-1.4/diff.md --exclude *.pyd
+[2023-05-06 20:04:29] INFO root fetch - processPackages [ilpy]: executing diffoscope
+[2023-05-06 20:04:29] INFO root fetch - processPackages [ilpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ilpy-0.3.0.tar.gz tmp/ilpy-0.3.1.tar.gz --markdown 20230506/i/ilpy/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-06 20:04:29] INFO root fetch - processPackages [solution-harsha]: executing diffoscope
+[2023-05-06 20:04:29] INFO root fetch - processPackages [solution-harsha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solution_harsha-0.1.tar.gz tmp/solution_harsha-0.2.tar.gz --markdown 20230506/s/solution-harsha/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-06 20:04:29] INFO root fetch - processPackages [whereval]: Downloading https://files.pythonhosted.org/packages/5f/02/70a79e7d6d917b99f93ad2ead4e123c5e8ee8170b5dd3255f60dc3d0df22/whereval-0.1.8.tar.gz
+[2023-05-06 20:04:29] INFO root fetch - processPackages [whereval]: executing diffoscope
+[2023-05-06 20:04:29] INFO root fetch - processPackages [whereval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whereval-0.1.7.tar.gz tmp/whereval-0.1.8.tar.gz --markdown 20230506/w/whereval/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-06 20:04:29] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 20:04:30] INFO root fetch - main [MainThread]: End processing [pointclass]: success
+[2023-05-06 20:04:30] INFO root fetch - main [MainThread]: End processing [solution-harsha]: success
+[2023-05-06 20:04:30] INFO root fetch - main [MainThread]: End processing [whereval]: success
+[2023-05-06 20:04:59] INFO root fetch - main [MainThread]: End processing [ilpy]: success
+[2023-05-06 20:04:59] INFO root fetch - main [MainThread]: Store serial: [18001343]
