@@ -5433,3 +5433,39 @@
 [2023-05-06 05:55:43] INFO root fetch - processPackages [hcpdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcpdiff-0.3.0.tar.gz tmp/hcpdiff-0.3.1.tar.gz --markdown 20230506/h/hcpdiff/0.3.0-0.3.1/diff.md --exclude *.pyd
 [2023-05-06 05:55:44] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
 [2023-05-06 05:55:44] INFO root fetch - main [MainThread]: Store serial: [17996674]
+[2023-05-06 06:00:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996674]
+[2023-05-06 06:00:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 06:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: editanything
+[2023-05-06 06:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Jvav
+[2023-05-06 06:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mecsimcalc
+[2023-05-06 06:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-ddmrp
+[2023-05-06 06:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-ddmrp-coverage-days
+[2023-05-06 06:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: editanything
+[2023-05-06 06:00:53] INFO root fetch - processPackages [mecsimcalc]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 06:00:53] INFO root fetch - processPackages [Jvav]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-06 06:00:53] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 06:00:53] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 06:00:53] INFO root fetch - processPackages [odoo14-addon-ddmrp-coverage-days]: New version: [14.0.1.2.1.dev1] Old Version: [14.0.1.2.0]
+[2023-05-06 06:00:53] INFO root fetch - processPackages [odoo14-addon-ddmrp]: New version: [14.0.1.9.1.dev1] Old Version: [14.0.1.9.0]
+[2023-05-06 06:00:53] INFO root fetch - processPackages [Jvav]: executing diffoscope
+[2023-05-06 06:00:53] INFO root fetch - processPackages [Jvav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jvav-1.2.8.tar.gz tmp/Jvav-1.2.9.tar.gz --markdown 20230506/J/Jvav/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-06 06:00:53] INFO root fetch - processPackages [mecsimcalc]: Downloading https://files.pythonhosted.org/packages/dd/8a/21626abab70d4810266d59791f40865fbf1a8bbd68eb564c1176d1fe130e/MecSimCalc-0.0.1.tar.gz
+[2023-05-06 06:00:53] INFO root fetch - processPackages [odoo14-addon-ddmrp]: executing diffoscope
+[2023-05-06 06:00:53] INFO root fetch - processPackages [odoo14-addon-ddmrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ddmrp-14.0.1.9.0-py3-none-any.whl.zip tmp/odoo14_addon_ddmrp-14.0.1.9.1.dev1-py3-none-any.whl.zip --markdown 20230506/o/odoo14-addon-ddmrp/14.0.1.9.0-14.0.1.9.1.dev1/diff.md --exclude *.pyd
+[2023-05-06 06:00:53] INFO root fetch - processPackages [odoo14-addon-ddmrp-coverage-days]: Downloading https://files.pythonhosted.org/packages/36/cb/dd340ce329d6f7f80e2f1ad49dbf165d2fa435310e03dfbc5d45459e80c1/odoo14_addon_ddmrp_coverage_days-14.0.1.2.1.dev1-py3-none-any.whl
+[2023-05-06 06:00:53] INFO root fetch - processPackages [odoo14-addon-ddmrp-coverage-days]: executing diffoscope
+[2023-05-06 06:00:53] INFO root fetch - processPackages [odoo14-addon-ddmrp-coverage-days]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ddmrp_coverage_days-14.0.1.2.0-py3-none-any.whl.zip tmp/odoo14_addon_ddmrp_coverage_days-14.0.1.2.1.dev1-py3-none-any.whl.zip --markdown 20230506/o/odoo14-addon-ddmrp-coverage-days/14.0.1.2.0-14.0.1.2.1.dev1/diff.md --exclude *.pyd
+[2023-05-06 06:00:53] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 06:00:53] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 06:00:53] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 06:00:53] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 06:00:53] INFO root fetch - processPackages [mecsimcalc]: Downloading https://files.pythonhosted.org/packages/13/c0/7475b07e102672fe8ef9096ae2f51e4016e284ca9a0a2314464a8b39f474/mecsimcalc-0.0.2.tar.gz
+[2023-05-06 06:00:54] INFO root fetch - processPackages [mecsimcalc]: executing diffoscope
+[2023-05-06 06:00:54] INFO root fetch - processPackages [mecsimcalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MecSimCalc-0.0.1.tar.gz tmp/mecsimcalc-0.0.2.tar.gz --markdown 20230506/m/mecsimcalc/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 06:00:54] INFO root fetch - main [MainThread]: End processing [Jvav]: success
+[2023-05-06 06:00:54] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 06:00:55] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ddmrp-coverage-days]: success
+[2023-05-06 06:00:55] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 06:00:55] INFO root fetch - main [MainThread]: End processing [mecsimcalc]: success
+[2023-05-06 06:00:55] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ddmrp]: success
+[2023-05-06 06:00:55] INFO root fetch - main [MainThread]: Store serial: [17996694]
