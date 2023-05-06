@@ -4823,3 +4823,47 @@
 [2023-05-06 04:47:22] INFO root fetch - main [MainThread]: End processing [base-system]: success
 [2023-05-06 04:47:25] INFO root fetch - main [MainThread]: End processing [mc-netease-sdk]: success
 [2023-05-06 04:47:25] INFO root fetch - main [MainThread]: Store serial: [17996302]
+[2023-05-06 04:52:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996302]
+[2023-05-06 04:52:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 04:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prettyqt
+[2023-05-06 04:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpservice
+[2023-05-06 04:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-rahav-mymaster
+[2023-05-06 04:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipe-api
+[2023-05-06 04:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: excel-cleaner
+[2023-05-06 04:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: c-shelph
+[2023-05-06 04:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: superlive
+[2023-05-06 04:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dbt-odps
+[2023-05-06 04:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: whl
+[2023-05-06 04:52:35] WARNING root fetch - processPackages [certora-cli-alpha-rahav-mymaster]: Skipping, unable to determine old version
+[2023-05-06 04:52:35] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-rahav-mymaster] error
+[2023-05-06 04:52:35] INFO root fetch - processPackages [excel-cleaner]: New version: [0.0.15] Old Version: [0.0.14]
+[2023-05-06 04:52:35] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-06 04:52:35] WARNING root fetch - processPackages [c-shelph]: Skipping, unable to determine old version
+[2023-05-06 04:52:35] INFO root fetch - processPackages [prettyqt]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-06 04:52:35] WARNING root fetch - processPackages [pipe-api]: Skipping, unable to determine old version
+[2023-05-06 04:52:35] INFO root fetch - processPackages [whl]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 04:52:35] INFO root fetch - main [MainThread]: End processing [c-shelph] error
+[2023-05-06 04:52:35] INFO root fetch - processPackages [superlive]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-06 04:52:35] WARNING root fetch - processPackages [dbt-odps]: Skipping, unable to determine old version
+[2023-05-06 04:52:35] INFO root fetch - main [MainThread]: End processing [pipe-api] error
+[2023-05-06 04:52:35] INFO root fetch - main [MainThread]: End processing [dbt-odps] error
+[2023-05-06 04:52:35] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-05-06 04:52:35] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230506/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-06 04:52:35] INFO root fetch - processPackages [whl]: Downloading https://files.pythonhosted.org/packages/00/68/77519fd4a60972ff155ded8992c2655dcc6b4edf6f0c210ca87d4fcc613e/whl-0.0.3-py2.py3-none-any.whl
+[2023-05-06 04:52:35] INFO root fetch - processPackages [superlive]: Downloading https://files.pythonhosted.org/packages/61/70/393f024a3479547055eb496dafffc67b0e2168cb449d0f893a5e15114802/superlive-1.2.2.tar.gz
+[2023-05-06 04:52:35] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-05-06 04:52:35] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.9.1.tar.gz tmp/prettyqt-1.9.2.tar.gz --markdown 20230506/p/prettyqt/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-06 04:52:35] INFO root fetch - processPackages [superlive]: executing diffoscope
+[2023-05-06 04:52:35] INFO root fetch - processPackages [superlive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superlive-1.2.1.tar.gz tmp/superlive-1.2.2.tar.gz --markdown 20230506/s/superlive/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-06 04:52:35] INFO root fetch - processPackages [excel-cleaner]: Downloading https://files.pythonhosted.org/packages/b0/4a/bfdc96bfdee2de22cdf21e6e8b3b543624a01c503dedbd7c9d8b519c619b/excel_cleaner-0.0.15.tar.gz
+[2023-05-06 04:52:35] INFO root fetch - processPackages [whl]: Downloading https://files.pythonhosted.org/packages/53/15/29dfd1a104ce039ebdf6a9955dd0e5c6148249baac15781c55a58ddceb55/whl-0.0.4-py2.py3-none-any.whl
+[2023-05-06 04:52:35] INFO root fetch - processPackages [excel-cleaner]: executing diffoscope
+[2023-05-06 04:52:35] INFO root fetch - processPackages [excel-cleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/excel_cleaner-0.0.14.tar.gz tmp/excel_cleaner-0.0.15.tar.gz --markdown 20230506/e/excel-cleaner/0.0.14-0.0.15/diff.md --exclude *.pyd
+[2023-05-06 04:52:35] INFO root fetch - processPackages [whl]: executing diffoscope
+[2023-05-06 04:52:35] INFO root fetch - processPackages [whl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whl-0.0.3-py2.py3-none-any.whl.zip tmp/whl-0.0.4-py2.py3-none-any.whl.zip --markdown 20230506/w/whl/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 04:52:36] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-05-06 04:52:36] INFO root fetch - main [MainThread]: End processing [superlive]: success
+[2023-05-06 04:52:36] INFO root fetch - main [MainThread]: End processing [excel-cleaner]: success
+[2023-05-06 04:52:36] INFO root fetch - main [MainThread]: End processing [whl]: success
+[2023-05-06 04:52:42] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
+[2023-05-06 04:52:42] INFO root fetch - main [MainThread]: Store serial: [17996343]
