@@ -11057,3 +11057,53 @@ EOFError: EOF read where object expected
 [2023-05-06 15:51:42] INFO root fetch - main [MainThread]: End processing [LordPath]: success
 [2023-05-06 15:51:43] INFO root fetch - main [MainThread]: End processing [maturin]: success
 [2023-05-06 15:51:43] INFO root fetch - main [MainThread]: Store serial: [18000026]
+[2023-05-06 15:56:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000026]
+[2023-05-06 15:56:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 15:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nrp
+[2023-05-06 15:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lpynn
+[2023-05-06 15:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wikihowapi-pk
+[2023-05-06 15:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dokuwikidumper
+[2023-05-06 15:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lpdraw
+[2023-05-06 15:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py-animus
+[2023-05-06 15:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cxmlinvbot
+[2023-05-06 15:56:51] INFO root fetch - processPackages [nrp]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2023-05-06 15:56:51] INFO root fetch - processPackages [lpynn]: New version: [0.0.2.2] Old Version: [0.0.2.1]
+[2023-05-06 15:56:51] INFO root fetch - processPackages [wikihowapi-pk]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 15:56:51] INFO root fetch - processPackages [lpdraw]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2023-05-06 15:56:51] INFO root fetch - processPackages [cxmlinvbot]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-06 15:56:51] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 15:56:51] INFO root fetch - processPackages [py-animus]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 15:56:52] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-06 15:56:52] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230506/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 15:56:52] INFO root fetch - processPackages [lpynn]: Downloading https://files.pythonhosted.org/packages/d9/bd/4459bc06e9195ccf5e4b54be36365334182ba7597ed3400846699b7e1e1a/lpynn-0.0.2.1.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [lpdraw]: Downloading https://files.pythonhosted.org/packages/67/66/2eaa5f6ac785d024da3cbfa6ad39ae90c7c06a80c7d9268484c1d84ee1a1/lpdraw-0.0.1.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [nrp]: Downloading https://files.pythonhosted.org/packages/aa/af/6d14730b2ab4b9d1411daa36391cc4f8b315368ad7db31bbd1f786dc4f01/nrp-0.0.1.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [wikihowapi-pk]: Downloading https://files.pythonhosted.org/packages/41/a5/fe316742c18953099adf35e8c1c6c92f70ee3f1128e66f9d9e7de5a4c912/wikihowapi_pk-0.0.3.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [cxmlinvbot]: Downloading https://files.pythonhosted.org/packages/e9/0f/2984d6bf0ce7a8c37a850bfc916ca52329670416956df135cfe4274976a2/cxmlinvbot-1.0.4.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [py-animus]: Downloading https://files.pythonhosted.org/packages/e5/fa/7364cee42c144e604e244323f847586bf0aff605bf0c6ffa328dd8638ca3/py_animus-1.0.8.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [nrp]: Downloading https://files.pythonhosted.org/packages/73/c1/fd9725644dc726f45f41315b0eec7b669af0a7a039e09d9e2a1618ebc992/nrp-0.0.1.1.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [lpynn]: Downloading https://files.pythonhosted.org/packages/fb/0c/3d8900463a6e1a971d423b2ac27bdbcfd080a1ef5465d5836cfa36777980/lpynn-0.0.2.2.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [wikihowapi-pk]: Downloading https://files.pythonhosted.org/packages/70/a4/6afae6e60b8237a56de6fb41640d3c034f1feaffe1656d6ad2dbbe041807/wikihowapi_pk-0.0.4.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [cxmlinvbot]: Downloading https://files.pythonhosted.org/packages/30/58/a10280af7c1c4bc8b18ed3e2084e9590323c64d40ebdbd799165fd6792a2/cxmlinvbot-1.0.5.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [lpdraw]: Downloading https://files.pythonhosted.org/packages/bf/a8/0a217f0c81cf8c756f87d2e726fdb76fe2e52c7204044cd9ea1890ca1b5c/lpdraw-0.0.1.1.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [nrp]: executing diffoscope
+[2023-05-06 15:56:52] INFO root fetch - processPackages [nrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nrp-0.0.1.tar.gz tmp/nrp-0.0.1.1.tar.gz --markdown 20230506/n/nrp/0.0.1-0.0.1.1/diff.md --exclude *.pyd
+[2023-05-06 15:56:52] INFO root fetch - processPackages [wikihowapi-pk]: executing diffoscope
+[2023-05-06 15:56:52] INFO root fetch - processPackages [wikihowapi-pk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikihowapi_pk-0.0.3.tar.gz tmp/wikihowapi_pk-0.0.4.tar.gz --markdown 20230506/w/wikihowapi-pk/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 15:56:52] INFO root fetch - processPackages [lpynn]: executing diffoscope
+[2023-05-06 15:56:52] INFO root fetch - processPackages [lpynn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpynn-0.0.2.1.tar.gz tmp/lpynn-0.0.2.2.tar.gz --markdown 20230506/l/lpynn/0.0.2.1-0.0.2.2/diff.md --exclude *.pyd
+[2023-05-06 15:56:52] INFO root fetch - processPackages [cxmlinvbot]: executing diffoscope
+[2023-05-06 15:56:52] INFO root fetch - processPackages [cxmlinvbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxmlinvbot-1.0.4.tar.gz tmp/cxmlinvbot-1.0.5.tar.gz --markdown 20230506/c/cxmlinvbot/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-06 15:56:52] INFO root fetch - processPackages [lpdraw]: executing diffoscope
+[2023-05-06 15:56:52] INFO root fetch - processPackages [lpdraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpdraw-0.0.1.tar.gz tmp/lpdraw-0.0.1.1.tar.gz --markdown 20230506/l/lpdraw/0.0.1-0.0.1.1/diff.md --exclude *.pyd
+[2023-05-06 15:56:52] INFO root fetch - processPackages [py-animus]: Downloading https://files.pythonhosted.org/packages/d0/f2/ad85921f027bfea132df7280af98bacb101900532efd1d6e0a3cf1407033/py_animus-1.0.9.tar.gz
+[2023-05-06 15:56:52] INFO root fetch - processPackages [py-animus]: executing diffoscope
+[2023-05-06 15:56:52] INFO root fetch - processPackages [py-animus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_animus-1.0.8.tar.gz tmp/py_animus-1.0.9.tar.gz --markdown 20230506/p/py-animus/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 15:56:53] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-06 15:56:53] INFO root fetch - main [MainThread]: End processing [nrp]: success
+[2023-05-06 15:56:53] INFO root fetch - main [MainThread]: End processing [lpynn]: success
+[2023-05-06 15:56:53] INFO root fetch - main [MainThread]: End processing [wikihowapi-pk]: success
+[2023-05-06 15:56:53] INFO root fetch - main [MainThread]: End processing [cxmlinvbot]: success
+[2023-05-06 15:56:53] INFO root fetch - main [MainThread]: End processing [lpdraw]: success
+[2023-05-06 15:56:54] INFO root fetch - main [MainThread]: End processing [py-animus]: success
+[2023-05-06 15:56:54] INFO root fetch - main [MainThread]: Store serial: [18000047]
