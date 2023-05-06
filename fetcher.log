@@ -13091,3 +13091,27 @@ EOFError: EOF read where object expected
 [2023-05-06 19:54:08] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
 [2023-05-06 19:54:08] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
 [2023-05-06 19:54:08] INFO root fetch - main [MainThread]: Store serial: [18001301]
+[2023-05-06 19:59:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001301]
+[2023-05-06 19:59:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-06 19:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytagi
+[2023-05-06 19:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drop-analysis
+[2023-05-06 19:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymathematics
+[2023-05-06 19:59:17] INFO root fetch - processPackages [pytagi]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-06 19:59:17] INFO root fetch - processPackages [drop-analysis]: New version: [1.0.0rc1] Old Version: [0.3.0b0]
+[2023-05-06 19:59:17] INFO root fetch - processPackages [pymathematics]: New version: [2023.5.6] Old Version: [2023.5.3.1]
+[2023-05-06 19:59:17] INFO root fetch - processPackages [pytagi]: Downloading https://files.pythonhosted.org/packages/d1/42/87e27aac0269e6fa47093ba938b266c86f6a29feb150c5452d618e8e1166/pytagi-0.1.5.tar.gz
+[2023-05-06 19:59:17] INFO root fetch - processPackages [drop-analysis]: Downloading https://files.pythonhosted.org/packages/e2/ca/68dbd78369a14445baaf044e102b50bbe9148e97590f9e6771ea97046fad/drop_analysis-0.3.0b0.tar.gz
+[2023-05-06 19:59:17] INFO root fetch - processPackages [pymathematics]: Downloading https://files.pythonhosted.org/packages/db/54/9160c32ebb39dd1dd971feaf8dc2f6375d710f8125249f86bf3b6e046319/pymathematics-2023.5.3.1.tar.gz
+[2023-05-06 19:59:18] INFO root fetch - processPackages [pytagi]: Downloading https://files.pythonhosted.org/packages/eb/24/97012c8959a60e603ad39668a5a4575ff74a310adeda19b0b966a3da12ca/pytagi-0.1.6.tar.gz
+[2023-05-06 19:59:18] INFO root fetch - processPackages [drop-analysis]: Downloading https://files.pythonhosted.org/packages/ab/2a/a458c85ba3006b35dfd568e1293e84b352c95a2fa5e3c70f4b39e9b5d369/drop-analysis-1.0.0rc1.tar.gz
+[2023-05-06 19:59:18] INFO root fetch - processPackages [pymathematics]: Downloading https://files.pythonhosted.org/packages/e2/0e/8275d19207cfd83f2644e9c833960f0bb2cbfdba955a87619cfaa9bae4bb/pymathematics-2023.5.6.tar.gz
+[2023-05-06 19:59:18] INFO root fetch - processPackages [pytagi]: executing diffoscope
+[2023-05-06 19:59:18] INFO root fetch - processPackages [pytagi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytagi-0.1.5.tar.gz tmp/pytagi-0.1.6.tar.gz --markdown 20230506/p/pytagi/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-06 19:59:18] INFO root fetch - processPackages [drop-analysis]: executing diffoscope
+[2023-05-06 19:59:18] INFO root fetch - processPackages [drop-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drop_analysis-0.3.0b0.tar.gz tmp/drop-analysis-1.0.0rc1.tar.gz --markdown 20230506/d/drop-analysis/0.3.0b0-1.0.0rc1/diff.md --exclude *.pyd
+[2023-05-06 19:59:18] INFO root fetch - processPackages [pymathematics]: executing diffoscope
+[2023-05-06 19:59:18] INFO root fetch - processPackages [pymathematics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymathematics-2023.5.3.1.tar.gz tmp/pymathematics-2023.5.6.tar.gz --markdown 20230506/p/pymathematics/2023.5.3.1-2023.5.6/diff.md --exclude *.pyd
+[2023-05-06 19:59:19] INFO root fetch - main [MainThread]: End processing [pymathematics]: success
+[2023-05-06 19:59:19] INFO root fetch - main [MainThread]: End processing [pytagi]: success
+[2023-05-06 19:59:19] INFO root fetch - main [MainThread]: End processing [drop-analysis]: success
+[2023-05-06 19:59:19] INFO root fetch - main [MainThread]: Store serial: [18001319]
