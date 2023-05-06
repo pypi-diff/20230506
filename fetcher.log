@@ -7931,3 +7931,68 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 10:29:59] INFO root fetch - main [MainThread]: End processing [enex2notion]: success
 [2023-05-06 10:30:01] INFO root fetch - main [MainThread]: End processing [pyrfuniverse]: success
 [2023-05-06 10:30:01] INFO root fetch - main [MainThread]: Store serial: [17998162]
+[2023-05-06 10:35:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998162]
+[2023-05-06 10:35:10] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 10:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-iot-core-certificates
+[2023-05-06 10:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-openapi3
+[2023-05-06 10:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyracf
+[2023-05-06 10:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xj-user
+[2023-05-06 10:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nlptoolssna
+[2023-05-06 10:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: frankAllSkyCam
+[2023-05-06 10:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tempest
+[2023-05-06 10:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-vectordb
+[2023-05-06 10:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo-addon-stock-picking-report-valued
+[2023-05-06 10:35:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyvroom
+[2023-05-06 10:35:10] INFO root fetch - processPackages [flask-openapi3]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-06 10:35:10] INFO root fetch - processPackages [pyracf]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-06 10:35:10] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-05-06 10:35:10] INFO root fetch - processPackages [cdk-iot-core-certificates]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-06 10:35:10] INFO root fetch - processPackages [nlptoolssna]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-06 10:35:10] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-06 10:35:10] INFO root fetch - processPackages [odoo-addon-stock-picking-report-valued]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.6.1]
+[2023-05-06 10:35:10] INFO root fetch - processPackages [django-vectordb]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 10:35:10] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-06 10:35:11] INFO root fetch - processPackages [tempest]: New version: [34.2.0] Old Version: [34.1.0]
+[2023-05-06 10:35:11] INFO root fetch - processPackages [flask-openapi3]: Downloading https://files.pythonhosted.org/packages/e1/bd/9c98528cef54d9ca66514ce63dd0d3dcbb3198f4489516b30e93a4aedd12/flask-openapi3-2.3.1.tar.gz
+[2023-05-06 10:35:11] INFO root fetch - processPackages [tempest]: Downloading https://files.pythonhosted.org/packages/ba/13/95100c0e06e50bde896d8d8ae86fef1aeb091bced9cada4700186c4229fb/tempest-34.1.0.tar.gz
+[2023-05-06 10:35:11] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-05-06 10:35:11] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230506/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-06 10:35:11] INFO root fetch - processPackages [cdk-iot-core-certificates]: Downloading https://files.pythonhosted.org/packages/25/eb/54392a17aa5a16440bba3b173524eb0611b4746648afd98fb5950db5adac/cdk-iot-core-certificates-1.0.1.tar.gz
+[2023-05-06 10:35:11] INFO root fetch - processPackages [pyvroom]: New version: [1.13.1] Old Version: [1.13.0]
+[2023-05-06 10:35:11] INFO root fetch - processPackages [pyvroom]: Downloading https://files.pythonhosted.org/packages/08/5c/aba8821167c2c7c3bf1f6acb7822eb45aa646e7fe228db53796e688d79cd/pyvroom-1.13.0.tar.gz
+[2023-05-06 10:35:11] INFO root fetch - processPackages [flask-openapi3]: Downloading https://files.pythonhosted.org/packages/18/48/48fb74a2fa171bcc64d9566cec620132b7d5d52c6eb08e271d9fb27ff957/flask-openapi3-2.3.2.tar.gz
+[2023-05-06 10:35:11] INFO root fetch - processPackages [cdk-iot-core-certificates]: Downloading https://files.pythonhosted.org/packages/66/b7/f1154fa7270c20f80a487e3e249610278e0d51e6ad923043c347c81bc499/cdk-iot-core-certificates-1.0.2.tar.gz
+[2023-05-06 10:35:11] INFO root fetch - processPackages [tempest]: Downloading https://files.pythonhosted.org/packages/d0/af/bf731e9e87d0688206191b0558c1ce732d7303f47f4ef0ea9c9af5695835/tempest-34.2.0.tar.gz
+[2023-05-06 10:35:11] INFO root fetch - processPackages [cdk-iot-core-certificates]: executing diffoscope
+[2023-05-06 10:35:11] INFO root fetch - processPackages [cdk-iot-core-certificates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-iot-core-certificates-1.0.1.tar.gz tmp/cdk-iot-core-certificates-1.0.2.tar.gz --markdown 20230506/c/cdk-iot-core-certificates/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-06 10:35:11] INFO root fetch - processPackages [flask-openapi3]: executing diffoscope
+[2023-05-06 10:35:11] INFO root fetch - processPackages [flask-openapi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-openapi3-2.3.1.tar.gz tmp/flask-openapi3-2.3.2.tar.gz --markdown 20230506/f/flask-openapi3/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-05-06 10:35:11] INFO root fetch - processPackages [tempest]: executing diffoscope
+[2023-05-06 10:35:11] INFO root fetch - processPackages [tempest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tempest-34.1.0.tar.gz tmp/tempest-34.2.0.tar.gz --markdown 20230506/t/tempest/34.1.0-34.2.0/diff.md --exclude *.pyd
+[2023-05-06 10:35:11] INFO root fetch - processPackages [pyvroom]: Downloading https://files.pythonhosted.org/packages/69/5f/d189e8a0748ba1b0df86f451b82814917973d1554c8cc34124d24d35307c/pyvroom-1.13.1-cp310-cp310-win_amd64.whl
+[2023-05-06 10:35:12] INFO root fetch - processPackages [odoo-addon-stock-picking-report-valued]: Downloading https://files.pythonhosted.org/packages/03/f8/506b1a9c7c6186cf654b15902496bf702d5c6798d495a4eb19fe28dcb93f/odoo_addon_stock_picking_report_valued-15.0.1.6.1-py3-none-any.whl
+[2023-05-06 10:35:12] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/36/d3/41d4b64f86dba9b722d70ca62542ce600871f9993046a1b67d76dd63f210/nlptoolssna-0.7.1.tar.gz
+[2023-05-06 10:35:12] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/cc/40/597f71c74d1a2811f69b6a14b2200075fa3591df029a862d85e321d96d88/pyracf-0.6.2.tar.gz
+[2023-05-06 10:35:12] INFO root fetch - processPackages [django-vectordb]: Downloading https://files.pythonhosted.org/packages/e0/5a/df5240034b20c68db880dac251ec680bc6213356f6c373efcfa4e72e65e0/django-vectordb-0.1.0.tar.gz
+[2023-05-06 10:35:12] INFO root fetch - processPackages [pyracf]: executing diffoscope
+[2023-05-06 10:35:12] INFO root fetch - processPackages [pyracf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyracf-0.6.1.tar.gz tmp/pyracf-0.6.2.tar.gz --markdown 20230506/p/pyracf/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-06 10:35:12] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 10:35:12] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.7.0.tar.gz tmp/nlptoolssna-0.7.1.tar.gz --markdown 20230506/n/nlptoolssna/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-06 10:35:12] INFO root fetch - processPackages [django-vectordb]: Downloading https://files.pythonhosted.org/packages/b1/99/9abf4a06bab45d99bfdcb0b02d666a98ab5753423736f63b8d436e938822/django-vectordb-0.1.1.tar.gz
+[2023-05-06 10:35:12] INFO root fetch - processPackages [odoo-addon-stock-picking-report-valued]: Downloading https://files.pythonhosted.org/packages/fa/04/167d123b9d0849e740f83326c552869de5fe98f09123d7277cc77a949b51/odoo_addon_stock_picking_report_valued-16.0.1.0.0.2-py3-none-any.whl
+[2023-05-06 10:35:12] INFO root fetch - processPackages [django-vectordb]: executing diffoscope
+[2023-05-06 10:35:12] INFO root fetch - processPackages [django-vectordb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-vectordb-0.1.0.tar.gz tmp/django-vectordb-0.1.1.tar.gz --markdown 20230506/d/django-vectordb/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 10:35:12] INFO root fetch - processPackages [pyvroom]: executing diffoscope
+[2023-05-06 10:35:12] INFO root fetch - processPackages [pyvroom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvroom-1.13.0.tar.gz tmp/pyvroom-1.13.1-cp310-cp310-win_amd64.whl.zip --markdown 20230506/p/pyvroom/1.13.0-1.13.1/diff.md --exclude *.pyd
+[2023-05-06 10:35:12] INFO root fetch - processPackages [odoo-addon-stock-picking-report-valued]: executing diffoscope
+[2023-05-06 10:35:12] INFO root fetch - processPackages [odoo-addon-stock-picking-report-valued]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_picking_report_valued-15.0.1.6.1-py3-none-any.whl.zip tmp/odoo_addon_stock_picking_report_valued-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230506/o/odoo-addon-stock-picking-report-valued/15.0.1.6.1-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-05-06 10:35:12] INFO root fetch - main [MainThread]: End processing [cdk-iot-core-certificates]: success
+[2023-05-06 10:35:13] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 10:35:13] INFO root fetch - main [MainThread]: End processing [pyvroom]: success
+[2023-05-06 10:35:13] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-picking-report-valued]: success
+[2023-05-06 10:35:13] INFO root fetch - main [MainThread]: End processing [django-vectordb]: success
+[2023-05-06 10:35:13] INFO root fetch - main [MainThread]: End processing [pyracf]: success
+[2023-05-06 10:35:14] INFO root fetch - main [MainThread]: End processing [xj-user]: success
+[2023-05-06 10:35:15] INFO root fetch - main [MainThread]: End processing [flask-openapi3]: success
+[2023-05-06 10:35:35] INFO root fetch - main [MainThread]: End processing [tempest]: success
+[2023-05-06 10:35:35] INFO root fetch - main [MainThread]: Store serial: [17998196]
