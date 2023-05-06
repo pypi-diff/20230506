@@ -12463,3 +12463,41 @@ EOFError: EOF read where object expected
 [2023-05-06 18:45:26] INFO root fetch - main [MainThread]: End processing [iricore]: success
 [2023-05-06 18:45:38] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
 [2023-05-06 18:45:38] INFO root fetch - main [MainThread]: Store serial: [18000927]
+[2023-05-06 18:50:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000927]
+[2023-05-06 18:50:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 18:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: naturalspeech2-pytorch
+[2023-05-06 18:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strava-cli
+[2023-05-06 18:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libidi
+[2023-05-06 18:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: semisup-segmentation
+[2023-05-06 18:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: radiozilla
+[2023-05-06 18:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: maptasker
+[2023-05-06 18:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: st-ant-carousel
+[2023-05-06 18:50:52] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 18:50:52] WARNING root fetch - processPackages [st-ant-carousel]: Skipping, unable to determine old version
+[2023-05-06 18:50:52] INFO root fetch - main [MainThread]: End processing [st-ant-carousel] error
+[2023-05-06 18:50:52] INFO root fetch - processPackages [maptasker]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-05-06 18:50:52] INFO root fetch - processPackages [naturalspeech2-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 18:50:52] WARNING root fetch - processPackages [libidi]: Skipping, unable to determine old version
+[2023-05-06 18:50:52] INFO root fetch - main [MainThread]: End processing [libidi] error
+[2023-05-06 18:50:52] WARNING root fetch - processPackages [radiozilla]: Skipping, unable to determine old version
+[2023-05-06 18:50:52] INFO root fetch - processPackages [strava-cli]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-05-06 18:50:52] INFO root fetch - main [MainThread]: End processing [radiozilla] error
+[2023-05-06 18:50:52] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 18:50:52] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 18:50:53] INFO root fetch - processPackages [maptasker]: Downloading https://files.pythonhosted.org/packages/47/2e/8d56aab601be2550235693996347fc50413ea1d12cd7212625ce2d503f00/maptasker-1.3.3.tar.gz
+[2023-05-06 18:50:53] INFO root fetch - processPackages [naturalspeech2-pytorch]: Downloading https://files.pythonhosted.org/packages/54/6b/28bef816ddfaad5ba4db36c13c7cab1fb99af0e7bcb77a792ecc0cb9e652/naturalspeech2-pytorch-0.0.8.tar.gz
+[2023-05-06 18:50:53] INFO root fetch - processPackages [strava-cli]: Downloading https://files.pythonhosted.org/packages/c8/ad/cb209b1463f9e991744d274bed3c6c710be14eee537a5cac40ee864a3094/strava-cli-0.6.1.tar.gz
+[2023-05-06 18:50:53] INFO root fetch - processPackages [strava-cli]: Downloading https://files.pythonhosted.org/packages/e4/9e/7cc17ee2c057ffaf792b32823abe7c8762c94581aa5f399883990fd3e493/strava-cli-0.7.0.tar.gz
+[2023-05-06 18:50:53] INFO root fetch - processPackages [maptasker]: Downloading https://files.pythonhosted.org/packages/c7/06/eccf3b3e2bcd3468551fe23f3acdc8bff05c28a7163bed69b595da19b3be/maptasker-1.3.4.tar.gz
+[2023-05-06 18:50:53] INFO root fetch - processPackages [strava-cli]: executing diffoscope
+[2023-05-06 18:50:53] INFO root fetch - processPackages [strava-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strava-cli-0.6.1.tar.gz tmp/strava-cli-0.7.0.tar.gz --markdown 20230506/s/strava-cli/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-05-06 18:50:53] INFO root fetch - processPackages [maptasker]: executing diffoscope
+[2023-05-06 18:50:53] INFO root fetch - processPackages [maptasker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maptasker-1.3.3.tar.gz tmp/maptasker-1.3.4.tar.gz --markdown 20230506/m/maptasker/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-05-06 18:50:53] INFO root fetch - processPackages [naturalspeech2-pytorch]: Downloading https://files.pythonhosted.org/packages/25/77/db03ee7a507e4ce8e35645277508dfba8829e32cb2f6b4c8d7ef2d19de99/naturalspeech2-pytorch-0.0.9.tar.gz
+[2023-05-06 18:50:53] INFO root fetch - processPackages [naturalspeech2-pytorch]: executing diffoscope
+[2023-05-06 18:50:53] INFO root fetch - processPackages [naturalspeech2-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naturalspeech2-pytorch-0.0.8.tar.gz tmp/naturalspeech2-pytorch-0.0.9.tar.gz --markdown 20230506/n/naturalspeech2-pytorch/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 18:50:54] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 18:50:54] INFO root fetch - main [MainThread]: End processing [strava-cli]: success
+[2023-05-06 18:50:55] INFO root fetch - main [MainThread]: End processing [maptasker]: success
+[2023-05-06 18:51:23] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
+[2023-05-06 18:51:23] INFO root fetch - main [MainThread]: Store serial: [18000950]
