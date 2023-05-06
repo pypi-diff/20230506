@@ -14140,3 +14140,48 @@ EOFError: EOF read where object expected
 [2023-05-06 22:13:38] INFO root fetch - main [MainThread]: End processing [dj-beatcloud]: success
 [2023-05-06 22:13:38] INFO root fetch - main [MainThread]: End processing [tickerdax]: success
 [2023-05-06 22:13:38] INFO root fetch - main [MainThread]: Store serial: [18001915]
+[2023-05-06 22:18:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001915]
+[2023-05-06 22:18:47] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-dinkum-listener
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastencode
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim-ui
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aim
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastencode
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: discord-anarch
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pdisk
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: instld
+[2023-05-06 22:18:47] INFO root fetch - processPackages [fastencode]: New version: [1.4] Old Version: [1.1]
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2023-05-06 22:18:47] INFO root fetch - processPackages [fastencode]: New version: [1.4] Old Version: [1.1]
+[2023-05-06 22:18:47] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev5] Old Version: [4.0.0.dev4]
+[2023-05-06 22:18:47] INFO root fetch - processPackages [aim]: New version: [4.0.0.dev5] Old Version: [4.0.0.dev4]
+[2023-05-06 22:18:47] WARNING root fetch - processPackages [discord-anarch]: Skipping, unable to determine old version
+[2023-05-06 22:18:47] INFO root fetch - main [MainThread]: End processing [discord-anarch] error
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2023-05-06 22:18:47] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_dinkum_listener-0.0.2a8-py3-none-any.whl.zip tmp/ovos_dinkum_listener-0.0.2a9-py3-none-any.whl.zip --markdown 20230506/o/ovos-dinkum-listener/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2023-05-06 22:18:47] INFO root fetch - processPackages [pdisk]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-06 22:18:47] INFO root fetch - processPackages [instld]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 22:18:47] INFO root fetch - processPackages [pdisk]: Downloading https://files.pythonhosted.org/packages/41/eb/3b8f37a99ce6f748380d68bd40206e0fed1d50912a16023cd94cb514eca8/pdisk-1.0.0.tar.gz
+[2023-05-06 22:18:47] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/15/04/0624cfb818b4aa00681fd98b1d6ff24f56e0dc30cc0aa27fb90fce93dcc3/aim-ui-4.0.0.dev4.tar.gz
+[2023-05-06 22:18:48] INFO root fetch - processPackages [fastencode]: Downloading https://files.pythonhosted.org/packages/cd/8f/b70ef55934e6020b8c0594b3e71f49faaca117188bad44ae2d7679977d96/fastencode-1.4.tar.gz
+[2023-05-06 22:18:48] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 21591110>=10485760
+[2023-05-06 22:18:48] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-05-06 22:18:48] INFO root fetch - processPackages [fastencode]: Downloading https://files.pythonhosted.org/packages/cd/8f/b70ef55934e6020b8c0594b3e71f49faaca117188bad44ae2d7679977d96/fastencode-1.4.tar.gz
+[2023-05-06 22:18:48] INFO root fetch - processPackages [fastencode]: executing diffoscope
+[2023-05-06 22:18:48] INFO root fetch - processPackages [fastencode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastencode-1.1.tar.gz tmp/fastencode-1.4.tar.gz --markdown 20230506/f/fastencode/1.1-1.4/diff.md --exclude *.pyd
+[2023-05-06 22:18:48] INFO root fetch - processPackages [fastencode]: executing diffoscope
+[2023-05-06 22:18:48] INFO root fetch - processPackages [fastencode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastencode-1.1.tar.gz tmp/fastencode-1.4.tar.gz --markdown 20230506/f/fastencode/1.1-1.4/diff.md --exclude *.pyd
+[2023-05-06 22:18:48] INFO root fetch - processPackages [pdisk]: Downloading https://files.pythonhosted.org/packages/2d/31/8fad1c84b9d9a5a9e273bce94ca7d2304244c1ec0bda0bc443ccda5f4b18/pdisk-1.0.1.tar.gz
+[2023-05-06 22:18:48] INFO root fetch - processPackages [instld]: executing diffoscope
+[2023-05-06 22:18:48] INFO root fetch - processPackages [instld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instld-0.0.8.tar.gz tmp/instld-0.0.9.tar.gz --markdown 20230506/i/instld/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 22:18:48] INFO root fetch - processPackages [pdisk]: executing diffoscope
+[2023-05-06 22:18:48] INFO root fetch - processPackages [pdisk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdisk-1.0.0.tar.gz tmp/pdisk-1.0.1.tar.gz --markdown 20230506/p/pdisk/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 22:18:48] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-05-06 22:18:48] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0.dev4.tar.gz tmp/aim-4.0.0.dev5.tar.gz --markdown 20230506/a/aim/4.0.0.dev4-4.0.0.dev5/diff.md --exclude *.pyd
+[2023-05-06 22:18:49] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2023-05-06 22:18:49] INFO root fetch - main [MainThread]: End processing [fastencode]: success
+[2023-05-06 22:18:49] INFO root fetch - main [MainThread]: End processing [fastencode]: success
+[2023-05-06 22:18:49] INFO root fetch - main [MainThread]: End processing [pdisk]: success
+[2023-05-06 22:18:49] INFO root fetch - main [MainThread]: End processing [instld]: success
+[2023-05-06 22:18:56] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-05-06 22:18:56] INFO root fetch - main [MainThread]: Store serial: [18001945]
