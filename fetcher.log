@@ -12135,3 +12135,62 @@ EOFError: EOF read where object expected
 [2023-05-06 18:07:56] INFO root fetch - main [MainThread]: End processing [PDFVisor]: success
 [2023-05-06 18:07:58] INFO root fetch - main [MainThread]: End processing [streamflow]: success
 [2023-05-06 18:07:58] INFO root fetch - main [MainThread]: Store serial: [18000695]
+[2023-05-06 18:13:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000695]
+[2023-05-06 18:13:07] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 18:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csgo-case-simulator-nonebot
+[2023-05-06 18:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psfmodels
+[2023-05-06 18:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dreamai
+[2023-05-06 18:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edamame
+[2023-05-06 18:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scikit-rmt
+[2023-05-06 18:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pointclass
+[2023-05-06 18:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: RobloxPyApi3
+[2023-05-06 18:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyTesyCloud
+[2023-05-06 18:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kfsd
+[2023-05-06 18:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: molplotly
+[2023-05-06 18:13:07] INFO root fetch - processPackages [scikit-rmt]: New version: [0.5.0] Old Version: [0.4.2]
+[2023-05-06 18:13:07] WARNING root fetch - processPackages [csgo-case-simulator-nonebot]: Skipping, unable to determine old version
+[2023-05-06 18:13:07] INFO root fetch - main [MainThread]: End processing [csgo-case-simulator-nonebot] error
+[2023-05-06 18:13:07] INFO root fetch - processPackages [psfmodels]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-06 18:13:07] WARNING root fetch - processPackages [pyTesyCloud]: Skipping, unable to determine old version
+[2023-05-06 18:13:07] INFO root fetch - processPackages [dreamai]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-06 18:13:07] INFO root fetch - processPackages [RobloxPyApi3]: New version: [2.0.754] Old Version: [2.0.732a0]
+[2023-05-06 18:13:07] INFO root fetch - main [MainThread]: End processing [pyTesyCloud] error
+[2023-05-06 18:13:07] INFO root fetch - processPackages [molplotly]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-05-06 18:13:07] INFO root fetch - processPackages [pointclass]: New version: [0.9] Old Version: [0.8]
+[2023-05-06 18:13:07] INFO root fetch - processPackages [edamame]: New version: [0.51] Old Version: [0.50]
+[2023-05-06 18:13:07] INFO root fetch - processPackages [kfsd]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 18:13:07] INFO root fetch - processPackages [dreamai]: executing diffoscope
+[2023-05-06 18:13:07] INFO root fetch - processPackages [dreamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai-0.8.0.tar.gz tmp/dreamai-0.9.0.tar.gz --markdown 20230506/d/dreamai/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 18:13:07] INFO root fetch - processPackages [scikit-rmt]: Downloading https://files.pythonhosted.org/packages/7b/92/c8bb167292d0fbf968c52a3145fcd19a76fff3a3bc872f40a670d7a3d457/scikit-rmt-0.4.2.tar.gz
+[2023-05-06 18:13:07] INFO root fetch - processPackages [psfmodels]: Downloading https://files.pythonhosted.org/packages/a1/1c/8e81e4a494673bc6a8cbbcad46e0f47a32ab498fb5a96cecc51c289c351a/psfmodels-0.3.2.tar.gz
+[2023-05-06 18:13:07] INFO root fetch - processPackages [kfsd]: executing diffoscope
+[2023-05-06 18:13:07] INFO root fetch - processPackages [kfsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsd-0.0.8.tar.gz tmp/kfsd-0.0.9.tar.gz --markdown 20230506/k/kfsd/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 18:13:07] INFO root fetch - processPackages [RobloxPyApi3]: Downloading https://files.pythonhosted.org/packages/49/22/dcb4b05df7f1bdc40f4552223644cf2ad57422f2897c8dd6db73fbeccc5c/RobloxPyApi3-2.0.732a0.tar.gz
+[2023-05-06 18:13:07] INFO root fetch - processPackages [pointclass]: Downloading https://files.pythonhosted.org/packages/d9/aa/b1bbbdc17bb46e8202a8516343706f69deac4038a72e60f4d3a24de0a147/pointclass-0.9.tar.gz
+[2023-05-06 18:13:07] INFO root fetch - processPackages [edamame]: Downloading https://files.pythonhosted.org/packages/72/b2/1b465a176151358ad6eb60e88d132cf1da5a077245bc014bc0fd7c63f19a/edamame-0.51.tar.gz
+[2023-05-06 18:13:07] INFO root fetch - processPackages [molplotly]: Downloading https://files.pythonhosted.org/packages/9c/82/7401880f51c106714694398646f3ed4f13939cb285724729f1d5149c785c/molplotly-1.1.6.tar.gz
+[2023-05-06 18:13:07] INFO root fetch - processPackages [pointclass]: executing diffoscope
+[2023-05-06 18:13:07] INFO root fetch - processPackages [pointclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointclass-0.8.tar.gz tmp/pointclass-0.9.tar.gz --markdown 20230506/p/pointclass/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-06 18:13:07] INFO root fetch - processPackages [edamame]: executing diffoscope
+[2023-05-06 18:13:07] INFO root fetch - processPackages [edamame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edamame-0.50.tar.gz tmp/edamame-0.51.tar.gz --markdown 20230506/e/edamame/0.50-0.51/diff.md --exclude *.pyd
+[2023-05-06 18:13:07] INFO root fetch - processPackages [scikit-rmt]: Downloading https://files.pythonhosted.org/packages/fd/13/5536f1b08b956254aaebd68ee190d19d4cba35f12f9339931cbd2f609fc2/scikit-rmt-0.5.0.tar.gz
+[2023-05-06 18:13:07] INFO root fetch - processPackages [psfmodels]: Downloading https://files.pythonhosted.org/packages/92/65/c2d27897c4cbb9d36e83a65ace5543b490af4160e85bcf5c6c03eb30c7e6/psfmodels-0.3.3.tar.gz
+[2023-05-06 18:13:07] INFO root fetch - processPackages [RobloxPyApi3]: Downloading https://files.pythonhosted.org/packages/7a/71/c596baf92c45ff5d501afdf049682268556ff844b8c98e7b16b1bcab66a8/RobloxPyApi3-2.0.754.tar.gz
+[2023-05-06 18:13:07] INFO root fetch - processPackages [psfmodels]: executing diffoscope
+[2023-05-06 18:13:07] INFO root fetch - processPackages [psfmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psfmodels-0.3.2.tar.gz tmp/psfmodels-0.3.3.tar.gz --markdown 20230506/p/psfmodels/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-06 18:13:07] INFO root fetch - processPackages [molplotly]: Downloading https://files.pythonhosted.org/packages/17/a8/4b05f6d509dac8643ed6420cbd75a3a336b5339674bf77f6e723902da058/molplotly-1.1.7.tar.gz
+[2023-05-06 18:13:07] INFO root fetch - processPackages [scikit-rmt]: executing diffoscope
+[2023-05-06 18:13:07] INFO root fetch - processPackages [scikit-rmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-rmt-0.4.2.tar.gz tmp/scikit-rmt-0.5.0.tar.gz --markdown 20230506/s/scikit-rmt/0.4.2-0.5.0/diff.md --exclude *.pyd
+[2023-05-06 18:13:07] INFO root fetch - processPackages [molplotly]: executing diffoscope
+[2023-05-06 18:13:07] INFO root fetch - processPackages [molplotly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molplotly-1.1.6.tar.gz tmp/molplotly-1.1.7.tar.gz --markdown 20230506/m/molplotly/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-05-06 18:13:07] INFO root fetch - processPackages [RobloxPyApi3]: executing diffoscope
+[2023-05-06 18:13:07] INFO root fetch - processPackages [RobloxPyApi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RobloxPyApi3-2.0.732a0.tar.gz tmp/RobloxPyApi3-2.0.754.tar.gz --markdown 20230506/R/RobloxPyApi3/2.0.732a0-2.0.754/diff.md --exclude *.pyd
+[2023-05-06 18:13:08] INFO root fetch - main [MainThread]: End processing [pointclass]: success
+[2023-05-06 18:13:08] INFO root fetch - main [MainThread]: End processing [dreamai]: success
+[2023-05-06 18:13:09] INFO root fetch - main [MainThread]: End processing [edamame]: success
+[2023-05-06 18:13:09] INFO root fetch - main [MainThread]: End processing [kfsd]: success
+[2023-05-06 18:13:09] INFO root fetch - main [MainThread]: End processing [molplotly]: success
+[2023-05-06 18:13:09] INFO root fetch - main [MainThread]: End processing [scikit-rmt]: success
+[2023-05-06 18:13:10] INFO root fetch - main [MainThread]: End processing [psfmodels]: success
+[2023-05-06 18:13:37] INFO root fetch - main [MainThread]: End processing [RobloxPyApi3]: success
+[2023-05-06 18:13:37] INFO root fetch - main [MainThread]: Store serial: [18000751]
