@@ -12330,3 +12330,45 @@ EOFError: EOF read where object expected
 [2023-05-06 18:29:44] INFO root fetch - main [MainThread]: End processing [RobloxPyApi3]: success
 [2023-05-06 18:29:44] INFO root fetch - main [MainThread]: End processing [feathub-nightly]: success
 [2023-05-06 18:29:44] INFO root fetch - main [MainThread]: Store serial: [18000828]
+[2023-05-06 18:34:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000828]
+[2023-05-06 18:34:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 18:34:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pointclass
+[2023-05-06 18:34:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chyp
+[2023-05-06 18:34:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quasinet
+[2023-05-06 18:34:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: carefree-drawboard
+[2023-05-06 18:34:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ob-dj-feature-flags
+[2023-05-06 18:34:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pylint
+[2023-05-06 18:34:53] INFO root fetch - processPackages [chyp]: New version: [0.2.1] Old Version: [0.2]
+[2023-05-06 18:34:53] INFO root fetch - processPackages [pointclass]: New version: [1.2] Old Version: [1.1]
+[2023-05-06 18:34:53] INFO root fetch - processPackages [carefree-drawboard]: New version: [0.0.1a0] Old Version: [0.0.0a9]
+[2023-05-06 18:34:53] INFO root fetch - processPackages [ob-dj-feature-flags]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 18:34:53] INFO root fetch - processPackages [pylint]: New version: [3.0.0a6] Old Version: [3.0.0a5]
+[2023-05-06 18:34:53] INFO root fetch - processPackages [quasinet]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-06 18:34:53] INFO root fetch - processPackages [chyp]: Downloading https://files.pythonhosted.org/packages/2f/6b/f8af407781d81b1c0a796cde353cb9f42372ef44b61108f38ed27a578c4f/chyp-0.2.tar.gz
+[2023-05-06 18:34:53] INFO root fetch - processPackages [pointclass]: Downloading https://files.pythonhosted.org/packages/a4/7e/6f762d0c56a8441211c45794fb5faba4663895350ccc775bbfca7cedffc3/pointclass-1.2.tar.gz
+[2023-05-06 18:34:53] INFO root fetch - processPackages [carefree-drawboard]: Downloading https://files.pythonhosted.org/packages/02/30/34f93e27d02e8f8769474c3922ae12e8e4015b1eb1514f7dc7b3b1674359/carefree-drawboard-0.0.0a9.tar.gz
+[2023-05-06 18:34:53] INFO root fetch - processPackages [quasinet]: Downloading https://files.pythonhosted.org/packages/7d/2e/7b0db3aa17fdad566c3b172c1b43dd87711b20fc3aa7d26cb2d9c7c2be37/quasinet-0.1.7.tar.gz
+[2023-05-06 18:34:53] INFO root fetch - processPackages [pylint]: Downloading https://files.pythonhosted.org/packages/57/33/365b768fac1eef78717268399338ca77ca663201b4856747d5604fa5223f/pylint-3.0.0a5.tar.gz
+[2023-05-06 18:34:53] INFO root fetch - processPackages [ob-dj-feature-flags]: Downloading https://files.pythonhosted.org/packages/3a/28/36a3d286253ab75a5a276436a757caa9ba271630a49da9f5f51add4b586c/ob-dj-feature-flags-0.0.3.tar.gz
+[2023-05-06 18:34:53] INFO root fetch - processPackages [pointclass]: executing diffoscope
+[2023-05-06 18:34:53] INFO root fetch - processPackages [pointclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointclass-1.1.tar.gz tmp/pointclass-1.2.tar.gz --markdown 20230506/p/pointclass/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-06 18:34:53] WARNING root fetch - processPackages [quasinet]: Skipping package: exceeds size limit 14408911>=10485760
+[2023-05-06 18:34:53] INFO root fetch - main [MainThread]: End processing [quasinet] error
+[2023-05-06 18:34:53] INFO root fetch - processPackages [chyp]: Downloading https://files.pythonhosted.org/packages/fb/fc/07957797a79972cde8073579ff323c6c3423dc33e56ac63d04ebe9c6c069/chyp-0.2.1.tar.gz
+[2023-05-06 18:34:53] INFO root fetch - processPackages [carefree-drawboard]: Downloading https://files.pythonhosted.org/packages/9f/fb/e3c58d3ff9620064a99ff3c8a4d43791e28477ef44cbbfa076381bd6be5f/carefree-drawboard-0.0.1a0.tar.gz
+[2023-05-06 18:34:54] INFO root fetch - processPackages [ob-dj-feature-flags]: Downloading https://files.pythonhosted.org/packages/bb/30/12c2e4644c48e9f67e834766abc6e9a8c2608b512979afadeb83ea0fc530/ob-dj-feature-flags-0.0.4.tar.gz
+[2023-05-06 18:34:54] INFO root fetch - processPackages [chyp]: executing diffoscope
+[2023-05-06 18:34:54] INFO root fetch - processPackages [chyp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chyp-0.2.tar.gz tmp/chyp-0.2.1.tar.gz --markdown 20230506/c/chyp/0.2-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 18:34:54] INFO root fetch - processPackages [carefree-drawboard]: executing diffoscope
+[2023-05-06 18:34:54] INFO root fetch - processPackages [carefree-drawboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carefree-drawboard-0.0.0a9.tar.gz tmp/carefree-drawboard-0.0.1a0.tar.gz --markdown 20230506/c/carefree-drawboard/0.0.0a9-0.0.1a0/diff.md --exclude *.pyd
+[2023-05-06 18:34:54] INFO root fetch - processPackages [pylint]: Downloading https://files.pythonhosted.org/packages/20/31/ffc0f63a97279204f37f1723d34fc81e32e28ea38e0c37f59e3ee9575e14/pylint-3.0.0a6.tar.gz
+[2023-05-06 18:34:54] INFO root fetch - processPackages [ob-dj-feature-flags]: executing diffoscope
+[2023-05-06 18:34:54] INFO root fetch - processPackages [ob-dj-feature-flags]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ob-dj-feature-flags-0.0.3.tar.gz tmp/ob-dj-feature-flags-0.0.4.tar.gz --markdown 20230506/o/ob-dj-feature-flags/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 18:34:54] INFO root fetch - processPackages [pylint]: executing diffoscope
+[2023-05-06 18:34:54] INFO root fetch - processPackages [pylint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylint-3.0.0a5.tar.gz tmp/pylint-3.0.0a6.tar.gz --markdown 20230506/p/pylint/3.0.0a5-3.0.0a6/diff.md --exclude *.pyd
+[2023-05-06 18:34:54] INFO root fetch - main [MainThread]: End processing [pointclass]: success
+[2023-05-06 18:34:55] INFO root fetch - main [MainThread]: End processing [ob-dj-feature-flags]: success
+[2023-05-06 18:34:55] INFO root fetch - main [MainThread]: End processing [chyp]: success
+[2023-05-06 18:34:56] INFO root fetch - main [MainThread]: End processing [carefree-drawboard]: success
+[2023-05-06 18:34:58] INFO root fetch - main [MainThread]: End processing [pylint]: success
+[2023-05-06 18:34:58] INFO root fetch - main [MainThread]: Store serial: [18000846]
