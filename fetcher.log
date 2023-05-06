@@ -4907,3 +4907,29 @@
 [2023-05-06 04:57:53] INFO root fetch - main [MainThread]: End processing [f5-openstack-lbaasv2-inventory]: success
 [2023-05-06 04:57:58] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-05-06 04:57:58] INFO root fetch - main [MainThread]: Store serial: [17996361]
+[2023-05-06 05:03:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996361]
+[2023-05-06 05:03:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 05:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yz-core2
+[2023-05-06 05:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LogAssist
+[2023-05-06 05:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlmaps
+[2023-05-06 05:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: just-jobs
+[2023-05-06 05:03:07] INFO root fetch - processPackages [LogAssist]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-06 05:03:07] INFO root fetch - processPackages [yz-core2]: New version: [1.0.46] Old Version: [1.0.45]
+[2023-05-06 05:03:07] WARNING root fetch - processPackages [sqlmaps]: Skipping, unable to determine old version
+[2023-05-06 05:03:07] INFO root fetch - main [MainThread]: End processing [sqlmaps] error
+[2023-05-06 05:03:07] INFO root fetch - processPackages [just-jobs]: New version: [2.0.0] Old Version: [1.1.0]
+[2023-05-06 05:03:07] INFO root fetch - processPackages [yz-core2]: Downloading https://files.pythonhosted.org/packages/cc/91/86dc1f38b82e071d7616e68cf2d3ea36d9be6f502829ba0c28b442928609/yz-core2-1.0.45.tar.gz
+[2023-05-06 05:03:07] INFO root fetch - processPackages [just-jobs]: Downloading https://files.pythonhosted.org/packages/c4/fa/819d9209e91080e733c18a27a4b5dd0a7fdaa42ba917f6ab0a8545bb1191/just-jobs-1.1.0.tar.gz
+[2023-05-06 05:03:07] INFO root fetch - processPackages [LogAssist]: Downloading https://files.pythonhosted.org/packages/f8/62/bb67c1f02731c20edb39c11828f6b275c40a98095a79bf37fac0aaec5adf/LogAssist-1.0.5.tar.gz
+[2023-05-06 05:03:07] INFO root fetch - processPackages [just-jobs]: Downloading https://files.pythonhosted.org/packages/99/82/50a164922a1b53a329753a2bb52b0ff52005b58c5a8ad1120374582d96e1/just_jobs-2.0.0.tar.gz
+[2023-05-06 05:03:07] INFO root fetch - processPackages [LogAssist]: executing diffoscope
+[2023-05-06 05:03:07] INFO root fetch - processPackages [LogAssist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LogAssist-1.0.4.tar.gz tmp/LogAssist-1.0.5.tar.gz --markdown 20230506/L/LogAssist/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-06 05:03:07] INFO root fetch - processPackages [yz-core2]: Downloading https://files.pythonhosted.org/packages/12/3d/beb5a1fddfc4858174ecd7e4c1b53f6a06d88bc0af27bea62cd02d4848c1/yz-core2-1.0.46.tar.gz
+[2023-05-06 05:03:07] INFO root fetch - processPackages [just-jobs]: executing diffoscope
+[2023-05-06 05:03:07] INFO root fetch - processPackages [just-jobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just-jobs-1.1.0.tar.gz tmp/just_jobs-2.0.0.tar.gz --markdown 20230506/j/just-jobs/1.1.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-06 05:03:08] INFO root fetch - processPackages [yz-core2]: executing diffoscope
+[2023-05-06 05:03:08] INFO root fetch - processPackages [yz-core2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yz-core2-1.0.45.tar.gz tmp/yz-core2-1.0.46.tar.gz --markdown 20230506/y/yz-core2/1.0.45-1.0.46/diff.md --exclude *.pyd
+[2023-05-06 05:03:08] INFO root fetch - main [MainThread]: End processing [LogAssist]: success
+[2023-05-06 05:03:09] INFO root fetch - main [MainThread]: End processing [just-jobs]: success
+[2023-05-06 05:03:09] INFO root fetch - main [MainThread]: End processing [yz-core2]: success
+[2023-05-06 05:03:09] INFO root fetch - main [MainThread]: Store serial: [17996375]
