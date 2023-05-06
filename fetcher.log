@@ -4328,3 +4328,79 @@
 [2023-05-06 04:02:19] INFO root fetch - main [MainThread]: End processing [retroperm]: success
 [2023-05-06 04:02:19] INFO root fetch - main [MainThread]: End processing [moonsense]: success
 [2023-05-06 04:02:19] INFO root fetch - main [MainThread]: Store serial: [17995985]
+[2023-05-06 04:07:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17995985]
+[2023-05-06 04:07:27] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vision-xformer
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flyteidl
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ndx-multichannel-volume
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telegram-util
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: telegram-util
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tsutsuji-trackcomputer
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rapidocr-openvinogpu
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: exciton
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: chalkpy
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: editanything
+[2023-05-06 04:07:27] INFO root fetch - processPackages [rapidocr-openvinogpu]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-06 04:07:27] WARNING root fetch - processPackages [vision-xformer]: Skipping, unable to determine old version
+[2023-05-06 04:07:27] INFO root fetch - processPackages [vision-xformer]: Start processing: excelcolumnizer
+[2023-05-06 04:07:27] INFO root fetch - main [MainThread]: End processing [vision-xformer] error
+[2023-05-06 04:07:27] INFO root fetch - processPackages [flyteidl]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-06 04:07:27] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 04:07:27] INFO root fetch - processPackages [tsutsuji-trackcomputer]: New version: [1.6.0] Old Version: [1.5.4]
+[2023-05-06 04:07:27] INFO root fetch - processPackages [ndx-multichannel-volume]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 04:07:27] INFO root fetch - processPackages [exciton]: New version: [1.6.0] Old Version: [1.5.2]
+[2023-05-06 04:07:27] INFO root fetch - processPackages [chalkpy]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-06 04:07:27] INFO root fetch - processPackages [telegram-util]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 04:07:27] INFO root fetch - processPackages [excelcolumnizer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 04:07:27] INFO root fetch - processPackages [telegram-util]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 04:07:28] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 04:07:28] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 04:07:28] INFO root fetch - processPackages [rapidocr-openvinogpu]: Downloading https://files.pythonhosted.org/packages/fd/9c/f0efd2ef471e8e08f252d3f8423599ae1e280a86f0eec579ce1444cc221e/rapidocr-openvinogpu-0.0.5.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/cd/a5/a0d5f961cb223b1d77de818a871a0d80afb5c6e5a21aaca541549e2222c1/exciton-1.5.2-py3-none-any.whl
+[2023-05-06 04:07:28] WARNING root fetch - processPackages [rapidocr-openvinogpu]: Skipping package: exceeds size limit 50037139>=10485760
+[2023-05-06 04:07:28] INFO root fetch - processPackages [rapidocr-openvinogpu]: Start processing: midlife
+[2023-05-06 04:07:28] INFO root fetch - main [MainThread]: End processing [rapidocr-openvinogpu] error
+[2023-05-06 04:07:28] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/5a/62/808777bb92ebd8ae85b78d286c05338b6f9ea2b7e295fb92b8584a0087f0/chalkpy-2.1.9.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [ndx-multichannel-volume]: Downloading https://files.pythonhosted.org/packages/59/ae/74cbfe37c5591f06e3a1334e19fef246bf14621c735b2dd04e7110a4e798/ndx-multichannel-volume-0.1.0.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [telegram-util]: Downloading https://files.pythonhosted.org/packages/86/3a/79c1857e1ffef8f07c666a641fe9f7a9485cbd7fec82160e80cea6daf9ba/telegram_util-0.0.98.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [telegram-util]: Downloading https://files.pythonhosted.org/packages/86/3a/79c1857e1ffef8f07c666a641fe9f7a9485cbd7fec82160e80cea6daf9ba/telegram_util-0.0.98.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [excelcolumnizer]: Downloading https://files.pythonhosted.org/packages/23/ec/429d098f0a44829fea0606e45ea17e356ade7acc00cf46ca3175ac1a8b4f/excelcolumnizer-0.0.8.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [midlife]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 04:07:28] INFO root fetch - processPackages [tsutsuji-trackcomputer]: Downloading https://files.pythonhosted.org/packages/4b/6f/e5518cbc2d99069bb84a0c80abdfe2f291fa9a3fdd1f1d7edbf198f96193/tsutsuji_trackcomputer-1.5.4-py3-none-any.whl
+[2023-05-06 04:07:28] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-05-06 04:07:28] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.1.8.tar.gz tmp/chalkpy-2.1.9.tar.gz --markdown 20230506/c/chalkpy/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-06 04:07:28] INFO root fetch - processPackages [flyteidl]: Downloading https://files.pythonhosted.org/packages/14/99/aa3378aecb78a5563271976a9c16478c01adcebbb958018689814b973f51/flyteidl-1.5.2.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/fe/6b/4a7a96675a7aaba99b29fd86c163c3a4b78ea3f8a075f903974a1fe40b80/exciton-1.6.0-py3-none-any.whl
+[2023-05-06 04:07:28] INFO root fetch - processPackages [midlife]: Downloading https://files.pythonhosted.org/packages/6f/1a/e6bd3f174c98bf717b375044a4bcf55a7a9c36111c8ec726d64e01cd4699/midlife-0.0.3.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [flyteidl]: executing diffoscope
+[2023-05-06 04:07:28] INFO root fetch - processPackages [flyteidl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flyteidl-1.5.1.tar.gz tmp/flyteidl-1.5.2.tar.gz --markdown 20230506/f/flyteidl/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-06 04:07:28] INFO root fetch - processPackages [telegram-util]: Downloading https://files.pythonhosted.org/packages/8d/9a/26431fee68d5e5a388b624025cdfa8d173f89f5ac6aa8f2f4f8ac8c3495f/telegram_util-0.0.99.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [telegram-util]: Downloading https://files.pythonhosted.org/packages/8d/9a/26431fee68d5e5a388b624025cdfa8d173f89f5ac6aa8f2f4f8ac8c3495f/telegram_util-0.0.99.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [exciton]: executing diffoscope
+[2023-05-06 04:07:28] INFO root fetch - processPackages [exciton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exciton-1.5.2-py3-none-any.whl.zip tmp/exciton-1.6.0-py3-none-any.whl.zip --markdown 20230506/e/exciton/1.5.2-1.6.0/diff.md --exclude *.pyd
+[2023-05-06 04:07:28] INFO root fetch - processPackages [ndx-multichannel-volume]: Downloading https://files.pythonhosted.org/packages/b3/cc/12f55c9baec76e3a43d9a8f5aacdfa7202f60e0bac8461de7a253850f236/ndx-multichannel-volume-0.1.1.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [excelcolumnizer]: Downloading https://files.pythonhosted.org/packages/c9/e9/a3319ef620f21a0c0149b4ac7d5837c50cae7db28ac30b17baada8560439/excelcolumnizer-0.0.9.tar.gz
+[2023-05-06 04:07:28] INFO root fetch - processPackages [tsutsuji-trackcomputer]: Downloading https://files.pythonhosted.org/packages/fb/9b/c435467728ac4b87e87291b373db3e1aecad431d28a7b355b83c121db6cf/tsutsuji_trackcomputer-1.6.0-py3-none-any.whl
+[2023-05-06 04:07:28] INFO root fetch - processPackages [midlife]: executing diffoscope
+[2023-05-06 04:07:28] INFO root fetch - processPackages [midlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midlife-0.0.2.tar.gz tmp/midlife-0.0.3.tar.gz --markdown 20230506/m/midlife/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 04:07:28] INFO root fetch - processPackages [ndx-multichannel-volume]: executing diffoscope
+[2023-05-06 04:07:28] INFO root fetch - processPackages [ndx-multichannel-volume]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ndx-multichannel-volume-0.1.0.tar.gz tmp/ndx-multichannel-volume-0.1.1.tar.gz --markdown 20230506/n/ndx-multichannel-volume/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 04:07:28] INFO root fetch - processPackages [telegram-util]: executing diffoscope
+[2023-05-06 04:07:28] INFO root fetch - processPackages [telegram-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_util-0.0.98.tar.gz tmp/telegram_util-0.0.99.tar.gz --markdown 20230506/t/telegram-util/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 04:07:28] INFO root fetch - processPackages [telegram-util]: executing diffoscope
+[2023-05-06 04:07:28] INFO root fetch - processPackages [telegram-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_util-0.0.98.tar.gz tmp/telegram_util-0.0.99.tar.gz --markdown 20230506/t/telegram-util/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 04:07:28] INFO root fetch - processPackages [tsutsuji-trackcomputer]: executing diffoscope
+[2023-05-06 04:07:28] INFO root fetch - processPackages [tsutsuji-trackcomputer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsutsuji_trackcomputer-1.5.4-py3-none-any.whl.zip tmp/tsutsuji_trackcomputer-1.6.0-py3-none-any.whl.zip --markdown 20230506/t/tsutsuji-trackcomputer/1.5.4-1.6.0/diff.md --exclude *.pyd
+[2023-05-06 04:07:28] INFO root fetch - processPackages [excelcolumnizer]: executing diffoscope
+[2023-05-06 04:07:28] INFO root fetch - processPackages [excelcolumnizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/excelcolumnizer-0.0.8.tar.gz tmp/excelcolumnizer-0.0.9.tar.gz --markdown 20230506/e/excelcolumnizer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 04:07:29] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 04:07:29] INFO root fetch - main [MainThread]: End processing [midlife]: success
+[2023-05-06 04:07:30] INFO root fetch - main [MainThread]: End processing [telegram-util]: success
+[2023-05-06 04:07:30] INFO root fetch - main [MainThread]: End processing [exciton]: success
+[2023-05-06 04:07:30] INFO root fetch - main [MainThread]: End processing [telegram-util]: success
+[2023-05-06 04:07:30] INFO root fetch - main [MainThread]: End processing [excelcolumnizer]: success
+[2023-05-06 04:07:30] INFO root fetch - main [MainThread]: End processing [tsutsuji-trackcomputer]: success
+[2023-05-06 04:07:30] INFO root fetch - main [MainThread]: End processing [ndx-multichannel-volume]: success
+[2023-05-06 04:07:32] INFO root fetch - main [MainThread]: End processing [flyteidl]: success
+[2023-05-06 04:07:33] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-05-06 04:07:33] INFO root fetch - main [MainThread]: Store serial: [17996022]
