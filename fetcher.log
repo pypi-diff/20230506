@@ -14915,3 +14915,32 @@ EOFError: EOF read where object expected
 [2023-05-06 23:47:49] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
 [2023-05-06 23:47:49] INFO root fetch - main [MainThread]: End processing [gpt-chat-cli]: success
 [2023-05-06 23:47:49] INFO root fetch - main [MainThread]: Store serial: [18002402]
+[2023-05-06 23:52:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002402]
+[2023-05-06 23:52:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 23:52:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ConcurrentDatabase
+[2023-05-06 23:52:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hoyo-daily-logins-helper
+[2023-05-06 23:52:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypreql-nlp
+[2023-05-06 23:52:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wyze-sdk
+[2023-05-06 23:52:58] INFO root fetch - processPackages [pypreql-nlp]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 23:52:58] INFO root fetch - processPackages [hoyo-daily-logins-helper]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-06 23:52:58] INFO root fetch - processPackages [ConcurrentDatabase]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-06 23:52:58] INFO root fetch - processPackages [wyze-sdk]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-06 23:52:58] INFO root fetch - processPackages [hoyo-daily-logins-helper]: Downloading https://files.pythonhosted.org/packages/cc/01/0b6156963e3cc2f52a9eab73b4de76c5e8f6a2898e07efe97dc7625b81b0/hoyo-daily-logins-helper-1.2.2.tar.gz
+[2023-05-06 23:52:58] INFO root fetch - processPackages [pypreql-nlp]: Downloading https://files.pythonhosted.org/packages/47/ed/10a32ccc08db20c14fbca99772dbd547cc78e880a51dad84e4a45e0d3c45/pypreql-nlp-0.0.4.tar.gz
+[2023-05-06 23:52:58] INFO root fetch - processPackages [wyze-sdk]: Downloading https://files.pythonhosted.org/packages/0f/d9/ae01462da45f39a40358f878ceeabe46a701509c139ede02cc39f07e109e/wyze_sdk-1.8.0-py3-none-any.whl
+[2023-05-06 23:52:58] INFO root fetch - processPackages [pypreql-nlp]: executing diffoscope
+[2023-05-06 23:52:58] INFO root fetch - processPackages [pypreql-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-nlp-0.0.3.tar.gz tmp/pypreql-nlp-0.0.4.tar.gz --markdown 20230506/p/pypreql-nlp/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 23:52:58] INFO root fetch - processPackages [ConcurrentDatabase]: Downloading https://files.pythonhosted.org/packages/66/a2/61e53b949a116436e86bbbc6efcb76ea1ed738d29673c1d28f83ed512478/ConcurrentDatabase-0.0.5.tar.gz
+[2023-05-06 23:52:58] INFO root fetch - processPackages [hoyo-daily-logins-helper]: Downloading https://files.pythonhosted.org/packages/2a/30/2c47ef9a2e25f819a87c409ee6db9fd93552cb08e44d4e504094d97810fe/hoyo-daily-logins-helper-1.2.3.tar.gz
+[2023-05-06 23:52:58] INFO root fetch - processPackages [ConcurrentDatabase]: executing diffoscope
+[2023-05-06 23:52:58] INFO root fetch - processPackages [ConcurrentDatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ConcurrentDatabase-0.0.4.tar.gz tmp/ConcurrentDatabase-0.0.5.tar.gz --markdown 20230506/C/ConcurrentDatabase/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-06 23:52:58] INFO root fetch - processPackages [hoyo-daily-logins-helper]: executing diffoscope
+[2023-05-06 23:52:58] INFO root fetch - processPackages [hoyo-daily-logins-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hoyo-daily-logins-helper-1.2.2.tar.gz tmp/hoyo-daily-logins-helper-1.2.3.tar.gz --markdown 20230506/h/hoyo-daily-logins-helper/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-06 23:52:58] INFO root fetch - processPackages [wyze-sdk]: Downloading https://files.pythonhosted.org/packages/56/e3/c695bc03afbf1806888cc963a9b41e159ca499bc1df220e40782962c7309/wyze_sdk-1.9.0-py3-none-any.whl
+[2023-05-06 23:52:58] INFO root fetch - processPackages [wyze-sdk]: executing diffoscope
+[2023-05-06 23:52:58] INFO root fetch - processPackages [wyze-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wyze_sdk-1.8.0-py3-none-any.whl.zip tmp/wyze_sdk-1.9.0-py3-none-any.whl.zip --markdown 20230506/w/wyze-sdk/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-06 23:52:59] INFO root fetch - main [MainThread]: End processing [pypreql-nlp]: success
+[2023-05-06 23:52:59] INFO root fetch - main [MainThread]: End processing [ConcurrentDatabase]: success
+[2023-05-06 23:52:59] INFO root fetch - main [MainThread]: End processing [hoyo-daily-logins-helper]: success
+[2023-05-06 23:53:00] INFO root fetch - main [MainThread]: End processing [wyze-sdk]: success
+[2023-05-06 23:53:00] INFO root fetch - main [MainThread]: Store serial: [18002415]
