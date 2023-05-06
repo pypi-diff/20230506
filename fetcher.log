@@ -12024,3 +12024,57 @@ EOFError: EOF read where object expected
 [2023-05-06 17:57:31] INFO root fetch - main [MainThread]: End processing [ezmote-cmdserver]: success
 [2023-05-06 17:57:32] INFO root fetch - main [MainThread]: End processing [tinytuya]: success
 [2023-05-06 17:57:32] INFO root fetch - main [MainThread]: Store serial: [18000640]
+[2023-05-06 18:02:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000640]
+[2023-05-06 18:02:41] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pointclass
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dxsp
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ensure
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nkust-ucl-k12-bot
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: twb-project
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hrin-msb
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ejtraderNS
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: RobloxPyApi3
+[2023-05-06 18:02:41] INFO root fetch - processPackages [pointclass]: New version: [0.8] Old Version: [0.7]
+[2023-05-06 18:02:41] INFO root fetch - processPackages [nkust-ucl-k12-bot]: New version: [2.0.0] Old Version: [1.0.1]
+[2023-05-06 18:02:41] INFO root fetch - processPackages [dxsp]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ensure]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ejtraderNS]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 18:02:41] INFO root fetch - processPackages [RobloxPyApi3]: New version: [2.0.722a0] Old Version: [2.0.722]
+[2023-05-06 18:02:41] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 18:02:41] INFO root fetch - processPackages [twb-project]: New version: [1.0.0] Old Version: [0.9.6]
+[2023-05-06 18:02:41] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-06 18:02:41] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230506/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 18:02:41] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/c3/8e/ee3291b56e5ce5665eac29d267641eb379e28f15528a3f0b8b828714c128/nkust-ucl-k12-bot-1.0.1.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ejtraderNS]: Downloading https://files.pythonhosted.org/packages/f1/3e/99401d7f1e912f6011e56dd5b6f2e353bba5a9473c5bc4f93fa9c7aca69d/ejtraderNS-0.0.2.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/e4/41/ce505cc79eec1bc73677695f97ff6eac618d90f5aaf3472dee0a0bf44c5c/dxsp-1.9.8.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [pointclass]: Downloading https://files.pythonhosted.org/packages/9f/90/fcefd2ab91500d0aa0f34db8984cde2425f85be71fb911eefe5ef0d01fce/pointclass-0.8.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ensure]: Downloading https://files.pythonhosted.org/packages/21/99/ba5d6a41579e0cf174e521543f1a944f338e581d66163ba45dbcc7bfe2e1/ensure-1.0.2.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [RobloxPyApi3]: Downloading https://files.pythonhosted.org/packages/31/ec/02240223a5b7d8e816f8b02dd5dec9c1fe184ff4aa52f91693de5295bc8e/RobloxPyApi3-2.0.722a0.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [pointclass]: executing diffoscope
+[2023-05-06 18:02:41] INFO root fetch - processPackages [pointclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointclass-0.7.tar.gz tmp/pointclass-0.8.tar.gz --markdown 20230506/p/pointclass/0.7-0.8/diff.md --exclude *.pyd
+[2023-05-06 18:02:41] INFO root fetch - processPackages [twb-project]: Downloading https://files.pythonhosted.org/packages/d8/fb/3c9c6f6eaaf56c46e318c9dbb3501e044af75e1524c0a72366a88e256f2c/twb_project-1.0.0.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [RobloxPyApi3]: executing diffoscope
+[2023-05-06 18:02:41] INFO root fetch - processPackages [RobloxPyApi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RobloxPyApi3-2.0.722.tar.gz tmp/RobloxPyApi3-2.0.722a0.tar.gz --markdown 20230506/R/RobloxPyApi3/2.0.722-2.0.722a0/diff.md --exclude *.pyd
+[2023-05-06 18:02:41] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/f2/49/05786b720e90b42e0791c9166ecc04a96ed72e8a9cc7c69c3361bb14571a/nkust-ucl-k12-bot-2.0.0.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ejtraderNS]: Downloading https://files.pythonhosted.org/packages/f6/81/d930b550b98af64484f260be91a486d450bc16fdf416b0a58402ce28bd4f/ejtraderNS-0.0.3.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/b6/3b/ea74f4fb6562d761feee20118283103768e588eeb647cab9aaf182f26960/dxsp-1.9.9.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [twb-project]: executing diffoscope
+[2023-05-06 18:02:41] INFO root fetch - processPackages [twb-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twb_project-0.9.6.tar.gz tmp/twb_project-1.0.0.tar.gz --markdown 20230506/t/twb-project/0.9.6-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ensure]: Downloading https://files.pythonhosted.org/packages/55/61/cb9c046544f5d3bb5eba6b0a29c383e4e6ba1a783f7e9a37eaf300d2848d/ensure-1.0.3.tar.gz
+[2023-05-06 18:02:41] INFO root fetch - processPackages [nkust-ucl-k12-bot]: executing diffoscope
+[2023-05-06 18:02:41] INFO root fetch - processPackages [nkust-ucl-k12-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkust-ucl-k12-bot-1.0.1.tar.gz tmp/nkust-ucl-k12-bot-2.0.0.tar.gz --markdown 20230506/n/nkust-ucl-k12-bot/1.0.1-2.0.0/diff.md --exclude *.pyd
+[2023-05-06 18:02:41] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-06 18:02:41] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.9.8.tar.gz tmp/dxsp-1.9.9.tar.gz --markdown 20230506/d/dxsp/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ensure]: executing diffoscope
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ensure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ensure-1.0.2.tar.gz tmp/ensure-1.0.3.tar.gz --markdown 20230506/e/ensure/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ejtraderNS]: executing diffoscope
+[2023-05-06 18:02:41] INFO root fetch - processPackages [ejtraderNS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ejtraderNS-0.0.2.tar.gz tmp/ejtraderNS-0.0.3.tar.gz --markdown 20230506/e/ejtraderNS/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 18:02:42] INFO root fetch - main [MainThread]: End processing [pointclass]: success
+[2023-05-06 18:02:43] INFO root fetch - main [MainThread]: End processing [twb-project]: success
+[2023-05-06 18:02:43] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-06 18:02:43] INFO root fetch - main [MainThread]: End processing [ejtraderNS]: success
+[2023-05-06 18:02:43] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
+[2023-05-06 18:02:43] INFO root fetch - main [MainThread]: End processing [ensure]: success
+[2023-05-06 18:02:43] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-06 18:02:43] INFO root fetch - main [MainThread]: End processing [RobloxPyApi3]: success
+[2023-05-06 18:02:43] INFO root fetch - main [MainThread]: Store serial: [18000664]
