@@ -14431,3 +14431,61 @@ EOFError: EOF read where object expected
 [2023-05-06 22:50:10] INFO root fetch - main [MainThread]: End processing [datanalyse]: success
 [2023-05-06 22:50:10] INFO root fetch - main [MainThread]: End processing [robolson]: success
 [2023-05-06 22:50:10] INFO root fetch - main [MainThread]: Store serial: [18002092]
+[2023-05-06 22:55:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002092]
+[2023-05-06 22:55:18] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 22:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: screenshots-pagepixels
+[2023-05-06 22:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: balpy-v2
+[2023-05-06 22:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypreql
+[2023-05-06 22:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Stixx
+[2023-05-06 22:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: libggml
+[2023-05-06 22:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyggml
+[2023-05-06 22:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mojo-xmodules
+[2023-05-06 22:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: robolson
+[2023-05-06 22:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cookiecutter-autodocs
+[2023-05-06 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: geolibs
+[2023-05-06 22:55:19] INFO root fetch - processPackages [screenshots-pagepixels]: New version: [1.0.3] Old Version: [1.0.1]
+[2023-05-06 22:55:19] WARNING root fetch - processPackages [pyggml]: Skipping, unable to determine old version
+[2023-05-06 22:55:19] INFO root fetch - processPackages [pyggml]: Start processing: chilife
+[2023-05-06 22:55:19] INFO root fetch - main [MainThread]: End processing [pyggml] error
+[2023-05-06 22:55:19] INFO root fetch - processPackages [Stixx]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 22:55:19] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2023-05-06 22:55:19] INFO root fetch - processPackages [mojo-xmodules]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 22:55:19] WARNING root fetch - processPackages [balpy-v2]: Skipping, unable to determine old version
+[2023-05-06 22:55:19] INFO root fetch - main [MainThread]: End processing [balpy-v2] error
+[2023-05-06 22:55:19] INFO root fetch - processPackages [robolson]: New version: [0.3.9] Old Version: [0.3.82]
+[2023-05-06 22:55:19] WARNING root fetch - processPackages [libggml]: Skipping, unable to determine old version
+[2023-05-06 22:55:19] INFO root fetch - main [MainThread]: End processing [libggml] error
+[2023-05-06 22:55:19] INFO root fetch - processPackages [cookiecutter-autodocs]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 22:55:19] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2023-05-06 22:55:19] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20230506/p/pypreql/0.0.1rc8-0.0.1rc9/diff.md --exclude *.pyd
+[2023-05-06 22:55:19] INFO root fetch - processPackages [mojo-xmodules]: executing diffoscope
+[2023-05-06 22:55:19] INFO root fetch - processPackages [mojo-xmodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_xmodules-0.0.8.tar.gz tmp/mojo_xmodules-0.0.9.tar.gz --markdown 20230506/m/mojo-xmodules/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 22:55:19] INFO root fetch - processPackages [screenshots-pagepixels]: Downloading https://files.pythonhosted.org/packages/df/fe/1e54a12d75bb53e6efef37a3713129083b21e59c0ed2a3ebe93477832885/screenshots_pagepixels-1.0.1.tar.gz
+[2023-05-06 22:55:19] INFO root fetch - processPackages [robolson]: Downloading https://files.pythonhosted.org/packages/11/78/e64f66319f3a50a4842a352c448ff486399a5b02e85d08534377051ecff3/robolson-0.3.82.tar.gz
+[2023-05-06 22:55:19] INFO root fetch - processPackages [chilife]: New version: [0.1.8.1] Old Version: [0.1.7]
+[2023-05-06 22:55:19] INFO root fetch - processPackages [geolibs]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 22:55:19] INFO root fetch - processPackages [Stixx]: Downloading https://files.pythonhosted.org/packages/00/b3/50cec8adec5b7d96a385a5de10d500d26df4b7573897d0bf1cc9bcee2f79/Stixx-0.1.1.tar.gz
+[2023-05-06 22:55:19] INFO root fetch - processPackages [cookiecutter-autodocs]: executing diffoscope
+[2023-05-06 22:55:19] INFO root fetch - processPackages [cookiecutter-autodocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter_autodocs-0.1.0.tar.gz tmp/cookiecutter_autodocs-0.1.1.tar.gz --markdown 20230506/c/cookiecutter-autodocs/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 22:55:19] INFO root fetch - processPackages [chilife]: Downloading https://files.pythonhosted.org/packages/a5/13/ef42ec2e3149c29ff6545a1092bac10c28588b46c8537b41f9dbf141f9c7/chilife-0.1.7.tar.gz
+[2023-05-06 22:55:19] INFO root fetch - processPackages [screenshots-pagepixels]: Downloading https://files.pythonhosted.org/packages/c9/76/8d392f5daf4ab66605029d21c6238d321b5b08944b16b19ee11b6894708d/screenshots_pagepixels-1.0.3.tar.gz
+[2023-05-06 22:55:19] WARNING root fetch - processPackages [chilife]: Skipping package: exceeds size limit 17724789>=10485760
+[2023-05-06 22:55:19] INFO root fetch - main [MainThread]: End processing [chilife] error
+[2023-05-06 22:55:19] INFO root fetch - processPackages [robolson]: executing diffoscope
+[2023-05-06 22:55:19] INFO root fetch - processPackages [robolson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robolson-0.3.82.tar.gz tmp/robolson-0.3.9.tar.gz --markdown 20230506/r/robolson/0.3.82-0.3.9/diff.md --exclude *.pyd
+[2023-05-06 22:55:19] INFO root fetch - processPackages [Stixx]: Downloading https://files.pythonhosted.org/packages/09/c1/fab65a5207e562c92b8f7814fedaa0768db2ae90a77c694e1f0ecd5ee654/Stixx-0.1.2.tar.gz
+[2023-05-06 22:55:19] INFO root fetch - processPackages [screenshots-pagepixels]: executing diffoscope
+[2023-05-06 22:55:19] INFO root fetch - processPackages [screenshots-pagepixels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screenshots_pagepixels-1.0.1.tar.gz tmp/screenshots_pagepixels-1.0.3.tar.gz --markdown 20230506/s/screenshots-pagepixels/1.0.1-1.0.3/diff.md --exclude *.pyd
+[2023-05-06 22:55:19] INFO root fetch - processPackages [geolibs]: Downloading https://files.pythonhosted.org/packages/f2/a6/84c4098ba706dce82299a519780c95b4e7ade14b0c083dc84ce890d766b9/geolibs-0.0.3.tar.gz
+[2023-05-06 22:55:19] INFO root fetch - processPackages [Stixx]: executing diffoscope
+[2023-05-06 22:55:19] INFO root fetch - processPackages [Stixx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Stixx-0.1.1.tar.gz tmp/Stixx-0.1.2.tar.gz --markdown 20230506/S/Stixx/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 22:55:19] INFO root fetch - processPackages [geolibs]: executing diffoscope
+[2023-05-06 22:55:19] INFO root fetch - processPackages [geolibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geolibs-0.0.2.tar.gz tmp/geolibs-0.0.3.tar.gz --markdown 20230506/g/geolibs/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 22:55:20] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2023-05-06 22:55:20] INFO root fetch - main [MainThread]: End processing [cookiecutter-autodocs]: success
+[2023-05-06 22:55:20] INFO root fetch - main [MainThread]: End processing [mojo-xmodules]: success
+[2023-05-06 22:55:20] INFO root fetch - main [MainThread]: End processing [screenshots-pagepixels]: success
+[2023-05-06 22:55:20] INFO root fetch - main [MainThread]: End processing [robolson]: success
+[2023-05-06 22:55:20] INFO root fetch - main [MainThread]: End processing [Stixx]: success
+[2023-05-06 22:55:49] INFO root fetch - main [MainThread]: End processing [geolibs]: success
+[2023-05-06 22:55:49] INFO root fetch - main [MainThread]: Store serial: [18002127]
