@@ -14851,3 +14851,41 @@ EOFError: EOF read where object expected
 [2023-05-06 23:37:26] INFO root fetch - main [MainThread]: End processing [ypricemagic]: success
 [2023-05-06 23:37:26] INFO root fetch - main [MainThread]: End processing [hyundai-kia-connect-api]: success
 [2023-05-06 23:37:26] INFO root fetch - main [MainThread]: Store serial: [18002354]
+[2023-05-06 23:42:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002354]
+[2023-05-06 23:42:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 23:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: valo-api
+[2023-05-06 23:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anchorpy
+[2023-05-06 23:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rellm
+[2023-05-06 23:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psychonaut
+[2023-05-06 23:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spatial-summarize-within
+[2023-05-06 23:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kfsd
+[2023-05-06 23:42:35] INFO root fetch - processPackages [rellm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-06 23:42:35] INFO root fetch - processPackages [anchorpy]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-06 23:42:35] INFO root fetch - processPackages [psychonaut]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 23:42:35] INFO root fetch - processPackages [kfsd]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 23:42:35] WARNING root fetch - processPackages [spatial-summarize-within]: Skipping, unable to determine old version
+[2023-05-06 23:42:35] INFO root fetch - processPackages [valo-api]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-06 23:42:35] INFO root fetch - main [MainThread]: End processing [spatial-summarize-within] error
+[2023-05-06 23:42:35] INFO root fetch - processPackages [kfsd]: executing diffoscope
+[2023-05-06 23:42:35] INFO root fetch - processPackages [kfsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsd-0.0.8.tar.gz tmp/kfsd-0.0.9.tar.gz --markdown 20230506/k/kfsd/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 23:42:35] INFO root fetch - processPackages [rellm]: Downloading https://files.pythonhosted.org/packages/e8/76/8488d2b3f232ef1aff8de9ba9300f5670433545b2f625a8ca570d002cb22/rellm-0.0.4.tar.gz
+[2023-05-06 23:42:35] INFO root fetch - processPackages [anchorpy]: Downloading https://files.pythonhosted.org/packages/c6/9c/ff8a4e7db64912b9b6f8e4a6432c1eab285beb6a41133bd03b6a8be063eb/anchorpy-0.9.3.tar.gz
+[2023-05-06 23:42:35] INFO root fetch - processPackages [psychonaut]: Downloading https://files.pythonhosted.org/packages/2a/ae/1c4da3b63d2a319301551cc72fb0f939eb34a6f032d98908039e9c3ba672/psychonaut-0.0.8.tar.gz
+[2023-05-06 23:42:35] INFO root fetch - processPackages [valo-api]: Downloading https://files.pythonhosted.org/packages/d4/e3/495c9c64eafca5038648667b76cad9b41aeb4cdd5c4ccb50b907a36bf698/valo_api-2.0.1.tar.gz
+[2023-05-06 23:42:35] INFO root fetch - processPackages [rellm]: Downloading https://files.pythonhosted.org/packages/dc/fb/96db913168c2c770cc54b80781fc02d2c5c82a7a23e2089446a4a909fd6c/rellm-0.0.5.tar.gz
+[2023-05-06 23:42:35] INFO root fetch - processPackages [valo-api]: executing diffoscope
+[2023-05-06 23:42:35] INFO root fetch - processPackages [valo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valo_api-2.0.0.tar.gz tmp/valo_api-2.0.1.tar.gz --markdown 20230506/v/valo-api/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-06 23:42:36] INFO root fetch - processPackages [psychonaut]: Downloading https://files.pythonhosted.org/packages/56/6b/7e64d6680e62c93d3fd88c0fbb67be73d78fcd4224f3bc7c351cac2f2444/psychonaut-0.0.9.tar.gz
+[2023-05-06 23:42:36] INFO root fetch - processPackages [rellm]: executing diffoscope
+[2023-05-06 23:42:36] INFO root fetch - processPackages [rellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rellm-0.0.4.tar.gz tmp/rellm-0.0.5.tar.gz --markdown 20230506/r/rellm/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-06 23:42:36] INFO root fetch - processPackages [anchorpy]: Downloading https://files.pythonhosted.org/packages/d6/bb/88a6cd3ad69ef5c584af177b35327dfdc29e721151f8d88fd3e6f6cc8fbf/anchorpy-0.9.4.tar.gz
+[2023-05-06 23:42:36] INFO root fetch - processPackages [psychonaut]: executing diffoscope
+[2023-05-06 23:42:36] INFO root fetch - processPackages [psychonaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychonaut-0.0.8.tar.gz tmp/psychonaut-0.0.9.tar.gz --markdown 20230506/p/psychonaut/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 23:42:36] INFO root fetch - processPackages [anchorpy]: executing diffoscope
+[2023-05-06 23:42:36] INFO root fetch - processPackages [anchorpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anchorpy-0.9.3.tar.gz tmp/anchorpy-0.9.4.tar.gz --markdown 20230506/a/anchorpy/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-06 23:42:37] INFO root fetch - main [MainThread]: End processing [rellm]: success
+[2023-05-06 23:42:37] INFO root fetch - main [MainThread]: End processing [valo-api]: success
+[2023-05-06 23:42:37] INFO root fetch - main [MainThread]: End processing [kfsd]: success
+[2023-05-06 23:42:37] INFO root fetch - main [MainThread]: End processing [psychonaut]: success
+[2023-05-06 23:42:38] INFO root fetch - main [MainThread]: End processing [anchorpy]: success
+[2023-05-06 23:42:38] INFO root fetch - main [MainThread]: Store serial: [18002378]
