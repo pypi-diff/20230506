@@ -9900,3 +9900,97 @@ EOFError: EOF read where object expected
 [2023-05-06 13:35:10] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
 [2023-05-06 13:35:11] INFO root fetch - main [MainThread]: End processing [bananaproto]: success
 [2023-05-06 13:35:11] INFO root fetch - main [MainThread]: Store serial: [17999294]
+[2023-05-06 13:40:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999294]
+[2023-05-06 13:40:20] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-06 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chromedriver-py-auto
+[2023-05-06 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: custodes
+[2023-05-06 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fishnet-cod
+[2023-05-06 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aequilibrae
+[2023-05-06 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaaql-monitor
+[2023-05-06 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gbopyrator
+[2023-05-06 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: joes-giant-toolbox
+[2023-05-06 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jaaql-monitor
+[2023-05-06 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pylegendmeta
+[2023-05-06 13:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: agent-link
+[2023-05-06 13:40:20] INFO root fetch - processPackages [chromedriver-py-auto]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-06 13:40:20] INFO root fetch - processPackages [fishnet-cod]: New version: [1.1.0] Old Version: [1.0.0b6]
+[2023-05-06 13:40:20] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.44] Old Version: [1.2.43]
+[2023-05-06 13:40:20] INFO root fetch - processPackages [custodes]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 13:40:20] INFO root fetch - processPackages [joes-giant-toolbox]: New version: [0.2.23] Old Version: [0.2.22]
+[2023-05-06 13:40:20] INFO root fetch - processPackages [gbopyrator]: New version: [0.3] Old Version: [0.2]
+[2023-05-06 13:40:20] INFO root fetch - processPackages [agent-link]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-06 13:40:20] INFO root fetch - processPackages [aequilibrae]: New version: [0.9.0.dev1] Old Version: [0.9.0.dev0]
+[2023-05-06 13:40:20] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.44] Old Version: [1.2.43]
+[2023-05-06 13:40:20] INFO root fetch - processPackages [agent-link]: Downloading https://files.pythonhosted.org/packages/4a/7c/6ee8b0b00df7fac0c0ad571c79362ea250eaeac9da904de781fab8d74b0a/agent_link-0.1.9.tar.gz
+[2023-05-06 13:40:20] INFO root fetch - processPackages [custodes]: executing diffoscope
+[2023-05-06 13:40:20] INFO root fetch - processPackages [custodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custodes-0.0.8.tar.gz tmp/custodes-0.0.9.tar.gz --markdown 20230506/c/custodes/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 13:40:20] INFO root fetch - processPackages [pylegendmeta]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-05-06 13:40:20] WARNING root fetch - processPackages [agent-link]: Skipping package: exceeds size limit 23806150>=10485760
+[2023-05-06 13:40:20] INFO root fetch - processPackages [agent-link]: Start processing: jupyter-next
+[2023-05-06 13:40:20] INFO root fetch - main [MainThread]: End processing [agent-link] error
+[2023-05-06 13:40:20] INFO root fetch - processPackages [fishnet-cod]: Downloading https://files.pythonhosted.org/packages/bc/79/68ed690fb64fbd0bd085c12d83e8eb97ca71008b4fd52e3b7e0c33dbf5e2/fishnet_cod-1.0.0b6.tar.gz
+[2023-05-06 13:40:20] INFO root fetch - processPackages [chromedriver-py-auto]: Downloading https://files.pythonhosted.org/packages/27/46/350ec74ed81527dd63b64874cdf1150f0503b693c61c13280deaa7bbf0e4/chromedriver-py-auto-0.2.1.tar.gz
+[2023-05-06 13:40:20] INFO root fetch - processPackages [aequilibrae]: Downloading https://files.pythonhosted.org/packages/88/3b/86c71fdcc57272c7a9664c93be15eb99e78b1929cbae785c23bd989f063c/aequilibrae-0.9.0.dev0.tar.gz
+[2023-05-06 13:40:20] WARNING root fetch - processPackages [fishnet-cod]: Skipping package: exceeds size limit 53945539>=10485760
+[2023-05-06 13:40:20] INFO root fetch - processPackages [fishnet-cod]: Start processing: genshitjokes
+[2023-05-06 13:40:20] INFO root fetch - main [MainThread]: End processing [fishnet-cod] error
+[2023-05-06 13:40:20] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/f2/87/07d0a502c330620f14d821de13de199b9ebf0a000f90b7b892fea20f6895/jaaql-monitor-1.2.44.tar.gz
+[2023-05-06 13:40:20] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/f2/87/07d0a502c330620f14d821de13de199b9ebf0a000f90b7b892fea20f6895/jaaql-monitor-1.2.44.tar.gz
+[2023-05-06 13:40:20] INFO root fetch - processPackages [gbopyrator]: Downloading https://files.pythonhosted.org/packages/c3/93/532e33bc997517638e87860f0deb57927e18d4157a697a98f39cbd4f5105/gbopyrator-0.2.tar.gz
+[2023-05-06 13:40:20] WARNING root fetch - processPackages [jupyter-next]: Skipping, unable to determine old version
+[2023-05-06 13:40:20] INFO root fetch - processPackages [jupyter-next]: Start processing: gbopyrator
+[2023-05-06 13:40:20] INFO root fetch - main [MainThread]: End processing [jupyter-next] error
+[2023-05-06 13:40:20] INFO root fetch - processPackages [gbopyrator]: New version: [0.4] Old Version: [0.3]
+[2023-05-06 13:40:21] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:40:21] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.43.tar.gz tmp/jaaql-monitor-1.2.44.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.43-1.2.44/diff.md --exclude *.pyd
+[2023-05-06 13:40:21] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:40:21] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.43.tar.gz tmp/jaaql-monitor-1.2.44.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.43-1.2.44/diff.md --exclude *.pyd
+[2023-05-06 13:40:21] WARNING root fetch - processPackages [genshitjokes]: Skipping, unable to determine old version
+[2023-05-06 13:40:21] INFO root fetch - processPackages [genshitjokes]: Start processing: frontengine
+[2023-05-06 13:40:21] INFO root fetch - main [MainThread]: End processing [genshitjokes] error
+[2023-05-06 13:40:21] INFO root fetch - processPackages [frontengine]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 13:40:21] INFO root fetch - processPackages [pylegendmeta]: Downloading https://files.pythonhosted.org/packages/9d/40/e821d3fd819c0a1b734768576dd10f18c524344d4ea741c686e9d842b743/pylegendmeta-0.7.6.tar.gz
+[2023-05-06 13:40:21] INFO root fetch - processPackages [joes-giant-toolbox]: Downloading https://files.pythonhosted.org/packages/ff/78/899232da993044a4ee1eeb561f1242b95310a4b27d041af62599fd5b4f9c/joes_giant_toolbox-0.2.23.tar.gz
+[2023-05-06 13:40:21] INFO root fetch - processPackages [chromedriver-py-auto]: Downloading https://files.pythonhosted.org/packages/2d/83/1596e219b96341f4d5d02751746dbff3b6b4d24572d105c67c93bc65ace7/chromedriver-py-auto-0.2.2.tar.gz
+[2023-05-06 13:40:21] INFO root fetch - processPackages [gbopyrator]: Downloading https://files.pythonhosted.org/packages/16/7b/ae928a3ed7716ba9e929492c25a35d704bb0b46fb72770dbedeb2f8414a4/gbopyrator-0.3.tar.gz
+[2023-05-06 13:40:21] INFO root fetch - processPackages [gbopyrator]: Downloading https://files.pythonhosted.org/packages/16/7b/ae928a3ed7716ba9e929492c25a35d704bb0b46fb72770dbedeb2f8414a4/gbopyrator-0.3.tar.gz
+[2023-05-06 13:40:21] INFO root fetch - processPackages [chromedriver-py-auto]: executing diffoscope
+[2023-05-06 13:40:21] INFO root fetch - processPackages [chromedriver-py-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromedriver-py-auto-0.2.1.tar.gz tmp/chromedriver-py-auto-0.2.2.tar.gz --markdown 20230506/c/chromedriver-py-auto/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-06 13:40:21] INFO root fetch - processPackages [joes-giant-toolbox]: executing diffoscope
+[2023-05-06 13:40:21] INFO root fetch - processPackages [joes-giant-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joes_giant_toolbox-0.2.22.tar.gz tmp/joes_giant_toolbox-0.2.23.tar.gz --markdown 20230506/j/joes-giant-toolbox/0.2.22-0.2.23/diff.md --exclude *.pyd
+[2023-05-06 13:40:21] INFO root fetch - processPackages [aequilibrae]: Downloading https://files.pythonhosted.org/packages/c2/76/f1c70b4ae475ccfe3723ca1a131eb729f06c3ac4190caa27fb5d6e1f255a/aequilibrae-0.9.0.dev1-cp39-cp39-win_amd64.whl
+[2023-05-06 13:40:21] INFO root fetch - processPackages [gbopyrator]: executing diffoscope
+[2023-05-06 13:40:21] INFO root fetch - processPackages [gbopyrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gbopyrator-0.2.tar.gz tmp/gbopyrator-0.3.tar.gz --markdown 20230506/g/gbopyrator/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-06 13:40:21] INFO root fetch - processPackages [frontengine]: Downloading https://files.pythonhosted.org/packages/60/d0/815ca69a443e11a08ad4eaec6c235e7b0c7a317b4726f84402ef113b7954/frontengine-0.0.3.tar.gz
+[2023-05-06 13:40:21] WARNING root fetch - processPackages [aequilibrae]: Skipping package: exceeds size limit 10593196>=10485760
+[2023-05-06 13:40:21] INFO root fetch - processPackages [aequilibrae]: Start processing: frontengine-dev
+[2023-05-06 13:40:21] INFO root fetch - main [MainThread]: End processing [aequilibrae] error
+[2023-05-06 13:40:21] INFO root fetch - processPackages [frontengine-dev]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 13:40:21] INFO root fetch - processPackages [frontengine]: executing diffoscope
+[2023-05-06 13:40:21] INFO root fetch - processPackages [frontengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine-0.0.2.tar.gz tmp/frontengine-0.0.3.tar.gz --markdown 20230506/f/frontengine/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 13:40:21] INFO root fetch - processPackages [gbopyrator]: Downloading https://files.pythonhosted.org/packages/5c/41/2dc3dbea13ebddecdc8fcf39ad36faace51043f19e73ee2156f564fa7242/gbopyrator-0.4.tar.gz
+[2023-05-06 13:40:21] INFO root fetch - processPackages [pylegendmeta]: Downloading https://files.pythonhosted.org/packages/0a/0c/42b34afa959515916a71d66735670232dd36cb5a7d6f21ee1d208f2f8f07/pylegendmeta-0.7.7.tar.gz
+[2023-05-06 13:40:21] INFO root fetch - processPackages [gbopyrator]: executing diffoscope
+[2023-05-06 13:40:21] INFO root fetch - processPackages [gbopyrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gbopyrator-0.3.tar.gz tmp/gbopyrator-0.4.tar.gz --markdown 20230506/g/gbopyrator/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-06 13:40:21] INFO root fetch - processPackages [pylegendmeta]: executing diffoscope
+[2023-05-06 13:40:21] INFO root fetch - processPackages [pylegendmeta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylegendmeta-0.7.6.tar.gz tmp/pylegendmeta-0.7.7.tar.gz --markdown 20230506/p/pylegendmeta/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-05-06 13:40:21] INFO root fetch - processPackages [frontengine-dev]: Downloading https://files.pythonhosted.org/packages/4a/28/9ed8bd30024861c8bd57b43fd84bbc97ebb862962d4216f314d11402dfaa/frontengine_dev-0.0.3.tar.gz
+[2023-05-06 13:40:21] INFO root fetch - processPackages [frontengine-dev]: executing diffoscope
+[2023-05-06 13:40:21] INFO root fetch - processPackages [frontengine-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine_dev-0.0.2.tar.gz tmp/frontengine_dev-0.0.3.tar.gz --markdown 20230506/f/frontengine-dev/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 13:40:22] INFO root fetch - processPackages [custodes]: Start processing: aioworkers-sentry
+[2023-05-06 13:40:22] INFO root fetch - main [MainThread]: End processing [custodes]: success
+[2023-05-06 13:40:22] INFO root fetch - processPackages [aioworkers-sentry]: New version: [0.5a3] Old Version: [0.4]
+[2023-05-06 13:40:22] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:40:22] INFO root fetch - processPackages [aioworkers-sentry]: Downloading https://files.pythonhosted.org/packages/f8/6d/60bb002e9f39ef78b133156cbaa3fe7639aeafb6cbdf8c73d48d9101573d/aioworkers_sentry-0.5a3.tar.gz
+[2023-05-06 13:40:22] INFO root fetch - processPackages [aioworkers-sentry]: executing diffoscope
+[2023-05-06 13:40:22] INFO root fetch - processPackages [aioworkers-sentry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioworkers-sentry-0.4.tar.gz tmp/aioworkers_sentry-0.5a3.tar.gz --markdown 20230506/a/aioworkers-sentry/0.4-0.5a3/diff.md --exclude *.pyd
+[2023-05-06 13:40:22] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:40:22] INFO root fetch - main [MainThread]: End processing [chromedriver-py-auto]: success
+[2023-05-06 13:40:23] INFO root fetch - main [MainThread]: End processing [frontengine]: success
+[2023-05-06 13:40:23] INFO root fetch - main [MainThread]: End processing [gbopyrator]: success
+[2023-05-06 13:40:23] INFO root fetch - main [MainThread]: End processing [joes-giant-toolbox]: success
+[2023-05-06 13:40:23] INFO root fetch - main [MainThread]: End processing [gbopyrator]: success
+[2023-05-06 13:40:23] INFO root fetch - main [MainThread]: End processing [pylegendmeta]: success
+[2023-05-06 13:40:23] INFO root fetch - main [MainThread]: End processing [aioworkers-sentry]: success
+[2023-05-06 13:40:23] INFO root fetch - main [MainThread]: End processing [frontengine-dev]: success
+[2023-05-06 13:40:23] INFO root fetch - main [MainThread]: Store serial: [17999344]
