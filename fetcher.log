@@ -11155,3 +11155,52 @@ EOFError: EOF read where object expected
 [2023-05-06 16:02:06] INFO root fetch - main [MainThread]: End processing [frontengine]: success
 [2023-05-06 16:02:06] INFO root fetch - main [MainThread]: End processing [frontengine-dev]: success
 [2023-05-06 16:02:06] INFO root fetch - main [MainThread]: Store serial: [18000068]
+[2023-05-06 16:07:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000068]
+[2023-05-06 16:07:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 16:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sopel-8ball
+[2023-05-06 16:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tweety-ns
+[2023-05-06 16:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysensibo
+[2023-05-06 16:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uss
+[2023-05-06 16:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: adept-augmentations
+[2023-05-06 16:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: solution-harsha
+[2023-05-06 16:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pikachu-chem
+[2023-05-06 16:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: preface
+[2023-05-06 16:07:15] INFO root fetch - processPackages [tweety-ns]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-05-06 16:07:15] INFO root fetch - processPackages [uss]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 16:07:15] INFO root fetch - processPackages [sopel-8ball]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-06 16:07:15] WARNING root fetch - processPackages [solution-harsha]: Skipping, unable to determine old version
+[2023-05-06 16:07:15] INFO root fetch - main [MainThread]: End processing [solution-harsha] error
+[2023-05-06 16:07:15] INFO root fetch - processPackages [pysensibo]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 16:07:15] INFO root fetch - processPackages [pikachu-chem]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 16:07:15] INFO root fetch - processPackages [adept-augmentations]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 16:07:15] INFO root fetch - processPackages [pysensibo]: executing diffoscope
+[2023-05-06 16:07:15] INFO root fetch - processPackages [pysensibo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysensibo-1.0.8.tar.gz tmp/pysensibo-1.0.9.tar.gz --markdown 20230506/p/pysensibo/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 16:07:15] INFO root fetch - processPackages [preface]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-06 16:07:15] INFO root fetch - processPackages [uss]: Downloading https://files.pythonhosted.org/packages/c3/07/25bd490f9ddfb15a3d7e57dabcb12425370c0dee32381f37f6889231ccdc/uss-0.0.3.tar.gz
+[2023-05-06 16:07:15] INFO root fetch - processPackages [sopel-8ball]: Downloading https://files.pythonhosted.org/packages/ef/17/48d573417e074e74aa274aa7d7a9ca79df3aa22fa8554120b7f496bed9c5/sopel-8ball-0.4.0.tar.gz
+[2023-05-06 16:07:15] INFO root fetch - processPackages [adept-augmentations]: Downloading https://files.pythonhosted.org/packages/a4/53/e2e88a0174f7dca4c1ea76e7b26b7ec7e9e61d38da14eb5300ce3212b113/adept-augmentations-0.1.0.tar.gz
+[2023-05-06 16:07:15] INFO root fetch - processPackages [uss]: executing diffoscope
+[2023-05-06 16:07:15] INFO root fetch - processPackages [uss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uss-0.0.2-py3-none-any.whl.zip tmp/uss-0.0.3.tar.gz --markdown 20230506/u/uss/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 16:07:15] INFO root fetch - processPackages [preface]: Downloading https://files.pythonhosted.org/packages/bc/3c/29919d0f69c8840e17bd3482daf992c37e7d6e8e59e4d68f850e55d161fe/preface-0.1.4.tar.gz
+[2023-05-06 16:07:15] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/07/57/ac4ab9721421168c07e2161d5643774c1022dcc087d174ab02f149a6fea3/tweety-ns-0.7.0.tar.gz
+[2023-05-06 16:07:15] INFO root fetch - processPackages [pikachu-chem]: executing diffoscope
+[2023-05-06 16:07:15] INFO root fetch - processPackages [pikachu-chem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pikachu-chem-1.0.8.tar.gz tmp/pikachu-chem-1.0.9.tar.gz --markdown 20230506/p/pikachu-chem/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 16:07:15] INFO root fetch - processPackages [tweety-ns]: executing diffoscope
+[2023-05-06 16:07:15] INFO root fetch - processPackages [tweety-ns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweety-ns-0.6.1.tar.gz tmp/tweety-ns-0.7.0.tar.gz --markdown 20230506/t/tweety-ns/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-05-06 16:07:15] INFO root fetch - processPackages [sopel-8ball]: Downloading https://files.pythonhosted.org/packages/da/ea/ee0ec187612a8e7421872e755e01110a3aaa6487b457cdf49c031bc4d2ab/sopel-8ball-0.4.1.tar.gz
+[2023-05-06 16:07:15] INFO root fetch - processPackages [adept-augmentations]: Downloading https://files.pythonhosted.org/packages/2a/df/142fbf164359adeb95ce79922cef759c3a767b462d0c2416e5130ed3fee6/adept-augmentations-0.1.1.tar.gz
+[2023-05-06 16:07:15] INFO root fetch - processPackages [preface]: Downloading https://files.pythonhosted.org/packages/01/a3/d22b5c905185785f69661a5cca5f6b80dcfa7cdd2b9d2c708841297799c0/preface-0.1.5.tar.gz
+[2023-05-06 16:07:15] INFO root fetch - processPackages [sopel-8ball]: executing diffoscope
+[2023-05-06 16:07:15] INFO root fetch - processPackages [sopel-8ball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopel-8ball-0.4.0.tar.gz tmp/sopel-8ball-0.4.1.tar.gz --markdown 20230506/s/sopel-8ball/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-06 16:07:15] INFO root fetch - processPackages [adept-augmentations]: executing diffoscope
+[2023-05-06 16:07:15] INFO root fetch - processPackages [adept-augmentations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adept-augmentations-0.1.0.tar.gz tmp/adept-augmentations-0.1.1.tar.gz --markdown 20230506/a/adept-augmentations/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 16:07:16] INFO root fetch - processPackages [preface]: executing diffoscope
+[2023-05-06 16:07:16] INFO root fetch - processPackages [preface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/preface-0.1.4.tar.gz tmp/preface-0.1.5.tar.gz --markdown 20230506/p/preface/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-06 16:07:16] INFO root fetch - main [MainThread]: End processing [pysensibo]: success
+[2023-05-06 16:07:16] INFO root fetch - main [MainThread]: End processing [uss]: success
+[2023-05-06 16:07:17] INFO root fetch - main [MainThread]: End processing [sopel-8ball]: success
+[2023-05-06 16:07:17] INFO root fetch - main [MainThread]: End processing [pikachu-chem]: success
+[2023-05-06 16:07:17] INFO root fetch - main [MainThread]: End processing [preface]: success
+[2023-05-06 16:07:17] INFO root fetch - main [MainThread]: End processing [adept-augmentations]: success
+[2023-05-06 16:07:17] INFO root fetch - main [MainThread]: End processing [tweety-ns]: success
+[2023-05-06 16:07:17] INFO root fetch - main [MainThread]: Store serial: [18000150]
