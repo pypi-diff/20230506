@@ -5498,3 +5498,56 @@
 [2023-05-06 06:06:05] INFO root fetch - main [MainThread]: End processing [editanything]: success
 [2023-05-06 06:06:05] INFO root fetch - main [MainThread]: End processing [django-minio-storage]: success
 [2023-05-06 06:06:05] INFO root fetch - main [MainThread]: Store serial: [17996717]
+[2023-05-06 06:11:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996717]
+[2023-05-06 06:11:14] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 06:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oxfs
+[2023-05-06 06:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: txdtaiac
+[2023-05-06 06:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-website-sale-stock-list-preview
+[2023-05-06 06:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addons-oca-e-commerce
+[2023-05-06 06:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: paquete-fe
+[2023-05-06 06:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-azure
+[2023-05-06 06:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: editanything
+[2023-05-06 06:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: asc2mb
+[2023-05-06 06:11:14] INFO root fetch - processPackages [oxfs]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-06 06:11:14] INFO root fetch - processPackages [odoo14-addons-oca-e-commerce]: New version: [14.0.20230505.0] Old Version: [14.0.20230424.0]
+[2023-05-06 06:11:14] INFO root fetch - processPackages [txdtaiac]: New version: [2.0] Old Version: [1.0]
+[2023-05-06 06:11:14] INFO root fetch - processPackages [paquete-fe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 06:11:14] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 06:11:14] INFO root fetch - processPackages [asc2mb]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-06 06:11:14] INFO root fetch - processPackages [odoo14-addon-website-sale-stock-list-preview]: New version: [14.0.1.0.1.dev3] Old Version: [14.0.1.0.1.dev2]
+[2023-05-06 06:11:14] INFO root fetch - processPackages [paquete-fe]: executing diffoscope
+[2023-05-06 06:11:14] INFO root fetch - processPackages [paquete-fe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paquete-fe-0.1.8.tar.gz tmp/paquete_fe-0.1.9.tar.gz --markdown 20230506/p/paquete-fe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 06:11:14] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 06:11:14] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 06:11:14] INFO root fetch - processPackages [pulumi-azure]: New version: [5.9.0a1654522381] Old Version: [5.9.0a1654274095]
+[2023-05-06 06:11:14] INFO root fetch - processPackages [txdtaiac]: Downloading https://files.pythonhosted.org/packages/4c/c4/9dda6e5541f1f1d5861aeec5bb9a60886b74dc08d6a7544d7b29c3c57832/txdtaiac-1.0.tar.gz
+[2023-05-06 06:11:14] INFO root fetch - processPackages [oxfs]: Downloading https://files.pythonhosted.org/packages/3f/3b/1e2b939de5901e5e8cbfa2d7988e45f9d77579f1dc8c2ea18ced278524e3/oxfs-0.5.4.tar.gz
+[2023-05-06 06:11:14] INFO root fetch - processPackages [odoo14-addons-oca-e-commerce]: Downloading https://files.pythonhosted.org/packages/b9/c6/2bd890e548e7bfd59b83fd2a1813370a110298d10f3d714cfcd60e473e45/odoo14_addons_oca_e_commerce-14.0.20230424.0-py3-none-any.whl
+[2023-05-06 06:11:14] INFO root fetch - processPackages [odoo14-addon-website-sale-stock-list-preview]: Downloading https://files.pythonhosted.org/packages/f7/59/eef714e1c8c555563a0f42c20faaa06d8c53c1740021d42bfda6905886f8/odoo14_addon_website_sale_stock_list_preview-14.0.1.0.1.dev2-py3-none-any.whl
+[2023-05-06 06:11:14] INFO root fetch - processPackages [asc2mb]: executing diffoscope
+[2023-05-06 06:11:14] INFO root fetch - processPackages [asc2mb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asc2mb-0.7.0.tar.gz tmp/asc2mb-0.7.1.tar.gz --markdown 20230506/a/asc2mb/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-06 06:11:14] INFO root fetch - processPackages [pulumi-azure]: Downloading https://files.pythonhosted.org/packages/95/6d/184badcdda1d8846e82c25063e340f60ddbf5b018a98c303e4bb5aa0a6ff/pulumi_azure-5.9.0a1654274095.tar.gz
+[2023-05-06 06:11:14] INFO root fetch - processPackages [oxfs]: Downloading https://files.pythonhosted.org/packages/1a/b8/498984f72d1c3c0341832d295315d9af1a329e713f2e211d3efc80075243/oxfs-0.5.5.tar.gz
+[2023-05-06 06:11:14] INFO root fetch - processPackages [txdtaiac]: Downloading https://files.pythonhosted.org/packages/a4/62/fcfbc3237d0445f4d8058aa81d4bcac8d2122cca5d3d2e9c11ad6b5c37ea/txdtaiac-2.0.tar.gz
+[2023-05-06 06:11:14] INFO root fetch - processPackages [odoo14-addon-website-sale-stock-list-preview]: Downloading https://files.pythonhosted.org/packages/c0/38/ae3f4a1037e57cf8892d7a4c65723ab0667f4318414ae4023b8d8cc8beba/odoo14_addon_website_sale_stock_list_preview-14.0.1.0.1.dev3-py3-none-any.whl
+[2023-05-06 06:11:14] INFO root fetch - processPackages [oxfs]: executing diffoscope
+[2023-05-06 06:11:14] INFO root fetch - processPackages [oxfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oxfs-0.5.4.tar.gz tmp/oxfs-0.5.5.tar.gz --markdown 20230506/o/oxfs/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-06 06:11:14] INFO root fetch - processPackages [txdtaiac]: executing diffoscope
+[2023-05-06 06:11:14] INFO root fetch - processPackages [txdtaiac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txdtaiac-1.0.tar.gz tmp/txdtaiac-2.0.tar.gz --markdown 20230506/t/txdtaiac/1.0-2.0/diff.md --exclude *.pyd
+[2023-05-06 06:11:15] INFO root fetch - processPackages [odoo14-addons-oca-e-commerce]: Downloading https://files.pythonhosted.org/packages/f6/d1/4bef61b466c31dbb9401afdcc763252f15fcc590bdb59e43d9a3cba5a3ea/odoo14_addons_oca_e_commerce-14.0.20230505.0-py3-none-any.whl
+[2023-05-06 06:11:15] INFO root fetch - processPackages [odoo14-addons-oca-e-commerce]: executing diffoscope
+[2023-05-06 06:11:15] INFO root fetch - processPackages [odoo14-addons-oca-e-commerce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_e_commerce-14.0.20230424.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_e_commerce-14.0.20230505.0-py3-none-any.whl.zip --markdown 20230506/o/odoo14-addons-oca-e-commerce/14.0.20230424.0-14.0.20230505.0/diff.md --exclude *.pyd
+[2023-05-06 06:11:15] INFO root fetch - processPackages [odoo14-addon-website-sale-stock-list-preview]: executing diffoscope
+[2023-05-06 06:11:15] INFO root fetch - processPackages [odoo14-addon-website-sale-stock-list-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_website_sale_stock_list_preview-14.0.1.0.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_website_sale_stock_list_preview-14.0.1.0.1.dev3-py3-none-any.whl.zip --markdown 20230506/o/odoo14-addon-website-sale-stock-list-preview/14.0.1.0.1.dev2-14.0.1.0.1.dev3/diff.md --exclude *.pyd
+[2023-05-06 06:11:15] INFO root fetch - processPackages [pulumi-azure]: Downloading https://files.pythonhosted.org/packages/19/1b/87a51c6988d790ed8bfb430670a85c499af09d14d21430448a37baa7fb64/pulumi_azure-5.9.0a1654522381.tar.gz
+[2023-05-06 06:11:15] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 06:11:15] INFO root fetch - main [MainThread]: End processing [asc2mb]: success
+[2023-05-06 06:11:16] INFO root fetch - main [MainThread]: End processing [txdtaiac]: success
+[2023-05-06 06:11:16] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-e-commerce]: success
+[2023-05-06 06:11:16] INFO root fetch - main [MainThread]: End processing [oxfs]: success
+[2023-05-06 06:11:16] INFO root fetch - processPackages [pulumi-azure]: executing diffoscope
+[2023-05-06 06:11:16] INFO root fetch - processPackages [pulumi-azure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_azure-5.9.0a1654274095.tar.gz tmp/pulumi_azure-5.9.0a1654522381.tar.gz --markdown 20230506/p/pulumi-azure/5.9.0a1654274095-5.9.0a1654522381/diff.md --exclude *.pyd
+[2023-05-06 06:11:16] INFO root fetch - main [MainThread]: End processing [odoo14-addon-website-sale-stock-list-preview]: success
+[2023-05-06 06:11:16] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
+[2023-05-06 06:11:43] INFO root fetch - main [MainThread]: End processing [pulumi-azure]: success
+[2023-05-06 06:11:43] INFO root fetch - main [MainThread]: Store serial: [17996736]
