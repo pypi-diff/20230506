@@ -5979,3 +5979,20 @@
 [2023-05-06 07:28:44] INFO root fetch - main [MainThread]: End processing [xj-user]: success
 [2023-05-06 07:28:44] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2023-05-06 07:28:44] INFO root fetch - main [MainThread]: Store serial: [17997137]
+[2023-05-06 07:33:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997137]
+[2023-05-06 07:33:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-06 07:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: carefree-learn
+[2023-05-06 07:33:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: carefree-creator
+[2023-05-06 07:33:52] INFO root fetch - processPackages [carefree-creator]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-06 07:33:52] INFO root fetch - processPackages [carefree-learn]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-06 07:33:53] INFO root fetch - processPackages [carefree-learn]: Downloading https://files.pythonhosted.org/packages/9f/ce/2c65a8149bf0f037505f2eef9c4b492ddf96207c0d232a1106463e564a7c/carefree-learn-0.4.1.tar.gz
+[2023-05-06 07:33:53] INFO root fetch - processPackages [carefree-creator]: Downloading https://files.pythonhosted.org/packages/c3/c3/f391043c606b5dd1162003a1af7e46fc97669e124fe7025c71a016f8a837/carefree-creator-0.2.1.tar.gz
+[2023-05-06 07:33:53] INFO root fetch - processPackages [carefree-learn]: Downloading https://files.pythonhosted.org/packages/af/8c/ec4dc69a771518a49fe93e42b8df3e07ffefa48a06bcc9ace12e89ffeeea/carefree-learn-0.4.2.tar.gz
+[2023-05-06 07:33:53] INFO root fetch - processPackages [carefree-creator]: Downloading https://files.pythonhosted.org/packages/67/22/8740beca0d14ab2aaa3bcf95b2761df0b0671ce99387f4ce9963976f1071/carefree-creator-0.2.2.tar.gz
+[2023-05-06 07:33:53] INFO root fetch - processPackages [carefree-learn]: executing diffoscope
+[2023-05-06 07:33:53] INFO root fetch - processPackages [carefree-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carefree-learn-0.4.1.tar.gz tmp/carefree-learn-0.4.2.tar.gz --markdown 20230506/c/carefree-learn/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-06 07:33:53] INFO root fetch - processPackages [carefree-creator]: executing diffoscope
+[2023-05-06 07:33:53] INFO root fetch - processPackages [carefree-creator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carefree-creator-0.2.1.tar.gz tmp/carefree-creator-0.2.2.tar.gz --markdown 20230506/c/carefree-creator/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-06 07:33:54] INFO root fetch - main [MainThread]: End processing [carefree-creator]: success
+[2023-05-06 07:33:56] INFO root fetch - main [MainThread]: End processing [carefree-learn]: success
+[2023-05-06 07:33:56] INFO root fetch - main [MainThread]: Store serial: [17997141]
