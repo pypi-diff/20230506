@@ -14060,3 +14060,53 @@ EOFError: EOF read where object expected
 [2023-05-06 22:02:50] INFO root fetch - main [MainThread]: End processing [easy-pil]: success
 [2023-05-06 22:03:16] INFO root fetch - main [MainThread]: End processing [arvan-dns]: success
 [2023-05-06 22:03:16] INFO root fetch - main [MainThread]: Store serial: [18001876]
+[2023-05-06 22:08:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001876]
+[2023-05-06 22:08:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 22:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mikan-card-downloader
+[2023-05-06 22:08:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yetl-framework
+[2023-05-06 22:08:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yente
+[2023-05-06 22:08:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imaginAIry
+[2023-05-06 22:08:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arvan-dns
+[2023-05-06 22:08:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dxsp
+[2023-05-06 22:08:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: findmyorder
+[2023-05-06 22:08:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nycu-tdx-py
+[2023-05-06 22:08:25] INFO root fetch - processPackages [mikan-card-downloader]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-06 22:08:25] INFO root fetch - processPackages [yente]: New version: [3.4.0] Old Version: [3.3.1]
+[2023-05-06 22:08:25] INFO root fetch - processPackages [arvan-dns]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-06 22:08:25] INFO root fetch - processPackages [yetl-framework]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-06 22:08:25] INFO root fetch - processPackages [nycu-tdx-py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 22:08:25] INFO root fetch - processPackages [dxsp]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-06 22:08:25] INFO root fetch - processPackages [imaginAIry]: New version: [9.0.2] Old Version: [9.0.1]
+[2023-05-06 22:08:25] INFO root fetch - processPackages [findmyorder]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-05-06 22:08:25] INFO root fetch - processPackages [mikan-card-downloader]: Downloading https://files.pythonhosted.org/packages/17/28/a468f69c6684a0f5008babd778c9ceeb6e55badec03a9ec406520fd19b28/mikan_card_downloader-1.0.0.tar.gz
+[2023-05-06 22:08:25] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-06 22:08:25] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.9.8.tar.gz tmp/dxsp-1.9.9.tar.gz --markdown 20230506/d/dxsp/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-06 22:08:25] INFO root fetch - processPackages [nycu-tdx-py]: executing diffoscope
+[2023-05-06 22:08:25] INFO root fetch - processPackages [nycu-tdx-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nycu_tdx_py-0.1.8.tar.gz tmp/nycu_tdx_py-0.1.9.tar.gz --markdown 20230506/n/nycu-tdx-py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 22:08:25] INFO root fetch - processPackages [arvan-dns]: Downloading https://files.pythonhosted.org/packages/a3/1b/5bf7a9c94043009f5c2a3adb1a24f0beb0c7298c63cbfc630937e3a99fd3/arvan_dns-1.0.1.tar.gz
+[2023-05-06 22:08:25] INFO root fetch - processPackages [yente]: Downloading https://files.pythonhosted.org/packages/f7/c9/a70f93c0a7254144222b83f9776b336abc48d50675f6024ede3cd79b91e7/yente-3.3.1.tar.gz
+[2023-05-06 22:08:25] INFO root fetch - processPackages [findmyorder]: Downloading https://files.pythonhosted.org/packages/92/18/9241e9be36f30c10a50b10b16d32645267f85c34848435cb1365fd25cacf/findmyorder-1.3.4.tar.gz
+[2023-05-06 22:08:25] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/10/95/6746d7e851ee2041e33352beaf0477da0818a839ee6c09e4263a00b5607b/yetl-framework-1.2.1.tar.gz
+[2023-05-06 22:08:25] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-05-06 22:08:25] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.2.0.tar.gz tmp/yetl-framework-1.2.1.tar.gz --markdown 20230506/y/yetl-framework/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-06 22:08:25] INFO root fetch - processPackages [mikan-card-downloader]: Downloading https://files.pythonhosted.org/packages/e7/6a/d23bba868bd38706ec523ff7cb524dcf108ade6542b3f9b51ef0f2c4da45/mikan_card_downloader-1.1.0.tar.gz
+[2023-05-06 22:08:25] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-05-06 22:08:25] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.3.3.tar.gz tmp/findmyorder-1.3.4.tar.gz --markdown 20230506/f/findmyorder/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-05-06 22:08:25] INFO root fetch - processPackages [imaginAIry]: executing diffoscope
+[2023-05-06 22:08:25] INFO root fetch - processPackages [imaginAIry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imaginAIry-9.0.1-py3-none-win_amd64.whl.zip tmp/imaginAIry-9.0.2-py3-none-win_amd64.whl.zip --markdown 20230506/i/imaginAIry/9.0.1-9.0.2/diff.md --exclude *.pyd
+[2023-05-06 22:08:25] INFO root fetch - processPackages [mikan-card-downloader]: executing diffoscope
+[2023-05-06 22:08:25] INFO root fetch - processPackages [mikan-card-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mikan_card_downloader-1.0.0.tar.gz tmp/mikan_card_downloader-1.1.0.tar.gz --markdown 20230506/m/mikan-card-downloader/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-06 22:08:25] INFO root fetch - processPackages [arvan-dns]: executing diffoscope
+[2023-05-06 22:08:25] INFO root fetch - processPackages [yente]: Downloading https://files.pythonhosted.org/packages/a1/51/8c9fc74a3163ac4ae25830debe909e1b03d96d8b01c1d3e8f6d6227f1a44/yente-3.4.0.tar.gz
+[2023-05-06 22:08:25] INFO root fetch - processPackages [arvan-dns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arvan_dns-1.0.0.tar.gz tmp/arvan_dns-1.0.1.tar.gz --markdown 20230506/a/arvan-dns/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 22:08:25] INFO root fetch - processPackages [yente]: executing diffoscope
+[2023-05-06 22:08:25] INFO root fetch - processPackages [yente]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yente-3.3.1.tar.gz tmp/yente-3.4.0.tar.gz --markdown 20230506/y/yente/3.3.1-3.4.0/diff.md --exclude *.pyd
+[2023-05-06 22:08:26] INFO root fetch - main [MainThread]: End processing [nycu-tdx-py]: success
+[2023-05-06 22:08:26] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-06 22:08:26] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-05-06 22:08:26] INFO root fetch - main [MainThread]: End processing [arvan-dns]: success
+[2023-05-06 22:08:27] INFO root fetch - main [MainThread]: End processing [mikan-card-downloader]: success
+[2023-05-06 22:08:27] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-05-06 22:08:27] INFO root fetch - main [MainThread]: End processing [yente]: success
+[2023-05-06 22:08:28] INFO root fetch - main [MainThread]: End processing [imaginAIry]: success
+[2023-05-06 22:08:28] INFO root fetch - main [MainThread]: Store serial: [18001900]
