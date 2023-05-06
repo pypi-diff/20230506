@@ -12552,3 +12552,51 @@ EOFError: EOF read where object expected
 [2023-05-06 18:56:35] INFO root fetch - main [MainThread]: End processing [interactions.py]: success
 [2023-05-06 18:56:35] INFO root fetch - main [MainThread]: End processing [discord-py-interactions]: success
 [2023-05-06 18:56:35] INFO root fetch - main [MainThread]: Store serial: [18000991]
+[2023-05-06 19:01:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000991]
+[2023-05-06 19:01:44] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 19:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dank-mids
+[2023-05-06 19:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tpcollections
+[2023-05-06 19:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hrin-msb
+[2023-05-06 19:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Jlab
+[2023-05-06 19:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pandas-chat
+[2023-05-06 19:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: testz
+[2023-05-06 19:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: maialib
+[2023-05-06 19:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: unfold
+[2023-05-06 19:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nonebot-plugin-csgo-case-simulator
+[2023-05-06 19:01:44] WARNING root fetch - processPackages [tpcollections]: Skipping, unable to determine old version
+[2023-05-06 19:01:44] INFO root fetch - main [MainThread]: End processing [tpcollections] error
+[2023-05-06 19:01:44] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 19:01:44] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-06 19:01:44] WARNING root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: Skipping, unable to determine old version
+[2023-05-06 19:01:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator] error
+[2023-05-06 19:01:44] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-06 19:01:44] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230506/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 19:01:44] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-05-06 19:01:44] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230506/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-06 19:01:44] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-05-06 19:01:44] WARNING root fetch - processPackages [testz]: Skipping, unable to determine old version
+[2023-05-06 19:01:44] INFO root fetch - main [MainThread]: End processing [testz] error
+[2023-05-06 19:01:44] INFO root fetch - processPackages [unfold]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-06 19:01:44] INFO root fetch - processPackages [maialib]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-06 19:01:44] INFO root fetch - processPackages [pandas-chat]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 19:01:44] INFO root fetch - processPackages [unfold]: Downloading https://files.pythonhosted.org/packages/10/96/a4d28d3e1558cedc616e0cc453d5250e6efd43645378579857d3db76f46c/unfold-1.0.7.tar.gz
+[2023-05-06 19:01:44] INFO root fetch - processPackages [pandas-chat]: Downloading https://files.pythonhosted.org/packages/d9/4f/f2dbbd89488780e9bb97e33f1c52036dcda3b0caebdfc7c272fa4a523b88/pandas-chat-0.0.2.tar.gz
+[2023-05-06 19:01:44] INFO root fetch - processPackages [maialib]: Downloading https://files.pythonhosted.org/packages/f0/e3/79aa5c48f7b223fec1f45a0b9924f8c8851753c3ae5c92fb6df3fed4b4b6/maialib-1.0.0-pp39-pypy39_pp73-win_amd64.whl
+[2023-05-06 19:01:44] INFO root fetch - processPackages [pandas-chat]: Downloading https://files.pythonhosted.org/packages/10/34/9b39b5257e5010feb9450ef800b814725d8dcb739510b31ce769e3f2a1db/pandas-chat-0.0.3.tar.gz
+[2023-05-06 19:01:44] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-05-06 19:01:44] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230506/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-05-06 19:01:44] INFO root fetch - processPackages [unfold]: Downloading https://files.pythonhosted.org/packages/54/6f/205cbed14e868f3d8b7703d0de197fc59180116ea09b030139320dee50d8/unfold-1.0.8.tar.gz
+[2023-05-06 19:01:44] INFO root fetch - processPackages [pandas-chat]: executing diffoscope
+[2023-05-06 19:01:44] INFO root fetch - processPackages [pandas-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandas-chat-0.0.2.tar.gz tmp/pandas-chat-0.0.3.tar.gz --markdown 20230506/p/pandas-chat/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 19:01:44] INFO root fetch - processPackages [unfold]: executing diffoscope
+[2023-05-06 19:01:44] INFO root fetch - processPackages [unfold]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unfold-1.0.7.tar.gz tmp/unfold-1.0.8.tar.gz --markdown 20230506/u/unfold/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-06 19:01:45] INFO root fetch - processPackages [maialib]: Downloading https://files.pythonhosted.org/packages/76/ba/657aa830470e48706efa36bd8db92363b01bc7315fceeda93828e1bfd78a/maialib-1.1.0-pp39-pypy39_pp73-win_amd64.whl
+[2023-05-06 19:01:45] INFO root fetch - processPackages [maialib]: executing diffoscope
+[2023-05-06 19:01:45] INFO root fetch - processPackages [maialib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maialib-1.0.0-pp39-pypy39_pp73-win_amd64.whl.zip tmp/maialib-1.1.0-pp39-pypy39_pp73-win_amd64.whl.zip --markdown 20230506/m/maialib/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-06 19:01:45] INFO root fetch - main [MainThread]: End processing [Jlab]: success
+[2023-05-06 19:01:45] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-06 19:01:45] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-05-06 19:01:45] INFO root fetch - main [MainThread]: End processing [pandas-chat]: success
+[2023-05-06 19:01:46] INFO root fetch - main [MainThread]: End processing [unfold]: success
+[2023-05-06 19:01:53] INFO root fetch - main [MainThread]: End processing [maialib]: success
+[2023-05-06 19:01:53] INFO root fetch - main [MainThread]: Store serial: [18001048]
