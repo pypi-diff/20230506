@@ -10497,3 +10497,38 @@ EOFError: EOF read where object expected
 [2023-05-06 14:43:11] INFO root fetch - main [MainThread]: End processing [lms-synergy-library]: success
 [2023-05-06 14:43:11] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
 [2023-05-06 14:43:11] INFO root fetch - main [MainThread]: Store serial: [17999672]
+[2023-05-06 14:48:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999672]
+[2023-05-06 14:48:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 14:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hrin-msb
+[2023-05-06 14:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freeGPT
+[2023-05-06 14:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-lectio
+[2023-05-06 14:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: manticore
+[2023-05-06 14:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pysensibo
+[2023-05-06 14:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbt-ai
+[2023-05-06 14:48:20] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 14:48:20] INFO root fetch - processPackages [python-lectio]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-06 14:48:20] INFO root fetch - processPackages [pysensibo]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 14:48:20] INFO root fetch - processPackages [dbt-ai]: New version: [0.0.6a0] Old Version: [0.0.5a0]
+[2023-05-06 14:48:20] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230506] Old Version: [0.3.8.dev230505]
+[2023-05-06 14:48:20] WARNING root fetch - processPackages [freeGPT]: Skipping, unable to determine old version
+[2023-05-06 14:48:20] INFO root fetch - main [MainThread]: End processing [freeGPT] error
+[2023-05-06 14:48:20] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-06 14:48:20] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230506/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 14:48:20] INFO root fetch - processPackages [pysensibo]: Downloading https://files.pythonhosted.org/packages/af/4c/8116c33c00bca7b5a5fff60756f8391e12b67b1d1e5ef744286e16a99e08/pysensibo-1.0.8.tar.gz
+[2023-05-06 14:48:20] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/c7/60/a17694296d27c0c55d93872d5d8f50e8193427e8eb6d1be43a543abfd683/dbt-ai-0.0.6a0.tar.gz
+[2023-05-06 14:48:20] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/18/c7/3b5b5f583d49f9d72ede128ef0e92b3a4635676d5cac1655732658ebbbc0/manticore-0.3.8.dev230506.tar.gz
+[2023-05-06 14:48:20] INFO root fetch - processPackages [python-lectio]: executing diffoscope
+[2023-05-06 14:48:20] INFO root fetch - processPackages [python-lectio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-lectio-1.9.0.tar.gz tmp/python-lectio-1.9.1.tar.gz --markdown 20230506/p/python-lectio/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-06 14:48:20] INFO root fetch - processPackages [dbt-ai]: executing diffoscope
+[2023-05-06 14:48:20] INFO root fetch - processPackages [dbt-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-ai-0.0.5a0.tar.gz tmp/dbt-ai-0.0.6a0.tar.gz --markdown 20230506/d/dbt-ai/0.0.5a0-0.0.6a0/diff.md --exclude *.pyd
+[2023-05-06 14:48:20] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-05-06 14:48:20] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230505.tar.gz tmp/manticore-0.3.8.dev230506.tar.gz --markdown 20230506/m/manticore/0.3.8.dev230505-0.3.8.dev230506/diff.md --exclude *.pyd
+[2023-05-06 14:48:20] INFO root fetch - processPackages [pysensibo]: Downloading https://files.pythonhosted.org/packages/74/b9/30a2c00590d3482692d7b5e8d6094384f519992a13ae674c69db37cdd068/pysensibo-1.0.9.tar.gz
+[2023-05-06 14:48:20] INFO root fetch - processPackages [pysensibo]: executing diffoscope
+[2023-05-06 14:48:20] INFO root fetch - processPackages [pysensibo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysensibo-1.0.8.tar.gz tmp/pysensibo-1.0.9.tar.gz --markdown 20230506/p/pysensibo/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 14:48:21] INFO root fetch - main [MainThread]: End processing [dbt-ai]: success
+[2023-05-06 14:48:21] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-06 14:48:21] INFO root fetch - main [MainThread]: End processing [python-lectio]: success
+[2023-05-06 14:48:22] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-05-06 14:48:50] INFO root fetch - main [MainThread]: End processing [pysensibo]: success
+[2023-05-06 14:48:50] INFO root fetch - main [MainThread]: Store serial: [17999695]
