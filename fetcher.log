@@ -4497,3 +4497,77 @@
 [2023-05-06 04:17:55] INFO root fetch - main [MainThread]: End processing [cellmap]: success
 [2023-05-06 04:17:57] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-05-06 04:17:57] INFO root fetch - main [MainThread]: Store serial: [17996077]
+[2023-05-06 04:23:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996077]
+[2023-05-06 04:23:05] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-06 04:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: axion
+[2023-05-06 04:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stim
+[2023-05-06 04:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rnsh
+[2023-05-06 04:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyproton
+[2023-05-06 04:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: utils-uiauto
+[2023-05-06 04:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stimcirq
+[2023-05-06 04:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sinter
+[2023-05-06 04:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-admin-anchors
+[2023-05-06 04:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: excelcolumnizer
+[2023-05-06 04:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tracery3
+[2023-05-06 04:23:06] INFO root fetch - processPackages [utils-uiauto]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-06 04:23:06] INFO root fetch - processPackages [rnsh]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 04:23:06] INFO root fetch - processPackages [pyproton]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 04:23:06] INFO root fetch - processPackages [axion]: New version: [3.2.29] Old Version: [3.2.28]
+[2023-05-06 04:23:06] INFO root fetch - processPackages [excelcolumnizer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 04:23:06] INFO root fetch - processPackages [django-admin-anchors]: New version: [3.0.0] Old Version: [2.0.2]
+[2023-05-06 04:23:06] WARNING root fetch - processPackages [tracery3]: Skipping, unable to determine old version
+[2023-05-06 04:23:06] INFO root fetch - processPackages [tracery3]: Start processing: starsaiot-monit
+[2023-05-06 04:23:06] INFO root fetch - main [MainThread]: End processing [tracery3] error
+[2023-05-06 04:23:06] INFO root fetch - processPackages [sinter]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-05-06 04:23:06] INFO root fetch - processPackages [stimcirq]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-05-06 04:23:06] INFO root fetch - processPackages [starsaiot-monit]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-06 04:23:06] INFO root fetch - processPackages [stim]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-05-06 04:23:06] INFO root fetch - processPackages [excelcolumnizer]: executing diffoscope
+[2023-05-06 04:23:06] INFO root fetch - processPackages [excelcolumnizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/excelcolumnizer-0.0.8.tar.gz tmp/excelcolumnizer-0.0.9.tar.gz --markdown 20230506/e/excelcolumnizer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 04:23:06] INFO root fetch - processPackages [utils-uiauto]: Downloading https://files.pythonhosted.org/packages/a5/a8/bd4def7a793b333cea8feb9159a32f1f2558c343414b83ab9e3a103b5a58/utils_uiauto-0.3.0.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [starsaiot-monit]: executing diffoscope
+[2023-05-06 04:23:06] INFO root fetch - processPackages [starsaiot-monit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starsaiot-monit-1.2.8.tar.gz tmp/starsaiot-monit-1.2.9.tar.gz --markdown 20230506/s/starsaiot-monit/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-06 04:23:06] INFO root fetch - processPackages [rnsh]: Downloading https://files.pythonhosted.org/packages/6d/db/ef9038d1004b44b82f41e0a691fc056f96c7b71a92de25f1c2e25fc76cbe/rnsh-0.0.8.tar.gz
+[2023-05-06 04:23:06] WARNING root fetch - processPackages [utils-uiauto]: Skipping package: exceeds size limit 13392951>=10485760
+[2023-05-06 04:23:06] INFO root fetch - processPackages [utils-uiauto]: Start processing: mlgenotype
+[2023-05-06 04:23:06] INFO root fetch - main [MainThread]: End processing [utils-uiauto] error
+[2023-05-06 04:23:06] INFO root fetch - processPackages [pyproton]: Downloading https://files.pythonhosted.org/packages/b6/ac/fc549582d0ddbc243bbf5c955d109b2b2513dfc906e865796874e2b0ed92/pyproton-0.0.3.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [sinter]: Downloading https://files.pythonhosted.org/packages/df/c6/cb2622852c76647e7b6ad9a7a7e10f4e2cac9ecdfd523ac68df0bfc130af/sinter-1.9.dev1656756326.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [mlgenotype]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 04:23:06] INFO root fetch - processPackages [django-admin-anchors]: Downloading https://files.pythonhosted.org/packages/66/cb/64510c70053ef2a6ef69e8cbf4a49d21f2ae410e5b1d88b8db3981a5cfa4/django_admin_anchors-3.0.0.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [stimcirq]: Downloading https://files.pythonhosted.org/packages/ec/fe/38fc995ba6685f64103f3cd62faa49cd869af074b36e401597d9d2b0278d/stimcirq-1.9.dev1656756326.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [stim]: Downloading https://files.pythonhosted.org/packages/3c/b5/73354eb92a2d990acfb9c201ee8681aa2f88c6bd8bebf6365b8315ce918f/stim-1.9.dev1656756326.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [pyproton]: executing diffoscope
+[2023-05-06 04:23:06] INFO root fetch - processPackages [pyproton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproton-0.0.2.tar.gz tmp/pyproton-0.0.3.tar.gz --markdown 20230506/p/pyproton/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 04:23:06] INFO root fetch - processPackages [axion]: Downloading https://files.pythonhosted.org/packages/18/0e/2af84428600c643f4d08a26abf97ed8f5ec964cd847b22cf6bb88b07903e/axion-3.2.28-cp311-cp311-win_amd64.whl
+[2023-05-06 04:23:06] INFO root fetch - processPackages [django-admin-anchors]: executing diffoscope
+[2023-05-06 04:23:06] INFO root fetch - processPackages [django-admin-anchors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_admin_anchors-2.0.2.tar.gz tmp/django_admin_anchors-3.0.0.tar.gz --markdown 20230506/d/django-admin-anchors/2.0.2-3.0.0/diff.md --exclude *.pyd
+[2023-05-06 04:23:06] INFO root fetch - processPackages [mlgenotype]: Downloading https://files.pythonhosted.org/packages/4e/cd/4235f6be93645c559f59903a9f146d720cc8b705e06c2099d2410a333172/mlgenotype-0.1.9.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [sinter]: Downloading https://files.pythonhosted.org/packages/fd/5e/bd22cf7318b95a6cb630aede242c37ca8e376f51d3c73522d4d3fafd60c3/sinter-1.9.dev1657429876.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [rnsh]: Downloading https://files.pythonhosted.org/packages/c6/7c/6e6ac2dc74f70eee4bf61a987b69b8736a90052ade85352a7c47c42b0afe/rnsh-0.0.9.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [mlgenotype]: executing diffoscope
+[2023-05-06 04:23:06] INFO root fetch - processPackages [mlgenotype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlgenotype-0.1.8.tar.gz tmp/mlgenotype-0.1.9.tar.gz --markdown 20230506/m/mlgenotype/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 04:23:06] INFO root fetch - processPackages [stimcirq]: Downloading https://files.pythonhosted.org/packages/a2/fe/5fa281db7d139ef59a3c4c47c96940bf9f3fab0d0017ea452412c0cfc8d3/stimcirq-1.9.dev1657429876.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [axion]: Downloading https://files.pythonhosted.org/packages/83/7b/bcd42c4362299988124ec07d5497b4ad5e4cc7fef11706b14329315775ab/axion-3.2.29-cp311-cp311-macosx_10_9_universal2.whl
+[2023-05-06 04:23:06] INFO root fetch - processPackages [stim]: Downloading https://files.pythonhosted.org/packages/0e/9c/5ba52c312bd56598b3625675b062eed876f9e2248d957e47c58050cad31a/stim-1.9.dev1657429876.tar.gz
+[2023-05-06 04:23:06] INFO root fetch - processPackages [sinter]: executing diffoscope
+[2023-05-06 04:23:06] INFO root fetch - processPackages [sinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinter-1.9.dev1656756326.tar.gz tmp/sinter-1.9.dev1657429876.tar.gz --markdown 20230506/s/sinter/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-05-06 04:23:06] INFO root fetch - processPackages [rnsh]: executing diffoscope
+[2023-05-06 04:23:06] INFO root fetch - processPackages [rnsh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnsh-0.0.8.tar.gz tmp/rnsh-0.0.9.tar.gz --markdown 20230506/r/rnsh/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 04:23:06] INFO root fetch - processPackages [axion]: executing diffoscope
+[2023-05-06 04:23:06] INFO root fetch - processPackages [axion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/axion-3.2.28-cp311-cp311-win_amd64.whl.zip tmp/axion-3.2.29-cp311-cp311-macosx_10_9_universal2.whl.zip --markdown 20230506/a/axion/3.2.28-3.2.29/diff.md --exclude *.pyd
+[2023-05-06 04:23:06] INFO root fetch - processPackages [stimcirq]: executing diffoscope
+[2023-05-06 04:23:06] INFO root fetch - processPackages [stimcirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stimcirq-1.9.dev1656756326.tar.gz tmp/stimcirq-1.9.dev1657429876.tar.gz --markdown 20230506/s/stimcirq/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-05-06 04:23:06] INFO root fetch - processPackages [stim]: executing diffoscope
+[2023-05-06 04:23:06] INFO root fetch - processPackages [stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stim-1.9.dev1656756326.tar.gz tmp/stim-1.9.dev1657429876.tar.gz --markdown 20230506/s/stim/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-05-06 04:23:07] INFO root fetch - main [MainThread]: End processing [excelcolumnizer]: success
+[2023-05-06 04:23:07] INFO root fetch - main [MainThread]: End processing [pyproton]: success
+[2023-05-06 04:23:07] INFO root fetch - main [MainThread]: End processing [django-admin-anchors]: success
+[2023-05-06 04:23:07] INFO root fetch - main [MainThread]: End processing [starsaiot-monit]: success
+[2023-05-06 04:23:08] INFO root fetch - main [MainThread]: End processing [mlgenotype]: success
+[2023-05-06 04:23:08] INFO root fetch - main [MainThread]: End processing [stimcirq]: success
+[2023-05-06 04:23:08] INFO root fetch - main [MainThread]: End processing [axion]: success
+[2023-05-06 04:23:08] INFO root fetch - main [MainThread]: End processing [rnsh]: success
+[2023-05-06 04:23:10] INFO root fetch - main [MainThread]: End processing [sinter]: success
+[2023-05-06 04:23:10] INFO root fetch - main [MainThread]: End processing [stim]: success
+[2023-05-06 04:23:10] INFO root fetch - main [MainThread]: Store serial: [17996141]
