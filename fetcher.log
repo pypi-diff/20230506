@@ -11556,3 +11556,43 @@ EOFError: EOF read where object expected
 [2023-05-06 16:54:43] INFO root fetch - main [MainThread]: End processing [operbot]: success
 [2023-05-06 16:54:43] INFO root fetch - main [MainThread]: End processing [irails]: success
 [2023-05-06 16:54:43] INFO root fetch - main [MainThread]: Store serial: [18000372]
+[2023-05-06 16:59:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000372]
+[2023-05-06 16:59:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 16:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hamqtt-fs-publisher
+[2023-05-06 16:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfontingpkgV1
+[2023-05-06 16:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: JsToPy
+[2023-05-06 16:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alacorder
+[2023-05-06 16:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zhmcclient
+[2023-05-06 16:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: musicpy
+[2023-05-06 16:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bumbo-shogo
+[2023-05-06 16:59:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jsonrpc-py
+[2023-05-06 16:59:52] INFO root fetch - processPackages [hamqtt-fs-publisher]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 16:59:52] WARNING root fetch - processPackages [musicpy]: Skipping, unable to determine old version
+[2023-05-06 16:59:52] WARNING root fetch - processPackages [JsToPy]: Skipping, unable to determine old version
+[2023-05-06 16:59:52] INFO root fetch - main [MainThread]: End processing [musicpy] error
+[2023-05-06 16:59:52] INFO root fetch - main [MainThread]: End processing [JsToPy] error
+[2023-05-06 16:59:52] WARNING root fetch - processPackages [bumbo-shogo]: Skipping, unable to determine old version
+[2023-05-06 16:59:52] INFO root fetch - main [MainThread]: End processing [bumbo-shogo] error
+[2023-05-06 16:59:52] INFO root fetch - processPackages [zhmcclient]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-05-06 16:59:52] WARNING root fetch - processPackages [pyfontingpkgV1]: Skipping, unable to determine old version
+[2023-05-06 16:59:52] INFO root fetch - processPackages [jsonrpc-py]: New version: [3.0.8] Old Version: [3.0.7]
+[2023-05-06 16:59:52] INFO root fetch - main [MainThread]: End processing [pyfontingpkgV1] error
+[2023-05-06 16:59:52] INFO root fetch - processPackages [alacorder]: New version: [80.3.0] Old Version: [80.2.9]
+[2023-05-06 16:59:52] INFO root fetch - processPackages [zhmcclient]: Downloading https://files.pythonhosted.org/packages/10/95/194dc079e6829ffbb06841ccec0f23175462fc5009555c2b407b543ada2b/zhmcclient-1.7.0.tar.gz
+[2023-05-06 16:59:52] INFO root fetch - processPackages [hamqtt-fs-publisher]: Downloading https://files.pythonhosted.org/packages/36/a0/00346909a6abbf9949b1984c7109248db3a306d1b51f3d87b8ee4a408f97/hamqtt_fs_publisher-0.1.2.tar.gz
+[2023-05-06 16:59:52] INFO root fetch - processPackages [jsonrpc-py]: Downloading https://files.pythonhosted.org/packages/42/13/76754b48a05e70abc3dab4adeb6a88f36c60f5cb6ef0ebe35cce9bb489b3/jsonrpc-py-3.0.8.tar.gz
+[2023-05-06 16:59:52] INFO root fetch - processPackages [hamqtt-fs-publisher]: executing diffoscope
+[2023-05-06 16:59:52] INFO root fetch - processPackages [hamqtt-fs-publisher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hamqtt_fs_publisher-0.1.1.tar.gz tmp/hamqtt_fs_publisher-0.1.2.tar.gz --markdown 20230506/h/hamqtt-fs-publisher/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 16:59:52] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/35/cc/bce809d674cef1aeeec9124fbaab0552895568a6229fad5ed1e02cb07021/alacorder-80.3.0.tar.gz
+[2023-05-06 16:59:52] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-06 16:59:52] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.2.9.tar.gz tmp/alacorder-80.3.0.tar.gz --markdown 20230506/a/alacorder/80.2.9-80.3.0/diff.md --exclude *.pyd
+[2023-05-06 16:59:52] INFO root fetch - processPackages [jsonrpc-py]: executing diffoscope
+[2023-05-06 16:59:52] INFO root fetch - processPackages [jsonrpc-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonrpc-py-3.0.7.tar.gz tmp/jsonrpc-py-3.0.8.tar.gz --markdown 20230506/j/jsonrpc-py/3.0.7-3.0.8/diff.md --exclude *.pyd
+[2023-05-06 16:59:52] INFO root fetch - processPackages [zhmcclient]: Downloading https://files.pythonhosted.org/packages/ae/71/d6afcc290bfe9a4dea33b25438a62792316372b93e5979b7314caee853fa/zhmcclient-1.7.1.tar.gz
+[2023-05-06 16:59:52] INFO root fetch - processPackages [zhmcclient]: executing diffoscope
+[2023-05-06 16:59:52] INFO root fetch - processPackages [zhmcclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhmcclient-1.7.0.tar.gz tmp/zhmcclient-1.7.1.tar.gz --markdown 20230506/z/zhmcclient/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-05-06 16:59:53] INFO root fetch - main [MainThread]: End processing [hamqtt-fs-publisher]: success
+[2023-05-06 16:59:53] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-06 16:59:53] INFO root fetch - main [MainThread]: End processing [jsonrpc-py]: success
+[2023-05-06 16:59:54] INFO root fetch - main [MainThread]: End processing [zhmcclient]: success
+[2023-05-06 16:59:54] INFO root fetch - main [MainThread]: Store serial: [18000400]
