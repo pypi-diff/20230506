@@ -4192,3 +4192,47 @@
 [2023-05-06 03:45:19] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
 [2023-05-06 03:45:59] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2023-05-06 03:45:59] INFO root fetch - main [MainThread]: Store serial: [17995898]
+[2023-05-06 03:51:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17995898]
+[2023-05-06 03:51:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 03:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proactive-jupyter-kernel
+[2023-05-06 03:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AutoFun
+[2023-05-06 03:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Lektor
+[2023-05-06 03:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: minitrade
+[2023-05-06 03:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openlayer
+[2023-05-06 03:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapidocr-openvinogpu
+[2023-05-06 03:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pex
+[2023-05-06 03:51:07] INFO root fetch - processPackages [openlayer]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-05-06 03:51:07] INFO root fetch - processPackages [AutoFun]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-06 03:51:07] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-05-06 03:51:07] INFO root fetch - processPackages [minitrade]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 03:51:07] INFO root fetch - processPackages [Lektor]: New version: [3.4.0b6] Old Version: [3.4.0b5]
+[2023-05-06 03:51:07] INFO root fetch - processPackages [rapidocr-openvinogpu]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 03:51:07] INFO root fetch - processPackages [pex]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-06 03:51:07] INFO root fetch - processPackages [minitrade]: executing diffoscope
+[2023-05-06 03:51:07] INFO root fetch - processPackages [minitrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minitrade-0.1.8.tar.gz tmp/minitrade-0.1.9.tar.gz --markdown 20230506/m/minitrade/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 03:51:07] INFO root fetch - processPackages [rapidocr-openvinogpu]: Downloading https://files.pythonhosted.org/packages/fc/d0/aae489b8148acf9d60834b115a965c542a4684587be9a28e156ca1f5a207/rapidocr-openvinogpu-0.0.1.tar.gz
+[2023-05-06 03:51:07] INFO root fetch - processPackages [openlayer]: Downloading https://files.pythonhosted.org/packages/74/6a/5476c27da81f9111cf2b780b1138b7a9b3ebcaef00afd719225f140e7f7d/openlayer-0.0.0a8.tar.gz
+[2023-05-06 03:51:07] INFO root fetch - processPackages [pex]: Downloading https://files.pythonhosted.org/packages/bc/74/287adfa37d7be93d3183305f3f1e9685ecf1f6dae715b25bef0d69553bfc/pex-2.1.98.tar.gz
+[2023-05-06 03:51:07] WARNING root fetch - processPackages [rapidocr-openvinogpu]: Skipping package: exceeds size limit 50037519>=10485760
+[2023-05-06 03:51:07] INFO root fetch - main [MainThread]: End processing [rapidocr-openvinogpu] error
+[2023-05-06 03:51:07] INFO root fetch - processPackages [Lektor]: Downloading https://files.pythonhosted.org/packages/f3/6a/0eb3a226a1b7e5450d30b3e6dc79cf1694543ca147010774d119392ade08/lektor-3.4.0b6.tar.gz
+[2023-05-06 03:51:08] INFO root fetch - processPackages [AutoFun]: Downloading https://files.pythonhosted.org/packages/b7/f2/9fba1c0e6066b6b18a5d0ff793dd4fbb12ce819f0b90ab69d0de77b711f0/AutoFun-0.3.1.tar.gz
+[2023-05-06 03:51:08] INFO root fetch - processPackages [AutoFun]: executing diffoscope
+[2023-05-06 03:51:08] INFO root fetch - processPackages [AutoFun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AutoFun-0.3.0.tar.gz tmp/AutoFun-0.3.1.tar.gz --markdown 20230506/A/AutoFun/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-06 03:51:08] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-05-06 03:51:08] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230506/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-05-06 03:51:08] INFO root fetch - processPackages [openlayer]: Downloading https://files.pythonhosted.org/packages/ea/86/9b88f65bc8be22da9823d7e58ef9bde0acf5d9d133461f1c34a9e3119213/openlayer-0.0.0a9.tar.gz
+[2023-05-06 03:51:08] INFO root fetch - processPackages [Lektor]: executing diffoscope
+[2023-05-06 03:51:08] INFO root fetch - processPackages [Lektor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lektor-3.4.0b5.tar.gz tmp/lektor-3.4.0b6.tar.gz --markdown 20230506/L/Lektor/3.4.0b5-3.4.0b6/diff.md --exclude *.pyd
+[2023-05-06 03:51:08] INFO root fetch - processPackages [openlayer]: executing diffoscope
+[2023-05-06 03:51:08] INFO root fetch - processPackages [openlayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlayer-0.0.0a8.tar.gz tmp/openlayer-0.0.0a9.tar.gz --markdown 20230506/o/openlayer/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-05-06 03:51:09] INFO root fetch - main [MainThread]: End processing [AutoFun]: success
+[2023-05-06 03:51:09] INFO root fetch - main [MainThread]: End processing [minitrade]: success
+[2023-05-06 03:51:09] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-05-06 03:51:09] INFO root fetch - processPackages [pex]: Downloading https://files.pythonhosted.org/packages/f8/76/7e17f82344dd14a5a9cf76391cdf6edeede0e409432a319db98512d11375/pex-2.1.99.tar.gz
+[2023-05-06 03:51:10] INFO root fetch - main [MainThread]: End processing [openlayer]: success
+[2023-05-06 03:51:10] INFO root fetch - processPackages [pex]: executing diffoscope
+[2023-05-06 03:51:10] INFO root fetch - processPackages [pex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pex-2.1.98.tar.gz tmp/pex-2.1.99.tar.gz --markdown 20230506/p/pex/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-06 03:51:14] INFO root fetch - main [MainThread]: End processing [Lektor]: success
+[2023-05-06 03:51:21] INFO root fetch - main [MainThread]: End processing [pex]: success
+[2023-05-06 03:51:21] INFO root fetch - main [MainThread]: Store serial: [17995918]
