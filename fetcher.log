@@ -11946,3 +11946,17 @@ EOFError: EOF read where object expected
 [2023-05-06 17:41:30] INFO root fetch - main [MainThread]: End processing [polyfactory]: success
 [2023-05-06 17:41:59] INFO root fetch - main [MainThread]: End processing [nomenklatura]: success
 [2023-05-06 17:41:59] INFO root fetch - main [MainThread]: Store serial: [18000600]
+[2023-05-06 17:47:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000600]
+[2023-05-06 17:47:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-06 17:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spacy-to-hf
+[2023-05-06 17:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ferveo
+[2023-05-06 17:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spacy-to-hf
+[2023-05-06 17:47:08] INFO root fetch - processPackages [ferveo]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 17:47:08] WARNING root fetch - processPackages [spacy-to-hf]: Skipping, unable to determine old version
+[2023-05-06 17:47:08] INFO root fetch - main [MainThread]: End processing [spacy-to-hf] error
+[2023-05-06 17:47:08] WARNING root fetch - processPackages [spacy-to-hf]: Skipping, unable to determine old version
+[2023-05-06 17:47:08] INFO root fetch - main [MainThread]: End processing [spacy-to-hf] error
+[2023-05-06 17:47:08] INFO root fetch - processPackages [ferveo]: executing diffoscope
+[2023-05-06 17:47:08] INFO root fetch - processPackages [ferveo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ferveo-0.1.8.tar.gz tmp/ferveo-0.1.9.tar.gz --markdown 20230506/f/ferveo/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 17:47:10] INFO root fetch - main [MainThread]: End processing [ferveo]: success
+[2023-05-06 17:47:10] INFO root fetch - main [MainThread]: Store serial: [18000612]
