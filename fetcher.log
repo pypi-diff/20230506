@@ -5698,3 +5698,26 @@
 [2023-05-06 06:37:48] INFO root fetch - main [MainThread]: End processing [IMDbTraktSyncer]: success
 [2023-05-06 06:37:48] INFO root fetch - main [MainThread]: End processing [dxsp]: success
 [2023-05-06 06:37:48] INFO root fetch - main [MainThread]: Store serial: [17996915]
+[2023-05-06 06:42:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996915]
+[2023-05-06 06:42:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 06:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: serial-packets
+[2023-05-06 06:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: samna
+[2023-05-06 06:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: package-format-tools
+[2023-05-06 06:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cnki-html2json
+[2023-05-06 06:42:57] WARNING root fetch - processPackages [package-format-tools]: Skipping, unable to determine old version
+[2023-05-06 06:42:57] INFO root fetch - main [MainThread]: End processing [package-format-tools] error
+[2023-05-06 06:42:57] INFO root fetch - processPackages [serial-packets]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 06:42:57] INFO root fetch - processPackages [cnki-html2json]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-06 06:42:57] INFO root fetch - processPackages [samna]: New version: [0.9.39.0] Old Version: [0.9.38.0]
+[2023-05-06 06:42:57] INFO root fetch - processPackages [samna]: executing diffoscope
+[2023-05-06 06:42:57] INFO root fetch - processPackages [samna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/samna-0.9.38.0-py3-none-any.whl.zip tmp/samna-0.9.39.0-py3-none-any.whl.zip --markdown 20230506/s/samna/0.9.38.0-0.9.39.0/diff.md --exclude *.pyd
+[2023-05-06 06:42:57] INFO root fetch - processPackages [cnki-html2json]: Downloading https://files.pythonhosted.org/packages/5a/ff/436d338789accd50077b375c1f81422c0abbc9bae986996594370dc1d94c/cnki_html2json-0.1.6.tar.gz
+[2023-05-06 06:42:57] INFO root fetch - processPackages [cnki-html2json]: executing diffoscope
+[2023-05-06 06:42:57] INFO root fetch - processPackages [cnki-html2json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnki_html2json-0.1.5.tar.gz tmp/cnki_html2json-0.1.6.tar.gz --markdown 20230506/c/cnki-html2json/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-06 06:42:58] INFO root fetch - processPackages [serial-packets]: Downloading https://files.pythonhosted.org/packages/2d/07/88b7ae1224b9fe26c3434b8356e62ed2a891bede2e25d767376b604c24be/serial_packets-0.0.4.tar.gz
+[2023-05-06 06:42:58] INFO root fetch - processPackages [serial-packets]: executing diffoscope
+[2023-05-06 06:42:58] INFO root fetch - processPackages [serial-packets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serial_packets-0.0.3.tar.gz tmp/serial_packets-0.0.4.tar.gz --markdown 20230506/s/serial-packets/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 06:42:58] INFO root fetch - main [MainThread]: End processing [samna]: success
+[2023-05-06 06:42:58] INFO root fetch - main [MainThread]: End processing [cnki-html2json]: success
+[2023-05-06 06:42:59] INFO root fetch - main [MainThread]: End processing [serial-packets]: success
+[2023-05-06 06:42:59] INFO root fetch - main [MainThread]: Store serial: [17996946]
