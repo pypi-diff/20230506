@@ -6208,3 +6208,79 @@
 [2023-05-06 08:00:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
 [2023-05-06 08:00:45] INFO root fetch - main [MainThread]: End processing [mattermost-api-reference-client]: success
 [2023-05-06 08:00:45] INFO root fetch - main [MainThread]: Store serial: [17997227]
+[2023-05-06 08:05:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997227]
+[2023-05-06 08:05:54] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-06 08:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-equinix-metal
+[2023-05-06 08:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jarvis-ui
+[2023-05-06 08:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Slpapy
+[2023-05-06 08:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-mailgun
+[2023-05-06 08:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-gitlab
+[2023-05-06 08:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-datadog
+[2023-05-06 08:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: np-queuey
+[2023-05-06 08:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sviewgui
+[2023-05-06 08:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lit
+[2023-05-06 08:05:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-fastly
+[2023-05-06 08:05:54] INFO root fetch - processPackages [jarvis-ui]: New version: [1.0] Old Version: [0.8]
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-datadog]: New version: [4.9.0a1653604828] Old Version: [4.9.0a1650908051]
+[2023-05-06 08:05:54] INFO root fetch - processPackages [Slpapy]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-equinix-metal]: New version: [3.3.0a1683351035] Old Version: [3.3.0a1683265012]
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-mailgun]: New version: [3.5.0a1683351475] Old Version: [3.5.0a1683265701]
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-gitlab]: New version: [4.9.0a1666628674] Old Version: [4.9.0]
+[2023-05-06 08:05:54] INFO root fetch - processPackages [sviewgui]: New version: [1.1.2] Old Version: [1.0.1]
+[2023-05-06 08:05:54] INFO root fetch - processPackages [np-queuey]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-fastly]: New version: [7.4.0a1683351244] Old Version: [7.4.0a1683265072]
+[2023-05-06 08:05:54] INFO root fetch - processPackages [lit]: New version: [16.0.3] Old Version: [16.0.2]
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-datadog]: executing diffoscope
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-datadog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_datadog-4.9.0a1650908051.tar.gz tmp/pulumi_datadog-4.9.0a1653604828.tar.gz --markdown 20230506/p/pulumi-datadog/4.9.0a1650908051-4.9.0a1653604828/diff.md --exclude *.pyd
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-gitlab]: executing diffoscope
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-gitlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_gitlab-4.9.0.tar.gz tmp/pulumi_gitlab-4.9.0a1666628674.tar.gz --markdown 20230506/p/pulumi-gitlab/4.9.0-4.9.0a1666628674/diff.md --exclude *.pyd
+[2023-05-06 08:05:54] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-05-06 08:05:54] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.2.8.tar.gz tmp/Slpapy-0.2.9.tar.gz --markdown 20230506/S/Slpapy/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 08:05:54] INFO root fetch - processPackages [lit]: Downloading https://files.pythonhosted.org/packages/16/a0/ce5f90c0d931131400862df9d7ee52caf951737d253774c4764708221402/lit-16.0.2.tar.gz
+[2023-05-06 08:05:54] INFO root fetch - processPackages [jarvis-ui]: Downloading https://files.pythonhosted.org/packages/52/7a/6e347cf4a4512dc5c9f720ae5979b47f3d484e1fcf9359c54ea0930fbd1b/jarvis_ui-0.8-py3-none-any.whl
+[2023-05-06 08:05:54] INFO root fetch - processPackages [sviewgui]: Downloading https://files.pythonhosted.org/packages/c9/9d/83a01972e5c659044b9a1a73284ce1af33f34049df532893887d4c97c12a/sviewgui-1.0.1.tar.gz
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/e8/0f/e5764d6dcf83f8829e643ca44cc798b02c5c2f1640c4009ab278949dc84b/pulumi_fastly-7.4.0a1683351244.tar.gz
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-mailgun]: Downloading https://files.pythonhosted.org/packages/85/af/d98c990927cc3cb5a53dab02e9a0c88a0dc136ca59f1b66f8f1a61a82f4c/pulumi_mailgun-3.5.0a1683351475.tar.gz
+[2023-05-06 08:05:54] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/4e/8a/27837aba39ee46c32da7fa034b579e506122db164bbfe709f94de6d24831/np_queuey-0.2.3.tar.gz
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-equinix-metal]: Downloading https://files.pythonhosted.org/packages/b9/4f/586398d7efbc155027b25dc6b018b7fdef38d0e77e56fec6b201e3072b25/pulumi_equinix_metal-3.3.0a1683351035.tar.gz
+[2023-05-06 08:05:54] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-05-06 08:05:54] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.2.2.tar.gz tmp/np_queuey-0.2.3.tar.gz --markdown 20230506/n/np-queuey/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-mailgun]: executing diffoscope
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-mailgun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mailgun-3.5.0a1683265701.tar.gz tmp/pulumi_mailgun-3.5.0a1683351475.tar.gz --markdown 20230506/p/pulumi-mailgun/3.5.0a1683265701-3.5.0a1683351475/diff.md --exclude *.pyd
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-equinix-metal]: executing diffoscope
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-equinix-metal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_equinix_metal-3.3.0a1683265012.tar.gz tmp/pulumi_equinix_metal-3.3.0a1683351035.tar.gz --markdown 20230506/p/pulumi-equinix-metal/3.3.0a1683265012-3.3.0a1683351035/diff.md --exclude *.pyd
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-fastly]: executing diffoscope
+[2023-05-06 08:05:54] INFO root fetch - processPackages [pulumi-fastly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_fastly-7.4.0a1683265072.tar.gz tmp/pulumi_fastly-7.4.0a1683351244.tar.gz --markdown 20230506/p/pulumi-fastly/7.4.0a1683265072-7.4.0a1683351244/diff.md --exclude *.pyd
+[2023-05-06 08:05:54] INFO root fetch - processPackages [lit]: Downloading https://files.pythonhosted.org/packages/75/e8/6deb4cc017266af4b8c5d370de340d917b0bbcbce3cbaf4ec1cfba7b0ca7/lit-16.0.3.tar.gz
+[2023-05-06 08:05:54] INFO root fetch - processPackages [sviewgui]: Downloading https://files.pythonhosted.org/packages/65/14/e39300af4f24c44d603ddfc0259f43e7604dad54f0000b33386214d4f886/sviewgui-1.1.2.tar.gz
+[2023-05-06 08:05:54] INFO root fetch - processPackages [jarvis-ui]: Downloading https://files.pythonhosted.org/packages/57/b5/75937b8b1fb61189818096e328e671684f8adfa8810d56a471b624ea0507/jarvis_ui-1.0-py3-none-any.whl
+[2023-05-06 08:05:54] INFO root fetch - processPackages [sviewgui]: executing diffoscope
+[2023-05-06 08:05:54] INFO root fetch - processPackages [sviewgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sviewgui-1.0.1.tar.gz tmp/sviewgui-1.1.2.tar.gz --markdown 20230506/s/sviewgui/1.0.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-06 08:05:54] INFO root fetch - processPackages [lit]: executing diffoscope
+[2023-05-06 08:05:54] INFO root fetch - processPackages [lit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lit-16.0.2.tar.gz tmp/lit-16.0.3.tar.gz --markdown 20230506/l/lit/16.0.2-16.0.3/diff.md --exclude *.pyd
+[2023-05-06 08:05:54] INFO root fetch - processPackages [jarvis-ui]: executing diffoscope
+[2023-05-06 08:05:54] INFO root fetch - processPackages [jarvis-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis_ui-0.8-py3-none-any.whl.zip tmp/jarvis_ui-1.0-py3-none-any.whl.zip --markdown 20230506/j/jarvis-ui/0.8-1.0/diff.md --exclude *.pyd
+[2023-05-06 08:05:56] INFO root fetch - processPackages [np-queuey]: Start processing: pyg-nightly
+[2023-05-06 08:05:56] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-05-06 08:05:56] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230505] Old Version: [2.4.0.dev20230504]
+[2023-05-06 08:05:56] INFO root fetch - processPackages [pulumi-mailgun]: Start processing: libvsbsdl-python
+[2023-05-06 08:05:56] INFO root fetch - main [MainThread]: End processing [pulumi-mailgun]: success
+[2023-05-06 08:05:56] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
+[2023-05-06 08:05:56] INFO root fetch - processPackages [libvsbsdl-python]: New version: [20230506] Old Version: [20230502]
+[2023-05-06 08:05:56] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/38/e3/13354f9dffaf319623d12b6bdd89c245dda26f821e2dd976e9285925461e/pyg-nightly-2.4.0.dev20230505.tar.gz
+[2023-05-06 08:05:56] INFO root fetch - processPackages [libvsbsdl-python]: Downloading https://files.pythonhosted.org/packages/e6/0b/5cd69abe3414ebb96134d40451b3981b41e6a8959f835df07e08090f000b/libvsbsdl-python-20230502.tar.gz
+[2023-05-06 08:05:56] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-05-06 08:05:56] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230504.tar.gz tmp/pyg-nightly-2.4.0.dev20230505.tar.gz --markdown 20230506/p/pyg-nightly/2.4.0.dev20230504-2.4.0.dev20230505/diff.md --exclude *.pyd
+[2023-05-06 08:05:56] INFO root fetch - main [MainThread]: End processing [pulumi-fastly]: success
+[2023-05-06 08:05:56] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
+[2023-05-06 08:05:56] INFO root fetch - processPackages [libvsbsdl-python]: Downloading https://files.pythonhosted.org/packages/26/2d/8c2e6b93ba8d978a4e2392ef949247bc778aef9371cd80ad4e4e72cd7fd8/libvsbsdl-python-20230506.tar.gz
+[2023-05-06 08:05:56] INFO root fetch - main [MainThread]: End processing [sviewgui]: success
+[2023-05-06 08:05:57] INFO root fetch - processPackages [libvsbsdl-python]: executing diffoscope
+[2023-05-06 08:05:57] INFO root fetch - processPackages [libvsbsdl-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libvsbsdl-python-20230502.tar.gz tmp/libvsbsdl-python-20230506.tar.gz --markdown 20230506/l/libvsbsdl-python/20230502-20230506/diff.md --exclude *.pyd
+[2023-05-06 08:05:58] INFO root fetch - main [MainThread]: End processing [jarvis-ui]: success
+[2023-05-06 08:05:58] INFO root fetch - main [MainThread]: End processing [pulumi-equinix-metal]: success
+[2023-05-06 08:05:58] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
+[2023-05-06 08:05:58] INFO root fetch - main [MainThread]: End processing [lit]: success
+[2023-05-06 08:06:01] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-05-06 08:06:04] INFO root fetch - main [MainThread]: End processing [libvsbsdl-python]: success
+[2023-05-06 08:06:04] INFO root fetch - main [MainThread]: Store serial: [17997255]
