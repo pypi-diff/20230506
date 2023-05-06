@@ -5082,3 +5082,60 @@
 [2023-05-06 05:18:46] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-vsphere]: success
 [2023-05-06 05:18:48] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-github]: success
 [2023-05-06 05:18:48] INFO root fetch - main [MainThread]: Store serial: [17996455]
+[2023-05-06 05:23:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996455]
+[2023-05-06 05:23:57] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 05:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edge-distance-aabb
+[2023-05-06 05:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyt-gpt
+[2023-05-06 05:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: publicsuffixlist
+[2023-05-06 05:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: superlive-sdk
+[2023-05-06 05:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: generate-readme
+[2023-05-06 05:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdktf-cdktf-provider-datadog
+[2023-05-06 05:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: my-labextension-demo
+[2023-05-06 05:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdktf-cdktf-provider-databricks
+[2023-05-06 05:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: spacetool
+[2023-05-06 05:23:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dspawpy
+[2023-05-06 05:23:57] INFO root fetch - processPackages [edge-distance-aabb]: New version: [1.0.1] Old Version: [1.0]
+[2023-05-06 05:23:57] WARNING root fetch - processPackages [generate-readme]: Skipping, unable to determine old version
+[2023-05-06 05:23:57] INFO root fetch - main [MainThread]: End processing [generate-readme] error
+[2023-05-06 05:23:57] INFO root fetch - processPackages [publicsuffixlist]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-06 05:23:57] INFO root fetch - processPackages [hyt-gpt]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-06 05:23:57] WARNING root fetch - processPackages [superlive-sdk]: Skipping, unable to determine old version
+[2023-05-06 05:23:57] INFO root fetch - main [MainThread]: End processing [superlive-sdk] error
+[2023-05-06 05:23:57] INFO root fetch - processPackages [spacetool]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-06 05:23:57] WARNING root fetch - processPackages [my-labextension-demo]: Skipping, unable to determine old version
+[2023-05-06 05:23:57] INFO root fetch - main [MainThread]: End processing [my-labextension-demo] error
+[2023-05-06 05:23:57] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: New version: [7.0.1] Old Version: [6.0.0]
+[2023-05-06 05:23:57] INFO root fetch - processPackages [cdktf-cdktf-provider-datadog]: New version: [6.0.3] Old Version: [6.0.2]
+[2023-05-06 05:23:57] INFO root fetch - processPackages [dspawpy]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-06 05:23:57] INFO root fetch - processPackages [spacetool]: executing diffoscope
+[2023-05-06 05:23:57] INFO root fetch - processPackages [spacetool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacetool-1.0.2.tar.gz tmp/spacetool-1.0.3.tar.gz --markdown 20230506/s/spacetool/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-06 05:23:57] INFO root fetch - processPackages [edge-distance-aabb]: Downloading https://files.pythonhosted.org/packages/07/27/75273aa15bb8e1275ecf894eaf01a6b8de08c70378eff44a12139547e149/edge_distance_aabb-1.0.tar.gz
+[2023-05-06 05:23:57] INFO root fetch - processPackages [publicsuffixlist]: Downloading https://files.pythonhosted.org/packages/e9/d3/789ccc7b502183c3ca52f463a65a341194fd8caf884d33f4eedf4ae8f390/publicsuffixlist-0.9.3.tar.gz
+[2023-05-06 05:23:57] INFO root fetch - processPackages [hyt-gpt]: Downloading https://files.pythonhosted.org/packages/70/2b/33718faca0bd42d6bb5411421dd2ef2bc96f537fceb9d8b45af1125c1642/hyt-gpt-0.3.2.tar.gz
+[2023-05-06 05:23:57] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: Downloading https://files.pythonhosted.org/packages/06/e7/02471d1587d1328759ab584c1fb7f22c5d69c4410b214b588db983d9b0f7/cdktf-cdktf-provider-databricks-6.0.0.tar.gz
+[2023-05-06 05:23:57] INFO root fetch - processPackages [hyt-gpt]: executing diffoscope
+[2023-05-06 05:23:57] INFO root fetch - processPackages [hyt-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyt-gpt-0.3.1.tar.gz tmp/hyt-gpt-0.3.2.tar.gz --markdown 20230506/h/hyt-gpt/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-06 05:23:57] INFO root fetch - processPackages [dspawpy]: Downloading https://files.pythonhosted.org/packages/d5/8b/3f441f7782718d3196de005ea3554676ee96ea1f188f226bf057d4f90936/dspawpy-0.9.1-py3-none-any.whl
+[2023-05-06 05:23:57] INFO root fetch - processPackages [cdktf-cdktf-provider-datadog]: Downloading https://files.pythonhosted.org/packages/75/f3/924c2cc80afaaed32adcefb1d1eb071e97f11929d6074553d7d8317d1664/cdktf-cdktf-provider-datadog-6.0.3.tar.gz
+[2023-05-06 05:23:58] INFO root fetch - processPackages [edge-distance-aabb]: Downloading https://files.pythonhosted.org/packages/f7/98/142dc81feb4717df328d24b3532b7a609342b417071ab52c6eac81d9e0fc/edge_distance_aabb-1.0.1.tar.gz
+[2023-05-06 05:23:58] INFO root fetch - processPackages [cdktf-cdktf-provider-datadog]: executing diffoscope
+[2023-05-06 05:23:58] INFO root fetch - processPackages [cdktf-cdktf-provider-datadog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-datadog-6.0.2.tar.gz tmp/cdktf-cdktf-provider-datadog-6.0.3.tar.gz --markdown 20230506/c/cdktf-cdktf-provider-datadog/6.0.2-6.0.3/diff.md --exclude *.pyd
+[2023-05-06 05:23:58] INFO root fetch - processPackages [publicsuffixlist]: Downloading https://files.pythonhosted.org/packages/3c/09/9dc48e18dc8c917eb66fe2caef48273e4f55dea0f8d56f9f6a427373c08b/publicsuffixlist-0.9.4.tar.gz
+[2023-05-06 05:23:58] INFO root fetch - processPackages [edge-distance-aabb]: executing diffoscope
+[2023-05-06 05:23:58] INFO root fetch - processPackages [edge-distance-aabb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edge_distance_aabb-1.0.tar.gz tmp/edge_distance_aabb-1.0.1.tar.gz --markdown 20230506/e/edge-distance-aabb/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 05:23:58] INFO root fetch - processPackages [publicsuffixlist]: executing diffoscope
+[2023-05-06 05:23:58] INFO root fetch - processPackages [publicsuffixlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/publicsuffixlist-0.9.3.tar.gz tmp/publicsuffixlist-0.9.4.tar.gz --markdown 20230506/p/publicsuffixlist/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-06 05:23:58] INFO root fetch - processPackages [dspawpy]: Downloading https://files.pythonhosted.org/packages/6b/b7/835b42d1cce6ee24ba5e0ef4a6cb0b5eb4c5b136683e60c7fcd45e49674d/dspawpy-0.9.2-py3-none-any.whl
+[2023-05-06 05:23:58] INFO root fetch - processPackages [dspawpy]: executing diffoscope
+[2023-05-06 05:23:58] INFO root fetch - processPackages [dspawpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dspawpy-0.9.1-py3-none-any.whl.zip tmp/dspawpy-0.9.2-py3-none-any.whl.zip --markdown 20230506/d/dspawpy/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-06 05:23:59] INFO root fetch - main [MainThread]: End processing [hyt-gpt]: success
+[2023-05-06 05:23:59] INFO root fetch - main [MainThread]: End processing [edge-distance-aabb]: success
+[2023-05-06 05:23:59] INFO root fetch - main [MainThread]: End processing [spacetool]: success
+[2023-05-06 05:23:59] INFO root fetch - main [MainThread]: End processing [publicsuffixlist]: success
+[2023-05-06 05:23:59] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: Downloading https://files.pythonhosted.org/packages/14/fa/c39a00a9dcc1557a763ccfcd5125cffcb77a72f498603494b9426bc12c9d/cdktf-cdktf-provider-databricks-7.0.1.tar.gz
+[2023-05-06 05:23:59] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: executing diffoscope
+[2023-05-06 05:23:59] INFO root fetch - processPackages [cdktf-cdktf-provider-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-databricks-6.0.0.tar.gz tmp/cdktf-cdktf-provider-databricks-7.0.1.tar.gz --markdown 20230506/c/cdktf-cdktf-provider-databricks/6.0.0-7.0.1/diff.md --exclude *.pyd
+[2023-05-06 05:24:05] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-databricks]: success
+[2023-05-06 05:24:10] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-datadog]: success
+[2023-05-06 05:24:25] INFO root fetch - main [MainThread]: End processing [dspawpy]: success
+[2023-05-06 05:24:25] INFO root fetch - main [MainThread]: Store serial: [17996487]
