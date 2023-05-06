@@ -10889,3 +10889,43 @@ EOFError: EOF read where object expected
 [2023-05-06 15:25:42] INFO root fetch - main [MainThread]: End processing [jsonschema-gentypes]: success
 [2023-05-06 15:25:49] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2023-05-06 15:25:49] INFO root fetch - main [MainThread]: Store serial: [17999913]
+[2023-05-06 15:30:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999913]
+[2023-05-06 15:30:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 15:30:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-lectio
+[2023-05-06 15:30:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hamqtt-fs-publisher
+[2023-05-06 15:30:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: evalAIRR
+[2023-05-06 15:30:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: betanegbinfit
+[2023-05-06 15:30:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lpython-emulation
+[2023-05-06 15:30:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyPhasesRecordloaderSHHS
+[2023-05-06 15:30:58] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 15:30:58] INFO root fetch - processPackages [betanegbinfit]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-06 15:30:58] INFO root fetch - processPackages [hamqtt-fs-publisher]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 15:30:58] INFO root fetch - processPackages [lpython-emulation]: New version: [0.0.1.6] Old Version: [0.0.1.5]
+[2023-05-06 15:30:58] INFO root fetch - processPackages [pyPhasesRecordloaderSHHS]: New version: [0.3.0] Old Version: [0.1.6]
+[2023-05-06 15:30:58] INFO root fetch - processPackages [python-lectio]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-06 15:30:58] INFO root fetch - processPackages [hamqtt-fs-publisher]: Downloading https://files.pythonhosted.org/packages/a9/6d/225d06887fe7f87f386d17a5c1353ff14c3d3a8db99ce24953bb4c287e52/hamqtt_fs_publisher-0.1.0.tar.gz
+[2023-05-06 15:30:58] INFO root fetch - processPackages [lpython-emulation]: Downloading https://files.pythonhosted.org/packages/0f/c4/bbe46df431b4d4e79e38c1bdb751a09a3531355fb88cd7d1f73491796343/lpython_emulation-0.0.1.5.tar.gz
+[2023-05-06 15:30:58] INFO root fetch - processPackages [pyPhasesRecordloaderSHHS]: Downloading https://files.pythonhosted.org/packages/32/a5/930b73f288a5c5469108e33cb0d2617a119438d22e68b82c722e2e296d9c/pyPhasesRecordloaderSHHS-0.1.6.tar.gz
+[2023-05-06 15:30:58] INFO root fetch - processPackages [betanegbinfit]: Downloading https://files.pythonhosted.org/packages/f9/71/48bccc7966ca7f6c1f006810268eb9313960e42bfa794b2ae170937a9fb3/betanegbinfit-1.9.1.tar.gz
+[2023-05-06 15:30:59] INFO root fetch - processPackages [betanegbinfit]: executing diffoscope
+[2023-05-06 15:30:59] INFO root fetch - processPackages [betanegbinfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betanegbinfit-1.9.0.tar.gz tmp/betanegbinfit-1.9.1.tar.gz --markdown 20230506/b/betanegbinfit/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-06 15:30:59] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-05-06 15:30:59] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230506/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 15:30:59] INFO root fetch - processPackages [python-lectio]: executing diffoscope
+[2023-05-06 15:30:59] INFO root fetch - processPackages [python-lectio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-lectio-1.9.0.tar.gz tmp/python-lectio-1.9.1.tar.gz --markdown 20230506/p/python-lectio/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-06 15:30:59] INFO root fetch - processPackages [lpython-emulation]: Downloading https://files.pythonhosted.org/packages/6a/7e/65cd06c15e345771c153326f869c3f12596d3f933538faec49c4ada9a2de/lpython_emulation-0.0.1.6.tar.gz
+[2023-05-06 15:30:59] INFO root fetch - processPackages [hamqtt-fs-publisher]: Downloading https://files.pythonhosted.org/packages/12/57/30c1dc9064eb62caf06826b82fa8731ac2a87a4643a26628aa2d6533650f/hamqtt_fs_publisher-0.1.1.tar.gz
+[2023-05-06 15:30:59] INFO root fetch - processPackages [pyPhasesRecordloaderSHHS]: Downloading https://files.pythonhosted.org/packages/83/5b/033b74c41262b282406c5c7f3e047b7f45e828165825b78602ba5f6b71c9/pyPhasesRecordloaderSHHS-0.3.0.tar.gz
+[2023-05-06 15:30:59] INFO root fetch - processPackages [lpython-emulation]: executing diffoscope
+[2023-05-06 15:30:59] INFO root fetch - processPackages [lpython-emulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpython_emulation-0.0.1.5.tar.gz tmp/lpython_emulation-0.0.1.6.tar.gz --markdown 20230506/l/lpython-emulation/0.0.1.5-0.0.1.6/diff.md --exclude *.pyd
+[2023-05-06 15:30:59] INFO root fetch - processPackages [hamqtt-fs-publisher]: executing diffoscope
+[2023-05-06 15:30:59] INFO root fetch - processPackages [hamqtt-fs-publisher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hamqtt_fs_publisher-0.1.0.tar.gz tmp/hamqtt_fs_publisher-0.1.1.tar.gz --markdown 20230506/h/hamqtt-fs-publisher/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 15:30:59] INFO root fetch - processPackages [pyPhasesRecordloaderSHHS]: executing diffoscope
+[2023-05-06 15:30:59] INFO root fetch - processPackages [pyPhasesRecordloaderSHHS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPhasesRecordloaderSHHS-0.1.6.tar.gz tmp/pyPhasesRecordloaderSHHS-0.3.0.tar.gz --markdown 20230506/p/pyPhasesRecordloaderSHHS/0.1.6-0.3.0/diff.md --exclude *.pyd
+[2023-05-06 15:31:00] INFO root fetch - main [MainThread]: End processing [python-lectio]: success
+[2023-05-06 15:31:00] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-05-06 15:31:00] INFO root fetch - main [MainThread]: End processing [hamqtt-fs-publisher]: success
+[2023-05-06 15:31:00] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
+[2023-05-06 15:31:00] INFO root fetch - main [MainThread]: End processing [lpython-emulation]: success
+[2023-05-06 15:31:00] INFO root fetch - main [MainThread]: End processing [pyPhasesRecordloaderSHHS]: success
+[2023-05-06 15:31:00] INFO root fetch - main [MainThread]: Store serial: [17999932]
