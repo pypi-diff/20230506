@@ -5916,3 +5916,20 @@
 [2023-05-06 07:17:55] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
 [2023-05-06 07:18:23] INFO root fetch - main [MainThread]: End processing [nriapp]: success
 [2023-05-06 07:18:23] INFO root fetch - main [MainThread]: Store serial: [17997098]
+[2023-05-06 07:23:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997098]
+[2023-05-06 07:23:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-06 07:23:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: VonPylib
+[2023-05-06 07:23:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pfelogic
+[2023-05-06 07:23:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dxsp
+[2023-05-06 07:23:32] WARNING root fetch - processPackages [pfelogic]: Skipping, unable to determine old version
+[2023-05-06 07:23:32] INFO root fetch - main [MainThread]: End processing [pfelogic] error
+[2023-05-06 07:23:32] INFO root fetch - processPackages [VonPylib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 07:23:32] INFO root fetch - processPackages [dxsp]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-05-06 07:23:32] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/23/73/0d97a93599c8fda1e78291bb5fb94f8018c82eba6c2600330c6c1bf1127f/dxsp-1.9.4.tar.gz
+[2023-05-06 07:23:32] INFO root fetch - processPackages [VonPylib]: executing diffoscope
+[2023-05-06 07:23:32] INFO root fetch - processPackages [VonPylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VonPylib-0.1.8.tar.gz tmp/VonPylib-0.1.9.tar.gz --markdown 20230506/V/VonPylib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 07:23:32] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-06 07:23:32] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.9.3.tar.gz tmp/dxsp-1.9.4.tar.gz --markdown 20230506/d/dxsp/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-05-06 07:23:33] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-06 07:23:33] INFO root fetch - main [MainThread]: End processing [VonPylib]: success
+[2023-05-06 07:23:33] INFO root fetch - main [MainThread]: Store serial: [17997109]
