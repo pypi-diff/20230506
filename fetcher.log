@@ -7626,3 +7626,71 @@
 [2023-05-06 10:09:05] INFO root fetch - main [MainThread]: End processing [edit-anything]: success
 [2023-05-06 10:09:06] INFO root fetch - main [MainThread]: End processing [xj-user]: success
 [2023-05-06 10:09:06] INFO root fetch - main [MainThread]: Store serial: [17998071]
+[2023-05-06 10:14:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998071]
+[2023-05-06 10:14:15] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oronium
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zoomaker
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: promptwatch
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PicsToPdfs
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-Ayra
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ezmote-cmdserver
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flux-python
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: config-yml
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flux-python
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: flux-python
+[2023-05-06 10:14:15] INFO root fetch - processPackages [zoomaker]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-06 10:14:15] INFO root fetch - processPackages [promptwatch]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-06 10:14:15] INFO root fetch - processPackages [PicsToPdfs]: New version: [0.3.5] Old Version: [0.3.3]
+[2023-05-06 10:14:15] INFO root fetch - processPackages [oronium]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 10:14:15] INFO root fetch - processPackages [py-Ayra]: New version: [8.7.3] Old Version: [8.7.2]
+[2023-05-06 10:14:15] INFO root fetch - processPackages [config-yml]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-06 10:14:15] INFO root fetch - processPackages [flux-python]: New version: [0.50.0rc0] Old Version: [0.50.0]
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ezmote-cmdserver]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-05-06 10:14:15] INFO root fetch - processPackages [flux-python]: New version: [0.50.0rc0] Old Version: [0.50.0]
+[2023-05-06 10:14:15] INFO root fetch - processPackages [flux-python]: New version: [0.50.0rc0] Old Version: [0.50.0]
+[2023-05-06 10:14:15] INFO root fetch - processPackages [flux-python]: executing diffoscope
+[2023-05-06 10:14:15] INFO root fetch - processPackages [flux-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flux-python-0.50.0.tar.gz tmp/flux-python-0.50.0rc0.tar.gz --markdown 20230506/f/flux-python/0.50.0-0.50.0rc0/diff.md --exclude *.pyd
+[2023-05-06 10:14:15] INFO root fetch - processPackages [flux-python]: executing diffoscope
+[2023-05-06 10:14:15] INFO root fetch - processPackages [flux-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flux-python-0.50.0.tar.gz tmp/flux-python-0.50.0rc0.tar.gz --markdown 20230506/f/flux-python/0.50.0-0.50.0rc0/diff.md --exclude *.pyd
+[2023-05-06 10:14:15] INFO root fetch - processPackages [flux-python]: executing diffoscope
+[2023-05-06 10:14:15] INFO root fetch - processPackages [flux-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flux-python-0.50.0.tar.gz tmp/flux-python-0.50.0rc0.tar.gz --markdown 20230506/f/flux-python/0.50.0-0.50.0rc0/diff.md --exclude *.pyd
+[2023-05-06 10:14:15] INFO root fetch - processPackages [zoomaker]: Downloading https://files.pythonhosted.org/packages/aa/7a/e68ea6678fcd0c3f4d36f6761fbcabb7ac5de4a6c10b8f4e0a40dd029b7a/zoomaker-0.3.1.tar.gz
+[2023-05-06 10:14:15] INFO root fetch - processPackages [PicsToPdfs]: Downloading https://files.pythonhosted.org/packages/a4/4e/5d0f75a5750dc47461bbcf1f1aabeb9dd51e83d4d12cb23878b6360eb053/PicsToPdfs-0.3.5.tar.gz
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ezmote-cmdserver]: Downloading https://files.pythonhosted.org/packages/61/22/0e17c3d3fa82addafb3bd74c0d4292aa0bc3f1d341a9eabb8149aec23a3c/ezmote-cmdserver-0.8.4.tar.gz
+[2023-05-06 10:14:15] INFO root fetch - processPackages [py-Ayra]: Downloading https://files.pythonhosted.org/packages/b1/c2/709a373d5edb108a011e75d2f90b4076f8055d0ec38675ca5635d636c8e8/py-Ayra-8.7.3.tar.gz
+[2023-05-06 10:14:15] INFO root fetch - processPackages [config-yml]: Downloading https://files.pythonhosted.org/packages/27/50/2d05ed548ac0f6da27d067fba759467e5ca6f0d71f9f4ea81b7125e106b9/config_yml-0.2.2.tar.gz
+[2023-05-06 10:14:15] INFO root fetch - processPackages [py-Ayra]: executing diffoscope
+[2023-05-06 10:14:15] INFO root fetch - processPackages [PicsToPdfs]: executing diffoscope
+[2023-05-06 10:14:15] INFO root fetch - processPackages [PicsToPdfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PicsToPdfs-0.3.3.tar.gz tmp/PicsToPdfs-0.3.5.tar.gz --markdown 20230506/P/PicsToPdfs/0.3.3-0.3.5/diff.md --exclude *.pyd
+[2023-05-06 10:14:15] INFO root fetch - processPackages [py-Ayra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayra-8.7.2.tar.gz tmp/py-Ayra-8.7.3.tar.gz --markdown 20230506/p/py-Ayra/8.7.2-8.7.3/diff.md --exclude *.pyd
+[2023-05-06 10:14:15] INFO root fetch - processPackages [promptwatch]: Downloading https://files.pythonhosted.org/packages/70/ee/250389a506ff991d4d7edd5214a0d0b941f08b53c8444c02fac51eab2a0e/promptwatch-0.0.5.tar.gz
+[2023-05-06 10:14:15] INFO root fetch - processPackages [promptwatch]: executing diffoscope
+[2023-05-06 10:14:15] INFO root fetch - processPackages [promptwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptwatch-0.0.4.tar.gz tmp/promptwatch-0.0.5.tar.gz --markdown 20230506/p/promptwatch/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ezmote-cmdserver]: executing diffoscope
+[2023-05-06 10:14:15] INFO root fetch - processPackages [ezmote-cmdserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezmote-cmdserver-0.8.3.tar.gz tmp/ezmote-cmdserver-0.8.4.tar.gz --markdown 20230506/e/ezmote-cmdserver/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-05-06 10:14:15] INFO root fetch - processPackages [zoomaker]: Downloading https://files.pythonhosted.org/packages/c8/b7/2f2c309758ca0cc70d9ec5bc53d3e591a15445037a4b340c2402b6a02f1b/zoomaker-0.4.0.tar.gz
+[2023-05-06 10:14:15] INFO root fetch - processPackages [oronium]: executing diffoscope
+[2023-05-06 10:14:15] INFO root fetch - processPackages [oronium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oronium-1.0.8.tar.gz tmp/oronium-1.0.9.tar.gz --markdown 20230506/o/oronium/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 10:14:15] INFO root fetch - processPackages [zoomaker]: executing diffoscope
+[2023-05-06 10:14:15] INFO root fetch - processPackages [zoomaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zoomaker-0.3.1.tar.gz tmp/zoomaker-0.4.0.tar.gz --markdown 20230506/z/zoomaker/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-06 10:14:15] INFO root fetch - processPackages [config-yml]: Downloading https://files.pythonhosted.org/packages/fc/db/c20bf669b792d41788250fcd7da4c05217d88af25fa15fbcd2f65df56960/config_yml-0.2.3.tar.gz
+[2023-05-06 10:14:15] INFO root fetch - processPackages [config-yml]: executing diffoscope
+[2023-05-06 10:14:15] INFO root fetch - processPackages [config-yml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/config_yml-0.2.2.tar.gz tmp/config_yml-0.2.3.tar.gz --markdown 20230506/c/config-yml/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-06 10:14:17] INFO root fetch - processPackages [PicsToPdfs]: Start processing: ddreport
+[2023-05-06 10:14:17] INFO root fetch - main [MainThread]: End processing [PicsToPdfs]: success
+[2023-05-06 10:14:17] INFO root fetch - main [MainThread]: End processing [promptwatch]: success
+[2023-05-06 10:14:17] INFO root fetch - processPackages [ddreport]: New version: [4.0] Old Version: [3.9]
+[2023-05-06 10:14:17] INFO root fetch - main [MainThread]: End processing [oronium]: success
+[2023-05-06 10:14:17] INFO root fetch - main [MainThread]: End processing [zoomaker]: success
+[2023-05-06 10:14:17] INFO root fetch - processPackages [ddreport]: Downloading https://files.pythonhosted.org/packages/d0/90/1beb3a2ef3d54fee96145c8a63db0cfaf3f81a8e3c484dd48f658d8650c9/ddreport-3.9.tar.gz
+[2023-05-06 10:14:17] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
+[2023-05-06 10:14:17] INFO root fetch - main [MainThread]: End processing [config-yml]: success
+[2023-05-06 10:14:17] INFO root fetch - main [MainThread]: End processing [ezmote-cmdserver]: success
+[2023-05-06 10:14:17] INFO root fetch - processPackages [ddreport]: Downloading https://files.pythonhosted.org/packages/83/33/a2e2588e0b13d24ba9c2e6312f6b9817da00d6be14c65f26717b8dc56761/ddreport-4.0.tar.gz
+[2023-05-06 10:14:17] INFO root fetch - main [MainThread]: End processing [flux-python]: success
+[2023-05-06 10:14:17] INFO root fetch - main [MainThread]: End processing [flux-python]: success
+[2023-05-06 10:14:18] INFO root fetch - processPackages [ddreport]: executing diffoscope
+[2023-05-06 10:14:18] INFO root fetch - processPackages [ddreport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddreport-3.9.tar.gz tmp/ddreport-4.0.tar.gz --markdown 20230506/d/ddreport/3.9-4.0/diff.md --exclude *.pyd
+[2023-05-06 10:14:18] INFO root fetch - main [MainThread]: End processing [flux-python]: success
+[2023-05-06 10:14:19] INFO root fetch - main [MainThread]: End processing [ddreport]: success
+[2023-05-06 10:14:19] INFO root fetch - main [MainThread]: Store serial: [17998101]
