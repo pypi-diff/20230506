@@ -7499,3 +7499,72 @@
 [2023-05-06 09:58:19] INFO root fetch - main [MainThread]: End processing [IPFS-Toolkit]: success
 [2023-05-06 09:58:41] INFO root fetch - main [MainThread]: End processing [ProgettiHWSW]: success
 [2023-05-06 09:58:41] INFO root fetch - main [MainThread]: Store serial: [17998005]
+[2023-05-06 10:03:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998005]
+[2023-05-06 10:03:50] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ezmote-cmdserver
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-stock-available-to-promise-release
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-stock-picking-completion-info
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-wms
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vtda
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edit-anything
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dataplaybook
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: godot-rl
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aiofauna
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wahoomc
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ezmote-cmdserver]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-05-06 10:03:50] INFO root fetch - processPackages [edit-anything]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 10:03:50] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: New version: [16.0.2.0.0.9] Old Version: [16.0.2.0.0.11]
+[2023-05-06 10:03:50] INFO root fetch - processPackages [godot-rl]: New version: [0.5.0a0] Old Version: [0.4.8]
+[2023-05-06 10:03:50] INFO root fetch - processPackages [dataplaybook]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 10:03:50] INFO root fetch - processPackages [odoo-addons-oca-wms]: New version: [16.0.20230505.0] Old Version: [16.0.20230324.0]
+[2023-05-06 10:03:50] INFO root fetch - processPackages [odoo-addon-stock-picking-completion-info]: New version: [16.0.1.0.1.2] Old Version: [16.0.1.0.1]
+[2023-05-06 10:03:50] INFO root fetch - processPackages [vtda]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-06 10:03:50] INFO root fetch - processPackages [aiofauna]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 10:03:50] INFO root fetch - processPackages [wahoomc]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-05-06 10:03:50] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: Downloading https://files.pythonhosted.org/packages/6a/da/3f2fa29d02ba277dd26e590a71b09ff1eece264403c8ea5a7f0f26dd47df/odoo_addon_stock_available_to_promise_release-16.0.2.0.0.11-py3-none-any.whl
+[2023-05-06 10:03:50] INFO root fetch - processPackages [edit-anything]: Downloading https://files.pythonhosted.org/packages/e8/1c/a0e4c0d53969d01051bb37b26562b7c540441bbc8f65fda9fceb16eed18a/edit-anything-0.0.1.tar.gz
+[2023-05-06 10:03:50] INFO root fetch - processPackages [wahoomc]: Downloading https://files.pythonhosted.org/packages/94/04/a4c1195c5320fb34bcf9a1d5072b6aa7177e4cb6c3b2de2bb053d2228eac/wahoomc-4.0.2.tar.gz
+[2023-05-06 10:03:50] INFO root fetch - processPackages [godot-rl]: Downloading https://files.pythonhosted.org/packages/a0/2e/6ab68ec09cd21a180facb5dc648e77d9563c529921f66840b39bb55c764f/godot_rl-0.4.8.tar.gz
+[2023-05-06 10:03:50] INFO root fetch - processPackages [ezmote-cmdserver]: Downloading https://files.pythonhosted.org/packages/dd/bf/de1bd2460939edbfe4c8995f37bcf50129c7c73f776bc8103bcc9ed93c5c/ezmote-cmdserver-0.8.3.tar.gz
+[2023-05-06 10:03:50] INFO root fetch - processPackages [odoo-addon-stock-picking-completion-info]: Downloading https://files.pythonhosted.org/packages/6b/c3/e740483e21d89fd9431c4a1f8ed2e74e21b77231c89f1ae3ec8b59dc00fd/odoo_addon_stock_picking_completion_info-16.0.1.0.1-py3-none-any.whl
+[2023-05-06 10:03:50] INFO root fetch - processPackages [aiofauna]: Downloading https://files.pythonhosted.org/packages/3e/c9/65eeb8f706f8fe0d4685edc0ecbbd3efb6d8ff68b057cb7700839781b471/aiofauna-0.1.2.tar.gz
+[2023-05-06 10:03:50] INFO root fetch - processPackages [odoo-addons-oca-wms]: Downloading https://files.pythonhosted.org/packages/1e/57/1432e895c4d0edd500fc5457c17f0618f0e2a159201b0b14e3ccc5eda5b7/odoo_addons_oca_wms-16.0.20230324.0-py3-none-any.whl
+[2023-05-06 10:03:50] INFO root fetch - processPackages [vtda]: Downloading https://files.pythonhosted.org/packages/54/38/a022fad48eed9f51ef244f913910c4e3476bd35c633c5d2032872f1a1f0d/vtda-1.5.3-py3-none-any.whl
+[2023-05-06 10:03:51] INFO root fetch - processPackages [ezmote-cmdserver]: executing diffoscope
+[2023-05-06 10:03:51] INFO root fetch - processPackages [ezmote-cmdserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezmote-cmdserver-0.8.2.tar.gz tmp/ezmote-cmdserver-0.8.3.tar.gz --markdown 20230506/e/ezmote-cmdserver/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-05-06 10:03:51] INFO root fetch - processPackages [wahoomc]: executing diffoscope
+[2023-05-06 10:03:51] INFO root fetch - processPackages [wahoomc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wahoomc-4.0.1.tar.gz tmp/wahoomc-4.0.2.tar.gz --markdown 20230506/w/wahoomc/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-05-06 10:03:51] INFO root fetch - processPackages [aiofauna]: executing diffoscope
+[2023-05-06 10:03:51] INFO root fetch - processPackages [aiofauna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiofauna-0.1.1.tar.gz tmp/aiofauna-0.1.2.tar.gz --markdown 20230506/a/aiofauna/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 10:03:51] INFO root fetch - processPackages [edit-anything]: Downloading https://files.pythonhosted.org/packages/68/19/f1467f340bb12f6b4f8208bef9c22466a8c1f43e329bda637189b7005759/edit-anything-0.0.2.tar.gz
+[2023-05-06 10:03:51] INFO root fetch - processPackages [vtda]: executing diffoscope
+[2023-05-06 10:03:51] INFO root fetch - processPackages [vtda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtda-1.5.2-py3-none-any.whl.zip tmp/vtda-1.5.3-py3-none-any.whl.zip --markdown 20230506/v/vtda/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-06 10:03:51] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: Downloading https://files.pythonhosted.org/packages/09/b7/3f159f672518d88b59886f565af351a33a02f42733db6bcf01de8bfc50cf/odoo_addon_stock_available_to_promise_release-16.0.2.0.0.9-py3-none-any.whl
+[2023-05-06 10:03:51] INFO root fetch - processPackages [dataplaybook]: executing diffoscope
+[2023-05-06 10:03:51] INFO root fetch - processPackages [dataplaybook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataplaybook-1.0.8.tar.gz tmp/dataplaybook-1.0.9.tar.gz --markdown 20230506/d/dataplaybook/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 10:03:51] INFO root fetch - processPackages [godot-rl]: Downloading https://files.pythonhosted.org/packages/54/9c/ce7791d1699ca60d2c5fa53afa098423a4b47a72f985b96ce1e22ed22f6b/godot_rl-0.5.0a0.tar.gz
+[2023-05-06 10:03:51] INFO root fetch - processPackages [odoo-addon-stock-picking-completion-info]: Downloading https://files.pythonhosted.org/packages/80/27/83956b545b776ec6af91057789be7c81fe47aa62a16d793b2934172b7961/odoo_addon_stock_picking_completion_info-16.0.1.0.1.2-py3-none-any.whl
+[2023-05-06 10:03:51] INFO root fetch - processPackages [edit-anything]: executing diffoscope
+[2023-05-06 10:03:51] INFO root fetch - processPackages [edit-anything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edit-anything-0.0.1.tar.gz tmp/edit-anything-0.0.2.tar.gz --markdown 20230506/e/edit-anything/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 10:03:51] ERROR root fetch - processPackages [wahoomc]: Diffoscope failed: Error: error creating container storage: the container name "boring_wing" is already in use by "2a390ed43e593be390cccdac8b9f58e70b4936d96f05fe5a8578b4939b8482a3". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-06 10:03:51] INFO root fetch - main [MainThread]: End processing [wahoomc] error
+[2023-05-06 10:03:51] INFO root fetch - processPackages [odoo-addons-oca-wms]: Downloading https://files.pythonhosted.org/packages/66/57/abb6dd8f7a1b4f455a39167d0f745039e82a8be4d95f28fc1b7d595d2f51/odoo_addons_oca_wms-16.0.20230505.0-py3-none-any.whl
+[2023-05-06 10:03:51] INFO root fetch - processPackages [godot-rl]: executing diffoscope
+[2023-05-06 10:03:51] INFO root fetch - processPackages [godot-rl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/godot_rl-0.4.8.tar.gz tmp/godot_rl-0.5.0a0.tar.gz --markdown 20230506/g/godot-rl/0.4.8-0.5.0a0/diff.md --exclude *.pyd
+[2023-05-06 10:03:51] INFO root fetch - processPackages [odoo-addon-stock-picking-completion-info]: executing diffoscope
+[2023-05-06 10:03:51] INFO root fetch - processPackages [odoo-addon-stock-picking-completion-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_picking_completion_info-16.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_stock_picking_completion_info-16.0.1.0.1.2-py3-none-any.whl.zip --markdown 20230506/o/odoo-addon-stock-picking-completion-info/16.0.1.0.1-16.0.1.0.1.2/diff.md --exclude *.pyd
+[2023-05-06 10:03:51] INFO root fetch - processPackages [odoo-addons-oca-wms]: executing diffoscope
+[2023-05-06 10:03:51] INFO root fetch - processPackages [odoo-addons-oca-wms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_wms-16.0.20230324.0-py3-none-any.whl.zip tmp/odoo_addons_oca_wms-16.0.20230505.0-py3-none-any.whl.zip --markdown 20230506/o/odoo-addons-oca-wms/16.0.20230324.0-16.0.20230505.0/diff.md --exclude *.pyd
+[2023-05-06 10:03:51] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: executing diffoscope
+[2023-05-06 10:03:51] INFO root fetch - processPackages [odoo-addon-stock-available-to-promise-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_available_to_promise_release-16.0.2.0.0.11-py3-none-any.whl.zip tmp/odoo_addon_stock_available_to_promise_release-16.0.2.0.0.9-py3-none-any.whl.zip --markdown 20230506/o/odoo-addon-stock-available-to-promise-release/16.0.2.0.0.11-16.0.2.0.0.9/diff.md --exclude *.pyd
+[2023-05-06 10:03:52] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-wms]: success
+[2023-05-06 10:03:52] INFO root fetch - main [MainThread]: End processing [vtda]: success
+[2023-05-06 10:03:52] INFO root fetch - main [MainThread]: End processing [dataplaybook]: success
+[2023-05-06 10:03:52] INFO root fetch - main [MainThread]: End processing [aiofauna]: success
+[2023-05-06 10:03:53] INFO root fetch - main [MainThread]: End processing [ezmote-cmdserver]: success
+[2023-05-06 10:03:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-available-to-promise-release]: success
+[2023-05-06 10:03:53] INFO root fetch - main [MainThread]: End processing [godot-rl]: success
+[2023-05-06 10:03:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-picking-completion-info]: success
+[2023-05-06 10:03:54] INFO root fetch - main [MainThread]: End processing [edit-anything]: success
+[2023-05-06 10:03:54] INFO root fetch - main [MainThread]: Store serial: [17998039]
