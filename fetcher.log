@@ -7099,3 +7099,36 @@
 [2023-05-06 09:21:17] INFO root fetch - main [MainThread]: End processing [nic-api]: success
 [2023-05-06 09:21:17] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
 [2023-05-06 09:21:17] INFO root fetch - main [MainThread]: Store serial: [17997708]
+[2023-05-06 09:26:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997708]
+[2023-05-06 09:26:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 09:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dataset-viewer
+[2023-05-06 09:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OWR
+[2023-05-06 09:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfq-nightly
+[2023-05-06 09:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydio
+[2023-05-06 09:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: betwatch
+[2023-05-06 09:26:26] INFO root fetch - processPackages [OWR]: New version: [2.7.1] Old Version: [2.6.1]
+[2023-05-06 09:26:26] INFO root fetch - processPackages [dataset-viewer]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-06 09:26:27] INFO root fetch - processPackages [betwatch]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-06 09:26:27] INFO root fetch - processPackages [pydio]: New version: [0.4.0] Old Version: [0.3.3]
+[2023-05-06 09:26:27] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230505] Old Version: [0.7.3.dev20230504]
+[2023-05-06 09:26:27] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/df/28/16597e71df6d8a66c73908540e8e650abde7318d7ec4dbf1776ed734df22/tfq_nightly-0.7.3.dev20230504-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-06 09:26:27] INFO root fetch - processPackages [pydio]: Downloading https://files.pythonhosted.org/packages/89/81/b6f2875bc4cc80ce5cfc048e3f396bbf8b920745c4dea3eeab7b0e49390c/pydio-0.3.3.tar.gz
+[2023-05-06 09:26:27] INFO root fetch - processPackages [dataset-viewer]: Downloading https://files.pythonhosted.org/packages/57/8e/b5bba51a1cb1a78b6b66366e51199f495bc84521b80b3ea26ba3c0bec007/dataset-viewer-0.0.7.tar.gz
+[2023-05-06 09:26:27] INFO root fetch - processPackages [betwatch]: Downloading https://files.pythonhosted.org/packages/9f/c0/e0343ac52214ca4478015fed4574d9ff1ff46bdfde414b32e6cd23ad73ef/betwatch-1.0.1.tar.gz
+[2023-05-06 09:26:27] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819850>=10485760
+[2023-05-06 09:26:27] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-05-06 09:26:27] INFO root fetch - processPackages [dataset-viewer]: executing diffoscope
+[2023-05-06 09:26:27] INFO root fetch - processPackages [dataset-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataset-viewer-0.0.6.tar.gz tmp/dataset-viewer-0.0.7.tar.gz --markdown 20230506/d/dataset-viewer/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-06 09:26:27] INFO root fetch - processPackages [OWR]: Downloading https://files.pythonhosted.org/packages/29/89/d5d4c333d8c124aa00462fbd53190580e580fa1c26101e8d0653fc932969/OWR-2.7.1.tar.gz
+[2023-05-06 09:26:27] INFO root fetch - processPackages [OWR]: executing diffoscope
+[2023-05-06 09:26:27] INFO root fetch - processPackages [OWR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OWR-2.6.1.tar.gz tmp/OWR-2.7.1.tar.gz --markdown 20230506/O/OWR/2.6.1-2.7.1/diff.md --exclude *.pyd
+[2023-05-06 09:26:27] INFO root fetch - processPackages [betwatch]: executing diffoscope
+[2023-05-06 09:26:27] INFO root fetch - processPackages [betwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betwatch-1.0.0.tar.gz tmp/betwatch-1.0.1.tar.gz --markdown 20230506/b/betwatch/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 09:26:27] INFO root fetch - processPackages [pydio]: Downloading https://files.pythonhosted.org/packages/a0/4b/f04ca0234a1dcb548027d762c8c7c848aeaf5cca38c909c05a1c4d382e48/pydio-0.4.0.tar.gz
+[2023-05-06 09:26:27] INFO root fetch - processPackages [pydio]: executing diffoscope
+[2023-05-06 09:26:27] INFO root fetch - processPackages [pydio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydio-0.3.3.tar.gz tmp/pydio-0.4.0.tar.gz --markdown 20230506/p/pydio/0.3.3-0.4.0/diff.md --exclude *.pyd
+[2023-05-06 09:26:28] INFO root fetch - main [MainThread]: End processing [dataset-viewer]: success
+[2023-05-06 09:26:28] INFO root fetch - main [MainThread]: End processing [OWR]: success
+[2023-05-06 09:26:28] INFO root fetch - main [MainThread]: End processing [betwatch]: success
+[2023-05-06 09:26:28] INFO root fetch - main [MainThread]: End processing [pydio]: success
+[2023-05-06 09:26:28] INFO root fetch - main [MainThread]: Store serial: [17997725]
