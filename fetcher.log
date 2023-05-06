@@ -5277,3 +5277,68 @@
 [2023-05-06 05:35:00] INFO root fetch - main [MainThread]: End processing [mt-auto-minhon-mlt]: success
 [2023-05-06 05:35:00] INFO root fetch - main [MainThread]: End processing [combine-gtfs-feeds]: success
 [2023-05-06 05:35:00] INFO root fetch - main [MainThread]: Store serial: [17996561]
+[2023-05-06 05:40:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996561]
+[2023-05-06 05:40:08] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-06 05:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtmcxstrtg
+[2023-05-06 05:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbl-sat-sdk
+[2023-05-06 05:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MecSimCalc
+[2023-05-06 05:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lesscode-tool
+[2023-05-06 05:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cramjam-cli
+[2023-05-06 05:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fixa
+[2023-05-06 05:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: opencv-python-rolling
+[2023-05-06 05:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: opencv-contrib-python-rolling
+[2023-05-06 05:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: opencv-python-headless-rolling
+[2023-05-06 05:40:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: opencv-contrib-python-headless-rolling
+[2023-05-06 05:40:08] WARNING root fetch - processPackages [MecSimCalc]: Skipping, unable to determine old version
+[2023-05-06 05:40:08] INFO root fetch - processPackages [MecSimCalc]: Start processing: combine-gtfs-feeds
+[2023-05-06 05:40:08] INFO root fetch - processPackages [lesscode-tool]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 05:40:08] INFO root fetch - processPackages [mtmcxstrtg]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-05-06 05:40:08] INFO root fetch - main [MainThread]: End processing [MecSimCalc] error
+[2023-05-06 05:40:08] INFO root fetch - processPackages [dbl-sat-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 05:40:08] WARNING root fetch - processPackages [cramjam-cli]: Skipping, unable to determine old version
+[2023-05-06 05:40:08] INFO root fetch - processPackages [cramjam-cli]: Start processing: editanything
+[2023-05-06 05:40:08] INFO root fetch - main [MainThread]: End processing [cramjam-cli] error
+[2023-05-06 05:40:08] INFO root fetch - processPackages [fixa]: New version: [0.5.1] Old Version: [0.4.1]
+[2023-05-06 05:40:08] INFO root fetch - processPackages [combine-gtfs-feeds]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-06 05:40:08] INFO root fetch - processPackages [opencv-contrib-python-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-05-06 05:40:08] INFO root fetch - processPackages [opencv-python-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-05-06 05:40:08] INFO root fetch - processPackages [opencv-python-headless-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-05-06 05:40:08] INFO root fetch - processPackages [opencv-contrib-python-headless-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-05-06 05:40:08] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 05:40:09] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 05:40:09] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 05:40:09] INFO root fetch - processPackages [combine-gtfs-feeds]: Downloading https://files.pythonhosted.org/packages/b6/f3/7e039bb92cfb0e9d92ac590ab996b3a7a9e201c3e2f95c7c60b358fc7291/combine_gtfs_feeds-0.1.7.tar.gz
+[2023-05-06 05:40:09] INFO root fetch - processPackages [dbl-sat-sdk]: Downloading https://files.pythonhosted.org/packages/92/a4/34d3a48c978c55fba9771d6558dd7c1ca7ff308a4710885960c04bd674a6/dbl_sat_sdk-0.1.8-py3-none-any.whl
+[2023-05-06 05:40:09] INFO root fetch - processPackages [fixa]: Downloading https://files.pythonhosted.org/packages/03/f6/785a0da28ec0083c6b9927bd4a9665f86b432b197476f8df39b09f6df3d5/fixa-0.4.1.tar.gz
+[2023-05-06 05:40:09] INFO root fetch - processPackages [opencv-contrib-python-rolling]: Downloading https://files.pythonhosted.org/packages/a3/97/2ea0710c3f154811d2c12291ed7a678dfa7a588f7a9e27440b9f9372a38a/opencv_contrib_python_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-05-06 05:40:09] INFO root fetch - processPackages [opencv-contrib-python-headless-rolling]: Downloading https://files.pythonhosted.org/packages/52/d9/7ef539a10bce311d1e398e2ef46180316e0709bb45fe3c96989015f61412/opencv_contrib_python_headless_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-05-06 05:40:09] INFO root fetch - processPackages [lesscode-tool]: executing diffoscope
+[2023-05-06 05:40:09] INFO root fetch - processPackages [lesscode-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_tool-0.0.8.tar.gz tmp/lesscode_tool-0.0.9.tar.gz --markdown 20230506/l/lesscode-tool/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 05:40:09] INFO root fetch - processPackages [opencv-python-rolling]: Downloading https://files.pythonhosted.org/packages/32/6b/7a25c64d9114c7637e2850826c668c26d8ede5a8c04b15aa282508321da4/opencv_python_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-05-06 05:40:09] INFO root fetch - processPackages [mtmcxstrtg]: Downloading https://files.pythonhosted.org/packages/6f/87/4e62c0d8509083df2caeb430903962ce4fe54e2d47da4de10c831bbfec29/mtmcxstrtg-1.0.9.tar.gz
+[2023-05-06 05:40:09] INFO root fetch - processPackages [combine-gtfs-feeds]: executing diffoscope
+[2023-05-06 05:40:09] INFO root fetch - processPackages [combine-gtfs-feeds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/combine_gtfs_feeds-0.1.6.tar.gz tmp/combine_gtfs_feeds-0.1.7.tar.gz --markdown 20230506/c/combine-gtfs-feeds/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-06 05:40:09] INFO root fetch - processPackages [mtmcxstrtg]: executing diffoscope
+[2023-05-06 05:40:09] INFO root fetch - processPackages [mtmcxstrtg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtmcxstrtg-1.0.7.tar.gz tmp/mtmcxstrtg-1.0.9.tar.gz --markdown 20230506/m/mtmcxstrtg/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 05:40:09] INFO root fetch - processPackages [opencv-python-headless-rolling]: Downloading https://files.pythonhosted.org/packages/7f/d0/e5b36f57680408f36da0f3aa7615e343b05d5b08ec0548429a4cbcd9665b/opencv_python_headless_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-05-06 05:40:09] INFO root fetch - processPackages [dbl-sat-sdk]: Downloading https://files.pythonhosted.org/packages/68/93/5919b903f39674d454c45c7d6764f895d7defc58a3c77509f658c1847741/dbl_sat_sdk-0.1.9-py3-none-any.whl
+[2023-05-06 05:40:09] WARNING root fetch - processPackages [opencv-contrib-python-headless-rolling]: Skipping package: exceeds size limit 42759572>=10485760
+[2023-05-06 05:40:09] INFO root fetch - main [MainThread]: End processing [opencv-contrib-python-headless-rolling] error
+[2023-05-06 05:40:09] WARNING root fetch - processPackages [opencv-python-rolling]: Skipping package: exceeds size limit 32729233>=10485760
+[2023-05-06 05:40:09] INFO root fetch - processPackages [fixa]: Downloading https://files.pythonhosted.org/packages/fb/69/9e0ab96e7803a8a4d5b119fbe37a7e599348f8c0f9a0dbb7ef76ae1a17ce/fixa-0.5.1.tar.gz
+[2023-05-06 05:40:09] INFO root fetch - main [MainThread]: End processing [opencv-python-rolling] error
+[2023-05-06 05:40:09] INFO root fetch - processPackages [dbl-sat-sdk]: executing diffoscope
+[2023-05-06 05:40:09] INFO root fetch - processPackages [dbl-sat-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbl_sat_sdk-0.1.8-py3-none-any.whl.zip tmp/dbl_sat_sdk-0.1.9-py3-none-any.whl.zip --markdown 20230506/d/dbl-sat-sdk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 05:40:09] INFO root fetch - processPackages [fixa]: executing diffoscope
+[2023-05-06 05:40:09] INFO root fetch - processPackages [fixa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixa-0.4.1.tar.gz tmp/fixa-0.5.1.tar.gz --markdown 20230506/f/fixa/0.4.1-0.5.1/diff.md --exclude *.pyd
+[2023-05-06 05:40:09] WARNING root fetch - processPackages [opencv-python-headless-rolling]: Skipping package: exceeds size limit 32729352>=10485760
+[2023-05-06 05:40:09] INFO root fetch - main [MainThread]: End processing [opencv-python-headless-rolling] error
+[2023-05-06 05:40:09] WARNING root fetch - processPackages [opencv-contrib-python-rolling]: Skipping package: exceeds size limit 43085134>=10485760
+[2023-05-06 05:40:09] INFO root fetch - main [MainThread]: End processing [opencv-contrib-python-rolling] error
+[2023-05-06 05:40:10] INFO root fetch - main [MainThread]: End processing [lesscode-tool]: success
+[2023-05-06 05:40:10] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 05:40:10] INFO root fetch - main [MainThread]: End processing [mtmcxstrtg]: success
+[2023-05-06 05:40:10] INFO root fetch - main [MainThread]: End processing [combine-gtfs-feeds]: success
+[2023-05-06 05:40:10] INFO root fetch - main [MainThread]: End processing [dbl-sat-sdk]: success
+[2023-05-06 05:40:10] INFO root fetch - main [MainThread]: End processing [fixa]: success
+[2023-05-06 05:40:10] INFO root fetch - main [MainThread]: Store serial: [17996600]
