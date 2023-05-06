@@ -10359,3 +10359,56 @@ EOFError: EOF read where object expected
 [2023-05-06 14:22:24] INFO root fetch - main [MainThread]: End processing [pyxtension]: success
 [2023-05-06 14:22:24] INFO root fetch - main [MainThread]: End processing [django-webperformers-humans]: success
 [2023-05-06 14:22:24] INFO root fetch - main [MainThread]: Store serial: [17999545]
+[2023-05-06 14:27:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999545]
+[2023-05-06 14:27:33] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 14:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geopandas
+[2023-05-06 14:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbt-ai
+[2023-05-06 14:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ykenan-fragments
+[2023-05-06 14:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sihl
+[2023-05-06 14:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: basic-poetry
+[2023-05-06 14:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: weatherly
+[2023-05-06 14:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: agent-link
+[2023-05-06 14:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: evalAIRR
+[2023-05-06 14:27:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hcpdiff
+[2023-05-06 14:27:33] INFO root fetch - processPackages [geopandas]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-06 14:27:33] WARNING root fetch - processPackages [sihl]: Skipping, unable to determine old version
+[2023-05-06 14:27:33] INFO root fetch - main [MainThread]: End processing [sihl] error
+[2023-05-06 14:27:33] INFO root fetch - processPackages [dbt-ai]: New version: [0.0.5a0] Old Version: [0.0.4a0]
+[2023-05-06 14:27:33] INFO root fetch - processPackages [weatherly]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-06 14:27:33] INFO root fetch - processPackages [ykenan-fragments]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-06 14:27:33] INFO root fetch - processPackages [agent-link]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-06 14:27:33] INFO root fetch - processPackages [basic-poetry]: New version: [2] Old Version: [1]
+[2023-05-06 14:27:33] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 14:27:33] INFO root fetch - processPackages [hcpdiff]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-06 14:27:33] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-05-06 14:27:33] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230506/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 14:27:34] INFO root fetch - processPackages [hcpdiff]: executing diffoscope
+[2023-05-06 14:27:34] INFO root fetch - processPackages [hcpdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcpdiff-0.3.3.tar.gz tmp/hcpdiff-0.3.4.tar.gz --markdown 20230506/h/hcpdiff/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-06 14:27:34] INFO root fetch - processPackages [basic-poetry]: Downloading https://files.pythonhosted.org/packages/cc/80/cb0312499b2e353496d0172a620f1448a0d37685358cfa49168ab7769a0a/basic_poetry-1.tar.gz
+[2023-05-06 14:27:34] INFO root fetch - processPackages [geopandas]: Downloading https://files.pythonhosted.org/packages/e0/4d/13d8ad924f3353728ee621e89b1f4c54cd8bc22310253ab6991073e42a32/geopandas-0.8.2.tar.gz
+[2023-05-06 14:27:34] INFO root fetch - processPackages [agent-link]: Downloading https://files.pythonhosted.org/packages/8c/21/10d6d0524f0b42b047d5da3ed686d8441881a583ded61843554d8c9d2081/agent_link-0.2.2.tar.gz
+[2023-05-06 14:27:34] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/83/c3/2b3c3030c74f1eadf864ac7e7456bdf76ed40c239f518a388cc7ecba08c9/dbt-ai-0.0.5a0.tar.gz
+[2023-05-06 14:27:34] INFO root fetch - processPackages [weatherly]: Downloading https://files.pythonhosted.org/packages/27/62/5fe44f05cf47d9dcf85a4dff53e3a3e58ee348f9b5a8ef35e72d5f35b086/weatherly-0.9.0.tar.gz
+[2023-05-06 14:27:34] INFO root fetch - processPackages [ykenan-fragments]: Downloading https://files.pythonhosted.org/packages/1d/d5/3a30e77f511fd269951e6c2ef0c5da03093ad8bfc919c53145c0f8450075/ykenan_fragments-1.1.5.tar.gz
+[2023-05-06 14:27:34] WARNING root fetch - processPackages [agent-link]: Skipping package: exceeds size limit 23814980>=10485760
+[2023-05-06 14:27:34] INFO root fetch - main [MainThread]: End processing [agent-link] error
+[2023-05-06 14:27:34] INFO root fetch - processPackages [dbt-ai]: executing diffoscope
+[2023-05-06 14:27:34] INFO root fetch - processPackages [dbt-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-ai-0.0.4a0.tar.gz tmp/dbt-ai-0.0.5a0.tar.gz --markdown 20230506/d/dbt-ai/0.0.4a0-0.0.5a0/diff.md --exclude *.pyd
+[2023-05-06 14:27:34] INFO root fetch - processPackages [weatherly]: executing diffoscope
+[2023-05-06 14:27:34] INFO root fetch - processPackages [weatherly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weatherly-0.8.0.tar.gz tmp/weatherly-0.9.0.tar.gz --markdown 20230506/w/weatherly/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 14:27:34] INFO root fetch - processPackages [ykenan-fragments]: executing diffoscope
+[2023-05-06 14:27:34] INFO root fetch - processPackages [ykenan-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_fragments-1.1.4.tar.gz tmp/ykenan_fragments-1.1.5.tar.gz --markdown 20230506/y/ykenan-fragments/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-06 14:27:34] INFO root fetch - processPackages [basic-poetry]: Downloading https://files.pythonhosted.org/packages/3e/63/c75498d46b253ea163b4488b3d048aa8db6493c58f58667bf482901b3440/basic_poetry-2.tar.gz
+[2023-05-06 14:27:34] INFO root fetch - processPackages [basic-poetry]: executing diffoscope
+[2023-05-06 14:27:34] INFO root fetch - processPackages [basic-poetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basic_poetry-1.tar.gz tmp/basic_poetry-2.tar.gz --markdown 20230506/b/basic-poetry/1-2/diff.md --exclude *.pyd
+[2023-05-06 14:27:34] INFO root fetch - processPackages [geopandas]: Downloading https://files.pythonhosted.org/packages/9b/59/3b0907ae8128f81db5cd978d95e6cd6aa2b0ce19884833c37f65deaaca44/geopandas-0.9.0.tar.gz
+[2023-05-06 14:27:34] INFO root fetch - processPackages [geopandas]: executing diffoscope
+[2023-05-06 14:27:34] INFO root fetch - processPackages [geopandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geopandas-0.8.2.tar.gz tmp/geopandas-0.9.0.tar.gz --markdown 20230506/g/geopandas/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 14:27:35] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-05-06 14:27:35] INFO root fetch - main [MainThread]: End processing [dbt-ai]: success
+[2023-05-06 14:27:35] INFO root fetch - main [MainThread]: End processing [weatherly]: success
+[2023-05-06 14:27:35] INFO root fetch - main [MainThread]: End processing [basic-poetry]: success
+[2023-05-06 14:27:35] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
+[2023-05-06 14:27:35] INFO root fetch - main [MainThread]: End processing [ykenan-fragments]: success
+[2023-05-06 14:27:37] INFO root fetch - main [MainThread]: End processing [geopandas]: success
+[2023-05-06 14:27:37] INFO root fetch - main [MainThread]: Store serial: [17999575]
