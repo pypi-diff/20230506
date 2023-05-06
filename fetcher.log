@@ -9402,3 +9402,18 @@ EOFError: EOF read where object expected
 [2023-05-06 12:48:11] INFO root fetch - main [MainThread]: End processing [frontengine]: success
 [2023-05-06 12:48:11] INFO root fetch - main [MainThread]: End processing [frontengine-dev]: success
 [2023-05-06 12:48:11] INFO root fetch - main [MainThread]: Store serial: [17998996]
+[2023-05-06 12:53:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998996]
+[2023-05-06 12:53:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-06 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlptoolssna
+[2023-05-06 12:53:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agent-link
+[2023-05-06 12:53:20] INFO root fetch - processPackages [agent-link]: New version: [0.1.9] Old Version: [0.1.2]
+[2023-05-06 12:53:20] INFO root fetch - processPackages [nlptoolssna]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-05-06 12:53:20] INFO root fetch - processPackages [agent-link]: Downloading https://files.pythonhosted.org/packages/ed/5c/57931bbb971a921efd05480fefcb72397a18b345031387764c69c27b90fc/agent_link-0.1.2.tar.gz
+[2023-05-06 12:53:20] WARNING root fetch - processPackages [agent-link]: Skipping package: exceeds size limit 15899943>=10485760
+[2023-05-06 12:53:20] INFO root fetch - main [MainThread]: End processing [agent-link] error
+[2023-05-06 12:53:20] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/6b/60/1b66ab71c503a0fe8f2b90cd4f6d8c80bdb5a9ac62a6521a5a5753825385/nlptoolssna-0.7.4.tar.gz
+[2023-05-06 12:53:21] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/26/12/716a949b1ce33d4d6e0304f3dffc4102ae89a902ae7a7197e65cf73c3354/nlptoolssna-0.7.5.tar.gz
+[2023-05-06 12:53:21] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 12:53:21] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.7.4.tar.gz tmp/nlptoolssna-0.7.5.tar.gz --markdown 20230506/n/nlptoolssna/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-05-06 12:53:22] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 12:53:22] INFO root fetch - main [MainThread]: Store serial: [17999001]
