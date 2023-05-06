@@ -14738,3 +14738,35 @@ EOFError: EOF read where object expected
 [2023-05-06 23:21:50] INFO root fetch - main [MainThread]: End processing [currency-codes]: success
 [2023-05-06 23:21:50] INFO root fetch - main [MainThread]: End processing [rulelearn]: success
 [2023-05-06 23:21:50] INFO root fetch - main [MainThread]: Store serial: [18002287]
+[2023-05-06 23:26:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002287]
+[2023-05-06 23:26:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 23:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prompt-man
+[2023-05-06 23:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onvif-zeep-async
+[2023-05-06 23:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hilly
+[2023-05-06 23:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prompt-man
+[2023-05-06 23:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: syscolouringsextV1
+[2023-05-06 23:26:59] INFO root fetch - processPackages [onvif-zeep-async]: New version: [2.1.4] Old Version: [2.1.3]
+[2023-05-06 23:26:59] INFO root fetch - processPackages [prompt-man]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-06 23:26:59] INFO root fetch - processPackages [prompt-man]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-06 23:26:59] INFO root fetch - processPackages [hilly]: New version: [0.1.3] Old Version: [0.1.2a0]
+[2023-05-06 23:26:59] ERROR root fetch - processPackages [syscolouringsextV1]: Unable to get metadata: No such project 'syscolouringsextV1'
+[2023-05-06 23:26:59] INFO root fetch - main [MainThread]: End processing [syscolouringsextV1] error
+[2023-05-06 23:26:59] INFO root fetch - processPackages [prompt-man]: Downloading https://files.pythonhosted.org/packages/cd/1f/4ace23614ce30c2878f560ed5dea3cc4b31b6105faab1750b001440a4623/prompt_man-0.1.2.tar.gz
+[2023-05-06 23:26:59] INFO root fetch - processPackages [prompt-man]: Downloading https://files.pythonhosted.org/packages/cd/1f/4ace23614ce30c2878f560ed5dea3cc4b31b6105faab1750b001440a4623/prompt_man-0.1.2.tar.gz
+[2023-05-06 23:26:59] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/33/ba/e010e436222db0e7685c36f0dd2ed6023776a2e26fe1e8bd3ba4353fe9a5/onvif-zeep-async-2.1.4.tar.gz
+[2023-05-06 23:26:59] INFO root fetch - processPackages [hilly]: Downloading https://files.pythonhosted.org/packages/ea/9b/34a1660f1ab8aead1ce4b06ecd803685a1eb76562c6dc7952daea334b071/hilly-0.1.3.tar.gz
+[2023-05-06 23:26:59] INFO root fetch - processPackages [hilly]: executing diffoscope
+[2023-05-06 23:26:59] INFO root fetch - processPackages [hilly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hilly-0.1.2a0.tar.gz tmp/hilly-0.1.3.tar.gz --markdown 20230506/h/hilly/0.1.2a0-0.1.3/diff.md --exclude *.pyd
+[2023-05-06 23:26:59] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-05-06 23:26:59] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-2.1.3.tar.gz tmp/onvif-zeep-async-2.1.4.tar.gz --markdown 20230506/o/onvif-zeep-async/2.1.3-2.1.4/diff.md --exclude *.pyd
+[2023-05-06 23:26:59] INFO root fetch - processPackages [prompt-man]: Downloading https://files.pythonhosted.org/packages/39/88/59c058f8780e2ec50c9c90a702b8d3fc5a258c9814b03264b8877ca54f88/prompt_man-0.1.3.tar.gz
+[2023-05-06 23:26:59] INFO root fetch - processPackages [prompt-man]: Downloading https://files.pythonhosted.org/packages/39/88/59c058f8780e2ec50c9c90a702b8d3fc5a258c9814b03264b8877ca54f88/prompt_man-0.1.3.tar.gz
+[2023-05-06 23:26:59] INFO root fetch - processPackages [prompt-man]: executing diffoscope
+[2023-05-06 23:26:59] INFO root fetch - processPackages [prompt-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt_man-0.1.2.tar.gz tmp/prompt_man-0.1.3.tar.gz --markdown 20230506/p/prompt-man/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-06 23:26:59] INFO root fetch - processPackages [prompt-man]: executing diffoscope
+[2023-05-06 23:26:59] INFO root fetch - processPackages [prompt-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt_man-0.1.2.tar.gz tmp/prompt_man-0.1.3.tar.gz --markdown 20230506/p/prompt-man/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-06 23:27:00] INFO root fetch - main [MainThread]: End processing [hilly]: success
+[2023-05-06 23:27:00] INFO root fetch - main [MainThread]: End processing [prompt-man]: success
+[2023-05-06 23:27:00] INFO root fetch - main [MainThread]: End processing [prompt-man]: success
+[2023-05-06 23:27:01] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-05-06 23:27:01] INFO root fetch - main [MainThread]: Store serial: [18002300]
