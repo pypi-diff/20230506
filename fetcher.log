@@ -5358,3 +5358,66 @@
 [2023-05-06 05:45:21] INFO root fetch - main [MainThread]: End processing [asc2mb]: success
 [2023-05-06 05:45:21] INFO root fetch - main [MainThread]: End processing [twitter-2-album]: success
 [2023-05-06 05:45:21] INFO root fetch - main [MainThread]: Store serial: [17996615]
+[2023-05-06 05:50:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996615]
+[2023-05-06 05:50:29] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-06 05:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cal-tool
+[2023-05-06 05:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: perfect-eval
+[2023-05-06 05:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paquete-fe
+[2023-05-06 05:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: johnnydep
+[2023-05-06 05:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mango-cli
+[2023-05-06 05:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: so-vits-svc-fork
+[2023-05-06 05:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: txdtaiac
+[2023-05-06 05:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: paquete-fe
+[2023-05-06 05:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: katalytic-data
+[2023-05-06 05:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fluctuate
+[2023-05-06 05:50:29] INFO root fetch - processPackages [johnnydep]: New version: [1.9] Old Version: [1.8]
+[2023-05-06 05:50:29] WARNING root fetch - processPackages [txdtaiac]: Skipping, unable to determine old version
+[2023-05-06 05:50:29] INFO root fetch - processPackages [txdtaiac]: Start processing: dearpygui
+[2023-05-06 05:50:29] WARNING root fetch - processPackages [cal-tool]: Skipping, unable to determine old version
+[2023-05-06 05:50:29] INFO root fetch - main [MainThread]: End processing [txdtaiac] error
+[2023-05-06 05:50:29] INFO root fetch - processPackages [cal-tool]: Start processing: debug-print2
+[2023-05-06 05:50:29] INFO root fetch - main [MainThread]: End processing [cal-tool] error
+[2023-05-06 05:50:29] INFO root fetch - processPackages [paquete-fe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 05:50:29] INFO root fetch - processPackages [paquete-fe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 05:50:29] INFO root fetch - processPackages [perfect-eval]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 05:50:29] INFO root fetch - processPackages [mango-cli]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-05-06 05:50:29] WARNING root fetch - processPackages [fluctuate]: Skipping, unable to determine old version
+[2023-05-06 05:50:29] INFO root fetch - main [MainThread]: End processing [fluctuate] error
+[2023-05-06 05:50:29] INFO root fetch - processPackages [katalytic-data]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-06 05:50:29] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.5] Old Version: [3.9.4]
+[2023-05-06 05:50:29] INFO root fetch - processPackages [paquete-fe]: executing diffoscope
+[2023-05-06 05:50:29] INFO root fetch - processPackages [paquete-fe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paquete-fe-0.1.8.tar.gz tmp/paquete_fe-0.1.9.tar.gz --markdown 20230506/p/paquete-fe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 05:50:29] WARNING root fetch - processPackages [debug-print2]: Skipping, unable to determine old version
+[2023-05-06 05:50:29] INFO root fetch - main [MainThread]: End processing [debug-print2] error
+[2023-05-06 05:50:29] INFO root fetch - processPackages [johnnydep]: Downloading https://files.pythonhosted.org/packages/10/fd/4020817535b39a383373793f922889f1c8d7ba089cfa2a54e4505ec7372d/johnnydep-1.8-py2.py3-none-any.whl
+[2023-05-06 05:50:29] INFO root fetch - processPackages [paquete-fe]: executing diffoscope
+[2023-05-06 05:50:29] INFO root fetch - processPackages [paquete-fe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paquete-fe-0.1.8.tar.gz tmp/paquete_fe-0.1.9.tar.gz --markdown 20230506/p/paquete-fe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 05:50:29] INFO root fetch - processPackages [perfect-eval]: Downloading https://files.pythonhosted.org/packages/55/ca/0a7292bfbe1ca7e79c8a589878d50c22897af3008afd45087c0e4558f7b6/perfect-eval-0.0.8.tar.gz
+[2023-05-06 05:50:29] INFO root fetch - processPackages [mango-cli]: Downloading https://files.pythonhosted.org/packages/7a/91/8ad718b7a97faf3aee3f5fe57dafd9f63dcf6e45026a1a735a448e205ba5/mango-cli-0.3.8.tar.gz
+[2023-05-06 05:50:29] INFO root fetch - processPackages [dearpygui]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-06 05:50:29] INFO root fetch - processPackages [katalytic-data]: Downloading https://files.pythonhosted.org/packages/d6/80/9dec1082cd11cb6599ecc258e064e4d6f6936f27936c83df864e571795dd/katalytic-data-0.9.0.tar.gz
+[2023-05-06 05:50:29] INFO root fetch - processPackages [mango-cli]: executing diffoscope
+[2023-05-06 05:50:29] INFO root fetch - processPackages [mango-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango-cli-0.3.7.tar.gz tmp/mango-cli-0.3.8.tar.gz --markdown 20230506/m/mango-cli/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-05-06 05:50:29] INFO root fetch - processPackages [katalytic-data]: executing diffoscope
+[2023-05-06 05:50:29] INFO root fetch - processPackages [katalytic-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-data-0.8.0.tar.gz tmp/katalytic-data-0.9.0.tar.gz --markdown 20230506/k/katalytic-data/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 05:50:29] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-05-06 05:50:29] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.9.4.tar.gz tmp/so_vits_svc_fork-3.9.5.tar.gz --markdown 20230506/s/so-vits-svc-fork/3.9.4-3.9.5/diff.md --exclude *.pyd
+[2023-05-06 05:50:29] INFO root fetch - processPackages [dearpygui]: Downloading https://files.pythonhosted.org/packages/a2/b6/7ffdb498f35e81daacf51bbb03e56a27aa49f6d87796c1b7b86846097cbf/dearpygui-1.9.0-cp39-cp39-win_amd64.whl
+[2023-05-06 05:50:30] INFO root fetch - processPackages [johnnydep]: Downloading https://files.pythonhosted.org/packages/12/2a/bb3fd0b51b29bd625c9e9d718238d89f748bd4ff65656a37f639e03e37a1/johnnydep-1.9.tar.gz
+[2023-05-06 05:50:30] INFO root fetch - processPackages [perfect-eval]: Downloading https://files.pythonhosted.org/packages/82/28/a89650a697f0b0f4d090460ca8715928f9faea775c9b714bc6b30db398cf/perfect-eval-0.0.9.tar.gz
+[2023-05-06 05:50:30] INFO root fetch - processPackages [perfect-eval]: executing diffoscope
+[2023-05-06 05:50:30] INFO root fetch - processPackages [perfect-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perfect-eval-0.0.8.tar.gz tmp/perfect-eval-0.0.9.tar.gz --markdown 20230506/p/perfect-eval/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 05:50:30] INFO root fetch - processPackages [johnnydep]: executing diffoscope
+[2023-05-06 05:50:30] INFO root fetch - processPackages [johnnydep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnnydep-1.8-py2.py3-none-any.whl.zip tmp/johnnydep-1.9.tar.gz --markdown 20230506/j/johnnydep/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-06 05:50:30] INFO root fetch - processPackages [dearpygui]: Downloading https://files.pythonhosted.org/packages/f7/24/0074f06488e3a153c08dd40ed94a9e27f2a94b685b0511cb06fb239effa7/dearpygui-1.9.1-cp39-cp39-win_amd64.whl
+[2023-05-06 05:50:30] INFO root fetch - processPackages [dearpygui]: executing diffoscope
+[2023-05-06 05:50:30] INFO root fetch - processPackages [dearpygui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dearpygui-1.9.0-cp39-cp39-win_amd64.whl.zip tmp/dearpygui-1.9.1-cp39-cp39-win_amd64.whl.zip --markdown 20230506/d/dearpygui/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-06 05:50:31] INFO root fetch - main [MainThread]: End processing [mango-cli]: success
+[2023-05-06 05:50:31] INFO root fetch - main [MainThread]: End processing [katalytic-data]: success
+[2023-05-06 05:50:31] INFO root fetch - main [MainThread]: End processing [perfect-eval]: success
+[2023-05-06 05:50:31] INFO root fetch - main [MainThread]: End processing [johnnydep]: success
+[2023-05-06 05:50:31] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
+[2023-05-06 05:50:31] INFO root fetch - main [MainThread]: End processing [dearpygui]: success
+[2023-05-06 05:50:32] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-05-06 05:50:33] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
+[2023-05-06 05:50:33] INFO root fetch - main [MainThread]: Store serial: [17996664]
