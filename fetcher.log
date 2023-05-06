@@ -5721,3 +5721,28 @@
 [2023-05-06 06:42:58] INFO root fetch - main [MainThread]: End processing [cnki-html2json]: success
 [2023-05-06 06:42:59] INFO root fetch - main [MainThread]: End processing [serial-packets]: success
 [2023-05-06 06:42:59] INFO root fetch - main [MainThread]: Store serial: [17996946]
+[2023-05-06 06:48:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996946]
+[2023-05-06 06:48:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 06:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LogAssist
+[2023-05-06 06:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: awscurl
+[2023-05-06 06:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyaxetool
+[2023-05-06 06:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-l10n-br-account
+[2023-05-06 06:48:07] INFO root fetch - processPackages [LogAssist]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-06 06:48:07] INFO root fetch - processPackages [awscurl]: New version: [0.9] Old Version: [0.8]
+[2023-05-06 06:48:07] INFO root fetch - processPackages [pyaxetool]: New version: [1.0.0] Old Version: [0.0.4]
+[2023-05-06 06:48:07] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: New version: [14.0.5.8.1.dev1] Old Version: [14.0.5.8.1]
+[2023-05-06 06:48:07] INFO root fetch - processPackages [awscurl]: executing diffoscope
+[2023-05-06 06:48:07] INFO root fetch - processPackages [awscurl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awscurl-0.8.tar.gz tmp/awscurl-0.9.tar.gz --markdown 20230506/a/awscurl/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-06 06:48:07] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: executing diffoscope
+[2023-05-06 06:48:07] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_account-14.0.5.8.1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_account-14.0.5.8.1.dev1-py3-none-any.whl.zip --markdown 20230506/o/odoo14-addon-l10n-br-account/14.0.5.8.1-14.0.5.8.1.dev1/diff.md --exclude *.pyd
+[2023-05-06 06:48:07] INFO root fetch - processPackages [pyaxetool]: Downloading https://files.pythonhosted.org/packages/15/cc/ab69b18727825238833ed397be533b768e93587860912d7ea46364eba216/pyaxetool-1.0.0.tar.gz
+[2023-05-06 06:48:07] INFO root fetch - processPackages [LogAssist]: Downloading https://files.pythonhosted.org/packages/da/28/a30e9fbea72f520f487c39cdc65e77468c457c4c7c524482239e43fd50aa/LogAssist-1.0.7.tar.gz
+[2023-05-06 06:48:08] INFO root fetch - processPackages [LogAssist]: executing diffoscope
+[2023-05-06 06:48:08] INFO root fetch - processPackages [LogAssist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LogAssist-1.0.6.tar.gz tmp/LogAssist-1.0.7.tar.gz --markdown 20230506/L/LogAssist/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-06 06:48:08] INFO root fetch - processPackages [pyaxetool]: executing diffoscope
+[2023-05-06 06:48:08] INFO root fetch - processPackages [pyaxetool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaxetool-0.0.4.tar.gz tmp/pyaxetool-1.0.0.tar.gz --markdown 20230506/p/pyaxetool/0.0.4-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 06:48:08] INFO root fetch - main [MainThread]: End processing [awscurl]: success
+[2023-05-06 06:48:09] INFO root fetch - main [MainThread]: End processing [LogAssist]: success
+[2023-05-06 06:48:09] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account]: success
+[2023-05-06 06:48:37] INFO root fetch - main [MainThread]: End processing [pyaxetool]: success
+[2023-05-06 06:48:37] INFO root fetch - main [MainThread]: Store serial: [17996961]
