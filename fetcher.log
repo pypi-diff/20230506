@@ -8229,3 +8229,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 10:57:06] INFO root fetch - main [MainThread]: End processing [dbx]: success
 [2023-05-06 10:57:08] INFO root fetch - main [MainThread]: End processing [sparrow-order-lib]: success
 [2023-05-06 10:57:08] INFO root fetch - main [MainThread]: Store serial: [17998368]
+[2023-05-06 11:02:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998368]
+[2023-05-06 11:02:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 11:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: po9876
+[2023-05-06 11:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flarespy
+[2023-05-06 11:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amounts
+[2023-05-06 11:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pb-encoding
+[2023-05-06 11:02:16] WARNING root fetch - processPackages [amounts]: Skipping, unable to determine old version
+[2023-05-06 11:02:16] INFO root fetch - main [MainThread]: End processing [amounts] error
+[2023-05-06 11:02:16] INFO root fetch - processPackages [pb-encoding]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-06 11:02:16] WARNING root fetch - processPackages [po9876]: Skipping, unable to determine old version
+[2023-05-06 11:02:16] INFO root fetch - main [MainThread]: End processing [po9876] error
+[2023-05-06 11:02:16] INFO root fetch - processPackages [flarespy]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-06 11:02:16] INFO root fetch - processPackages [pb-encoding]: Downloading https://files.pythonhosted.org/packages/9c/41/121a6a8d89bb1bf7762d67c208518b736835e30e7f489800e9e8043eae1e/pb_encoding-0.1.0.tar.gz
+[2023-05-06 11:02:17] INFO root fetch - processPackages [flarespy]: executing diffoscope
+[2023-05-06 11:02:17] INFO root fetch - processPackages [flarespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarespy-0.9.7.tar.gz tmp/flarespy-0.9.8.tar.gz --markdown 20230506/f/flarespy/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-06 11:02:17] INFO root fetch - processPackages [pb-encoding]: Downloading https://files.pythonhosted.org/packages/3a/7f/29a1fbbc5206f96be498bae4a34479130d7c4a4e07f0a92f07b74a308136/pb_encoding-0.2.0.tar.gz
+[2023-05-06 11:02:17] INFO root fetch - processPackages [pb-encoding]: executing diffoscope
+[2023-05-06 11:02:17] INFO root fetch - processPackages [pb-encoding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pb_encoding-0.1.0.tar.gz tmp/pb_encoding-0.2.0.tar.gz --markdown 20230506/p/pb-encoding/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 11:02:18] INFO root fetch - main [MainThread]: End processing [flarespy]: success
+[2023-05-06 11:02:18] INFO root fetch - main [MainThread]: End processing [pb-encoding]: success
+[2023-05-06 11:02:18] INFO root fetch - main [MainThread]: Store serial: [17998382]
