@@ -7074,3 +7074,28 @@
 [2023-05-06 09:15:38] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-05-06 09:16:07] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
 [2023-05-06 09:16:07] INFO root fetch - main [MainThread]: Store serial: [17997686]
+[2023-05-06 09:21:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997686]
+[2023-05-06 09:21:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 09:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: frontengine
+[2023-05-06 09:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frontengine-dev
+[2023-05-06 09:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyroporn
+[2023-05-06 09:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: obfuscater
+[2023-05-06 09:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nic-api
+[2023-05-06 09:21:16] INFO root fetch - processPackages [pyroporn]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-06 09:21:16] WARNING root fetch - processPackages [frontengine-dev]: Skipping, unable to determine old version
+[2023-05-06 09:21:16] INFO root fetch - main [MainThread]: End processing [frontengine-dev] error
+[2023-05-06 09:21:16] INFO root fetch - processPackages [nic-api]: New version: [1.0.0] Old Version: [0.4.3]
+[2023-05-06 09:21:16] WARNING root fetch - processPackages [obfuscater]: Skipping, unable to determine old version
+[2023-05-06 09:21:16] WARNING root fetch - processPackages [frontengine]: Skipping, unable to determine old version
+[2023-05-06 09:21:16] INFO root fetch - main [MainThread]: End processing [obfuscater] error
+[2023-05-06 09:21:16] INFO root fetch - main [MainThread]: End processing [frontengine] error
+[2023-05-06 09:21:16] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/be/95/593258a1ab200d185b3349fe6f5a4cd7fdfdb16839ad5f23843706523d6c/pyroporn-0.2.0.tar.gz
+[2023-05-06 09:21:16] INFO root fetch - processPackages [nic-api]: Downloading https://files.pythonhosted.org/packages/38/e0/9069821db3428ea5cea8fb71278a21d140039e9c9ed09ed29a10db89d370/nic_api-0.4.3-py2.py3-none-any.whl
+[2023-05-06 09:21:16] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-06 09:21:16] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.1.9.tar.gz tmp/pyroporn-0.2.0.tar.gz --markdown 20230506/p/pyroporn/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 09:21:16] INFO root fetch - processPackages [nic-api]: Downloading https://files.pythonhosted.org/packages/62/7f/82cbc78a59a60bd1bbc7f721ad2a15aada8cc1650efc8f301caf0a16bc53/nic_api-1.0.0.tar.gz
+[2023-05-06 09:21:16] INFO root fetch - processPackages [nic-api]: executing diffoscope
+[2023-05-06 09:21:16] INFO root fetch - processPackages [nic-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nic_api-0.4.3-py2.py3-none-any.whl.zip tmp/nic_api-1.0.0.tar.gz --markdown 20230506/n/nic-api/0.4.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 09:21:17] INFO root fetch - main [MainThread]: End processing [nic-api]: success
+[2023-05-06 09:21:17] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-06 09:21:17] INFO root fetch - main [MainThread]: Store serial: [17997708]
