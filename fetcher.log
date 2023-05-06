@@ -7996,3 +7996,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 10:35:15] INFO root fetch - main [MainThread]: End processing [flask-openapi3]: success
 [2023-05-06 10:35:35] INFO root fetch - main [MainThread]: End processing [tempest]: success
 [2023-05-06 10:35:35] INFO root fetch - main [MainThread]: Store serial: [17998196]
+[2023-05-06 10:40:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998196]
+[2023-05-06 10:40:45] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlptoolssna
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: VonPylib
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipybbycell
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-estimator-nightly
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edit-anything
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ezmote-cmdserver
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyroporn
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nlptoolssna
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tff-nightly
+[2023-05-06 10:40:45] INFO root fetch - processPackages [nlptoolssna]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-06 10:40:45] INFO root fetch - processPackages [VonPylib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 10:40:45] INFO root fetch - processPackages [pyroporn]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-06 10:40:45] INFO root fetch - processPackages [edit-anything]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ipybbycell]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-06 10:40:45] INFO root fetch - processPackages [nlptoolssna]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ezmote-cmdserver]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-05-06 10:40:45] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230505] Old Version: [0.0.1.dev20230504]
+[2023-05-06 10:40:45] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-05-06 10:40:45] INFO root fetch - processPackages [VonPylib]: executing diffoscope
+[2023-05-06 10:40:45] INFO root fetch - processPackages [VonPylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VonPylib-0.1.8.tar.gz tmp/VonPylib-0.1.9.tar.gz --markdown 20230506/V/VonPylib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 10:40:45] INFO root fetch - processPackages [edit-anything]: Downloading https://files.pythonhosted.org/packages/7b/14/7a34a59d2d845daf26140da3602650a69a3ace596b00b376f41daaedd737/edit-anything-0.0.3.tar.gz
+[2023-05-06 10:40:45] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/1d/78/860999b0b5e0fec1b6556a256c966184d0ccd1106922e7fb83b9f35fccf1/pyroporn-0.2.4.tar.gz
+[2023-05-06 10:40:45] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-05-06 10:40:45] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230506/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-05-06 10:40:45] INFO root fetch - processPackages [ipybbycell]: Downloading https://files.pythonhosted.org/packages/53/ee/fa415e22d3245b93daffca19bb8ad8e19b2c3cceb37fa2f0243e68669623/ipybbycell-0.3.3.tar.gz
+[2023-05-06 10:40:46] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/76/6d/79b4784ea4480c568cddd2942fa488410d9bdbe0e8c8c3328f8eebfc03fd/nlptoolssna-0.7.2.tar.gz
+[2023-05-06 10:40:46] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/76/6d/79b4784ea4480c568cddd2942fa488410d9bdbe0e8c8c3328f8eebfc03fd/nlptoolssna-0.7.2.tar.gz
+[2023-05-06 10:40:46] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-06 10:40:46] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.2.3.tar.gz tmp/pyroporn-0.2.4.tar.gz --markdown 20230506/p/pyroporn/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-06 10:40:46] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/ba/a8/5bcfcabc9f4e2b3c2e0ca1e50f6e1018343f8252026d1553c11f39dfa17a/tff_nightly-0.0.1.dev20230505-py2.py3-none-any.whl
+[2023-05-06 10:40:46] INFO root fetch - processPackages [ezmote-cmdserver]: Downloading https://files.pythonhosted.org/packages/6e/1e/de0e96a5ce92238f251d58de12e13d6768392d1262be6cc0dfd3776d929e/ezmote-cmdserver-0.8.6.tar.gz
+[2023-05-06 10:40:46] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 10:40:46] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.7.1.tar.gz tmp/nlptoolssna-0.7.2.tar.gz --markdown 20230506/n/nlptoolssna/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-06 10:40:46] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 10:40:46] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.7.1.tar.gz tmp/nlptoolssna-0.7.2.tar.gz --markdown 20230506/n/nlptoolssna/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-06 10:40:46] INFO root fetch - processPackages [ezmote-cmdserver]: executing diffoscope
+[2023-05-06 10:40:46] INFO root fetch - processPackages [ezmote-cmdserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezmote-cmdserver-0.8.5.tar.gz tmp/ezmote-cmdserver-0.8.6.tar.gz --markdown 20230506/e/ezmote-cmdserver/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-05-06 10:40:46] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-05-06 10:40:46] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230504-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230505-py2.py3-none-any.whl.zip --markdown 20230506/t/tff-nightly/0.0.1.dev20230504-0.0.1.dev20230505/diff.md --exclude *.pyd
+[2023-05-06 10:40:46] INFO root fetch - processPackages [edit-anything]: Downloading https://files.pythonhosted.org/packages/c9/9f/b7aaa8ad46c2608f39e25bc0da443514d34e8b729ee632109a5ac9c7f70a/edit-anything-0.0.4.tar.gz
+[2023-05-06 10:40:46] INFO root fetch - processPackages [edit-anything]: executing diffoscope
+[2023-05-06 10:40:46] INFO root fetch - processPackages [ipybbycell]: Downloading https://files.pythonhosted.org/packages/7a/f1/aa8230f82e668cadd8258b29fe68f11de565925af33702b36b31be3d0136/ipybbycell-0.3.4.tar.gz
+[2023-05-06 10:40:46] INFO root fetch - processPackages [edit-anything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edit-anything-0.0.3.tar.gz tmp/edit-anything-0.0.4.tar.gz --markdown 20230506/e/edit-anything/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 10:40:46] INFO root fetch - processPackages [ipybbycell]: executing diffoscope
+[2023-05-06 10:40:46] INFO root fetch - processPackages [ipybbycell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipybbycell-0.3.3.tar.gz tmp/ipybbycell-0.3.4.tar.gz --markdown 20230506/i/ipybbycell/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-06 10:40:47] INFO root fetch - main [MainThread]: End processing [VonPylib]: success
+[2023-05-06 10:40:47] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-06 10:40:47] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 10:40:47] INFO root fetch - main [MainThread]: End processing [ezmote-cmdserver]: success
+[2023-05-06 10:40:47] INFO root fetch - main [MainThread]: End processing [edit-anything]: success
+[2023-05-06 10:40:48] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-05-06 10:40:48] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 10:40:49] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-05-06 10:40:52] INFO root fetch - main [MainThread]: End processing [ipybbycell]: success
+[2023-05-06 10:40:52] INFO root fetch - main [MainThread]: Store serial: [17998233]
