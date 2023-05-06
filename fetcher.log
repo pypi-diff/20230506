@@ -13910,3 +13910,28 @@ EOFError: EOF read where object expected
 [2023-05-06 21:41:36] INFO root fetch - main [MainThread]: End processing [iambic-core]: success
 [2023-05-06 21:41:36] INFO root fetch - main [MainThread]: End processing [gql]: success
 [2023-05-06 21:41:36] INFO root fetch - main [MainThread]: Store serial: [18001801]
+[2023-05-06 21:46:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001801]
+[2023-05-06 21:46:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 21:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: board-game-recommender
+[2023-05-06 21:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decat
+[2023-05-06 21:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arvan-dns
+[2023-05-06 21:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gqt
+[2023-05-06 21:46:45] INFO root fetch - processPackages [decat]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-06 21:46:45] WARNING root fetch - processPackages [arvan-dns]: Skipping, unable to determine old version
+[2023-05-06 21:46:45] INFO root fetch - processPackages [board-game-recommender]: New version: [3.3.0] Old Version: [3.2.0]
+[2023-05-06 21:46:45] INFO root fetch - main [MainThread]: End processing [arvan-dns] error
+[2023-05-06 21:46:45] INFO root fetch - processPackages [gqt]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-05-06 21:46:45] INFO root fetch - processPackages [gqt]: executing diffoscope
+[2023-05-06 21:46:45] INFO root fetch - processPackages [gqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqt-0.98.0.tar.gz tmp/gqt-0.99.0.tar.gz --markdown 20230506/g/gqt/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-05-06 21:46:45] INFO root fetch - processPackages [decat]: Downloading https://files.pythonhosted.org/packages/27/83/73e7b2e1e7d67631597c993e47cad04af04b4e1e985a3b28dbbfafe0c560/decat-1.0.2.tar.gz
+[2023-05-06 21:46:45] INFO root fetch - processPackages [board-game-recommender]: Downloading https://files.pythonhosted.org/packages/84/0b/5680ad37b3d293faa6c8adf8d2d1cda64e471de4d7feaa2926760a3182d4/board-game-recommender-3.2.0.tar.gz
+[2023-05-06 21:46:46] INFO root fetch - processPackages [decat]: Downloading https://files.pythonhosted.org/packages/65/89/15fcb3572e7ba49f98dc15ceb83108e5a85b5d6c286e4271a1c9b2bb3a8a/decat-1.0.3.tar.gz
+[2023-05-06 21:46:46] INFO root fetch - processPackages [decat]: executing diffoscope
+[2023-05-06 21:46:46] INFO root fetch - processPackages [decat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decat-1.0.2.tar.gz tmp/decat-1.0.3.tar.gz --markdown 20230506/d/decat/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-06 21:46:46] INFO root fetch - processPackages [board-game-recommender]: Downloading https://files.pythonhosted.org/packages/cd/a1/298479cb8de72c9e62b24abd7263b659f809d0e83d790e5acdb9f435b712/board-game-recommender-3.3.0.tar.gz
+[2023-05-06 21:46:46] INFO root fetch - processPackages [board-game-recommender]: executing diffoscope
+[2023-05-06 21:46:46] INFO root fetch - processPackages [board-game-recommender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/board-game-recommender-3.2.0.tar.gz tmp/board-game-recommender-3.3.0.tar.gz --markdown 20230506/b/board-game-recommender/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2023-05-06 21:46:46] INFO root fetch - main [MainThread]: End processing [gqt]: success
+[2023-05-06 21:46:47] INFO root fetch - main [MainThread]: End processing [board-game-recommender]: success
+[2023-05-06 21:46:47] INFO root fetch - main [MainThread]: End processing [decat]: success
+[2023-05-06 21:46:47] INFO root fetch - main [MainThread]: Store serial: [18001816]
