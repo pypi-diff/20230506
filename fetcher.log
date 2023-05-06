@@ -6788,3 +6788,92 @@
 [2023-05-06 08:54:00] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
 [2023-05-06 08:54:00] INFO root fetch - main [MainThread]: End processing [pulumi-sumologic]: success
 [2023-05-06 08:54:00] INFO root fetch - main [MainThread]: Store serial: [17997535]
+[2023-05-06 08:59:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997535]
+[2023-05-06 08:59:09] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-06 08:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-vault
+[2023-05-06 08:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nsdotpy
+[2023-05-06 08:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-vsphere
+[2023-05-06 08:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymailauth
+[2023-05-06 08:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-newrelic
+[2023-05-06 08:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PicsToPdfs
+[2023-05-06 08:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jixn-utils
+[2023-05-06 08:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dataset-viewer
+[2023-05-06 08:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pulumi-rabbitmq
+[2023-05-06 08:59:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pymailauth
+[2023-05-06 08:59:09] WARNING root fetch - processPackages [nsdotpy]: Skipping, unable to determine old version
+[2023-05-06 08:59:09] INFO root fetch - processPackages [nsdotpy]: Start processing: webssh-embedded
+[2023-05-06 08:59:09] INFO root fetch - main [MainThread]: End processing [nsdotpy] error
+[2023-05-06 08:59:09] INFO root fetch - processPackages [pymailauth]: New version: [1.2.1] Old Version: [1.2]
+[2023-05-06 08:59:09] INFO root fetch - processPackages [PicsToPdfs]: New version: [0.3.3] Old Version: [0.3.1]
+[2023-05-06 08:59:09] INFO root fetch - processPackages [jixn-utils]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 08:59:09] INFO root fetch - processPackages [dataset-viewer]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-06 08:59:09] INFO root fetch - processPackages [pymailauth]: New version: [1.2.1] Old Version: [1.2]
+[2023-05-06 08:59:09] INFO root fetch - processPackages [pulumi-newrelic]: New version: [5.9.1] Old Version: [5.9.0a1680282898]
+[2023-05-06 08:59:09] INFO root fetch - processPackages [webssh-embedded]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-06 08:59:09] INFO root fetch - processPackages [pulumi-vault]: New version: [5.9.0a1678382334] Old Version: [5.9.0a1678129627]
+[2023-05-06 08:59:09] INFO root fetch - processPackages [pulumi-rabbitmq]: New version: [3.4.0a1683352878] Old Version: [3.4.0a1683267355]
+[2023-05-06 08:59:09] INFO root fetch - processPackages [pulumi-vsphere]: New version: [4.5.0a1683354453] Old Version: [4.5.0a1683269346]
+[2023-05-06 08:59:10] INFO root fetch - processPackages [jixn-utils]: Downloading https://files.pythonhosted.org/packages/dc/02/dc94b85b75df4da4718badd81952fdd843a15b4165e169c78bb4cfa2370f/jixn_utils-0.0.1.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pymailauth]: Downloading https://files.pythonhosted.org/packages/cc/a2/cdc2a935c7c6bc8219e5cb5f7e1aa4a3ecdd13683410acc573980e114453/pymailauth-1.2.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pymailauth]: Downloading https://files.pythonhosted.org/packages/cc/a2/cdc2a935c7c6bc8219e5cb5f7e1aa4a3ecdd13683410acc573980e114453/pymailauth-1.2.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pulumi-vault]: executing diffoscope
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pulumi-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_vault-5.9.0a1678129627.tar.gz tmp/pulumi_vault-5.9.0a1678382334.tar.gz --markdown 20230506/p/pulumi-vault/5.9.0a1678129627-5.9.0a1678382334/diff.md --exclude *.pyd
+[2023-05-06 08:59:10] INFO root fetch - processPackages [dataset-viewer]: Downloading https://files.pythonhosted.org/packages/32/34/2460d7e1c6a79dcf1ed7724cd9c45b1e1ce555f0e9fab176654870fdaa1d/dataset-viewer-0.0.5.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [webssh-embedded]: Downloading https://files.pythonhosted.org/packages/64/5b/da74c8a97297d1a2b515c13ca98fd3d10731a44893af61d06a55fbd181ef/webssh_embedded-1.0.4.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pulumi-vsphere]: Downloading https://files.pythonhosted.org/packages/47/3e/64ad6d332b6747cb5e538e9416fc0202c3b11606fdc048e1207cebc19fba/pulumi_vsphere-4.5.0a1683354453.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pulumi-newrelic]: executing diffoscope
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pulumi-newrelic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_newrelic-5.9.0a1680282898.tar.gz tmp/pulumi_newrelic-5.9.1.tar.gz --markdown 20230506/p/pulumi-newrelic/5.9.0a1680282898-5.9.1/diff.md --exclude *.pyd
+[2023-05-06 08:59:10] INFO root fetch - processPackages [PicsToPdfs]: Downloading https://files.pythonhosted.org/packages/6a/17/3fcc6f5860dabda385d67db2173be31cc121e2a811dc41819755c6b2540f/PicsToPdfs-0.3.3.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pulumi-rabbitmq]: Downloading https://files.pythonhosted.org/packages/2d/0e/b5a526c567175b614fa37e88045176cd12e7a4c6a9af80d05daf842e9881/pulumi_rabbitmq-3.4.0a1683352878.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pulumi-vsphere]: executing diffoscope
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pulumi-vsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_vsphere-4.5.0a1683269346.tar.gz tmp/pulumi_vsphere-4.5.0a1683354453.tar.gz --markdown 20230506/p/pulumi-vsphere/4.5.0a1683269346-4.5.0a1683354453/diff.md --exclude *.pyd
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pymailauth]: Downloading https://files.pythonhosted.org/packages/91/09/c1509d59cd60f1765be10e3aa8b394c46d479fa4fdf2fe8256d33263117c/pymailauth-1.2.1.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pymailauth]: Downloading https://files.pythonhosted.org/packages/91/09/c1509d59cd60f1765be10e3aa8b394c46d479fa4fdf2fe8256d33263117c/pymailauth-1.2.1.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [jixn-utils]: Downloading https://files.pythonhosted.org/packages/48/f4/d1b8a645716f3a3ce9ed98cda1caddb9bd5c38707af52c9c8cc7d86e19e5/jixn_utils-0.0.2.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [dataset-viewer]: Downloading https://files.pythonhosted.org/packages/d3/af/36bc52f086cdf443d8430bb465d4a746153d990c0b8dd55ee354a01daf4f/dataset-viewer-0.0.6.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [PicsToPdfs]: executing diffoscope
+[2023-05-06 08:59:10] INFO root fetch - processPackages [PicsToPdfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PicsToPdfs-0.3.1.tar.gz tmp/PicsToPdfs-0.3.3.tar.gz --markdown 20230506/P/PicsToPdfs/0.3.1-0.3.3/diff.md --exclude *.pyd
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pulumi-rabbitmq]: executing diffoscope
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pulumi-rabbitmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rabbitmq-3.4.0a1683267355.tar.gz tmp/pulumi_rabbitmq-3.4.0a1683352878.tar.gz --markdown 20230506/p/pulumi-rabbitmq/3.4.0a1683267355-3.4.0a1683352878/diff.md --exclude *.pyd
+[2023-05-06 08:59:10] INFO root fetch - processPackages [dataset-viewer]: executing diffoscope
+[2023-05-06 08:59:10] INFO root fetch - processPackages [dataset-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataset-viewer-0.0.5.tar.gz tmp/dataset-viewer-0.0.6.tar.gz --markdown 20230506/d/dataset-viewer/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-06 08:59:10] INFO root fetch - processPackages [webssh-embedded]: Downloading https://files.pythonhosted.org/packages/c2/08/69c16320b44bf6cd3ed8ddcdee96e5d28f4db8c8639065fb4341d79351c1/webssh_embedded-1.0.5.tar.gz
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pymailauth]: executing diffoscope
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pymailauth]: executing diffoscope
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pymailauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymailauth-1.2.tar.gz tmp/pymailauth-1.2.1.tar.gz --markdown 20230506/p/pymailauth/1.2-1.2.1/diff.md --exclude *.pyd
+[2023-05-06 08:59:10] INFO root fetch - processPackages [pymailauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymailauth-1.2.tar.gz tmp/pymailauth-1.2.1.tar.gz --markdown 20230506/p/pymailauth/1.2-1.2.1/diff.md --exclude *.pyd
+[2023-05-06 08:59:10] INFO root fetch - processPackages [jixn-utils]: executing diffoscope
+[2023-05-06 08:59:10] INFO root fetch - processPackages [jixn-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jixn_utils-0.0.1.tar.gz tmp/jixn_utils-0.0.2.tar.gz --markdown 20230506/j/jixn-utils/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 08:59:10] INFO root fetch - processPackages [webssh-embedded]: executing diffoscope
+[2023-05-06 08:59:10] INFO root fetch - processPackages [webssh-embedded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webssh_embedded-1.0.4.tar.gz tmp/webssh_embedded-1.0.5.tar.gz --markdown 20230506/w/webssh-embedded/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-06 08:59:11] INFO root fetch - processPackages [PicsToPdfs]: Start processing: pulumi-linode
+[2023-05-06 08:59:11] INFO root fetch - main [MainThread]: End processing [PicsToPdfs]: success
+[2023-05-06 08:59:11] INFO root fetch - processPackages [pulumi-linode]: New version: [4.1.0a1683351660] Old Version: [4.1.0a1683265708]
+[2023-05-06 08:59:11] INFO root fetch - processPackages [pymailauth]: Start processing: pulumi-tls
+[2023-05-06 08:59:11] INFO root fetch - main [MainThread]: End processing [pymailauth]: success
+[2023-05-06 08:59:11] INFO root fetch - processPackages [pulumi-tls]: New version: [5.1.0a1683354300] Old Version: [5.1.0a1683270222]
+[2023-05-06 08:59:11] INFO root fetch - processPackages [dataset-viewer]: Start processing: dvc-data
+[2023-05-06 08:59:11] INFO root fetch - main [MainThread]: End processing [dataset-viewer]: success
+[2023-05-06 08:59:11] INFO root fetch - processPackages [pulumi-linode]: Downloading https://files.pythonhosted.org/packages/c1/e7/d13e595ec809f5b44b7ac457db47af81124fe8555a8d092ed4bc479d2f9e/pulumi_linode-4.1.0a1683351660.tar.gz
+[2023-05-06 08:59:12] INFO root fetch - processPackages [dvc-data]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-06 08:59:12] INFO root fetch - processPackages [pymailauth]: Start processing: trade-slang
+[2023-05-06 08:59:12] INFO root fetch - main [MainThread]: End processing [pymailauth]: success
+[2023-05-06 08:59:12] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/55/42/16e6ed04e87b7b3a1f00e4018c6e0a1a62647e27a44c612e9d3f3a71d6f1/pulumi_tls-5.1.0a1683354300.tar.gz
+[2023-05-06 08:59:12] INFO root fetch - processPackages [dvc-data]: executing diffoscope
+[2023-05-06 08:59:12] INFO root fetch - processPackages [dvc-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvc-data-0.8.0.tar.gz tmp/dvc-data-0.9.0.tar.gz --markdown 20230506/d/dvc-data/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 08:59:12] INFO root fetch - main [MainThread]: End processing [jixn-utils]: success
+[2023-05-06 08:59:12] WARNING root fetch - processPackages [trade-slang]: Skipping, unable to determine old version
+[2023-05-06 08:59:12] INFO root fetch - main [MainThread]: End processing [trade-slang] error
+[2023-05-06 08:59:12] INFO root fetch - processPackages [pulumi-linode]: executing diffoscope
+[2023-05-06 08:59:12] INFO root fetch - processPackages [pulumi-linode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_linode-4.1.0a1683265708.tar.gz tmp/pulumi_linode-4.1.0a1683351660.tar.gz --markdown 20230506/p/pulumi-linode/4.1.0a1683265708-4.1.0a1683351660/diff.md --exclude *.pyd
+[2023-05-06 08:59:12] INFO root fetch - processPackages [pulumi-tls]: executing diffoscope
+[2023-05-06 08:59:12] INFO root fetch - processPackages [pulumi-tls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tls-5.1.0a1683270222.tar.gz tmp/pulumi_tls-5.1.0a1683354300.tar.gz --markdown 20230506/p/pulumi-tls/5.1.0a1683270222-5.1.0a1683354300/diff.md --exclude *.pyd
+[2023-05-06 08:59:12] INFO root fetch - main [MainThread]: End processing [pulumi-rabbitmq]: success
+[2023-05-06 08:59:12] INFO root fetch - main [MainThread]: End processing [webssh-embedded]: success
+[2023-05-06 08:59:13] INFO root fetch - main [MainThread]: End processing [dvc-data]: success
+[2023-05-06 08:59:13] INFO root fetch - main [MainThread]: End processing [pulumi-linode]: success
+[2023-05-06 08:59:14] INFO root fetch - main [MainThread]: End processing [pulumi-vsphere]: success
+[2023-05-06 08:59:15] INFO root fetch - main [MainThread]: End processing [pulumi-newrelic]: success
+[2023-05-06 08:59:16] INFO root fetch - main [MainThread]: End processing [pulumi-vault]: success
+[2023-05-06 08:59:40] INFO root fetch - main [MainThread]: End processing [pulumi-tls]: success
+[2023-05-06 08:59:40] INFO root fetch - main [MainThread]: Store serial: [17997578]
