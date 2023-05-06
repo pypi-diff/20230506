@@ -6546,3 +6546,50 @@
 [2023-05-06 08:32:37] INFO root fetch - main [MainThread]: End processing [simplegeomap]: success
 [2023-05-06 08:32:38] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
 [2023-05-06 08:32:38] INFO root fetch - main [MainThread]: Store serial: [17997393]
+[2023-05-06 08:37:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997393]
+[2023-05-06 08:37:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 08:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aeppl
+[2023-05-06 08:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odc-geo
+[2023-05-06 08:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-nightly-macos
+[2023-05-06 08:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-purchase-order-product-recommendation
+[2023-05-06 08:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-openstack
+[2023-05-06 08:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: honeybee-ph
+[2023-05-06 08:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: luckyun-nacos
+[2023-05-06 08:37:47] INFO root fetch - processPackages [odoo-addon-purchase-order-product-recommendation]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-05-06 08:37:47] INFO root fetch - processPackages [aeppl]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-06 08:37:47] INFO root fetch - processPackages [odc-geo]: New version: [0.4.0a3] Old Version: [0.4.0a2]
+[2023-05-06 08:37:47] INFO root fetch - processPackages [honeybee-ph]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-06 08:37:47] INFO root fetch - processPackages [tf-nightly-macos]: New version: [2.14.0.dev20230505] Old Version: [2.14.0.dev20230504]
+[2023-05-06 08:37:47] INFO root fetch - processPackages [pulumi-openstack]: New version: [3.9.0a1659603007] Old Version: [3.9.0a1654086724]
+[2023-05-06 08:37:47] INFO root fetch - processPackages [luckyun-nacos]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-06 08:37:47] INFO root fetch - processPackages [aeppl]: Downloading https://files.pythonhosted.org/packages/38/f6/923f19b34e33e0fe78976495dcef249c6cf067edac31f5c6b7675e1a5807/aeppl-0.1.3.tar.gz
+[2023-05-06 08:37:47] INFO root fetch - processPackages [odc-geo]: Downloading https://files.pythonhosted.org/packages/bb/0a/9253e32f37cf7d4190bdda53089dea59abf2ea8cec0feb88a0299fc374d7/odc-geo-0.4.0a2.tar.gz
+[2023-05-06 08:37:47] INFO root fetch - processPackages [pulumi-openstack]: executing diffoscope
+[2023-05-06 08:37:47] INFO root fetch - processPackages [pulumi-openstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_openstack-3.9.0a1654086724.tar.gz tmp/pulumi_openstack-3.9.0a1659603007.tar.gz --markdown 20230506/p/pulumi-openstack/3.9.0a1654086724-3.9.0a1659603007/diff.md --exclude *.pyd
+[2023-05-06 08:37:47] INFO root fetch - processPackages [tf-nightly-macos]: Downloading https://files.pythonhosted.org/packages/4c/6b/487e09b69d9c4097811dd26cc3538e1710fbabcfc50771f56a443a05e332/tf_nightly_macos-2.14.0.dev20230504-cp39-cp39-macosx_12_0_arm64.whl
+[2023-05-06 08:37:47] INFO root fetch - processPackages [honeybee-ph]: Downloading https://files.pythonhosted.org/packages/df/b8/fda4cf01d94f48d6d3083d5708571ff82cc12c33ab31021c75eae52fddf7/honeybee-ph-1.9.0.tar.gz
+[2023-05-06 08:37:47] WARNING root fetch - processPackages [tf-nightly-macos]: Skipping package: exceeds size limit 189091845>=10485760
+[2023-05-06 08:37:47] INFO root fetch - main [MainThread]: End processing [tf-nightly-macos] error
+[2023-05-06 08:37:47] INFO root fetch - processPackages [luckyun-nacos]: Downloading https://files.pythonhosted.org/packages/0b/5e/166271c73835def470f87d761ca8b4a5d0df0f07339a28a7d23fff2fade3/luckyun-nacos-0.1.0.tar.gz
+[2023-05-06 08:37:47] INFO root fetch - processPackages [odoo-addon-purchase-order-product-recommendation]: Downloading https://files.pythonhosted.org/packages/07/eb/b5b26d82d2658f69efb1a170682887fd698935d9e342f91b30a4ffdb52c2/odoo_addon_purchase_order_product_recommendation-16.0.1.0.0.3-py3-none-any.whl
+[2023-05-06 08:37:47] INFO root fetch - processPackages [odoo-addon-purchase-order-product-recommendation]: executing diffoscope
+[2023-05-06 08:37:47] INFO root fetch - processPackages [odoo-addon-purchase-order-product-recommendation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_purchase_order_product_recommendation-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_purchase_order_product_recommendation-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230506/o/odoo-addon-purchase-order-product-recommendation/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-05-06 08:37:47] INFO root fetch - processPackages [aeppl]: Downloading https://files.pythonhosted.org/packages/0a/f7/c57d659d43d2d0dd151dbcbbd3f1bf477905eb49864c8dd6faa46313e4ed/aeppl-0.1.4.tar.gz
+[2023-05-06 08:37:47] INFO root fetch - processPackages [odc-geo]: Downloading https://files.pythonhosted.org/packages/c7/32/98733fbc2da92417e1c78ceab9b99457e4275e4893f05c65eff6757834c0/odc-geo-0.4.0a3.tar.gz
+[2023-05-06 08:37:47] INFO root fetch - processPackages [aeppl]: executing diffoscope
+[2023-05-06 08:37:47] INFO root fetch - processPackages [aeppl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-0.1.3.tar.gz tmp/aeppl-0.1.4.tar.gz --markdown 20230506/a/aeppl/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-06 08:37:47] INFO root fetch - processPackages [odc-geo]: executing diffoscope
+[2023-05-06 08:37:47] INFO root fetch - processPackages [odc-geo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odc-geo-0.4.0a2.tar.gz tmp/odc-geo-0.4.0a3.tar.gz --markdown 20230506/o/odc-geo/0.4.0a2-0.4.0a3/diff.md --exclude *.pyd
+[2023-05-06 08:37:47] INFO root fetch - processPackages [honeybee-ph]: Downloading https://files.pythonhosted.org/packages/ac/3b/94670944c4a0e9844a88bedad8d71fd687fa1d4179f07d807acb90be0100/honeybee-ph-1.9.1.tar.gz
+[2023-05-06 08:37:47] INFO root fetch - processPackages [luckyun-nacos]: Downloading https://files.pythonhosted.org/packages/6d/0e/950e938f7d7181283335d6a578270e7e2b06cf77cbac0f156cfb3ac13d0a/luckyun-nacos-0.2.0.tar.gz
+[2023-05-06 08:37:47] INFO root fetch - processPackages [honeybee-ph]: executing diffoscope
+[2023-05-06 08:37:47] INFO root fetch - processPackages [honeybee-ph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-ph-1.9.0.tar.gz tmp/honeybee-ph-1.9.1.tar.gz --markdown 20230506/h/honeybee-ph/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-06 08:37:47] INFO root fetch - processPackages [luckyun-nacos]: executing diffoscope
+[2023-05-06 08:37:47] INFO root fetch - processPackages [luckyun-nacos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luckyun-nacos-0.1.0.tar.gz tmp/luckyun-nacos-0.2.0.tar.gz --markdown 20230506/l/luckyun-nacos/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 08:37:48] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-order-product-recommendation]: success
+[2023-05-06 08:37:48] INFO root fetch - main [MainThread]: End processing [aeppl]: success
+[2023-05-06 08:37:49] INFO root fetch - main [MainThread]: End processing [luckyun-nacos]: success
+[2023-05-06 08:37:49] INFO root fetch - main [MainThread]: End processing [honeybee-ph]: success
+[2023-05-06 08:37:50] INFO root fetch - main [MainThread]: End processing [odc-geo]: success
+[2023-05-06 08:37:54] INFO root fetch - main [MainThread]: End processing [pulumi-openstack]: success
+[2023-05-06 08:37:54] INFO root fetch - main [MainThread]: Store serial: [17997430]
