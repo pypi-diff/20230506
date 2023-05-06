@@ -10594,3 +10594,52 @@ EOFError: EOF read where object expected
 [2023-05-06 14:59:12] INFO root fetch - main [MainThread]: End processing [Dift]: success
 [2023-05-06 14:59:41] INFO root fetch - main [MainThread]: End processing [frontengine-dev]: success
 [2023-05-06 14:59:41] INFO root fetch - main [MainThread]: Store serial: [17999739]
+[2023-05-06 15:04:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999739]
+[2023-05-06 15:04:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 15:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colliderscope
+[2023-05-06 15:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-two-factor-auth
+[2023-05-06 15:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drf-pipeline-views
+[2023-05-06 15:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-05-06 15:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyPhasesML
+[2023-05-06 15:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nlpashto
+[2023-05-06 15:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyPhasesRecordloader
+[2023-05-06 15:04:50] INFO root fetch - processPackages [drf-pipeline-views]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-06 15:04:50] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.5.5] Old Version: [2023.5.4]
+[2023-05-06 15:04:50] INFO root fetch - processPackages [django-two-factor-auth]: New version: [1.9.1] Old Version: [1.8.0]
+[2023-05-06 15:04:50] INFO root fetch - processPackages [pyPhasesRecordloader]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-06 15:04:50] INFO root fetch - processPackages [nlpashto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 15:04:50] INFO root fetch - processPackages [colliderscope]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-06 15:04:50] INFO root fetch - processPackages [pyPhasesML]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-06 15:04:50] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-05-06 15:04:50] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.5.4-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.5.5-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230506/f/fbgemm-gpu-nightly-cpu/2023.5.4-2023.5.5/diff.md --exclude *.pyd
+[2023-05-06 15:04:50] INFO root fetch - processPackages [drf-pipeline-views]: Downloading https://files.pythonhosted.org/packages/00/41/87d37b7f04d17ddf8a6e5afa4019488166f154420dcb8559aa5902249e7c/drf_pipeline_views-0.8.5.tar.gz
+[2023-05-06 15:04:50] INFO root fetch - processPackages [pyPhasesRecordloader]: Downloading https://files.pythonhosted.org/packages/19/18/f2667d74a80ca3f81143d13fed58d937e18c6c92c582815d16016c293d28/pyPhasesRecordloader-0.3.8.tar.gz
+[2023-05-06 15:04:50] INFO root fetch - processPackages [django-two-factor-auth]: Downloading https://files.pythonhosted.org/packages/33/db/29beb0891f71f1d575220f700d19ecdf2d8eb044bedc1b9df86d8e239daf/django-two-factor-auth-1.8.0.tar.gz
+[2023-05-06 15:04:50] INFO root fetch - processPackages [colliderscope]: Downloading https://files.pythonhosted.org/packages/93/a4/ba94d57a5b1c271b9cf2d7a53476dc35957546e6ec68ce025dfb34d88805/colliderscope-0.2.2.tar.gz
+[2023-05-06 15:04:50] INFO root fetch - processPackages [pyPhasesML]: Downloading https://files.pythonhosted.org/packages/71/99/44d16dc358b594ce8ce6481afe14fd4edd8dd0f589038c9a704763ea2980/pyPhasesML-0.5.1.tar.gz
+[2023-05-06 15:04:50] INFO root fetch - processPackages [nlpashto]: Downloading https://files.pythonhosted.org/packages/a3/aa/3ca4c97176bc429943965b77429fbd3e13f291e91f81be2205fdf26ad90b/nlpashto-0.0.9.tar.gz
+[2023-05-06 15:04:50] INFO root fetch - processPackages [nlpashto]: executing diffoscope
+[2023-05-06 15:04:50] INFO root fetch - processPackages [nlpashto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpashto-0.0.8.tar.gz tmp/nlpashto-0.0.9.tar.gz --markdown 20230506/n/nlpashto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 15:04:51] INFO root fetch - processPackages [pyPhasesML]: Downloading https://files.pythonhosted.org/packages/a0/1f/72f9e9d977d5115785834b8076473a7464c707e719c5731263ab65c531b8/pyPhasesML-0.5.2.tar.gz
+[2023-05-06 15:04:51] INFO root fetch - processPackages [drf-pipeline-views]: Downloading https://files.pythonhosted.org/packages/e1/7d/f90fd5df9c12578316be157c37ff03b753101766d76a6e695a1e95cc2ba5/drf_pipeline_views-0.9.0.tar.gz
+[2023-05-06 15:04:51] INFO root fetch - processPackages [pyPhasesML]: executing diffoscope
+[2023-05-06 15:04:51] INFO root fetch - processPackages [pyPhasesML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPhasesML-0.5.1.tar.gz tmp/pyPhasesML-0.5.2.tar.gz --markdown 20230506/p/pyPhasesML/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-06 15:04:51] INFO root fetch - processPackages [pyPhasesRecordloader]: Downloading https://files.pythonhosted.org/packages/93/01/f4e42510df41bcbc07c2bb60141cd9e7630902feb442254c3fdedca4674a/pyPhasesRecordloader-0.3.9.tar.gz
+[2023-05-06 15:04:51] INFO root fetch - processPackages [colliderscope]: Downloading https://files.pythonhosted.org/packages/46/1f/04b23db1c1cb4228d5d991b7d9054ec54eaeda53c68ec24d4633f7461e04/colliderscope-0.2.3.tar.gz
+[2023-05-06 15:04:51] INFO root fetch - processPackages [drf-pipeline-views]: executing diffoscope
+[2023-05-06 15:04:51] INFO root fetch - processPackages [drf-pipeline-views]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_pipeline_views-0.8.5.tar.gz tmp/drf_pipeline_views-0.9.0.tar.gz --markdown 20230506/d/drf-pipeline-views/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 15:04:51] INFO root fetch - processPackages [pyPhasesRecordloader]: executing diffoscope
+[2023-05-06 15:04:51] INFO root fetch - processPackages [pyPhasesRecordloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPhasesRecordloader-0.3.8.tar.gz tmp/pyPhasesRecordloader-0.3.9.tar.gz --markdown 20230506/p/pyPhasesRecordloader/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-06 15:04:51] INFO root fetch - processPackages [colliderscope]: executing diffoscope
+[2023-05-06 15:04:51] INFO root fetch - processPackages [colliderscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colliderscope-0.2.2.tar.gz tmp/colliderscope-0.2.3.tar.gz --markdown 20230506/c/colliderscope/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-06 15:04:51] INFO root fetch - processPackages [django-two-factor-auth]: Downloading https://files.pythonhosted.org/packages/a0/d2/230c82136aea3a46fd05ec4e7f34b8ba0f55b4692c83506d6aa6cc867589/django-two-factor-auth-1.9.1.tar.gz
+[2023-05-06 15:04:51] INFO root fetch - processPackages [django-two-factor-auth]: executing diffoscope
+[2023-05-06 15:04:51] INFO root fetch - processPackages [django-two-factor-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-two-factor-auth-1.8.0.tar.gz tmp/django-two-factor-auth-1.9.1.tar.gz --markdown 20230506/d/django-two-factor-auth/1.8.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-06 15:04:52] INFO root fetch - main [MainThread]: End processing [nlpashto]: success
+[2023-05-06 15:04:52] INFO root fetch - main [MainThread]: End processing [pyPhasesML]: success
+[2023-05-06 15:04:52] INFO root fetch - main [MainThread]: End processing [colliderscope]: success
+[2023-05-06 15:04:52] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-05-06 15:04:52] INFO root fetch - main [MainThread]: End processing [drf-pipeline-views]: success
+[2023-05-06 15:04:52] INFO root fetch - main [MainThread]: End processing [pyPhasesRecordloader]: success
+[2023-05-06 15:04:53] INFO root fetch - main [MainThread]: End processing [django-two-factor-auth]: success
+[2023-05-06 15:04:53] INFO root fetch - main [MainThread]: Store serial: [17999760]
