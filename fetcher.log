@@ -9994,3 +9994,33 @@ EOFError: EOF read where object expected
 [2023-05-06 13:40:23] INFO root fetch - main [MainThread]: End processing [aioworkers-sentry]: success
 [2023-05-06 13:40:23] INFO root fetch - main [MainThread]: End processing [frontengine-dev]: success
 [2023-05-06 13:40:23] INFO root fetch - main [MainThread]: Store serial: [17999344]
+[2023-05-06 13:45:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999344]
+[2023-05-06 13:45:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 13:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anyon
+[2023-05-06 13:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nats-nsc
+[2023-05-06 13:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyxllib
+[2023-05-06 13:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaaql-monitor
+[2023-05-06 13:45:32] INFO root fetch - processPackages [nats-nsc]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-06 13:45:32] INFO root fetch - processPackages [anyon]: New version: [3.1.28] Old Version: [3.1.27]
+[2023-05-06 13:45:32] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.46] Old Version: [1.2.45]
+[2023-05-06 13:45:32] INFO root fetch - processPackages [pyxllib]: New version: [0.3.9] Old Version: [0.3.8.1]
+[2023-05-06 13:45:33] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/8e/85/0832b475153a534e3ad835197ac578352dad6f08abf85de6bdebd3a65b43/anyon-3.1.27-cp311-cp311-win_amd64.whl
+[2023-05-06 13:45:33] INFO root fetch - processPackages [pyxllib]: Downloading https://files.pythonhosted.org/packages/92/b3/63c0f112ecbc647b12359588e1a5e43868ba4542e1fdb6d0f037c3b00b1f/pyxllib-0.3.8.1.tar.gz
+[2023-05-06 13:45:33] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/d9/68/d1c60b16aff29ddbdbfb2b4bc2b3b82a5c351805d3ddf3c6a3d7921aba25/jaaql-monitor-1.2.45.tar.gz
+[2023-05-06 13:45:33] INFO root fetch - processPackages [nats-nsc]: Downloading https://files.pythonhosted.org/packages/0d/34/8d4ab3011a199875bf4fcedc7cfa058b1a691a2abb739ab68dc12e429d46/nats_nsc-0.2.0.tar.gz
+[2023-05-06 13:45:33] INFO root fetch - processPackages [nats-nsc]: executing diffoscope
+[2023-05-06 13:45:33] INFO root fetch - processPackages [nats-nsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nats_nsc-0.1.1.tar.gz tmp/nats_nsc-0.2.0.tar.gz --markdown 20230506/n/nats-nsc/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 13:45:33] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/46/8c/015cc1dab8e35c847100fc7e972bae2e76144d36caf735f33868741b37bc/jaaql-monitor-1.2.46.tar.gz
+[2023-05-06 13:45:33] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/e5/92/2a9150a9853476184ec58c6fd5323e6bc23590f7f72b2b04e63d2278e567/anyon-3.1.28-cp311-cp311-win_amd64.whl
+[2023-05-06 13:45:33] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:45:33] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.45.tar.gz tmp/jaaql-monitor-1.2.46.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.45-1.2.46/diff.md --exclude *.pyd
+[2023-05-06 13:45:33] INFO root fetch - processPackages [anyon]: executing diffoscope
+[2023-05-06 13:45:33] INFO root fetch - processPackages [anyon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyon-3.1.27-cp311-cp311-win_amd64.whl.zip tmp/anyon-3.1.28-cp311-cp311-win_amd64.whl.zip --markdown 20230506/a/anyon/3.1.27-3.1.28/diff.md --exclude *.pyd
+[2023-05-06 13:45:34] INFO root fetch - processPackages [pyxllib]: Downloading https://files.pythonhosted.org/packages/13/39/f5a231f530fcc02e172ed8ed86feec98a3adf3989fabedaeb988e624cefa/pyxllib-0.3.9.tar.gz
+[2023-05-06 13:45:34] INFO root fetch - processPackages [pyxllib]: executing diffoscope
+[2023-05-06 13:45:34] INFO root fetch - processPackages [pyxllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxllib-0.3.8.1.tar.gz tmp/pyxllib-0.3.9.tar.gz --markdown 20230506/p/pyxllib/0.3.8.1-0.3.9/diff.md --exclude *.pyd
+[2023-05-06 13:45:34] INFO root fetch - main [MainThread]: End processing [anyon]: success
+[2023-05-06 13:45:34] INFO root fetch - main [MainThread]: End processing [nats-nsc]: success
+[2023-05-06 13:45:34] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:45:37] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
+[2023-05-06 13:45:37] INFO root fetch - main [MainThread]: Store serial: [17999361]
