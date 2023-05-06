@@ -14698,3 +14698,43 @@ EOFError: EOF read where object expected
 [2023-05-06 23:16:38] INFO root fetch - main [MainThread]: End processing [tensordict]: success
 [2023-05-06 23:16:39] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
 [2023-05-06 23:16:39] INFO root fetch - main [MainThread]: Store serial: [18002271]
+[2023-05-06 23:21:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002271]
+[2023-05-06 23:21:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 23:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: setup-py-upgrade
+[2023-05-06 23:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rulelearn
+[2023-05-06 23:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hilly
+[2023-05-06 23:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: currency-codes
+[2023-05-06 23:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-modelrouter
+[2023-05-06 23:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prompt-man
+[2023-05-06 23:21:48] INFO root fetch - processPackages [fastapi-modelrouter]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 23:21:48] INFO root fetch - processPackages [prompt-man]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 23:21:48] INFO root fetch - processPackages [setup-py-upgrade]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-05-06 23:21:48] INFO root fetch - processPackages [rulelearn]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-05-06 23:21:48] INFO root fetch - processPackages [hilly]: New version: [0.1.2a0] Old Version: [0.1.1]
+[2023-05-06 23:21:48] INFO root fetch - processPackages [currency-codes]: New version: [23.5.6] Old Version: [23.4.23]
+[2023-05-06 23:21:48] INFO root fetch - processPackages [prompt-man]: executing diffoscope
+[2023-05-06 23:21:48] INFO root fetch - processPackages [prompt-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompt_man-0.1.0.tar.gz tmp/prompt_man-0.1.1.tar.gz --markdown 20230506/p/prompt-man/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 23:21:48] INFO root fetch - processPackages [setup-py-upgrade]: Downloading https://files.pythonhosted.org/packages/9d/6c/d14b317dd7ea1dd606e7a417c09a8245584034ae14671828dc3d85f77dcd/setup_py_upgrade-1.2.1.tar.gz
+[2023-05-06 23:21:48] INFO root fetch - processPackages [currency-codes]: Downloading https://files.pythonhosted.org/packages/a5/40/8f160f998cc7df7390027bb63cb4b4dc847778c2815afe206d94c9c7a63e/currency_codes-23.4.23.tar.gz
+[2023-05-06 23:21:48] INFO root fetch - processPackages [hilly]: Downloading https://files.pythonhosted.org/packages/b9/18/bd3186abad46f6bdfa0c9d5d33b211ceaa61a811ab6dfca1b1264466e030/hilly-0.1.2a0.tar.gz
+[2023-05-06 23:21:48] INFO root fetch - processPackages [hilly]: executing diffoscope
+[2023-05-06 23:21:48] INFO root fetch - processPackages [hilly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hilly-0.1.1.tar.gz tmp/hilly-0.1.2a0.tar.gz --markdown 20230506/h/hilly/0.1.1-0.1.2a0/diff.md --exclude *.pyd
+[2023-05-06 23:21:48] INFO root fetch - processPackages [fastapi-modelrouter]: Downloading https://files.pythonhosted.org/packages/00/2e/4a5539ae75e3ad90f000d9dc26ba345f27b779c7fb1477b4f60db153158d/fastapi-modelrouter-0.1.1.tar.gz
+[2023-05-06 23:21:48] INFO root fetch - processPackages [rulelearn]: Downloading https://files.pythonhosted.org/packages/0b/d5/ef9aaa7270b93517ab9e64f7e5be7ffb7eb7bbafd16a8bef2e96d7c45c57/rulelearn-0.1.2.tar.gz
+[2023-05-06 23:21:48] INFO root fetch - processPackages [setup-py-upgrade]: Downloading https://files.pythonhosted.org/packages/37/60/5790110b755532a10d278ce905a39410577cd126f6598db57344e093d5de/setup_py_upgrade-1.3.0.tar.gz
+[2023-05-06 23:21:48] INFO root fetch - processPackages [fastapi-modelrouter]: executing diffoscope
+[2023-05-06 23:21:48] INFO root fetch - processPackages [fastapi-modelrouter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-modelrouter-0.1.0.tar.gz tmp/fastapi-modelrouter-0.1.1.tar.gz --markdown 20230506/f/fastapi-modelrouter/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 23:21:49] INFO root fetch - processPackages [rulelearn]: executing diffoscope
+[2023-05-06 23:21:49] INFO root fetch - processPackages [rulelearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rulelearn-0.1.0.tar.gz tmp/rulelearn-0.1.2.tar.gz --markdown 20230506/r/rulelearn/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 23:21:49] INFO root fetch - processPackages [setup-py-upgrade]: executing diffoscope
+[2023-05-06 23:21:49] INFO root fetch - processPackages [setup-py-upgrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setup_py_upgrade-1.2.1.tar.gz tmp/setup_py_upgrade-1.3.0.tar.gz --markdown 20230506/s/setup-py-upgrade/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-05-06 23:21:49] INFO root fetch - processPackages [currency-codes]: Downloading https://files.pythonhosted.org/packages/65/91/1cd9c7a8e123e109db6527c19597cb8e0c416966cfd22d370a7e79033452/currency_codes-23.5.6.tar.gz
+[2023-05-06 23:21:49] INFO root fetch - processPackages [currency-codes]: executing diffoscope
+[2023-05-06 23:21:49] INFO root fetch - processPackages [currency-codes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/currency_codes-23.4.23.tar.gz tmp/currency_codes-23.5.6.tar.gz --markdown 20230506/c/currency-codes/23.4.23-23.5.6/diff.md --exclude *.pyd
+[2023-05-06 23:21:49] INFO root fetch - main [MainThread]: End processing [prompt-man]: success
+[2023-05-06 23:21:49] INFO root fetch - main [MainThread]: End processing [hilly]: success
+[2023-05-06 23:21:50] INFO root fetch - main [MainThread]: End processing [fastapi-modelrouter]: success
+[2023-05-06 23:21:50] INFO root fetch - main [MainThread]: End processing [setup-py-upgrade]: success
+[2023-05-06 23:21:50] INFO root fetch - main [MainThread]: End processing [currency-codes]: success
+[2023-05-06 23:21:50] INFO root fetch - main [MainThread]: End processing [rulelearn]: success
+[2023-05-06 23:21:50] INFO root fetch - main [MainThread]: Store serial: [18002287]
