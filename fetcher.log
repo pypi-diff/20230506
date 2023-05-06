@@ -9831,3 +9831,72 @@ EOFError: EOF read where object expected
 [2023-05-06 13:29:51] INFO root fetch - main [MainThread]: End processing [iams]: success
 [2023-05-06 13:29:53] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2023-05-06 13:29:53] INFO root fetch - main [MainThread]: Store serial: [17999253]
+[2023-05-06 13:34:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999253]
+[2023-05-06 13:35:08] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-06 13:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bananaproto
+[2023-05-06 13:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xdrlib3
+[2023-05-06 13:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agent-link
+[2023-05-06 13:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaaql-monitor
+[2023-05-06 13:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nlptoolssna
+[2023-05-06 13:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchserve-nightly
+[2023-05-06 13:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torch-model-archiver-nightly
+[2023-05-06 13:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torch-workflow-archiver-nightly
+[2023-05-06 13:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jaaql-monitor
+[2023-05-06 13:35:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dokuwikidumper
+[2023-05-06 13:35:08] INFO root fetch - processPackages [xdrlib3]: New version: [0.1.0.dev1] Old Version: [0.1.0.dev0]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [agent-link]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.43] Old Version: [1.2.42]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.5.5] Old Version: [2023.5.4]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [bananaproto]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [nlptoolssna]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.43] Old Version: [1.2.42]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.5.5] Old Version: [2023.5.4]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.5.5] Old Version: [2023.5.4]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [xdrlib3]: executing diffoscope
+[2023-05-06 13:35:08] INFO root fetch - processPackages [xdrlib3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdrlib3-0.1.0.dev0.tar.gz tmp/xdrlib3-0.1.0.dev1.tar.gz --markdown 20230506/x/xdrlib3/0.1.0.dev0-0.1.0.dev1/diff.md --exclude *.pyd
+[2023-05-06 13:35:08] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-06 13:35:08] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230506/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 13:35:08] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/36/2a/729acff3d43ebeababdf4a3e02d304b105b565e4bd01f95ac9f9c2a59d15/jaaql-monitor-1.2.42.tar.gz
+[2023-05-06 13:35:08] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/36/2a/729acff3d43ebeababdf4a3e02d304b105b565e4bd01f95ac9f9c2a59d15/jaaql-monitor-1.2.42.tar.gz
+[2023-05-06 13:35:08] INFO root fetch - processPackages [agent-link]: Downloading https://files.pythonhosted.org/packages/4a/7c/6ee8b0b00df7fac0c0ad571c79362ea250eaeac9da904de781fab8d74b0a/agent_link-0.1.9.tar.gz
+[2023-05-06 13:35:08] INFO root fetch - processPackages [bananaproto]: Downloading https://files.pythonhosted.org/packages/f4/f2/d5089f0be5e8487bfc13c12d9b741c99139d92acfda4c2fd83e27cae110b/bananaproto-1.1.2.tar.gz
+[2023-05-06 13:35:08] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/ee/6d/fb155dec57270a2fde84553212215dc7d014259560689e1e8a0e2d889e69/nlptoolssna-0.8.4.tar.gz
+[2023-05-06 13:35:08] WARNING root fetch - processPackages [agent-link]: Skipping package: exceeds size limit 23806150>=10485760
+[2023-05-06 13:35:08] INFO root fetch - processPackages [agent-link]: Start processing: pyre-check-nightly
+[2023-05-06 13:35:08] INFO root fetch - main [MainThread]: End processing [agent-link] error
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/31/45/b416e1813ffbc2d76779fd48272718165d7732c492cc883532ff4a4e001d/torchserve_nightly-2023.5.4-py3-none-any.whl
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/2a/c4/cd6e39ba13d7e4fdac4b07efb55be3ad3c40ec2c966c5a15906289e87b99/torch_model_archiver_nightly-2023.5.5-py3-none-any.whl
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/fd/d7/7a8909e0ff4bc03abe116a8bef9aa5cb35dcdba4012c6086c8d23b94049e/torch_workflow_archiver_nightly-2023.5.5-py3-none-any.whl
+[2023-05-06 13:35:08] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23716830>=10485760
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torchserve-nightly]: Start processing: kaparoo-python-package
+[2023-05-06 13:35:08] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-05-06 13:35:08] INFO root fetch - processPackages [bananaproto]: executing diffoscope
+[2023-05-06 13:35:08] INFO root fetch - processPackages [bananaproto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bananaproto-1.1.1.tar.gz tmp/bananaproto-1.1.2.tar.gz --markdown 20230506/b/bananaproto/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-06 13:35:08] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 13:35:08] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.8.3.tar.gz tmp/nlptoolssna-0.8.4.tar.gz --markdown 20230506/n/nlptoolssna/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.5.4-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.5.5-py3-none-any.whl.zip --markdown 20230506/t/torch-model-archiver-nightly/2023.5.4-2023.5.5/diff.md --exclude *.pyd
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-05-06 13:35:08] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.5.4-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.5.5-py3-none-any.whl.zip --markdown 20230506/t/torch-workflow-archiver-nightly/2023.5.4-2023.5.5/diff.md --exclude *.pyd
+[2023-05-06 13:35:08] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/f6/f8/6688134294beef763c81adea25229eaf03a5a34bf14d90952f46bfad7c40/jaaql-monitor-1.2.43.tar.gz
+[2023-05-06 13:35:08] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/f6/f8/6688134294beef763c81adea25229eaf03a5a34bf14d90952f46bfad7c40/jaaql-monitor-1.2.43.tar.gz
+[2023-05-06 13:35:08] WARNING root fetch - processPackages [kaparoo-python-package]: Skipping, unable to determine old version
+[2023-05-06 13:35:08] INFO root fetch - main [MainThread]: End processing [kaparoo-python-package] error
+[2023-05-06 13:35:08] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101683371288] Old Version: [0.0.101683285229]
+[2023-05-06 13:35:08] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:35:08] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.42.tar.gz tmp/jaaql-monitor-1.2.43.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.42-1.2.43/diff.md --exclude *.pyd
+[2023-05-06 13:35:08] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:35:08] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.42.tar.gz tmp/jaaql-monitor-1.2.43.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.42-1.2.43/diff.md --exclude *.pyd
+[2023-05-06 13:35:08] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/c7/0a/0297254165829e8c06215b888a4cb67d243bde0e261ae88333dc4de9675f/pyre-check-nightly-0.0.101683285229.tar.gz
+[2023-05-06 13:35:08] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23275527>=10485760
+[2023-05-06 13:35:08] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-05-06 13:35:09] INFO root fetch - main [MainThread]: End processing [xdrlib3]: success
+[2023-05-06 13:35:09] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-05-06 13:35:09] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-05-06 13:35:10] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 13:35:10] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:35:10] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-06 13:35:10] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:35:11] INFO root fetch - main [MainThread]: End processing [bananaproto]: success
+[2023-05-06 13:35:11] INFO root fetch - main [MainThread]: Store serial: [17999294]
