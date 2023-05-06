@@ -10482,3 +10482,18 @@ EOFError: EOF read where object expected
 [2023-05-06 14:37:58] INFO root fetch - main [MainThread]: End processing [enhancedocs]: success
 [2023-05-06 14:37:58] INFO root fetch - main [MainThread]: End processing [syops]: success
 [2023-05-06 14:37:58] INFO root fetch - main [MainThread]: Store serial: [17999662]
+[2023-05-06 14:43:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999662]
+[2023-05-06 14:43:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-06 14:43:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorcircuit-nightly
+[2023-05-06 14:43:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lms-synergy-library
+[2023-05-06 14:43:09] INFO root fetch - processPackages [lms-synergy-library]: New version: [0.2.1] Old Version: [0.1.2]
+[2023-05-06 14:43:09] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.0.dev20230505] Old Version: [0.8.0.dev20230504]
+[2023-05-06 14:43:09] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/fb/2b/4e42945b18e76a7c3941829b93145a00a0c0bdab15abfcf2af586ba76048/tensorcircuit-nightly-0.9.0.dev20230505.tar.gz
+[2023-05-06 14:43:10] INFO root fetch - processPackages [lms-synergy-library]: Downloading https://files.pythonhosted.org/packages/20/86/7b95bd2ba392aeec0b40733a65c0cd401d1ab09cd7859d8ab4fb674e5177/lms_synergy_library-0.2.1.tar.gz
+[2023-05-06 14:43:10] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-05-06 14:43:10] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.8.0.dev20230504.tar.gz tmp/tensorcircuit-nightly-0.9.0.dev20230505.tar.gz --markdown 20230506/t/tensorcircuit-nightly/0.8.0.dev20230504-0.9.0.dev20230505/diff.md --exclude *.pyd
+[2023-05-06 14:43:10] INFO root fetch - processPackages [lms-synergy-library]: executing diffoscope
+[2023-05-06 14:43:10] INFO root fetch - processPackages [lms-synergy-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lms_synergy_library-0.1.2.tar.gz tmp/lms_synergy_library-0.2.1.tar.gz --markdown 20230506/l/lms-synergy-library/0.1.2-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 14:43:11] INFO root fetch - main [MainThread]: End processing [lms-synergy-library]: success
+[2023-05-06 14:43:11] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-05-06 14:43:11] INFO root fetch - main [MainThread]: Store serial: [17999672]
