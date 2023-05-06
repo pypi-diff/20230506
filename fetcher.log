@@ -9337,3 +9337,68 @@ EOFError: EOF read where object expected
 [2023-05-06 12:43:01] INFO root fetch - main [MainThread]: End processing [django-scaffold-tools]: success
 [2023-05-06 12:43:01] INFO root fetch - main [MainThread]: End processing [zetsubou]: success
 [2023-05-06 12:43:01] INFO root fetch - main [MainThread]: Store serial: [17998953]
+[2023-05-06 12:48:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998953]
+[2023-05-06 12:48:09] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-06 12:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aslookup
+[2023-05-06 12:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agent-link
+[2023-05-06 12:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frontengine
+[2023-05-06 12:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yyperf
+[2023-05-06 12:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: frontengine-dev
+[2023-05-06 12:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: agent-link
+[2023-05-06 12:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apasswordmanager
+[2023-05-06 12:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: putkoff-mod
+[2023-05-06 12:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: stackUI
+[2023-05-06 12:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: masonite-ready-auth
+[2023-05-06 12:48:09] INFO root fetch - processPackages [aslookup]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-05-06 12:48:09] INFO root fetch - processPackages [agent-link]: New version: [0.1.9] Old Version: [0.1.2]
+[2023-05-06 12:48:09] INFO root fetch - processPackages [agent-link]: New version: [0.1.9] Old Version: [0.1.2]
+[2023-05-06 12:48:09] WARNING root fetch - processPackages [stackUI]: Skipping, unable to determine old version
+[2023-05-06 12:48:09] INFO root fetch - processPackages [stackUI]: Start processing: hrin-msb
+[2023-05-06 12:48:09] INFO root fetch - processPackages [frontengine-dev]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 12:48:09] INFO root fetch - main [MainThread]: End processing [stackUI] error
+[2023-05-06 12:48:09] INFO root fetch - processPackages [frontengine]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 12:48:09] WARNING root fetch - processPackages [apasswordmanager]: Skipping, unable to determine old version
+[2023-05-06 12:48:09] INFO root fetch - processPackages [apasswordmanager]: Start processing: semisup-segmentation
+[2023-05-06 12:48:09] INFO root fetch - main [MainThread]: End processing [apasswordmanager] error
+[2023-05-06 12:48:09] WARNING root fetch - processPackages [putkoff-mod]: Skipping, unable to determine old version
+[2023-05-06 12:48:09] INFO root fetch - processPackages [masonite-ready-auth]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-06 12:48:09] INFO root fetch - main [MainThread]: End processing [putkoff-mod] error
+[2023-05-06 12:48:09] INFO root fetch - processPackages [yyperf]: New version: [0.6.9.dev2] Old Version: [0.6.9]
+[2023-05-06 12:48:09] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 12:48:09] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 12:48:10] INFO root fetch - processPackages [agent-link]: Downloading https://files.pythonhosted.org/packages/ed/5c/57931bbb971a921efd05480fefcb72397a18b345031387764c69c27b90fc/agent_link-0.1.2.tar.gz
+[2023-05-06 12:48:10] INFO root fetch - processPackages [agent-link]: Downloading https://files.pythonhosted.org/packages/ed/5c/57931bbb971a921efd05480fefcb72397a18b345031387764c69c27b90fc/agent_link-0.1.2.tar.gz
+[2023-05-06 12:48:10] WARNING root fetch - processPackages [agent-link]: Skipping package: exceeds size limit 15899943>=10485760
+[2023-05-06 12:48:10] WARNING root fetch - processPackages [agent-link]: Skipping package: exceeds size limit 15899943>=10485760
+[2023-05-06 12:48:10] INFO root fetch - main [MainThread]: End processing [agent-link] error
+[2023-05-06 12:48:10] INFO root fetch - main [MainThread]: End processing [agent-link] error
+[2023-05-06 12:48:10] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 12:48:10] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 12:48:10] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-06 12:48:10] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230506/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 12:48:10] INFO root fetch - processPackages [frontengine]: Downloading https://files.pythonhosted.org/packages/a8/4e/1d8bb1c22f491199ad3d20d37e819308ad5a0b98f1e7b1795379b4f6c442/frontengine-0.0.1.tar.gz
+[2023-05-06 12:48:10] INFO root fetch - processPackages [aslookup]: Downloading https://files.pythonhosted.org/packages/80/d5/34db45abe47c6801ba0f5a86de2f3cde4b03742600f5e91e2b62746f29c5/aslookup-1.4.0.tar.gz
+[2023-05-06 12:48:10] INFO root fetch - processPackages [masonite-ready-auth]: Downloading https://files.pythonhosted.org/packages/43/a4/e4b27ddb12df6135ff78831ffb4170716f696d17d0fd62c230ea836b1fab/masonite-ready_auth-0.0.6.tar.gz
+[2023-05-06 12:48:10] INFO root fetch - processPackages [frontengine-dev]: Downloading https://files.pythonhosted.org/packages/8f/dd/0dd32118a0a698a2c45bc03b4457c09257af87804db097eea029c98fcfc0/frontengine_dev-0.0.1.tar.gz
+[2023-05-06 12:48:10] INFO root fetch - processPackages [yyperf]: Downloading https://files.pythonhosted.org/packages/01/56/8d1cfb1ce995c585d9c70c5a9b7760fbdefdbec743e277a0d10d1c706e26/yyperf-0.6.9.tar.gz
+[2023-05-06 12:48:10] WARNING root fetch - processPackages [yyperf]: Skipping package: exceeds size limit 15809435>=10485760
+[2023-05-06 12:48:10] INFO root fetch - main [MainThread]: End processing [yyperf] error
+[2023-05-06 12:48:10] INFO root fetch - processPackages [frontengine]: Downloading https://files.pythonhosted.org/packages/ca/3a/69caa37bb2e45b67494e1c4761b45ff2e4723cee7438ba7f3574a003ba86/frontengine-0.0.2.tar.gz
+[2023-05-06 12:48:10] INFO root fetch - processPackages [aslookup]: Downloading https://files.pythonhosted.org/packages/38/4a/ee0f51cba060a40307cf31ae44fae42312354c4bfab9c0a09e5367b9415e/aslookup-1.5.0.tar.gz
+[2023-05-06 12:48:10] INFO root fetch - processPackages [frontengine-dev]: Downloading https://files.pythonhosted.org/packages/48/b3/29b9767244150964788e25ef2a7724a5e392972a06bd685907f8d04e76e5/frontengine_dev-0.0.2.tar.gz
+[2023-05-06 12:48:10] INFO root fetch - processPackages [masonite-ready-auth]: Downloading https://files.pythonhosted.org/packages/de/d2/a6ef8aa85437ec42efe87e80f552c10a655aba52be7481286197cd687b9f/masonite-ready_auth-0.0.7.tar.gz
+[2023-05-06 12:48:10] INFO root fetch - processPackages [frontengine]: executing diffoscope
+[2023-05-06 12:48:10] INFO root fetch - processPackages [frontengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine-0.0.1.tar.gz tmp/frontengine-0.0.2.tar.gz --markdown 20230506/f/frontengine/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 12:48:10] INFO root fetch - processPackages [aslookup]: executing diffoscope
+[2023-05-06 12:48:10] INFO root fetch - processPackages [aslookup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aslookup-1.4.0.tar.gz tmp/aslookup-1.5.0.tar.gz --markdown 20230506/a/aslookup/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-05-06 12:48:10] INFO root fetch - processPackages [frontengine-dev]: executing diffoscope
+[2023-05-06 12:48:10] INFO root fetch - processPackages [frontengine-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine_dev-0.0.1.tar.gz tmp/frontengine_dev-0.0.2.tar.gz --markdown 20230506/f/frontengine-dev/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 12:48:10] INFO root fetch - processPackages [masonite-ready-auth]: executing diffoscope
+[2023-05-06 12:48:10] INFO root fetch - processPackages [masonite-ready-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masonite-ready_auth-0.0.6.tar.gz tmp/masonite-ready_auth-0.0.7.tar.gz --markdown 20230506/m/masonite-ready-auth/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-06 12:48:11] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 12:48:11] INFO root fetch - main [MainThread]: End processing [aslookup]: success
+[2023-05-06 12:48:11] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-06 12:48:11] INFO root fetch - main [MainThread]: End processing [masonite-ready-auth]: success
+[2023-05-06 12:48:11] INFO root fetch - main [MainThread]: End processing [frontengine]: success
+[2023-05-06 12:48:11] INFO root fetch - main [MainThread]: End processing [frontengine-dev]: success
+[2023-05-06 12:48:11] INFO root fetch - main [MainThread]: Store serial: [17998996]
