@@ -8400,3 +8400,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 11:12:44] INFO root fetch - main [MainThread]: End processing [featurebox]: success
 [2023-05-06 11:12:44] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-iotcc]: success
 [2023-05-06 11:12:44] INFO root fetch - main [MainThread]: Store serial: [17998450]
+[2023-05-06 11:17:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998450]
+[2023-05-06 11:17:53] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 11:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tbp-nightly
+[2023-05-06 11:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aliyun-python-sdk-iotcc
+[2023-05-06 11:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pawnlib
+[2023-05-06 11:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jupyter-references
+[2023-05-06 11:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: po987
+[2023-05-06 11:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: clubscore
+[2023-05-06 11:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: remote-cmder
+[2023-05-06 11:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-tag-fields
+[2023-05-06 11:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pygrey
+[2023-05-06 11:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: azdev
+[2023-05-06 11:17:53] INFO root fetch - processPackages [aliyun-python-sdk-iotcc]: New version: [2.0.7] Old Version: [2.0.6]
+[2023-05-06 11:17:53] INFO root fetch - processPackages [jupyter-references]: New version: [0.6] Old Version: [0.5]
+[2023-05-06 11:17:53] WARNING root fetch - processPackages [clubscore]: Skipping, unable to determine old version
+[2023-05-06 11:17:53] INFO root fetch - processPackages [clubscore]: Start processing: oakvar
+[2023-05-06 11:17:53] INFO root fetch - main [MainThread]: End processing [clubscore] error
+[2023-05-06 11:17:53] WARNING root fetch - processPackages [po987]: Skipping, unable to determine old version
+[2023-05-06 11:17:53] INFO root fetch - main [MainThread]: End processing [po987] error
+[2023-05-06 11:17:53] WARNING root fetch - processPackages [pygrey]: Skipping, unable to determine old version
+[2023-05-06 11:17:53] INFO root fetch - main [MainThread]: End processing [pygrey] error
+[2023-05-06 11:17:53] INFO root fetch - processPackages [pawnlib]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 11:17:53] INFO root fetch - processPackages [django-tag-fields]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-05-06 11:17:53] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-05-06 11:17:53] INFO root fetch - processPackages [remote-cmder]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-06 11:17:53] INFO root fetch - processPackages [azdev]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 11:17:53] INFO root fetch - processPackages [oakvar]: New version: [2.9.9] Old Version: [2.9.7]
+[2023-05-06 11:17:53] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-05-06 11:17:53] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230506/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-05-06 11:17:53] INFO root fetch - processPackages [aliyun-python-sdk-iotcc]: Downloading https://files.pythonhosted.org/packages/f8/a3/f4b4cb2eb423151888d5176f786d82e17bd72306d2435c21aff541b093c6/aliyun-python-sdk-iotcc-2.0.7.tar.gz
+[2023-05-06 11:17:53] INFO root fetch - processPackages [remote-cmder]: Downloading https://files.pythonhosted.org/packages/ea/f2/34ddfa871be260dde718b94b5c3d725029062b4a318fe4de939a560696b1/remote-cmder-0.0.6.tar.gz
+[2023-05-06 11:17:54] INFO root fetch - processPackages [jupyter-references]: Downloading https://files.pythonhosted.org/packages/2c/d3/f3681fc5fa505f6c0e7ab42a0e3bee1ab5d3caa93fcdde3cfc288dec3f45/jupyter-references-0.6.tar.gz
+[2023-05-06 11:17:54] INFO root fetch - processPackages [azdev]: Downloading https://files.pythonhosted.org/packages/26/b3/e90a3d82517d0e67d66c68d4948f50df5460083d749b90620911ec3dcb94/azdev-0.1.8.tar.gz
+[2023-05-06 11:17:54] INFO root fetch - processPackages [aliyun-python-sdk-iotcc]: executing diffoscope
+[2023-05-06 11:17:54] INFO root fetch - processPackages [aliyun-python-sdk-iotcc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-iotcc-2.0.6.tar.gz tmp/aliyun-python-sdk-iotcc-2.0.7.tar.gz --markdown 20230506/a/aliyun-python-sdk-iotcc/2.0.6-2.0.7/diff.md --exclude *.pyd
+[2023-05-06 11:17:54] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/e4/c2/69b7c1ff79a3dd17db69dff3b9c943f9532080cb799bb30dc4db234c5df9/oakvar-2.9.7.tar.gz
+[2023-05-06 11:17:54] INFO root fetch - processPackages [django-tag-fields]: Downloading https://files.pythonhosted.org/packages/63/e9/ff5681bc165c8871eb0d5533bd0d0cbd78d27f5dadc7694f0f14644341a0/django-tag-fields-4.0.2.tar.gz
+[2023-05-06 11:17:54] INFO root fetch - processPackages [pawnlib]: Downloading https://files.pythonhosted.org/packages/e5/1a/be9c0c6b988781b2019b731f112202f032371d0b5b489297fb2912c7d8ca/pawnlib-1.0.9-py3-none-any.whl
+[2023-05-06 11:17:54] INFO root fetch - processPackages [jupyter-references]: executing diffoscope
+[2023-05-06 11:17:54] INFO root fetch - processPackages [jupyter-references]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter-references-0.5.tar.gz tmp/jupyter-references-0.6.tar.gz --markdown 20230506/j/jupyter-references/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-06 11:17:54] INFO root fetch - processPackages [django-tag-fields]: executing diffoscope
+[2023-05-06 11:17:54] INFO root fetch - processPackages [django-tag-fields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-tag-fields-4.0.1.tar.gz tmp/django-tag-fields-4.0.2.tar.gz --markdown 20230506/d/django-tag-fields/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-05-06 11:17:54] INFO root fetch - processPackages [pawnlib]: executing diffoscope
+[2023-05-06 11:17:54] INFO root fetch - processPackages [pawnlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pawnlib-1.0.8-py3-none-any.whl.zip tmp/pawnlib-1.0.9-py3-none-any.whl.zip --markdown 20230506/p/pawnlib/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 11:17:54] INFO root fetch - processPackages [remote-cmder]: Downloading https://files.pythonhosted.org/packages/d0/eb/39fb4850be20495cedb87bba04068454e24732fbcdb3b67d472a4fb37ac1/remote-cmder-0.0.7.tar.gz
+[2023-05-06 11:17:54] INFO root fetch - processPackages [azdev]: Downloading https://files.pythonhosted.org/packages/a8/bf/9cd7c2c31e25d929e85358027632a0d46d8e5d7f85c855a131905cb53218/azdev-0.1.9.tar.gz
+[2023-05-06 11:17:54] INFO root fetch - processPackages [remote-cmder]: executing diffoscope
+[2023-05-06 11:17:54] INFO root fetch - processPackages [remote-cmder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remote-cmder-0.0.6.tar.gz tmp/remote-cmder-0.0.7.tar.gz --markdown 20230506/r/remote-cmder/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-06 11:17:54] INFO root fetch - processPackages [azdev]: executing diffoscope
+[2023-05-06 11:17:54] INFO root fetch - processPackages [azdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azdev-0.1.8.tar.gz tmp/azdev-0.1.9.tar.gz --markdown 20230506/a/azdev/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 11:17:55] INFO root fetch - main [MainThread]: End processing [jupyter-references]: success
+[2023-05-06 11:17:55] INFO root fetch - main [MainThread]: End processing [pawnlib]: success
+[2023-05-06 11:17:55] INFO root fetch - main [MainThread]: End processing [remote-cmder]: success
+[2023-05-06 11:17:55] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-iotcc]: success
+[2023-05-06 11:17:56] INFO root fetch - main [MainThread]: End processing [django-tag-fields]: success
+[2023-05-06 11:17:56] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/aa/b5/98830752d15a39d3fe7ee973d8ff37f1a3498ab33f56838ffd4d470de442/oakvar-2.9.9.tar.gz
+[2023-05-06 11:17:56] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-05-06 11:17:57] INFO root fetch - main [MainThread]: End processing [azdev]: success
+[2023-05-06 11:17:57] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-05-06 11:17:57] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.7.tar.gz tmp/oakvar-2.9.9.tar.gz --markdown 20230506/o/oakvar/2.9.7-2.9.9/diff.md --exclude *.pyd
+[2023-05-06 11:18:02] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-05-06 11:18:02] INFO root fetch - main [MainThread]: Store serial: [17998499]
