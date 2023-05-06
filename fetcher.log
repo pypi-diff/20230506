@@ -4276,3 +4276,55 @@
 [2023-05-06 03:56:31] INFO root fetch - main [MainThread]: End processing [mlgenotype]: success
 [2023-05-06 03:57:08] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2023-05-06 03:57:08] INFO root fetch - main [MainThread]: Store serial: [17995947]
+[2023-05-06 04:02:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17995947]
+[2023-05-06 04:02:17] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 04:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: midlife
+[2023-05-06 04:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapidocr-openvinogpu
+[2023-05-06 04:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iconoclast
+[2023-05-06 04:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moonsense
+[2023-05-06 04:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: editanything
+[2023-05-06 04:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: textual-pandas
+[2023-05-06 04:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: naturalminer
+[2023-05-06 04:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rapidocr-openvinogpu
+[2023-05-06 04:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: notion-api
+[2023-05-06 04:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: retroperm
+[2023-05-06 04:02:17] WARNING root fetch - processPackages [textual-pandas]: Skipping, unable to determine old version
+[2023-05-06 04:02:17] INFO root fetch - main [MainThread]: End processing [textual-pandas] error
+[2023-05-06 04:02:17] INFO root fetch - processPackages [midlife]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 04:02:17] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 04:02:17] INFO root fetch - processPackages [moonsense]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-06 04:02:17] INFO root fetch - processPackages [rapidocr-openvinogpu]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 04:02:17] WARNING root fetch - processPackages [iconoclast]: Skipping, unable to determine old version
+[2023-05-06 04:02:17] INFO root fetch - main [MainThread]: End processing [iconoclast] error
+[2023-05-06 04:02:17] WARNING root fetch - processPackages [naturalminer]: Skipping, unable to determine old version
+[2023-05-06 04:02:17] INFO root fetch - processPackages [rapidocr-openvinogpu]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 04:02:17] INFO root fetch - processPackages [notion-api]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-06 04:02:17] INFO root fetch - processPackages [retroperm]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 04:02:17] INFO root fetch - main [MainThread]: End processing [naturalminer] error
+[2023-05-06 04:02:17] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 04:02:17] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 04:02:17] INFO root fetch - processPackages [notion-api]: executing diffoscope
+[2023-05-06 04:02:17] INFO root fetch - processPackages [midlife]: Downloading https://files.pythonhosted.org/packages/80/93/18eee98fc006c3f55114655445d533d29de876d8725e56eaaa7f58a482a4/midlife-0.0.1.tar.gz
+[2023-05-06 04:02:17] INFO root fetch - processPackages [notion-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notion_api-0.5.0.tar.gz tmp/notion_api-0.5.1.tar.gz --markdown 20230506/n/notion-api/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-06 04:02:17] INFO root fetch - processPackages [rapidocr-openvinogpu]: Downloading https://files.pythonhosted.org/packages/60/ab/d04e2a4440f7147c32681f1d3561a10ebc5dc3e0173a13fe225e77abf8eb/rapidocr-openvinogpu-0.0.3.tar.gz
+[2023-05-06 04:02:17] INFO root fetch - processPackages [moonsense]: Downloading https://files.pythonhosted.org/packages/b1/87/a708164b1bed8180cc94d1075e31c21e2ff7e8acf7c36b0db8c3e287df79/moonsense-0.9.0.tar.gz
+[2023-05-06 04:02:17] INFO root fetch - processPackages [rapidocr-openvinogpu]: Downloading https://files.pythonhosted.org/packages/60/ab/d04e2a4440f7147c32681f1d3561a10ebc5dc3e0173a13fe225e77abf8eb/rapidocr-openvinogpu-0.0.3.tar.gz
+[2023-05-06 04:02:17] INFO root fetch - processPackages [retroperm]: Downloading https://files.pythonhosted.org/packages/0b/43/6d5f0e12ba4ea57243eb5ec0f7bf7516eab7709118ffe2778b2b0ff25ab3/retroperm-0.1.1.tar.gz
+[2023-05-06 04:02:17] WARNING root fetch - processPackages [rapidocr-openvinogpu]: Skipping package: exceeds size limit 50037185>=10485760
+[2023-05-06 04:02:17] INFO root fetch - main [MainThread]: End processing [rapidocr-openvinogpu] error
+[2023-05-06 04:02:17] WARNING root fetch - processPackages [rapidocr-openvinogpu]: Skipping package: exceeds size limit 50037185>=10485760
+[2023-05-06 04:02:17] INFO root fetch - main [MainThread]: End processing [rapidocr-openvinogpu] error
+[2023-05-06 04:02:17] INFO root fetch - processPackages [retroperm]: executing diffoscope
+[2023-05-06 04:02:17] INFO root fetch - processPackages [retroperm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retroperm-0.1.0.tar.gz tmp/retroperm-0.1.1.tar.gz --markdown 20230506/r/retroperm/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 04:02:17] INFO root fetch - processPackages [midlife]: Downloading https://files.pythonhosted.org/packages/11/33/dccda04a165ac0fe91e7dd76d4f8b6456bde27051c2661a2cea850a83b49/midlife-0.0.2.tar.gz
+[2023-05-06 04:02:17] INFO root fetch - processPackages [midlife]: executing diffoscope
+[2023-05-06 04:02:17] INFO root fetch - processPackages [midlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midlife-0.0.1.tar.gz tmp/midlife-0.0.2.tar.gz --markdown 20230506/m/midlife/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 04:02:17] INFO root fetch - processPackages [moonsense]: Downloading https://files.pythonhosted.org/packages/83/8e/5c6d6a193fe5aa9a3cb977a5c2559916bcbe3e60b94f6a9bf392b597ba5b/moonsense-0.9.1.tar.gz
+[2023-05-06 04:02:18] INFO root fetch - processPackages [moonsense]: executing diffoscope
+[2023-05-06 04:02:18] INFO root fetch - processPackages [moonsense]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moonsense-0.9.0.tar.gz tmp/moonsense-0.9.1.tar.gz --markdown 20230506/m/moonsense/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-06 04:02:18] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 04:02:18] INFO root fetch - main [MainThread]: End processing [notion-api]: success
+[2023-05-06 04:02:18] INFO root fetch - main [MainThread]: End processing [midlife]: success
+[2023-05-06 04:02:19] INFO root fetch - main [MainThread]: End processing [retroperm]: success
+[2023-05-06 04:02:19] INFO root fetch - main [MainThread]: End processing [moonsense]: success
+[2023-05-06 04:02:19] INFO root fetch - main [MainThread]: Store serial: [17995985]
