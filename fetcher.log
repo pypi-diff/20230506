@@ -4956,3 +4956,70 @@
 [2023-05-06 05:08:19] INFO root fetch - main [MainThread]: End processing [appmesh]: success
 [2023-05-06 05:08:19] INFO root fetch - main [MainThread]: End processing [halmos]: success
 [2023-05-06 05:08:19] INFO root fetch - main [MainThread]: Store serial: [17996383]
+[2023-05-06 05:13:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996383]
+[2023-05-06 05:13:28] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 05:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: teelebot
+[2023-05-06 05:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LogAssist
+[2023-05-06 05:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spacetool
+[2023-05-06 05:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: editanything
+[2023-05-06 05:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tfsim-nightly
+[2023-05-06 05:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lesscode-py
+[2023-05-06 05:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: superlive
+[2023-05-06 05:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: GANDLF
+[2023-05-06 05:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: editanything
+[2023-05-06 05:13:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdktf-cdktf-provider-acme
+[2023-05-06 05:13:28] INFO root fetch - processPackages [teelebot]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-06 05:13:28] INFO root fetch - processPackages [LogAssist]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-06 05:13:28] INFO root fetch - processPackages [spacetool]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-06 05:13:28] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 05:13:28] INFO root fetch - processPackages [superlive]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-06 05:13:28] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230506] Old Version: [0.0.16.dev20230505]
+[2023-05-06 05:13:28] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 05:13:28] INFO root fetch - processPackages [lesscode-py]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-06 05:13:28] INFO root fetch - processPackages [cdktf-cdktf-provider-acme]: New version: [6.0.1] Old Version: [6.0.0]
+[2023-05-06 05:13:29] INFO root fetch - processPackages [tfsim-nightly]: New version: [0.18.0.dev3] Old Version: [0.18.0.dev2]
+[2023-05-06 05:13:29] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 05:13:29] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 05:13:29] INFO root fetch - processPackages [superlive]: executing diffoscope
+[2023-05-06 05:13:29] INFO root fetch - processPackages [superlive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superlive-1.2.1.tar.gz tmp/superlive-1.2.2.tar.gz --markdown 20230506/s/superlive/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-06 05:13:29] INFO root fetch - processPackages [spacetool]: Downloading https://files.pythonhosted.org/packages/b4/b7/1b530c91993cbedb8b6971de4d6a29ebae2766900ec894e034b1c8a0cb31/spacetool-1.0.2.tar.gz
+[2023-05-06 05:13:29] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 05:13:29] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 05:13:29] INFO root fetch - processPackages [lesscode-py]: Downloading https://files.pythonhosted.org/packages/93/59/9c87e90597a4fc3c2567abe4a0ff19fd2b89df126eacc6b3d22b92ec47b4/lesscode-py-0.3.8.tar.gz
+[2023-05-06 05:13:29] INFO root fetch - processPackages [LogAssist]: Downloading https://files.pythonhosted.org/packages/c4/53/6b131051fd4a84794cd7fecdc06f593eb79e07a8b855a35cbd43db77777b/LogAssist-1.0.6.tar.gz
+[2023-05-06 05:13:29] INFO root fetch - processPackages [cdktf-cdktf-provider-acme]: Downloading https://files.pythonhosted.org/packages/bb/c8/f9caa7003f5acf714077e7178092b83ee2b80569290c1fdd01a1b5756689/cdktf-cdktf-provider-acme-6.0.0.tar.gz
+[2023-05-06 05:13:29] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/a8/df/3dc4bf04ea2bcf19763fe42ef2c7e8e2e01ec8be443bcb7141d6488347fb/GANDLF-0.0.16.dev20230506.tar.gz
+[2023-05-06 05:13:29] INFO root fetch - processPackages [teelebot]: Downloading https://files.pythonhosted.org/packages/77/ff/46efa965ce157e54b40b5ccf0b6c208f384b3f63ac9ba5764e4e97badad4/teelebot-2.0.2-py3-none-any.whl
+[2023-05-06 05:13:29] INFO root fetch - processPackages [LogAssist]: executing diffoscope
+[2023-05-06 05:13:29] INFO root fetch - processPackages [LogAssist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LogAssist-1.0.5.tar.gz tmp/LogAssist-1.0.6.tar.gz --markdown 20230506/L/LogAssist/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-06 05:13:29] INFO root fetch - processPackages [tfsim-nightly]: Downloading https://files.pythonhosted.org/packages/b0/ca/a4285d51d677211197ef9362964281a50209d4517670adc6ecc34d8cda09/tfsim-nightly-0.18.0.dev2.tar.gz
+[2023-05-06 05:13:29] INFO root fetch - processPackages [teelebot]: executing diffoscope
+[2023-05-06 05:13:29] INFO root fetch - processPackages [teelebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teelebot-2.0.1-py3-none-any.whl.zip tmp/teelebot-2.0.2-py3-none-any.whl.zip --markdown 20230506/t/teelebot/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-06 05:13:29] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-05-06 05:13:29] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230505.tar.gz tmp/GANDLF-0.0.16.dev20230506.tar.gz --markdown 20230506/G/GANDLF/0.0.16.dev20230505-0.0.16.dev20230506/diff.md --exclude *.pyd
+[2023-05-06 05:13:29] INFO root fetch - processPackages [spacetool]: Downloading https://files.pythonhosted.org/packages/a7/13/86d7f56e39b3993a74454a49d8d0694942be19de2eb9b3ec146ac5b4717a/spacetool-1.0.3.tar.gz
+[2023-05-06 05:13:29] INFO root fetch - processPackages [spacetool]: executing diffoscope
+[2023-05-06 05:13:29] INFO root fetch - processPackages [spacetool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacetool-1.0.2.tar.gz tmp/spacetool-1.0.3.tar.gz --markdown 20230506/s/spacetool/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-06 05:13:29] INFO root fetch - processPackages [lesscode-py]: Downloading https://files.pythonhosted.org/packages/64/97/cec698b665aba9a27d2cddb9f7528a8982bbaa3379372774ff671e45fb3e/lesscode-py-0.3.9.tar.gz
+[2023-05-06 05:13:29] INFO root fetch - processPackages [tfsim-nightly]: Downloading https://files.pythonhosted.org/packages/be/cf/dc0b8e3903643fda4462d5bda3128d61e9ebba05ad31e73a10c97b909957/tfsim-nightly-0.18.0.dev3.tar.gz
+[2023-05-06 05:13:29] INFO root fetch - processPackages [cdktf-cdktf-provider-acme]: Downloading https://files.pythonhosted.org/packages/7a/5f/8e824446a14e9ad814ca123c5bce82dce4f2cedefb2ea68360872203797d/cdktf-cdktf-provider-acme-6.0.1.tar.gz
+[2023-05-06 05:13:29] INFO root fetch - processPackages [tfsim-nightly]: executing diffoscope
+[2023-05-06 05:13:29] INFO root fetch - processPackages [tfsim-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfsim-nightly-0.18.0.dev2.tar.gz tmp/tfsim-nightly-0.18.0.dev3.tar.gz --markdown 20230506/t/tfsim-nightly/0.18.0.dev2-0.18.0.dev3/diff.md --exclude *.pyd
+[2023-05-06 05:13:29] INFO root fetch - processPackages [lesscode-py]: executing diffoscope
+[2023-05-06 05:13:29] INFO root fetch - processPackages [lesscode-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode-py-0.3.8.tar.gz tmp/lesscode-py-0.3.9.tar.gz --markdown 20230506/l/lesscode-py/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-06 05:13:29] INFO root fetch - processPackages [cdktf-cdktf-provider-acme]: executing diffoscope
+[2023-05-06 05:13:29] INFO root fetch - processPackages [cdktf-cdktf-provider-acme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-acme-6.0.0.tar.gz tmp/cdktf-cdktf-provider-acme-6.0.1.tar.gz --markdown 20230506/c/cdktf-cdktf-provider-acme/6.0.0-6.0.1/diff.md --exclude *.pyd
+[2023-05-06 05:13:30] INFO root fetch - processPackages [editanything]: Start processing: openapi-codegenerator
+[2023-05-06 05:13:30] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 05:13:30] WARNING root fetch - processPackages [openapi-codegenerator]: Skipping, unable to determine old version
+[2023-05-06 05:13:30] INFO root fetch - main [MainThread]: End processing [openapi-codegenerator] error
+[2023-05-06 05:13:30] INFO root fetch - main [MainThread]: End processing [superlive]: success
+[2023-05-06 05:13:30] INFO root fetch - main [MainThread]: End processing [LogAssist]: success
+[2023-05-06 05:13:30] INFO root fetch - main [MainThread]: End processing [teelebot]: success
+[2023-05-06 05:13:30] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 05:13:30] INFO root fetch - main [MainThread]: End processing [spacetool]: success
+[2023-05-06 05:13:31] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-acme]: success
+[2023-05-06 05:13:33] INFO root fetch - main [MainThread]: End processing [lesscode-py]: success
+[2023-05-06 05:13:33] INFO root fetch - main [MainThread]: End processing [tfsim-nightly]: success
+[2023-05-06 05:13:33] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-05-06 05:13:33] INFO root fetch - main [MainThread]: Store serial: [17996422]
