@@ -6940,3 +6940,53 @@
 [2023-05-06 09:04:51] INFO root fetch - main [MainThread]: End processing [odoo-addon-vault]: success
 [2023-05-06 09:04:52] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
 [2023-05-06 09:04:52] INFO root fetch - main [MainThread]: Store serial: [17997612]
+[2023-05-06 09:09:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997612]
+[2023-05-06 09:10:01] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 09:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trade-slang
+[2023-05-06 09:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-nightly
+[2023-05-06 09:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oakutils
+[2023-05-06 09:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-rancher2
+[2023-05-06 09:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: neuko-device-sdk
+[2023-05-06 09:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-wavefront
+[2023-05-06 09:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: picToPdf
+[2023-05-06 09:10:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ykenan-fragments
+[2023-05-06 09:10:01] INFO root fetch - processPackages [neuko-device-sdk]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-06 09:10:01] WARNING root fetch - processPackages [picToPdf]: Skipping, unable to determine old version
+[2023-05-06 09:10:01] INFO root fetch - main [MainThread]: End processing [picToPdf] error
+[2023-05-06 09:10:01] INFO root fetch - processPackages [trade-slang]: New version: [1.0.0] Old Version: [0.2.0]
+[2023-05-06 09:10:01] INFO root fetch - processPackages [oakutils]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 09:10:01] INFO root fetch - processPackages [pulumi-wavefront]: New version: [1.4.0a1683355805] Old Version: [1.4.0a1683269429]
+[2023-05-06 09:10:01] INFO root fetch - processPackages [pulumi-rancher2]: New version: [4.1.0a1683353358] Old Version: [4.1.0a1683267627]
+[2023-05-06 09:10:01] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-05-06 09:10:01] INFO root fetch - processPackages [ykenan-fragments]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-06 09:10:01] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-05-06 09:10:01] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230506/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-05-06 09:10:01] INFO root fetch - processPackages [neuko-device-sdk]: Downloading https://files.pythonhosted.org/packages/ca/63/1b915fedaafcbbe697af62123b6e7ee4efe3eea2ae046dcf262d6f95d6c9/neuko-device-sdk-1.1.0.tar.gz
+[2023-05-06 09:10:01] INFO root fetch - processPackages [oakutils]: Downloading https://files.pythonhosted.org/packages/e5/0a/0e57e315a0c49cf963c2c4da559cc4c6cf5358136b621e3b6b0f30f73ded/oakutils-0.0.1.tar.gz
+[2023-05-06 09:10:02] INFO root fetch - processPackages [ykenan-fragments]: Downloading https://files.pythonhosted.org/packages/4b/fd/2f1cc14e73a665ec861054f2797264972d46fd6917d94e9c37e8e04c8309/ykenan_fragments-1.0.1.tar.gz
+[2023-05-06 09:10:02] INFO root fetch - processPackages [trade-slang]: Downloading https://files.pythonhosted.org/packages/1c/1c/9c24804cd2defef15d3b3a58d46b6087c8e8a1316357373241b9462e8d8f/trade_slang-1.0.0.tar.gz
+[2023-05-06 09:10:02] INFO root fetch - processPackages [pulumi-wavefront]: Downloading https://files.pythonhosted.org/packages/68/f8/2f2656000fc0b536f84c755cba46c2231e6c8830c929f87fd12ebb881274/pulumi_wavefront-1.4.0a1683355805.tar.gz
+[2023-05-06 09:10:02] INFO root fetch - processPackages [trade-slang]: executing diffoscope
+[2023-05-06 09:10:02] INFO root fetch - processPackages [trade-slang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trade_slang-0.2.0.tar.gz tmp/trade_slang-1.0.0.tar.gz --markdown 20230506/t/trade-slang/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 09:10:02] INFO root fetch - processPackages [pulumi-rancher2]: Downloading https://files.pythonhosted.org/packages/79/c3/3b1406a1ca3f9dd6b1791ca0d4e23ac12faedbe17e9c3ef9785f4982ce74/pulumi_rancher2-4.1.0a1683353358.tar.gz
+[2023-05-06 09:10:02] INFO root fetch - processPackages [pulumi-wavefront]: executing diffoscope
+[2023-05-06 09:10:02] INFO root fetch - processPackages [pulumi-wavefront]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_wavefront-1.4.0a1683269429.tar.gz tmp/pulumi_wavefront-1.4.0a1683355805.tar.gz --markdown 20230506/p/pulumi-wavefront/1.4.0a1683269429-1.4.0a1683355805/diff.md --exclude *.pyd
+[2023-05-06 09:10:02] INFO root fetch - processPackages [oakutils]: Downloading https://files.pythonhosted.org/packages/a9/56/177c7b498ea80519e1b8cb71f2bf30e03578bdab2281502f24ee7406b3c4/oakutils-0.0.2.tar.gz
+[2023-05-06 09:10:02] INFO root fetch - processPackages [ykenan-fragments]: Downloading https://files.pythonhosted.org/packages/e3/e9/aeceff54c46564567f186587b7af6df9b7b532179f7000ec7b9b327670a3/ykenan_fragments-1.1.0.tar.gz
+[2023-05-06 09:10:02] INFO root fetch - processPackages [pulumi-rancher2]: executing diffoscope
+[2023-05-06 09:10:02] INFO root fetch - processPackages [pulumi-rancher2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rancher2-4.1.0a1683267627.tar.gz tmp/pulumi_rancher2-4.1.0a1683353358.tar.gz --markdown 20230506/p/pulumi-rancher2/4.1.0a1683267627-4.1.0a1683353358/diff.md --exclude *.pyd
+[2023-05-06 09:10:02] INFO root fetch - processPackages [oakutils]: executing diffoscope
+[2023-05-06 09:10:02] INFO root fetch - processPackages [oakutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakutils-0.0.1.tar.gz tmp/oakutils-0.0.2.tar.gz --markdown 20230506/o/oakutils/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 09:10:02] INFO root fetch - processPackages [neuko-device-sdk]: Downloading https://files.pythonhosted.org/packages/0e/af/53fbc241f84fa3c7c8f1448e35cceadc9e2e2b97eb5691b2e17d121c19c6/neuko-device-sdk-1.1.1.tar.gz
+[2023-05-06 09:10:02] INFO root fetch - processPackages [ykenan-fragments]: executing diffoscope
+[2023-05-06 09:10:02] INFO root fetch - processPackages [ykenan-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_fragments-1.0.1.tar.gz tmp/ykenan_fragments-1.1.0.tar.gz --markdown 20230506/y/ykenan-fragments/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-06 09:10:02] INFO root fetch - processPackages [neuko-device-sdk]: executing diffoscope
+[2023-05-06 09:10:02] INFO root fetch - processPackages [neuko-device-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuko-device-sdk-1.1.0.tar.gz tmp/neuko-device-sdk-1.1.1.tar.gz --markdown 20230506/n/neuko-device-sdk/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-06 09:10:03] INFO root fetch - main [MainThread]: End processing [trade-slang]: success
+[2023-05-06 09:10:03] INFO root fetch - main [MainThread]: End processing [oakutils]: success
+[2023-05-06 09:10:03] INFO root fetch - main [MainThread]: End processing [ykenan-fragments]: success
+[2023-05-06 09:10:03] INFO root fetch - main [MainThread]: End processing [neuko-device-sdk]: success
+[2023-05-06 09:10:03] INFO root fetch - main [MainThread]: End processing [pulumi-wavefront]: success
+[2023-05-06 09:10:04] INFO root fetch - main [MainThread]: End processing [pulumi-rancher2]: success
+[2023-05-06 09:10:12] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-05-06 09:10:12] INFO root fetch - main [MainThread]: Store serial: [17997647]
