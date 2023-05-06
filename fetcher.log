@@ -14110,3 +14110,33 @@ EOFError: EOF read where object expected
 [2023-05-06 22:08:27] INFO root fetch - main [MainThread]: End processing [yente]: success
 [2023-05-06 22:08:28] INFO root fetch - main [MainThread]: End processing [imaginAIry]: success
 [2023-05-06 22:08:28] INFO root fetch - main [MainThread]: Store serial: [18001900]
+[2023-05-06 22:13:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001900]
+[2023-05-06 22:13:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 22:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parsel-get-selector-text
+[2023-05-06 22:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dj-beatcloud
+[2023-05-06 22:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: badgescale-ys-plt
+[2023-05-06 22:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tickerdax
+[2023-05-06 22:13:37] INFO root fetch - processPackages [parsel-get-selector-text]: New version: [0.3] Old Version: [0.2]
+[2023-05-06 22:13:37] INFO root fetch - processPackages [badgescale-ys-plt]: New version: [4.0] Old Version: [1.0]
+[2023-05-06 22:13:37] INFO root fetch - processPackages [tickerdax]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 22:13:37] INFO root fetch - processPackages [dj-beatcloud]: New version: [2.5.1b1] Old Version: [2.5.1b0]
+[2023-05-06 22:13:37] INFO root fetch - processPackages [badgescale-ys-plt]: Downloading https://files.pythonhosted.org/packages/8c/66/1f22fe274cb37275995293d3aabef785c56b00edebdcb7628897ff18d5c0/badgescale_ys_plt-1.0.tar.gz
+[2023-05-06 22:13:37] INFO root fetch - processPackages [parsel-get-selector-text]: Downloading https://files.pythonhosted.org/packages/58/15/20f029889bb37d15755871214f3d42180e8ad6c2ed7bb7fb9ddc7b1c55a9/parsel_get_selector_text-0.2.tar.gz
+[2023-05-06 22:13:37] INFO root fetch - processPackages [tickerdax]: Downloading https://files.pythonhosted.org/packages/bf/a4/e93db1fd0e990844b7853507fdf1a37d5700e60e92b8272c402d4f1460df/tickerdax-0.0.8.tar.gz
+[2023-05-06 22:13:37] INFO root fetch - processPackages [dj-beatcloud]: Downloading https://files.pythonhosted.org/packages/32/37/f62dccd48a9650d8fd162d0365f54b2215b46ed5dda85e0367f27a0eb8b7/dj_beatcloud-2.5.1b1.tar.gz
+[2023-05-06 22:13:37] INFO root fetch - processPackages [dj-beatcloud]: executing diffoscope
+[2023-05-06 22:13:37] INFO root fetch - processPackages [dj-beatcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_beatcloud-2.5.1b0.tar.gz tmp/dj_beatcloud-2.5.1b1.tar.gz --markdown 20230506/d/dj-beatcloud/2.5.1b0-2.5.1b1/diff.md --exclude *.pyd
+[2023-05-06 22:13:37] INFO root fetch - processPackages [badgescale-ys-plt]: Downloading https://files.pythonhosted.org/packages/df/e3/128747cccf49d29e9b2d09619534fc96c1f65fc6058db12b1d41c06380a2/badgescale_ys_plt-4.0-py3-none-any.whl
+[2023-05-06 22:13:37] INFO root fetch - processPackages [parsel-get-selector-text]: Downloading https://files.pythonhosted.org/packages/a3/56/11baf3fadcf06b07600a79c85c3110d1ba01c52b1b61742c73f2b3d2fd30/parsel_get_selector_text-0.3.tar.gz
+[2023-05-06 22:13:37] INFO root fetch - processPackages [parsel-get-selector-text]: executing diffoscope
+[2023-05-06 22:13:37] INFO root fetch - processPackages [parsel-get-selector-text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsel_get_selector_text-0.2.tar.gz tmp/parsel_get_selector_text-0.3.tar.gz --markdown 20230506/p/parsel-get-selector-text/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-06 22:13:37] INFO root fetch - processPackages [badgescale-ys-plt]: executing diffoscope
+[2023-05-06 22:13:37] INFO root fetch - processPackages [badgescale-ys-plt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badgescale_ys_plt-1.0.tar.gz tmp/badgescale_ys_plt-4.0-py3-none-any.whl.zip --markdown 20230506/b/badgescale-ys-plt/1.0-4.0/diff.md --exclude *.pyd
+[2023-05-06 22:13:37] INFO root fetch - processPackages [tickerdax]: Downloading https://files.pythonhosted.org/packages/b6/3e/5a2e3bdd965ef662360d9b0773087a609383929a671f7a7e65bd9345df79/tickerdax-0.0.9.tar.gz
+[2023-05-06 22:13:37] INFO root fetch - processPackages [tickerdax]: executing diffoscope
+[2023-05-06 22:13:37] INFO root fetch - processPackages [tickerdax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tickerdax-0.0.8.tar.gz tmp/tickerdax-0.0.9.tar.gz --markdown 20230506/t/tickerdax/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 22:13:38] INFO root fetch - main [MainThread]: End processing [parsel-get-selector-text]: success
+[2023-05-06 22:13:38] INFO root fetch - main [MainThread]: End processing [badgescale-ys-plt]: success
+[2023-05-06 22:13:38] INFO root fetch - main [MainThread]: End processing [dj-beatcloud]: success
+[2023-05-06 22:13:38] INFO root fetch - main [MainThread]: End processing [tickerdax]: success
+[2023-05-06 22:13:38] INFO root fetch - main [MainThread]: Store serial: [18001915]
