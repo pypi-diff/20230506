@@ -7217,3 +7217,54 @@
 [2023-05-06 09:36:56] INFO root fetch - main [MainThread]: End processing [sinabs-dynapcnn]: success
 [2023-05-06 09:36:59] INFO root fetch - main [MainThread]: End processing [astk]: success
 [2023-05-06 09:36:59] INFO root fetch - main [MainThread]: Store serial: [17997814]
+[2023-05-06 09:42:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997814]
+[2023-05-06 09:42:08] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 09:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: obfuscater
+[2023-05-06 09:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uss
+[2023-05-06 09:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycufsm
+[2023-05-06 09:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zeroth-normalizer
+[2023-05-06 09:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crawler-commons
+[2023-05-06 09:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: inhandtest
+[2023-05-06 09:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aliyun-python-sdk-alinlp
+[2023-05-06 09:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zxy-Test
+[2023-05-06 09:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Slpapy
+[2023-05-06 09:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyroporn
+[2023-05-06 09:42:08] INFO root fetch - processPackages [obfuscater]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-05-06 09:42:08] INFO root fetch - processPackages [inhandtest]: New version: [0.0.42] Old Version: [0.0.41]
+[2023-05-06 09:42:08] INFO root fetch - processPackages [crawler-commons]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 09:42:08] WARNING root fetch - processPackages [uss]: Skipping, unable to determine old version
+[2023-05-06 09:42:08] INFO root fetch - processPackages [aliyun-python-sdk-alinlp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 09:42:08] WARNING root fetch - processPackages [zeroth-normalizer]: Skipping, unable to determine old version
+[2023-05-06 09:42:08] INFO root fetch - main [MainThread]: End processing [uss] error
+[2023-05-06 09:42:08] INFO root fetch - main [MainThread]: End processing [zeroth-normalizer] error
+[2023-05-06 09:42:08] INFO root fetch - processPackages [pyroporn]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-06 09:42:08] WARNING root fetch - processPackages [pycufsm]: Skipping, unable to determine old version
+[2023-05-06 09:42:08] INFO root fetch - main [MainThread]: End processing [pycufsm] error
+[2023-05-06 09:42:08] WARNING root fetch - processPackages [zxy-Test]: Skipping, unable to determine old version
+[2023-05-06 09:42:08] INFO root fetch - main [MainThread]: End processing [zxy-Test] error
+[2023-05-06 09:42:08] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-06 09:42:08] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.1.9.tar.gz tmp/pyroporn-0.2.0.tar.gz --markdown 20230506/p/pyroporn/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 09:42:08] INFO root fetch - processPackages [Slpapy]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 09:42:08] INFO root fetch - processPackages [obfuscater]: Downloading https://files.pythonhosted.org/packages/43/03/3a06ddf96ba9719ab521a5d61288dfd56a40d36d379796d5faf0868009e6/obfuscater-1.0.0.tar.gz
+[2023-05-06 09:42:08] INFO root fetch - processPackages [aliyun-python-sdk-alinlp]: Downloading https://files.pythonhosted.org/packages/6a/37/f800363bc2d3fc1542437840266a32e57d5bb6ac1cf7e4fbeb5db6b5da84/aliyun-python-sdk-alinlp-1.0.8.tar.gz
+[2023-05-06 09:42:08] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-05-06 09:42:08] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.2.8.tar.gz tmp/Slpapy-0.2.9.tar.gz --markdown 20230506/S/Slpapy/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 09:42:08] INFO root fetch - processPackages [inhandtest]: Downloading https://files.pythonhosted.org/packages/2d/11/d420bd2161e11603826c5f62f245bb670ee7e815389d40ad98397f14c8cb/inhandtest-0.0.42.tar.gz
+[2023-05-06 09:42:08] INFO root fetch - processPackages [crawler-commons]: Downloading https://files.pythonhosted.org/packages/d6/e6/12a2fa9b10ca695a40fcfc5c4fb3588968203d6239efb4da33700ad6cc01/crawler_commons-0.0.3.tar.gz
+[2023-05-06 09:42:08] INFO root fetch - processPackages [inhandtest]: executing diffoscope
+[2023-05-06 09:42:08] INFO root fetch - processPackages [inhandtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inhandtest-0.0.41.tar.gz tmp/inhandtest-0.0.42.tar.gz --markdown 20230506/i/inhandtest/0.0.41-0.0.42/diff.md --exclude *.pyd
+[2023-05-06 09:42:08] INFO root fetch - processPackages [crawler-commons]: executing diffoscope
+[2023-05-06 09:42:08] INFO root fetch - processPackages [crawler-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_commons-0.0.2.tar.gz tmp/crawler_commons-0.0.3.tar.gz --markdown 20230506/c/crawler-commons/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 09:42:08] INFO root fetch - processPackages [obfuscater]: Downloading https://files.pythonhosted.org/packages/0d/bb/2d06af5b9824d8b685e82ba71ede0c8f2d3f19416e618c68cf839feab41e/obfuscater-2.0.0.tar.gz
+[2023-05-06 09:42:09] INFO root fetch - processPackages [aliyun-python-sdk-alinlp]: Downloading https://files.pythonhosted.org/packages/ce/19/8ee32df03412628fb50feeb8e1ee4b590b709ec7e6c00783abef6fefbb2c/aliyun-python-sdk-alinlp-1.0.9.tar.gz
+[2023-05-06 09:42:09] INFO root fetch - processPackages [aliyun-python-sdk-alinlp]: executing diffoscope
+[2023-05-06 09:42:09] INFO root fetch - processPackages [aliyun-python-sdk-alinlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-alinlp-1.0.8.tar.gz tmp/aliyun-python-sdk-alinlp-1.0.9.tar.gz --markdown 20230506/a/aliyun-python-sdk-alinlp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 09:42:09] INFO root fetch - processPackages [obfuscater]: executing diffoscope
+[2023-05-06 09:42:09] INFO root fetch - processPackages [obfuscater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obfuscater-1.0.0.tar.gz tmp/obfuscater-2.0.0.tar.gz --markdown 20230506/o/obfuscater/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-06 09:42:09] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-06 09:42:09] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
+[2023-05-06 09:42:10] INFO root fetch - main [MainThread]: End processing [inhandtest]: success
+[2023-05-06 09:42:10] INFO root fetch - main [MainThread]: End processing [crawler-commons]: success
+[2023-05-06 09:42:10] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-alinlp]: success
+[2023-05-06 09:42:10] INFO root fetch - main [MainThread]: End processing [obfuscater]: success
+[2023-05-06 09:42:10] INFO root fetch - main [MainThread]: Store serial: [17997886]
