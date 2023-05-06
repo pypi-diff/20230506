@@ -4807,3 +4807,19 @@
 [2023-05-06 04:42:11] INFO root fetch - main [MainThread]: End processing [charidotella]: success
 [2023-05-06 04:42:12] INFO root fetch - main [MainThread]: End processing [netron]: success
 [2023-05-06 04:42:12] INFO root fetch - main [MainThread]: Store serial: [17996296]
+[2023-05-06 04:47:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996296]
+[2023-05-06 04:47:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-06 04:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mc-netease-sdk
+[2023-05-06 04:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: base-system
+[2023-05-06 04:47:21] INFO root fetch - processPackages [base-system]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-06 04:47:21] INFO root fetch - processPackages [mc-netease-sdk]: New version: [2.6.0.43327] Old Version: [2.6.0.43326]
+[2023-05-06 04:47:21] INFO root fetch - processPackages [mc-netease-sdk]: Downloading https://files.pythonhosted.org/packages/c1/e3/b984d8f181c3dff04041d3b8221e99aac8a33afae1cc1d6e7d8bddeffe01/mc_netease_sdk-2.6.0.43326-py2-none-any.whl
+[2023-05-06 04:47:21] INFO root fetch - processPackages [base-system]: Downloading https://files.pythonhosted.org/packages/f1/f2/2010da2370b4201c0b21551f4b25689dbfb6e8d2adde9be6a98237edf2fc/base_system-0.2.4.tar.gz
+[2023-05-06 04:47:21] INFO root fetch - processPackages [base-system]: executing diffoscope
+[2023-05-06 04:47:21] INFO root fetch - processPackages [base-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/base_system-0.2.3.tar.gz tmp/base_system-0.2.4.tar.gz --markdown 20230506/b/base-system/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-06 04:47:21] INFO root fetch - processPackages [mc-netease-sdk]: Downloading https://files.pythonhosted.org/packages/b2/ca/ca4cd0898b09fcc7222f6668475e47a408697f03018da71362d58bfd6db1/mc_netease_sdk-2.6.0.43327-py2-none-any.whl
+[2023-05-06 04:47:21] INFO root fetch - processPackages [mc-netease-sdk]: executing diffoscope
+[2023-05-06 04:47:21] INFO root fetch - processPackages [mc-netease-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mc_netease_sdk-2.6.0.43326-py2-none-any.whl.zip tmp/mc_netease_sdk-2.6.0.43327-py2-none-any.whl.zip --markdown 20230506/m/mc-netease-sdk/2.6.0.43326-2.6.0.43327/diff.md --exclude *.pyd
+[2023-05-06 04:47:22] INFO root fetch - main [MainThread]: End processing [base-system]: success
+[2023-05-06 04:47:25] INFO root fetch - main [MainThread]: End processing [mc-netease-sdk]: success
+[2023-05-06 04:47:25] INFO root fetch - main [MainThread]: Store serial: [17996302]
