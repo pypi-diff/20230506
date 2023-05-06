@@ -11332,3 +11332,57 @@ EOFError: EOF read where object expected
 [2023-05-06 16:23:29] INFO root fetch - main [MainThread]: End processing [vmilog-py]: success
 [2023-05-06 16:23:36] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-05-06 16:23:36] INFO root fetch - main [MainThread]: Store serial: [18000224]
+[2023-05-06 16:28:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000224]
+[2023-05-06 16:28:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 16:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lpynn
+[2023-05-06 16:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: serial-packets
+[2023-05-06 16:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multicallable
+[2023-05-06 16:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pandasai
+[2023-05-06 16:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pandasai
+[2023-05-06 16:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: analysisbykwok
+[2023-05-06 16:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: misura
+[2023-05-06 16:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dark-matter
+[2023-05-06 16:28:46] INFO root fetch - processPackages [lpynn]: New version: [0.0.2.2] Old Version: [0.0.2.1]
+[2023-05-06 16:28:46] INFO root fetch - processPackages [pandasai]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-06 16:28:46] INFO root fetch - processPackages [multicallable]: New version: [5.0.1] Old Version: [5.0.0]
+[2023-05-06 16:28:46] INFO root fetch - processPackages [serial-packets]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-06 16:28:46] INFO root fetch - processPackages [misura]: New version: [1.5.0] Old Version: [1.4.1]
+[2023-05-06 16:28:46] INFO root fetch - processPackages [pandasai]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-06 16:28:46] INFO root fetch - processPackages [analysisbykwok]: New version: [0.0.25] Old Version: [0.0.24]
+[2023-05-06 16:28:46] INFO root fetch - processPackages [dark-matter]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-05-06 16:28:46] INFO root fetch - processPackages [lpynn]: executing diffoscope
+[2023-05-06 16:28:46] INFO root fetch - processPackages [lpynn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpynn-0.0.2.1.tar.gz tmp/lpynn-0.0.2.2.tar.gz --markdown 20230506/l/lpynn/0.0.2.1-0.0.2.2/diff.md --exclude *.pyd
+[2023-05-06 16:28:46] INFO root fetch - processPackages [pandasai]: Downloading https://files.pythonhosted.org/packages/1f/de/b6bb1fb885dc10bdb57c2f6792da94a8a7dad4079573835e5b74dcf7e49f/pandasai-0.2.4.tar.gz
+[2023-05-06 16:28:46] INFO root fetch - processPackages [pandasai]: Downloading https://files.pythonhosted.org/packages/1f/de/b6bb1fb885dc10bdb57c2f6792da94a8a7dad4079573835e5b74dcf7e49f/pandasai-0.2.4.tar.gz
+[2023-05-06 16:28:46] INFO root fetch - processPackages [serial-packets]: Downloading https://files.pythonhosted.org/packages/a4/bd/8ea0df85be1c59d67aed6493998185702e5337047443b14f312f10035dd3/serial_packets-0.1.0.tar.gz
+[2023-05-06 16:28:46] INFO root fetch - processPackages [multicallable]: Downloading https://files.pythonhosted.org/packages/82/be/5b9d5ecb43def5b798e8714a6175037784d1226fafcd975e82a18d26b8e4/multicallable-5.0.0.tar.gz
+[2023-05-06 16:28:46] INFO root fetch - processPackages [dark-matter]: Downloading https://files.pythonhosted.org/packages/b9/d2/2e18229949be3e12a54c6880d9292eae1b6d10ec48a4b33d95753bf1f852/dark-matter-4.0.8.tar.gz
+[2023-05-06 16:28:46] INFO root fetch - processPackages [serial-packets]: executing diffoscope
+[2023-05-06 16:28:46] INFO root fetch - processPackages [serial-packets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serial_packets-0.0.4.tar.gz tmp/serial_packets-0.1.0.tar.gz --markdown 20230506/s/serial-packets/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-06 16:28:46] INFO root fetch - processPackages [analysisbykwok]: Downloading https://files.pythonhosted.org/packages/69/06/81f675856552f9470b6393bc0088c9ddab9723e4bc6e3225a0a9fb81744e/analysisbykwok-0.0.25.tar.gz
+[2023-05-06 16:28:46] INFO root fetch - processPackages [pandasai]: Downloading https://files.pythonhosted.org/packages/73/d1/6d5dfe5324af383f43c6b14b667259c1de53ec068adbb9376d900168a153/pandasai-0.2.5.tar.gz
+[2023-05-06 16:28:46] INFO root fetch - processPackages [pandasai]: Downloading https://files.pythonhosted.org/packages/73/d1/6d5dfe5324af383f43c6b14b667259c1de53ec068adbb9376d900168a153/pandasai-0.2.5.tar.gz
+[2023-05-06 16:28:46] INFO root fetch - processPackages [misura]: Downloading https://files.pythonhosted.org/packages/38/dd/7182f4eadf21cb0e5b9f83add94e5089c5c5328e103faafcaf30cfddc824/misura-1.5.0.tar.gz
+[2023-05-06 16:28:46] INFO root fetch - processPackages [analysisbykwok]: executing diffoscope
+[2023-05-06 16:28:46] INFO root fetch - processPackages [analysisbykwok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/analysisbykwok-0.0.24.tar.gz tmp/analysisbykwok-0.0.25.tar.gz --markdown 20230506/a/analysisbykwok/0.0.24-0.0.25/diff.md --exclude *.pyd
+[2023-05-06 16:28:46] INFO root fetch - processPackages [pandasai]: executing diffoscope
+[2023-05-06 16:28:46] INFO root fetch - processPackages [pandasai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasai-0.2.4.tar.gz tmp/pandasai-0.2.5.tar.gz --markdown 20230506/p/pandasai/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-06 16:28:46] INFO root fetch - processPackages [pandasai]: executing diffoscope
+[2023-05-06 16:28:46] INFO root fetch - processPackages [pandasai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasai-0.2.4.tar.gz tmp/pandasai-0.2.5.tar.gz --markdown 20230506/p/pandasai/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-06 16:28:46] INFO root fetch - processPackages [multicallable]: Downloading https://files.pythonhosted.org/packages/73/cb/1b7dc331fbe9ba185d257b2f2c7d707842086db7bb6c70f4e598d961074f/multicallable-5.0.1.tar.gz
+[2023-05-06 16:28:46] INFO root fetch - processPackages [misura]: executing diffoscope
+[2023-05-06 16:28:46] INFO root fetch - processPackages [misura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/misura-1.4.1.tar.gz tmp/misura-1.5.0.tar.gz --markdown 20230506/m/misura/1.4.1-1.5.0/diff.md --exclude *.pyd
+[2023-05-06 16:28:46] INFO root fetch - processPackages [multicallable]: executing diffoscope
+[2023-05-06 16:28:46] INFO root fetch - processPackages [multicallable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multicallable-5.0.0.tar.gz tmp/multicallable-5.0.1.tar.gz --markdown 20230506/m/multicallable/5.0.0-5.0.1/diff.md --exclude *.pyd
+[2023-05-06 16:28:46] INFO root fetch - processPackages [dark-matter]: Downloading https://files.pythonhosted.org/packages/c3/ec/2598bd337fd9f176a9b456b4915afd25b446ddb15e6e6b0f772ea1457b6b/dark-matter-4.0.9.tar.gz
+[2023-05-06 16:28:47] INFO root fetch - processPackages [dark-matter]: executing diffoscope
+[2023-05-06 16:28:47] INFO root fetch - processPackages [dark-matter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dark-matter-4.0.8.tar.gz tmp/dark-matter-4.0.9.tar.gz --markdown 20230506/d/dark-matter/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-05-06 16:28:47] INFO root fetch - main [MainThread]: End processing [lpynn]: success
+[2023-05-06 16:28:47] INFO root fetch - main [MainThread]: End processing [analysisbykwok]: success
+[2023-05-06 16:28:48] INFO root fetch - main [MainThread]: End processing [serial-packets]: success
+[2023-05-06 16:28:48] INFO root fetch - main [MainThread]: End processing [pandasai]: success
+[2023-05-06 16:28:48] INFO root fetch - main [MainThread]: End processing [misura]: success
+[2023-05-06 16:28:48] INFO root fetch - main [MainThread]: End processing [pandasai]: success
+[2023-05-06 16:28:48] INFO root fetch - main [MainThread]: End processing [multicallable]: success
+[2023-05-06 16:28:49] INFO root fetch - main [MainThread]: End processing [dark-matter]: success
+[2023-05-06 16:28:49] INFO root fetch - main [MainThread]: Store serial: [18000252]
