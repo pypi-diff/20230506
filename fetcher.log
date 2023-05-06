@@ -7875,3 +7875,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 10:24:47] INFO root fetch - main [MainThread]: End processing [toollib]: success
 [2023-05-06 10:24:48] INFO root fetch - main [MainThread]: End processing [sinabs-dynapcnn]: success
 [2023-05-06 10:24:48] INFO root fetch - main [MainThread]: Store serial: [17998140]
+[2023-05-06 10:29:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998140]
+[2023-05-06 10:29:57] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: video-toolkits
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htlfc
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qgate-perf
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyrfuniverse
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: enex2notion
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ezmote-cmdserver
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: subsscraper
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: openremote-cli
+[2023-05-06 10:29:57] INFO root fetch - processPackages [pyrfuniverse]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-05-06 10:29:57] INFO root fetch - processPackages [subsscraper]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-06 10:29:57] INFO root fetch - processPackages [htlfc]: New version: [0.5.0] Old Version: [0.4.2]
+[2023-05-06 10:29:57] INFO root fetch - processPackages [qgate-perf]: New version: [0.1.7rc2] Old Version: [0.1.7rc1]
+[2023-05-06 10:29:57] INFO root fetch - processPackages [video-toolkits]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ezmote-cmdserver]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-05-06 10:29:57] INFO root fetch - processPackages [enex2notion]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 10:29:57] INFO root fetch - processPackages [openremote-cli]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-06 10:29:57] INFO root fetch - processPackages [qgate-perf]: executing diffoscope
+[2023-05-06 10:29:57] INFO root fetch - processPackages [qgate-perf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgate_perf-0.1.7rc1-py3-none-any.whl.zip tmp/qgate_perf-0.1.7rc2-py3-none-any.whl.zip --markdown 20230506/q/qgate-perf/0.1.7rc1-0.1.7rc2/diff.md --exclude *.pyd
+[2023-05-06 10:29:57] INFO root fetch - processPackages [pyrfuniverse]: Downloading https://files.pythonhosted.org/packages/e3/68/dd008ec9b554591257e1fab60a89cd3bcff1537d07c295c40245d021169e/pyrfuniverse-0.8.3.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [htlfc]: Downloading https://files.pythonhosted.org/packages/97/85/5f5ef71a009b33da0646dd0b332d4c3be4f9a18b435321b4eb968130b2a9/htlfc-0.4.2.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [openremote-cli]: Downloading https://files.pythonhosted.org/packages/35/cc/0dd37d7614e74145cb95ef72a826866213749e498cb55c2c9f7e71e838b1/openremote-cli-0.6.8.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [subsscraper]: Downloading https://files.pythonhosted.org/packages/8f/30/6fa2ee6f0c85fbd2732ad218d53a5ef71ad82d85f7b275a0a34b77055a46/subsscraper-0.1.3.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [video-toolkits]: Downloading https://files.pythonhosted.org/packages/b8/67/f11ad55b4bf4fb4bd50d383e882bc037ea0d1b26d98407407f94b21995fb/video_toolkits-0.5.0.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [enex2notion]: Downloading https://files.pythonhosted.org/packages/16/38/c19e5e3e5d2bf638e7d6c440054d8e9f6082e881b7be1da84b1bb19151e6/enex2notion-0.2.8.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ezmote-cmdserver]: Downloading https://files.pythonhosted.org/packages/f6/bc/4847462297f285556894cd2a0ab9fa8ec87c4415ec2245b76980e35628ca/ezmote-cmdserver-0.8.5.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ezmote-cmdserver]: executing diffoscope
+[2023-05-06 10:29:57] INFO root fetch - processPackages [ezmote-cmdserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezmote-cmdserver-0.8.4.tar.gz tmp/ezmote-cmdserver-0.8.5.tar.gz --markdown 20230506/e/ezmote-cmdserver/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-05-06 10:29:57] INFO root fetch - processPackages [subsscraper]: Downloading https://files.pythonhosted.org/packages/17/e6/756b8a0e9742e3f05ba71f527303740c69c466b7ab1d283e890cd15ece46/subsscraper-0.1.4.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [htlfc]: Downloading https://files.pythonhosted.org/packages/44/d5/d29873e2b52c093f66b2a8d7180ca9cc5387896c961840fe6ddc8a7aef79/htlfc-0.5.0.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [pyrfuniverse]: Downloading https://files.pythonhosted.org/packages/ba/98/d4e3b3bb7b4a93fc1d3ccbed8674a6fc82fce8c9b487f110f56388d4565a/pyrfuniverse-0.8.4.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [video-toolkits]: Downloading https://files.pythonhosted.org/packages/2d/fb/5d0932f8a057a8d1fbe8481b8752c6a9a7861342ffa35ebe8fb94c380402/video_toolkits-0.6.0.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [openremote-cli]: Downloading https://files.pythonhosted.org/packages/82/54/b8107c36b839a84d90b30b4c0ff19797e8d9ac84f9eeb3819f9a175c9f35/openremote-cli-0.6.9.tar.gz
+[2023-05-06 10:29:57] INFO root fetch - processPackages [subsscraper]: executing diffoscope
+[2023-05-06 10:29:57] INFO root fetch - processPackages [subsscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subsscraper-0.1.3.tar.gz tmp/subsscraper-0.1.4.tar.gz --markdown 20230506/s/subsscraper/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-06 10:29:57] INFO root fetch - processPackages [htlfc]: executing diffoscope
+[2023-05-06 10:29:57] INFO root fetch - processPackages [htlfc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htlfc-0.4.2.tar.gz tmp/htlfc-0.5.0.tar.gz --markdown 20230506/h/htlfc/0.4.2-0.5.0/diff.md --exclude *.pyd
+[2023-05-06 10:29:57] INFO root fetch - processPackages [video-toolkits]: executing diffoscope
+[2023-05-06 10:29:57] INFO root fetch - processPackages [video-toolkits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/video_toolkits-0.5.0.tar.gz tmp/video_toolkits-0.6.0.tar.gz --markdown 20230506/v/video-toolkits/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-06 10:29:57] INFO root fetch - processPackages [pyrfuniverse]: executing diffoscope
+[2023-05-06 10:29:57] INFO root fetch - processPackages [pyrfuniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrfuniverse-0.8.3.tar.gz tmp/pyrfuniverse-0.8.4.tar.gz --markdown 20230506/p/pyrfuniverse/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-05-06 10:29:58] INFO root fetch - processPackages [openremote-cli]: executing diffoscope
+[2023-05-06 10:29:58] INFO root fetch - processPackages [openremote-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openremote-cli-0.6.8.tar.gz tmp/openremote-cli-0.6.9.tar.gz --markdown 20230506/o/openremote-cli/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-06 10:29:58] INFO root fetch - processPackages [enex2notion]: Downloading https://files.pythonhosted.org/packages/1d/7b/61852a0c5a794f7354a804df3c379bf49b742433e8df4d99622b23e96626/enex2notion-0.2.9.tar.gz
+[2023-05-06 10:29:58] INFO root fetch - processPackages [enex2notion]: executing diffoscope
+[2023-05-06 10:29:58] INFO root fetch - processPackages [enex2notion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enex2notion-0.2.8.tar.gz tmp/enex2notion-0.2.9.tar.gz --markdown 20230506/e/enex2notion/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 10:29:58] INFO root fetch - main [MainThread]: End processing [qgate-perf]: success
+[2023-05-06 10:29:59] INFO root fetch - main [MainThread]: End processing [subsscraper]: success
+[2023-05-06 10:29:59] INFO root fetch - main [MainThread]: End processing [video-toolkits]: success
+[2023-05-06 10:29:59] INFO root fetch - main [MainThread]: End processing [htlfc]: success
+[2023-05-06 10:29:59] INFO root fetch - main [MainThread]: End processing [openremote-cli]: success
+[2023-05-06 10:29:59] INFO root fetch - main [MainThread]: End processing [ezmote-cmdserver]: success
+[2023-05-06 10:29:59] INFO root fetch - main [MainThread]: End processing [enex2notion]: success
+[2023-05-06 10:30:01] INFO root fetch - main [MainThread]: End processing [pyrfuniverse]: success
+[2023-05-06 10:30:01] INFO root fetch - main [MainThread]: Store serial: [17998162]
