@@ -11840,3 +11840,22 @@ EOFError: EOF read where object expected
 [2023-05-06 17:25:58] INFO root fetch - main [MainThread]: End processing [commandsgpt]: success
 [2023-05-06 17:25:58] INFO root fetch - main [MainThread]: End processing [ramodels]: success
 [2023-05-06 17:25:58] INFO root fetch - main [MainThread]: Store serial: [18000542]
+[2023-05-06 17:31:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000542]
+[2023-05-06 17:31:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-06 17:31:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiostretchy
+[2023-05-06 17:31:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: picodaqa
+[2023-05-06 17:31:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-audio-transformer-plugin-speechbrain-langdetect
+[2023-05-06 17:31:06] INFO root fetch - processPackages [audiostretchy]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-06 17:31:06] INFO root fetch - processPackages [picodaqa]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-06 17:31:06] WARNING root fetch - processPackages [ovos-audio-transformer-plugin-speechbrain-langdetect]: Skipping, unable to determine old version
+[2023-05-06 17:31:06] INFO root fetch - main [MainThread]: End processing [ovos-audio-transformer-plugin-speechbrain-langdetect] error
+[2023-05-06 17:31:07] INFO root fetch - processPackages [picodaqa]: Downloading https://files.pythonhosted.org/packages/ea/a7/287b8427e33d3c167b84f7e446da21dcbd9868dd5e60d44679f95f0fd773/picodaqa-1.0.0.tar.gz
+[2023-05-06 17:31:07] INFO root fetch - processPackages [audiostretchy]: Downloading https://files.pythonhosted.org/packages/1c/05/67815ad6b0706d1227d263767733fa0019a93e5d58e39d5a0aafc2b0b598/audiostretchy-1.2.3.tar.gz
+[2023-05-06 17:31:07] INFO root fetch - processPackages [audiostretchy]: executing diffoscope
+[2023-05-06 17:31:07] INFO root fetch - processPackages [audiostretchy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiostretchy-1.2.2.tar.gz tmp/audiostretchy-1.2.3.tar.gz --markdown 20230506/a/audiostretchy/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-06 17:31:07] INFO root fetch - processPackages [picodaqa]: Downloading https://files.pythonhosted.org/packages/c2/f7/fae0f828f60e882e2bc8402abc6f2d7e11252a3656e20f9581b0c5818ba3/picodaqa-1.1.0.tar.gz
+[2023-05-06 17:31:07] INFO root fetch - processPackages [picodaqa]: executing diffoscope
+[2023-05-06 17:31:07] INFO root fetch - processPackages [picodaqa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picodaqa-1.0.0.tar.gz tmp/picodaqa-1.1.0.tar.gz --markdown 20230506/p/picodaqa/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-06 17:31:08] INFO root fetch - main [MainThread]: End processing [picodaqa]: success
+[2023-05-06 17:31:08] INFO root fetch - main [MainThread]: End processing [audiostretchy]: success
+[2023-05-06 17:31:08] INFO root fetch - main [MainThread]: Store serial: [18000553]
