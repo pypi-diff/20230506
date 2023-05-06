@@ -8177,3 +8177,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 10:51:41] INFO root fetch - main [MainThread]: End processing [cyber-record-util]: success
 [2023-05-06 10:51:55] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-05-06 10:51:55] INFO root fetch - main [MainThread]: Store serial: [17998344]
+[2023-05-06 10:56:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998344]
+[2023-05-06 10:57:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 10:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiontutil
+[2023-05-06 10:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyroporn
+[2023-05-06 10:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbx
+[2023-05-06 10:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sparrow-order-lib
+[2023-05-06 10:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: palp
+[2023-05-06 10:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: linuxdoc
+[2023-05-06 10:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kappaschedules
+[2023-05-06 10:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyroporn
+[2023-05-06 10:57:04] INFO root fetch - processPackages [pyroporn]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-06 10:57:04] INFO root fetch - processPackages [kappaschedules]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 10:57:04] INFO root fetch - processPackages [dbx]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-06 10:57:04] INFO root fetch - processPackages [pyroporn]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-06 10:57:04] WARNING root fetch - processPackages [aiontutil]: Skipping, unable to determine old version
+[2023-05-06 10:57:04] INFO root fetch - main [MainThread]: End processing [aiontutil] error
+[2023-05-06 10:57:04] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.9] Old Version: [0.1.87]
+[2023-05-06 10:57:04] INFO root fetch - processPackages [linuxdoc]: New version: [20230506] Old Version: [20230321]
+[2023-05-06 10:57:04] INFO root fetch - processPackages [palp]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 10:57:04] INFO root fetch - processPackages [kappaschedules]: executing diffoscope
+[2023-05-06 10:57:04] INFO root fetch - processPackages [kappaschedules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappaschedules-0.0.8.tar.gz tmp/kappaschedules-0.0.9.tar.gz --markdown 20230506/k/kappaschedules/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 10:57:04] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/eb/b6/c778d366decf941e42c0d0410f0513bf4ecae62c6f0ad442272380e4c753/sparrow-order-lib-0.1.87.tar.gz
+[2023-05-06 10:57:04] INFO root fetch - processPackages [dbx]: Downloading https://files.pythonhosted.org/packages/4a/6f/cdb7e5d3f21562fc53f6987fbb39eddbb303bfd6ccc1a29e0c8fefdbaa14/dbx-0.8.8-py3-none-any.whl
+[2023-05-06 10:57:04] INFO root fetch - processPackages [linuxdoc]: Downloading https://files.pythonhosted.org/packages/20/b4/478cdf6897677e5834c7ac6acc8fec653818ddf0979f85a3ac147cb330e4/linuxdoc-20230321.tar.gz
+[2023-05-06 10:57:04] INFO root fetch - processPackages [palp]: Downloading https://files.pythonhosted.org/packages/1f/0e/44fbd321a93e5ab6d4a4ffe39aad4f441f45ce6244d15ae4564a8ec683d3/palp-0.0.98.tar.gz
+[2023-05-06 10:57:04] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/c6/a9/49f3b727a0a6ba3fa83b2444de5957aec446e93120d2519f186272cc51c9/pyroporn-0.2.6.tar.gz
+[2023-05-06 10:57:04] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/c6/a9/49f3b727a0a6ba3fa83b2444de5957aec446e93120d2519f186272cc51c9/pyroporn-0.2.6.tar.gz
+[2023-05-06 10:57:04] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-05-06 10:57:04] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.87.tar.gz tmp/sparrow-order-lib-0.1.9.tar.gz --markdown 20230506/s/sparrow-order-lib/0.1.87-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 10:57:04] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/ad/40/fc7c663eb6ab1e8cf141702568d94367d8af523d16d98bf866fc22a3c6c1/pyroporn-0.2.7.tar.gz
+[2023-05-06 10:57:04] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/ad/40/fc7c663eb6ab1e8cf141702568d94367d8af523d16d98bf866fc22a3c6c1/pyroporn-0.2.7.tar.gz
+[2023-05-06 10:57:04] INFO root fetch - processPackages [dbx]: Downloading https://files.pythonhosted.org/packages/6c/37/07bb3b0701caca23275b5ae6a911c5e142132a954743c1ccb9d5ed287846/dbx-0.8.9-py3-none-any.whl
+[2023-05-06 10:57:04] INFO root fetch - processPackages [dbx]: executing diffoscope
+[2023-05-06 10:57:04] INFO root fetch - processPackages [dbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbx-0.8.8-py3-none-any.whl.zip tmp/dbx-0.8.9-py3-none-any.whl.zip --markdown 20230506/d/dbx/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-06 10:57:04] INFO root fetch - processPackages [palp]: Downloading https://files.pythonhosted.org/packages/90/7d/189f6fc2049c1cb7a0fed0c0aa80bf2361876fcca1d5cfe5d82cfb2d5c9c/palp-0.0.99.tar.gz
+[2023-05-06 10:57:04] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-06 10:57:04] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.2.6.tar.gz tmp/pyroporn-0.2.7.tar.gz --markdown 20230506/p/pyroporn/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-06 10:57:04] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-06 10:57:04] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.2.6.tar.gz tmp/pyroporn-0.2.7.tar.gz --markdown 20230506/p/pyroporn/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-06 10:57:04] INFO root fetch - processPackages [linuxdoc]: Downloading https://files.pythonhosted.org/packages/03/34/f31ce13403dd5b08153402774be3013cbf19c93e938a9f99cfd4b70e9b04/linuxdoc-20230506.tar.gz
+[2023-05-06 10:57:04] INFO root fetch - processPackages [palp]: executing diffoscope
+[2023-05-06 10:57:04] INFO root fetch - processPackages [palp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palp-0.0.98.tar.gz tmp/palp-0.0.99.tar.gz --markdown 20230506/p/palp/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 10:57:04] INFO root fetch - processPackages [linuxdoc]: executing diffoscope
+[2023-05-06 10:57:04] INFO root fetch - processPackages [linuxdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linuxdoc-20230321.tar.gz tmp/linuxdoc-20230506.tar.gz --markdown 20230506/l/linuxdoc/20230321-20230506/diff.md --exclude *.pyd
+[2023-05-06 10:57:05] INFO root fetch - main [MainThread]: End processing [kappaschedules]: success
+[2023-05-06 10:57:06] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-06 10:57:06] INFO root fetch - main [MainThread]: End processing [linuxdoc]: success
+[2023-05-06 10:57:06] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-06 10:57:06] INFO root fetch - main [MainThread]: End processing [palp]: success
+[2023-05-06 10:57:06] INFO root fetch - main [MainThread]: End processing [dbx]: success
+[2023-05-06 10:57:08] INFO root fetch - main [MainThread]: End processing [sparrow-order-lib]: success
+[2023-05-06 10:57:08] INFO root fetch - main [MainThread]: Store serial: [17998368]
