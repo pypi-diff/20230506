@@ -8053,3 +8053,70 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 10:40:49] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-05-06 10:40:52] INFO root fetch - main [MainThread]: End processing [ipybbycell]: success
 [2023-05-06 10:40:52] INFO root fetch - main [MainThread]: Store serial: [17998233]
+[2023-05-06 10:45:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998233]
+[2023-05-06 10:46:02] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tff-nightly
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydozer-log
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiontutil
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bdffont
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gravipython
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: docarray
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyaxetool
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: didicli
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ipybbycell
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo-addon-sale-partner-selectable-option
+[2023-05-06 10:46:02] INFO root fetch - processPackages [bdffont]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-06 10:46:02] ERROR root fetch - processPackages [aiontutil]: Unable to get metadata: No such project 'aiontutil'
+[2023-05-06 10:46:02] INFO root fetch - processPackages [aiontutil]: Start processing: pyroporn
+[2023-05-06 10:46:02] INFO root fetch - main [MainThread]: End processing [aiontutil] error
+[2023-05-06 10:46:02] INFO root fetch - processPackages [odoo-addon-sale-partner-selectable-option]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.0.1]
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ipybbycell]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-06 10:46:02] INFO root fetch - processPackages [didicli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pyaxetool]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-06 10:46:02] INFO root fetch - processPackages [gravipython]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pyroporn]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pydozer-log]: New version: [0.1.20] Old Version: [0.1.19]
+[2023-05-06 10:46:02] INFO root fetch - processPackages [docarray]: New version: [0.9.9.dev5] Old Version: [0.9.9.dev4]
+[2023-05-06 10:46:02] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230506] Old Version: [0.0.1.dev20230505]
+[2023-05-06 10:46:02] INFO root fetch - processPackages [didicli]: Downloading https://files.pythonhosted.org/packages/1e/b0/b536ecfe93fea13756ef76986b700d3126f49e480657b12333bfa04e016b/didicli-0.0.8.tar.gz
+[2023-05-06 10:46:02] INFO root fetch - processPackages [odoo-addon-sale-partner-selectable-option]: Downloading https://files.pythonhosted.org/packages/57/84/4c78b8ef2a03777f4f39598a305601d4ce0b918bc75f70aa93af3df1389f/odoo_addon_sale_partner_selectable_option-15.0.1.0.1-py3-none-any.whl
+[2023-05-06 10:46:02] INFO root fetch - processPackages [bdffont]: Downloading https://files.pythonhosted.org/packages/3a/49/9b6281dea9f1028e51c4708e7b6df42eba28a554b3fa5deb4cf609417965/bdffont-0.0.6.tar.gz
+[2023-05-06 10:46:02] INFO root fetch - processPackages [docarray]: executing diffoscope
+[2023-05-06 10:46:02] INFO root fetch - processPackages [docarray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docarray-0.9.9.dev4.tar.gz tmp/docarray-0.9.9.dev5.tar.gz --markdown 20230506/d/docarray/0.9.9.dev4-0.9.9.dev5/diff.md --exclude *.pyd
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ipybbycell]: Downloading https://files.pythonhosted.org/packages/a9/ea/afddd60b58b8f30bb86be9f84f4e45982485adf12db0aeb12d46f0c52e93/ipybbycell-0.3.5.tar.gz
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/1f/50/52cd56c740d9677197bc7e8c90c7a7a6ec405439d86d9536f4a3b366559a/pyroporn-0.2.5.tar.gz
+[2023-05-06 10:46:02] INFO root fetch - processPackages [gravipython]: Downloading https://files.pythonhosted.org/packages/19/58/6e13e0f100f0109cc0d91836f19504634cf17d2bcde4e3eb4aab16542415/gravipython-0.0.4.tar.gz
+[2023-05-06 10:46:02] INFO root fetch - processPackages [bdffont]: executing diffoscope
+[2023-05-06 10:46:02] INFO root fetch - processPackages [bdffont]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdffont-0.0.5.tar.gz tmp/bdffont-0.0.6.tar.gz --markdown 20230506/b/bdffont/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pyaxetool]: Downloading https://files.pythonhosted.org/packages/c9/37/7d2c6e589fb2e4b24216f80b12f01cd6870d9c5c0ffcb911662ea84535d6/pyaxetool-1.1.0.tar.gz
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.2.4.tar.gz tmp/pyroporn-0.2.5.tar.gz --markdown 20230506/p/pyroporn/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-06 10:46:02] INFO root fetch - processPackages [gravipython]: executing diffoscope
+[2023-05-06 10:46:02] INFO root fetch - processPackages [gravipython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravipython-0.0.3.tar.gz tmp/gravipython-0.0.4.tar.gz --markdown 20230506/g/gravipython/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ipybbycell]: executing diffoscope
+[2023-05-06 10:46:02] INFO root fetch - processPackages [ipybbycell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipybbycell-0.3.4.tar.gz tmp/ipybbycell-0.3.5.tar.gz --markdown 20230506/i/ipybbycell/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pyaxetool]: executing diffoscope
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pyaxetool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaxetool-1.0.0.tar.gz tmp/pyaxetool-1.1.0.tar.gz --markdown 20230506/p/pyaxetool/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pydozer-log]: Downloading https://files.pythonhosted.org/packages/46/08/2c643d5825bc45a32ad3028aba35dca5648e6ca71e384cfcfc07c174f56c/pydozer_log-0.1.20-pp39-pypy39_pp73-manylinux_2_34_s390x.whl
+[2023-05-06 10:46:02] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/d9/59/d7a272fd71d9d5d8e5a396bb2df6e128d24d093d1d5ace3dddf6b7824531/tff_nightly-0.0.1.dev20230506-py2.py3-none-any.whl
+[2023-05-06 10:46:02] INFO root fetch - processPackages [odoo-addon-sale-partner-selectable-option]: Downloading https://files.pythonhosted.org/packages/c0/f6/76a7a81decb4f99b1647611a33d466c1258e1068ff8edb774776552f8e6f/odoo_addon_sale_partner_selectable_option-16.0.1.0.0.2-py3-none-any.whl
+[2023-05-06 10:46:02] INFO root fetch - processPackages [didicli]: Downloading https://files.pythonhosted.org/packages/4b/8c/604d51db9c16f86b9315e11aa08078c42363e7798a3173be493ba624e59e/didicli-0.0.9.tar.gz
+[2023-05-06 10:46:02] INFO root fetch - processPackages [odoo-addon-sale-partner-selectable-option]: executing diffoscope
+[2023-05-06 10:46:02] INFO root fetch - processPackages [odoo-addon-sale-partner-selectable-option]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_partner_selectable_option-15.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_sale_partner_selectable_option-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230506/o/odoo-addon-sale-partner-selectable-option/15.0.1.0.1-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-05-06 10:46:02] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-05-06 10:46:02] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230505-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230506-py2.py3-none-any.whl.zip --markdown 20230506/t/tff-nightly/0.0.1.dev20230505-0.0.1.dev20230506/diff.md --exclude *.pyd
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pydozer-log]: executing diffoscope
+[2023-05-06 10:46:02] INFO root fetch - processPackages [pydozer-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydozer_log-0.1.19-pp39-pypy39_pp73-manylinux_2_34_s390x.whl.zip tmp/pydozer_log-0.1.20-pp39-pypy39_pp73-manylinux_2_34_s390x.whl.zip --markdown 20230506/p/pydozer-log/0.1.19-0.1.20/diff.md --exclude *.pyd
+[2023-05-06 10:46:02] INFO root fetch - processPackages [didicli]: executing diffoscope
+[2023-05-06 10:46:02] INFO root fetch - processPackages [didicli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/didicli-0.0.8.tar.gz tmp/didicli-0.0.9.tar.gz --markdown 20230506/d/didicli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 10:46:04] INFO root fetch - main [MainThread]: End processing [pyaxetool]: success
+[2023-05-06 10:46:04] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-partner-selectable-option]: success
+[2023-05-06 10:46:04] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-06 10:46:04] INFO root fetch - main [MainThread]: End processing [didicli]: success
+[2023-05-06 10:46:04] INFO root fetch - main [MainThread]: End processing [gravipython]: success
+[2023-05-06 10:46:04] INFO root fetch - main [MainThread]: End processing [bdffont]: success
+[2023-05-06 10:46:04] INFO root fetch - main [MainThread]: End processing [docarray]: success
+[2023-05-06 10:46:06] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-05-06 10:46:10] INFO root fetch - main [MainThread]: End processing [ipybbycell]: success
+[2023-05-06 10:46:27] INFO root fetch - main [MainThread]: End processing [pydozer-log]: success
+[2023-05-06 10:46:27] INFO root fetch - main [MainThread]: Store serial: [17998314]
