@@ -12811,3 +12811,46 @@ EOFError: EOF read where object expected
 [2023-05-06 19:22:49] INFO root fetch - main [MainThread]: End processing [ultrasync]: success
 [2023-05-06 19:22:50] INFO root fetch - main [MainThread]: End processing [langchain]: success
 [2023-05-06 19:22:50] INFO root fetch - main [MainThread]: Store serial: [18001149]
+[2023-05-06 19:27:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001149]
+[2023-05-06 19:27:59] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 19:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: frankAllSkyCam
+[2023-05-06 19:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: roberto
+[2023-05-06 19:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet-multi-page
+[2023-05-06 19:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: testz
+[2023-05-06 19:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dank-mids
+[2023-05-06 19:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pa-utils
+[2023-05-06 19:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nuker
+[2023-05-06 19:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: crazy-thursday
+[2023-05-06 19:27:59] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-05-06 19:27:59] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.6.1] Old Version: [2023.5.6.0]
+[2023-05-06 19:27:59] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-05-06 19:27:59] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-06 19:27:59] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-06 19:27:59] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.6.0.tar.gz tmp/crazy-thursday-2023.5.6.1.tar.gz --markdown 20230506/c/crazy-thursday/2023.5.6.0-2023.5.6.1/diff.md --exclude *.pyd
+[2023-05-06 19:27:59] WARNING root fetch - processPackages [pa-utils]: Skipping, unable to determine old version
+[2023-05-06 19:27:59] INFO root fetch - main [MainThread]: End processing [pa-utils] error
+[2023-05-06 19:27:59] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-05-06 19:27:59] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230506/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-05-06 19:27:59] INFO root fetch - processPackages [roberto]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-06 19:27:59] WARNING root fetch - processPackages [nuker]: Skipping, unable to determine old version
+[2023-05-06 19:27:59] INFO root fetch - processPackages [testz]: New version: [0.1.3] Old Version: [0.1.0]
+[2023-05-06 19:27:59] INFO root fetch - main [MainThread]: End processing [nuker] error
+[2023-05-06 19:27:59] INFO root fetch - processPackages [flet-multi-page]: New version: [1.3] Old Version: [1.2.1]
+[2023-05-06 19:27:59] INFO root fetch - processPackages [flet-multi-page]: Downloading https://files.pythonhosted.org/packages/17/85/e13ebd0ca565a461281103788c95bb45d63bd2d68345d6aeecd285b828ed/flet_multi_page-1.2.1.tar.gz
+[2023-05-06 19:27:59] INFO root fetch - processPackages [testz]: Downloading https://files.pythonhosted.org/packages/96/76/15876146ad9e5e24fa7263545297c73200ee2ac45e67571c47cf3f364d40/testz-0.1.0.tar.gz
+[2023-05-06 19:27:59] INFO root fetch - processPackages [roberto]: Downloading https://files.pythonhosted.org/packages/5e/94/40ec22a8512686c2bda8467df135ca623b8b9e83c5d866b171ca4eb2e925/roberto-2.0.3.tar.gz
+[2023-05-06 19:27:59] INFO root fetch - processPackages [flet-multi-page]: Downloading https://files.pythonhosted.org/packages/b6/5d/29f0b40b30576002e69bce1627114f16971f712e255c9bedc3f74ecc1d64/flet_multi_page-1.3.tar.gz
+[2023-05-06 19:28:00] INFO root fetch - processPackages [flet-multi-page]: executing diffoscope
+[2023-05-06 19:28:00] INFO root fetch - processPackages [flet-multi-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_multi_page-1.2.1.tar.gz tmp/flet_multi_page-1.3.tar.gz --markdown 20230506/f/flet-multi-page/1.2.1-1.3/diff.md --exclude *.pyd
+[2023-05-06 19:28:00] INFO root fetch - processPackages [testz]: Downloading https://files.pythonhosted.org/packages/87/b2/c0ce039accebc3518c398345ae4b126a0ab2148b7ae0de60c57f295fc9bc/testz-0.1.3.tar.gz
+[2023-05-06 19:28:00] INFO root fetch - processPackages [roberto]: Downloading https://files.pythonhosted.org/packages/05/a4/9d25f770dedb868fcf1f243da92c9f23773fc8feabb860b36ba60e93d91e/roberto-2.0.4.tar.gz
+[2023-05-06 19:28:00] INFO root fetch - processPackages [testz]: executing diffoscope
+[2023-05-06 19:28:00] INFO root fetch - processPackages [testz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testz-0.1.0.tar.gz tmp/testz-0.1.3.tar.gz --markdown 20230506/t/testz/0.1.0-0.1.3/diff.md --exclude *.pyd
+[2023-05-06 19:28:00] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-05-06 19:28:00] INFO root fetch - processPackages [roberto]: executing diffoscope
+[2023-05-06 19:28:00] INFO root fetch - processPackages [roberto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roberto-2.0.3.tar.gz tmp/roberto-2.0.4.tar.gz --markdown 20230506/r/roberto/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-06 19:28:00] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-06 19:28:01] INFO root fetch - main [MainThread]: End processing [flet-multi-page]: success
+[2023-05-06 19:28:01] INFO root fetch - main [MainThread]: End processing [testz]: success
+[2023-05-06 19:28:01] INFO root fetch - main [MainThread]: End processing [roberto]: success
+[2023-05-06 19:28:01] INFO root fetch - main [MainThread]: Store serial: [18001177]
