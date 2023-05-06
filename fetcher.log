@@ -12854,3 +12854,64 @@ EOFError: EOF read where object expected
 [2023-05-06 19:28:01] INFO root fetch - main [MainThread]: End processing [testz]: success
 [2023-05-06 19:28:01] INFO root fetch - main [MainThread]: End processing [roberto]: success
 [2023-05-06 19:28:01] INFO root fetch - main [MainThread]: Store serial: [18001177]
+[2023-05-06 19:33:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001177]
+[2023-05-06 19:33:10] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 19:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aionotion
+[2023-05-06 19:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: st-ant-carousel
+[2023-05-06 19:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nwebclient
+[2023-05-06 19:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flet-multi-page
+[2023-05-06 19:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: delfino
+[2023-05-06 19:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: VoiceIdentification
+[2023-05-06 19:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: postnormalism
+[2023-05-06 19:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nkust-ucl-k12-bot
+[2023-05-06 19:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ZaidPP
+[2023-05-06 19:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: polymatica-api
+[2023-05-06 19:33:11] INFO root fetch - processPackages [st-ant-carousel]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 19:33:11] INFO root fetch - processPackages [nwebclient]: New version: [1.0.82] Old Version: [1.0.81]
+[2023-05-06 19:33:11] INFO root fetch - processPackages [flet-multi-page]: New version: [1.3] Old Version: [1.2.1]
+[2023-05-06 19:33:11] INFO root fetch - processPackages [nkust-ucl-k12-bot]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-05-06 19:33:11] INFO root fetch - processPackages [aionotion]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-05-06 19:33:11] INFO root fetch - processPackages [flet-multi-page]: executing diffoscope
+[2023-05-06 19:33:11] INFO root fetch - processPackages [flet-multi-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_multi_page-1.2.1.tar.gz tmp/flet_multi_page-1.3.tar.gz --markdown 20230506/f/flet-multi-page/1.2.1-1.3/diff.md --exclude *.pyd
+[2023-05-06 19:33:11] INFO root fetch - processPackages [VoiceIdentification]: New version: [1.5] Old Version: [1.4]
+[2023-05-06 19:33:11] WARNING root fetch - processPackages [postnormalism]: Skipping, unable to determine old version
+[2023-05-06 19:33:11] INFO root fetch - main [MainThread]: End processing [postnormalism] error
+[2023-05-06 19:33:11] INFO root fetch - processPackages [ZaidPP]: New version: [0.3.1] Old Version: [0.2.1]
+[2023-05-06 19:33:11] INFO root fetch - processPackages [polymatica-api]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-06 19:33:11] INFO root fetch - processPackages [delfino]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-06 19:33:11] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-05-06 19:33:11] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.81.tar.gz tmp/nwebclient-1.0.82.tar.gz --markdown 20230506/n/nwebclient/1.0.81-1.0.82/diff.md --exclude *.pyd
+[2023-05-06 19:33:11] INFO root fetch - processPackages [st-ant-carousel]: Downloading https://files.pythonhosted.org/packages/98/5c/1923ab5ad8384b813658fffdfbb9083fd7338c833f31f996396da328ee6f/st_ant_carousel-0.0.1-py3-none-any.whl
+[2023-05-06 19:33:11] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/1c/ce/5a9029a6f5f4fbd6107317ff5bbbe7c7ec7c7be48e500dfc1e7132db14c5/nkust-ucl-k12-bot-2.4.0.tar.gz
+[2023-05-06 19:33:11] INFO root fetch - processPackages [VoiceIdentification]: Downloading https://files.pythonhosted.org/packages/c6/01/b0d8bfca6495910a40039bb6244b75f3649998a04a3225ec2b916e63adf2/VoiceIdentification-1.4.tar.gz
+[2023-05-06 19:33:11] INFO root fetch - processPackages [ZaidPP]: Downloading https://files.pythonhosted.org/packages/b6/4b/4e18dc094f78ce9de017846ed1271508df9305e87a582da4e2493c7f33d4/ZaidPP-0.2.1.tar.gz
+[2023-05-06 19:33:11] INFO root fetch - processPackages [delfino]: Downloading https://files.pythonhosted.org/packages/60/eb/b788116116316960c265559bd677730189c5cae3ee78e14730ca7d9a60a9/delfino-1.1.0.tar.gz
+[2023-05-06 19:33:11] INFO root fetch - processPackages [aionotion]: executing diffoscope
+[2023-05-06 19:33:11] INFO root fetch - processPackages [aionotion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aionotion-3.0.1.tar.gz tmp/aionotion-3.0.2.tar.gz --markdown 20230506/a/aionotion/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-05-06 19:33:11] INFO root fetch - processPackages [nkust-ucl-k12-bot]: executing diffoscope
+[2023-05-06 19:33:11] INFO root fetch - processPackages [nkust-ucl-k12-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkust-ucl-k12-bot-2.3.0.tar.gz tmp/nkust-ucl-k12-bot-2.4.0.tar.gz --markdown 20230506/n/nkust-ucl-k12-bot/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-05-06 19:33:11] INFO root fetch - processPackages [st-ant-carousel]: Downloading https://files.pythonhosted.org/packages/cd/35/2709deb1c8001184ff36101a476974d8106f04eb57fa581f94d0daea656b/st_ant_carousel-0.0.2-py3-none-any.whl
+[2023-05-06 19:33:11] INFO root fetch - processPackages [polymatica-api]: Downloading https://files.pythonhosted.org/packages/5e/87/9cfc217ce4cbd3aa6317ce73fac31f634c8a225f652775c8901493384c85/polymatica_api-0.1.0.tar.gz
+[2023-05-06 19:33:11] INFO root fetch - processPackages [VoiceIdentification]: Downloading https://files.pythonhosted.org/packages/31/36/8dc1a8fdc9da3091f6cdd4d64a267e320a8c67a16026dcabb5d1d72610da/VoiceIdentification-1.5.tar.gz
+[2023-05-06 19:33:11] INFO root fetch - processPackages [ZaidPP]: Downloading https://files.pythonhosted.org/packages/3d/fc/32b4c80740e48d4886f36bdbe99d892a7b36497835398d3570691c6db634/ZaidPP-0.3.1.tar.gz
+[2023-05-06 19:33:11] INFO root fetch - processPackages [st-ant-carousel]: executing diffoscope
+[2023-05-06 19:33:11] INFO root fetch - processPackages [st-ant-carousel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_ant_carousel-0.0.1-py3-none-any.whl.zip tmp/st_ant_carousel-0.0.2-py3-none-any.whl.zip --markdown 20230506/s/st-ant-carousel/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 19:33:11] INFO root fetch - processPackages [VoiceIdentification]: executing diffoscope
+[2023-05-06 19:33:11] INFO root fetch - processPackages [VoiceIdentification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VoiceIdentification-1.4.tar.gz tmp/VoiceIdentification-1.5.tar.gz --markdown 20230506/V/VoiceIdentification/1.4-1.5/diff.md --exclude *.pyd
+[2023-05-06 19:33:11] INFO root fetch - processPackages [polymatica-api]: executing diffoscope
+[2023-05-06 19:33:11] INFO root fetch - processPackages [polymatica-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polymatica_api-0.0.9.tar.gz tmp/polymatica_api-0.1.0.tar.gz --markdown 20230506/p/polymatica-api/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-06 19:33:11] INFO root fetch - processPackages [delfino]: Downloading https://files.pythonhosted.org/packages/45/d4/0cd19056164cc18cb85c69479ed44d2ce78714450a84d02987eca88fb958/delfino-1.1.1.tar.gz
+[2023-05-06 19:33:11] INFO root fetch - processPackages [ZaidPP]: executing diffoscope
+[2023-05-06 19:33:11] INFO root fetch - processPackages [ZaidPP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ZaidPP-0.2.1.tar.gz tmp/ZaidPP-0.3.1.tar.gz --markdown 20230506/Z/ZaidPP/0.2.1-0.3.1/diff.md --exclude *.pyd
+[2023-05-06 19:33:11] INFO root fetch - processPackages [delfino]: executing diffoscope
+[2023-05-06 19:33:11] INFO root fetch - processPackages [delfino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/delfino-1.1.0.tar.gz tmp/delfino-1.1.1.tar.gz --markdown 20230506/d/delfino/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-06 19:33:12] INFO root fetch - main [MainThread]: End processing [flet-multi-page]: success
+[2023-05-06 19:33:12] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-05-06 19:33:12] INFO root fetch - main [MainThread]: End processing [aionotion]: success
+[2023-05-06 19:33:12] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
+[2023-05-06 19:33:12] INFO root fetch - main [MainThread]: End processing [VoiceIdentification]: success
+[2023-05-06 19:33:13] INFO root fetch - main [MainThread]: End processing [ZaidPP]: success
+[2023-05-06 19:33:13] INFO root fetch - main [MainThread]: End processing [polymatica-api]: success
+[2023-05-06 19:33:13] INFO root fetch - main [MainThread]: End processing [delfino]: success
+[2023-05-06 19:33:14] INFO root fetch - main [MainThread]: End processing [st-ant-carousel]: success
+[2023-05-06 19:33:14] INFO root fetch - main [MainThread]: Store serial: [18001210]
