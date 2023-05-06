@@ -5830,3 +5830,31 @@
 [2023-05-06 07:04:09] INFO root fetch - main [MainThread]: End processing [kennard-stone]: success
 [2023-05-06 07:04:38] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-05-06 07:04:38] INFO root fetch - main [MainThread]: Store serial: [17997023]
+[2023-05-06 07:09:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997023]
+[2023-05-06 07:09:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 07:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: framelink
+[2023-05-06 07:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neon-homeassistant-skill
+[2023-05-06 07:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multi-model-server
+[2023-05-06 07:09:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tflite-model-maker-nightly
+[2023-05-06 07:09:51] INFO root fetch - processPackages [framelink]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-06 07:09:51] INFO root fetch - processPackages [neon-homeassistant-skill]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 07:09:51] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230506] Old Version: [1.1.8b20230505]
+[2023-05-06 07:09:51] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202305050508] Old Version: [0.4.3.dev202305040506]
+[2023-05-06 07:09:51] INFO root fetch - processPackages [neon-homeassistant-skill]: Downloading https://files.pythonhosted.org/packages/43/f5/55b8a45285ba5562b4bd5610d412869df0c9524a80930f046427bd05f6fe/neon_homeassistant_skill-0.0.8.tar.gz
+[2023-05-06 07:09:51] INFO root fetch - processPackages [framelink]: Downloading https://files.pythonhosted.org/packages/e9/3f/e29a5c46b44c8bd320478dbf378ff708cbb7e35de8446ae249406ef5a5f2/framelink-0.2.0.tar.gz
+[2023-05-06 07:09:51] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-05-06 07:09:51] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202305040506.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202305050508.tar.gz --markdown 20230506/t/tflite-model-maker-nightly/0.4.3.dev202305040506-0.4.3.dev202305050508/diff.md --exclude *.pyd
+[2023-05-06 07:09:51] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/e2/bf/9d10723d27f4b26e1baa6e2a0d86b906029ce59dc7305856de2dfc0bb7d8/multi_model_server-1.1.8b20230506-py2.py3-none-any.whl
+[2023-05-06 07:09:51] INFO root fetch - processPackages [framelink]: Downloading https://files.pythonhosted.org/packages/aa/f2/3ab3e0bd89db772ac020de1f8ad598d3125fbdaa81e91b99883ad58d1409/framelink-0.2.1.tar.gz
+[2023-05-06 07:09:51] INFO root fetch - processPackages [neon-homeassistant-skill]: Downloading https://files.pythonhosted.org/packages/ed/cd/d57fc3688c6ff44460374912e50042853099587df2b98373e338db8e1385/neon_homeassistant_skill-0.0.9.tar.gz
+[2023-05-06 07:09:52] INFO root fetch - processPackages [framelink]: executing diffoscope
+[2023-05-06 07:09:52] INFO root fetch - processPackages [framelink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/framelink-0.2.0.tar.gz tmp/framelink-0.2.1.tar.gz --markdown 20230506/f/framelink/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 07:09:52] INFO root fetch - processPackages [neon-homeassistant-skill]: executing diffoscope
+[2023-05-06 07:09:52] INFO root fetch - processPackages [neon-homeassistant-skill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_homeassistant_skill-0.0.8.tar.gz tmp/neon_homeassistant_skill-0.0.9.tar.gz --markdown 20230506/n/neon-homeassistant-skill/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 07:09:52] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-05-06 07:09:52] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230505-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230506-py2.py3-none-any.whl.zip --markdown 20230506/m/multi-model-server/1.1.8b20230505-1.1.8b20230506/diff.md --exclude *.pyd
+[2023-05-06 07:09:53] INFO root fetch - main [MainThread]: End processing [neon-homeassistant-skill]: success
+[2023-05-06 07:09:53] INFO root fetch - main [MainThread]: End processing [framelink]: success
+[2023-05-06 07:09:54] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-05-06 07:12:43] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-05-06 07:12:43] INFO root fetch - main [MainThread]: Store serial: [17997046]
