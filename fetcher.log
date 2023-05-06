@@ -11460,3 +11460,53 @@ EOFError: EOF read where object expected
 [2023-05-06 16:39:10] INFO root fetch - main [MainThread]: End processing [weaviate-client]: success
 [2023-05-06 16:39:10] INFO root fetch - main [MainThread]: End processing [dark-matter]: success
 [2023-05-06 16:39:10] INFO root fetch - main [MainThread]: Store serial: [18000289]
+[2023-05-06 16:44:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000289]
+[2023-05-06 16:44:19] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 16:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asynci-box
+[2023-05-06 16:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-intel
+[2023-05-06 16:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moo-learn
+[2023-05-06 16:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaaql-middleware-python
+[2023-05-06 16:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: csaf
+[2023-05-06 16:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: AnimeCrawler
+[2023-05-06 16:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-cave
+[2023-05-06 16:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Jlab
+[2023-05-06 16:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pfng
+[2023-05-06 16:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: walespdf
+[2023-05-06 16:44:19] WARNING root fetch - processPackages [moo-learn]: Skipping, unable to determine old version
+[2023-05-06 16:44:19] INFO root fetch - processPackages [moo-learn]: Start processing: JsToPy
+[2023-05-06 16:44:19] INFO root fetch - main [MainThread]: End processing [moo-learn] error
+[2023-05-06 16:44:19] INFO root fetch - processPackages [csaf]: New version: [2023.5.6] Old Version: [2022.3.13]
+[2023-05-06 16:44:19] WARNING root fetch - processPackages [asynci-box]: Skipping, unable to determine old version
+[2023-05-06 16:44:19] INFO root fetch - main [MainThread]: End processing [asynci-box] error
+[2023-05-06 16:44:19] WARNING root fetch - processPackages [walespdf]: Skipping, unable to determine old version
+[2023-05-06 16:44:19] WARNING root fetch - processPackages [pfng]: Skipping, unable to determine old version
+[2023-05-06 16:44:19] INFO root fetch - processPackages [AnimeCrawler]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-05-06 16:44:19] INFO root fetch - main [MainThread]: End processing [walespdf] error
+[2023-05-06 16:44:19] WARNING root fetch - processPackages [nonebot-plugin-cave]: Skipping, unable to determine old version
+[2023-05-06 16:44:19] INFO root fetch - main [MainThread]: End processing [pfng] error
+[2023-05-06 16:44:19] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-cave] error
+[2023-05-06 16:44:19] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-06 16:44:19] INFO root fetch - processPackages [jaaql-middleware-python]: New version: [4.9.1] Old Version: [4.9.0]
+[2023-05-06 16:44:19] ERROR root fetch - processPackages [JsToPy]: Unable to get metadata: No such project 'JsToPy'
+[2023-05-06 16:44:19] INFO root fetch - main [MainThread]: End processing [JsToPy] error
+[2023-05-06 16:44:19] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.14.0.dev20230505] Old Version: [2.14.0.dev20230504]
+[2023-05-06 16:44:19] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/3d/43/c5ae5c9957254a090b2f8c0fd7e69ed22511a80fdf4d5de1efcf1df47e83/tf_nightly_intel-2.14.0.dev20230504-cp39-cp39-win_amd64.whl
+[2023-05-06 16:44:19] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-05-06 16:44:19] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230506/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-06 16:44:19] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 179777229>=10485760
+[2023-05-06 16:44:19] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-05-06 16:44:19] INFO root fetch - processPackages [csaf]: Downloading https://files.pythonhosted.org/packages/02/0a/49c39f4bfec24879ecef22e555e7d695f9b98612c0e1dc330708f140d2c6/csaf-2022.3.13.tar.gz
+[2023-05-06 16:44:20] INFO root fetch - processPackages [jaaql-middleware-python]: Downloading https://files.pythonhosted.org/packages/1c/9b/c594efdb4d5a8a8eb6e0876f48857da40e24c3018095e5e6276aad18d78d/jaaql-middleware-python-4.9.1.tar.gz
+[2023-05-06 16:44:20] INFO root fetch - processPackages [AnimeCrawler]: Downloading https://files.pythonhosted.org/packages/b5/10/4f7010d2a9e5d9b9380ff13bf1a8594027b39e3097a044c57b5bf7af465d/AnimeCrawler-0.2.0.tar.gz
+[2023-05-06 16:44:20] INFO root fetch - processPackages [jaaql-middleware-python]: executing diffoscope
+[2023-05-06 16:44:20] INFO root fetch - processPackages [jaaql-middleware-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-middleware-python-4.9.0.tar.gz tmp/jaaql-middleware-python-4.9.1.tar.gz --markdown 20230506/j/jaaql-middleware-python/4.9.0-4.9.1/diff.md --exclude *.pyd
+[2023-05-06 16:44:20] INFO root fetch - processPackages [AnimeCrawler]: executing diffoscope
+[2023-05-06 16:44:20] INFO root fetch - processPackages [AnimeCrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AnimeCrawler-0.1.2.tar.gz tmp/AnimeCrawler-0.2.0.tar.gz --markdown 20230506/A/AnimeCrawler/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 16:44:20] INFO root fetch - processPackages [csaf]: Downloading https://files.pythonhosted.org/packages/22/34/be03b4aed39168c957dbf07cd025e2fc1d1d8aac1f07a5adb9d5f0bc2904/csaf-2023.5.6.tar.gz
+[2023-05-06 16:44:20] INFO root fetch - processPackages [csaf]: executing diffoscope
+[2023-05-06 16:44:20] INFO root fetch - processPackages [csaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csaf-2022.3.13.tar.gz tmp/csaf-2023.5.6.tar.gz --markdown 20230506/c/csaf/2022.3.13-2023.5.6/diff.md --exclude *.pyd
+[2023-05-06 16:44:21] INFO root fetch - main [MainThread]: End processing [Jlab]: success
+[2023-05-06 16:44:21] INFO root fetch - main [MainThread]: End processing [AnimeCrawler]: success
+[2023-05-06 16:44:21] INFO root fetch - main [MainThread]: End processing [jaaql-middleware-python]: success
+[2023-05-06 16:44:21] INFO root fetch - main [MainThread]: End processing [csaf]: success
+[2023-05-06 16:44:21] INFO root fetch - main [MainThread]: Store serial: [18000338]
