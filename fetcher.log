@@ -7327,3 +7327,68 @@
 [2023-05-06 09:47:25] INFO root fetch - main [MainThread]: End processing [astk]: success
 [2023-05-06 09:47:44] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
 [2023-05-06 09:47:44] INFO root fetch - main [MainThread]: Store serial: [17997915]
+[2023-05-06 09:52:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997915]
+[2023-05-06 09:52:53] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cellmap
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nightly
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yetl-framework
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oronium
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sag-py-logging
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyroporn
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tf-nightly-cpu
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ezmote-cmdserver
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dataset-viewer
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: xhs
+[2023-05-06 09:52:53] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-06 09:52:53] INFO root fetch - processPackages [ezmote-cmdserver]: New version: [0.8.2] Old Version: [0.8.0]
+[2023-05-06 09:52:53] INFO root fetch - processPackages [oronium]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 09:52:53] INFO root fetch - processPackages [sag-py-logging]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-06 09:52:53] INFO root fetch - processPackages [dataset-viewer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 09:52:53] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202305060747] Old Version: [1.0.1.dev202305060457]
+[2023-05-06 09:52:53] INFO root fetch - processPackages [pyroporn]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-06 09:52:53] INFO root fetch - processPackages [yetl-framework]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-06 09:52:53] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.14.0.dev20230506] Old Version: [2.14.0.dev20230505]
+[2023-05-06 09:52:54] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-06 09:52:54] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230506/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-06 09:52:54] INFO root fetch - processPackages [xhs]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-06 09:52:54] INFO root fetch - processPackages [dataset-viewer]: executing diffoscope
+[2023-05-06 09:52:54] INFO root fetch - processPackages [dataset-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataset-viewer-0.0.8.tar.gz tmp/dataset-viewer-0.0.9.tar.gz --markdown 20230506/d/dataset-viewer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 09:52:54] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/42/b4/2e7e1afd827886b627098afd2271cd38d982a166c998d71db29910d598be/pyroporn-0.2.1.tar.gz
+[2023-05-06 09:52:54] INFO root fetch - processPackages [oronium]: Downloading https://files.pythonhosted.org/packages/22/30/6646f4d63395322927af09300eeb0c278e67f904f85acd85a7db837e3976/oronium-1.0.8.tar.gz
+[2023-05-06 09:52:54] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/4f/59/d457cb40b566600eb2a94444d6a10ad341ca38c3be757560a95ce30031ca/yetl-framework-1.0.4.tar.gz
+[2023-05-06 09:52:54] INFO root fetch - processPackages [sag-py-logging]: Downloading https://files.pythonhosted.org/packages/66/e7/319a717df53f7fbb96e1eca5c4ef1135ef9fa1bee4da066b359660b541d0/sag-py-logging-0.3.1.tar.gz
+[2023-05-06 09:52:54] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/bf/98/75161f682f1a0eecad4ff0e2f68d573291e983c65e502b867a4b665cf9eb/cellmap-1.0.1.dev202305060747-py3-none-any.whl
+[2023-05-06 09:52:54] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-05-06 09:52:54] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.0.3.tar.gz tmp/yetl-framework-1.0.4.tar.gz --markdown 20230506/y/yetl-framework/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-06 09:52:54] INFO root fetch - processPackages [xhs]: Downloading https://files.pythonhosted.org/packages/a9/d0/b152118b9445c80e755d67e5c3e4aa9560ec543978bde0e8845991b12bfe/xhs-0.1.5.tar.gz
+[2023-05-06 09:52:54] INFO root fetch - processPackages [ezmote-cmdserver]: Downloading https://files.pythonhosted.org/packages/d4/80/c7861e4f4aa1c0260ac74fe0873d21532ab3befd1e84e774c21e337423b7/ezmote-cmdserver-0.8.2.tar.gz
+[2023-05-06 09:52:54] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-05-06 09:52:54] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202305060457-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202305060747-py3-none-any.whl.zip --markdown 20230506/c/cellmap/1.0.1.dev202305060457-1.0.1.dev202305060747/diff.md --exclude *.pyd
+[2023-05-06 09:52:54] INFO root fetch - processPackages [ezmote-cmdserver]: executing diffoscope
+[2023-05-06 09:52:54] INFO root fetch - processPackages [ezmote-cmdserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezmote-cmdserver-0.8.0.tar.gz tmp/ezmote-cmdserver-0.8.2.tar.gz --markdown 20230506/e/ezmote-cmdserver/0.8.0-0.8.2/diff.md --exclude *.pyd
+[2023-05-06 09:52:54] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/f6/ac/3b7411af900e6ebccf9da42e2b1f20c96c977281b620b55d84cf6860475e/tf_nightly_cpu-2.14.0.dev20230506-cp39-cp39-win_amd64.whl
+[2023-05-06 09:52:54] INFO root fetch - processPackages [sag-py-logging]: Downloading https://files.pythonhosted.org/packages/c6/65/ffce51f58954e12298c3e80fc5204e36296fc718fc61d6a8fc1d81d07313/sag-py-logging-0.3.2.tar.gz
+[2023-05-06 09:52:54] INFO root fetch - processPackages [oronium]: Downloading https://files.pythonhosted.org/packages/81/dc/763ec3508451f67c1865a05b1fc2dff66b54b9657d5005d80ef556d375de/oronium-1.0.9.tar.gz
+[2023-05-06 09:52:54] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-05-06 09:52:54] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.14.0.dev20230505-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.14.0.dev20230506-cp39-cp39-win_amd64.whl.zip --markdown 20230506/t/tf-nightly-cpu/2.14.0.dev20230505-2.14.0.dev20230506/diff.md --exclude *.pyd
+[2023-05-06 09:52:54] INFO root fetch - processPackages [xhs]: Downloading https://files.pythonhosted.org/packages/76/ef/a6bad2a85f56c754e3d08aaa77e1ff5b1e7cb2f0b1bbcfc51488cee1275b/xhs-0.1.6-py3-none-any.whl
+[2023-05-06 09:52:54] INFO root fetch - processPackages [sag-py-logging]: executing diffoscope
+[2023-05-06 09:52:54] INFO root fetch - processPackages [sag-py-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sag-py-logging-0.3.1.tar.gz tmp/sag-py-logging-0.3.2.tar.gz --markdown 20230506/s/sag-py-logging/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-06 09:52:54] INFO root fetch - processPackages [oronium]: executing diffoscope
+[2023-05-06 09:52:54] INFO root fetch - processPackages [oronium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oronium-1.0.8.tar.gz tmp/oronium-1.0.9.tar.gz --markdown 20230506/o/oronium/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 09:52:54] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/dc/7b/14a382ed0978f2e3512b54b5b2f1ffa30b336b6040f7cf0c77504b7b689a/pyroporn-0.2.2.tar.gz
+[2023-05-06 09:52:54] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-06 09:52:54] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.2.1.tar.gz tmp/pyroporn-0.2.2.tar.gz --markdown 20230506/p/pyroporn/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-06 09:52:54] INFO root fetch - processPackages [xhs]: executing diffoscope
+[2023-05-06 09:52:54] INFO root fetch - processPackages [xhs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xhs-0.1.5.tar.gz tmp/xhs-0.1.6-py3-none-any.whl.zip --markdown 20230506/x/xhs/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-06 09:52:55] INFO root fetch - main [MainThread]: End processing [dataset-viewer]: success
+[2023-05-06 09:52:55] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-05-06 09:52:55] INFO root fetch - main [MainThread]: End processing [ezmote-cmdserver]: success
+[2023-05-06 09:52:55] INFO root fetch - main [MainThread]: End processing [sag-py-logging]: success
+[2023-05-06 09:52:56] INFO root fetch - main [MainThread]: End processing [xhs]: success
+[2023-05-06 09:52:56] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-06 09:52:56] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-05-06 09:52:56] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-05-06 09:52:56] INFO root fetch - main [MainThread]: End processing [oronium]: success
+[2023-05-06 09:53:04] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-05-06 09:53:04] INFO root fetch - main [MainThread]: Store serial: [17997946]
