@@ -5601,3 +5601,45 @@
 [2023-05-06 06:22:14] INFO root fetch - processPackages [callingcardstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/callingcardstools-0.1.0.tar.gz tmp/callingcardstools-0.1.1.tar.gz --markdown 20230506/c/callingcardstools/0.1.0-0.1.1/diff.md --exclude *.pyd
 [2023-05-06 06:22:16] INFO root fetch - main [MainThread]: End processing [callingcardstools]: success
 [2023-05-06 06:22:16] INFO root fetch - main [MainThread]: Store serial: [17996822]
+[2023-05-06 06:27:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996822]
+[2023-05-06 06:27:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 06:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CreateAI
+[2023-05-06 06:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyfi
+[2023-05-06 06:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: m3u8-XZ
+[2023-05-06 06:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiofauna
+[2023-05-06 06:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stmaterial
+[2023-05-06 06:27:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fill-voids
+[2023-05-06 06:27:25] INFO root fetch - processPackages [stmaterial]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 06:27:25] INFO root fetch - processPackages [aiofauna]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 06:27:25] INFO root fetch - processPackages [CreateAI]: New version: [0.8.1] Old Version: [0.8]
+[2023-05-06 06:27:25] INFO root fetch - processPackages [m3u8-XZ]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 06:27:25] INFO root fetch - processPackages [hyfi]: New version: [0.4.0] Old Version: [0.3.5]
+[2023-05-06 06:27:25] INFO root fetch - processPackages [fill-voids]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-06 06:27:25] INFO root fetch - processPackages [CreateAI]: Downloading https://files.pythonhosted.org/packages/10/cf/1fecd031706d6dd1e29c13586dce4935ec0328431717743a21fd823dde85/CreateAI-0.8.tar.gz
+[2023-05-06 06:27:25] INFO root fetch - processPackages [aiofauna]: Downloading https://files.pythonhosted.org/packages/92/36/42d798443774b85e55368ecf589df722456538e7335127eb027fdae905da/aiofauna-0.1.1.tar.gz
+[2023-05-06 06:27:25] INFO root fetch - processPackages [m3u8-XZ]: Downloading https://files.pythonhosted.org/packages/d7/de/3acf65e27e474c94c410fa4d7e637ce05d0031db579de6a802ac938378f0/m3u8_XZ-0.0.1.tar.gz
+[2023-05-06 06:27:25] INFO root fetch - processPackages [hyfi]: Downloading https://files.pythonhosted.org/packages/8f/9e/d5372c65aa468b187334dad66ac8cbcc85f5dc38224a4c8e09f6a6b7fb89/hyfi-0.4.0.tar.gz
+[2023-05-06 06:27:25] INFO root fetch - processPackages [stmaterial]: Downloading https://files.pythonhosted.org/packages/42/5b/e85499428104ca76c443344fe2fa9d455bdf7b5d8bc3755b9e982e87d758/stmaterial-0.0.4.tar.gz
+[2023-05-06 06:27:25] INFO root fetch - processPackages [aiofauna]: executing diffoscope
+[2023-05-06 06:27:25] INFO root fetch - processPackages [aiofauna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiofauna-0.1.0.tar.gz tmp/aiofauna-0.1.1.tar.gz --markdown 20230506/a/aiofauna/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 06:27:25] INFO root fetch - processPackages [hyfi]: executing diffoscope
+[2023-05-06 06:27:25] INFO root fetch - processPackages [hyfi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyfi-0.3.5.tar.gz tmp/hyfi-0.4.0.tar.gz --markdown 20230506/h/hyfi/0.3.5-0.4.0/diff.md --exclude *.pyd
+[2023-05-06 06:27:25] INFO root fetch - processPackages [fill-voids]: Downloading https://files.pythonhosted.org/packages/47/72/a70f8aff391a82e996edbb821f1040c58c0ae59e02453d65d38ff7f9534d/fill_voids-2.0.3.tar.gz
+[2023-05-06 06:27:25] INFO root fetch - processPackages [stmaterial]: executing diffoscope
+[2023-05-06 06:27:25] INFO root fetch - processPackages [stmaterial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stmaterial-0.0.3.tar.gz tmp/stmaterial-0.0.4.tar.gz --markdown 20230506/s/stmaterial/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 06:27:25] INFO root fetch - processPackages [CreateAI]: Downloading https://files.pythonhosted.org/packages/11/8f/7e10249be8d5d103fca05c3f01a43d79afc939694d9a1f565fedcae3689b/CreateAI-0.8.1.tar.gz
+[2023-05-06 06:27:25] INFO root fetch - processPackages [CreateAI]: executing diffoscope
+[2023-05-06 06:27:25] INFO root fetch - processPackages [CreateAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CreateAI-0.8.tar.gz tmp/CreateAI-0.8.1.tar.gz --markdown 20230506/C/CreateAI/0.8-0.8.1/diff.md --exclude *.pyd
+[2023-05-06 06:27:25] INFO root fetch - processPackages [m3u8-XZ]: Downloading https://files.pythonhosted.org/packages/fb/b7/7564d2e62fe6f79a627d51c1dbc800a1f1206f5fe169fc107b29d9afcc75/m3u8_XZ-0.0.2.tar.gz
+[2023-05-06 06:27:25] INFO root fetch - processPackages [m3u8-XZ]: executing diffoscope
+[2023-05-06 06:27:25] INFO root fetch - processPackages [m3u8-XZ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m3u8_XZ-0.0.1.tar.gz tmp/m3u8_XZ-0.0.2.tar.gz --markdown 20230506/m/m3u8-XZ/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 06:27:26] INFO root fetch - processPackages [fill-voids]: Downloading https://files.pythonhosted.org/packages/02/0b/430d8a9dcc5e8f73a7b151d271b2770b8d9a3e22391e84e666d3487a3204/fill_voids-2.0.4-cp310-cp310-musllinux_1_1_x86_64.whl
+[2023-05-06 06:27:26] INFO root fetch - processPackages [fill-voids]: executing diffoscope
+[2023-05-06 06:27:26] INFO root fetch - processPackages [fill-voids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fill_voids-2.0.3.tar.gz tmp/fill_voids-2.0.4-cp310-cp310-musllinux_1_1_x86_64.whl.zip --markdown 20230506/f/fill-voids/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-06 06:27:26] INFO root fetch - main [MainThread]: End processing [aiofauna]: success
+[2023-05-06 06:27:26] INFO root fetch - main [MainThread]: End processing [CreateAI]: success
+[2023-05-06 06:27:26] INFO root fetch - main [MainThread]: End processing [m3u8-XZ]: success
+[2023-05-06 06:27:27] INFO root fetch - main [MainThread]: End processing [hyfi]: success
+[2023-05-06 06:27:27] INFO root fetch - main [MainThread]: End processing [fill-voids]: success
+[2023-05-06 06:27:28] INFO root fetch - main [MainThread]: End processing [stmaterial]: success
+[2023-05-06 06:27:28] INFO root fetch - main [MainThread]: Store serial: [17996846]
