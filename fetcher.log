@@ -10643,3 +10643,82 @@ EOFError: EOF read where object expected
 [2023-05-06 15:04:52] INFO root fetch - main [MainThread]: End processing [pyPhasesRecordloader]: success
 [2023-05-06 15:04:53] INFO root fetch - main [MainThread]: End processing [django-two-factor-auth]: success
 [2023-05-06 15:04:53] INFO root fetch - main [MainThread]: Store serial: [17999760]
+[2023-05-06 15:09:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999760]
+[2023-05-06 15:10:02] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-06 15:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoxx
+[2023-05-06 15:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbt-ai
+[2023-05-06 15:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-stdlib
+[2023-05-06 15:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wcfhttp
+[2023-05-06 15:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fuzzy-ads
+[2023-05-06 15:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: deeplc
+[2023-05-06 15:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oakvar
+[2023-05-06 15:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-numpy
+[2023-05-06 15:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: TorchEase
+[2023-05-06 15:10:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: age
+[2023-05-06 15:10:02] INFO root fetch - processPackages [wcfhttp]: New version: [3.7.0.30.11] Old Version: [3.7.0.30.0]
+[2023-05-06 15:10:02] INFO root fetch - processPackages [dbt-ai]: New version: [0.0.8a0] Old Version: [0.0.7a0]
+[2023-05-06 15:10:02] INFO root fetch - processPackages [fuzzy-ads]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 15:10:02] WARNING root fetch - processPackages [autoxx]: Skipping, unable to determine old version
+[2023-05-06 15:10:02] INFO root fetch - processPackages [autoxx]: Start processing: nbdev-pandas
+[2023-05-06 15:10:02] INFO root fetch - main [MainThread]: End processing [autoxx] error
+[2023-05-06 15:10:02] INFO root fetch - processPackages [deeplc]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-06 15:10:02] INFO root fetch - processPackages [oakvar]: New version: [2.9.9] Old Version: [2.9.7]
+[2023-05-06 15:10:02] INFO root fetch - processPackages [TorchEase]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 15:10:02] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 15:10:02] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 15:10:02] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 15:10:02] INFO root fetch - processPackages [age]: New version: [0.5.1] Old Version: [0.4.1]
+[2023-05-06 15:10:02] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-06 15:10:02] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230506/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 15:10:02] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-06 15:10:02] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230506/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 15:10:02] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-05-06 15:10:02] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.7.tar.gz tmp/oakvar-2.9.9.tar.gz --markdown 20230506/o/oakvar/2.9.7-2.9.9/diff.md --exclude *.pyd
+[2023-05-06 15:10:02] INFO root fetch - processPackages [wcfhttp]: Downloading https://files.pythonhosted.org/packages/51/04/269b4b30a9c67b90bc9d735f524b536dad35d54712005a218f5fcd8dfcd0/wcfhttp-3.7.0.30.0.tar.gz
+[2023-05-06 15:10:02] INFO root fetch - processPackages [deeplc]: Downloading https://files.pythonhosted.org/packages/c1/60/d7b9083773512b55d7010a465a34cdc6eda83a148a4e343abf568b2d6528/deeplc-2.0.3.tar.gz
+[2023-05-06 15:10:02] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-06 15:10:02] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230506/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 15:10:02] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/13/c1/cf7e34e1ef31371cdf469b6034198ced5ae2f31838815d2bab683084f367/dbt-ai-0.0.7a0.tar.gz
+[2023-05-06 15:10:02] INFO root fetch - processPackages [fuzzy-ads]: Downloading https://files.pythonhosted.org/packages/84/35/dfcf18b1a67cc9852e67eb677eeaa69af2e65a66580c60f954fd8fe127b9/fuzzy-ads-0.1.8.tar.gz
+[2023-05-06 15:10:02] WARNING root fetch - processPackages [deeplc]: Skipping package: exceeds size limit 77888258>=10485760
+[2023-05-06 15:10:02] INFO root fetch - processPackages [deeplc]: Start processing: wcfhttp
+[2023-05-06 15:10:02] INFO root fetch - main [MainThread]: End processing [deeplc] error
+[2023-05-06 15:10:02] INFO root fetch - processPackages [TorchEase]: Downloading https://files.pythonhosted.org/packages/6f/50/05b459937c722627b86857d9a02735a660b592a20bb43ac0794d749c2be2/TorchEase-0.0.8.tar.gz
+[2023-05-06 15:10:02] INFO root fetch - processPackages [wcfhttp]: New version: [3.7.0.30.12] Old Version: [3.7.0.30.11]
+[2023-05-06 15:10:02] INFO root fetch - processPackages [age]: Downloading https://files.pythonhosted.org/packages/e2/47/5c25a5022b29812485ebee0ca98a39626004d906c31a84441c93b124b8d3/age-0.4.1.tar.gz
+[2023-05-06 15:10:02] INFO root fetch - processPackages [TorchEase]: executing diffoscope
+[2023-05-06 15:10:02] INFO root fetch - processPackages [TorchEase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TorchEase-0.0.7.tar.gz tmp/TorchEase-0.0.8.tar.gz --markdown 20230506/T/TorchEase/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 15:10:02] INFO root fetch - processPackages [wcfhttp]: Downloading https://files.pythonhosted.org/packages/94/b8/c048f88f303a00c0b7bba5b64472a6bd59488abcfefdaefd3aa6fe5414d2/wcfhttp-3.7.0.30.11.tar.gz
+[2023-05-06 15:10:02] INFO root fetch - processPackages [wcfhttp]: Downloading https://files.pythonhosted.org/packages/94/b8/c048f88f303a00c0b7bba5b64472a6bd59488abcfefdaefd3aa6fe5414d2/wcfhttp-3.7.0.30.11.tar.gz
+[2023-05-06 15:10:02] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/c2/8b/53dbbd5b126b7f09a50501b3fac7aa7fd1ac868f8c38ca09420c93d485bf/dbt-ai-0.0.8a0.tar.gz
+[2023-05-06 15:10:02] INFO root fetch - processPackages [age]: Downloading https://files.pythonhosted.org/packages/62/9b/37d39bc2dab105dcac7518d23649bf937cd77f3373cc1a82c99e3844ce5a/age-0.5.1.tar.gz
+[2023-05-06 15:10:02] INFO root fetch - processPackages [wcfhttp]: executing diffoscope
+[2023-05-06 15:10:02] INFO root fetch - processPackages [wcfhttp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wcfhttp-3.7.0.30.0.tar.gz tmp/wcfhttp-3.7.0.30.11.tar.gz --markdown 20230506/w/wcfhttp/3.7.0.30.0-3.7.0.30.11/diff.md --exclude *.pyd
+[2023-05-06 15:10:02] INFO root fetch - processPackages [dbt-ai]: executing diffoscope
+[2023-05-06 15:10:02] INFO root fetch - processPackages [dbt-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-ai-0.0.7a0.tar.gz tmp/dbt-ai-0.0.8a0.tar.gz --markdown 20230506/d/dbt-ai/0.0.7a0-0.0.8a0/diff.md --exclude *.pyd
+[2023-05-06 15:10:02] INFO root fetch - processPackages [wcfhttp]: Downloading https://files.pythonhosted.org/packages/dc/6b/b5765fe673f47d18a2d2ef8467e097e8527b9687d5ffbf67ab118bd073db/wcfhttp-3.7.0.30.12.tar.gz
+[2023-05-06 15:10:02] INFO root fetch - processPackages [age]: executing diffoscope
+[2023-05-06 15:10:02] INFO root fetch - processPackages [age]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/age-0.4.1.tar.gz tmp/age-0.5.1.tar.gz --markdown 20230506/a/age/0.4.1-0.5.1/diff.md --exclude *.pyd
+[2023-05-06 15:10:03] INFO root fetch - processPackages [wcfhttp]: executing diffoscope
+[2023-05-06 15:10:03] INFO root fetch - processPackages [wcfhttp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wcfhttp-3.7.0.30.11.tar.gz tmp/wcfhttp-3.7.0.30.12.tar.gz --markdown 20230506/w/wcfhttp/3.7.0.30.11-3.7.0.30.12/diff.md --exclude *.pyd
+[2023-05-06 15:10:03] INFO root fetch - processPackages [fuzzy-ads]: Downloading https://files.pythonhosted.org/packages/b1/be/230b7ff6007a07fdb1b69a35847f864b9f5e59dcc4dc6846a7566815b305/fuzzy-ads-0.1.9.tar.gz
+[2023-05-06 15:10:03] INFO root fetch - processPackages [fuzzy-ads]: executing diffoscope
+[2023-05-06 15:10:03] INFO root fetch - processPackages [fuzzy-ads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuzzy-ads-0.1.8.tar.gz tmp/fuzzy-ads-0.1.9.tar.gz --markdown 20230506/f/fuzzy-ads/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 15:10:03] INFO root fetch - processPackages [nbdev-pandas]: Start processing: htag
+[2023-05-06 15:10:03] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-06 15:10:03] INFO root fetch - processPackages [htag]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-06 15:10:03] INFO root fetch - main [MainThread]: End processing [TorchEase]: success
+[2023-05-06 15:10:04] INFO root fetch - main [MainThread]: End processing [wcfhttp]: success
+[2023-05-06 15:10:04] INFO root fetch - processPackages [htag]: Downloading https://files.pythonhosted.org/packages/1f/49/7ef7457fe0739f49ce1e45659e55602cad7f94e43d3e24f73938ef4de585/htag-0.9.8.tar.gz
+[2023-05-06 15:10:04] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-06 15:10:04] INFO root fetch - main [MainThread]: End processing [wcfhttp]: success
+[2023-05-06 15:10:04] INFO root fetch - main [MainThread]: End processing [dbt-ai]: success
+[2023-05-06 15:10:04] INFO root fetch - processPackages [htag]: Downloading https://files.pythonhosted.org/packages/3c/57/e3ec31c7a4370e0398973fdc16d97c10b517a8a8c8ab59f3221b4e86189e/htag-0.9.9.tar.gz
+[2023-05-06 15:10:04] INFO root fetch - main [MainThread]: End processing [age]: success
+[2023-05-06 15:10:04] INFO root fetch - processPackages [htag]: executing diffoscope
+[2023-05-06 15:10:04] INFO root fetch - processPackages [htag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htag-0.9.8.tar.gz tmp/htag-0.9.9.tar.gz --markdown 20230506/h/htag/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-06 15:10:04] INFO root fetch - main [MainThread]: End processing [fuzzy-ads]: success
+[2023-05-06 15:10:05] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-06 15:10:05] INFO root fetch - main [MainThread]: End processing [htag]: success
+[2023-05-06 15:10:07] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-05-06 15:10:07] INFO root fetch - main [MainThread]: Store serial: [17999806]
