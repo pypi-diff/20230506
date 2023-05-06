@@ -12644,3 +12644,77 @@ EOFError: EOF read where object expected
 [2023-05-06 19:07:04] INFO root fetch - main [MainThread]: End processing [replit-bot]: success
 [2023-05-06 19:07:09] INFO root fetch - main [MainThread]: End processing [kopf]: success
 [2023-05-06 19:07:09] INFO root fetch - main [MainThread]: Store serial: [18001068]
+[2023-05-06 19:12:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001068]
+[2023-05-06 19:12:18] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-06 19:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: savestate
+[2023-05-06 19:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deltalake
+[2023-05-06 19:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zhmcclient
+[2023-05-06 19:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: semisup-segmentation
+[2023-05-06 19:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfdstools
+[2023-05-06 19:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gql
+[2023-05-06 19:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jupyterlab
+[2023-05-06 19:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: replit-bot
+[2023-05-06 19:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gqt
+[2023-05-06 19:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cnki-html2json
+[2023-05-06 19:12:18] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [cnki-html2json]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [replit-bot]: New version: [4.2.9] Old Version: [4.2.8]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [zhmcclient]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [savestate]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [cnki-html2json]: executing diffoscope
+[2023-05-06 19:12:18] INFO root fetch - processPackages [cnki-html2json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnki_html2json-0.1.5.tar.gz tmp/cnki_html2json-0.1.6.tar.gz --markdown 20230506/c/cnki-html2json/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-06 19:12:18] INFO root fetch - processPackages [replit-bot]: executing diffoscope
+[2023-05-06 19:12:18] INFO root fetch - processPackages [replit-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replit-bot-4.2.8.tar.gz tmp/replit-bot-4.2.9.tar.gz --markdown 20230506/r/replit-bot/4.2.8-4.2.9/diff.md --exclude *.pyd
+[2023-05-06 19:12:18] INFO root fetch - processPackages [gql]: New version: [3.5.0b3] Old Version: [3.5.0b2]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [pyfdstools]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 19:12:18] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 19:12:18] INFO root fetch - processPackages [deltalake]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [gqt]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [jupyterlab]: New version: [4.0.0rc1] Old Version: [4.0.0rc0]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [pyfdstools]: Downloading https://files.pythonhosted.org/packages/a4/da/63f0b4c4cbbada0c711e9c9bdd4afc16ad694cb3816c10f046b5b1f3b963/pyfdstools-0.0.7.tar.gz
+[2023-05-06 19:12:18] WARNING root fetch - processPackages [pyfdstools]: Skipping package: exceeds size limit 13567668>=10485760
+[2023-05-06 19:12:18] INFO root fetch - processPackages [pyfdstools]: Start processing: Jlab
+[2023-05-06 19:12:18] INFO root fetch - main [MainThread]: End processing [pyfdstools] error
+[2023-05-06 19:12:18] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-06 19:12:18] INFO root fetch - processPackages [savestate]: Downloading https://files.pythonhosted.org/packages/9f/c7/f0debc92b7bdb94b38e8d620e1b19177175adee182344acd9bd5fe4acfa0/savestate-0.1.0.tar.gz
+[2023-05-06 19:12:18] INFO root fetch - processPackages [zhmcclient]: Downloading https://files.pythonhosted.org/packages/a7/8f/66d90e364b2c6972f361907dc88f38eb05fad17c602b7b7467e404d9c30f/zhmcclient-1.7.2.tar.gz
+[2023-05-06 19:12:18] INFO root fetch - processPackages [deltalake]: Downloading https://files.pythonhosted.org/packages/fd/0e/b5472564df2041caea5b9d85de4be27ba13a03d845250b370f01319fa857/deltalake-0.8.1.tar.gz
+[2023-05-06 19:12:18] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-05-06 19:12:18] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230506/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-06 19:12:18] INFO root fetch - processPackages [gqt]: Downloading https://files.pythonhosted.org/packages/59/d7/27597e4c1792fdfc8c7360b9d941ca5b264c9ec1af605727cc16b3f00328/gqt-0.98.0.tar.gz
+[2023-05-06 19:12:18] INFO root fetch - processPackages [gql]: Downloading https://files.pythonhosted.org/packages/7d/88/4b75a6395a5c6903b8aa3a9921e7033aef4e99057f244c4c57ff10c9e616/gql-3.5.0b2.tar.gz
+[2023-05-06 19:12:18] INFO root fetch - processPackages [jupyterlab]: Downloading https://files.pythonhosted.org/packages/93/e7/4513428cca194dcbf1c3acf6589a7e5cc963edc51f3b6c692aef6146951b/jupyterlab-4.0.0rc0.tar.gz
+[2023-05-06 19:12:18] INFO root fetch - processPackages [zhmcclient]: executing diffoscope
+[2023-05-06 19:12:18] INFO root fetch - processPackages [zhmcclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhmcclient-1.7.1.tar.gz tmp/zhmcclient-1.7.2.tar.gz --markdown 20230506/z/zhmcclient/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-05-06 19:12:18] INFO root fetch - processPackages [savestate]: Downloading https://files.pythonhosted.org/packages/e4/31/f44dfa1d0595342327d04311a426a6131dbff791a0bf4823a08dbe7cac7a/savestate-0.1.1.tar.gz
+[2023-05-06 19:12:18] WARNING root fetch - processPackages [jupyterlab]: Skipping package: exceeds size limit 18200222>=10485760
+[2023-05-06 19:12:18] INFO root fetch - processPackages [jupyterlab]: Start processing: composipy
+[2023-05-06 19:12:18] INFO root fetch - main [MainThread]: End processing [jupyterlab] error
+[2023-05-06 19:12:19] INFO root fetch - processPackages [composipy]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-06 19:12:19] INFO root fetch - processPackages [savestate]: executing diffoscope
+[2023-05-06 19:12:19] INFO root fetch - processPackages [savestate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/savestate-0.1.0.tar.gz tmp/savestate-0.1.1.tar.gz --markdown 20230506/s/savestate/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 19:12:19] INFO root fetch - processPackages [gqt]: Downloading https://files.pythonhosted.org/packages/b8/a0/ea874c9fe56a3f91af65f702d5fcbd6d020c6e460fb6a0b0e7d5c59e765a/gqt-0.99.0.tar.gz
+[2023-05-06 19:12:19] INFO root fetch - processPackages [gql]: Downloading https://files.pythonhosted.org/packages/a4/40/99ee6130ad970f90d927dcb327291c84861290ebf44882503172d550f9af/gql-3.5.0b3.tar.gz
+[2023-05-06 19:12:19] INFO root fetch - processPackages [gqt]: executing diffoscope
+[2023-05-06 19:12:19] INFO root fetch - processPackages [gqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqt-0.98.0.tar.gz tmp/gqt-0.99.0.tar.gz --markdown 20230506/g/gqt/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-05-06 19:12:19] INFO root fetch - processPackages [gql]: executing diffoscope
+[2023-05-06 19:12:19] INFO root fetch - processPackages [gql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gql-3.5.0b2.tar.gz tmp/gql-3.5.0b3.tar.gz --markdown 20230506/g/gql/3.5.0b2-3.5.0b3/diff.md --exclude *.pyd
+[2023-05-06 19:12:19] INFO root fetch - processPackages [composipy]: Downloading https://files.pythonhosted.org/packages/6e/ac/8171582cb7ed070281b6a25313e49465c0bf2c9952d4d4aa43f19328408d/composipy-1.0.1.tar.gz
+[2023-05-06 19:12:19] INFO root fetch - processPackages [composipy]: Downloading https://files.pythonhosted.org/packages/8d/32/119b0fab73d2f90b15bb5d55f9756b48b3951897954f5a6e401ef1091638/composipy-1.0.2.tar.gz
+[2023-05-06 19:12:19] INFO root fetch - processPackages [composipy]: executing diffoscope
+[2023-05-06 19:12:19] INFO root fetch - processPackages [composipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composipy-1.0.1.tar.gz tmp/composipy-1.0.2.tar.gz --markdown 20230506/c/composipy/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-06 19:12:19] INFO root fetch - processPackages [deltalake]: Downloading https://files.pythonhosted.org/packages/a5/58/38edf79c582fbb1a46b8d0ded08d033a1b1085b8c7997c592aacc5d38e35/deltalake-0.9.0.tar.gz
+[2023-05-06 19:12:19] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 19:12:19] INFO root fetch - main [MainThread]: End processing [Jlab]: success
+[2023-05-06 19:12:19] INFO root fetch - main [MainThread]: End processing [cnki-html2json]: success
+[2023-05-06 19:12:20] INFO root fetch - main [MainThread]: End processing [savestate]: success
+[2023-05-06 19:12:20] INFO root fetch - main [MainThread]: End processing [gqt]: success
+[2023-05-06 19:12:20] INFO root fetch - processPackages [deltalake]: executing diffoscope
+[2023-05-06 19:12:20] INFO root fetch - processPackages [deltalake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltalake-0.8.1.tar.gz tmp/deltalake-0.9.0.tar.gz --markdown 20230506/d/deltalake/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 19:12:21] INFO root fetch - main [MainThread]: End processing [replit-bot]: success
+[2023-05-06 19:12:21] INFO root fetch - main [MainThread]: End processing [composipy]: success
+[2023-05-06 19:12:22] INFO root fetch - main [MainThread]: End processing [zhmcclient]: success
+[2023-05-06 19:12:23] INFO root fetch - main [MainThread]: End processing [gql]: success
+[2023-05-06 19:12:25] INFO root fetch - main [MainThread]: End processing [deltalake]: success
+[2023-05-06 19:12:25] INFO root fetch - main [MainThread]: Store serial: [18001103]
