@@ -13700,3 +13700,56 @@ EOFError: EOF read where object expected
 [2023-05-06 21:20:39] INFO root fetch - main [MainThread]: End processing [archcraftsman]: success
 [2023-05-06 21:20:39] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2023-05-06 21:20:39] INFO root fetch - main [MainThread]: Store serial: [18001701]
+[2023-05-06 21:25:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001701]
+[2023-05-06 21:25:48] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ypricemagic
+[2023-05-06 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qgate-graph
+[2023-05-06 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qgate-perf
+[2023-05-06 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: libecc
+[2023-05-06 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yetl-framework
+[2023-05-06 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyaipersonality
+[2023-05-06 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyaipersonality
+[2023-05-06 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: datanalyse
+[2023-05-06 21:25:48] INFO root fetch - processPackages [libecc]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 21:25:48] INFO root fetch - processPackages [qgate-graph]: New version: [1.3rc2] Old Version: [1.3rc1]
+[2023-05-06 21:25:48] INFO root fetch - processPackages [pyaipersonality]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 21:25:48] INFO root fetch - processPackages [qgate-perf]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-06 21:25:48] INFO root fetch - processPackages [pyaipersonality]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 21:25:48] INFO root fetch - processPackages [yetl-framework]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-06 21:25:48] WARNING root fetch - processPackages [datanalyse]: Skipping, unable to determine old version
+[2023-05-06 21:25:48] INFO root fetch - main [MainThread]: End processing [datanalyse] error
+[2023-05-06 21:25:48] INFO root fetch - processPackages [ypricemagic]: New version: [2.2.9.dev9] Old Version: [2.2.9.dev8]
+[2023-05-06 21:25:48] INFO root fetch - processPackages [pyaipersonality]: Downloading https://files.pythonhosted.org/packages/3f/6f/c7afc859721e68c1eb7aa7796d1f29fced6312812bf4df12aafa24729448/pyaipersonality-0.0.8.tar.gz
+[2023-05-06 21:25:48] INFO root fetch - processPackages [pyaipersonality]: Downloading https://files.pythonhosted.org/packages/3f/6f/c7afc859721e68c1eb7aa7796d1f29fced6312812bf4df12aafa24729448/pyaipersonality-0.0.8.tar.gz
+[2023-05-06 21:25:48] INFO root fetch - processPackages [qgate-perf]: Downloading https://files.pythonhosted.org/packages/cb/43/63c54fa7a55b2faabc091acea8b43d7e5b530abce26f004393828b768a65/qgate_perf-0.2.1-py3-none-any.whl
+[2023-05-06 21:25:48] INFO root fetch - processPackages [qgate-graph]: Downloading https://files.pythonhosted.org/packages/61/5b/6f5cdc724ef21cde0cf4fa194cfc9e68d3bf5774b3bfa1ec5ac2efa2162b/qgate_graph-1.3rc1-py3-none-any.whl
+[2023-05-06 21:25:48] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/42/ba/4babda35c10ed3af61a9b48b2a6d812e6f6e7227c5cfedb30569b294ebb9/yetl-framework-1.1.0.tar.gz
+[2023-05-06 21:25:48] INFO root fetch - processPackages [libecc]: Downloading https://files.pythonhosted.org/packages/1a/d0/e304456fee33d0c543f98601746b7f3ae09af11d422fac95c5f3055d67ff/libecc-1.0.8-py3-none-any.whl
+[2023-05-06 21:25:49] INFO root fetch - processPackages [qgate-perf]: executing diffoscope
+[2023-05-06 21:25:49] INFO root fetch - processPackages [qgate-perf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgate_perf-0.2.0-py3-none-any.whl.zip tmp/qgate_perf-0.2.1-py3-none-any.whl.zip --markdown 20230506/q/qgate-perf/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 21:25:49] INFO root fetch - processPackages [pyaipersonality]: Downloading https://files.pythonhosted.org/packages/08/47/bf519ee6e6536e2a5b56ad58a000cec9b367381cf6a1e027fe59b8de8ff8/pyaipersonality-0.0.9.tar.gz
+[2023-05-06 21:25:49] INFO root fetch - processPackages [pyaipersonality]: Downloading https://files.pythonhosted.org/packages/08/47/bf519ee6e6536e2a5b56ad58a000cec9b367381cf6a1e027fe59b8de8ff8/pyaipersonality-0.0.9.tar.gz
+[2023-05-06 21:25:49] INFO root fetch - processPackages [ypricemagic]: Downloading https://files.pythonhosted.org/packages/8d/85/ceb35864a81431e2630b8070fd760180abc409b7a6a95474b13a5c66e026/ypricemagic-2.2.9.dev9.tar.gz
+[2023-05-06 21:25:49] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/b0/d4/a76292453b07fb5adb9602ddde1a7b527d1cc2ee0ec43bea2b13415713d0/yetl-framework-1.2.0.tar.gz
+[2023-05-06 21:25:49] INFO root fetch - processPackages [pyaipersonality]: executing diffoscope
+[2023-05-06 21:25:49] INFO root fetch - processPackages [pyaipersonality]: executing diffoscope
+[2023-05-06 21:25:49] INFO root fetch - processPackages [pyaipersonality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaipersonality-0.0.8.tar.gz tmp/pyaipersonality-0.0.9.tar.gz --markdown 20230506/p/pyaipersonality/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 21:25:49] INFO root fetch - processPackages [pyaipersonality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaipersonality-0.0.8.tar.gz tmp/pyaipersonality-0.0.9.tar.gz --markdown 20230506/p/pyaipersonality/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 21:25:49] INFO root fetch - processPackages [qgate-graph]: Downloading https://files.pythonhosted.org/packages/9c/e2/7267e7e38507f4679d7da011d49eb5bb88ac6894707996a262ad9dcbdd7c/qgate_graph-1.3rc2-py3-none-any.whl
+[2023-05-06 21:25:49] INFO root fetch - processPackages [ypricemagic]: executing diffoscope
+[2023-05-06 21:25:49] INFO root fetch - processPackages [ypricemagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ypricemagic-2.2.9.dev8.tar.gz tmp/ypricemagic-2.2.9.dev9.tar.gz --markdown 20230506/y/ypricemagic/2.2.9.dev8-2.2.9.dev9/diff.md --exclude *.pyd
+[2023-05-06 21:25:49] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-05-06 21:25:49] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.1.0.tar.gz tmp/yetl-framework-1.2.0.tar.gz --markdown 20230506/y/yetl-framework/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-06 21:25:49] INFO root fetch - processPackages [qgate-graph]: executing diffoscope
+[2023-05-06 21:25:49] INFO root fetch - processPackages [qgate-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgate_graph-1.3rc1-py3-none-any.whl.zip tmp/qgate_graph-1.3rc2-py3-none-any.whl.zip --markdown 20230506/q/qgate-graph/1.3rc1-1.3rc2/diff.md --exclude *.pyd
+[2023-05-06 21:25:49] INFO root fetch - processPackages [libecc]: Downloading https://files.pythonhosted.org/packages/d3/6e/ce2e5b7aeedf38ac8263e4be7c6caf06cca41dbd89cc000fb3afbabedeb1/libecc-1.0.9-py3-none-any.whl
+[2023-05-06 21:25:49] INFO root fetch - processPackages [libecc]: executing diffoscope
+[2023-05-06 21:25:49] INFO root fetch - processPackages [libecc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libecc-1.0.8-py3-none-any.whl.zip tmp/libecc-1.0.9-py3-none-any.whl.zip --markdown 20230506/l/libecc/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 21:25:50] INFO root fetch - main [MainThread]: End processing [qgate-perf]: success
+[2023-05-06 21:25:50] INFO root fetch - main [MainThread]: End processing [pyaipersonality]: success
+[2023-05-06 21:25:50] INFO root fetch - main [MainThread]: End processing [qgate-graph]: success
+[2023-05-06 21:25:50] INFO root fetch - main [MainThread]: End processing [pyaipersonality]: success
+[2023-05-06 21:25:50] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-05-06 21:25:51] INFO root fetch - main [MainThread]: End processing [ypricemagic]: success
+[2023-05-06 21:26:00] INFO root fetch - main [MainThread]: End processing [libecc]: success
+[2023-05-06 21:26:00] INFO root fetch - main [MainThread]: Store serial: [18001726]
