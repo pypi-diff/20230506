@@ -13282,3 +13282,23 @@ EOFError: EOF read where object expected
 [2023-05-06 20:20:30] INFO root fetch - main [MainThread]: End processing [atproto]: success
 [2023-05-06 20:20:30] INFO root fetch - main [MainThread]: End processing [tksheet]: success
 [2023-05-06 20:20:30] INFO root fetch - main [MainThread]: Store serial: [18001442]
+[2023-05-06 20:25:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001442]
+[2023-05-06 20:25:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-06 20:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onvif-zeep-async
+[2023-05-06 20:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kalm
+[2023-05-06 20:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipfontingkitV1
+[2023-05-06 20:25:39] ERROR root fetch - processPackages [pipfontingkitV1]: Unable to get metadata: No such project 'pipfontingkitV1'
+[2023-05-06 20:25:39] INFO root fetch - processPackages [kalm]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-06 20:25:39] INFO root fetch - main [MainThread]: End processing [pipfontingkitV1] error
+[2023-05-06 20:25:39] INFO root fetch - processPackages [onvif-zeep-async]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-06 20:25:39] INFO root fetch - processPackages [kalm]: Downloading https://files.pythonhosted.org/packages/fe/ee/b968949b07f33acf48019008c44903caf710bc82e2863e8e036d6a9aeb11/kalm-0.1.5.tar.gz
+[2023-05-06 20:25:39] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/3d/cf/525619ed4ffd54b8f1b07fec09e095ecaba765b999c26622bbbebc1131c9/onvif-zeep-async-2.1.1.tar.gz
+[2023-05-06 20:25:40] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/9b/bc/b73f76117bc2534e53e7e880a4d8bb433b1821ca1a3f6cd0a580979541ac/onvif-zeep-async-2.1.2.tar.gz
+[2023-05-06 20:25:40] INFO root fetch - processPackages [kalm]: Downloading https://files.pythonhosted.org/packages/1d/61/27ff2fe53094829c24adc12c2df0489d7d5054d1a48dd295b53264a56969/kalm-0.2.0.tar.gz
+[2023-05-06 20:25:40] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-05-06 20:25:40] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-2.1.1.tar.gz tmp/onvif-zeep-async-2.1.2.tar.gz --markdown 20230506/o/onvif-zeep-async/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-06 20:25:40] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-05-06 20:25:40] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.1.5.tar.gz tmp/kalm-0.2.0.tar.gz --markdown 20230506/k/kalm/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 20:25:41] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-05-06 20:25:42] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-05-06 20:25:42] INFO root fetch - main [MainThread]: Store serial: [18001453]
