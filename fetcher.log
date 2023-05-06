@@ -12600,3 +12600,47 @@ EOFError: EOF read where object expected
 [2023-05-06 19:01:46] INFO root fetch - main [MainThread]: End processing [unfold]: success
 [2023-05-06 19:01:53] INFO root fetch - main [MainThread]: End processing [maialib]: success
 [2023-05-06 19:01:53] INFO root fetch - main [MainThread]: Store serial: [18001048]
+[2023-05-06 19:06:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001048]
+[2023-05-06 19:07:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 19:07:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semisup-segmentation
+[2023-05-06 19:07:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: radiozilla
+[2023-05-06 19:07:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kopf
+[2023-05-06 19:07:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PID-Py
+[2023-05-06 19:07:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: replit-bot
+[2023-05-06 19:07:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yetl-framework
+[2023-05-06 19:07:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: thunno2
+[2023-05-06 19:07:02] WARNING root fetch - processPackages [radiozilla]: Skipping, unable to determine old version
+[2023-05-06 19:07:02] INFO root fetch - main [MainThread]: End processing [radiozilla] error
+[2023-05-06 19:07:02] INFO root fetch - processPackages [yetl-framework]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-06 19:07:02] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 19:07:02] INFO root fetch - processPackages [thunno2]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-06 19:07:02] INFO root fetch - processPackages [PID-Py]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-06 19:07:02] INFO root fetch - processPackages [kopf]: New version: [1.36.1] Old Version: [1.36.0]
+[2023-05-06 19:07:02] INFO root fetch - processPackages [replit-bot]: New version: [4.2.9] Old Version: [4.2.8]
+[2023-05-06 19:07:02] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-05-06 19:07:02] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.0.4.tar.gz tmp/yetl-framework-1.0.5.tar.gz --markdown 20230506/y/yetl-framework/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-06 19:07:02] INFO root fetch - processPackages [thunno2]: Downloading https://files.pythonhosted.org/packages/06/d5/a8e018377094b0c204c8a4df58f190b1ff0a1bb1a6eaf99f72c27e864a4c/thunno2-2.1.8.tar.gz
+[2023-05-06 19:07:02] INFO root fetch - processPackages [PID-Py]: Downloading https://files.pythonhosted.org/packages/3c/24/dc3401d72e767f39c013211ebf8aa967823a88d8ee924fb918f388f96e51/PID_Py-1.1.1.tar.gz
+[2023-05-06 19:07:02] INFO root fetch - processPackages [kopf]: Downloading https://files.pythonhosted.org/packages/51/1e/b31f321deca8f40219e03b707e9189e5d1b6258b2119b2e69fb6cde755f3/kopf-1.36.0.tar.gz
+[2023-05-06 19:07:02] INFO root fetch - processPackages [replit-bot]: Downloading https://files.pythonhosted.org/packages/5d/2f/9c3cda26088d5dd1cde132f2900072c1c32d16889fb203a32c8c92767a90/replit-bot-4.2.8.tar.gz
+[2023-05-06 19:07:02] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 19:07:02] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 19:07:02] INFO root fetch - processPackages [PID-Py]: Downloading https://files.pythonhosted.org/packages/3e/f7/a92d140fa53bbb513a8227757908ebd2650f556495e28eaaf27d62ca06f9/PID_Py-1.2.0.tar.gz
+[2023-05-06 19:07:02] INFO root fetch - processPackages [thunno2]: Downloading https://files.pythonhosted.org/packages/29/6c/e32d577c1e97cc84f0c046311d64592753dff76fe535f70059f211a31f2e/thunno2-2.1.9.tar.gz
+[2023-05-06 19:07:02] INFO root fetch - processPackages [PID-Py]: executing diffoscope
+[2023-05-06 19:07:02] INFO root fetch - processPackages [PID-Py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PID_Py-1.1.1.tar.gz tmp/PID_Py-1.2.0.tar.gz --markdown 20230506/P/PID-Py/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-06 19:07:02] INFO root fetch - processPackages [thunno2]: executing diffoscope
+[2023-05-06 19:07:02] INFO root fetch - processPackages [thunno2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thunno2-2.1.8.tar.gz tmp/thunno2-2.1.9.tar.gz --markdown 20230506/t/thunno2/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-06 19:07:02] INFO root fetch - processPackages [replit-bot]: Downloading https://files.pythonhosted.org/packages/3c/ef/bb9c4a2cbf8906d4c734a37e4b3f3e4ccf9b4d7cbb51e98c619846561e5b/replit-bot-4.2.9.tar.gz
+[2023-05-06 19:07:02] INFO root fetch - processPackages [kopf]: Downloading https://files.pythonhosted.org/packages/14/dd/72fbae2b245b4355e2e2d9338dfc194c8418ac26cfe2d51bb655eaedfb29/kopf-1.36.1.tar.gz
+[2023-05-06 19:07:03] INFO root fetch - processPackages [replit-bot]: executing diffoscope
+[2023-05-06 19:07:03] INFO root fetch - processPackages [replit-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replit-bot-4.2.8.tar.gz tmp/replit-bot-4.2.9.tar.gz --markdown 20230506/r/replit-bot/4.2.8-4.2.9/diff.md --exclude *.pyd
+[2023-05-06 19:07:03] INFO root fetch - processPackages [kopf]: executing diffoscope
+[2023-05-06 19:07:03] INFO root fetch - processPackages [kopf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kopf-1.36.0.tar.gz tmp/kopf-1.36.1.tar.gz --markdown 20230506/k/kopf/1.36.0-1.36.1/diff.md --exclude *.pyd
+[2023-05-06 19:07:03] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-05-06 19:07:03] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 19:07:03] INFO root fetch - main [MainThread]: End processing [PID-Py]: success
+[2023-05-06 19:07:04] INFO root fetch - main [MainThread]: End processing [thunno2]: success
+[2023-05-06 19:07:04] INFO root fetch - main [MainThread]: End processing [replit-bot]: success
+[2023-05-06 19:07:09] INFO root fetch - main [MainThread]: End processing [kopf]: success
+[2023-05-06 19:07:09] INFO root fetch - main [MainThread]: Store serial: [18001068]
