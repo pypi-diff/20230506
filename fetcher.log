@@ -9583,3 +9583,49 @@ EOFError: EOF read where object expected
 [2023-05-06 13:09:03] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
 [2023-05-06 13:09:03] INFO root fetch - main [MainThread]: End processing [kindenty-base]: success
 [2023-05-06 13:09:03] INFO root fetch - main [MainThread]: Store serial: [17999107]
+[2023-05-06 13:14:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999107]
+[2023-05-06 13:14:12] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 13:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cm2py
+[2023-05-06 13:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metaseg
+[2023-05-06 13:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frankAllSkyCam
+[2023-05-06 13:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Jlab
+[2023-05-06 13:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaaql-monitor
+[2023-05-06 13:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spiderx
+[2023-05-06 13:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: clicknium
+[2023-05-06 13:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nlptoolssna
+[2023-05-06 13:14:12] WARNING root fetch - processPackages [cm2py]: Skipping, unable to determine old version
+[2023-05-06 13:14:12] INFO root fetch - main [MainThread]: End processing [cm2py] error
+[2023-05-06 13:14:12] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-05-06 13:14:12] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.37] Old Version: [1.2.36]
+[2023-05-06 13:14:12] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-06 13:14:12] INFO root fetch - processPackages [clicknium]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 13:14:12] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-06 13:14:12] INFO root fetch - processPackages [metaseg]: New version: [0.7.5] Old Version: [0.7.3]
+[2023-05-06 13:14:12] INFO root fetch - processPackages [spiderx]: New version: [1.8.9] Old Version: [1.8.2]
+[2023-05-06 13:14:12] INFO root fetch - processPackages [nlptoolssna]: New version: [0.8.0] Old Version: [0.7.9]
+[2023-05-06 13:14:12] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-05-06 13:14:12] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230506/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-06 13:14:12] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/bd/69/0c8c3da019f5837a57c08907cfd6f57adda256c45b91e9a33a5719592db5/nlptoolssna-0.7.9.tar.gz
+[2023-05-06 13:14:12] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/03/fa/6e88a99d8ba76076a0428d23f2e26389c9f7f1e3ce46e9d0433840bd05f0/metaseg-0.7.3.tar.gz
+[2023-05-06 13:14:12] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/ff/bf/d36e5f80ea02c8f27236c5de33794f309db1cb1bfcf5c3be116753066b6c/jaaql-monitor-1.2.37.tar.gz
+[2023-05-06 13:14:12] INFO root fetch - processPackages [spiderx]: Downloading https://files.pythonhosted.org/packages/0a/38/bdc5166668af43c8d8fb12955ee54797392b7e8d7c1bc7aa8180d6cf526b/spiderx-1.8.2.tar.gz
+[2023-05-06 13:14:12] INFO root fetch - processPackages [clicknium]: Downloading https://files.pythonhosted.org/packages/84/71/4824f63134aa72e96a0f3b4d15c2438e0f8ead6dc8745c4870dd5f2a991b/clicknium-0.1.8-py3-none-win_amd64.whl
+[2023-05-06 13:14:12] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:14:12] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.36.tar.gz tmp/jaaql-monitor-1.2.37.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.36-1.2.37/diff.md --exclude *.pyd
+[2023-05-06 13:14:12] WARNING root fetch - processPackages [clicknium]: Skipping package: exceeds size limit 36084312>=10485760
+[2023-05-06 13:14:12] INFO root fetch - main [MainThread]: End processing [clicknium] error
+[2023-05-06 13:14:12] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/00/f1/cd2cde52f1e3626ea24cc0510ef98e96065f4c9dad686b8289bfb4635bc8/nlptoolssna-0.8.0.tar.gz
+[2023-05-06 13:14:12] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/9c/b3/1fb4031f3b455a2feb94d97804a62b72a9a95b15947ea67b20b0d7f8d08a/metaseg-0.7.5.tar.gz
+[2023-05-06 13:14:12] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-05-06 13:14:12] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.7.3.tar.gz tmp/metaseg-0.7.5.tar.gz --markdown 20230506/m/metaseg/0.7.3-0.7.5/diff.md --exclude *.pyd
+[2023-05-06 13:14:12] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 13:14:12] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.7.9.tar.gz tmp/nlptoolssna-0.8.0.tar.gz --markdown 20230506/n/nlptoolssna/0.7.9-0.8.0/diff.md --exclude *.pyd
+[2023-05-06 13:14:13] INFO root fetch - processPackages [spiderx]: Downloading https://files.pythonhosted.org/packages/89/1b/9167dbeeaa50aa50ace655fad0bdde6e911624db12636d31909324747f8a/spiderx-1.8.9.tar.gz
+[2023-05-06 13:14:13] INFO root fetch - processPackages [spiderx]: executing diffoscope
+[2023-05-06 13:14:13] INFO root fetch - processPackages [spiderx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderx-1.8.2.tar.gz tmp/spiderx-1.8.9.tar.gz --markdown 20230506/s/spiderx/1.8.2-1.8.9/diff.md --exclude *.pyd
+[2023-05-06 13:14:13] INFO root fetch - main [MainThread]: End processing [Jlab]: success
+[2023-05-06 13:14:13] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:14:14] INFO root fetch - main [MainThread]: End processing [metaseg]: success
+[2023-05-06 13:14:14] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 13:14:14] INFO root fetch - main [MainThread]: End processing [spiderx]: success
+[2023-05-06 13:14:14] INFO root fetch - main [MainThread]: Store serial: [17999131]
