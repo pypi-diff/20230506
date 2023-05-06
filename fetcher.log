@@ -14586,3 +14586,71 @@ EOFError: EOF read where object expected
 [2023-05-06 23:06:14] INFO root fetch - main [MainThread]: End processing [NeuroRuler]: success
 [2023-05-06 23:06:14] INFO root fetch - main [MainThread]: End processing [mojo-interop]: success
 [2023-05-06 23:06:14] INFO root fetch - main [MainThread]: Store serial: [18002203]
+[2023-05-06 23:11:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002203]
+[2023-05-06 23:11:23] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 23:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dank-mids
+[2023-05-06 23:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flake8-2020
+[2023-05-06 23:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mojo-testplus
+[2023-05-06 23:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robolson
+[2023-05-06 23:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: latch
+[2023-05-06 23:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: numba-integrators
+[2023-05-06 23:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PayEquity
+[2023-05-06 23:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyupgrade
+[2023-05-06 23:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: el-decko-core
+[2023-05-06 23:11:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: simple-aws-ec2
+[2023-05-06 23:11:23] WARNING root fetch - processPackages [numba-integrators]: Skipping, unable to determine old version
+[2023-05-06 23:11:23] INFO root fetch - processPackages [numba-integrators]: Start processing: rulelearn
+[2023-05-06 23:11:23] INFO root fetch - main [MainThread]: End processing [numba-integrators] error
+[2023-05-06 23:11:23] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-05-06 23:11:23] INFO root fetch - processPackages [PayEquity]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 23:11:23] INFO root fetch - processPackages [flake8-2020]: New version: [1.8.0] Old Version: [1.7.0]
+[2023-05-06 23:11:23] INFO root fetch - processPackages [mojo-testplus]: New version: [0.0.8] Old Version: [0.0.5]
+[2023-05-06 23:11:23] INFO root fetch - processPackages [el-decko-core]: New version: [2023.5.6] Old Version: [2023.1.5.1]
+[2023-05-06 23:11:23] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-05-06 23:11:23] INFO root fetch - processPackages [robolson]: New version: [0.3.9] Old Version: [0.3.83]
+[2023-05-06 23:11:23] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-05-06 23:11:23] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230506/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-05-06 23:11:23] INFO root fetch - processPackages [rulelearn]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 23:11:23] INFO root fetch - processPackages [simple-aws-ec2]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-06 23:11:23] INFO root fetch - processPackages [pyupgrade]: New version: [3.4.0] Old Version: [3.3.2]
+[2023-05-06 23:11:23] INFO root fetch - processPackages [el-decko-core]: executing diffoscope
+[2023-05-06 23:11:23] INFO root fetch - processPackages [el-decko-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/el_decko_core-2023.1.5.1.tar.gz tmp/el_decko_core-2023.5.6.tar.gz --markdown 20230506/e/el-decko-core/2023.1.5.1-2023.5.6/diff.md --exclude *.pyd
+[2023-05-06 23:11:23] INFO root fetch - processPackages [robolson]: Downloading https://files.pythonhosted.org/packages/42/30/487fea0d7a277c4b43d3074542fbe959391e76c6cf7d0e1a37dde043d75c/robolson-0.3.83.tar.gz
+[2023-05-06 23:11:23] INFO root fetch - processPackages [flake8-2020]: Downloading https://files.pythonhosted.org/packages/14/e6/f16a80ec6aa195c6ab928ebe3b167303061b7755a92f6417777b9657979d/flake8_2020-1.7.0.tar.gz
+[2023-05-06 23:11:23] INFO root fetch - processPackages [mojo-testplus]: Downloading https://files.pythonhosted.org/packages/39/1f/61b2e206df6ebaa1c0b92d3e2458b65b97b3176ebef8f4a0b8181aa64f1f/mojo_testplus-0.0.5.tar.gz
+[2023-05-06 23:11:23] INFO root fetch - processPackages [PayEquity]: Downloading https://files.pythonhosted.org/packages/ba/39/54482defd288ad94e06ae92a119a7c61d857a95fcdbd5d68e22cab76aef5/PayEquity-0.1.1.tar.gz
+[2023-05-06 23:11:23] INFO root fetch - processPackages [pyupgrade]: Downloading https://files.pythonhosted.org/packages/13/15/21fcc8a1d212e22c3aee9a9e2696bc7e898390edffb4617e2cf6d04838f6/pyupgrade-3.3.2.tar.gz
+[2023-05-06 23:11:24] INFO root fetch - processPackages [rulelearn]: Downloading https://files.pythonhosted.org/packages/9f/5f/ff85e3ada28e673bf754ced09355305771398158dfd005527c967a07182e/rulelearn-0.1.0.tar.gz
+[2023-05-06 23:11:24] INFO root fetch - processPackages [robolson]: executing diffoscope
+[2023-05-06 23:11:24] INFO root fetch - processPackages [robolson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robolson-0.3.83.tar.gz tmp/robolson-0.3.9.tar.gz --markdown 20230506/r/robolson/0.3.83-0.3.9/diff.md --exclude *.pyd
+[2023-05-06 23:11:24] INFO root fetch - processPackages [mojo-testplus]: Downloading https://files.pythonhosted.org/packages/d7/5d/ef815d751cc3d4b592c2b5e50d0c8a7549435e90ad7e958087a633cccb68/mojo_testplus-0.0.8.tar.gz
+[2023-05-06 23:11:24] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-05-06 23:11:24] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230506/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-05-06 23:11:24] INFO root fetch - processPackages [simple-aws-ec2]: Downloading https://files.pythonhosted.org/packages/93/b1/5aa2c3e6f0dbf59f4e7f091071b6bc0b5a0c373ff81da42051ab3b20cbc9/simple_aws_ec2-0.1.4.tar.gz
+[2023-05-06 23:11:24] INFO root fetch - processPackages [PayEquity]: Downloading https://files.pythonhosted.org/packages/f9/e4/27b3f2c5b75396ae41c95427ea38a2368f2b5cf803052dc4f90d9ae76517/PayEquity-0.1.2.tar.gz
+[2023-05-06 23:11:24] INFO root fetch - processPackages [flake8-2020]: Downloading https://files.pythonhosted.org/packages/3d/0e/29c1a6d15baa70865daa1ae6887742d5907fb75b92c4c1a8281915f8550d/flake8_2020-1.8.0.tar.gz
+[2023-05-06 23:11:24] INFO root fetch - processPackages [pyupgrade]: Downloading https://files.pythonhosted.org/packages/a7/c8/4285676e581749cf604ed44d68f01934f61056f59b44cd71653b49da4efe/pyupgrade-3.4.0.tar.gz
+[2023-05-06 23:11:24] INFO root fetch - processPackages [mojo-testplus]: executing diffoscope
+[2023-05-06 23:11:24] INFO root fetch - processPackages [mojo-testplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_testplus-0.0.5.tar.gz tmp/mojo_testplus-0.0.8.tar.gz --markdown 20230506/m/mojo-testplus/0.0.5-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 23:11:24] INFO root fetch - processPackages [simple-aws-ec2]: executing diffoscope
+[2023-05-06 23:11:24] INFO root fetch - processPackages [simple-aws-ec2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_aws_ec2-0.1.3.tar.gz tmp/simple_aws_ec2-0.1.4.tar.gz --markdown 20230506/s/simple-aws-ec2/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-06 23:11:24] INFO root fetch - processPackages [PayEquity]: executing diffoscope
+[2023-05-06 23:11:24] INFO root fetch - processPackages [PayEquity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PayEquity-0.1.1.tar.gz tmp/PayEquity-0.1.2.tar.gz --markdown 20230506/P/PayEquity/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 23:11:24] INFO root fetch - processPackages [rulelearn]: Downloading https://files.pythonhosted.org/packages/89/15/14756b67a68061a6aaefa1a7c52edb3dd92ff3b47c865bcadcb48dab57b4/rulelearn-0.1.1.tar.gz
+[2023-05-06 23:11:24] INFO root fetch - processPackages [flake8-2020]: executing diffoscope
+[2023-05-06 23:11:24] INFO root fetch - processPackages [flake8-2020]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8_2020-1.7.0.tar.gz tmp/flake8_2020-1.8.0.tar.gz --markdown 20230506/f/flake8-2020/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2023-05-06 23:11:24] INFO root fetch - processPackages [pyupgrade]: executing diffoscope
+[2023-05-06 23:11:24] INFO root fetch - processPackages [pyupgrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyupgrade-3.3.2.tar.gz tmp/pyupgrade-3.4.0.tar.gz --markdown 20230506/p/pyupgrade/3.3.2-3.4.0/diff.md --exclude *.pyd
+[2023-05-06 23:11:24] INFO root fetch - processPackages [rulelearn]: executing diffoscope
+[2023-05-06 23:11:24] INFO root fetch - processPackages [rulelearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rulelearn-0.1.0.tar.gz tmp/rulelearn-0.1.1.tar.gz --markdown 20230506/r/rulelearn/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 23:11:25] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-05-06 23:11:25] INFO root fetch - main [MainThread]: End processing [el-decko-core]: success
+[2023-05-06 23:11:25] INFO root fetch - main [MainThread]: End processing [PayEquity]: success
+[2023-05-06 23:11:25] INFO root fetch - main [MainThread]: End processing [flake8-2020]: success
+[2023-05-06 23:11:25] INFO root fetch - main [MainThread]: End processing [simple-aws-ec2]: success
+[2023-05-06 23:11:25] INFO root fetch - main [MainThread]: End processing [mojo-testplus]: success
+[2023-05-06 23:11:26] INFO root fetch - main [MainThread]: End processing [rulelearn]: success
+[2023-05-06 23:11:26] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2023-05-06 23:11:26] INFO root fetch - main [MainThread]: End processing [pyupgrade]: success
+[2023-05-06 23:11:27] INFO root fetch - main [MainThread]: End processing [robolson]: success
+[2023-05-06 23:11:27] INFO root fetch - main [MainThread]: Store serial: [18002239]
