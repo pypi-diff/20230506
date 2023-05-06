@@ -11724,3 +11724,59 @@ EOFError: EOF read where object expected
 [2023-05-06 17:10:21] INFO root fetch - main [MainThread]: End processing [taskiq]: success
 [2023-05-06 17:10:22] INFO root fetch - main [MainThread]: End processing [bytecodemanipulation]: success
 [2023-05-06 17:10:22] INFO root fetch - main [MainThread]: Store serial: [18000468]
+[2023-05-06 17:15:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000468]
+[2023-05-06 17:15:31] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi-template
+[2023-05-06 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypreql-nlp
+[2023-05-06 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: parsgod
+[2023-05-06 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dfdatetime
+[2023-05-06 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keap-python
+[2023-05-06 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: streamlit-authenticator
+[2023-05-06 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fastapi-amis-admin
+[2023-05-06 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: amplify-sched
+[2023-05-06 17:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: combine-gtfs-feeds
+[2023-05-06 17:15:31] INFO root fetch - processPackages [fastapi-template]: New version: [4.1.4] Old Version: [4.1.3]
+[2023-05-06 17:15:31] INFO root fetch - processPackages [fastapi-amis-admin]: New version: [0.5.7a1] Old Version: [0.5.6a1]
+[2023-05-06 17:15:31] INFO root fetch - processPackages [dfdatetime]: New version: [20230506] Old Version: [20230225]
+[2023-05-06 17:15:31] INFO root fetch - processPackages [combine-gtfs-feeds]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-06 17:15:31] WARNING root fetch - processPackages [parsgod]: Skipping, unable to determine old version
+[2023-05-06 17:15:31] INFO root fetch - main [MainThread]: End processing [parsgod] error
+[2023-05-06 17:15:31] INFO root fetch - processPackages [streamlit-authenticator]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-06 17:15:31] WARNING root fetch - processPackages [pypreql-nlp]: Skipping, unable to determine old version
+[2023-05-06 17:15:31] INFO root fetch - processPackages [amplify-sched]: New version: [0.0.1rc1] Old Version: [0.0.1]
+[2023-05-06 17:15:31] INFO root fetch - main [MainThread]: End processing [pypreql-nlp] error
+[2023-05-06 17:15:31] INFO root fetch - processPackages [keap-python]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-06 17:15:31] INFO root fetch - processPackages [amplify-sched]: Downloading https://files.pythonhosted.org/packages/5c/aa/993814eab9483a01bcfc8f9e927747041ec27f8792fb1e626bf060188768/amplify-sched-0.0.1.tar.gz
+[2023-05-06 17:15:31] INFO root fetch - processPackages [dfdatetime]: Downloading https://files.pythonhosted.org/packages/9d/bf/484dd46f5a1df57e3db58c7acd52ba3aabe26535589378c28205ad5057f8/dfdatetime-20230225.tar.gz
+[2023-05-06 17:15:31] INFO root fetch - processPackages [streamlit-authenticator]: Downloading https://files.pythonhosted.org/packages/c2/2d/85a9369d0c59492775b22e983d84d5eb5a940668c22ec2ea7dad90fa399e/streamlit-authenticator-0.2.1.tar.gz
+[2023-05-06 17:15:31] INFO root fetch - processPackages [keap-python]: Downloading https://files.pythonhosted.org/packages/35/35/7771b84e306e645adaf8c4453749d081964ff4f2ec654added8cb91644f5/keap-python-1.1.3.tar.gz
+[2023-05-06 17:15:31] INFO root fetch - processPackages [fastapi-template]: Downloading https://files.pythonhosted.org/packages/95/70/d46eb9892f831ac1431623b93c05c91895aef906b38d26f0308142d683a0/fastapi_template-4.1.3.tar.gz
+[2023-05-06 17:15:31] INFO root fetch - processPackages [fastapi-amis-admin]: Downloading https://files.pythonhosted.org/packages/44/e5/7232da678617b9d1333efd2f53660dba4c0435b5e4892106c3b036020a85/fastapi_amis_admin-0.5.7a1.tar.gz
+[2023-05-06 17:15:31] INFO root fetch - processPackages [combine-gtfs-feeds]: Downloading https://files.pythonhosted.org/packages/fc/50/eb909f1b5855da70936d270af937df30689e0373cf0f8e2f3328e2931069/combine_gtfs_feeds-0.1.8.tar.gz
+[2023-05-06 17:15:32] INFO root fetch - processPackages [dfdatetime]: Downloading https://files.pythonhosted.org/packages/45/93/66c5c3108bd92ce256799542859d4e174ed052f7443787ccd67a56a0d431/dfdatetime-20230506.tar.gz
+[2023-05-06 17:15:32] INFO root fetch - processPackages [keap-python]: Downloading https://files.pythonhosted.org/packages/3b/cc/f431c5d6c401d085b9be83eec280840a5620ad2e755091b3c677a7683453/keap-python-1.1.4.tar.gz
+[2023-05-06 17:15:32] INFO root fetch - processPackages [streamlit-authenticator]: Downloading https://files.pythonhosted.org/packages/ec/5f/68d20e0faeb52608d6248599f087034ed449732642c010898bca670d7627/streamlit-authenticator-0.2.2.tar.gz
+[2023-05-06 17:15:32] INFO root fetch - processPackages [combine-gtfs-feeds]: executing diffoscope
+[2023-05-06 17:15:32] INFO root fetch - processPackages [combine-gtfs-feeds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/combine_gtfs_feeds-0.1.7.tar.gz tmp/combine_gtfs_feeds-0.1.8.tar.gz --markdown 20230506/c/combine-gtfs-feeds/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-06 17:15:32] INFO root fetch - processPackages [fastapi-template]: Downloading https://files.pythonhosted.org/packages/38/88/91b53507f8b8611072ba7064aed9155d0e75fc551e71ae019817788bb659/fastapi_template-4.1.4.tar.gz
+[2023-05-06 17:15:32] INFO root fetch - processPackages [fastapi-amis-admin]: executing diffoscope
+[2023-05-06 17:15:32] INFO root fetch - processPackages [fastapi-amis-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_amis_admin-0.5.6a1.tar.gz tmp/fastapi_amis_admin-0.5.7a1.tar.gz --markdown 20230506/f/fastapi-amis-admin/0.5.6a1-0.5.7a1/diff.md --exclude *.pyd
+[2023-05-06 17:15:32] INFO root fetch - processPackages [dfdatetime]: executing diffoscope
+[2023-05-06 17:15:32] INFO root fetch - processPackages [dfdatetime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfdatetime-20230225.tar.gz tmp/dfdatetime-20230506.tar.gz --markdown 20230506/d/dfdatetime/20230225-20230506/diff.md --exclude *.pyd
+[2023-05-06 17:15:32] INFO root fetch - processPackages [streamlit-authenticator]: executing diffoscope
+[2023-05-06 17:15:32] INFO root fetch - processPackages [streamlit-authenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-authenticator-0.2.1.tar.gz tmp/streamlit-authenticator-0.2.2.tar.gz --markdown 20230506/s/streamlit-authenticator/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-06 17:15:32] INFO root fetch - processPackages [keap-python]: executing diffoscope
+[2023-05-06 17:15:32] INFO root fetch - processPackages [keap-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keap-python-1.1.3.tar.gz tmp/keap-python-1.1.4.tar.gz --markdown 20230506/k/keap-python/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-06 17:15:32] INFO root fetch - processPackages [fastapi-template]: executing diffoscope
+[2023-05-06 17:15:32] INFO root fetch - processPackages [fastapi-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_template-4.1.3.tar.gz tmp/fastapi_template-4.1.4.tar.gz --markdown 20230506/f/fastapi-template/4.1.3-4.1.4/diff.md --exclude *.pyd
+[2023-05-06 17:15:32] INFO root fetch - processPackages [amplify-sched]: Downloading https://files.pythonhosted.org/packages/b9/d2/3a26093898c0c306822703324dbf700aff0f9c2f082b0beb5d506c67a4a5/amplify-sched-0.0.1rc1.tar.gz
+[2023-05-06 17:15:32] INFO root fetch - processPackages [amplify-sched]: executing diffoscope
+[2023-05-06 17:15:32] INFO root fetch - processPackages [amplify-sched]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amplify-sched-0.0.1.tar.gz tmp/amplify-sched-0.0.1rc1.tar.gz --markdown 20230506/a/amplify-sched/0.0.1-0.0.1rc1/diff.md --exclude *.pyd
+[2023-05-06 17:15:33] INFO root fetch - main [MainThread]: End processing [combine-gtfs-feeds]: success
+[2023-05-06 17:15:33] INFO root fetch - main [MainThread]: End processing [streamlit-authenticator]: success
+[2023-05-06 17:15:33] INFO root fetch - main [MainThread]: End processing [fastapi-amis-admin]: success
+[2023-05-06 17:15:33] INFO root fetch - main [MainThread]: End processing [keap-python]: success
+[2023-05-06 17:15:33] INFO root fetch - main [MainThread]: End processing [amplify-sched]: success
+[2023-05-06 17:15:33] INFO root fetch - main [MainThread]: End processing [dfdatetime]: success
+[2023-05-06 17:15:34] INFO root fetch - main [MainThread]: End processing [fastapi-template]: success
+[2023-05-06 17:15:34] INFO root fetch - main [MainThread]: Store serial: [18000498]
