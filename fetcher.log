@@ -13392,3 +13392,87 @@ EOFError: EOF read where object expected
 [2023-05-06 20:36:07] INFO root fetch - main [MainThread]: End processing [solution-harsha]: success
 [2023-05-06 20:36:07] INFO root fetch - main [MainThread]: End processing [hypercli]: success
 [2023-05-06 20:36:07] INFO root fetch - main [MainThread]: Store serial: [18001508]
+[2023-05-06 20:41:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001508]
+[2023-05-06 20:41:16] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-06 20:46:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001508]
+[2023-05-06 20:46:22] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-dinkum-listener
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: piano-visualizer
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hilly
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: solution-harsha
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: celerity
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kiwi
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flanaapis
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: run-rx
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flanabot
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: multibot
+[2023-05-06 20:46:22] INFO root fetch - processPackages [hilly]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 20:46:22] INFO root fetch - processPackages [celerity]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2023-05-06 20:46:22] INFO root fetch - processPackages [solution-harsha]: New version: [0.8] Old Version: [0.7]
+[2023-05-06 20:46:22] INFO root fetch - processPackages [piano-visualizer]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-06 20:46:22] INFO root fetch - processPackages [flanabot]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-06 20:46:22] INFO root fetch - processPackages [run-rx]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 20:46:22] INFO root fetch - processPackages [flanaapis]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-05-06 20:46:22] INFO root fetch - processPackages [kiwi]: New version: [9.8.0] Old Version: [9.7.4]
+[2023-05-06 20:46:22] INFO root fetch - processPackages [multibot]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2023-05-06 20:46:22] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_dinkum_listener-0.0.2a8-py3-none-any.whl.zip tmp/ovos_dinkum_listener-0.0.2a9-py3-none-any.whl.zip --markdown 20230506/o/ovos-dinkum-listener/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2023-05-06 20:46:22] INFO root fetch - processPackages [flanabot]: Downloading https://files.pythonhosted.org/packages/b4/9e/032d969e989e384063aa163e3d22026a2d06608afdbf17395bb4a1ceb4ed/flanabot-1.5.0.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [piano-visualizer]: Downloading https://files.pythonhosted.org/packages/67/d1/5d5214430b83a24722f42d15eea7dbbd8490ba4623fdbb8ed98c0002bf6f/piano_visualizer-1.1.0.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [solution-harsha]: Downloading https://files.pythonhosted.org/packages/ab/3b/72b3fc3336d01f49adc4f9675fbf2dd4cd61acd2380c8549042aa5de421f/solution_harsha-0.8.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [run-rx]: Downloading https://files.pythonhosted.org/packages/11/82/52b6213ec4f90adc376dedce3c745838d36f70c259fd512ba8284c76c50e/run_rx-0.0.1.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [hilly]: Downloading https://files.pythonhosted.org/packages/6c/c4/13f574d4244d51103964c325bbf61639445cca834dc06308acac88cde86f/hilly-0.1.0.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [flanaapis]: Downloading https://files.pythonhosted.org/packages/4f/6b/91a6a4984f09e1068d963fcbdd9545b2e4d0a3fc6e97a0c1f2544d02438d/flanaapis-1.6.0.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [kiwi]: Downloading https://files.pythonhosted.org/packages/fc/f2/14aa92d902e928c95adddf778710948ec0ac3c182c9165580259aa18eaa8/kiwi-9.7.4.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [multibot]: Downloading https://files.pythonhosted.org/packages/38/fc/78b9e025b0fa76e15e526f2977997fa657b830d0e8a16842ba107d8084ed/multibot-1.9.0.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [solution-harsha]: executing diffoscope
+[2023-05-06 20:46:22] INFO root fetch - processPackages [solution-harsha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solution_harsha-0.7.tar.gz tmp/solution_harsha-0.8.tar.gz --markdown 20230506/s/solution-harsha/0.7-0.8/diff.md --exclude *.pyd
+[2023-05-06 20:46:22] INFO root fetch - processPackages [piano-visualizer]: executing diffoscope
+[2023-05-06 20:46:22] INFO root fetch - processPackages [piano-visualizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piano_visualizer-1.0.1.tar.gz tmp/piano_visualizer-1.1.0.tar.gz --markdown 20230506/p/piano-visualizer/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-06 20:46:22] INFO root fetch - processPackages [celerity]: Downloading https://files.pythonhosted.org/packages/8b/38/28ac58a70bf9d22d32eb8b8e7f49dda308526859a65536b856f96786f9ee/celerity-0.6.0.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [celerity]: executing diffoscope
+[2023-05-06 20:46:22] INFO root fetch - processPackages [celerity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celerity-0.5.0.tar.gz tmp/celerity-0.6.0.tar.gz --markdown 20230506/c/celerity/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-06 20:46:22] INFO root fetch - processPackages [run-rx]: Downloading https://files.pythonhosted.org/packages/a5/c9/ec827074ce0fb25f690d0d0354f754efbc315cd499799451cb2728ebe984/run_rx-0.0.2.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [hilly]: Downloading https://files.pythonhosted.org/packages/ca/eb/aa534a0609f456c619be6994934ed50120483170c3548beab17b22f05a0b/hilly-0.1.1.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [flanabot]: Downloading https://files.pythonhosted.org/packages/2d/3c/0bc75ef6b31e34f914d3e5e257381e808140c1b4f70ed64c83adb600cfd2/flanabot-1.5.1.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [run-rx]: executing diffoscope
+[2023-05-06 20:46:22] INFO root fetch - processPackages [run-rx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/run_rx-0.0.1.tar.gz tmp/run_rx-0.0.2.tar.gz --markdown 20230506/r/run-rx/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 20:46:22] INFO root fetch - processPackages [flanabot]: executing diffoscope
+[2023-05-06 20:46:22] INFO root fetch - processPackages [flanabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flanabot-1.5.0.tar.gz tmp/flanabot-1.5.1.tar.gz --markdown 20230506/f/flanabot/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-06 20:46:22] INFO root fetch - processPackages [flanaapis]: Downloading https://files.pythonhosted.org/packages/01/d9/25049a001b5f71f8ecebcc99280cb80ce55c533ca9d2d134209197f2d89a/flanaapis-1.6.1.tar.gz
+[2023-05-06 20:46:22] INFO root fetch - processPackages [hilly]: executing diffoscope
+[2023-05-06 20:46:22] INFO root fetch - processPackages [hilly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hilly-0.1.0.tar.gz tmp/hilly-0.1.1.tar.gz --markdown 20230506/h/hilly/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 20:46:22] INFO root fetch - processPackages [multibot]: Downloading https://files.pythonhosted.org/packages/0b/61/b536993c64115322b420bfe556f51b64e1921d320f710f5430968385c72c/multibot-1.9.1.tar.gz
+[2023-05-06 20:46:23] INFO root fetch - processPackages [flanaapis]: executing diffoscope
+[2023-05-06 20:46:23] INFO root fetch - processPackages [flanaapis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flanaapis-1.6.0.tar.gz tmp/flanaapis-1.6.1.tar.gz --markdown 20230506/f/flanaapis/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-05-06 20:46:23] INFO root fetch - processPackages [multibot]: executing diffoscope
+[2023-05-06 20:46:23] INFO root fetch - processPackages [multibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multibot-1.9.0.tar.gz tmp/multibot-1.9.1.tar.gz --markdown 20230506/m/multibot/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-06 20:46:23] INFO root fetch - processPackages [ovos-dinkum-listener]: Start processing: samp-query
+[2023-05-06 20:46:23] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2023-05-06 20:46:23] WARNING root fetch - processPackages [samp-query]: Skipping, unable to determine old version
+[2023-05-06 20:46:23] INFO root fetch - processPackages [samp-query]: Start processing: flanautils
+[2023-05-06 20:46:23] INFO root fetch - main [MainThread]: End processing [samp-query] error
+[2023-05-06 20:46:23] INFO root fetch - processPackages [solution-harsha]: Start processing: vision-xformer
+[2023-05-06 20:46:23] INFO root fetch - main [MainThread]: End processing [solution-harsha]: success
+[2023-05-06 20:46:23] WARNING root fetch - processPackages [vision-xformer]: Skipping, unable to determine old version
+[2023-05-06 20:46:23] INFO root fetch - main [MainThread]: End processing [vision-xformer] error
+[2023-05-06 20:46:24] INFO root fetch - processPackages [flanautils]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-05-06 20:46:24] INFO root fetch - processPackages [kiwi]: Downloading https://files.pythonhosted.org/packages/a0/15/c757f7f6d32bf5ebe742d435008e609b0683336a29bc81aaae006c577d96/kiwi-9.8.0.tar.gz
+[2023-05-06 20:46:24] INFO root fetch - main [MainThread]: End processing [celerity]: success
+[2023-05-06 20:46:24] INFO root fetch - processPackages [flanautils]: Downloading https://files.pythonhosted.org/packages/dd/17/1ac2dfec792ff2cee1c5df3660fffd392996e093800dd8e00d1338090aea/flanautils-1.7.0.tar.gz
+[2023-05-06 20:46:24] INFO root fetch - main [MainThread]: End processing [piano-visualizer]: success
+[2023-05-06 20:46:24] INFO root fetch - main [MainThread]: End processing [hilly]: success
+[2023-05-06 20:46:24] INFO root fetch - main [MainThread]: End processing [flanaapis]: success
+[2023-05-06 20:46:24] INFO root fetch - processPackages [flanautils]: Downloading https://files.pythonhosted.org/packages/e2/31/619f67ca17662c3aa5840040d36fad0729aa07d630a8490bfede66e82d2b/flanautils-1.7.1.tar.gz
+[2023-05-06 20:46:24] INFO root fetch - main [MainThread]: End processing [run-rx]: success
+[2023-05-06 20:46:24] INFO root fetch - main [MainThread]: End processing [multibot]: success
+[2023-05-06 20:46:24] INFO root fetch - processPackages [flanautils]: executing diffoscope
+[2023-05-06 20:46:24] INFO root fetch - processPackages [flanautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flanautils-1.7.0.tar.gz tmp/flanautils-1.7.1.tar.gz --markdown 20230506/f/flanautils/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-05-06 20:46:24] INFO root fetch - main [MainThread]: End processing [flanabot]: success
+[2023-05-06 20:46:25] INFO root fetch - processPackages [kiwi]: executing diffoscope
+[2023-05-06 20:46:25] INFO root fetch - processPackages [kiwi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwi-9.7.4.tar.gz tmp/kiwi-9.8.0.tar.gz --markdown 20230506/k/kiwi/9.7.4-9.8.0/diff.md --exclude *.pyd
+[2023-05-06 20:46:26] INFO root fetch - main [MainThread]: End processing [flanautils]: success
+[2023-05-06 20:49:25] ERROR root fetch - processPackages [kiwi]: Timeout during execution of pkgdiff
+[2023-05-06 20:49:25] INFO root fetch - main [MainThread]: End processing [kiwi] error
+[2023-05-06 20:49:25] INFO root fetch - main [MainThread]: Store serial: [18001546]
