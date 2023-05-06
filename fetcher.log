@@ -4048,3 +4048,61 @@
 [2023-05-06 03:27:58] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte]: success
 [2023-05-06 03:29:38] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-05-06 03:29:38] INFO root fetch - main [MainThread]: Store serial: [17995718]
+[2023-05-06 03:34:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17995718]
+[2023-05-06 03:34:48] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 03:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-lambda-layer-wget
+[2023-05-06 03:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streetscope
+[2023-05-06 03:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pgn-to-sqlite
+[2023-05-06 03:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coiled
+[2023-05-06 03:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yat-geo-db
+[2023-05-06 03:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-stdlib
+[2023-05-06 03:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-numpy
+[2023-05-06 03:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aps-cloud-util
+[2023-05-06 03:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mythic-container
+[2023-05-06 03:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-pandas
+[2023-05-06 03:34:48] INFO root fetch - processPackages [streetscope]: New version: [0.3.2] Old Version: [0.3.0]
+[2023-05-06 03:34:48] INFO root fetch - processPackages [yat-geo-db]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-06 03:34:48] INFO root fetch - processPackages [pgn-to-sqlite]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-06 03:34:48] WARNING root fetch - processPackages [aps-cloud-util]: Skipping, unable to determine old version
+[2023-05-06 03:34:48] INFO root fetch - main [MainThread]: End processing [aps-cloud-util] error
+[2023-05-06 03:34:48] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-06 03:34:49] INFO root fetch - processPackages [coiled]: New version: [0.6.2.dev9] Old Version: [0.6.2.dev6]
+[2023-05-06 03:34:49] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 03:34:49] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 03:34:49] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 03:34:49] INFO root fetch - processPackages [mythic-container]: New version: [0.2.4] Old Version: [0.2.3rc4]
+[2023-05-06 03:34:49] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-06 03:34:49] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.2.dev6.tar.gz tmp/coiled-0.6.2.dev9.tar.gz --markdown 20230506/c/coiled/0.6.2.dev6-0.6.2.dev9/diff.md --exclude *.pyd
+[2023-05-06 03:34:49] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-06 03:34:49] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230506/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 03:34:49] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-06 03:34:49] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230506/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 03:34:49] INFO root fetch - processPackages [pgn-to-sqlite]: Downloading https://files.pythonhosted.org/packages/9d/2d/80bdc8f6e93664c5a1fb4a2ee8b356f8b9623cdbb783caebccc1cb7ea60f/pgn_to_sqlite-2.0.3.tar.gz
+[2023-05-06 03:34:49] INFO root fetch - processPackages [streetscope]: Downloading https://files.pythonhosted.org/packages/f6/cd/e965ca176d4e943c4e0a7b2bb3077a836752b9ab699a02be9e23328d8d43/streetscope-0.3.0.tar.gz
+[2023-05-06 03:34:49] INFO root fetch - processPackages [yat-geo-db]: Downloading https://files.pythonhosted.org/packages/5b/56/7408cb3f4028ff0388feb8abddfc0fbc4df3efd957ff86fba433ec1ba77b/yat_geo_db-1.0.4.tar.gz
+[2023-05-06 03:34:49] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-06 03:34:49] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230506/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 03:34:49] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-06 03:34:49] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230506/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-06 03:34:49] INFO root fetch - processPackages [pgn-to-sqlite]: Downloading https://files.pythonhosted.org/packages/39/ce/145924d0e9c50296aaa0bd589861139fc14f13806472d52a392732bcf00c/pgn_to_sqlite-2.0.4.tar.gz
+[2023-05-06 03:34:49] INFO root fetch - processPackages [mythic-container]: Downloading https://files.pythonhosted.org/packages/10/46/a295b989a6dc665ce30b9b3d60219c2640320bdc844c7604b275d650f0e8/mythic_container-0.2.4.tar.gz
+[2023-05-06 03:34:49] INFO root fetch - processPackages [streetscope]: Downloading https://files.pythonhosted.org/packages/a8/60/fe08eb6cd54beca32e68612b19760e9dc01318a4458d6c92a7b0761a9632/streetscope-0.3.2.tar.gz
+[2023-05-06 03:34:49] INFO root fetch - processPackages [pgn-to-sqlite]: executing diffoscope
+[2023-05-06 03:34:49] INFO root fetch - processPackages [pgn-to-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgn_to_sqlite-2.0.3.tar.gz tmp/pgn_to_sqlite-2.0.4.tar.gz --markdown 20230506/p/pgn-to-sqlite/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-06 03:34:49] INFO root fetch - processPackages [streetscope]: executing diffoscope
+[2023-05-06 03:34:49] INFO root fetch - processPackages [streetscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streetscope-0.3.0.tar.gz tmp/streetscope-0.3.2.tar.gz --markdown 20230506/s/streetscope/0.3.0-0.3.2/diff.md --exclude *.pyd
+[2023-05-06 03:34:49] INFO root fetch - processPackages [yat-geo-db]: Downloading https://files.pythonhosted.org/packages/b8/5a/706961c0255bdea4d08eca52a50c1a4609becc40e21519685cbecbba69e8/yat_geo_db-1.0.5.tar.gz
+[2023-05-06 03:34:49] INFO root fetch - processPackages [mythic-container]: executing diffoscope
+[2023-05-06 03:34:49] INFO root fetch - processPackages [mythic-container]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mythic_container-0.2.3rc4.tar.gz tmp/mythic_container-0.2.4.tar.gz --markdown 20230506/m/mythic-container/0.2.3rc4-0.2.4/diff.md --exclude *.pyd
+[2023-05-06 03:34:49] INFO root fetch - processPackages [yat-geo-db]: executing diffoscope
+[2023-05-06 03:34:49] INFO root fetch - processPackages [yat-geo-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yat_geo_db-1.0.4.tar.gz tmp/yat_geo_db-1.0.5.tar.gz --markdown 20230506/y/yat-geo-db/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-06 03:34:50] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-06 03:34:50] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-06 03:34:50] INFO root fetch - main [MainThread]: End processing [streetscope]: success
+[2023-05-06 03:34:50] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-06 03:34:50] INFO root fetch - main [MainThread]: End processing [pgn-to-sqlite]: success
+[2023-05-06 03:34:51] INFO root fetch - main [MainThread]: End processing [yat-geo-db]: success
+[2023-05-06 03:34:51] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-06 03:34:51] INFO root fetch - main [MainThread]: End processing [mythic-container]: success
+[2023-05-06 03:34:51] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-06 03:34:51] INFO root fetch - main [MainThread]: Store serial: [17995849]
