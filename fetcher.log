@@ -13356,3 +13356,39 @@ EOFError: EOF read where object expected
 [2023-05-06 20:30:54] INFO root fetch - main [MainThread]: End processing [telebox]: success
 [2023-05-06 20:30:56] INFO root fetch - main [MainThread]: End processing [pyspedas]: success
 [2023-05-06 20:30:56] INFO root fetch - main [MainThread]: Store serial: [18001487]
+[2023-05-06 20:36:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001487]
+[2023-05-06 20:36:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 20:36:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hypercli
+[2023-05-06 20:36:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: solution-harsha
+[2023-05-06 20:36:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: promptbot
+[2023-05-06 20:36:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipcoloradds
+[2023-05-06 20:36:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asciicards
+[2023-05-06 20:36:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: citizenk
+[2023-05-06 20:36:05] INFO root fetch - processPackages [solution-harsha]: New version: [0.7] Old Version: [0.6]
+[2023-05-06 20:36:05] INFO root fetch - processPackages [promptbot]: New version: [0.0.2a1] Old Version: [0.0.1a6]
+[2023-05-06 20:36:05] INFO root fetch - processPackages [hypercli]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-06 20:36:05] INFO root fetch - processPackages [citizenk]: New version: [0.1.45] Old Version: [0.1.44]
+[2023-05-06 20:36:06] WARNING root fetch - processPackages [asciicards]: Skipping, unable to determine old version
+[2023-05-06 20:36:06] WARNING root fetch - processPackages [pipcoloradds]: Skipping, unable to determine old version
+[2023-05-06 20:36:06] INFO root fetch - main [MainThread]: End processing [asciicards] error
+[2023-05-06 20:36:06] INFO root fetch - main [MainThread]: End processing [pipcoloradds] error
+[2023-05-06 20:36:06] INFO root fetch - processPackages [solution-harsha]: Downloading https://files.pythonhosted.org/packages/ea/dc/593d08531c9258200b6d1726d79b7e15670fa778750e13960f040acba19c/solution_harsha-0.6.tar.gz
+[2023-05-06 20:36:06] INFO root fetch - processPackages [citizenk]: Downloading https://files.pythonhosted.org/packages/c9/ab/918dc647365d664a4e8f894d56b620fc2180aab4df191b56b14aca8570f4/citizenk-0.1.44.tar.gz
+[2023-05-06 20:36:06] INFO root fetch - processPackages [hypercli]: Downloading https://files.pythonhosted.org/packages/5b/75/d83b6c7d902fd15c94651a1b0eff817b698f196056507455697d5e75dd90/hypercli-0.1.9.tar.gz
+[2023-05-06 20:36:06] INFO root fetch - processPackages [promptbot]: Downloading https://files.pythonhosted.org/packages/a4/0c/bb0c1c462599b409aae8ea44b8908832af0528849a34bcc4f0c5f2279d2c/promptbot-0.0.2a1.tar.gz
+[2023-05-06 20:36:06] INFO root fetch - processPackages [citizenk]: Downloading https://files.pythonhosted.org/packages/14/5e/121ba60acc15a7e6236d7292bbcb23156e34f1880b9517d66faf239ce862/citizenk-0.1.45.tar.gz
+[2023-05-06 20:36:06] INFO root fetch - processPackages [promptbot]: executing diffoscope
+[2023-05-06 20:36:06] INFO root fetch - processPackages [promptbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptbot-0.0.1a6.tar.gz tmp/promptbot-0.0.2a1.tar.gz --markdown 20230506/p/promptbot/0.0.1a6-0.0.2a1/diff.md --exclude *.pyd
+[2023-05-06 20:36:06] INFO root fetch - processPackages [solution-harsha]: Downloading https://files.pythonhosted.org/packages/6b/90/716201cb84f5dff4c45995efe4dd2f333d5bd66c20022ea7a68a8b3a93cf/solution_harsha-0.7.tar.gz
+[2023-05-06 20:36:06] INFO root fetch - processPackages [hypercli]: Downloading https://files.pythonhosted.org/packages/b8/0c/0de8e27a537555d148df9c33c78bdcc2a5e1043a6f7f975622ee734162ae/hypercli-0.2.0.tar.gz
+[2023-05-06 20:36:06] INFO root fetch - processPackages [citizenk]: executing diffoscope
+[2023-05-06 20:36:06] INFO root fetch - processPackages [citizenk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citizenk-0.1.44.tar.gz tmp/citizenk-0.1.45.tar.gz --markdown 20230506/c/citizenk/0.1.44-0.1.45/diff.md --exclude *.pyd
+[2023-05-06 20:36:06] INFO root fetch - processPackages [hypercli]: executing diffoscope
+[2023-05-06 20:36:06] INFO root fetch - processPackages [hypercli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypercli-0.1.9.tar.gz tmp/hypercli-0.2.0.tar.gz --markdown 20230506/h/hypercli/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 20:36:06] INFO root fetch - processPackages [solution-harsha]: executing diffoscope
+[2023-05-06 20:36:06] INFO root fetch - processPackages [solution-harsha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solution_harsha-0.6.tar.gz tmp/solution_harsha-0.7.tar.gz --markdown 20230506/s/solution-harsha/0.6-0.7/diff.md --exclude *.pyd
+[2023-05-06 20:36:07] INFO root fetch - main [MainThread]: End processing [promptbot]: success
+[2023-05-06 20:36:07] INFO root fetch - main [MainThread]: End processing [citizenk]: success
+[2023-05-06 20:36:07] INFO root fetch - main [MainThread]: End processing [solution-harsha]: success
+[2023-05-06 20:36:07] INFO root fetch - main [MainThread]: End processing [hypercli]: success
+[2023-05-06 20:36:07] INFO root fetch - main [MainThread]: Store serial: [18001508]
