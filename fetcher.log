@@ -10929,3 +10929,31 @@ EOFError: EOF read where object expected
 [2023-05-06 15:31:00] INFO root fetch - main [MainThread]: End processing [lpython-emulation]: success
 [2023-05-06 15:31:00] INFO root fetch - main [MainThread]: End processing [pyPhasesRecordloaderSHHS]: success
 [2023-05-06 15:31:00] INFO root fetch - main [MainThread]: Store serial: [17999932]
+[2023-05-06 15:36:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999932]
+[2023-05-06 15:36:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 15:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: youtube-urls-validator
+[2023-05-06 15:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: VonPylib
+[2023-05-06 15:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: impipy
+[2023-05-06 15:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-ai
+[2023-05-06 15:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: evalAIRR
+[2023-05-06 15:36:09] WARNING root fetch - processPackages [youtube-urls-validator]: Skipping, unable to determine old version
+[2023-05-06 15:36:09] INFO root fetch - main [MainThread]: End processing [youtube-urls-validator] error
+[2023-05-06 15:36:09] INFO root fetch - processPackages [VonPylib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 15:36:09] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 15:36:09] INFO root fetch - processPackages [impipy]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-06 15:36:09] INFO root fetch - processPackages [dbt-ai]: New version: [0.0.8a0] Old Version: [0.0.7a0]
+[2023-05-06 15:36:09] INFO root fetch - processPackages [VonPylib]: executing diffoscope
+[2023-05-06 15:36:09] INFO root fetch - processPackages [VonPylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VonPylib-0.1.8.tar.gz tmp/VonPylib-0.1.9.tar.gz --markdown 20230506/V/VonPylib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 15:36:09] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-05-06 15:36:09] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230506/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 15:36:09] INFO root fetch - processPackages [dbt-ai]: executing diffoscope
+[2023-05-06 15:36:09] INFO root fetch - processPackages [dbt-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-ai-0.0.7a0.tar.gz tmp/dbt-ai-0.0.8a0.tar.gz --markdown 20230506/d/dbt-ai/0.0.7a0-0.0.8a0/diff.md --exclude *.pyd
+[2023-05-06 15:36:09] INFO root fetch - processPackages [impipy]: Downloading https://files.pythonhosted.org/packages/a2/c0/1d8f0a762ad41022eec28d18d4e23970acb98636ecc146e3533f096e4852/impipy-0.1.tar.gz
+[2023-05-06 15:36:10] INFO root fetch - processPackages [impipy]: Downloading https://files.pythonhosted.org/packages/86/35/ca48121eb4f3a9a26e15e76cc0a447effde11f6016cc50d0cc3f0d0059cf/impipy-0.1.1.tar.gz
+[2023-05-06 15:36:10] INFO root fetch - processPackages [impipy]: executing diffoscope
+[2023-05-06 15:36:10] INFO root fetch - processPackages [impipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impipy-0.1.tar.gz tmp/impipy-0.1.1.tar.gz --markdown 20230506/i/impipy/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 15:36:10] INFO root fetch - main [MainThread]: End processing [VonPylib]: success
+[2023-05-06 15:36:11] INFO root fetch - main [MainThread]: End processing [dbt-ai]: success
+[2023-05-06 15:36:11] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-05-06 15:36:11] INFO root fetch - main [MainThread]: End processing [impipy]: success
+[2023-05-06 15:36:11] INFO root fetch - main [MainThread]: Store serial: [17999949]
