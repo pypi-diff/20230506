@@ -10302,3 +10302,60 @@ EOFError: EOF read where object expected
 [2023-05-06 14:17:14] INFO root fetch - main [MainThread]: End processing [vanoma-api-utils]: success
 [2023-05-06 14:17:14] INFO root fetch - main [MainThread]: End processing [lambda-layer-version-cleaner]: success
 [2023-05-06 14:17:14] INFO root fetch - main [MainThread]: Store serial: [17999516]
+[2023-05-06 14:22:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999516]
+[2023-05-06 14:22:22] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 14:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyperfetch
+[2023-05-06 14:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyxtension
+[2023-05-06 14:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: type-inspector
+[2023-05-06 14:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-webperformers-humans
+[2023-05-06 14:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ykenan-fragments
+[2023-05-06 14:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-shelly-longTests
+[2023-05-06 14:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: evalAIRR
+[2023-05-06 14:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apasswordmanager
+[2023-05-06 14:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: drf-serializer-inference
+[2023-05-06 14:22:22] INFO root fetch - processPackages [pyxtension]: New version: [1.16.0] Old Version: [1.15.0]
+[2023-05-06 14:22:22] INFO root fetch - processPackages [type-inspector]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-06 14:22:22] INFO root fetch - processPackages [django-webperformers-humans]: New version: [0.3.1] Old Version: [0.3]
+[2023-05-06 14:22:22] INFO root fetch - processPackages [ykenan-fragments]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-06 14:22:22] INFO root fetch - processPackages [apasswordmanager]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 14:22:22] INFO root fetch - processPackages [certora-cli-alpha-shelly-longTests]: New version: [20230506.12.19.713734] Old Version: [20230506.10.55.828509]
+[2023-05-06 14:22:22] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 14:22:22] INFO root fetch - processPackages [hyperfetch]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 14:22:22] INFO root fetch - processPackages [drf-serializer-inference]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 14:22:22] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-05-06 14:22:22] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230506/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 14:22:22] INFO root fetch - processPackages [hyperfetch]: executing diffoscope
+[2023-05-06 14:22:22] INFO root fetch - processPackages [hyperfetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfetch-1.0.8.tar.gz tmp/hyperfetch-1.0.9.tar.gz --markdown 20230506/h/hyperfetch/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 14:22:23] INFO root fetch - processPackages [django-webperformers-humans]: Downloading https://files.pythonhosted.org/packages/78/74/1fe67c8c5be06a676716a665b63ec980bcd4a83f2287341a03e040dd16d4/django-webperformers-humans-0.3.1.tar.gz
+[2023-05-06 14:22:23] INFO root fetch - processPackages [type-inspector]: Downloading https://files.pythonhosted.org/packages/0c/59/68d7da7ecb300030a878c554d5b36ebf599ad426e4529fa7a440ee1bfb33/type_inspector-1.2.2.tar.gz
+[2023-05-06 14:22:23] INFO root fetch - processPackages [certora-cli-alpha-shelly-longTests]: Downloading https://files.pythonhosted.org/packages/c1/15/e7efe3ebb00c21124e4a84e113df6e9802d520810553218041011f7af3f4/certora-cli-alpha-shelly-longTests-20230506.10.55.828509.tar.gz
+[2023-05-06 14:22:23] INFO root fetch - processPackages [pyxtension]: Downloading https://files.pythonhosted.org/packages/3f/57/395bd0d97179b39cd14ee5b44c5aae77ced557173337577087644552af55/pyxtension-1.15.0-py3-none-any.whl
+[2023-05-06 14:22:23] INFO root fetch - processPackages [apasswordmanager]: Downloading https://files.pythonhosted.org/packages/ca/33/7cd232ca67264018593d9e7bbc6f61ac3940427ad0e7467bea3a63f4a7ba/apasswordmanager-0.1.0.tar.gz
+[2023-05-06 14:22:23] WARNING root fetch - processPackages [certora-cli-alpha-shelly-longTests]: Skipping package: exceeds size limit 38364918>=10485760
+[2023-05-06 14:22:23] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-longTests] error
+[2023-05-06 14:22:23] INFO root fetch - processPackages [django-webperformers-humans]: executing diffoscope
+[2023-05-06 14:22:23] INFO root fetch - processPackages [django-webperformers-humans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-webperformers-humans-0.3.tar.gz tmp/django-webperformers-humans-0.3.1.tar.gz --markdown 20230506/d/django-webperformers-humans/0.3-0.3.1/diff.md --exclude *.pyd
+[2023-05-06 14:22:23] INFO root fetch - processPackages [ykenan-fragments]: Downloading https://files.pythonhosted.org/packages/b9/91/407489dbdb5e04b6167dd278f45700e19f9f200a95b7e3fbf839cc070289/ykenan_fragments-1.1.4.tar.gz
+[2023-05-06 14:22:23] INFO root fetch - processPackages [type-inspector]: executing diffoscope
+[2023-05-06 14:22:23] INFO root fetch - processPackages [type-inspector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/type_inspector-1.2.1.tar.gz tmp/type_inspector-1.2.2.tar.gz --markdown 20230506/t/type-inspector/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-06 14:22:23] INFO root fetch - processPackages [drf-serializer-inference]: Downloading https://files.pythonhosted.org/packages/49/db/299f63c4bf6473063ad5046f7cf8f730eaf6270003cb1587538b8220bba8/drf_serializer_inference-0.0.1.tar.gz
+[2023-05-06 14:22:23] INFO root fetch - processPackages [ykenan-fragments]: executing diffoscope
+[2023-05-06 14:22:23] INFO root fetch - processPackages [ykenan-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_fragments-1.1.3.tar.gz tmp/ykenan_fragments-1.1.4.tar.gz --markdown 20230506/y/ykenan-fragments/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-06 14:22:23] INFO root fetch - processPackages [apasswordmanager]: Downloading https://files.pythonhosted.org/packages/8a/38/264f6f0f10f726afa7df21e3bdcac3ae67ece3f265bec379b1c1e2b16904/apasswordmanager-0.1.1.tar.gz
+[2023-05-06 14:22:23] INFO root fetch - processPackages [pyxtension]: Downloading https://files.pythonhosted.org/packages/c3/dd/3189e14af814b82448112e2605e559252085db73b8c11fd1648888e9f992/pyxtension-1.16.0-py3-none-any.whl
+[2023-05-06 14:22:23] INFO root fetch - processPackages [drf-serializer-inference]: Downloading https://files.pythonhosted.org/packages/fd/77/caad1e926e4ec09f2520e8e8dab01267250937bb0786a4383f8316271155/drf_serializer_inference-0.0.2.tar.gz
+[2023-05-06 14:22:23] INFO root fetch - processPackages [apasswordmanager]: executing diffoscope
+[2023-05-06 14:22:23] INFO root fetch - processPackages [apasswordmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apasswordmanager-0.1.0.tar.gz tmp/apasswordmanager-0.1.1.tar.gz --markdown 20230506/a/apasswordmanager/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 14:22:23] INFO root fetch - processPackages [pyxtension]: executing diffoscope
+[2023-05-06 14:22:23] INFO root fetch - processPackages [pyxtension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxtension-1.15.0-py3-none-any.whl.zip tmp/pyxtension-1.16.0-py3-none-any.whl.zip --markdown 20230506/p/pyxtension/1.15.0-1.16.0/diff.md --exclude *.pyd
+[2023-05-06 14:22:23] INFO root fetch - processPackages [drf-serializer-inference]: executing diffoscope
+[2023-05-06 14:22:23] INFO root fetch - processPackages [drf-serializer-inference]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_serializer_inference-0.0.1.tar.gz tmp/drf_serializer_inference-0.0.2.tar.gz --markdown 20230506/d/drf-serializer-inference/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 14:22:24] INFO root fetch - main [MainThread]: End processing [hyperfetch]: success
+[2023-05-06 14:22:24] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-05-06 14:22:24] INFO root fetch - main [MainThread]: End processing [type-inspector]: success
+[2023-05-06 14:22:24] INFO root fetch - main [MainThread]: End processing [ykenan-fragments]: success
+[2023-05-06 14:22:24] INFO root fetch - main [MainThread]: End processing [apasswordmanager]: success
+[2023-05-06 14:22:24] INFO root fetch - main [MainThread]: End processing [drf-serializer-inference]: success
+[2023-05-06 14:22:24] INFO root fetch - main [MainThread]: End processing [pyxtension]: success
+[2023-05-06 14:22:24] INFO root fetch - main [MainThread]: End processing [django-webperformers-humans]: success
+[2023-05-06 14:22:24] INFO root fetch - main [MainThread]: Store serial: [17999545]
