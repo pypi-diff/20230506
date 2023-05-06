@@ -10412,3 +10412,50 @@ EOFError: EOF read where object expected
 [2023-05-06 14:27:35] INFO root fetch - main [MainThread]: End processing [ykenan-fragments]: success
 [2023-05-06 14:27:37] INFO root fetch - main [MainThread]: End processing [geopandas]: success
 [2023-05-06 14:27:37] INFO root fetch - main [MainThread]: Store serial: [17999575]
+[2023-05-06 14:32:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999575]
+[2023-05-06 14:32:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyvisonicalarm
+[2023-05-06 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qgate-perf
+[2023-05-06 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: betanegbinfit
+[2023-05-06 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odnoklassniki-urls-validator
+[2023-05-06 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cm2py
+[2023-05-06 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: satlink
+[2023-05-06 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: FakeNewsClassifier
+[2023-05-06 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zengl
+[2023-05-06 14:32:46] INFO root fetch - processPackages [betanegbinfit]: New version: [1.9.0] Old Version: [1.8.4]
+[2023-05-06 14:32:46] INFO root fetch - processPackages [satlink]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-06 14:32:46] INFO root fetch - processPackages [cm2py]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 14:32:46] INFO root fetch - processPackages [qgate-perf]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 14:32:46] INFO root fetch - processPackages [pyvisonicalarm]: New version: [0.1.0b3] Old Version: [0.1.0b2]
+[2023-05-06 14:32:46] WARNING root fetch - processPackages [odnoklassniki-urls-validator]: Skipping, unable to determine old version
+[2023-05-06 14:32:46] INFO root fetch - main [MainThread]: End processing [odnoklassniki-urls-validator] error
+[2023-05-06 14:32:46] INFO root fetch - processPackages [satlink]: executing diffoscope
+[2023-05-06 14:32:46] INFO root fetch - processPackages [satlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satlink-0.0.4.tar.gz tmp/satlink-0.0.5.tar.gz --markdown 20230506/s/satlink/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-06 14:32:46] ERROR root fetch - processPackages [FakeNewsClassifier]: Unable to get metadata: No such project 'FakeNewsClassifier'
+[2023-05-06 14:32:46] INFO root fetch - main [MainThread]: End processing [FakeNewsClassifier] error
+[2023-05-06 14:32:46] INFO root fetch - processPackages [zengl]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-05-06 14:32:46] INFO root fetch - processPackages [betanegbinfit]: Downloading https://files.pythonhosted.org/packages/d2/8d/588d10fcb3eb63a9d66602bd3591585ad0244324079c168bceb24df7c995/betanegbinfit-1.8.4.tar.gz
+[2023-05-06 14:32:46] INFO root fetch - processPackages [cm2py]: Downloading https://files.pythonhosted.org/packages/52/6b/08a63017f6ecd07d3aa67b7df52b005f25330ec434135bd49b05be328039/cm2py-0.0.1.tar.gz
+[2023-05-06 14:32:46] INFO root fetch - processPackages [qgate-perf]: Downloading https://files.pythonhosted.org/packages/12/78/0cdade6cdb3e99c671935409f72d23ff9765c0ecf40b5330801a3249c65e/qgate_perf-0.1.9-py3-none-any.whl
+[2023-05-06 14:32:46] INFO root fetch - processPackages [zengl]: Downloading https://files.pythonhosted.org/packages/b2/87/582c026b53e9f9410e6df38ba0e1e962772c9943acea0acd42463a5ddfa6/zengl-1.9.2.tar.gz
+[2023-05-06 14:32:46] INFO root fetch - processPackages [qgate-perf]: executing diffoscope
+[2023-05-06 14:32:46] INFO root fetch - processPackages [qgate-perf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgate_perf-0.1.8-py3-none-any.whl.zip tmp/qgate_perf-0.1.9-py3-none-any.whl.zip --markdown 20230506/q/qgate-perf/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 14:32:46] INFO root fetch - processPackages [pyvisonicalarm]: Downloading https://files.pythonhosted.org/packages/e4/d4/40a065838e939fefecaeda09152237e10b132512a5d799d41c49e6162a63/pyvisonicalarm-0.1.0b3.tar.gz
+[2023-05-06 14:32:46] INFO root fetch - processPackages [cm2py]: Downloading https://files.pythonhosted.org/packages/8b/6f/25da270f6d6d316677b5bdb71c0be5e6038e96b54a580bc38429378befc0/cm2py-0.0.2.tar.gz
+[2023-05-06 14:32:46] INFO root fetch - processPackages [betanegbinfit]: Downloading https://files.pythonhosted.org/packages/f6/10/2a1fd84817e0b684cd159e32f1a831e452329771ec7e4851126a69fd316a/betanegbinfit-1.9.0.tar.gz
+[2023-05-06 14:32:46] INFO root fetch - processPackages [pyvisonicalarm]: executing diffoscope
+[2023-05-06 14:32:46] INFO root fetch - processPackages [pyvisonicalarm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvisonicalarm-0.1.0b2.tar.gz tmp/pyvisonicalarm-0.1.0b3.tar.gz --markdown 20230506/p/pyvisonicalarm/0.1.0b2-0.1.0b3/diff.md --exclude *.pyd
+[2023-05-06 14:32:46] INFO root fetch - processPackages [betanegbinfit]: executing diffoscope
+[2023-05-06 14:32:46] INFO root fetch - processPackages [betanegbinfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betanegbinfit-1.8.4.tar.gz tmp/betanegbinfit-1.9.0.tar.gz --markdown 20230506/b/betanegbinfit/1.8.4-1.9.0/diff.md --exclude *.pyd
+[2023-05-06 14:32:46] INFO root fetch - processPackages [cm2py]: executing diffoscope
+[2023-05-06 14:32:46] INFO root fetch - processPackages [cm2py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cm2py-0.0.1.tar.gz tmp/cm2py-0.0.2.tar.gz --markdown 20230506/c/cm2py/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 14:32:46] INFO root fetch - processPackages [zengl]: Downloading https://files.pythonhosted.org/packages/27/06/d1c7deb2246c103ce6a1a8237d196f33a0cd96a1f961c6aaccf034cefe38/zengl-1.9.3.tar.gz
+[2023-05-06 14:32:46] INFO root fetch - processPackages [zengl]: executing diffoscope
+[2023-05-06 14:32:46] INFO root fetch - processPackages [zengl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zengl-1.9.2.tar.gz tmp/zengl-1.9.3.tar.gz --markdown 20230506/z/zengl/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-05-06 14:32:47] INFO root fetch - main [MainThread]: End processing [satlink]: success
+[2023-05-06 14:32:47] INFO root fetch - main [MainThread]: End processing [qgate-perf]: success
+[2023-05-06 14:32:47] INFO root fetch - main [MainThread]: End processing [pyvisonicalarm]: success
+[2023-05-06 14:32:47] INFO root fetch - main [MainThread]: End processing [cm2py]: success
+[2023-05-06 14:32:47] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
+[2023-05-06 14:32:48] INFO root fetch - main [MainThread]: End processing [zengl]: success
+[2023-05-06 14:32:48] INFO root fetch - main [MainThread]: Store serial: [17999605]
