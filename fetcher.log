@@ -10957,3 +10957,39 @@ EOFError: EOF read where object expected
 [2023-05-06 15:36:11] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
 [2023-05-06 15:36:11] INFO root fetch - main [MainThread]: End processing [impipy]: success
 [2023-05-06 15:36:11] INFO root fetch - main [MainThread]: Store serial: [17999949]
+[2023-05-06 15:41:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999949]
+[2023-05-06 15:41:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 15:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: manrodri-test-titanic-classification-model
+[2023-05-06 15:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoxx
+[2023-05-06 15:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anyon
+[2023-05-06 15:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylabolt
+[2023-05-06 15:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: so-vits-svc-fork
+[2023-05-06 15:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: evalAIRR
+[2023-05-06 15:41:19] WARNING root fetch - processPackages [pylabolt]: Skipping, unable to determine old version
+[2023-05-06 15:41:19] INFO root fetch - processPackages [manrodri-test-titanic-classification-model]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 15:41:19] INFO root fetch - main [MainThread]: End processing [pylabolt] error
+[2023-05-06 15:41:19] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.5] Old Version: [3.9.4]
+[2023-05-06 15:41:19] INFO root fetch - processPackages [anyon]: New version: [3.2.0] Old Version: [3.1.27]
+[2023-05-06 15:41:19] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 15:41:19] INFO root fetch - processPackages [autoxx]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 15:41:20] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-05-06 15:41:20] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.9.4.tar.gz tmp/so_vits_svc_fork-3.9.5.tar.gz --markdown 20230506/s/so-vits-svc-fork/3.9.4-3.9.5/diff.md --exclude *.pyd
+[2023-05-06 15:41:20] INFO root fetch - processPackages [manrodri-test-titanic-classification-model]: Downloading https://files.pythonhosted.org/packages/4b/29/f8d0e0608ff9e70065280f7d2e39e5952f79be5c3d929278c59bd82059d3/manrodri-test-titanic-classification-model-0.0.2.tar.gz
+[2023-05-06 15:41:20] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-05-06 15:41:20] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230506/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 15:41:20] INFO root fetch - processPackages [autoxx]: Downloading https://files.pythonhosted.org/packages/e8/e8/7b995da83e525fff5b8c5ace998e6c81fa250fc0a33dac605d751ddee56f/autoxx-0.0.2.tar.gz
+[2023-05-06 15:41:20] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/cc/0e/2b2bed91ad07181e427f8237961b86d6b86f654333880aeab891467b4595/anyon-3.2.0-cp311-cp311-win_amd64.whl
+[2023-05-06 15:41:20] INFO root fetch - processPackages [anyon]: executing diffoscope
+[2023-05-06 15:41:20] INFO root fetch - processPackages [anyon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyon-3.1.27-cp311-cp311-win_amd64.whl.zip tmp/anyon-3.2.0-cp311-cp311-win_amd64.whl.zip --markdown 20230506/a/anyon/3.1.27-3.2.0/diff.md --exclude *.pyd
+[2023-05-06 15:41:20] INFO root fetch - processPackages [manrodri-test-titanic-classification-model]: Downloading https://files.pythonhosted.org/packages/4e/7a/8faafe4331d2d9c4bbbd2fb5e502ffdee7810eaaffb1cbd6e11a79a96583/manrodri-test-titanic-classification-model-0.0.3.tar.gz
+[2023-05-06 15:41:20] INFO root fetch - processPackages [autoxx]: Downloading https://files.pythonhosted.org/packages/ff/dc/635813240d4dad597dc4f070956258d878ef3797cfcb81c56471712f45c6/autoxx-0.0.3.tar.gz
+[2023-05-06 15:41:20] INFO root fetch - processPackages [manrodri-test-titanic-classification-model]: executing diffoscope
+[2023-05-06 15:41:20] INFO root fetch - processPackages [manrodri-test-titanic-classification-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manrodri-test-titanic-classification-model-0.0.2.tar.gz tmp/manrodri-test-titanic-classification-model-0.0.3.tar.gz --markdown 20230506/m/manrodri-test-titanic-classification-model/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 15:41:20] INFO root fetch - processPackages [autoxx]: executing diffoscope
+[2023-05-06 15:41:20] INFO root fetch - processPackages [autoxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoxx-0.0.2.tar.gz tmp/autoxx-0.0.3.tar.gz --markdown 20230506/a/autoxx/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 15:41:21] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-05-06 15:41:21] INFO root fetch - main [MainThread]: End processing [anyon]: success
+[2023-05-06 15:41:21] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-05-06 15:41:21] INFO root fetch - main [MainThread]: End processing [autoxx]: success
+[2023-05-06 15:41:21] INFO root fetch - main [MainThread]: End processing [manrodri-test-titanic-classification-model]: success
+[2023-05-06 15:41:21] INFO root fetch - main [MainThread]: Store serial: [17999974]
