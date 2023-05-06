@@ -6700,3 +6700,91 @@
 [2023-05-06 08:48:18] INFO root fetch - main [MainThread]: End processing [napari-bacseg]: success
 [2023-05-06 08:48:46] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
 [2023-05-06 08:48:46] INFO root fetch - main [MainThread]: Store serial: [17997490]
+[2023-05-06 08:53:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997490]
+[2023-05-06 08:53:55] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-06 08:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-spotinst
+[2023-05-06 08:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: athletes-unlimited-py
+[2023-05-06 08:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-snowflake
+[2023-05-06 08:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-coupon-portal
+[2023-05-06 08:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addons-oca-sale-promotion
+[2023-05-06 08:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-sumologic
+[2023-05-06 08:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyaxe
+[2023-05-06 08:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yetl-framework
+[2023-05-06 08:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pymailauth
+[2023-05-06 08:53:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: calcure
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pyaxe]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 08:53:55] INFO root fetch - processPackages [athletes-unlimited-py]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pulumi-snowflake]: New version: [0.9.1a1656367704] Old Version: [0.9.1a1654087017]
+[2023-05-06 08:53:55] INFO root fetch - processPackages [odoo-addon-coupon-portal]: New version: [15.0.1.0.0.3] Old Version: [15.0.1.0.0.2]
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pulumi-sumologic]: New version: [0.9.1a1663799436] Old Version: [0.9.0]
+[2023-05-06 08:53:55] WARNING root fetch - processPackages [pymailauth]: Skipping, unable to determine old version
+[2023-05-06 08:53:55] INFO root fetch - processPackages [odoo-addons-oca-sale-promotion]: New version: [15.0.20230505.0] Old Version: [15.0.20230427.0]
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pymailauth]: Start processing: semterm
+[2023-05-06 08:53:55] INFO root fetch - main [MainThread]: End processing [pymailauth] error
+[2023-05-06 08:53:55] INFO root fetch - processPackages [calcure]: New version: [2.9.1] Old Version: [2.9]
+[2023-05-06 08:53:55] INFO root fetch - processPackages [yetl-framework]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2023-05-06 08:53:55] INFO root fetch - processPackages [semterm]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pulumi-snowflake]: executing diffoscope
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pulumi-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_snowflake-0.9.1a1654087017.tar.gz tmp/pulumi_snowflake-0.9.1a1656367704.tar.gz --markdown 20230506/p/pulumi-snowflake/0.9.1a1654087017-0.9.1a1656367704/diff.md --exclude *.pyd
+[2023-05-06 08:53:55] INFO root fetch - processPackages [odoo-addons-oca-sale-promotion]: Downloading https://files.pythonhosted.org/packages/70/4e/15d6010a36f7cddedf72b01f3f9533cd2b213decc6dd5d478969e5b90666/odoo_addons_oca_sale_promotion-15.0.20230427.0-py3-none-any.whl
+[2023-05-06 08:53:55] INFO root fetch - processPackages [odoo-addon-coupon-portal]: Downloading https://files.pythonhosted.org/packages/09/0d/5804024504cab9ee5762c855c02fbafde8e0579ef2a3e152ae058ec22505/odoo_addon_coupon_portal-15.0.1.0.0.2-py3-none-any.whl
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pyaxe]: Downloading https://files.pythonhosted.org/packages/b2/71/8dd91f82bf5abfccb3b0fac7c0b8b25a4f57d500e6cf2a51428ab742f144/PyAxe-1.0.8-py3-none-any.whl
+[2023-05-06 08:53:55] INFO root fetch - processPackages [athletes-unlimited-py]: Downloading https://files.pythonhosted.org/packages/5d/3b/f5d3c389ef9fee045b19bb94529b7341b131b5ba856d0d752869535a253b/athletes_unlimited_py-0.0.2.tar.gz
+[2023-05-06 08:53:55] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/95/6e/07c90365a21408a422f4cdd47460b160429ddb968cd12102b4e6a0e547fd/yetl-framework-1.0.3.tar.gz
+[2023-05-06 08:53:55] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-05-06 08:53:55] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.0.2.tar.gz tmp/yetl-framework-1.0.3.tar.gz --markdown 20230506/y/yetl-framework/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pulumi-sumologic]: executing diffoscope
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pulumi-sumologic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_sumologic-0.9.0.tar.gz tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz --markdown 20230506/p/pulumi-sumologic/0.9.0-0.9.1a1663799436/diff.md --exclude *.pyd
+[2023-05-06 08:53:55] INFO root fetch - processPackages [odoo-addon-coupon-portal]: Downloading https://files.pythonhosted.org/packages/94/3f/b7c829ec80b4071873cf8b9f8b7031f97bab9905721f2bf3377e8eb9a58a/odoo_addon_coupon_portal-15.0.1.0.0.3-py3-none-any.whl
+[2023-05-06 08:53:55] INFO root fetch - processPackages [semterm]: Downloading https://files.pythonhosted.org/packages/81/51/e03e19867c60410407640d82d6e79543495d117605398480fe23a468bbf9/semterm-0.2.3.tar.gz
+[2023-05-06 08:53:55] INFO root fetch - processPackages [odoo-addon-coupon-portal]: executing diffoscope
+[2023-05-06 08:53:55] INFO root fetch - processPackages [odoo-addon-coupon-portal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_coupon_portal-15.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_coupon_portal-15.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230506/o/odoo-addon-coupon-portal/15.0.1.0.0.2-15.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20230506/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/diff.md --exclude *.pyd
+[2023-05-06 08:53:55] INFO root fetch - processPackages [athletes-unlimited-py]: Downloading https://files.pythonhosted.org/packages/01/7f/df294a32d08e1c84393d16da7f4079b6ec73fa7935011e1a5de7f9aebdf9/athletes_unlimited_py-0.0.3.tar.gz
+[2023-05-06 08:53:55] INFO root fetch - processPackages [semterm]: executing diffoscope
+[2023-05-06 08:53:55] INFO root fetch - processPackages [semterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semterm-0.2.2.tar.gz tmp/semterm-0.2.3.tar.gz --markdown 20230506/s/semterm/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-06 08:53:55] INFO root fetch - processPackages [odoo-addons-oca-sale-promotion]: Downloading https://files.pythonhosted.org/packages/b6/10/9d073ec9f02cbbdf59b5e66cf24d5e9975f7fb52a8a13052d98690a20386/odoo_addons_oca_sale_promotion-15.0.20230505.0-py3-none-any.whl
+[2023-05-06 08:53:55] INFO root fetch - processPackages [calcure]: Downloading https://files.pythonhosted.org/packages/e2/19/bc923503f6d56be81af24bf895391ffde6d348ebf979a696df62ab96a31c/calcure-2.9.1.tar.gz
+[2023-05-06 08:53:55] INFO root fetch - processPackages [athletes-unlimited-py]: executing diffoscope
+[2023-05-06 08:53:55] INFO root fetch - processPackages [athletes-unlimited-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athletes_unlimited_py-0.0.2.tar.gz tmp/athletes_unlimited_py-0.0.3.tar.gz --markdown 20230506/a/athletes-unlimited-py/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 08:53:55] INFO root fetch - processPackages [odoo-addons-oca-sale-promotion]: executing diffoscope
+[2023-05-06 08:53:55] INFO root fetch - processPackages [odoo-addons-oca-sale-promotion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_sale_promotion-15.0.20230427.0-py3-none-any.whl.zip tmp/odoo_addons_oca_sale_promotion-15.0.20230505.0-py3-none-any.whl.zip --markdown 20230506/o/odoo-addons-oca-sale-promotion/15.0.20230427.0-15.0.20230505.0/diff.md --exclude *.pyd
+[2023-05-06 08:53:55] INFO root fetch - processPackages [calcure]: executing diffoscope
+[2023-05-06 08:53:55] INFO root fetch - processPackages [calcure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calcure-2.9.tar.gz tmp/calcure-2.9.1.tar.gz --markdown 20230506/c/calcure/2.9-2.9.1/diff.md --exclude *.pyd
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pyaxe]: Downloading https://files.pythonhosted.org/packages/63/45/75ee3a899b4d36d892badfc65ce9573b8ce5b22ae94aabfea3ae45ec351f/PyAxe-1.0.9-py3-none-any.whl
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pyaxe]: executing diffoscope
+[2023-05-06 08:53:55] INFO root fetch - processPackages [pyaxe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAxe-1.0.8-py3-none-any.whl.zip tmp/PyAxe-1.0.9-py3-none-any.whl.zip --markdown 20230506/p/pyaxe/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 08:53:57] INFO root fetch - processPackages [odoo-addons-oca-sale-promotion]: Start processing: TikTokLiveCustom
+[2023-05-06 08:53:57] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-sale-promotion]: success
+[2023-05-06 08:53:57] INFO root fetch - processPackages [TikTokLiveCustom]: New version: [0.4] Old Version: [0.3]
+[2023-05-06 08:53:57] INFO root fetch - processPackages [semterm]: Start processing: xia-engine
+[2023-05-06 08:53:57] INFO root fetch - main [MainThread]: End processing [semterm]: success
+[2023-05-06 08:53:57] INFO root fetch - processPackages [xia-engine]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-06 08:53:57] INFO root fetch - processPackages [odoo-addon-coupon-portal]: Start processing: np-queuey
+[2023-05-06 08:53:57] INFO root fetch - main [MainThread]: End processing [odoo-addon-coupon-portal]: success
+[2023-05-06 08:53:57] INFO root fetch - processPackages [np-queuey]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-06 08:53:57] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-05-06 08:53:57] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.2.2.tar.gz tmp/np_queuey-0.2.3.tar.gz --markdown 20230506/n/np-queuey/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-06 08:53:57] INFO root fetch - processPackages [TikTokLiveCustom]: Downloading https://files.pythonhosted.org/packages/9a/b1/8bf220b82e5bef3ec5cf9b7ac1d70bd0c5e3acbcaf10bf317bc45163a62c/TikTokLiveCustom-0.4.tar.gz
+[2023-05-06 08:53:57] INFO root fetch - processPackages [yetl-framework]: Start processing: pulumi-venafi
+[2023-05-06 08:53:57] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-05-06 08:53:57] INFO root fetch - processPackages [TikTokLiveCustom]: executing diffoscope
+[2023-05-06 08:53:57] INFO root fetch - processPackages [TikTokLiveCustom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TikTokLiveCustom-0.3-py3.9.egg tmp/TikTokLiveCustom-0.4.tar.gz --markdown 20230506/T/TikTokLiveCustom/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-06 08:53:57] INFO root fetch - processPackages [pulumi-venafi]: New version: [1.6.0a1683269248] Old Version: [1.6.0a1682380572]
+[2023-05-06 08:53:57] INFO root fetch - processPackages [pulumi-venafi]: executing diffoscope
+[2023-05-06 08:53:57] INFO root fetch - processPackages [pulumi-venafi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_venafi-1.6.0a1682380572.tar.gz tmp/pulumi_venafi-1.6.0a1683269248.tar.gz --markdown 20230506/p/pulumi-venafi/1.6.0a1682380572-1.6.0a1683269248/diff.md --exclude *.pyd
+[2023-05-06 08:53:57] INFO root fetch - main [MainThread]: End processing [pyaxe]: success
+[2023-05-06 08:53:57] INFO root fetch - processPackages [xia-engine]: executing diffoscope
+[2023-05-06 08:53:57] INFO root fetch - processPackages [xia-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine-0.8.8-cp39-none-win_amd64.whl.zip tmp/xia_engine-0.8.9-cp39-none-win_amd64.whl.zip --markdown 20230506/x/xia-engine/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-06 08:53:57] INFO root fetch - main [MainThread]: End processing [pulumi-snowflake]: success
+[2023-05-06 08:53:57] INFO root fetch - main [MainThread]: End processing [calcure]: success
+[2023-05-06 08:53:57] INFO root fetch - main [MainThread]: End processing [athletes-unlimited-py]: success
+[2023-05-06 08:53:58] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-05-06 08:53:58] INFO root fetch - main [MainThread]: End processing [TikTokLiveCustom]: success
+[2023-05-06 08:53:58] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
+[2023-05-06 08:53:58] INFO root fetch - main [MainThread]: End processing [pulumi-venafi]: success
+[2023-05-06 08:54:00] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2023-05-06 08:54:00] INFO root fetch - main [MainThread]: End processing [pulumi-sumologic]: success
+[2023-05-06 08:54:00] INFO root fetch - main [MainThread]: Store serial: [17997535]
