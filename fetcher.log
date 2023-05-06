@@ -5551,3 +5551,25 @@
 [2023-05-06 06:11:16] INFO root fetch - main [MainThread]: End processing [paquete-fe]: success
 [2023-05-06 06:11:43] INFO root fetch - main [MainThread]: End processing [pulumi-azure]: success
 [2023-05-06 06:11:43] INFO root fetch - main [MainThread]: Store serial: [17996736]
+[2023-05-06 06:16:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996736]
+[2023-05-06 06:16:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-06 06:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatnet
+[2023-05-06 06:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezdxf
+[2023-05-06 06:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edge-distance-aabb
+[2023-05-06 06:16:52] INFO root fetch - processPackages [edge-distance-aabb]: New version: [1.0.1] Old Version: [1.0]
+[2023-05-06 06:16:52] INFO root fetch - processPackages [flatnet]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 06:16:52] INFO root fetch - processPackages [ezdxf]: New version: [1.1.0b1] Old Version: [1.1.0b0]
+[2023-05-06 06:16:52] INFO root fetch - processPackages [flatnet]: Downloading https://files.pythonhosted.org/packages/a9/8a/ada3495b32d274cb9815fc26fd15609f670704e89b8012c5ac3e7087e151/flatnet-0.1.0.tar.gz
+[2023-05-06 06:16:52] INFO root fetch - processPackages [ezdxf]: Downloading https://files.pythonhosted.org/packages/72/18/ad5eb53dda16e3474caf3fba409f15495a1ed23b4700ffe8f03c5f7273b2/ezdxf-1.1.0b0.zip
+[2023-05-06 06:16:52] INFO root fetch - processPackages [edge-distance-aabb]: executing diffoscope
+[2023-05-06 06:16:52] INFO root fetch - processPackages [edge-distance-aabb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edge_distance_aabb-1.0.tar.gz tmp/edge_distance_aabb-1.0.1.tar.gz --markdown 20230506/e/edge-distance-aabb/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 06:16:52] INFO root fetch - processPackages [flatnet]: Downloading https://files.pythonhosted.org/packages/2a/7e/c6c6c18afc9281040175dff1cf17d9aab4608742939e8384d1406391ae74/flatnet-0.1.1.tar.gz
+[2023-05-06 06:16:52] INFO root fetch - processPackages [flatnet]: executing diffoscope
+[2023-05-06 06:16:52] INFO root fetch - processPackages [flatnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatnet-0.1.0.tar.gz tmp/flatnet-0.1.1.tar.gz --markdown 20230506/f/flatnet/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 06:16:53] INFO root fetch - processPackages [ezdxf]: Downloading https://files.pythonhosted.org/packages/ab/e1/9409a59fa5b7d6571de629749c4111cf31e3a1c77ad2e9e5fed5610955e4/ezdxf-1.1.0b1.zip
+[2023-05-06 06:16:53] INFO root fetch - processPackages [ezdxf]: executing diffoscope
+[2023-05-06 06:16:53] INFO root fetch - processPackages [ezdxf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezdxf-1.1.0b0.zip tmp/ezdxf-1.1.0b1.zip --markdown 20230506/e/ezdxf/1.1.0b0-1.1.0b1/diff.md --exclude *.pyd
+[2023-05-06 06:16:53] INFO root fetch - main [MainThread]: End processing [edge-distance-aabb]: success
+[2023-05-06 06:16:53] INFO root fetch - main [MainThread]: End processing [flatnet]: success
+[2023-05-06 06:17:03] INFO root fetch - main [MainThread]: End processing [ezdxf]: success
+[2023-05-06 06:17:03] INFO root fetch - main [MainThread]: Store serial: [17996756]
