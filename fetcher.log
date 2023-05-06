@@ -11107,3 +11107,51 @@ EOFError: EOF read where object expected
 [2023-05-06 15:56:53] INFO root fetch - main [MainThread]: End processing [lpdraw]: success
 [2023-05-06 15:56:54] INFO root fetch - main [MainThread]: End processing [py-animus]: success
 [2023-05-06 15:56:54] INFO root fetch - main [MainThread]: Store serial: [18000047]
+[2023-05-06 16:01:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000047]
+[2023-05-06 16:02:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 16:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: custodes
+[2023-05-06 16:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wikihowapi-pk
+[2023-05-06 16:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyBibX
+[2023-05-06 16:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: frontengine
+[2023-05-06 16:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: frontengine-dev
+[2023-05-06 16:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: uss
+[2023-05-06 16:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PDFVisor
+[2023-05-06 16:02:03] INFO root fetch - processPackages [custodes]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 16:02:03] INFO root fetch - processPackages [uss]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 16:02:03] INFO root fetch - processPackages [wikihowapi-pk]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-06 16:02:03] INFO root fetch - processPackages [pyBibX]: New version: [2.9.8] Old Version: [2.9.7]
+[2023-05-06 16:02:03] INFO root fetch - processPackages [frontengine]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 16:02:03] INFO root fetch - processPackages [PDFVisor]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 16:02:03] INFO root fetch - processPackages [frontengine-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 16:02:03] INFO root fetch - processPackages [custodes]: executing diffoscope
+[2023-05-06 16:02:03] INFO root fetch - processPackages [custodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custodes-0.0.8.tar.gz tmp/custodes-0.0.9.tar.gz --markdown 20230506/c/custodes/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 16:02:03] INFO root fetch - processPackages [pyBibX]: Downloading https://files.pythonhosted.org/packages/02/77/5790e063c36230493d40cc3c2df079924b34686184de2a61ceec8045f7e9/pyBibX-2.9.7.tar.gz
+[2023-05-06 16:02:03] INFO root fetch - processPackages [frontengine-dev]: Downloading https://files.pythonhosted.org/packages/23/e2/01e0fe02ca6b73e163f3f0d080231bc0c783a63e766e5524eb246350518d/frontengine_dev-0.0.8.tar.gz
+[2023-05-06 16:02:03] INFO root fetch - processPackages [uss]: Downloading https://files.pythonhosted.org/packages/87/65/4a78f004146cc30934575c57780a25d3f3abc878e7a6c6894d55b5daa483/uss-0.0.1-py3-none-any.whl
+[2023-05-06 16:02:03] INFO root fetch - processPackages [wikihowapi-pk]: Downloading https://files.pythonhosted.org/packages/b2/d6/73fc579c5325792091248f3729667f023b4427be5fe6b26777aa3f4da196/wikihowapi_pk-0.0.5.tar.gz
+[2023-05-06 16:02:03] INFO root fetch - processPackages [frontengine]: Downloading https://files.pythonhosted.org/packages/62/88/6d99d7b463365da48db6f37c9bde41e7f7f20eeb1a13653a273586e81d3a/frontengine-0.0.8.tar.gz
+[2023-05-06 16:02:03] INFO root fetch - processPackages [PDFVisor]: Downloading https://files.pythonhosted.org/packages/fb/ca/deb694d7e419f295d630804ebd5db4aac48961d8225db68157e82142ff01/PDFVisor-0.1.2.tar.gz
+[2023-05-06 16:02:04] INFO root fetch - processPackages [wikihowapi-pk]: executing diffoscope
+[2023-05-06 16:02:04] INFO root fetch - processPackages [wikihowapi-pk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikihowapi_pk-0.0.4.tar.gz tmp/wikihowapi_pk-0.0.5.tar.gz --markdown 20230506/w/wikihowapi-pk/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-06 16:02:04] INFO root fetch - processPackages [pyBibX]: Downloading https://files.pythonhosted.org/packages/25/e0/4a029bd439390dbfe536a3518085dbf608d3e89501409c489739aa10a5e1/pyBibX-2.9.8.tar.gz
+[2023-05-06 16:02:04] INFO root fetch - processPackages [frontengine-dev]: Downloading https://files.pythonhosted.org/packages/bd/40/ac58f5e1633b3b2ea3574839a03ddc6a124459f3e721986a4208fbe06488/frontengine_dev-0.0.9.tar.gz
+[2023-05-06 16:02:04] INFO root fetch - processPackages [frontengine]: Downloading https://files.pythonhosted.org/packages/a5/8e/4bb92b2db27649b96b46469f263e2fdd091c8283ff06a24534624c34be9d/frontengine-0.0.9.tar.gz
+[2023-05-06 16:02:04] INFO root fetch - processPackages [PDFVisor]: executing diffoscope
+[2023-05-06 16:02:04] INFO root fetch - processPackages [PDFVisor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PDFVisor-0.1.1.tar.gz tmp/PDFVisor-0.1.2.tar.gz --markdown 20230506/P/PDFVisor/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 16:02:04] INFO root fetch - processPackages [uss]: Downloading https://files.pythonhosted.org/packages/6c/16/df9f2b12643367f66e43c54dd93c755aaf9fac3a6349baf122b8b358c03b/uss-0.0.2-py3-none-any.whl
+[2023-05-06 16:02:04] INFO root fetch - processPackages [pyBibX]: executing diffoscope
+[2023-05-06 16:02:04] INFO root fetch - processPackages [pyBibX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyBibX-2.9.7.tar.gz tmp/pyBibX-2.9.8.tar.gz --markdown 20230506/p/pyBibX/2.9.7-2.9.8/diff.md --exclude *.pyd
+[2023-05-06 16:02:04] INFO root fetch - processPackages [frontengine-dev]: executing diffoscope
+[2023-05-06 16:02:04] INFO root fetch - processPackages [frontengine-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine_dev-0.0.8.tar.gz tmp/frontengine_dev-0.0.9.tar.gz --markdown 20230506/f/frontengine-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 16:02:04] INFO root fetch - processPackages [frontengine]: executing diffoscope
+[2023-05-06 16:02:04] INFO root fetch - processPackages [frontengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine-0.0.8.tar.gz tmp/frontengine-0.0.9.tar.gz --markdown 20230506/f/frontengine/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 16:02:04] INFO root fetch - processPackages [uss]: executing diffoscope
+[2023-05-06 16:02:04] INFO root fetch - processPackages [uss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uss-0.0.1-py3-none-any.whl.zip tmp/uss-0.0.2-py3-none-any.whl.zip --markdown 20230506/u/uss/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 16:02:04] INFO root fetch - main [MainThread]: End processing [custodes]: success
+[2023-05-06 16:02:05] INFO root fetch - main [MainThread]: End processing [wikihowapi-pk]: success
+[2023-05-06 16:02:05] INFO root fetch - main [MainThread]: End processing [PDFVisor]: success
+[2023-05-06 16:02:05] INFO root fetch - main [MainThread]: End processing [pyBibX]: success
+[2023-05-06 16:02:05] INFO root fetch - main [MainThread]: End processing [uss]: success
+[2023-05-06 16:02:06] INFO root fetch - main [MainThread]: End processing [frontengine]: success
+[2023-05-06 16:02:06] INFO root fetch - main [MainThread]: End processing [frontengine-dev]: success
+[2023-05-06 16:02:06] INFO root fetch - main [MainThread]: Store serial: [18000068]
