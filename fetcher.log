@@ -4431,3 +4431,69 @@
 [2023-05-06 04:12:44] INFO root fetch - main [MainThread]: End processing [esdbclient]: success
 [2023-05-06 04:12:44] INFO root fetch - main [MainThread]: End processing [ExcelAlchemy]: success
 [2023-05-06 04:12:44] INFO root fetch - main [MainThread]: Store serial: [17996037]
+[2023-05-06 04:17:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996037]
+[2023-05-06 04:17:52] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-06 04:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlgenotype
+[2023-05-06 04:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-arcaeabot
+[2023-05-06 04:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatwhy
+[2023-05-06 04:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellmap
+[2023-05-06 04:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ovos-audio2ipa-plugin-wav2vec2gruut
+[2023-05-06 04:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-audio2ipa-plugin-wav2vec2espeak
+[2023-05-06 04:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ovos-audio2ipa-plugin-allosaurus
+[2023-05-06 04:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: weallcode-robot
+[2023-05-06 04:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: assisted-service-client
+[2023-05-06 04:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: valparse
+[2023-05-06 04:17:53] WARNING root fetch - processPackages [chatwhy]: Skipping, unable to determine old version
+[2023-05-06 04:17:53] INFO root fetch - processPackages [chatwhy]: Start processing: os-mfa
+[2023-05-06 04:17:53] INFO root fetch - main [MainThread]: End processing [chatwhy] error
+[2023-05-06 04:17:53] WARNING root fetch - processPackages [ovos-audio2ipa-plugin-wav2vec2gruut]: Skipping, unable to determine old version
+[2023-05-06 04:17:53] INFO root fetch - processPackages [weallcode-robot]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-05-06 04:17:53] INFO root fetch - processPackages [ovos-audio2ipa-plugin-wav2vec2gruut]: Start processing: ovos-audio2ipa-plugin-wav2vec2gruut
+[2023-05-06 04:17:53] INFO root fetch - main [MainThread]: End processing [ovos-audio2ipa-plugin-wav2vec2gruut] error
+[2023-05-06 04:17:53] WARNING root fetch - processPackages [ovos-audio2ipa-plugin-wav2vec2espeak]: Skipping, unable to determine old version
+[2023-05-06 04:17:53] INFO root fetch - processPackages [ovos-audio2ipa-plugin-wav2vec2espeak]: Start processing: ovos-audio2ipa-plugin-wav2vec2espeak
+[2023-05-06 04:17:53] INFO root fetch - main [MainThread]: End processing [ovos-audio2ipa-plugin-wav2vec2espeak] error
+[2023-05-06 04:17:53] INFO root fetch - processPackages [mlgenotype]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-06 04:17:53] INFO root fetch - processPackages [nonebot-plugin-arcaeabot]: New version: [3.1.9] Old Version: [3.1.7]
+[2023-05-06 04:17:53] INFO root fetch - processPackages [valparse]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-06 04:17:53] WARNING root fetch - processPackages [ovos-audio2ipa-plugin-allosaurus]: Skipping, unable to determine old version
+[2023-05-06 04:17:53] INFO root fetch - processPackages [ovos-audio2ipa-plugin-allosaurus]: Start processing: ovos-audio2ipa-plugin-allosaurus
+[2023-05-06 04:17:53] INFO root fetch - main [MainThread]: End processing [ovos-audio2ipa-plugin-allosaurus] error
+[2023-05-06 04:17:53] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202305060213] Old Version: [1.0.1.dev202305031402]
+[2023-05-06 04:17:53] WARNING root fetch - processPackages [ovos-audio2ipa-plugin-wav2vec2gruut]: Skipping, unable to determine old version
+[2023-05-06 04:17:53] INFO root fetch - processPackages [os-mfa]: New version: [0.4.0] Old Version: [0.0.2]
+[2023-05-06 04:17:53] INFO root fetch - main [MainThread]: End processing [ovos-audio2ipa-plugin-wav2vec2gruut] error
+[2023-05-06 04:17:53] WARNING root fetch - processPackages [ovos-audio2ipa-plugin-allosaurus]: Skipping, unable to determine old version
+[2023-05-06 04:17:53] INFO root fetch - main [MainThread]: End processing [ovos-audio2ipa-plugin-allosaurus] error
+[2023-05-06 04:17:53] WARNING root fetch - processPackages [ovos-audio2ipa-plugin-wav2vec2espeak]: Skipping, unable to determine old version
+[2023-05-06 04:17:53] INFO root fetch - main [MainThread]: End processing [ovos-audio2ipa-plugin-wav2vec2espeak] error
+[2023-05-06 04:17:53] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-06 04:17:53] INFO root fetch - processPackages [os-mfa]: executing diffoscope
+[2023-05-06 04:17:53] INFO root fetch - processPackages [os-mfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os-mfa-0.0.2.tar.gz tmp/os-mfa-0.4.0.tar.gz --markdown 20230506/o/os-mfa/0.0.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-06 04:17:53] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-06 04:17:53] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230506/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-06 04:17:53] INFO root fetch - processPackages [valparse]: Downloading https://files.pythonhosted.org/packages/e0/b5/dfb0971e9bb9262aff16900abf7abdc3a12b906d2de626fd4a3614f8a51d/valparse-0.2.0.tar.gz
+[2023-05-06 04:17:53] INFO root fetch - processPackages [weallcode-robot]: Downloading https://files.pythonhosted.org/packages/18/2a/a400addb9b7ae782fe4de2c8c7cbcb789a98b456836ce8efb04e483545f4/weallcode_robot-3.0.0.tar.gz
+[2023-05-06 04:17:53] INFO root fetch - processPackages [nonebot-plugin-arcaeabot]: Downloading https://files.pythonhosted.org/packages/45/70/e66fdf34eb1c5cd335f0a7a6ed5d0796b64a9212f42ce8e33aa299929001/nonebot_plugin_arcaeabot-3.1.7.tar.gz
+[2023-05-06 04:17:53] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/1b/59/5056635407b70b282aaf630c1f50437854c3659960bb05122f52ed670744/cellmap-1.0.1.dev202305031402-py3-none-any.whl
+[2023-05-06 04:17:53] INFO root fetch - processPackages [mlgenotype]: Downloading https://files.pythonhosted.org/packages/ad/86/03cf00d299e5a1cbc724300829ea35f9272482a86fc6e8d51ba222f9c57d/mlgenotype-0.1.8.tar.gz
+[2023-05-06 04:17:53] INFO root fetch - processPackages [mlgenotype]: executing diffoscope
+[2023-05-06 04:17:53] INFO root fetch - processPackages [mlgenotype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlgenotype-0.1.7.tar.gz tmp/mlgenotype-0.1.8.tar.gz --markdown 20230506/m/mlgenotype/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-06 04:17:53] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/e2/03/9e810ab9354a86d2ce66b5f24c8539d8e6907dd659f5817ca5034afa4f15/cellmap-1.0.1.dev202305060213-py3-none-any.whl
+[2023-05-06 04:17:53] INFO root fetch - processPackages [valparse]: Downloading https://files.pythonhosted.org/packages/ce/ac/668580f34e2759d741e9f749a673c8099b137919862305db8f0631116012/valparse-0.2.1.tar.gz
+[2023-05-06 04:17:53] INFO root fetch - processPackages [weallcode-robot]: Downloading https://files.pythonhosted.org/packages/a5/58/69b9940fb0c354c599ec57c6646c5601c723b1f64fb73a1e9b5b4465a419/weallcode_robot-3.0.1.tar.gz
+[2023-05-06 04:17:53] INFO root fetch - processPackages [valparse]: executing diffoscope
+[2023-05-06 04:17:53] INFO root fetch - processPackages [valparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valparse-0.2.0.tar.gz tmp/valparse-0.2.1.tar.gz --markdown 20230506/v/valparse/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 04:17:53] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-05-06 04:17:53] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202305031402-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202305060213-py3-none-any.whl.zip --markdown 20230506/c/cellmap/1.0.1.dev202305031402-1.0.1.dev202305060213/diff.md --exclude *.pyd
+[2023-05-06 04:17:53] INFO root fetch - processPackages [weallcode-robot]: executing diffoscope
+[2023-05-06 04:17:53] INFO root fetch - processPackages [weallcode-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weallcode_robot-3.0.0.tar.gz tmp/weallcode_robot-3.0.1.tar.gz --markdown 20230506/w/weallcode-robot/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-05-06 04:17:53] WARNING root fetch - processPackages [nonebot-plugin-arcaeabot]: Skipping package: exceeds size limit 20780877>=10485760
+[2023-05-06 04:17:53] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-arcaeabot] error
+[2023-05-06 04:17:54] INFO root fetch - main [MainThread]: End processing [os-mfa]: success
+[2023-05-06 04:17:54] INFO root fetch - main [MainThread]: End processing [mlgenotype]: success
+[2023-05-06 04:17:54] INFO root fetch - main [MainThread]: End processing [weallcode-robot]: success
+[2023-05-06 04:17:54] INFO root fetch - main [MainThread]: End processing [valparse]: success
+[2023-05-06 04:17:55] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-05-06 04:17:57] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-06 04:17:57] INFO root fetch - main [MainThread]: Store serial: [17996077]
