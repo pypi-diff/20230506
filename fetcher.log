@@ -2000,3 +2000,36 @@
 [2023-05-06 02:54:30] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-05-06 02:54:47] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-05-06 02:54:47] INFO root fetch - main [MainThread]: Store serial: [17994622]
+[2023-05-06 02:59:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17994622]
+[2023-05-06 02:59:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 02:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-lambda-layer-curl
+[2023-05-06 02:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydeephaven
+[2023-05-06 02:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: structure-py
+[2023-05-06 02:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-basic-commands
+[2023-05-06 02:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mp-api
+[2023-05-06 02:59:56] INFO root fetch - processPackages [pydeephaven]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-06 02:59:56] INFO root fetch - processPackages [structure-py]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-06 02:59:56] INFO root fetch - processPackages [py-basic-commands]: New version: [0.2.20] Old Version: [0.2.1]
+[2023-05-06 02:59:56] INFO root fetch - processPackages [mp-api]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-06 02:59:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-06 02:59:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-06 02:59:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230506/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-06 02:59:56] INFO root fetch - processPackages [mp-api]: executing diffoscope
+[2023-05-06 02:59:56] INFO root fetch - processPackages [mp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mp-api-0.9.0.tar.gz tmp/mp-api-0.9.1.tar.gz --markdown 20230506/m/mp-api/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-06 02:59:56] INFO root fetch - processPackages [pydeephaven]: Downloading https://files.pythonhosted.org/packages/f4/d6/073c81e81e07ab90a283b7ca9315e273567b95873c9dc0afbf6cccb67255/pydeephaven-0.8.0-py3-none-any.whl
+[2023-05-06 02:59:56] INFO root fetch - processPackages [py-basic-commands]: Downloading https://files.pythonhosted.org/packages/56/9c/8922d9047ceb3ed6309007bcdcd1cd0bc5f0c50b9b1b56fef3029a0e1fe1/py_basic_commands-0.2.1.tar.gz
+[2023-05-06 02:59:56] INFO root fetch - processPackages [structure-py]: Downloading https://files.pythonhosted.org/packages/a0/48/278d3c5b1100b0fd78a586464d31feacf4aa70547eff448014d8e70f75d7/structure_py-0.8.1.tar.gz
+[2023-05-06 02:59:56] INFO root fetch - processPackages [structure-py]: executing diffoscope
+[2023-05-06 02:59:56] INFO root fetch - processPackages [structure-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structure_py-0.8.0.tar.gz tmp/structure_py-0.8.1.tar.gz --markdown 20230506/s/structure-py/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-06 02:59:56] INFO root fetch - processPackages [py-basic-commands]: Downloading https://files.pythonhosted.org/packages/eb/a4/8e8ffe9cf5ddfb7a13c20740f0e35143e1e686b481edc0b5396862e26536/py_basic_commands-0.2.20.tar.gz
+[2023-05-06 02:59:56] INFO root fetch - processPackages [pydeephaven]: Downloading https://files.pythonhosted.org/packages/ba/d1/29e55a8d2d903d0fe4a0231e278a16816ae5fa4ee5b06795a577e848fefe/pydeephaven-0.9.0-py3-none-any.whl
+[2023-05-06 02:59:57] INFO root fetch - processPackages [py-basic-commands]: executing diffoscope
+[2023-05-06 02:59:57] INFO root fetch - processPackages [py-basic-commands]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_basic_commands-0.2.1.tar.gz tmp/py_basic_commands-0.2.20.tar.gz --markdown 20230506/p/py-basic-commands/0.2.1-0.2.20/diff.md --exclude *.pyd
+[2023-05-06 02:59:57] INFO root fetch - processPackages [pydeephaven]: executing diffoscope
+[2023-05-06 02:59:57] INFO root fetch - processPackages [pydeephaven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydeephaven-0.8.0-py3-none-any.whl.zip tmp/pydeephaven-0.9.0-py3-none-any.whl.zip --markdown 20230506/p/pydeephaven/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 02:59:57] INFO root fetch - main [MainThread]: End processing [structure-py]: success
+[2023-05-06 02:59:58] INFO root fetch - main [MainThread]: End processing [py-basic-commands]: success
+[2023-05-06 02:59:58] INFO root fetch - main [MainThread]: End processing [pydeephaven]: success
+[2023-05-06 02:59:59] INFO root fetch - main [MainThread]: End processing [mp-api]: success
+[2023-05-06 02:59:59] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-06 02:59:59] INFO root fetch - main [MainThread]: Store serial: [17994636]
