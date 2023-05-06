@@ -6593,3 +6593,42 @@
 [2023-05-06 08:37:50] INFO root fetch - main [MainThread]: End processing [odc-geo]: success
 [2023-05-06 08:37:54] INFO root fetch - main [MainThread]: End processing [pulumi-openstack]: success
 [2023-05-06 08:37:54] INFO root fetch - main [MainThread]: Store serial: [17997430]
+[2023-05-06 08:42:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997430]
+[2023-05-06 08:43:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 08:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-repair
+[2023-05-06 08:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dynoptimdict
+[2023-05-06 08:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: betwatch
+[2023-05-06 08:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RoInfo
+[2023-05-06 08:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-slack
+[2023-05-06 08:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: castepxbin
+[2023-05-06 08:43:03] INFO root fetch - processPackages [odoo-addons-oca-repair]: New version: [15.0.20230505.0] Old Version: [15.0.20220121.0]
+[2023-05-06 08:43:03] WARNING root fetch - processPackages [RoInfo]: Skipping, unable to determine old version
+[2023-05-06 08:43:03] INFO root fetch - main [MainThread]: End processing [RoInfo] error
+[2023-05-06 08:43:03] INFO root fetch - processPackages [dynoptimdict]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-05-06 08:43:03] INFO root fetch - processPackages [pulumi-slack]: New version: [0.4.3a1683267916] Old Version: [0.4.2a1682017854]
+[2023-05-06 08:43:03] INFO root fetch - processPackages [betwatch]: New version: [1.0.0] Old Version: [0.9.9]
+[2023-05-06 08:43:03] INFO root fetch - processPackages [castepxbin]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-06 08:43:03] INFO root fetch - processPackages [pulumi-slack]: executing diffoscope
+[2023-05-06 08:43:03] INFO root fetch - processPackages [pulumi-slack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_slack-0.4.2a1682017854.tar.gz tmp/pulumi_slack-0.4.3a1683267916.tar.gz --markdown 20230506/p/pulumi-slack/0.4.2a1682017854-0.4.3a1683267916/diff.md --exclude *.pyd
+[2023-05-06 08:43:03] INFO root fetch - processPackages [dynoptimdict]: Downloading https://files.pythonhosted.org/packages/49/8f/def2d2d51dc235c7337227d494b432d282ed87b4873cf7f6cdaf3946887c/dynoptimdict-1.0.0.tar.gz
+[2023-05-06 08:43:03] INFO root fetch - processPackages [odoo-addons-oca-repair]: Downloading https://files.pythonhosted.org/packages/d2/a7/dabe216fe682faf9d9bdb7a427f60f37c4aaade873645c8382627ffbb4e8/odoo_addons_oca_repair-15.0.20220121.0-py3-none-any.whl
+[2023-05-06 08:43:03] INFO root fetch - processPackages [betwatch]: Downloading https://files.pythonhosted.org/packages/04/db/7c975f2ec34310b8e248ef52017cde9938ecd7e82c9d90c31dab4df95afd/betwatch-0.9.9.tar.gz
+[2023-05-06 08:43:03] INFO root fetch - processPackages [castepxbin]: Downloading https://files.pythonhosted.org/packages/20/d8/0fc41a4f6685c135de5f5fe8e3e289cc9c562abe53af4f251adb88da96a6/castepxbin-0.2.0.tar.gz
+[2023-05-06 08:43:03] INFO root fetch - processPackages [dynoptimdict]: Downloading https://files.pythonhosted.org/packages/e0/36/9ce981fbda507b8fc3dfe6313a3cc647548a378b5b8b6ed54f6f7df5f296/dynoptimdict-2.0.0.tar.gz
+[2023-05-06 08:43:03] INFO root fetch - processPackages [odoo-addons-oca-repair]: Downloading https://files.pythonhosted.org/packages/9d/64/b55b77c23244cc34e6eb0695fb8ff2af98727d777863421811911914d844/odoo_addons_oca_repair-15.0.20230505.0-py3-none-any.whl
+[2023-05-06 08:43:03] INFO root fetch - processPackages [betwatch]: Downloading https://files.pythonhosted.org/packages/2c/60/86b4be7faa51bd6fee507308e55800d26ad9a72270e722411c15d4788aa1/betwatch-1.0.0.tar.gz
+[2023-05-06 08:43:03] INFO root fetch - processPackages [dynoptimdict]: executing diffoscope
+[2023-05-06 08:43:03] INFO root fetch - processPackages [dynoptimdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynoptimdict-1.0.0.tar.gz tmp/dynoptimdict-2.0.0.tar.gz --markdown 20230506/d/dynoptimdict/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-06 08:43:03] INFO root fetch - processPackages [odoo-addons-oca-repair]: executing diffoscope
+[2023-05-06 08:43:03] INFO root fetch - processPackages [odoo-addons-oca-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_repair-15.0.20220121.0-py3-none-any.whl.zip tmp/odoo_addons_oca_repair-15.0.20230505.0-py3-none-any.whl.zip --markdown 20230506/o/odoo-addons-oca-repair/15.0.20220121.0-15.0.20230505.0/diff.md --exclude *.pyd
+[2023-05-06 08:43:03] INFO root fetch - processPackages [betwatch]: executing diffoscope
+[2023-05-06 08:43:03] INFO root fetch - processPackages [betwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betwatch-0.9.9.tar.gz tmp/betwatch-1.0.0.tar.gz --markdown 20230506/b/betwatch/0.9.9-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 08:43:03] INFO root fetch - processPackages [castepxbin]: Downloading https://files.pythonhosted.org/packages/45/b9/a4bc111e7cc0300edd11d50191781c5c7bbd3e55b1edde03b30f0f206dea/castepxbin-0.3.0.tar.gz
+[2023-05-06 08:43:04] INFO root fetch - main [MainThread]: End processing [pulumi-slack]: success
+[2023-05-06 08:43:04] INFO root fetch - processPackages [castepxbin]: executing diffoscope
+[2023-05-06 08:43:04] INFO root fetch - processPackages [castepxbin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/castepxbin-0.2.0.tar.gz tmp/castepxbin-0.3.0.tar.gz --markdown 20230506/c/castepxbin/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-06 08:43:04] INFO root fetch - main [MainThread]: End processing [dynoptimdict]: success
+[2023-05-06 08:43:04] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-repair]: success
+[2023-05-06 08:43:05] INFO root fetch - main [MainThread]: End processing [betwatch]: success
+[2023-05-06 08:43:06] INFO root fetch - main [MainThread]: End processing [castepxbin]: success
+[2023-05-06 08:43:06] INFO root fetch - main [MainThread]: Store serial: [17997447]
