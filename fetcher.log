@@ -5933,3 +5933,49 @@
 [2023-05-06 07:23:33] INFO root fetch - main [MainThread]: End processing [dxsp]: success
 [2023-05-06 07:23:33] INFO root fetch - main [MainThread]: End processing [VonPylib]: success
 [2023-05-06 07:23:33] INFO root fetch - main [MainThread]: Store serial: [17997109]
+[2023-05-06 07:28:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997109]
+[2023-05-06 07:28:42] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 07:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nriapp
+[2023-05-06 07:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onequant
+[2023-05-06 07:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xj-user
+[2023-05-06 07:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: VonPylib
+[2023-05-06 07:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nriapp
+[2023-05-06 07:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crazy-thursday
+[2023-05-06 07:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nycu-tdx-py
+[2023-05-06 07:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Jvav
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nriapp]: New version: [1.1.15] Old Version: [1.1.14]
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nycu-tdx-py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 07:28:42] INFO root fetch - processPackages [VonPylib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nriapp]: New version: [1.1.15] Old Version: [1.1.14]
+[2023-05-06 07:28:42] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-06 07:28:42] INFO root fetch - processPackages [Jvav]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-06 07:28:42] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.6.1] Old Version: [2023.5.6.0]
+[2023-05-06 07:28:42] WARNING root fetch - processPackages [onequant]: Skipping, unable to determine old version
+[2023-05-06 07:28:42] INFO root fetch - main [MainThread]: End processing [onequant] error
+[2023-05-06 07:28:42] INFO root fetch - processPackages [VonPylib]: executing diffoscope
+[2023-05-06 07:28:42] INFO root fetch - processPackages [VonPylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VonPylib-0.1.8.tar.gz tmp/VonPylib-0.1.9.tar.gz --markdown 20230506/V/VonPylib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nriapp]: Downloading https://files.pythonhosted.org/packages/ca/7e/650c5af331f74bb5f52a4adb4badff38f9d6a2c99dab5a432f899272f888/nriapp-1.1.14.tar.gz
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nriapp]: Downloading https://files.pythonhosted.org/packages/ca/7e/650c5af331f74bb5f52a4adb4badff38f9d6a2c99dab5a432f899272f888/nriapp-1.1.14.tar.gz
+[2023-05-06 07:28:42] INFO root fetch - processPackages [Jvav]: executing diffoscope
+[2023-05-06 07:28:42] INFO root fetch - processPackages [Jvav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jvav-1.2.8.tar.gz tmp/Jvav-1.2.9.tar.gz --markdown 20230506/J/Jvav/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-06 07:28:42] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/27/71/92ce95d4b09f9df9459344cc43bd7a6cb2026c34ebc2a87be2e15da4c682/crazy-thursday-2023.5.6.1.tar.gz
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nycu-tdx-py]: executing diffoscope
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nycu-tdx-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nycu_tdx_py-0.1.8.tar.gz tmp/nycu_tdx_py-0.1.9.tar.gz --markdown 20230506/n/nycu-tdx-py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 07:28:42] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-05-06 07:28:42] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230506/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nriapp]: Downloading https://files.pythonhosted.org/packages/61/2c/7900ecd30f601377b81fbbb5eb9686dc8d49d6316b1ace4b5cf9b653ff13/nriapp-1.1.15.tar.gz
+[2023-05-06 07:28:42] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-06 07:28:42] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.6.0.tar.gz tmp/crazy-thursday-2023.5.6.1.tar.gz --markdown 20230506/c/crazy-thursday/2023.5.6.0-2023.5.6.1/diff.md --exclude *.pyd
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nriapp]: Downloading https://files.pythonhosted.org/packages/61/2c/7900ecd30f601377b81fbbb5eb9686dc8d49d6316b1ace4b5cf9b653ff13/nriapp-1.1.15.tar.gz
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nriapp]: executing diffoscope
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nriapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nriapp-1.1.14.tar.gz tmp/nriapp-1.1.15.tar.gz --markdown 20230506/n/nriapp/1.1.14-1.1.15/diff.md --exclude *.pyd
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nriapp]: executing diffoscope
+[2023-05-06 07:28:42] INFO root fetch - processPackages [nriapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nriapp-1.1.14.tar.gz tmp/nriapp-1.1.15.tar.gz --markdown 20230506/n/nriapp/1.1.14-1.1.15/diff.md --exclude *.pyd
+[2023-05-06 07:28:43] INFO root fetch - main [MainThread]: End processing [Jvav]: success
+[2023-05-06 07:28:43] INFO root fetch - main [MainThread]: End processing [VonPylib]: success
+[2023-05-06 07:28:43] INFO root fetch - main [MainThread]: End processing [nycu-tdx-py]: success
+[2023-05-06 07:28:44] INFO root fetch - main [MainThread]: End processing [nriapp]: success
+[2023-05-06 07:28:44] INFO root fetch - main [MainThread]: End processing [nriapp]: success
+[2023-05-06 07:28:44] INFO root fetch - main [MainThread]: End processing [xj-user]: success
+[2023-05-06 07:28:44] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-06 07:28:44] INFO root fetch - main [MainThread]: Store serial: [17997137]
