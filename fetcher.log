@@ -12194,3 +12194,47 @@ EOFError: EOF read where object expected
 [2023-05-06 18:13:10] INFO root fetch - main [MainThread]: End processing [psfmodels]: success
 [2023-05-06 18:13:37] INFO root fetch - main [MainThread]: End processing [RobloxPyApi3]: success
 [2023-05-06 18:13:37] INFO root fetch - main [MainThread]: Store serial: [18000751]
+[2023-05-06 18:18:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000751]
+[2023-05-06 18:18:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 18:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dank-mids
+[2023-05-06 18:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nats-nsc
+[2023-05-06 18:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypreql-nlp
+[2023-05-06 18:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: csgo-case-simulator-nonebot
+[2023-05-06 18:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-shelly-longTests
+[2023-05-06 18:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Terminal-B-Script
+[2023-05-06 18:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pointclass
+[2023-05-06 18:18:46] INFO root fetch - processPackages [csgo-case-simulator-nonebot]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 18:18:46] INFO root fetch - processPackages [nats-nsc]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-06 18:18:46] INFO root fetch - processPackages [pypreql-nlp]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 18:18:46] WARNING root fetch - processPackages [Terminal-B-Script]: Skipping, unable to determine old version
+[2023-05-06 18:18:46] INFO root fetch - main [MainThread]: End processing [Terminal-B-Script] error
+[2023-05-06 18:18:46] INFO root fetch - processPackages [pointclass]: New version: [1.0] Old Version: [0.9]
+[2023-05-06 18:18:46] INFO root fetch - processPackages [certora-cli-alpha-shelly-longTests]: New version: [20230506.16.17.464024] Old Version: [20230506.15.23.234854]
+[2023-05-06 18:18:46] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-05-06 18:18:46] INFO root fetch - processPackages [pypreql-nlp]: Downloading https://files.pythonhosted.org/packages/5a/75/15ae7d0c8bef5009eb49e475660f6cf9f73e1a04a08c75e2cae5873e4797/pypreql-nlp-0.0.1.tar.gz
+[2023-05-06 18:18:46] INFO root fetch - processPackages [csgo-case-simulator-nonebot]: Downloading https://files.pythonhosted.org/packages/d8/d1/52ce16c6467ec82f0efd0515284c68b52593d600ea83dd22260bb7b76a33/csgo-case-simulator-nonebot-0.1.0.tar.gz
+[2023-05-06 18:18:46] INFO root fetch - processPackages [nats-nsc]: Downloading https://files.pythonhosted.org/packages/f2/c4/2fe78ffd8229d0247db57764d5a33e2bc00d55829a36e1b0f8256c7dba52/nats_nsc-0.2.1.tar.gz
+[2023-05-06 18:18:46] INFO root fetch - processPackages [certora-cli-alpha-shelly-longTests]: Downloading https://files.pythonhosted.org/packages/26/6d/593fd0b1fd5755483debec8facf67a1818d4d531b9007523c8582bd74138/certora-cli-alpha-shelly-longTests-20230506.15.23.234854.tar.gz
+[2023-05-06 18:18:46] WARNING root fetch - processPackages [certora-cli-alpha-shelly-longTests]: Skipping package: exceeds size limit 38473058>=10485760
+[2023-05-06 18:18:46] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-longTests] error
+[2023-05-06 18:18:46] INFO root fetch - processPackages [nats-nsc]: executing diffoscope
+[2023-05-06 18:18:46] INFO root fetch - processPackages [nats-nsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nats_nsc-0.2.0.tar.gz tmp/nats_nsc-0.2.1.tar.gz --markdown 20230506/n/nats-nsc/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 18:18:46] INFO root fetch - processPackages [pointclass]: Downloading https://files.pythonhosted.org/packages/8f/35/6a489cccbc5c087051382f7e8a79cd9008130690c0b7d2c16a39d890c745/pointclass-1.0.tar.gz
+[2023-05-06 18:18:46] INFO root fetch - processPackages [dank-mids]: Downloading https://files.pythonhosted.org/packages/dd/d9/a90cdebb46db5a35fe035f493b14d48e210491b568f4927af7919ab2fdbd/dank_mids-4.20.8.tar.gz
+[2023-05-06 18:18:47] INFO root fetch - processPackages [pypreql-nlp]: Downloading https://files.pythonhosted.org/packages/a6/9d/ac6d6ed33c3d0547bd1c4b6dd1b14ae99f567800a441d1cfd4c803e95539/pypreql-nlp-0.0.2.tar.gz
+[2023-05-06 18:18:47] INFO root fetch - processPackages [csgo-case-simulator-nonebot]: Downloading https://files.pythonhosted.org/packages/c0/51/43f9e552d1fa5779161e151d6d8694b4b1253667edb68f6ac1e0da4818b2/csgo-case-simulator-nonebot-0.1.1.tar.gz
+[2023-05-06 18:18:47] INFO root fetch - processPackages [pointclass]: executing diffoscope
+[2023-05-06 18:18:47] INFO root fetch - processPackages [pointclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointclass-0.9.tar.gz tmp/pointclass-1.0.tar.gz --markdown 20230506/p/pointclass/0.9-1.0/diff.md --exclude *.pyd
+[2023-05-06 18:18:47] INFO root fetch - processPackages [pypreql-nlp]: executing diffoscope
+[2023-05-06 18:18:47] INFO root fetch - processPackages [pypreql-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-nlp-0.0.1.tar.gz tmp/pypreql-nlp-0.0.2.tar.gz --markdown 20230506/p/pypreql-nlp/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 18:18:47] INFO root fetch - processPackages [dank-mids]: Downloading https://files.pythonhosted.org/packages/e9/d0/a0c6c8d2d154a0250f47b30968e60098b0d44d3b35571e97a925b9b3984f/dank_mids-4.20.9.tar.gz
+[2023-05-06 18:18:47] INFO root fetch - processPackages [csgo-case-simulator-nonebot]: executing diffoscope
+[2023-05-06 18:18:47] INFO root fetch - processPackages [csgo-case-simulator-nonebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csgo-case-simulator-nonebot-0.1.0.tar.gz tmp/csgo-case-simulator-nonebot-0.1.1.tar.gz --markdown 20230506/c/csgo-case-simulator-nonebot/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 18:18:47] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-05-06 18:18:47] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230506/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-05-06 18:18:48] INFO root fetch - main [MainThread]: End processing [nats-nsc]: success
+[2023-05-06 18:18:48] INFO root fetch - main [MainThread]: End processing [pointclass]: success
+[2023-05-06 18:18:48] INFO root fetch - main [MainThread]: End processing [pypreql-nlp]: success
+[2023-05-06 18:18:48] INFO root fetch - main [MainThread]: End processing [csgo-case-simulator-nonebot]: success
+[2023-05-06 18:19:17] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-05-06 18:19:17] INFO root fetch - main [MainThread]: Store serial: [18000776]
