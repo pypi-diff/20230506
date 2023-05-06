@@ -14402,3 +14402,32 @@ EOFError: EOF read where object expected
 [2023-05-06 22:44:59] INFO root fetch - main [MainThread]: End processing [hyfi-template]: success
 [2023-05-06 22:44:59] INFO root fetch - main [MainThread]: End processing [delfino]: success
 [2023-05-06 22:44:59] INFO root fetch - main [MainThread]: Store serial: [18002079]
+[2023-05-06 22:50:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002079]
+[2023-05-06 22:50:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 22:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robolson
+[2023-05-06 22:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wicked-expressions
+[2023-05-06 22:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datanalyse
+[2023-05-06 22:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robolson
+[2023-05-06 22:50:08] INFO root fetch - processPackages [wicked-expressions]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-06 22:50:08] INFO root fetch - processPackages [robolson]: New version: [0.3.9] Old Version: [0.3.81]
+[2023-05-06 22:50:08] INFO root fetch - processPackages [robolson]: New version: [0.3.9] Old Version: [0.3.81]
+[2023-05-06 22:50:08] INFO root fetch - processPackages [datanalyse]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 22:50:08] INFO root fetch - processPackages [robolson]: Downloading https://files.pythonhosted.org/packages/12/62/ff843bae66765e686dec0f33f4c972dc746dbc22855affcc54ee36517313/robolson-0.3.81.tar.gz
+[2023-05-06 22:50:08] INFO root fetch - processPackages [robolson]: Downloading https://files.pythonhosted.org/packages/12/62/ff843bae66765e686dec0f33f4c972dc746dbc22855affcc54ee36517313/robolson-0.3.81.tar.gz
+[2023-05-06 22:50:08] INFO root fetch - processPackages [wicked-expressions]: Downloading https://files.pythonhosted.org/packages/c9/e9/eba877de8ee9da63d809bfce950247095f3b93235b52cf703299c92ef1e7/wicked_expressions-0.5.2.tar.gz
+[2023-05-06 22:50:08] INFO root fetch - processPackages [datanalyse]: Downloading https://files.pythonhosted.org/packages/fb/fd/bb0ecb995e05df098d3e3217bb8abb4cbf43976fe2381f6277a5d0ac1993/datanalyse-0.0.1.tar.gz
+[2023-05-06 22:50:08] INFO root fetch - processPackages [wicked-expressions]: Downloading https://files.pythonhosted.org/packages/c4/9a/6e7ce798a7abfc5c8f318bc4742bd41a5da1b03ee4093b377ef2e0af2ef3/wicked_expressions-0.5.3.tar.gz
+[2023-05-06 22:50:08] INFO root fetch - processPackages [robolson]: executing diffoscope
+[2023-05-06 22:50:08] INFO root fetch - processPackages [robolson]: executing diffoscope
+[2023-05-06 22:50:08] INFO root fetch - processPackages [robolson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robolson-0.3.81.tar.gz tmp/robolson-0.3.9.tar.gz --markdown 20230506/r/robolson/0.3.81-0.3.9/diff.md --exclude *.pyd
+[2023-05-06 22:50:08] INFO root fetch - processPackages [robolson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robolson-0.3.81.tar.gz tmp/robolson-0.3.9.tar.gz --markdown 20230506/r/robolson/0.3.81-0.3.9/diff.md --exclude *.pyd
+[2023-05-06 22:50:08] INFO root fetch - processPackages [datanalyse]: Downloading https://files.pythonhosted.org/packages/1c/7e/19515f72ac7f0f235ae4c3e02ad2072dfd8fdbc391a366f41066231fa8c6/datanalyse-0.0.2.tar.gz
+[2023-05-06 22:50:09] INFO root fetch - processPackages [wicked-expressions]: executing diffoscope
+[2023-05-06 22:50:09] INFO root fetch - processPackages [wicked-expressions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wicked_expressions-0.5.2.tar.gz tmp/wicked_expressions-0.5.3.tar.gz --markdown 20230506/w/wicked-expressions/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-06 22:50:09] INFO root fetch - processPackages [datanalyse]: executing diffoscope
+[2023-05-06 22:50:09] INFO root fetch - processPackages [datanalyse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datanalyse-0.0.1.tar.gz tmp/datanalyse-0.0.2.tar.gz --markdown 20230506/d/datanalyse/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 22:50:09] INFO root fetch - main [MainThread]: End processing [robolson]: success
+[2023-05-06 22:50:10] INFO root fetch - main [MainThread]: End processing [wicked-expressions]: success
+[2023-05-06 22:50:10] INFO root fetch - main [MainThread]: End processing [datanalyse]: success
+[2023-05-06 22:50:10] INFO root fetch - main [MainThread]: End processing [robolson]: success
+[2023-05-06 22:50:10] INFO root fetch - main [MainThread]: Store serial: [18002092]
