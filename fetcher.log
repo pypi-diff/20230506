@@ -13977,3 +13977,58 @@ EOFError: EOF read where object expected
 [2023-05-06 21:52:04] INFO root fetch - main [MainThread]: End processing [martin-binance]: success
 [2023-05-06 21:52:26] INFO root fetch - main [MainThread]: End processing [fwhunt-scan]: success
 [2023-05-06 21:52:26] INFO root fetch - main [MainThread]: Store serial: [18001835]
+[2023-05-06 21:57:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001835]
+[2023-05-06 21:57:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 21:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: steammy
+[2023-05-06 21:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mitzu
+[2023-05-06 21:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arvan-dns
+[2023-05-06 21:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastencode
+[2023-05-06 21:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cookiecutter-autodocs
+[2023-05-06 21:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nanomock
+[2023-05-06 21:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: semisup-segmentation
+[2023-05-06 21:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: graphsignal
+[2023-05-06 21:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pitv
+[2023-05-06 21:57:35] INFO root fetch - processPackages [steammy]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-06 21:57:35] INFO root fetch - processPackages [fastencode]: New version: [1.2] Old Version: [1.1]
+[2023-05-06 21:57:35] INFO root fetch - processPackages [cookiecutter-autodocs]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-06 21:57:35] INFO root fetch - processPackages [arvan-dns]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-06 21:57:35] WARNING root fetch - processPackages [pitv]: Skipping, unable to determine old version
+[2023-05-06 21:57:35] INFO root fetch - main [MainThread]: End processing [pitv] error
+[2023-05-06 21:57:35] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-06 21:57:35] INFO root fetch - processPackages [nanomock]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 21:57:35] INFO root fetch - processPackages [mitzu]: New version: [0.6.0rc6] Old Version: [0.6.0rc5]
+[2023-05-06 21:57:35] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 21:57:35] INFO root fetch - processPackages [cookiecutter-autodocs]: Downloading https://files.pythonhosted.org/packages/a6/d9/35f088ce708b17daa7fa867f08977c57e866ec2af615ab6d7d0795b78d73/cookiecutter_autodocs-0.0.4.tar.gz
+[2023-05-06 21:57:35] INFO root fetch - processPackages [arvan-dns]: Downloading https://files.pythonhosted.org/packages/90/f6/c72370d0cc0c3c9496de1d8e09e1a997bcd3ca90f67645fd238538e14f50/arvan_dns-0.2.0.tar.gz
+[2023-05-06 21:57:35] INFO root fetch - processPackages [fastencode]: Downloading https://files.pythonhosted.org/packages/e6/a5/a36f1c1a46ee03098b32afd0c9de3a5ba3156acc0c6085e12ba802fb7052/fastencode-1.1.tar.gz
+[2023-05-06 21:57:35] INFO root fetch - processPackages [nanomock]: Downloading https://files.pythonhosted.org/packages/4e/13/b60641bdd8ad41c497abc47d30411627d1d7dbab83dba9491b8699b1c7e8/nanomock-0.0.8.tar.gz
+[2023-05-06 21:57:35] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 21:57:35] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 21:57:35] INFO root fetch - processPackages [steammy]: Downloading https://files.pythonhosted.org/packages/41/a4/cb5a2b0ac0f0f0f99788e5d9d3f87483f3658efa1068c95758418dea93f4/steammy-0.1.3.tar.gz
+[2023-05-06 21:57:35] INFO root fetch - processPackages [nanomock]: executing diffoscope
+[2023-05-06 21:57:35] INFO root fetch - processPackages [nanomock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanomock-0.0.7.tar.gz tmp/nanomock-0.0.8.tar.gz --markdown 20230506/n/nanomock/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 21:57:35] INFO root fetch - processPackages [mitzu]: Downloading https://files.pythonhosted.org/packages/cb/e3/1feda0c1bce6aff8c9860f9feffed55e0e2975fdba8b964c86f0fca41ff6/mitzu-0.6.0rc6.tar.gz
+[2023-05-06 21:57:35] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2023-05-06 21:57:35] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20230506/g/graphsignal/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-06 21:57:35] INFO root fetch - processPackages [cookiecutter-autodocs]: Downloading https://files.pythonhosted.org/packages/4b/6d/50c6d7c4d10c8e387214f8d3fb3e40fd04384f64a85c63adbdbfa4008c42/cookiecutter_autodocs-0.1.0.tar.gz
+[2023-05-06 21:57:35] INFO root fetch - processPackages [steammy]: executing diffoscope
+[2023-05-06 21:57:35] INFO root fetch - processPackages [steammy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steammy-0.1.2-py3-none-any.whl.zip tmp/steammy-0.1.3.tar.gz --markdown 20230506/s/steammy/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-06 21:57:35] INFO root fetch - processPackages [arvan-dns]: Downloading https://files.pythonhosted.org/packages/ed/7c/b226a93b41b31955feaff2d710330fee316430f492f3d7a507af3b66c793/arvan_dns-0.3.0.tar.gz
+[2023-05-06 21:57:35] INFO root fetch - processPackages [fastencode]: Downloading https://files.pythonhosted.org/packages/a9/fa/3745507f17b0fbdaac0a1975309757208b4f0cf8c002f46b1103e789c5c9/fastencode-1.2.tar.gz
+[2023-05-06 21:57:35] INFO root fetch - processPackages [mitzu]: executing diffoscope
+[2023-05-06 21:57:35] INFO root fetch - processPackages [mitzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitzu-0.6.0rc5.tar.gz tmp/mitzu-0.6.0rc6.tar.gz --markdown 20230506/m/mitzu/0.6.0rc5-0.6.0rc6/diff.md --exclude *.pyd
+[2023-05-06 21:57:35] INFO root fetch - processPackages [cookiecutter-autodocs]: executing diffoscope
+[2023-05-06 21:57:35] INFO root fetch - processPackages [cookiecutter-autodocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter_autodocs-0.0.4.tar.gz tmp/cookiecutter_autodocs-0.1.0.tar.gz --markdown 20230506/c/cookiecutter-autodocs/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-06 21:57:35] INFO root fetch - processPackages [arvan-dns]: executing diffoscope
+[2023-05-06 21:57:35] INFO root fetch - processPackages [arvan-dns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arvan_dns-0.2.0.tar.gz tmp/arvan_dns-0.3.0.tar.gz --markdown 20230506/a/arvan-dns/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-06 21:57:35] INFO root fetch - processPackages [fastencode]: executing diffoscope
+[2023-05-06 21:57:35] INFO root fetch - processPackages [fastencode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastencode-1.1.tar.gz tmp/fastencode-1.2.tar.gz --markdown 20230506/f/fastencode/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-06 21:57:36] INFO root fetch - main [MainThread]: End processing [steammy]: success
+[2023-05-06 21:57:36] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 21:57:37] INFO root fetch - main [MainThread]: End processing [cookiecutter-autodocs]: success
+[2023-05-06 21:57:37] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2023-05-06 21:57:37] INFO root fetch - main [MainThread]: End processing [fastencode]: success
+[2023-05-06 21:57:37] INFO root fetch - main [MainThread]: End processing [arvan-dns]: success
+[2023-05-06 21:57:37] INFO root fetch - main [MainThread]: End processing [mitzu]: success
+[2023-05-06 21:57:37] INFO root fetch - main [MainThread]: End processing [nanomock]: success
+[2023-05-06 21:57:37] INFO root fetch - main [MainThread]: Store serial: [18001861]
