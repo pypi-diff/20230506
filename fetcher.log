@@ -10993,3 +10993,34 @@ EOFError: EOF read where object expected
 [2023-05-06 15:41:21] INFO root fetch - main [MainThread]: End processing [autoxx]: success
 [2023-05-06 15:41:21] INFO root fetch - main [MainThread]: End processing [manrodri-test-titanic-classification-model]: success
 [2023-05-06 15:41:21] INFO root fetch - main [MainThread]: Store serial: [17999974]
+[2023-05-06 15:46:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999974]
+[2023-05-06 15:46:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 15:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsonschema-gentypes
+[2023-05-06 15:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hindilemmatizer
+[2023-05-06 15:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hindilemmatizer
+[2023-05-06 15:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: irails
+[2023-05-06 15:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: FakeNewsClassifier
+[2023-05-06 15:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tweety-ns
+[2023-05-06 15:46:30] WARNING root fetch - processPackages [hindilemmatizer]: Skipping, unable to determine old version
+[2023-05-06 15:46:30] INFO root fetch - main [MainThread]: End processing [hindilemmatizer] error
+[2023-05-06 15:46:30] INFO root fetch - processPackages [jsonschema-gentypes]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-05-06 15:46:30] WARNING root fetch - processPackages [hindilemmatizer]: Skipping, unable to determine old version
+[2023-05-06 15:46:30] INFO root fetch - main [MainThread]: End processing [hindilemmatizer] error
+[2023-05-06 15:46:30] INFO root fetch - processPackages [irails]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-05-06 15:46:30] WARNING root fetch - processPackages [FakeNewsClassifier]: Skipping, unable to determine old version
+[2023-05-06 15:46:30] INFO root fetch - main [MainThread]: End processing [FakeNewsClassifier] error
+[2023-05-06 15:46:30] INFO root fetch - processPackages [tweety-ns]: New version: [0.7] Old Version: [0.6.1]
+[2023-05-06 15:46:30] INFO root fetch - processPackages [jsonschema-gentypes]: Downloading https://files.pythonhosted.org/packages/e3/21/4fc0a8fa9b673da03daf7d1ee74f3e0a08b50ea278721f1bbf6912dd09ae/jsonschema_gentypes-2.2.3.tar.gz
+[2023-05-06 15:46:30] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/e0/0c/cc1818b08bde051ad94258f37ec33541258fdb8c2e2a2dde07ceda2bb900/irails-1.1.7.tar.gz
+[2023-05-06 15:46:30] INFO root fetch - processPackages [jsonschema-gentypes]: executing diffoscope
+[2023-05-06 15:46:30] INFO root fetch - processPackages [jsonschema-gentypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonschema_gentypes-2.2.2.tar.gz tmp/jsonschema_gentypes-2.2.3.tar.gz --markdown 20230506/j/jsonschema-gentypes/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-05-06 15:46:30] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-06 15:46:30] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.1.6.tar.gz tmp/irails-1.1.7.tar.gz --markdown 20230506/i/irails/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-05-06 15:46:30] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/39/a3/03b1902dfa14d1e09ee4528c59769ecae775c5948e1c0b22a0fe0771d28a/tweety-ns-0.6.1.tar.gz
+[2023-05-06 15:46:30] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/b7/3a/854528b5f8e15badaec4c2a19b0189e9031de092f5645f541d91a7301f5b/tweety-ns-0.7.tar.gz
+[2023-05-06 15:46:31] INFO root fetch - processPackages [tweety-ns]: executing diffoscope
+[2023-05-06 15:46:31] INFO root fetch - processPackages [tweety-ns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweety-ns-0.6.1.tar.gz tmp/tweety-ns-0.7.tar.gz --markdown 20230506/t/tweety-ns/0.6.1-0.7/diff.md --exclude *.pyd
+[2023-05-06 15:46:31] INFO root fetch - main [MainThread]: End processing [jsonschema-gentypes]: success
+[2023-05-06 15:46:31] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-06 15:46:32] INFO root fetch - main [MainThread]: End processing [tweety-ns]: success
+[2023-05-06 15:46:32] INFO root fetch - main [MainThread]: Store serial: [17999995]
