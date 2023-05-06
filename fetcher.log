@@ -13935,3 +13935,45 @@ EOFError: EOF read where object expected
 [2023-05-06 21:46:47] INFO root fetch - main [MainThread]: End processing [board-game-recommender]: success
 [2023-05-06 21:46:47] INFO root fetch - main [MainThread]: End processing [decat]: success
 [2023-05-06 21:46:47] INFO root fetch - main [MainThread]: Store serial: [18001816]
+[2023-05-06 21:51:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001816]
+[2023-05-06 21:51:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 21:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: frankAllSkyCam
+[2023-05-06 21:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: termimal
+[2023-05-06 21:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fwhunt-scan
+[2023-05-06 21:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dj-beatcloud
+[2023-05-06 21:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arvan-dns
+[2023-05-06 21:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: martin-binance
+[2023-05-06 21:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aioworkers
+[2023-05-06 21:51:56] WARNING root fetch - processPackages [arvan-dns]: Skipping, unable to determine old version
+[2023-05-06 21:51:56] INFO root fetch - main [MainThread]: End processing [arvan-dns] error
+[2023-05-06 21:51:56] INFO root fetch - processPackages [fwhunt-scan]: New version: [2.2.5] Old Version: [2.2.4]
+[2023-05-06 21:51:56] INFO root fetch - processPackages [termimal]: New version: [0.3] Old Version: [0.2]
+[2023-05-06 21:51:56] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-05-06 21:51:56] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-06 21:51:56] INFO root fetch - processPackages [dj-beatcloud]: New version: [2.5.1b0] Old Version: [2.5.0b0]
+[2023-05-06 21:51:56] INFO root fetch - processPackages [martin-binance]: New version: [1.2.9.post19] Old Version: [1.2.9.post18]
+[2023-05-06 21:51:57] INFO root fetch - processPackages [aioworkers]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-06 21:51:57] INFO root fetch - processPackages [fwhunt-scan]: Downloading https://files.pythonhosted.org/packages/cb/7a/4fc037efa561d0432e05fc37b6264dc5f73b3cf35b36fe3a6934b62e4c2f/fwhunt_scan-2.2.4.tar.gz
+[2023-05-06 21:51:57] INFO root fetch - processPackages [termimal]: Downloading https://files.pythonhosted.org/packages/73/e6/6e833cc31b846de628765c33dd14f205408b6e4f6905678db53f831ed7bf/termimal-0.3.tar.gz
+[2023-05-06 21:51:57] INFO root fetch - processPackages [aioworkers]: Downloading https://files.pythonhosted.org/packages/51/13/4f8acd78cd8ef30fb17e090e59a02c8737d16c94c010611c4d5347e24c76/aioworkers-0.9.2.tar.gz
+[2023-05-06 21:51:57] INFO root fetch - processPackages [martin-binance]: Downloading https://files.pythonhosted.org/packages/44/47/429dce3435b6f022f49d1a3fab67e1a0be3ca979bb7b932122b617ee1126/martin-binance-1.2.9.post18.tar.gz
+[2023-05-06 21:51:57] INFO root fetch - processPackages [termimal]: executing diffoscope
+[2023-05-06 21:51:57] INFO root fetch - processPackages [termimal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/termimal-0.2.tar.gz tmp/termimal-0.3.tar.gz --markdown 20230506/t/termimal/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-06 21:51:57] INFO root fetch - processPackages [dj-beatcloud]: Downloading https://files.pythonhosted.org/packages/e3/29/3da4a4370fff055233d187615546f2aca3bdec681faf43ab339c5820d621/dj_beatcloud-2.5.1b0.tar.gz
+[2023-05-06 21:51:57] INFO root fetch - processPackages [fwhunt-scan]: Downloading https://files.pythonhosted.org/packages/58/99/b7825dfbb019a60d80bae4bb1e67851ae8aaa14716ea485991eeac85417e/fwhunt_scan-2.2.5.tar.gz
+[2023-05-06 21:51:57] INFO root fetch - processPackages [dj-beatcloud]: executing diffoscope
+[2023-05-06 21:51:57] INFO root fetch - processPackages [dj-beatcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_beatcloud-2.5.0b0.tar.gz tmp/dj_beatcloud-2.5.1b0.tar.gz --markdown 20230506/d/dj-beatcloud/2.5.0b0-2.5.1b0/diff.md --exclude *.pyd
+[2023-05-06 21:51:57] INFO root fetch - processPackages [fwhunt-scan]: executing diffoscope
+[2023-05-06 21:51:57] INFO root fetch - processPackages [fwhunt-scan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fwhunt_scan-2.2.4.tar.gz tmp/fwhunt_scan-2.2.5.tar.gz --markdown 20230506/f/fwhunt-scan/2.2.4-2.2.5/diff.md --exclude *.pyd
+[2023-05-06 21:51:57] INFO root fetch - processPackages [aioworkers]: Downloading https://files.pythonhosted.org/packages/3b/d7/3d647a5afd65c18e4efed2b8ffef65dc170d7749491f9fd3c93bd259e6b7/aioworkers-0.9.3.tar.gz
+[2023-05-06 21:51:57] INFO root fetch - processPackages [aioworkers]: executing diffoscope
+[2023-05-06 21:51:57] INFO root fetch - processPackages [aioworkers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioworkers-0.9.2.tar.gz tmp/aioworkers-0.9.3.tar.gz --markdown 20230506/a/aioworkers/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-06 21:51:58] INFO root fetch - main [MainThread]: End processing [termimal]: success
+[2023-05-06 21:51:58] INFO root fetch - main [MainThread]: End processing [dj-beatcloud]: success
+[2023-05-06 21:51:58] INFO root fetch - main [MainThread]: End processing [aioworkers]: success
+[2023-05-06 21:51:59] INFO root fetch - processPackages [martin-binance]: Downloading https://files.pythonhosted.org/packages/af/a6/769ade28e055f972e4104c164e79c01e4c9b0e4a20a4c33e18f744f6f208/martin-binance-1.2.9.post19.tar.gz
+[2023-05-06 21:52:00] INFO root fetch - processPackages [martin-binance]: executing diffoscope
+[2023-05-06 21:52:00] INFO root fetch - processPackages [martin-binance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/martin-binance-1.2.9.post18.tar.gz tmp/martin-binance-1.2.9.post19.tar.gz --markdown 20230506/m/martin-binance/1.2.9.post18-1.2.9.post19/diff.md --exclude *.pyd
+[2023-05-06 21:52:04] INFO root fetch - main [MainThread]: End processing [martin-binance]: success
+[2023-05-06 21:52:26] INFO root fetch - main [MainThread]: End processing [fwhunt-scan]: success
+[2023-05-06 21:52:26] INFO root fetch - main [MainThread]: Store serial: [18001835]
