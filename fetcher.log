@@ -10807,3 +10807,32 @@ EOFError: EOF read where object expected
 [2023-05-06 15:15:20] INFO root fetch - main [MainThread]: End processing [vasprocar]: success
 [2023-05-06 15:15:21] INFO root fetch - main [MainThread]: End processing [open-data-project]: success
 [2023-05-06 15:15:21] INFO root fetch - main [MainThread]: Store serial: [17999856]
+[2023-05-06 15:20:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999856]
+[2023-05-06 15:20:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 15:20:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoxx
+[2023-05-06 15:20:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyPhasesRecordloader
+[2023-05-06 15:20:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opsml
+[2023-05-06 15:20:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: evalAIRR
+[2023-05-06 15:20:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keyrt
+[2023-05-06 15:20:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yat-geo-db
+[2023-05-06 15:20:30] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 15:20:30] INFO root fetch - processPackages [pyPhasesRecordloader]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-06 15:20:30] INFO root fetch - processPackages [keyrt]: New version: [0.0.4a1] Old Version: [0.0.3a1]
+[2023-05-06 15:20:30] INFO root fetch - processPackages [yat-geo-db]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-06 15:20:30] WARNING root fetch - processPackages [autoxx]: Skipping, unable to determine old version
+[2023-05-06 15:20:30] INFO root fetch - main [MainThread]: End processing [autoxx] error
+[2023-05-06 15:20:30] WARNING root fetch - processPackages [opsml]: Skipping, unable to determine old version
+[2023-05-06 15:20:30] INFO root fetch - main [MainThread]: End processing [opsml] error
+[2023-05-06 15:20:30] INFO root fetch - processPackages [pyPhasesRecordloader]: executing diffoscope
+[2023-05-06 15:20:30] INFO root fetch - processPackages [pyPhasesRecordloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPhasesRecordloader-0.3.8.tar.gz tmp/pyPhasesRecordloader-0.3.9.tar.gz --markdown 20230506/p/pyPhasesRecordloader/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-06 15:20:30] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-05-06 15:20:30] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230506/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 15:20:30] INFO root fetch - processPackages [keyrt]: executing diffoscope
+[2023-05-06 15:20:30] INFO root fetch - processPackages [keyrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keyrt-0.0.3a1.tar.gz tmp/keyrt-0.0.4a1.tar.gz --markdown 20230506/k/keyrt/0.0.3a1-0.0.4a1/diff.md --exclude *.pyd
+[2023-05-06 15:20:30] INFO root fetch - processPackages [yat-geo-db]: executing diffoscope
+[2023-05-06 15:20:30] INFO root fetch - processPackages [yat-geo-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yat_geo_db-1.0.4.tar.gz tmp/yat_geo_db-1.0.5.tar.gz --markdown 20230506/y/yat-geo-db/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-06 15:20:31] INFO root fetch - main [MainThread]: End processing [pyPhasesRecordloader]: success
+[2023-05-06 15:20:31] INFO root fetch - main [MainThread]: End processing [yat-geo-db]: success
+[2023-05-06 15:20:31] INFO root fetch - main [MainThread]: End processing [keyrt]: success
+[2023-05-06 15:20:31] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-05-06 15:20:31] INFO root fetch - main [MainThread]: Store serial: [17999878]
