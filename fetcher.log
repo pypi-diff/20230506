@@ -13598,3 +13598,44 @@ EOFError: EOF read where object expected
 [2023-05-06 20:59:48] INFO root fetch - main [MainThread]: End processing [futured]: success
 [2023-05-06 20:59:49] INFO root fetch - main [MainThread]: End processing [samp-query]: success
 [2023-05-06 20:59:49] INFO root fetch - main [MainThread]: Store serial: [18001620]
+[2023-05-06 21:04:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001620]
+[2023-05-06 21:04:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xia-scw-mongodb
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rsatoolbox
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ypricemagic
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-Ayra
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-ghila-enable-event-reporting
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fastdup
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ethyca-fides
+[2023-05-06 21:04:58] WARNING root fetch - processPackages [xia-scw-mongodb]: Skipping, unable to determine old version
+[2023-05-06 21:04:58] INFO root fetch - main [MainThread]: End processing [xia-scw-mongodb] error
+[2023-05-06 21:04:58] INFO root fetch - processPackages [certora-cli-alpha-ghila-enable-event-reporting]: New version: [20230506.19.2.951761] Old Version: [20230504.21.7.847892]
+[2023-05-06 21:04:58] INFO root fetch - processPackages [rsatoolbox]: New version: [0.1.3.dev47] Old Version: [0.1.3.dev4]
+[2023-05-06 21:04:58] INFO root fetch - processPackages [py-Ayra]: New version: [8.7.4] Old Version: [8.7.3]
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ethyca-fides]: New version: [2.9.2] Old Version: [2.9.1]
+[2023-05-06 21:04:58] INFO root fetch - processPackages [fastdup]: New version: [0.926] Old Version: [0.925]
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ypricemagic]: New version: [2.2.9.dev8] Old Version: [2.2.9.dev7]
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ethyca-fides]: executing diffoscope
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ethyca-fides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethyca-fides-2.9.1.tar.gz tmp/ethyca-fides-2.9.2.tar.gz --markdown 20230506/e/ethyca-fides/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ypricemagic]: Downloading https://files.pythonhosted.org/packages/8c/fd/437160c217f7f467a80e974e55b5872ac6854cbf73735542a1fe297e580d/ypricemagic-2.2.9.dev7.tar.gz
+[2023-05-06 21:04:58] INFO root fetch - processPackages [certora-cli-alpha-ghila-enable-event-reporting]: Downloading https://files.pythonhosted.org/packages/d7/a7/565d42328bd0700b35c7fc80d34f927c8151954caa708d2b69abeb6a09ae/certora-cli-alpha-ghila-enable_event_reporting-20230504.21.7.847892.tar.gz
+[2023-05-06 21:04:58] INFO root fetch - processPackages [rsatoolbox]: Downloading https://files.pythonhosted.org/packages/33/8f/157a8754039c7e77ca16cdf3256fde25b7cf2a42f1a7f9c64269236e96db/rsatoolbox-0.1.3.dev4.tar.gz
+[2023-05-06 21:04:58] INFO root fetch - processPackages [py-Ayra]: Downloading https://files.pythonhosted.org/packages/fd/f3/710b9fc9956a2a146ae31d3a7857283a8f8f0d2cc7f02361198477c6053d/py-Ayra-8.7.4.tar.gz
+[2023-05-06 21:04:58] INFO root fetch - processPackages [fastdup]: Downloading https://files.pythonhosted.org/packages/8a/d8/a720c8707573934f8b9ecee9409f775d4ed64d3f046e818ec23804130417/fastdup-0.925-cp39-cp39-win_amd64.whl
+[2023-05-06 21:04:58] WARNING root fetch - processPackages [certora-cli-alpha-ghila-enable-event-reporting]: Skipping package: exceeds size limit 38472402>=10485760
+[2023-05-06 21:04:58] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-ghila-enable-event-reporting] error
+[2023-05-06 21:04:58] WARNING root fetch - processPackages [fastdup]: Skipping package: exceeds size limit 35395503>=10485760
+[2023-05-06 21:04:58] INFO root fetch - main [MainThread]: End processing [fastdup] error
+[2023-05-06 21:04:58] INFO root fetch - processPackages [py-Ayra]: executing diffoscope
+[2023-05-06 21:04:58] INFO root fetch - processPackages [py-Ayra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayra-8.7.3.tar.gz tmp/py-Ayra-8.7.4.tar.gz --markdown 20230506/p/py-Ayra/8.7.3-8.7.4/diff.md --exclude *.pyd
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ypricemagic]: Downloading https://files.pythonhosted.org/packages/a0/d7/5497d9859c3dd2fa9f52649aaed9414e286754fbdc4cad54c49df4b7232d/ypricemagic-2.2.9.dev8.tar.gz
+[2023-05-06 21:04:58] INFO root fetch - processPackages [rsatoolbox]: Downloading https://files.pythonhosted.org/packages/59/69/f41b0c27481179f206a0b22b545ac585b060abe65509499125cd79422e56/rsatoolbox-0.1.3.dev47.tar.gz
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ypricemagic]: executing diffoscope
+[2023-05-06 21:04:58] INFO root fetch - processPackages [ypricemagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ypricemagic-2.2.9.dev7.tar.gz tmp/ypricemagic-2.2.9.dev8.tar.gz --markdown 20230506/y/ypricemagic/2.2.9.dev7-2.2.9.dev8/diff.md --exclude *.pyd
+[2023-05-06 21:04:58] INFO root fetch - processPackages [rsatoolbox]: executing diffoscope
+[2023-05-06 21:04:58] INFO root fetch - processPackages [rsatoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rsatoolbox-0.1.3.dev4.tar.gz tmp/rsatoolbox-0.1.3.dev47.tar.gz --markdown 20230506/r/rsatoolbox/0.1.3.dev4-0.1.3.dev47/diff.md --exclude *.pyd
+[2023-05-06 21:05:00] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
+[2023-05-06 21:05:00] INFO root fetch - main [MainThread]: End processing [ypricemagic]: success
+[2023-05-06 21:05:00] INFO root fetch - main [MainThread]: End processing [rsatoolbox]: success
+[2023-05-06 21:05:07] INFO root fetch - main [MainThread]: End processing [ethyca-fides]: success
+[2023-05-06 21:05:07] INFO root fetch - main [MainThread]: Store serial: [18001659]
