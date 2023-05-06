@@ -13152,3 +13152,25 @@ EOFError: EOF read where object expected
 [2023-05-06 20:04:30] INFO root fetch - main [MainThread]: End processing [whereval]: success
 [2023-05-06 20:04:59] INFO root fetch - main [MainThread]: End processing [ilpy]: success
 [2023-05-06 20:04:59] INFO root fetch - main [MainThread]: Store serial: [18001343]
+[2023-05-06 20:10:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001343]
+[2023-05-06 20:10:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 20:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipsqlitelibV2
+[2023-05-06 20:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dxsp
+[2023-05-06 20:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: solution-harsha
+[2023-05-06 20:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: semisup-segmentation
+[2023-05-06 20:10:07] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 20:10:07] INFO root fetch - processPackages [solution-harsha]: New version: [0.3] Old Version: [0.2]
+[2023-05-06 20:10:07] INFO root fetch - processPackages [dxsp]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-06 20:10:07] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 20:10:07] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 20:10:08] ERROR root fetch - processPackages [pipsqlitelibV2]: Unable to get metadata: No such project 'pipsqlitelibV2'
+[2023-05-06 20:10:08] INFO root fetch - main [MainThread]: End processing [pipsqlitelibV2] error
+[2023-05-06 20:10:08] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-06 20:10:08] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.9.8.tar.gz tmp/dxsp-1.9.9.tar.gz --markdown 20230506/d/dxsp/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-06 20:10:08] INFO root fetch - processPackages [solution-harsha]: Downloading https://files.pythonhosted.org/packages/8e/b9/f2113085c84c0fca6940cb9cc2b26fad7c59280e9a03dad918a0811c040e/solution_harsha-0.3.tar.gz
+[2023-05-06 20:10:08] INFO root fetch - processPackages [solution-harsha]: executing diffoscope
+[2023-05-06 20:10:08] INFO root fetch - processPackages [solution-harsha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solution_harsha-0.2.tar.gz tmp/solution_harsha-0.3.tar.gz --markdown 20230506/s/solution-harsha/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-06 20:10:09] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 20:10:09] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-06 20:10:09] INFO root fetch - main [MainThread]: End processing [solution-harsha]: success
+[2023-05-06 20:10:09] INFO root fetch - main [MainThread]: Store serial: [18001362]
