@@ -5139,3 +5139,80 @@
 [2023-05-06 05:24:10] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-datadog]: success
 [2023-05-06 05:24:25] INFO root fetch - main [MainThread]: End processing [dspawpy]: success
 [2023-05-06 05:24:25] INFO root fetch - main [MainThread]: Store serial: [17996487]
+[2023-05-06 05:29:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996487]
+[2023-05-06 05:29:34] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-06 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: midlife
+[2023-05-06 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyaxetool
+[2023-05-06 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: superlive-sdk
+[2023-05-06 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nostr-chatbot
+[2023-05-06 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: excelcleaner
+[2023-05-06 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: konfuzio-sdk
+[2023-05-06 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aixlab.cn
+[2023-05-06 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lolpop
+[2023-05-06 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: trackplot
+[2023-05-06 05:29:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PicsToPdfs
+[2023-05-06 05:29:34] INFO root fetch - processPackages [pyaxetool]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 05:29:34] INFO root fetch - processPackages [superlive-sdk]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-06 05:29:34] INFO root fetch - processPackages [midlife]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 05:29:34] WARNING root fetch - processPackages [nostr-chatbot]: Skipping, unable to determine old version
+[2023-05-06 05:29:34] INFO root fetch - processPackages [nostr-chatbot]: Start processing: feffery-utils-components
+[2023-05-06 05:29:34] INFO root fetch - main [MainThread]: End processing [nostr-chatbot] error
+[2023-05-06 05:29:34] INFO root fetch - processPackages [aixlab.cn]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-06 05:29:34] INFO root fetch - processPackages [trackplot]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-06 05:29:34] INFO root fetch - processPackages [PicsToPdfs]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-06 05:29:34] WARNING root fetch - processPackages [lolpop]: Skipping, unable to determine old version
+[2023-05-06 05:29:34] INFO root fetch - processPackages [lolpop]: Start processing: hcpdiff
+[2023-05-06 05:29:34] INFO root fetch - main [MainThread]: End processing [lolpop] error
+[2023-05-06 05:29:34] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-05-06 05:29:34] WARNING root fetch - processPackages [excelcleaner]: Skipping, unable to determine old version
+[2023-05-06 05:29:34] INFO root fetch - processPackages [excelcleaner]: Start processing: superlive-sdk
+[2023-05-06 05:29:34] INFO root fetch - main [MainThread]: End processing [excelcleaner] error
+[2023-05-06 05:29:34] INFO root fetch - processPackages [feffery-utils-components]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 05:29:34] INFO root fetch - processPackages [hcpdiff]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-06 05:29:34] INFO root fetch - processPackages [superlive-sdk]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-06 05:29:35] INFO root fetch - processPackages [pyaxetool]: Downloading https://files.pythonhosted.org/packages/d5/93/3c33a99fe631809718e4584a76a50c40504793679e502e69cb1758460822/PyAxeTool-0.0.3-py3-none-any.whl
+[2023-05-06 05:29:35] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/ce/33/72e97cbe81971fed2a1c21eb088841349fc9eb363902989f6bf6a0b3390a/hcpdiff-0.2.2.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [trackplot]: Downloading https://files.pythonhosted.org/packages/1b/8d/6e2c4264d4cc5432dd9aced883d37b553636836d1f3bd1b5eb8edec8db13/trackplot-0.2.4.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [superlive-sdk]: Downloading https://files.pythonhosted.org/packages/9b/a4/162f672b4e2686799a0959899dba910e582dd604046b0d2a6afedf0b07f2/superlive_sdk-1.0.0.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [superlive-sdk]: Downloading https://files.pythonhosted.org/packages/9b/a4/162f672b4e2686799a0959899dba910e582dd604046b0d2a6afedf0b07f2/superlive_sdk-1.0.0.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [PicsToPdfs]: Downloading https://files.pythonhosted.org/packages/4b/89/b7ed2a9d3d60e70732f774c0c63007ff5bd3bf8c96b67776838d1f523412/PicsToPdfs-0.3.1.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [feffery-utils-components]: Downloading https://files.pythonhosted.org/packages/de/96/c96aa6adddcd6fd9f27b3298b19cc4a7d4fe00f9211b9990796e008f4048/feffery_utils_components-0.1.8.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [aixlab.cn]: Downloading https://files.pythonhosted.org/packages/95/60/50d4a55b605d366d392dfde209b945fe5042f2857ea1b7008fd06c0f8d12/aixlab.cn-0.1.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [midlife]: Downloading https://files.pythonhosted.org/packages/aa/91/e12f28f196db204aa1a623a1a99a15568980f48c4ed3a316bf9e888f1819/midlife-0.0.4.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [midlife]: executing diffoscope
+[2023-05-06 05:29:35] INFO root fetch - processPackages [midlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midlife-0.0.3.tar.gz tmp/midlife-0.0.4.tar.gz --markdown 20230506/m/midlife/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 05:29:35] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-05-06 05:29:35] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230506/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-05-06 05:29:35] INFO root fetch - processPackages [pyaxetool]: Downloading https://files.pythonhosted.org/packages/df/38/d777edc7160dbf4660f2abe2c2afa7be28567c00f3a3ac73dbfe8951dd49/pyaxetool-0.0.4.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [trackplot]: executing diffoscope
+[2023-05-06 05:29:35] INFO root fetch - processPackages [trackplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trackplot-0.2.3.tar.gz tmp/trackplot-0.2.4.tar.gz --markdown 20230506/t/trackplot/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-06 05:29:35] INFO root fetch - processPackages [PicsToPdfs]: executing diffoscope
+[2023-05-06 05:29:35] INFO root fetch - processPackages [PicsToPdfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PicsToPdfs-0.3.0.tar.gz tmp/PicsToPdfs-0.3.1.tar.gz --markdown 20230506/P/PicsToPdfs/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-06 05:29:35] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/12/5e/28c0eff745a61b7561e42ee548e669c3862e520fd5c47cf316528856bfe8/hcpdiff-0.3.0.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [superlive-sdk]: Downloading https://files.pythonhosted.org/packages/6d/bd/06332b21619f9e474c086040092e68e88c9f3d572b9ff81af666c7c45c9a/superlive_sdk-1.0.1.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [superlive-sdk]: Downloading https://files.pythonhosted.org/packages/6d/bd/06332b21619f9e474c086040092e68e88c9f3d572b9ff81af666c7c45c9a/superlive_sdk-1.0.1.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [aixlab.cn]: Downloading https://files.pythonhosted.org/packages/b4/39/eccf844a5480bc933f9045c3907433dd60a223ea4e38717cfa981d98abf2/aixlab.cn-0.1.1.tar.gz
+[2023-05-06 05:29:35] INFO root fetch - processPackages [pyaxetool]: executing diffoscope
+[2023-05-06 05:29:35] INFO root fetch - processPackages [pyaxetool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAxeTool-0.0.3-py3-none-any.whl.zip tmp/pyaxetool-0.0.4.tar.gz --markdown 20230506/p/pyaxetool/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 05:29:35] INFO root fetch - processPackages [hcpdiff]: executing diffoscope
+[2023-05-06 05:29:35] INFO root fetch - processPackages [hcpdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcpdiff-0.2.2.tar.gz tmp/hcpdiff-0.3.0.tar.gz --markdown 20230506/h/hcpdiff/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-06 05:29:35] INFO root fetch - processPackages [aixlab.cn]: executing diffoscope
+[2023-05-06 05:29:35] INFO root fetch - processPackages [aixlab.cn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aixlab.cn-0.1.tar.gz tmp/aixlab.cn-0.1.1.tar.gz --markdown 20230506/a/aixlab.cn/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 05:29:35] INFO root fetch - processPackages [superlive-sdk]: executing diffoscope
+[2023-05-06 05:29:35] INFO root fetch - processPackages [superlive-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superlive_sdk-1.0.0.tar.gz tmp/superlive_sdk-1.0.1.tar.gz --markdown 20230506/s/superlive-sdk/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 05:29:35] INFO root fetch - processPackages [superlive-sdk]: executing diffoscope
+[2023-05-06 05:29:35] INFO root fetch - processPackages [superlive-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superlive_sdk-1.0.0.tar.gz tmp/superlive_sdk-1.0.1.tar.gz --markdown 20230506/s/superlive-sdk/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 05:29:35] INFO root fetch - processPackages [feffery-utils-components]: Downloading https://files.pythonhosted.org/packages/1f/d9/6f34d4e669b8680ade17307c54cd9434749de6071eb8c106d0ab9b0a728a/feffery_utils_components-0.1.9.tar.gz
+[2023-05-06 05:29:36] INFO root fetch - processPackages [feffery-utils-components]: executing diffoscope
+[2023-05-06 05:29:36] INFO root fetch - processPackages [feffery-utils-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feffery_utils_components-0.1.8.tar.gz tmp/feffery_utils_components-0.1.9.tar.gz --markdown 20230506/f/feffery-utils-components/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 05:29:36] INFO root fetch - main [MainThread]: End processing [PicsToPdfs]: success
+[2023-05-06 05:29:36] INFO root fetch - main [MainThread]: End processing [pyaxetool]: success
+[2023-05-06 05:29:36] INFO root fetch - main [MainThread]: End processing [midlife]: success
+[2023-05-06 05:29:36] INFO root fetch - main [MainThread]: End processing [aixlab.cn]: success
+[2023-05-06 05:29:37] INFO root fetch - main [MainThread]: End processing [trackplot]: success
+[2023-05-06 05:29:37] INFO root fetch - main [MainThread]: End processing [superlive-sdk]: success
+[2023-05-06 05:29:37] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-05-06 05:29:37] INFO root fetch - main [MainThread]: End processing [superlive-sdk]: success
+[2023-05-06 05:29:37] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
+[2023-05-06 05:29:49] INFO root fetch - main [MainThread]: End processing [feffery-utils-components]: success
+[2023-05-06 05:29:49] INFO root fetch - main [MainThread]: Store serial: [17996531]
