@@ -11859,3 +11859,48 @@ EOFError: EOF read where object expected
 [2023-05-06 17:31:08] INFO root fetch - main [MainThread]: End processing [picodaqa]: success
 [2023-05-06 17:31:08] INFO root fetch - main [MainThread]: End processing [audiostretchy]: success
 [2023-05-06 17:31:08] INFO root fetch - main [MainThread]: Store serial: [18000553]
+[2023-05-06 17:36:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000553]
+[2023-05-06 17:36:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 17:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: replalive
+[2023-05-06 17:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: audiostretchy
+[2023-05-06 17:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: distributions008
+[2023-05-06 17:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: replalive
+[2023-05-06 17:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: replalive
+[2023-05-06 17:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wcfhttp
+[2023-05-06 17:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alacorder
+[2023-05-06 17:36:17] INFO root fetch - processPackages [replalive]: New version: [4.0.0] Old Version: [3.0.0]
+[2023-05-06 17:36:17] INFO root fetch - processPackages [replalive]: New version: [4.0.0] Old Version: [3.0.0]
+[2023-05-06 17:36:17] WARNING root fetch - processPackages [distributions008]: Skipping, unable to determine old version
+[2023-05-06 17:36:17] INFO root fetch - main [MainThread]: End processing [distributions008] error
+[2023-05-06 17:36:17] INFO root fetch - processPackages [wcfhttp]: New version: [3.7.0.30.25] Old Version: [3.7.0.30.12]
+[2023-05-06 17:36:17] INFO root fetch - processPackages [audiostretchy]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-06 17:36:17] INFO root fetch - processPackages [replalive]: New version: [4.0.0] Old Version: [3.0.0]
+[2023-05-06 17:36:17] INFO root fetch - processPackages [alacorder]: New version: [80.3.1] Old Version: [80.3.0]
+[2023-05-06 17:36:17] INFO root fetch - processPackages [replalive]: Downloading https://files.pythonhosted.org/packages/73/82/68a3be284d41cf3cb9cc3f8310958bb8e85789531f28f0e939ebbcb8b29d/replalive-3.0.0.tar.gz
+[2023-05-06 17:36:17] INFO root fetch - processPackages [replalive]: Downloading https://files.pythonhosted.org/packages/73/82/68a3be284d41cf3cb9cc3f8310958bb8e85789531f28f0e939ebbcb8b29d/replalive-3.0.0.tar.gz
+[2023-05-06 17:36:17] INFO root fetch - processPackages [replalive]: Downloading https://files.pythonhosted.org/packages/73/82/68a3be284d41cf3cb9cc3f8310958bb8e85789531f28f0e939ebbcb8b29d/replalive-3.0.0.tar.gz
+[2023-05-06 17:36:17] INFO root fetch - processPackages [wcfhttp]: Downloading https://files.pythonhosted.org/packages/b6/22/8e3261a6511c28a30ef71c60b9056b5b87e86ac4b622bd9bfa91f6136887/wcfhttp-3.7.0.30.25.tar.gz
+[2023-05-06 17:36:18] INFO root fetch - processPackages [audiostretchy]: Downloading https://files.pythonhosted.org/packages/4f/3a/93e690e575154f6bb6c87ce7ab915e6639e680fbe87c122e9f2a8305a640/audiostretchy-1.2.4.tar.gz
+[2023-05-06 17:36:18] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/63/e9/1c1aa09d9ca34885bd4779ef1aed5c733578e5212b2f1442f5df7694d268/alacorder-80.3.1.tar.gz
+[2023-05-06 17:36:18] INFO root fetch - processPackages [wcfhttp]: executing diffoscope
+[2023-05-06 17:36:18] INFO root fetch - processPackages [wcfhttp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wcfhttp-3.7.0.30.12.tar.gz tmp/wcfhttp-3.7.0.30.25.tar.gz --markdown 20230506/w/wcfhttp/3.7.0.30.12-3.7.0.30.25/diff.md --exclude *.pyd
+[2023-05-06 17:36:18] INFO root fetch - processPackages [replalive]: Downloading https://files.pythonhosted.org/packages/f0/4e/c0184a96cb685129711c8a515bbc590dc07c6182eb0911f7adcb2630e308/replalive-4.0.0.tar.gz
+[2023-05-06 17:36:18] INFO root fetch - processPackages [replalive]: Downloading https://files.pythonhosted.org/packages/f0/4e/c0184a96cb685129711c8a515bbc590dc07c6182eb0911f7adcb2630e308/replalive-4.0.0.tar.gz
+[2023-05-06 17:36:18] INFO root fetch - processPackages [replalive]: Downloading https://files.pythonhosted.org/packages/f0/4e/c0184a96cb685129711c8a515bbc590dc07c6182eb0911f7adcb2630e308/replalive-4.0.0.tar.gz
+[2023-05-06 17:36:18] INFO root fetch - processPackages [replalive]: executing diffoscope
+[2023-05-06 17:36:18] INFO root fetch - processPackages [replalive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replalive-3.0.0.tar.gz tmp/replalive-4.0.0.tar.gz --markdown 20230506/r/replalive/3.0.0-4.0.0/diff.md --exclude *.pyd
+[2023-05-06 17:36:18] INFO root fetch - processPackages [replalive]: executing diffoscope
+[2023-05-06 17:36:18] INFO root fetch - processPackages [replalive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replalive-3.0.0.tar.gz tmp/replalive-4.0.0.tar.gz --markdown 20230506/r/replalive/3.0.0-4.0.0/diff.md --exclude *.pyd
+[2023-05-06 17:36:18] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-06 17:36:18] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.3.0.tar.gz tmp/alacorder-80.3.1.tar.gz --markdown 20230506/a/alacorder/80.3.0-80.3.1/diff.md --exclude *.pyd
+[2023-05-06 17:36:18] INFO root fetch - processPackages [audiostretchy]: executing diffoscope
+[2023-05-06 17:36:18] INFO root fetch - processPackages [audiostretchy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiostretchy-1.2.3.tar.gz tmp/audiostretchy-1.2.4.tar.gz --markdown 20230506/a/audiostretchy/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-06 17:36:18] INFO root fetch - processPackages [replalive]: executing diffoscope
+[2023-05-06 17:36:18] INFO root fetch - processPackages [replalive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replalive-3.0.0.tar.gz tmp/replalive-4.0.0.tar.gz --markdown 20230506/r/replalive/3.0.0-4.0.0/diff.md --exclude *.pyd
+[2023-05-06 17:36:19] INFO root fetch - main [MainThread]: End processing [wcfhttp]: success
+[2023-05-06 17:36:19] INFO root fetch - main [MainThread]: End processing [replalive]: success
+[2023-05-06 17:36:19] INFO root fetch - main [MainThread]: End processing [replalive]: success
+[2023-05-06 17:36:19] INFO root fetch - main [MainThread]: End processing [replalive]: success
+[2023-05-06 17:36:19] INFO root fetch - main [MainThread]: End processing [audiostretchy]: success
+[2023-05-06 17:36:19] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-06 17:36:19] INFO root fetch - main [MainThread]: Store serial: [18000575]
