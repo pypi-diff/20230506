@@ -12972,3 +12972,35 @@ EOFError: EOF read where object expected
 [2023-05-06 19:38:25] INFO root fetch - main [MainThread]: End processing [v8unpack]: success
 [2023-05-06 19:38:26] INFO root fetch - main [MainThread]: End processing [ypricemagic]: success
 [2023-05-06 19:38:26] INFO root fetch - main [MainThread]: Store serial: [18001238]
+[2023-05-06 19:43:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001238]
+[2023-05-06 19:43:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 19:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vernac
+[2023-05-06 19:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hilly
+[2023-05-06 19:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rayserverdl
+[2023-05-06 19:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TorchEase
+[2023-05-06 19:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mage-ai
+[2023-05-06 19:43:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nkust-ucl-k12-bot
+[2023-05-06 19:43:35] WARNING root fetch - processPackages [rayserverdl]: Skipping, unable to determine old version
+[2023-05-06 19:43:35] INFO root fetch - main [MainThread]: End processing [rayserverdl] error
+[2023-05-06 19:43:35] INFO root fetch - processPackages [TorchEase]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 19:43:35] INFO root fetch - processPackages [nkust-ucl-k12-bot]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-05-06 19:43:35] WARNING root fetch - processPackages [hilly]: Skipping, unable to determine old version
+[2023-05-06 19:43:35] INFO root fetch - main [MainThread]: End processing [hilly] error
+[2023-05-06 19:43:35] INFO root fetch - processPackages [vernac]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-06 19:43:35] INFO root fetch - processPackages [TorchEase]: executing diffoscope
+[2023-05-06 19:43:35] INFO root fetch - processPackages [TorchEase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TorchEase-0.0.7.tar.gz tmp/TorchEase-0.0.8.tar.gz --markdown 20230506/T/TorchEase/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 19:43:35] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-06 19:43:35] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Downloading https://files.pythonhosted.org/packages/5d/a8/34e1d4be19d5e0b6129aae57a85e3221253d2535536a337a9d14c3e97f3d/nkust-ucl-k12-bot-2.5.0.tar.gz
+[2023-05-06 19:43:35] INFO root fetch - processPackages [vernac]: Downloading https://files.pythonhosted.org/packages/29/00/1ef2740bfa3f330d12ff7a6fc6b5af5ff9d1e5f7f5c5868911f79d7340da/vernac-0.0.5.tar.gz
+[2023-05-06 19:43:35] INFO root fetch - processPackages [nkust-ucl-k12-bot]: executing diffoscope
+[2023-05-06 19:43:35] INFO root fetch - processPackages [nkust-ucl-k12-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkust-ucl-k12-bot-2.4.0.tar.gz tmp/nkust-ucl-k12-bot-2.5.0.tar.gz --markdown 20230506/n/nkust-ucl-k12-bot/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-05-06 19:43:35] INFO root fetch - processPackages [vernac]: Downloading https://files.pythonhosted.org/packages/af/74/5d28f00d65e51d7ab22c34a23799471b46e853f3e56d205fc775d1c3f680/vernac-0.0.6.tar.gz
+[2023-05-06 19:43:35] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-05-06 19:43:35] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230506/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-06 19:43:35] INFO root fetch - processPackages [vernac]: executing diffoscope
+[2023-05-06 19:43:35] INFO root fetch - processPackages [vernac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vernac-0.0.5.tar.gz tmp/vernac-0.0.6.tar.gz --markdown 20230506/v/vernac/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-06 19:43:36] INFO root fetch - main [MainThread]: End processing [TorchEase]: success
+[2023-05-06 19:43:36] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
+[2023-05-06 19:43:37] INFO root fetch - main [MainThread]: End processing [vernac]: success
+[2023-05-06 19:43:46] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-05-06 19:43:46] INFO root fetch - main [MainThread]: Store serial: [18001259]
