@@ -11960,3 +11960,36 @@ EOFError: EOF read where object expected
 [2023-05-06 17:47:08] INFO root fetch - processPackages [ferveo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ferveo-0.1.8.tar.gz tmp/ferveo-0.1.9.tar.gz --markdown 20230506/f/ferveo/0.1.8-0.1.9/diff.md --exclude *.pyd
 [2023-05-06 17:47:10] INFO root fetch - main [MainThread]: End processing [ferveo]: success
 [2023-05-06 17:47:10] INFO root fetch - main [MainThread]: Store serial: [18000612]
+[2023-05-06 17:52:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000612]
+[2023-05-06 17:52:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 17:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdp-backend
+[2023-05-06 17:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: almoststatic
+[2023-05-06 17:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cmap
+[2023-05-06 17:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rayserverdl
+[2023-05-06 17:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfdstools
+[2023-05-06 17:52:18] INFO root fetch - processPackages [rayserverdl]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-06 17:52:18] INFO root fetch - processPackages [pyfdstools]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-06 17:52:18] INFO root fetch - processPackages [almoststatic]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-06 17:52:18] INFO root fetch - processPackages [cmap]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 17:52:18] INFO root fetch - processPackages [cdp-backend]: New version: [4.1.0rc0] Old Version: [4.0.9rc1]
+[2023-05-06 17:52:19] INFO root fetch - processPackages [almoststatic]: Downloading https://files.pythonhosted.org/packages/1a/6f/e1a5139f91d54138518b1475482f830f337b6d187d057a65ed4a05c43f93/almoststatic-1.0.1.tar.gz
+[2023-05-06 17:52:19] INFO root fetch - processPackages [pyfdstools]: Downloading https://files.pythonhosted.org/packages/fc/49/692c62c0de2b209cae170bff8fe7e7db0bddfb317140f41b07cb7afee06e/pyfdstools-0.0.6.tar.gz
+[2023-05-06 17:52:19] INFO root fetch - processPackages [rayserverdl]: Downloading https://files.pythonhosted.org/packages/7c/68/0f717234eba1e92f428e8037aa8b1fd9f5f91a71b7916a051b5a6a1bd189/rayserverdl-1.0.2.tar.gz
+[2023-05-06 17:52:19] INFO root fetch - processPackages [cdp-backend]: Downloading https://files.pythonhosted.org/packages/fb/dd/fff67c35489699d8177d6a7ffb3d45b85419d36995f066837103d72707f6/cdp-backend-4.0.9rc1.tar.gz
+[2023-05-06 17:52:19] WARNING root fetch - processPackages [cdp-backend]: Skipping package: exceeds size limit 50965449>=10485760
+[2023-05-06 17:52:19] INFO root fetch - main [MainThread]: End processing [cdp-backend] error
+[2023-05-06 17:52:19] INFO root fetch - processPackages [cmap]: Downloading https://files.pythonhosted.org/packages/ff/b0/562d0e841a47c683d135698394fc3c493e9ea73347928aa72505553cbf43/cmap-0.0.3.tar.gz
+[2023-05-06 17:52:19] INFO root fetch - processPackages [rayserverdl]: executing diffoscope
+[2023-05-06 17:52:19] INFO root fetch - processPackages [rayserverdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rayserverdl-1.0.1.tar.gz tmp/rayserverdl-1.0.2.tar.gz --markdown 20230506/r/rayserverdl/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-06 17:52:19] INFO root fetch - processPackages [cmap]: executing diffoscope
+[2023-05-06 17:52:19] INFO root fetch - processPackages [cmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmap-0.0.2.tar.gz tmp/cmap-0.0.3.tar.gz --markdown 20230506/c/cmap/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 17:52:19] INFO root fetch - processPackages [almoststatic]: Downloading https://files.pythonhosted.org/packages/41/cc/4b08eafdcdfa157c9d846ec5e82350300a11de4baf27019ebb0a34c500d1/almoststatic-1.0.2.tar.gz
+[2023-05-06 17:52:19] INFO root fetch - processPackages [almoststatic]: executing diffoscope
+[2023-05-06 17:52:19] INFO root fetch - processPackages [almoststatic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almoststatic-1.0.1.tar.gz tmp/almoststatic-1.0.2.tar.gz --markdown 20230506/a/almoststatic/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-06 17:52:20] INFO root fetch - processPackages [pyfdstools]: Downloading https://files.pythonhosted.org/packages/a4/da/63f0b4c4cbbada0c711e9c9bdd4afc16ad694cb3816c10f046b5b1f3b963/pyfdstools-0.0.7.tar.gz
+[2023-05-06 17:52:20] WARNING root fetch - processPackages [pyfdstools]: Skipping package: exceeds size limit 13567668>=10485760
+[2023-05-06 17:52:20] INFO root fetch - main [MainThread]: End processing [pyfdstools] error
+[2023-05-06 17:52:20] INFO root fetch - main [MainThread]: End processing [rayserverdl]: success
+[2023-05-06 17:52:20] INFO root fetch - main [MainThread]: End processing [almoststatic]: success
+[2023-05-06 17:52:21] INFO root fetch - main [MainThread]: End processing [cmap]: success
+[2023-05-06 17:52:21] INFO root fetch - main [MainThread]: Store serial: [18000627]
