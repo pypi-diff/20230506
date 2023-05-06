@@ -5746,3 +5746,18 @@
 [2023-05-06 06:48:09] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account]: success
 [2023-05-06 06:48:37] INFO root fetch - main [MainThread]: End processing [pyaxetool]: success
 [2023-05-06 06:48:37] INFO root fetch - main [MainThread]: Store serial: [17996961]
+[2023-05-06 06:53:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996961]
+[2023-05-06 06:53:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-06 06:53:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-master
+[2023-05-06 06:53:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: segment-geospatial
+[2023-05-06 06:53:46] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230506.4.50.689510] Old Version: [20230505.7.7.966709]
+[2023-05-06 06:53:46] INFO root fetch - processPackages [segment-geospatial]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-06 06:53:46] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/99/91/c99f807fbd4a9f95067ba3a2715755aafea4423b21ed7ab40660f2708594/certora-cli-alpha-master-20230505.7.7.966709.tar.gz
+[2023-05-06 06:53:46] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38472614>=10485760
+[2023-05-06 06:53:46] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-06 06:53:46] INFO root fetch - processPackages [segment-geospatial]: Downloading https://files.pythonhosted.org/packages/52/54/e49e01749b907b0fa59f955f5cba785beb7084e2bc485f856fd537644696/segment-geospatial-0.3.0.tar.gz
+[2023-05-06 06:53:46] INFO root fetch - processPackages [segment-geospatial]: Downloading https://files.pythonhosted.org/packages/24/57/efad5d3926626160247a10b5df7ea2d85fd6c9abf1a4c24362a8ddf248de/segment-geospatial-0.4.0.tar.gz
+[2023-05-06 06:53:47] INFO root fetch - processPackages [segment-geospatial]: executing diffoscope
+[2023-05-06 06:53:47] INFO root fetch - processPackages [segment-geospatial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segment-geospatial-0.3.0.tar.gz tmp/segment-geospatial-0.4.0.tar.gz --markdown 20230506/s/segment-geospatial/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-06 06:53:48] INFO root fetch - main [MainThread]: End processing [segment-geospatial]: success
+[2023-05-06 06:53:48] INFO root fetch - main [MainThread]: Store serial: [17996966]
