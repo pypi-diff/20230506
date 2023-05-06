@@ -5469,3 +5469,32 @@
 [2023-05-06 06:00:55] INFO root fetch - main [MainThread]: End processing [mecsimcalc]: success
 [2023-05-06 06:00:55] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ddmrp]: success
 [2023-05-06 06:00:55] INFO root fetch - main [MainThread]: Store serial: [17996694]
+[2023-05-06 06:05:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996694]
+[2023-05-06 06:06:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 06:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-minio-storage
+[2023-05-06 06:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: debug-print2
+[2023-05-06 06:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: editanything
+[2023-05-06 06:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-admin-notice
+[2023-05-06 06:06:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-jtoman-allow-splitting-on-delegates
+[2023-05-06 06:06:04] INFO root fetch - processPackages [certora-cli-alpha-jtoman-allow-splitting-on-delegates]: New version: [20230506.4.5.706265] Old Version: [20230505.6.30.732054]
+[2023-05-06 06:06:04] INFO root fetch - processPackages [django-minio-storage]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-06 06:06:04] WARNING root fetch - processPackages [debug-print2]: Skipping, unable to determine old version
+[2023-05-06 06:06:04] INFO root fetch - processPackages [django-admin-notice]: New version: [2.0.0] Old Version: [1.1.4]
+[2023-05-06 06:06:04] INFO root fetch - main [MainThread]: End processing [debug-print2] error
+[2023-05-06 06:06:04] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 06:06:04] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 06:06:04] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 06:06:04] INFO root fetch - processPackages [certora-cli-alpha-jtoman-allow-splitting-on-delegates]: Downloading https://files.pythonhosted.org/packages/f2/d8/1a1fdf3f38158895277f061e0b9917d22354b428348b267c0c10dbc7ca2d/certora-cli-alpha-jtoman-allow-splitting-on-delegates-20230505.6.30.732054.tar.gz
+[2023-05-06 06:06:04] INFO root fetch - processPackages [django-minio-storage]: Downloading https://files.pythonhosted.org/packages/0b/5f/8b3b3ba90a0427017fe80594707556909819165a20ec39d62310fa5b0583/django-minio-storage-0.5.2.tar.gz
+[2023-05-06 06:06:04] INFO root fetch - processPackages [django-admin-notice]: Downloading https://files.pythonhosted.org/packages/74/80/0b4de438a249e36ce4f4b75224b528c4e6a9429f9afb37d0a5e70480754c/django-admin-notice-1.1.4.tar.gz
+[2023-05-06 06:06:04] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-allow-splitting-on-delegates]: Skipping package: exceeds size limit 38473079>=10485760
+[2023-05-06 06:06:04] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-allow-splitting-on-delegates] error
+[2023-05-06 06:06:04] INFO root fetch - processPackages [django-minio-storage]: executing diffoscope
+[2023-05-06 06:06:04] INFO root fetch - processPackages [django-minio-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-minio-storage-0.5.1.tar.gz tmp/django-minio-storage-0.5.2.tar.gz --markdown 20230506/d/django-minio-storage/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-06 06:06:04] INFO root fetch - processPackages [django-admin-notice]: Downloading https://files.pythonhosted.org/packages/80/96/9885a5e1c307f6b0e92dd77d16e7c521c2ffedf7aebac1340eeaaf954ca6/django_admin_notice-2.0.0.tar.gz
+[2023-05-06 06:06:04] INFO root fetch - processPackages [django-admin-notice]: executing diffoscope
+[2023-05-06 06:06:04] INFO root fetch - processPackages [django-admin-notice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-notice-1.1.4.tar.gz tmp/django_admin_notice-2.0.0.tar.gz --markdown 20230506/d/django-admin-notice/1.1.4-2.0.0/diff.md --exclude *.pyd
+[2023-05-06 06:06:05] INFO root fetch - main [MainThread]: End processing [django-admin-notice]: success
+[2023-05-06 06:06:05] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 06:06:05] INFO root fetch - main [MainThread]: End processing [django-minio-storage]: success
+[2023-05-06 06:06:05] INFO root fetch - main [MainThread]: Store serial: [17996717]
