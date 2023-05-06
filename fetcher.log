@@ -4627,3 +4627,61 @@
 [2023-05-06 04:28:26] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-05-06 04:28:47] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
 [2023-05-06 04:28:47] INFO root fetch - main [MainThread]: Store serial: [17996174]
+[2023-05-06 04:33:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996174]
+[2023-05-06 04:33:56] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akellogpt
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: masedb
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netron
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: google-cloud-pubsub
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rayserverdl
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prettycopy
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: retroperm
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ucloud-sdk-python3
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: butterflymx
+[2023-05-06 04:33:56] INFO root fetch - processPackages [retroperm]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-06 04:33:56] INFO root fetch - processPackages [netron]: New version: [6.8.7] Old Version: [6.8.6]
+[2023-05-06 04:33:56] INFO root fetch - processPackages [masedb]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-06 04:33:56] WARNING root fetch - processPackages [rayserverdl]: Skipping, unable to determine old version
+[2023-05-06 04:33:56] INFO root fetch - processPackages [akellogpt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 04:33:56] INFO root fetch - main [MainThread]: End processing [rayserverdl] error
+[2023-05-06 04:33:56] INFO root fetch - processPackages [prettycopy]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ucloud-sdk-python3]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-06 04:33:56] INFO root fetch - processPackages [google-cloud-pubsub]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-06 04:33:56] WARNING root fetch - processPackages [butterflymx]: Skipping, unable to determine old version
+[2023-05-06 04:33:56] INFO root fetch - main [MainThread]: End processing [butterflymx] error
+[2023-05-06 04:33:56] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/42/51/75ca60facfdf213cc9d96563985384711ae079657f2fc72aa555b9c722e5/netron-6.8.6-py3-none-any.whl
+[2023-05-06 04:33:56] INFO root fetch - processPackages [masedb]: Downloading https://files.pythonhosted.org/packages/98/a2/48abf0ad2408edd1635baaa3eb65e801458b095a817e2bf6a511e87df1fa/masedb-1.0.8.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ucloud-sdk-python3]: Downloading https://files.pythonhosted.org/packages/b9/ad/8d3ba7b74be635980377f25b6df78942d28c0c11684ba86aa7adca44ff22/ucloud-sdk-python3-0.9.3.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [akellogpt]: Downloading https://files.pythonhosted.org/packages/1a/19/7043a5336203200358f528a5fa9ffe9ec73d701b1d5beb8d9c8239d42aca/akellogpt-0.0.2.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [prettycopy]: Downloading https://files.pythonhosted.org/packages/63/2a/e3a3bbeece5ea39b6528b2e391642ff2bd838674cdd17cfcb52a41a37f33/prettycopy-0.1.3.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [retroperm]: Downloading https://files.pythonhosted.org/packages/53/a1/62da50f2e632b2e64d6332c426ff4e92599e1410b642902dc67efce2c251/retroperm-0.1.2.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [masedb]: executing diffoscope
+[2023-05-06 04:33:56] INFO root fetch - processPackages [masedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masedb-1.0.7.tar.gz tmp/masedb-1.0.8.tar.gz --markdown 20230506/m/masedb/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-06 04:33:56] INFO root fetch - processPackages [google-cloud-pubsub]: Downloading https://files.pythonhosted.org/packages/70/b1/a3fb0ff5d57b25d93370c74b193665f7d02725f39458479b6baa077fb387/google-cloud-pubsub-2.8.0.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [retroperm]: Downloading https://files.pythonhosted.org/packages/67/fd/2777dd9fc06b135ce0b4012ec133d93a1e0c897df1b56603e5a57e2826e2/retroperm-0.1.3.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [retroperm]: executing diffoscope
+[2023-05-06 04:33:56] INFO root fetch - processPackages [retroperm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retroperm-0.1.2.tar.gz tmp/retroperm-0.1.3.tar.gz --markdown 20230506/r/retroperm/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-06 04:33:56] INFO root fetch - processPackages [akellogpt]: Downloading https://files.pythonhosted.org/packages/46/72/272c888d056ef6ce44a67f2d9a204bcd27534526a4572941e06a30eb33ce/akellogpt-0.0.3.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [prettycopy]: Downloading https://files.pythonhosted.org/packages/30/52/d5373978af6272b2bf30340050421164caf8a6780c91f4bd3bfbc8d9568c/prettycopy-0.2.0.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [akellogpt]: executing diffoscope
+[2023-05-06 04:33:56] INFO root fetch - processPackages [akellogpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akellogpt-0.0.2.tar.gz tmp/akellogpt-0.0.3.tar.gz --markdown 20230506/a/akellogpt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ucloud-sdk-python3]: Downloading https://files.pythonhosted.org/packages/ce/46/23811142fdf629c84759319dd47a810e863e87ba1562172242caa1df2ba7/ucloud-sdk-python3-0.9.4.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [prettycopy]: executing diffoscope
+[2023-05-06 04:33:56] INFO root fetch - processPackages [prettycopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettycopy-0.1.3.tar.gz tmp/prettycopy-0.2.0.tar.gz --markdown 20230506/p/prettycopy/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ucloud-sdk-python3]: executing diffoscope
+[2023-05-06 04:33:56] INFO root fetch - processPackages [ucloud-sdk-python3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ucloud-sdk-python3-0.9.3.tar.gz tmp/ucloud-sdk-python3-0.9.4.tar.gz --markdown 20230506/u/ucloud-sdk-python3/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-06 04:33:56] INFO root fetch - processPackages [google-cloud-pubsub]: Downloading https://files.pythonhosted.org/packages/e3/d6/8cde40432cac31c8f811cee72044adf491e66a2af9ded4d1774ca1ee4825/google-cloud-pubsub-2.9.0.tar.gz
+[2023-05-06 04:33:56] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/17/89/99e6005c4b33b952a3cba973cf2e0d3bee835a8bd83f97388576c5638074/netron-6.8.7-py3-none-any.whl
+[2023-05-06 04:33:56] INFO root fetch - processPackages [netron]: executing diffoscope
+[2023-05-06 04:33:56] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-6.8.6-py3-none-any.whl.zip tmp/netron-6.8.7-py3-none-any.whl.zip --markdown 20230506/n/netron/6.8.6-6.8.7/diff.md --exclude *.pyd
+[2023-05-06 04:33:57] INFO root fetch - processPackages [google-cloud-pubsub]: executing diffoscope
+[2023-05-06 04:33:57] INFO root fetch - processPackages [google-cloud-pubsub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-pubsub-2.8.0.tar.gz tmp/google-cloud-pubsub-2.9.0.tar.gz --markdown 20230506/g/google-cloud-pubsub/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-06 04:33:57] INFO root fetch - main [MainThread]: End processing [masedb]: success
+[2023-05-06 04:33:58] INFO root fetch - main [MainThread]: End processing [akellogpt]: success
+[2023-05-06 04:33:58] INFO root fetch - main [MainThread]: End processing [retroperm]: success
+[2023-05-06 04:33:58] INFO root fetch - main [MainThread]: End processing [prettycopy]: success
+[2023-05-06 04:33:59] INFO root fetch - main [MainThread]: End processing [ucloud-sdk-python3]: success
+[2023-05-06 04:33:59] INFO root fetch - main [MainThread]: End processing [google-cloud-pubsub]: success
+[2023-05-06 04:36:57] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2023-05-06 04:36:57] INFO root fetch - main [MainThread]: End processing [netron] error
+[2023-05-06 04:36:57] INFO root fetch - main [MainThread]: Store serial: [17996202]
