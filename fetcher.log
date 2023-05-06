@@ -9044,3 +9044,101 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 12:16:24] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-05-06 12:17:00] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-05-06 12:17:00] INFO root fetch - main [MainThread]: Store serial: [17998829]
+[2023-05-06 12:22:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998829]
+[2023-05-06 12:22:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: brocolli-caffe
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TorchEase
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drf-openapi-schema
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: parquet2lance
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pawnlib
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: frankAllSkyCam
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ols-client
+[2023-05-06 12:22:10] INFO root fetch - processPackages [brocolli-caffe]: New version: [9.0.0] Old Version: [8.0.0]
+[2023-05-06 12:22:10] INFO root fetch - processPackages [TorchEase]: New version: [0.0.5] Old Version: [0.0.2]
+[2023-05-06 12:22:10] INFO root fetch - processPackages [drf-openapi-schema]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ols-client]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-06 12:22:10] INFO root fetch - processPackages [parquet2lance]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 12:22:10] INFO root fetch - processPackages [frankAllSkyCam]: New version: [5.3] Old Version: [5.2]
+[2023-05-06 12:22:10] INFO root fetch - processPackages [pawnlib]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 12:22:10] INFO root fetch - processPackages [drf-openapi-schema]: Downloading https://files.pythonhosted.org/packages/d1/6a/3b357d8302ab8de88356204a23fe5b5d91eef53a70b32f24d470fe76b4b4/drf_openapi_schema-0.0.1.tar.gz
+[2023-05-06 12:22:10] INFO root fetch - processPackages [brocolli-caffe]: Downloading https://files.pythonhosted.org/packages/f8/f2/548e8fb687d1ae94c51e0c078caf8e7b8b3bd75acd80cb1ca9dcf468f9d1/brocolli-caffe-8.0.0.tar.gz
+[2023-05-06 12:22:10] INFO root fetch - processPackages [pawnlib]: executing diffoscope
+[2023-05-06 12:22:10] INFO root fetch - processPackages [pawnlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pawnlib-1.0.8-py3-none-any.whl.zip tmp/pawnlib-1.0.9-py3-none-any.whl.zip --markdown 20230506/p/pawnlib/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 12:22:10] INFO root fetch - processPackages [parquet2lance]: Downloading https://files.pythonhosted.org/packages/fb/8e/492271fde718547a35f022579d8782ee8fe33420f03cb292ae0f5e6d87ff/parquet2lance-0.0.1.tar.gz
+[2023-05-06 12:22:10] ERROR root fetch - processPackages [frankAllSkyCam]: Unable to fetch info: No such project/version 'frankAllSkyCam' 5.2
+[2023-05-06 12:22:10] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ols-client]: Downloading https://files.pythonhosted.org/packages/61/ed/1ac28462efecee664bae4b1fc194931054470075b7383340010473c8a949/ols_client-0.1.3.tar.gz
+[2023-05-06 12:22:10] INFO root fetch - processPackages [TorchEase]: Downloading https://files.pythonhosted.org/packages/ab/4f/e0e4e42a55e0f39d91cf970589647accc88a2b9941dbf68c49601a561280/TorchEase-0.0.5.tar.gz
+[2023-05-06 12:22:10] INFO root fetch - processPackages [TorchEase]: executing diffoscope
+[2023-05-06 12:22:10] INFO root fetch - processPackages [TorchEase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TorchEase-0.0.2.tar.gz tmp/TorchEase-0.0.5.tar.gz --markdown 20230506/T/TorchEase/0.0.2-0.0.5/diff.md --exclude *.pyd
+[2023-05-06 12:22:10] INFO root fetch - processPackages [drf-openapi-schema]: Downloading https://files.pythonhosted.org/packages/1a/ba/ebf1934689048116e62b4336c14137d18161bcaf5a5d90ad14be7dbee937/drf_openapi_schema-0.0.2.tar.gz
+[2023-05-06 12:22:10] INFO root fetch - processPackages [parquet2lance]: Downloading https://files.pythonhosted.org/packages/32/ec/004f753e7e81833b80228d6b2a1bc2edf084427c6782780b625c57ac082d/parquet2lance-0.0.2.tar.gz
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ols-client]: Downloading https://files.pythonhosted.org/packages/7a/09/eeca61cc40048d764dacb955e5991cb13f16efe841e6eed37ad7e2a601ec/ols_client-0.1.4.tar.gz
+[2023-05-06 12:22:10] INFO root fetch - processPackages [brocolli-caffe]: Downloading https://files.pythonhosted.org/packages/a2/3b/b07eeaf1b6072aed89e689259a6620d2988fc629f63935a9c8cd509cf8d1/brocolli-caffe-9.0.0.tar.gz
+[2023-05-06 12:22:10] INFO root fetch - processPackages [drf-openapi-schema]: executing diffoscope
+[2023-05-06 12:22:10] INFO root fetch - processPackages [drf-openapi-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_openapi_schema-0.0.1.tar.gz tmp/drf_openapi_schema-0.0.2.tar.gz --markdown 20230506/d/drf-openapi-schema/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 12:22:10] INFO root fetch - processPackages [parquet2lance]: executing diffoscope
+[2023-05-06 12:22:10] INFO root fetch - processPackages [parquet2lance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parquet2lance-0.0.1.tar.gz tmp/parquet2lance-0.0.2.tar.gz --markdown 20230506/p/parquet2lance/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ols-client]: executing diffoscope
+[2023-05-06 12:22:10] INFO root fetch - processPackages [ols-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ols_client-0.1.3.tar.gz tmp/ols_client-0.1.4.tar.gz --markdown 20230506/o/ols-client/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-06 12:22:10] INFO root fetch - processPackages [brocolli-caffe]: executing diffoscope
+[2023-05-06 12:22:10] INFO root fetch - processPackages [brocolli-caffe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brocolli-caffe-8.0.0.tar.gz tmp/brocolli-caffe-9.0.0.tar.gz --markdown 20230506/b/brocolli-caffe/8.0.0-9.0.0/diff.md --exclude *.pyd
+[2023-05-06 12:22:11] INFO root fetch - main [MainThread]: End processing [pawnlib]: success
+[2023-05-06 12:22:11] INFO root fetch - main [MainThread]: End processing [TorchEase]: success
+[2023-05-06 12:22:11] INFO root fetch - main [MainThread]: End processing [drf-openapi-schema]: success
+[2023-05-06 12:22:12] INFO root fetch - main [MainThread]: End processing [ols-client]: success
+[2023-05-06 12:22:12] INFO root fetch - main [MainThread]: End processing [parquet2lance]: success
+[2023-05-06 12:22:16] ERROR root fetch - processPackages [brocolli-caffe]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+EOFError: EOF read where object expected
+
+[2023-05-06 12:22:16] INFO root fetch - main [MainThread]: End processing [brocolli-caffe] error
+[2023-05-06 12:22:16] INFO root fetch - main [MainThread]: Store serial: [17998849]
