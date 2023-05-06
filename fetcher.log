@@ -10087,3 +10087,39 @@ EOFError: EOF read where object expected
 [2023-05-06 13:55:59] INFO root fetch - main [MainThread]: End processing [tripmaster]: success
 [2023-05-06 13:56:27] INFO root fetch - main [MainThread]: End processing [cxmlinvbot]: success
 [2023-05-06 13:56:27] INFO root fetch - main [MainThread]: Store serial: [17999396]
+[2023-05-06 14:01:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999396]
+[2023-05-06 14:01:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 14:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphere-snap
+[2023-05-06 14:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shareddata
+[2023-05-06 14:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dxsp
+[2023-05-06 14:01:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freeGPT
+[2023-05-06 14:01:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bslz4-to-sparse
+[2023-05-06 14:01:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xia-engine
+[2023-05-06 14:01:36] INFO root fetch - processPackages [dxsp]: New version: [1.9.7] Old Version: [1.9.6]
+[2023-05-06 14:01:36] INFO root fetch - processPackages [xia-engine]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-06 14:01:36] INFO root fetch - processPackages [sphere-snap]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-06 14:01:36] INFO root fetch - processPackages [bslz4-to-sparse]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-06 14:01:36] INFO root fetch - processPackages [shareddata]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-06 14:01:36] ERROR root fetch - processPackages [freeGPT]: Unable to get metadata: No such project 'freeGPT'
+[2023-05-06 14:01:36] INFO root fetch - main [MainThread]: End processing [freeGPT] error
+[2023-05-06 14:01:36] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-06 14:01:36] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.9.6.tar.gz tmp/dxsp-1.9.7.tar.gz --markdown 20230506/d/dxsp/1.9.6-1.9.7/diff.md --exclude *.pyd
+[2023-05-06 14:01:36] INFO root fetch - processPackages [sphere-snap]: Downloading https://files.pythonhosted.org/packages/9c/52/4bdea3fa9b9e890f00acf07d07e4ecf13b4082a9fa05f8d957183d8f88cf/sphere_snap-1.0.0-py3-none-any.whl
+[2023-05-06 14:01:36] INFO root fetch - processPackages [bslz4-to-sparse]: Downloading https://files.pythonhosted.org/packages/09/b0/1382cf87fe02bf0b93843da664d633335ccdb98266146eadafdbf9fec95b/bslz4_to_sparse-0.0.5.tar.gz
+[2023-05-06 14:01:36] INFO root fetch - processPackages [shareddata]: Downloading https://files.pythonhosted.org/packages/94/1b/d49790afce058e716df9b74f6e5942d5b485374eb64d44e36f14772ace1a/shareddata-2.0.5.tar.gz
+[2023-05-06 14:01:36] INFO root fetch - processPackages [xia-engine]: executing diffoscope
+[2023-05-06 14:01:36] INFO root fetch - processPackages [xia-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine-0.8.8-cp39-none-win_amd64.whl.zip tmp/xia_engine-0.8.9-cp39-none-win_amd64.whl.zip --markdown 20230506/x/xia-engine/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-06 14:01:36] INFO root fetch - processPackages [sphere-snap]: Downloading https://files.pythonhosted.org/packages/5e/9a/516e304bbf18e55ae85aa9b49d5a084f1491f71b544e7d0ecc884eddb765/sphere_snap-1.0.1-py3-none-any.whl
+[2023-05-06 14:01:36] INFO root fetch - processPackages [shareddata]: executing diffoscope
+[2023-05-06 14:01:36] INFO root fetch - processPackages [shareddata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shareddata-2.0.4.tar.gz tmp/shareddata-2.0.5.tar.gz --markdown 20230506/s/shareddata/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-06 14:01:36] INFO root fetch - processPackages [bslz4-to-sparse]: Downloading https://files.pythonhosted.org/packages/a3/87/0bb1a90a954df9b7cf04851dc9f88ea78917e7545f7ff94cf47bf3ce8e1c/bslz4_to_sparse-0.0.6.tar.gz
+[2023-05-06 14:01:36] INFO root fetch - processPackages [sphere-snap]: executing diffoscope
+[2023-05-06 14:01:36] INFO root fetch - processPackages [sphere-snap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphere_snap-1.0.0-py3-none-any.whl.zip tmp/sphere_snap-1.0.1-py3-none-any.whl.zip --markdown 20230506/s/sphere-snap/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-06 14:01:36] INFO root fetch - processPackages [bslz4-to-sparse]: executing diffoscope
+[2023-05-06 14:01:36] INFO root fetch - processPackages [bslz4-to-sparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bslz4_to_sparse-0.0.5.tar.gz tmp/bslz4_to_sparse-0.0.6.tar.gz --markdown 20230506/b/bslz4-to-sparse/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-06 14:01:37] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-06 14:01:37] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
+[2023-05-06 14:01:37] INFO root fetch - main [MainThread]: End processing [sphere-snap]: success
+[2023-05-06 14:01:37] INFO root fetch - main [MainThread]: End processing [bslz4-to-sparse]: success
+[2023-05-06 14:01:37] INFO root fetch - main [MainThread]: End processing [shareddata]: success
+[2023-05-06 14:01:37] INFO root fetch - main [MainThread]: Store serial: [17999413]
