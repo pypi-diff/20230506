@@ -11386,3 +11386,31 @@ EOFError: EOF read where object expected
 [2023-05-06 16:28:48] INFO root fetch - main [MainThread]: End processing [multicallable]: success
 [2023-05-06 16:28:49] INFO root fetch - main [MainThread]: End processing [dark-matter]: success
 [2023-05-06 16:28:49] INFO root fetch - main [MainThread]: Store serial: [18000252]
+[2023-05-06 16:33:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000252]
+[2023-05-06 16:33:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 16:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bell-avr-libraries
+[2023-05-06 16:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaaql-middleware-python
+[2023-05-06 16:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: najia
+[2023-05-06 16:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: taskAutom
+[2023-05-06 16:33:57] INFO root fetch - processPackages [najia]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-06 16:33:57] INFO root fetch - processPackages [taskAutom]: New version: [7.19.4] Old Version: [7.19.3]
+[2023-05-06 16:33:57] INFO root fetch - processPackages [bell-avr-libraries]: New version: [0.2.0a2] Old Version: [0.2.0a1]
+[2023-05-06 16:33:57] INFO root fetch - processPackages [jaaql-middleware-python]: New version: [4.9.0] Old Version: [4.8.9]
+[2023-05-06 16:33:57] INFO root fetch - processPackages [najia]: Downloading https://files.pythonhosted.org/packages/6a/6c/e2c7daf6dd5a1d123d52656ab8841bf5a186d0d806d456fd9373ec117250/najia-1.2.3.tar.gz
+[2023-05-06 16:33:58] INFO root fetch - processPackages [taskAutom]: Downloading https://files.pythonhosted.org/packages/9c/64/bc0978d436bd1a280b523221ff5df45e91eddbd3b2a1b789572cf4071472/taskAutom-7.19.4.tar.gz
+[2023-05-06 16:33:58] INFO root fetch - processPackages [bell-avr-libraries]: Downloading https://files.pythonhosted.org/packages/18/cf/37f31e3cdd342672b7617307b2183da0fbfac263741dc3e93e2045090487/bell_avr_libraries-0.2.0a2.tar.gz
+[2023-05-06 16:33:58] INFO root fetch - processPackages [jaaql-middleware-python]: Downloading https://files.pythonhosted.org/packages/5c/29/6cb85a71537e8f30aa90f242c02eea2d3ca361001bc4860bdcac60ef21b3/jaaql-middleware-python-4.9.0.tar.gz
+[2023-05-06 16:33:58] INFO root fetch - processPackages [taskAutom]: executing diffoscope
+[2023-05-06 16:33:58] INFO root fetch - processPackages [taskAutom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskAutom-7.19.3.tar.gz tmp/taskAutom-7.19.4.tar.gz --markdown 20230506/t/taskAutom/7.19.3-7.19.4/diff.md --exclude *.pyd
+[2023-05-06 16:33:58] INFO root fetch - processPackages [bell-avr-libraries]: executing diffoscope
+[2023-05-06 16:33:58] INFO root fetch - processPackages [bell-avr-libraries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bell_avr_libraries-0.2.0a1.tar.gz tmp/bell_avr_libraries-0.2.0a2.tar.gz --markdown 20230506/b/bell-avr-libraries/0.2.0a1-0.2.0a2/diff.md --exclude *.pyd
+[2023-05-06 16:33:58] INFO root fetch - processPackages [jaaql-middleware-python]: executing diffoscope
+[2023-05-06 16:33:58] INFO root fetch - processPackages [jaaql-middleware-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-middleware-python-4.8.9.tar.gz tmp/jaaql-middleware-python-4.9.0.tar.gz --markdown 20230506/j/jaaql-middleware-python/4.8.9-4.9.0/diff.md --exclude *.pyd
+[2023-05-06 16:33:58] INFO root fetch - processPackages [najia]: Downloading https://files.pythonhosted.org/packages/47/de/f33448bf2897d1ef9726e94ab13e64c61e3ec3198b4a870eef0cf14c3d89/najia-1.2.4.tar.gz
+[2023-05-06 16:33:58] INFO root fetch - processPackages [najia]: executing diffoscope
+[2023-05-06 16:33:58] INFO root fetch - processPackages [najia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/najia-1.2.3.tar.gz tmp/najia-1.2.4.tar.gz --markdown 20230506/n/najia/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-06 16:33:59] INFO root fetch - main [MainThread]: End processing [taskAutom]: success
+[2023-05-06 16:33:59] INFO root fetch - main [MainThread]: End processing [bell-avr-libraries]: success
+[2023-05-06 16:33:59] INFO root fetch - main [MainThread]: End processing [jaaql-middleware-python]: success
+[2023-05-06 16:33:59] INFO root fetch - main [MainThread]: End processing [najia]: success
+[2023-05-06 16:33:59] INFO root fetch - main [MainThread]: Store serial: [18000264]
