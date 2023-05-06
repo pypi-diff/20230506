@@ -5023,3 +5023,62 @@
 [2023-05-06 05:13:33] INFO root fetch - main [MainThread]: End processing [tfsim-nightly]: success
 [2023-05-06 05:13:33] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-05-06 05:13:33] INFO root fetch - main [MainThread]: Store serial: [17996422]
+[2023-05-06 05:18:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996422]
+[2023-05-06 05:18:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yz-core2
+[2023-05-06 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oapi-codegen
+[2023-05-06 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tt-terminal-translator
+[2023-05-06 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apollo-sdk
+[2023-05-06 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdktf-cdktf-provider-vsphere
+[2023-05-06 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hyt-gpt
+[2023-05-06 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdktf-cdktf-provider-github
+[2023-05-06 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdktf-cdktf-provider-boundary
+[2023-05-06 05:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: buildsys-dateversion
+[2023-05-06 05:18:42] INFO root fetch - processPackages [yz-core2]: New version: [1.0.47] Old Version: [1.0.45]
+[2023-05-06 05:18:42] WARNING root fetch - processPackages [oapi-codegen]: Skipping, unable to determine old version
+[2023-05-06 05:18:42] INFO root fetch - main [MainThread]: End processing [oapi-codegen] error
+[2023-05-06 05:18:42] INFO root fetch - processPackages [buildsys-dateversion]: New version: [2023.5.6] Old Version: [2023.5.1.23]
+[2023-05-06 05:18:42] INFO root fetch - processPackages [tt-terminal-translator]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-vsphere]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-05-06 05:18:42] INFO root fetch - processPackages [apollo-sdk]: New version: [0.1.6] Old Version: [0.1.4]
+[2023-05-06 05:18:42] INFO root fetch - processPackages [hyt-gpt]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-github]: New version: [8.0.2] Old Version: [8.0.1]
+[2023-05-06 05:18:42] INFO root fetch - processPackages [buildsys-dateversion]: Downloading https://files.pythonhosted.org/packages/da/02/9c693290695004e50e53f2dd38cf3788e092feadfb44af8f3e9c19cc041b/buildsys-dateversion-2023.5.1.23.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-github]: Downloading https://files.pythonhosted.org/packages/e0/a1/0d289e4bbe42ee645ca6df6e49fbff6d8d5378e88c97175e2795d8c93602/cdktf-cdktf-provider-github-8.0.1.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [hyt-gpt]: Downloading https://files.pythonhosted.org/packages/b6/97/eef7183cf1464f7dff8a13979152b9dd6ff4233680238201d3611984844f/hyt-gpt-0.3.1.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [tt-terminal-translator]: Downloading https://files.pythonhosted.org/packages/80/6a/245bfd02c4a245c944e985c12190bbe31bdce8090f5156232aaab979cc24/tt_terminal_translator-0.1.1.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [hyt-gpt]: executing diffoscope
+[2023-05-06 05:18:42] INFO root fetch - processPackages [hyt-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyt-gpt-0.3.0.tar.gz tmp/hyt-gpt-0.3.1.tar.gz --markdown 20230506/h/hyt-gpt/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-vsphere]: Downloading https://files.pythonhosted.org/packages/dd/66/d35eabcc54c9019705bcf4a6ffefba86b8ad7e65f0d8329f2c970e2ef22e/cdktf-cdktf-provider-vsphere-4.0.0.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: Downloading https://files.pythonhosted.org/packages/0e/12/eab2873a07c271f0f837ff1f0f3fe9b98d7e97d978c279f733139b0eecda/cdktf-cdktf-provider-boundary-4.0.1.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [apollo-sdk]: Downloading https://files.pythonhosted.org/packages/51/a0/f6ffdf07ce07b67b854026588a852c8a616bc01f622101542f74f591a088/apollo-sdk-0.1.6.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [yz-core2]: Downloading https://files.pythonhosted.org/packages/50/df/bf414f2e597b91546627401e93781f5189146082eeb0650113d3a7c79c76/yz-core2-1.0.47.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [apollo-sdk]: executing diffoscope
+[2023-05-06 05:18:42] INFO root fetch - processPackages [apollo-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apollo-sdk-0.1.4.tar.gz tmp/apollo-sdk-0.1.6.tar.gz --markdown 20230506/a/apollo-sdk/0.1.4-0.1.6/diff.md --exclude *.pyd
+[2023-05-06 05:18:42] INFO root fetch - processPackages [yz-core2]: executing diffoscope
+[2023-05-06 05:18:42] INFO root fetch - processPackages [yz-core2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yz-core2-1.0.45.tar.gz tmp/yz-core2-1.0.47.tar.gz --markdown 20230506/y/yz-core2/1.0.45-1.0.47/diff.md --exclude *.pyd
+[2023-05-06 05:18:42] INFO root fetch - processPackages [buildsys-dateversion]: Downloading https://files.pythonhosted.org/packages/f4/d9/5ffab2b6bafbb748d3d74bdd3a23258708ff45747302fb54670f5e687a0c/buildsys-dateversion-2023.5.6.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [tt-terminal-translator]: Downloading https://files.pythonhosted.org/packages/61/d8/19c8a1f1966862a889f446275d18b6c5fb4ec1006d37e98cc5689010eed2/tt_terminal_translator-0.1.2.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [buildsys-dateversion]: executing diffoscope
+[2023-05-06 05:18:42] INFO root fetch - processPackages [buildsys-dateversion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildsys-dateversion-2023.5.1.23.tar.gz tmp/buildsys-dateversion-2023.5.6.tar.gz --markdown 20230506/b/buildsys-dateversion/2023.5.1.23-2023.5.6/diff.md --exclude *.pyd
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: Downloading https://files.pythonhosted.org/packages/b8/83/3f4dc75ba9ac1d7cf869d1c89255eb8165ffd61128361650cee156607b58/cdktf-cdktf-provider-boundary-4.0.2.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-github]: Downloading https://files.pythonhosted.org/packages/79/81/57ef2cdbd711d61acadba17760c7d8bbbfb4d1f5c1901897d32dd73d3510/cdktf-cdktf-provider-github-8.0.2.tar.gz
+[2023-05-06 05:18:42] INFO root fetch - processPackages [tt-terminal-translator]: executing diffoscope
+[2023-05-06 05:18:42] INFO root fetch - processPackages [tt-terminal-translator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tt_terminal_translator-0.1.1.tar.gz tmp/tt_terminal_translator-0.1.2.tar.gz --markdown 20230506/t/tt-terminal-translator/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: executing diffoscope
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-boundary-4.0.1.tar.gz tmp/cdktf-cdktf-provider-boundary-4.0.2.tar.gz --markdown 20230506/c/cdktf-cdktf-provider-boundary/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-github]: executing diffoscope
+[2023-05-06 05:18:42] INFO root fetch - processPackages [cdktf-cdktf-provider-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-github-8.0.1.tar.gz tmp/cdktf-cdktf-provider-github-8.0.2.tar.gz --markdown 20230506/c/cdktf-cdktf-provider-github/8.0.1-8.0.2/diff.md --exclude *.pyd
+[2023-05-06 05:18:43] INFO root fetch - processPackages [cdktf-cdktf-provider-vsphere]: Downloading https://files.pythonhosted.org/packages/9a/a1/280393b8d40ecb9c47813498df9ae4c09713036637bc4de3b3116ca7f1cb/cdktf-cdktf-provider-vsphere-4.0.1.tar.gz
+[2023-05-06 05:18:43] INFO root fetch - processPackages [cdktf-cdktf-provider-vsphere]: executing diffoscope
+[2023-05-06 05:18:43] INFO root fetch - processPackages [cdktf-cdktf-provider-vsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-vsphere-4.0.0.tar.gz tmp/cdktf-cdktf-provider-vsphere-4.0.1.tar.gz --markdown 20230506/c/cdktf-cdktf-provider-vsphere/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-05-06 05:18:43] INFO root fetch - main [MainThread]: End processing [hyt-gpt]: success
+[2023-05-06 05:18:44] INFO root fetch - main [MainThread]: End processing [tt-terminal-translator]: success
+[2023-05-06 05:18:44] INFO root fetch - main [MainThread]: End processing [yz-core2]: success
+[2023-05-06 05:18:44] INFO root fetch - main [MainThread]: End processing [apollo-sdk]: success
+[2023-05-06 05:18:44] INFO root fetch - main [MainThread]: End processing [buildsys-dateversion]: success
+[2023-05-06 05:18:44] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-boundary]: success
+[2023-05-06 05:18:46] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-vsphere]: success
+[2023-05-06 05:18:48] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-github]: success
+[2023-05-06 05:18:48] INFO root fetch - main [MainThread]: Store serial: [17996455]
