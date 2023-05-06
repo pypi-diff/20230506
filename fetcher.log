@@ -6061,3 +6061,48 @@
 [2023-05-06 07:44:19] INFO root fetch - main [MainThread]: End processing [pulumi-auth0]: success
 [2023-05-06 07:44:45] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
 [2023-05-06 07:44:45] INFO root fetch - main [MainThread]: Store serial: [17997163]
+[2023-05-06 07:49:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997163]
+[2023-05-06 07:49:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 07:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-artifactory
+[2023-05-06 07:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-azuread
+[2023-05-06 07:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: np-queuey
+[2023-05-06 07:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: VonPylib
+[2023-05-06 07:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dumbo-asp
+[2023-05-06 07:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: np-queuey
+[2023-05-06 07:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-cloudamqp
+[2023-05-06 07:49:54] INFO root fetch - processPackages [np-queuey]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-06 07:49:54] INFO root fetch - processPackages [pulumi-artifactory]: New version: [3.5.0a1683350254] Old Version: [3.5.0a1683263954]
+[2023-05-06 07:49:54] INFO root fetch - processPackages [dumbo-asp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 07:49:54] INFO root fetch - processPackages [np-queuey]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-06 07:49:54] INFO root fetch - processPackages [VonPylib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 07:49:54] INFO root fetch - processPackages [pulumi-cloudamqp]: New version: [3.9.2] Old Version: [3.9.1]
+[2023-05-06 07:49:54] INFO root fetch - processPackages [pulumi-azuread]: New version: [5.9.0a1637590268] Old Version: [5.9.0]
+[2023-05-06 07:49:54] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/35/fe/36d0aaed04c51ed04e4cacc606b9c57817dd470d936251d3c49755b39881/np_queuey-0.2.1.tar.gz
+[2023-05-06 07:49:54] INFO root fetch - processPackages [VonPylib]: executing diffoscope
+[2023-05-06 07:49:54] INFO root fetch - processPackages [VonPylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VonPylib-0.1.8.tar.gz tmp/VonPylib-0.1.9.tar.gz --markdown 20230506/V/VonPylib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 07:49:54] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/35/fe/36d0aaed04c51ed04e4cacc606b9c57817dd470d936251d3c49755b39881/np_queuey-0.2.1.tar.gz
+[2023-05-06 07:49:54] INFO root fetch - processPackages [pulumi-cloudamqp]: executing diffoscope
+[2023-05-06 07:49:54] INFO root fetch - processPackages [pulumi-cloudamqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudamqp-3.9.1.tar.gz tmp/pulumi_cloudamqp-3.9.2.tar.gz --markdown 20230506/p/pulumi-cloudamqp/3.9.1-3.9.2/diff.md --exclude *.pyd
+[2023-05-06 07:49:54] INFO root fetch - processPackages [dumbo-asp]: Downloading https://files.pythonhosted.org/packages/2a/14/8a28611790b56516b229c885b5ef77983affbb331ff5b0958db582192c24/dumbo_asp-0.0.8.tar.gz
+[2023-05-06 07:49:54] INFO root fetch - processPackages [pulumi-artifactory]: Downloading https://files.pythonhosted.org/packages/54/83/8dfe8ec478b28fa8d3a80de47e32a99f946017fae8357249401939f6e5cf/pulumi_artifactory-3.5.0a1683350254.tar.gz
+[2023-05-06 07:49:54] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/f1/f5/ddccaa2975ecacefcdaabf2d7389691539d65bf33b5fff9325931109ea68/np_queuey-0.2.2.tar.gz
+[2023-05-06 07:49:54] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/f1/f5/ddccaa2975ecacefcdaabf2d7389691539d65bf33b5fff9325931109ea68/np_queuey-0.2.2.tar.gz
+[2023-05-06 07:49:54] INFO root fetch - processPackages [pulumi-azuread]: executing diffoscope
+[2023-05-06 07:49:54] INFO root fetch - processPackages [pulumi-azuread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_azuread-5.9.0.tar.gz tmp/pulumi_azuread-5.9.0a1637590268.tar.gz --markdown 20230506/p/pulumi-azuread/5.9.0-5.9.0a1637590268/diff.md --exclude *.pyd
+[2023-05-06 07:49:54] INFO root fetch - processPackages [pulumi-artifactory]: executing diffoscope
+[2023-05-06 07:49:54] INFO root fetch - processPackages [pulumi-artifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_artifactory-3.5.0a1683263954.tar.gz tmp/pulumi_artifactory-3.5.0a1683350254.tar.gz --markdown 20230506/p/pulumi-artifactory/3.5.0a1683263954-3.5.0a1683350254/diff.md --exclude *.pyd
+[2023-05-06 07:49:54] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-05-06 07:49:54] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.2.1.tar.gz tmp/np_queuey-0.2.2.tar.gz --markdown 20230506/n/np-queuey/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-06 07:49:54] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-05-06 07:49:54] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.2.1.tar.gz tmp/np_queuey-0.2.2.tar.gz --markdown 20230506/n/np-queuey/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-06 07:49:55] INFO root fetch - processPackages [dumbo-asp]: Downloading https://files.pythonhosted.org/packages/76/f9/caa8b424408e3ec56d9ac024882116380e06ddb9b675de285ac93b89b659/dumbo_asp-0.0.9.tar.gz
+[2023-05-06 07:49:55] INFO root fetch - main [MainThread]: End processing [VonPylib]: success
+[2023-05-06 07:49:55] INFO root fetch - processPackages [dumbo-asp]: executing diffoscope
+[2023-05-06 07:49:55] INFO root fetch - processPackages [dumbo-asp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dumbo_asp-0.0.8.tar.gz tmp/dumbo_asp-0.0.9.tar.gz --markdown 20230506/d/dumbo-asp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 07:49:55] INFO root fetch - main [MainThread]: End processing [pulumi-cloudamqp]: success
+[2023-05-06 07:49:56] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-05-06 07:49:56] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-05-06 07:49:56] INFO root fetch - main [MainThread]: End processing [pulumi-azuread]: success
+[2023-05-06 07:49:56] INFO root fetch - main [MainThread]: End processing [dumbo-asp]: success
+[2023-05-06 07:50:00] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
+[2023-05-06 07:50:00] INFO root fetch - main [MainThread]: Store serial: [17997182]
