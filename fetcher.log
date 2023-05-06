@@ -14489,3 +14489,48 @@ EOFError: EOF read where object expected
 [2023-05-06 22:55:20] INFO root fetch - main [MainThread]: End processing [Stixx]: success
 [2023-05-06 22:55:49] INFO root fetch - main [MainThread]: End processing [geolibs]: success
 [2023-05-06 22:55:49] INFO root fetch - main [MainThread]: Store serial: [18002127]
+[2023-05-06 23:00:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18002127]
+[2023-05-06 23:00:58] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 23:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: steammy
+[2023-05-06 23:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RNAlysis
+[2023-05-06 23:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpservice
+[2023-05-06 23:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mojo-runtime
+[2023-05-06 23:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sling
+[2023-05-06 23:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyfirebird
+[2023-05-06 23:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: easy-pil
+[2023-05-06 23:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: not1mm
+[2023-05-06 23:00:58] INFO root fetch - processPackages [RNAlysis]: New version: [3.8.0] Old Version: [3.7.0]
+[2023-05-06 23:00:58] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 23:00:58] INFO root fetch - processPackages [steammy]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-06 23:00:58] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-06 23:00:58] INFO root fetch - processPackages [sling]: New version: [0.87.84] Old Version: [0.87.82]
+[2023-05-06 23:00:58] INFO root fetch - processPackages [easy-pil]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-06 23:00:58] INFO root fetch - processPackages [mojo-runtime]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 23:00:58] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-05-06 23:00:58] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230506/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-06 23:00:58] INFO root fetch - processPackages [easy-pil]: executing diffoscope
+[2023-05-06 23:00:58] INFO root fetch - processPackages [easy-pil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy-pil-0.2.0.tar.gz tmp/easy-pil-0.2.1.tar.gz --markdown 20230506/e/easy-pil/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 23:00:58] INFO root fetch - processPackages [not1mm]: New version: [23.5.6] Old Version: [23.5.5]
+[2023-05-06 23:00:58] INFO root fetch - processPackages [mojo-runtime]: executing diffoscope
+[2023-05-06 23:00:58] INFO root fetch - processPackages [mojo-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_runtime-0.0.8.tar.gz tmp/mojo_runtime-0.0.9.tar.gz --markdown 20230506/m/mojo-runtime/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 23:00:58] INFO root fetch - processPackages [RNAlysis]: Downloading https://files.pythonhosted.org/packages/7a/5e/9ae5ab4fd0fe7ac5d39d76c628bda62056c6dfcd4e8acd2fd33a7efacdd2/RNAlysis-3.7.0.tar.gz
+[2023-05-06 23:00:58] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/25/03/2e381a675f6df8205b9f0766d3a101a06257a498dcaf4c2460f8ed7ebe94/sling-0.87.82.tar.gz
+[2023-05-06 23:00:58] WARNING root fetch - processPackages [sling]: Skipping package: exceeds size limit 100397684>=10485760
+[2023-05-06 23:00:58] INFO root fetch - main [MainThread]: End processing [sling] error
+[2023-05-06 23:00:58] WARNING root fetch - processPackages [RNAlysis]: Skipping package: exceeds size limit 55557468>=10485760
+[2023-05-06 23:00:58] INFO root fetch - main [MainThread]: End processing [RNAlysis] error
+[2023-05-06 23:00:58] INFO root fetch - processPackages [steammy]: Downloading https://files.pythonhosted.org/packages/1b/cd/87d5079732df7b5cc07954946fe72dd08ac7f77b2af470fc49be4141586f/steammy-0.1.4.tar.gz
+[2023-05-06 23:00:58] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-06 23:00:58] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.8.tar.gz tmp/pyfirebird-0.0.9.tar.gz --markdown 20230506/p/pyfirebird/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 23:00:59] INFO root fetch - processPackages [steammy]: executing diffoscope
+[2023-05-06 23:00:59] INFO root fetch - processPackages [steammy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steammy-0.1.3.tar.gz tmp/steammy-0.1.4.tar.gz --markdown 20230506/s/steammy/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-06 23:00:59] INFO root fetch - processPackages [not1mm]: Downloading https://files.pythonhosted.org/packages/78/6c/e1d243ffbe51da9fecee65cabb3c93ab1c4bf394f588b9c32731d7042fe7/not1mm-23.5.6.tar.gz
+[2023-05-06 23:00:59] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-05-06 23:00:59] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.5.5.tar.gz tmp/not1mm-23.5.6.tar.gz --markdown 20230506/n/not1mm/23.5.5-23.5.6/diff.md --exclude *.pyd
+[2023-05-06 23:00:59] INFO root fetch - main [MainThread]: End processing [mojo-runtime]: success
+[2023-05-06 23:00:59] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-05-06 23:01:00] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-06 23:01:00] INFO root fetch - main [MainThread]: End processing [easy-pil]: success
+[2023-05-06 23:01:00] INFO root fetch - main [MainThread]: End processing [steammy]: success
+[2023-05-06 23:01:02] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-05-06 23:01:02] INFO root fetch - main [MainThread]: Store serial: [18002153]
