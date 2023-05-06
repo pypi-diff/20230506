@@ -4157,3 +4157,38 @@
 [2023-05-06 03:40:03] INFO root fetch - main [MainThread]: End processing [knifes]: success
 [2023-05-06 03:40:03] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
 [2023-05-06 03:40:03] INFO root fetch - main [MainThread]: Store serial: [17995881]
+[2023-05-06 03:45:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17995881]
+[2023-05-06 03:45:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 03:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-django
+[2023-05-06 03:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panel
+[2023-05-06 03:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: homeassistant-stubs
+[2023-05-06 03:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-apl
+[2023-05-06 03:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prettyqt
+[2023-05-06 03:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: proactive
+[2023-05-06 03:45:12] INFO root fetch - processPackages [prettyqt]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-06 03:45:12] INFO root fetch - processPackages [homeassistant-stubs]: New version: [2023.5.2] Old Version: [2023.5.1]
+[2023-05-06 03:45:12] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-06 03:45:12] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-05-06 03:45:12] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.756] Old Version: [0.0.755]
+[2023-05-06 03:45:12] INFO root fetch - processPackages [panel]: New version: [1.0.0rc4] Old Version: [1.0.0rc3]
+[2023-05-06 03:45:12] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-05-06 03:45:12] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-05-06 03:45:12] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-05-06 03:45:12] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-05-06 03:45:12] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.9.1.tar.gz tmp/prettyqt-1.9.2.tar.gz --markdown 20230506/p/prettyqt/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-06 03:45:12] INFO root fetch - processPackages [panel]: Downloading https://files.pythonhosted.org/packages/4c/53/5f17e94195ec0b92d8f4c25d196f35e70227b88e88be8f3503b7a6aee144/panel-1.0.0rc3.tar.gz
+[2023-05-06 03:45:12] WARNING root fetch - processPackages [panel]: Skipping package: exceeds size limit 23183312>=10485760
+[2023-05-06 03:45:12] INFO root fetch - main [MainThread]: End processing [panel] error
+[2023-05-06 03:45:12] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/61/fa/2301e74450ba0d4957acce64550297a957f6d9c5b58337d368d51a1484a0/nbdev-apl-0.0.756.tar.gz
+[2023-05-06 03:45:12] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/3d/59/8c22130c2cc14353486cb2653ceea1e4a094956d0de65b4e9a42631cb5b1/homeassistant_stubs-2023.5.2.tar.gz
+[2023-05-06 03:45:12] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-06 03:45:12] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.755.tar.gz tmp/nbdev-apl-0.0.756.tar.gz --markdown 20230506/n/nbdev-apl/0.0.755-0.0.756/diff.md --exclude *.pyd
+[2023-05-06 03:45:12] INFO root fetch - processPackages [homeassistant-stubs]: executing diffoscope
+[2023-05-06 03:45:12] INFO root fetch - processPackages [homeassistant-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_stubs-2023.5.1.tar.gz tmp/homeassistant_stubs-2023.5.2.tar.gz --markdown 20230506/h/homeassistant-stubs/2023.5.1-2023.5.2/diff.md --exclude *.pyd
+[2023-05-06 03:45:12] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-06 03:45:12] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230506/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-06 03:45:13] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-06 03:45:13] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-06 03:45:19] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
+[2023-05-06 03:45:59] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
+[2023-05-06 03:45:59] INFO root fetch - main [MainThread]: Store serial: [17995898]
