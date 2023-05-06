@@ -8982,3 +8982,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 12:10:57] INFO root fetch - main [MainThread]: End processing [pypaquets]: success
 [2023-05-06 12:10:58] INFO root fetch - main [MainThread]: End processing [lona-picocss]: success
 [2023-05-06 12:10:58] INFO root fetch - main [MainThread]: Store serial: [17998802]
+[2023-05-06 12:16:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998802]
+[2023-05-06 12:16:07] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 12:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: windmill-api
+[2023-05-06 12:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wmill
+[2023-05-06 12:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wmill-pg
+[2023-05-06 12:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dm-reverb-nightly
+[2023-05-06 12:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dargor
+[2023-05-06 12:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: masonite-ready-auth
+[2023-05-06 12:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: text-analysis-helpers
+[2023-05-06 12:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyNAVIS
+[2023-05-06 12:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-sqlite-backup
+[2023-05-06 12:16:07] INFO root fetch - processPackages [dargor]: New version: [0.6.0] Old Version: [0.5.9]
+[2023-05-06 12:16:07] INFO root fetch - processPackages [windmill-api]: New version: [1.95.1] Old Version: [1.95.0]
+[2023-05-06 12:16:07] INFO root fetch - processPackages [masonite-ready-auth]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 12:16:07] INFO root fetch - processPackages [text-analysis-helpers]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-06 12:16:07] INFO root fetch - processPackages [wmill]: New version: [1.95.1] Old Version: [1.95.0]
+[2023-05-06 12:16:07] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-05-06 12:16:07] INFO root fetch - processPackages [wmill-pg]: New version: [1.95.1] Old Version: [1.95.0]
+[2023-05-06 12:16:07] INFO root fetch - processPackages [django-sqlite-backup]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-06 12:16:07] INFO root fetch - processPackages [pyNAVIS]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-06 12:16:07] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-05-06 12:16:07] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230506/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-05-06 12:16:07] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/f5/ab/1f90d9bf61776d1d1d82fabd3217e687b8c43748c76c1efafdedc199dbe1/wmill-1.95.0.tar.gz
+[2023-05-06 12:16:07] INFO root fetch - processPackages [dargor]: Downloading https://files.pythonhosted.org/packages/2c/5c/2c9f8b99646b7f72020c0bc03841ce026b2313cd9e5428fe7e88c5aca8a2/dargor-0.5.9-py3-none-any.whl
+[2023-05-06 12:16:07] INFO root fetch - processPackages [masonite-ready-auth]: Downloading https://files.pythonhosted.org/packages/4c/bd/9cc1c54fe92b369a069edb95b56f5ae5de10fbe5d1240dda419d55192dbc/masonite-ready_auth-0.0.4.tar.gz
+[2023-05-06 12:16:07] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/3c/3c/2a293ef8036c1dca54b11876ed99f37cddb19379d928b8aa27e63c9f9e11/windmill_api-1.95.0.tar.gz
+[2023-05-06 12:16:07] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/3e/38/3ad19fa48a509ff27c45db811d98436a49eac591454b4201769361f3be31/wmill_pg-1.95.0-py3-none-any.whl
+[2023-05-06 12:16:07] INFO root fetch - processPackages [text-analysis-helpers]: Downloading https://files.pythonhosted.org/packages/2d/2a/858992e95ca72a8d6db680e5b175a1e1c13f86a043c6ea378850f8ed8c36/text-analysis-helpers-0.5.0.tar.gz
+[2023-05-06 12:16:07] INFO root fetch - processPackages [pyNAVIS]: Downloading https://files.pythonhosted.org/packages/17/ea/33d15d18dc433c0d1848472041d68ae2f07edbeed15e48864344d9db0748/pyNAVIS-1.1.0.tar.gz
+[2023-05-06 12:16:07] INFO root fetch - processPackages [masonite-ready-auth]: executing diffoscope
+[2023-05-06 12:16:07] INFO root fetch - processPackages [masonite-ready-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masonite-ready_auth-0.0.3.tar.gz tmp/masonite-ready_auth-0.0.4.tar.gz --markdown 20230506/m/masonite-ready-auth/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 12:16:08] INFO root fetch - processPackages [django-sqlite-backup]: Downloading https://files.pythonhosted.org/packages/3a/fb/7877353f9a955c4ae1c2192bde014c61840604227698befabf513554acff/django_sqlite_backup-0.0.3-py3-none-any.whl
+[2023-05-06 12:16:08] INFO root fetch - processPackages [dargor]: Downloading https://files.pythonhosted.org/packages/8e/19/166cd5796b432e76c80de2d84ec427d69cbdb8d298b6942a8135f82a429f/dargor-0.6.0-py3-none-any.whl
+[2023-05-06 12:16:08] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/72/e9/abbe7b5842a3770d8c0df93543b5d05c473dfd549fd5dc8384f23a435166/wmill-1.95.1.tar.gz
+[2023-05-06 12:16:08] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/8b/fc/374c303c2e88baab04fbc8b43a58fc0a647b3a8bf8ba170ce719a3da324b/wmill_pg-1.95.1.tar.gz
+[2023-05-06 12:16:08] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/8b/89/6da648343ac5f41368c9a31604df9f9290de983e4970f2914f191745ad08/windmill_api-1.95.1.tar.gz
+[2023-05-06 12:16:08] INFO root fetch - processPackages [text-analysis-helpers]: Downloading https://files.pythonhosted.org/packages/0d/4e/ed51c5110f5620da511838c3169996932db78b95a955f9bce681c35508a0/text_analysis_helpers-0.6.0.tar.gz
+[2023-05-06 12:16:08] INFO root fetch - processPackages [dargor]: executing diffoscope
+[2023-05-06 12:16:08] INFO root fetch - processPackages [dargor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dargor-0.5.9-py3-none-any.whl.zip tmp/dargor-0.6.0-py3-none-any.whl.zip --markdown 20230506/d/dargor/0.5.9-0.6.0/diff.md --exclude *.pyd
+[2023-05-06 12:16:08] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-05-06 12:16:08] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.95.0.tar.gz tmp/wmill-1.95.1.tar.gz --markdown 20230506/w/wmill/1.95.0-1.95.1/diff.md --exclude *.pyd
+[2023-05-06 12:16:08] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-05-06 12:16:08] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.95.0-py3-none-any.whl.zip tmp/wmill_pg-1.95.1.tar.gz --markdown 20230506/w/wmill-pg/1.95.0-1.95.1/diff.md --exclude *.pyd
+[2023-05-06 12:16:08] INFO root fetch - processPackages [text-analysis-helpers]: executing diffoscope
+[2023-05-06 12:16:08] INFO root fetch - processPackages [text-analysis-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text-analysis-helpers-0.5.0.tar.gz tmp/text_analysis_helpers-0.6.0.tar.gz --markdown 20230506/t/text-analysis-helpers/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-06 12:16:08] INFO root fetch - processPackages [django-sqlite-backup]: executing diffoscope
+[2023-05-06 12:16:08] INFO root fetch - processPackages [django-sqlite-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_sqlite_backup-0.0.2-py3-none-any.whl.zip tmp/django_sqlite_backup-0.0.3-py3-none-any.whl.zip --markdown 20230506/d/django-sqlite-backup/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-06 12:16:08] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-05-06 12:16:08] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.95.0.tar.gz tmp/windmill_api-1.95.1.tar.gz --markdown 20230506/w/windmill-api/1.95.0-1.95.1/diff.md --exclude *.pyd
+[2023-05-06 12:16:08] INFO root fetch - processPackages [pyNAVIS]: Downloading https://files.pythonhosted.org/packages/d2/54/9cd7b4239327a06ba1aa0b2c87942b648ef73d5d03f10e428000a76373ca/pyNAVIS-1.1.1.tar.gz
+[2023-05-06 12:16:08] INFO root fetch - processPackages [pyNAVIS]: executing diffoscope
+[2023-05-06 12:16:08] INFO root fetch - processPackages [pyNAVIS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyNAVIS-1.1.0.tar.gz tmp/pyNAVIS-1.1.1.tar.gz --markdown 20230506/p/pyNAVIS/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-06 12:16:09] INFO root fetch - main [MainThread]: End processing [masonite-ready-auth]: success
+[2023-05-06 12:16:09] INFO root fetch - main [MainThread]: End processing [text-analysis-helpers]: success
+[2023-05-06 12:16:09] INFO root fetch - main [MainThread]: End processing [dargor]: success
+[2023-05-06 12:16:09] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-05-06 12:16:09] INFO root fetch - main [MainThread]: End processing [django-sqlite-backup]: success
+[2023-05-06 12:16:09] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2023-05-06 12:16:10] INFO root fetch - main [MainThread]: End processing [pyNAVIS]: success
+[2023-05-06 12:16:24] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-05-06 12:17:00] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-05-06 12:17:00] INFO root fetch - main [MainThread]: Store serial: [17998829]
