@@ -2033,3 +2033,24 @@
 [2023-05-06 02:59:59] INFO root fetch - main [MainThread]: End processing [mp-api]: success
 [2023-05-06 02:59:59] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-05-06 02:59:59] INFO root fetch - main [MainThread]: Store serial: [17994636]
+[2023-05-06 03:05:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17994636]
+[2023-05-06 03:05:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-06 03:05:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: texonomy
+[2023-05-06 03:05:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: commandsgpt
+[2023-05-06 03:05:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-lambda-mess
+[2023-05-06 03:05:10] INFO root fetch - processPackages [texonomy]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-06 03:05:10] INFO root fetch - processPackages [commandsgpt]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-06 03:05:10] INFO root fetch - processPackages [aws-lambda-mess]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 03:05:10] INFO root fetch - processPackages [commandsgpt]: Downloading https://files.pythonhosted.org/packages/54/27/f9097b872ef66c3dd9ed2204d0530b5101b1003a076f9510e2acc54a39f8/commandsgpt-1.1.2.tar.gz
+[2023-05-06 03:05:10] INFO root fetch - processPackages [aws-lambda-mess]: Downloading https://files.pythonhosted.org/packages/f8/9c/ccdd4c636be5f06d690efe2d5f7a95fc74fb47773c9d9cc0e8e24697d772/aws_lambda_mess-0.0.8.tar.gz
+[2023-05-06 03:05:10] INFO root fetch - processPackages [texonomy]: Downloading https://files.pythonhosted.org/packages/d7/a4/fcfab8fab1d20304c0f78e4ea23025b595ea8686fe973ada52bdf79c36d9/texonomy-0.2.0.tar.gz
+[2023-05-06 03:05:10] INFO root fetch - processPackages [aws-lambda-mess]: executing diffoscope
+[2023-05-06 03:05:10] INFO root fetch - processPackages [aws-lambda-mess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_lambda_mess-0.0.7.tar.gz tmp/aws_lambda_mess-0.0.8.tar.gz --markdown 20230506/a/aws-lambda-mess/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 03:05:10] INFO root fetch - processPackages [texonomy]: executing diffoscope
+[2023-05-06 03:05:10] INFO root fetch - processPackages [texonomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/texonomy-0.1.1.tar.gz tmp/texonomy-0.2.0.tar.gz --markdown 20230506/t/texonomy/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 03:05:10] INFO root fetch - processPackages [commandsgpt]: executing diffoscope
+[2023-05-06 03:05:10] INFO root fetch - processPackages [commandsgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commandsgpt-1.1.1.tar.gz tmp/commandsgpt-1.1.2.tar.gz --markdown 20230506/c/commandsgpt/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-06 03:05:11] INFO root fetch - main [MainThread]: End processing [aws-lambda-mess]: success
+[2023-05-06 03:05:11] INFO root fetch - main [MainThread]: End processing [texonomy]: success
+[2023-05-06 03:05:11] INFO root fetch - main [MainThread]: End processing [commandsgpt]: success
+[2023-05-06 03:05:11] INFO root fetch - main [MainThread]: Store serial: [17994651]
