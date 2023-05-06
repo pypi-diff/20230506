@@ -10836,3 +10836,56 @@ EOFError: EOF read where object expected
 [2023-05-06 15:20:31] INFO root fetch - main [MainThread]: End processing [keyrt]: success
 [2023-05-06 15:20:31] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
 [2023-05-06 15:20:31] INFO root fetch - main [MainThread]: Store serial: [17999878]
+[2023-05-06 15:25:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999878]
+[2023-05-06 15:25:40] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbgemm-gpu-nightly
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: azureml-assets
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ob-dj-feature-flags
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jsonschema-gentypes
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: convert-videos
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: freeGPT
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: anyon
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyxtension
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: localstack-core
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: python-lectio
+[2023-05-06 15:25:40] WARNING root fetch - processPackages [freeGPT]: Skipping, unable to determine old version
+[2023-05-06 15:25:40] INFO root fetch - main [MainThread]: End processing [freeGPT] error
+[2023-05-06 15:25:40] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.5.5] Old Version: [2023.5.4]
+[2023-05-06 15:25:40] INFO root fetch - processPackages [python-lectio]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-06 15:25:40] INFO root fetch - processPackages [anyon]: New version: [3.1.28] Old Version: [3.1.27]
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ob-dj-feature-flags]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 15:25:40] INFO root fetch - processPackages [localstack-core]: New version: [2.0.3.dev20230505134034] Old Version: [2.0.3.dev20230505111001]
+[2023-05-06 15:25:40] INFO root fetch - processPackages [pyxtension]: New version: [1.16.0] Old Version: [1.15.0]
+[2023-05-06 15:25:40] WARNING root fetch - processPackages [azureml-assets]: Skipping, unable to determine old version
+[2023-05-06 15:25:40] INFO root fetch - main [MainThread]: End processing [azureml-assets] error
+[2023-05-06 15:25:40] INFO root fetch - processPackages [jsonschema-gentypes]: New version: [2.2.2] Old Version: [2.2.1]
+[2023-05-06 15:25:40] INFO root fetch - processPackages [python-lectio]: executing diffoscope
+[2023-05-06 15:25:40] INFO root fetch - processPackages [python-lectio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-lectio-1.9.0.tar.gz tmp/python-lectio-1.9.1.tar.gz --markdown 20230506/p/python-lectio/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-06 15:25:40] INFO root fetch - processPackages [anyon]: executing diffoscope
+[2023-05-06 15:25:40] INFO root fetch - processPackages [anyon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyon-3.1.27-cp311-cp311-win_amd64.whl.zip tmp/anyon-3.1.28-cp311-cp311-win_amd64.whl.zip --markdown 20230506/a/anyon/3.1.27-3.1.28/diff.md --exclude *.pyd
+[2023-05-06 15:25:40] INFO root fetch - processPackages [convert-videos]: New version: [2.8.6] Old Version: [2.8.4]
+[2023-05-06 15:25:40] INFO root fetch - processPackages [pyxtension]: executing diffoscope
+[2023-05-06 15:25:40] INFO root fetch - processPackages [pyxtension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxtension-1.15.0-py3-none-any.whl.zip tmp/pyxtension-1.16.0-py3-none-any.whl.zip --markdown 20230506/p/pyxtension/1.15.0-1.16.0/diff.md --exclude *.pyd
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ob-dj-feature-flags]: Downloading https://files.pythonhosted.org/packages/10/d0/200d3902a58c8d55242aa67cb1ba5a5fdf25d06b3761afae6344cd85e846/ob-dj-feature-flags-0.0.2.tar.gz
+[2023-05-06 15:25:40] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/34/b7/1fa722a61e6b407b1083d0d3c1b3018880e993f4529a02e7a52ce0aec2de/fbgemm_gpu_nightly-2023.5.4-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-06 15:25:40] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 267849593>=10485760
+[2023-05-06 15:25:40] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-05-06 15:25:40] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-06 15:25:40] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.3.dev20230505111001.tar.gz tmp/localstack-core-2.0.3.dev20230505134034.tar.gz --markdown 20230506/l/localstack-core/2.0.3.dev20230505111001-2.0.3.dev20230505134034/diff.md --exclude *.pyd
+[2023-05-06 15:25:40] INFO root fetch - processPackages [jsonschema-gentypes]: Downloading https://files.pythonhosted.org/packages/f1/94/dcda5f332af04a105feaf74c691520e3656505d56baa17c985882586f655/jsonschema_gentypes-2.2.1.tar.gz
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ob-dj-feature-flags]: executing diffoscope
+[2023-05-06 15:25:40] INFO root fetch - processPackages [ob-dj-feature-flags]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ob-dj-feature-flags-0.0.1.tar.gz tmp/ob-dj-feature-flags-0.0.2.tar.gz --markdown 20230506/o/ob-dj-feature-flags/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 15:25:40] INFO root fetch - processPackages [convert-videos]: Downloading https://files.pythonhosted.org/packages/3a/f1/0350e359fe27fceebcaa8f744efc81645d1b3fda8dc4f31285643fa7b1ee/convert_videos-2.8.6.tar.gz
+[2023-05-06 15:25:40] INFO root fetch - processPackages [jsonschema-gentypes]: Downloading https://files.pythonhosted.org/packages/fd/9a/f00ad46a7d80a318eab8864d4f8b2433dc61696b5133a1d7cdb1960c1060/jsonschema_gentypes-2.2.2.tar.gz
+[2023-05-06 15:25:40] INFO root fetch - processPackages [convert-videos]: executing diffoscope
+[2023-05-06 15:25:40] INFO root fetch - processPackages [convert-videos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convert_videos-2.8.4.tar.gz tmp/convert_videos-2.8.6.tar.gz --markdown 20230506/c/convert-videos/2.8.4-2.8.6/diff.md --exclude *.pyd
+[2023-05-06 15:25:40] INFO root fetch - processPackages [jsonschema-gentypes]: executing diffoscope
+[2023-05-06 15:25:40] INFO root fetch - processPackages [jsonschema-gentypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonschema_gentypes-2.2.1.tar.gz tmp/jsonschema_gentypes-2.2.2.tar.gz --markdown 20230506/j/jsonschema-gentypes/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2023-05-06 15:25:41] INFO root fetch - main [MainThread]: End processing [anyon]: success
+[2023-05-06 15:25:41] INFO root fetch - main [MainThread]: End processing [python-lectio]: success
+[2023-05-06 15:25:41] INFO root fetch - main [MainThread]: End processing [pyxtension]: success
+[2023-05-06 15:25:42] INFO root fetch - main [MainThread]: End processing [ob-dj-feature-flags]: success
+[2023-05-06 15:25:42] INFO root fetch - main [MainThread]: End processing [convert-videos]: success
+[2023-05-06 15:25:42] INFO root fetch - main [MainThread]: End processing [jsonschema-gentypes]: success
+[2023-05-06 15:25:49] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-06 15:25:49] INFO root fetch - main [MainThread]: Store serial: [17999913]
