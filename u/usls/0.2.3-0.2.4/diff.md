@@ -1,0 +1,4033 @@
+# Comparing `tmp/usls-0.2.3-py3-none-any.whl.zip` & `tmp/usls-0.2.4-py3-none-any.whl.zip`
+
+## zipinfo {}
+
+```diff
+@@ -1,25 +1,25 @@
+-Zip file size: 60853 bytes, number of entries: 23
+--rw-r--r--  2.0 unx      171 b- defN 23-May-05 11:34 usls/__init__.py
+--rw-r--r--  2.0 unx    11772 b- defN 23-May-05 11:34 usls/cli.py
+--rw-r--r--  2.0 unx     2629 b- defN 23-May-05 11:34 usls/run.py
+--rw-r--r--  2.0 unx      309 b- defN 23-May-05 11:34 usls/src/__init__.py
+--rw-r--r--  2.0 unx     2171 b- defN 23-May-05 11:34 usls/src/class_modify.py
+--rw-r--r--  2.0 unx     6119 b- defN 23-May-05 11:34 usls/src/cleanup.py
+--rw-r--r--  2.0 unx     5530 b- defN 23-May-05 11:34 usls/src/deduplicate.py
+--rw-r--r--  2.0 unx     2071 b- defN 23-May-05 11:34 usls/src/dir_combine.py
+--rw-r--r--  2.0 unx     4010 b- defN 23-May-05 11:34 usls/src/info.py
+--rw-r--r--  2.0 unx     3204 b- defN 23-May-05 11:34 usls/src/label_combine.py
+--rw-r--r--  2.0 unx    18138 b- defN 23-May-05 11:34 usls/src/labelling_cls.py
+--rw-r--r--  2.0 unx    39435 b- defN 23-May-05 11:34 usls/src/labelling_det.py
+--rw-r--r--  2.0 unx    40829 b- defN 23-May-05 11:34 usls/src/labelling_det_2.py
+--rw-r--r--  2.0 unx     2616 b- defN 23-May-05 11:34 usls/src/rename.py
+--rw-r--r--  2.0 unx     3470 b- defN 23-May-05 11:34 usls/src/spider.py
+--rw-r--r--  2.0 unx     6282 b- defN 23-May-05 11:34 usls/src/utils.py
+--rw-r--r--  2.0 unx     9412 b- defN 23-May-05 11:34 usls/src/video_tools.py
+--rw-r--r--  2.0 unx    35149 b- defN 23-May-05 11:34 usls-0.2.3.dist-info/LICENSE
+--rw-r--r--  2.0 unx      540 b- defN 23-May-05 11:34 usls-0.2.3.dist-info/METADATA
+--rw-r--r--  2.0 unx       92 b- defN 23-May-05 11:34 usls-0.2.3.dist-info/WHEEL
+--rw-r--r--  2.0 unx       34 b- defN 23-May-05 11:34 usls-0.2.3.dist-info/entry_points.txt
+--rw-r--r--  2.0 unx        5 b- defN 23-May-05 11:34 usls-0.2.3.dist-info/top_level.txt
+--rw-rw-r--  2.0 unx     1774 b- defN 23-May-05 11:34 usls-0.2.3.dist-info/RECORD
+-23 files, 195762 bytes uncompressed, 58039 bytes compressed:  70.4%
++Zip file size: 43787 bytes, number of entries: 23
++-rwxrwxrwx  2.0 unx      171 b- defN 23-May-06 08:48 usls/__init__.py
++-rwxrwxrwx  2.0 unx    11772 b- defN 23-May-06 08:48 usls/cli.py
++-rwxrwxrwx  2.0 unx     2625 b- defN 23-May-06 08:48 usls/run.py
++-rwxrwxrwx  2.0 unx      276 b- defN 23-May-06 08:48 usls/src/__init__.py
++-rwxrwxrwx  2.0 unx     2171 b- defN 23-May-06 08:48 usls/src/class_modify.py
++-rwxrwxrwx  2.0 unx     6119 b- defN 23-May-06 08:48 usls/src/cleanup.py
++-rwxrwxrwx  2.0 unx     5530 b- defN 23-May-06 08:48 usls/src/deduplicate.py
++-rwxrwxrwx  2.0 unx     2071 b- defN 23-May-06 08:48 usls/src/dir_combine.py
++-rwxrwxrwx  2.0 unx     4010 b- defN 23-May-06 08:48 usls/src/info.py
++-rwxrwxrwx  2.0 unx     3204 b- defN 23-May-06 08:48 usls/src/label_combine.py
++-rwxrwxrwx  2.0 unx    34798 b- defN 23-May-06 08:48 usls/src/labelling.py
++-rwxrwxrwx  2.0 unx        1 b- defN 23-May-06 08:48 usls/src/labelling_cls.py
++-rwxrwxrwx  2.0 unx        1 b- defN 23-May-06 08:48 usls/src/labelling_det_2.py
++-rwxrwxrwx  2.0 unx     2616 b- defN 23-May-06 08:48 usls/src/rename.py
++-rwxrwxrwx  2.0 unx     3470 b- defN 23-May-06 08:48 usls/src/spider.py
++-rwxrwxrwx  2.0 unx     7793 b- defN 23-May-06 08:48 usls/src/utils.py
++-rwxrwxrwx  2.0 unx     9412 b- defN 23-May-06 08:48 usls/src/video_tools.py
++-rwxrwxrwx  2.0 unx    35149 b- defN 23-May-06 08:50 usls-0.2.4.dist-info/LICENSE
++-rwxrwxrwx  2.0 unx      540 b- defN 23-May-06 08:50 usls-0.2.4.dist-info/METADATA
++-rwxrwxrwx  2.0 unx       92 b- defN 23-May-06 08:50 usls-0.2.4.dist-info/WHEEL
++-rwxrwxrwx  2.0 unx       34 b- defN 23-May-06 08:50 usls-0.2.4.dist-info/entry_points.txt
++-rwxrwxrwx  2.0 unx        5 b- defN 23-May-06 08:50 usls-0.2.4.dist-info/top_level.txt
++?rw-rw-r--  2.0 unx     1762 b- defN 23-May-06 08:50 usls-0.2.4.dist-info/RECORD
++23 files, 133622 bytes uncompressed, 40981 bytes compressed:  69.3%
+```
+
+## zipnote {}
+
+```diff
+@@ -24,18 +24,18 @@
+ 
+ Filename: usls/src/info.py
+ Comment: 
+ 
+ Filename: usls/src/label_combine.py
+ Comment: 
+ 
+-Filename: usls/src/labelling_cls.py
++Filename: usls/src/labelling.py
+ Comment: 
+ 
+-Filename: usls/src/labelling_det.py
++Filename: usls/src/labelling_cls.py
+ Comment: 
+ 
+ Filename: usls/src/labelling_det_2.py
+ Comment: 
+ 
+ Filename: usls/src/rename.py
+ Comment: 
+@@ -45,26 +45,26 @@
+ 
+ Filename: usls/src/utils.py
+ Comment: 
+ 
+ Filename: usls/src/video_tools.py
+ Comment: 
+ 
+-Filename: usls-0.2.3.dist-info/LICENSE
++Filename: usls-0.2.4.dist-info/LICENSE
+ Comment: 
+ 
+-Filename: usls-0.2.3.dist-info/METADATA
++Filename: usls-0.2.4.dist-info/METADATA
+ Comment: 
+ 
+-Filename: usls-0.2.3.dist-info/WHEEL
++Filename: usls-0.2.4.dist-info/WHEEL
+ Comment: 
+ 
+-Filename: usls-0.2.3.dist-info/entry_points.txt
++Filename: usls-0.2.4.dist-info/entry_points.txt
+ Comment: 
+ 
+-Filename: usls-0.2.3.dist-info/top_level.txt
++Filename: usls-0.2.4.dist-info/top_level.txt
+ Comment: 
+ 
+-Filename: usls-0.2.3.dist-info/RECORD
++Filename: usls-0.2.4.dist-info/RECORD
+ Comment: 
+ 
+ Zip file comment:
+```
+
+## usls/__init__.py
+
+```diff
+@@ -1,12 +1,12 @@
+ #!/usr/bin/env python
+ # -*- coding:utf-8 -*- 
+ 
+ 
+-__version__ = '0.2.3'
++__version__ = '0.2.4'
+ 
+ from usls.cli import cli
+ from usls.run import run
+ 
+ 
+ __all__ = [
+ 	'__version__',
+```
+
+## usls/run.py
+
+```diff
+@@ -12,15 +12,15 @@
+ 
+ # ---------------------------------------------------------------------------------------------
+ from usls.src.utils import (
+     Colors, LOGGER, IMG_FORMAT, VIDEO_FORMAT, CONSOLE
+ )
+ 
+ from usls.src.info import run_dir_info
+-from usls.src.labelling_det import run_inspect
++from usls.src.labelling import run_inspect
+ from usls.src.cleanup import run_cleanup
+ from usls.src.dir_combine import run_dir_combine
+ from usls.src.spider import run_spider
+ from usls.src.rename import run_rename
+ from usls.src.deduplicate import run_deduplicate
+ from usls.src.video_tools import run_v2is, run_vs2is, run_play
+```
+
+## usls/src/__init__.py
+
+```diff
+@@ -1,14 +1,13 @@
+ from .utils import *
+ from .rename import *
+ from .info import *
+ from .cleanup import *
+ from .deduplicate import *
+-from .labelling_det import *
+-from .labelling_cls import *
++from .labelling import *
+ from .video_tools import * 
+ from .spider import * 
+ from .dir_combine import *
+ from .label_combine import * 
+ from .class_modify import *
+```
+
+## usls/src/labelling_cls.py
+
+```diff
+@@ -1,1134 +1 @@
+-00000000: 0a69 6d70 6f72 7420 6172 6770 6172 7365  .import argparse
+-00000010: 0a69 6d70 6f72 7420 6f73 0a69 6d70 6f72  .import os.impor
+-00000020: 7420 7265 0a69 6d70 6f72 7420 6376 320a  t re.import cv2.
+-00000030: 696d 706f 7274 206e 756d 7079 2061 7320  import numpy as 
+-00000040: 6e70 0a66 726f 6d20 7471 646d 2069 6d70  np.from tqdm imp
+-00000050: 6f72 7420 7471 646d 0a66 726f 6d20 7061  ort tqdm.from pa
+-00000060: 7468 6c69 6220 696d 706f 7274 2050 6174  thlib import Pat
+-00000070: 680a 696d 706f 7274 2073 7973 0a69 6d70  h.import sys.imp
+-00000080: 6f72 7420 7368 7574 696c 0a69 6d70 6f72  ort shutil.impor
+-00000090: 7420 7261 6e64 6f6d 0a69 6d70 6f72 7420  t random.import 
+-000000a0: 7469 6d65 0a23 2066 726f 6d20 6c6f 6775  time.# from logu
+-000000b0: 7275 2069 6d70 6f72 7420 6c6f 6767 6572  ru import logger
+-000000c0: 2061 7320 4c4f 4747 4552 0a69 6d70 6f72   as LOGGER.impor
+-000000d0: 7420 6a73 6f6e 0a0a 0a0a 232d 2d2d 2d2d  t json....#-----
+-000000e0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000000f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000100: 2d2d 2d2d 2d2d 2d0a 2320 2020 2020 2020  -------.#       
+-00000110: 4144 4420 544f 2050 5954 484f 4e5f 5041  ADD TO PYTHON_PA
+-00000120: 5448 0a23 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  TH.#------------
+-00000130: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000140: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000150: 0a46 494c 4520 3d20 5061 7468 285f 5f66  .FILE = Path(__f
+-00000160: 696c 655f 5f29 2e72 6573 6f6c 7665 2829  ile__).resolve()
+-00000170: 0a52 4f4f 5420 3d20 4649 4c45 2e70 6172  .ROOT = FILE.par
+-00000180: 656e 7473 5b30 5d20 2020 2320 4649 4c45  ents[0]   # FILE
+-00000190: 2e70 6172 656e 7420 0a69 6620 7374 7228  .parent .if str(
+-000001a0: 524f 4f54 2920 6e6f 7420 696e 2073 7973  ROOT) not in sys
+-000001b0: 2e70 6174 683a 0a20 2020 2073 7973 2e70  .path:.    sys.p
+-000001c0: 6174 682e 6170 7065 6e64 2873 7472 2852  ath.append(str(R
+-000001d0: 4f4f 5429 2920 2023 2061 6464 2052 4f4f  OOT))  # add ROO
+-000001e0: 5420 746f 2050 4154 480a 232d 2d2d 2d2d  T to PATH.#-----
+-000001f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000200: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000210: 2d2d 2d2d 2d2d 2d0a 0a66 726f 6d20 7574  -------..from ut
+-00000220: 696c 7320 696d 706f 7274 2043 6f6c 6f72  ils import Color
+-00000230: 732c 2049 4d47 5f46 4f52 4d41 542c 2069  s, IMG_FORMAT, i
+-00000240: 735f 706f 696e 745f 696e 5f72 6563 742c  s_point_in_rect,
+-00000250: 204c 4f47 4745 520a 0a0a 232d 2d2d 2d2d   LOGGER...#-----
+-00000260: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000270: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000280: 2d2d 2d2d 2d2d 2d0a 2320 2020 2020 2020  -------.#       
+-00000290: 2020 2047 6c6f 6261 6c20 5661 7269 6162     Global Variab
+-000002a0: 6c65 730a 232d 2d2d 2d2d 2d2d 2d2d 2d2d  les.#-----------
+-000002b0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000002c0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000002d0: 2d0a 0a23 2077 696e 646f 7773 200a 5749  -..# windows .WI
+-000002e0: 4e44 4f57 5f4e 414d 4520 3d20 274d 4c4f  NDOW_NAME = 'MLO
+-000002f0: 7073 2d44 6174 6173 6574 2d43 6c61 7373  ps-Dataset-Class
+-00000300: 6966 7969 6e67 270a 0a23 2074 7261 636b  ifying'..# track
+-00000310: 6572 2062 6172 730a 5452 4143 4b42 4152  er bars.TRACKBAR
+-00000320: 5f49 4d47 203d 2027 494d 4147 4553 270a  _IMG = 'IMAGES'.
+-00000330: 0a0a 2320 696e 7075 7420 6469 720a 494e  ..# input dir.IN
+-00000340: 5055 545f 494d 475f 4449 5220 203d 2022  PUT_IMG_DIR  = "
+-00000350: 220a 494d 4147 455f 434c 4153 5345 535f  ".IMAGE_CLASSES_
+-00000360: 4a53 4f4e 5f50 4154 4820 3d20 4e6f 6e65  JSON_PATH = None
+-00000370: 0a0a 0a23 206d 6f64 6520 0a43 4c41 5353  ...# mode .CLASS
+-00000380: 4946 595f 4d4f 4445 203d 2046 616c 7365  IFY_MODE = False
+-00000390: 0a0a 0a23 2069 6d61 6765 730a 494d 4147  ...# images.IMAG
+-000003a0: 455f 5041 5448 5f4c 4953 5420 3d20 5b5d  E_PATH_LIST = []
+-000003b0: 200a 494d 475f 4944 585f 4355 5252 454e   .IMG_IDX_CURREN
+-000003c0: 5420 3d20 3020 2020 2020 2020 2020 2320  T = 0         # 
+-000003d0: e5bd 93e5 898d e79a 8469 6d67 2069 6e64  .........img ind
+-000003e0: 6578 0a49 4d47 5f49 4458 5f4c 4153 5420  ex.IMG_IDX_LAST 
+-000003f0: 3d20 3020 2020 2020 2020 2020 2020 2023  = 0            #
+-00000400: 206c 6173 7420 e79a 8469 6d67 2069 6e64   last ...img ind
+-00000410: 6578 0a49 4d47 5f43 5552 5245 4e54 203d  ex.IMG_CURRENT =
+-00000420: 204e 6f6e 6520 2020 2020 2020 2020 2023   None          #
+-00000430: 20e5 bd93 e589 8de9 a1b5 e99d a2e6 98be   ...............
+-00000440: e7a4 bae7 9a84 696d 670a 5752 4f4e 475f  ......img.WRONG_
+-00000450: 494d 475f 5345 5420 3d20 7365 7428 2920  IMG_SET = set() 
+-00000460: 2020 2020 2020 2320 e697 a0e6 b395 e6ad        # ........
+-00000470: a3e5 b8b8 e8af bbe5 8f96 e79a 8469 6d61  .............ima
+-00000480: 6765 0a49 4d47 5f43 4f55 4e54 203d 2030  ge.IMG_COUNT = 0
+-00000490: 0a0a 2320 636c 6173 7365 730a 434c 4153  ..# classes.CLAS
+-000004a0: 535f 4c49 5354 203d 205b 5d20 2020 2020  S_LIST = []     
+-000004b0: 2020 2020 2020 2020 2320 616c 6c20 636c          # all cl
+-000004c0: 6173 7320 4944 0a43 4c53 5f49 4458 5f43  ass ID.CLS_IDX_C
+-000004d0: 5552 5245 4e54 203d 2030 2020 2020 2020  URRENT = 0      
+-000004e0: 2020 2023 2063 7572 7265 6e74 636c 6173     # currentclas
+-000004f0: 7320 696e 6465 780a 434c 535f 434f 554e  s index.CLS_COUN
+-00000500: 5420 3d20 300a 494d 4147 455f 434c 4153  T = 0.IMAGE_CLAS
+-00000510: 5345 5320 3d20 7b7d 2020 2023 207b 696d  SES = {}   # {im
+-00000520: 6167 655f 7061 7468 3a20 636c 6173 735f  age_path: class_
+-00000530: 6964 7d0a 0a0a 2320 706f 696e 745f 7879  id}...# point_xy
+-00000540: 2026 206d 6f75 7365 5f78 790a 4d4f 5553   & mouse_xy.MOUS
+-00000550: 455f 5820 3d20 300a 4d4f 5553 455f 5920  E_X = 0.MOUSE_Y 
+-00000560: 3d20 300a 0a0a 232d 2d2d 2d2d 2d2d 2d2d  = 0...#---------
+-00000570: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000580: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000590: 2d2d 2d0a 2320 2020 2020 2020 2020 2046  ---.#          F
+-000005a0: 756e 6374 696f 6e73 0a23 2d2d 2d2d 2d2d  unctions.#------
+-000005b0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000005c0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000005d0: 2d2d 2d2d 2d2d 0a0a 2320 e288 9a20 6469  ------..# ... di
+-000005e0: 7370 6c61 7920 7465 7874 2069 6e20 7468  splay text in th
+-000005f0: 6520 5b6f 7665 726c 6170 2c20 7465 726d  e [overlap, term
+-00000600: 696e 616c 2c20 7374 6174 7573 5f62 6172  inal, status_bar
+-00000610: 5d0a 6465 6620 7072 696e 745f 696e 666f  ].def print_info
+-00000620: 2874 6578 743d 2266 6f72 2065 7861 6d70  (text="for examp
+-00000630: 6c65 222c 206d 733d 3130 3030 2c20 7768  le", ms=1000, wh
+-00000640: 6572 653d 4e6f 6e65 293a 0a20 2020 2067  ere=None):.    g
+-00000650: 6c6f 6261 6c20 5749 4e44 4f57 5f4e 414d  lobal WINDOW_NAM
+-00000660: 450a 0a20 2020 2069 6620 7768 6572 6520  E..    if where 
+-00000670: 3d3d 2027 4f76 6572 6c61 7927 3a0a 2020  == 'Overlay':.  
+-00000680: 2020 2020 2020 6376 322e 6469 7370 6c61        cv2.displa
+-00000690: 794f 7665 726c 6179 2857 494e 444f 575f  yOverlay(WINDOW_
+-000006a0: 4e41 4d45 2c20 7465 7874 2c20 6d73 290a  NAME, text, ms).
+-000006b0: 2020 2020 656c 6966 2077 6865 7265 203d      elif where =
+-000006c0: 3d20 2753 7461 7475 7362 6172 273a 0a20  = 'Statusbar':. 
+-000006d0: 2020 2020 2020 2063 7632 2e64 6973 706c         cv2.displ
+-000006e0: 6179 5374 6174 7573 4261 7228 5749 4e44  ayStatusBar(WIND
+-000006f0: 4f57 5f4e 414d 452c 2074 6578 742c 206d  OW_NAME, text, m
+-00000700: 7329 0a20 2020 2065 6c73 653a 0a20 2020  s).    else:.   
+-00000710: 2020 2020 204c 4f47 4745 522e 696e 666f       LOGGER.info
+-00000720: 2866 227b 7465 7874 7d22 290a 0a0a 2320  (f"{text}")...# 
+-00000730: 7365 7420 6375 7272 656e 7420 696d 6720  set current img 
+-00000740: 696e 6465 7820 2620 696d 7368 6f77 2069  index & imshow i
+-00000750: 6d61 6765 0a64 6566 2073 6574 5f69 6d67  mage.def set_img
+-00000760: 5f69 6e64 6578 2878 293a 0a20 2020 2067  _index(x):.    g
+-00000770: 6c6f 6261 6c20 494d 475f 4944 585f 4355  lobal IMG_IDX_CU
+-00000780: 5252 454e 542c 2049 4d47 5f43 5552 5245  RRENT, IMG_CURRE
+-00000790: 4e54 2c20 5749 4e44 4f57 5f4e 414d 452c  NT, WINDOW_NAME,
+-000007a0: 2049 4d41 4745 5f50 4154 485f 4c49 5354   IMAGE_PATH_LIST
+-000007b0: 2c20 5752 4f4e 475f 494d 475f 5345 540a  , WRONG_IMG_SET.
+-000007c0: 0a20 2020 2049 4d47 5f49 4458 5f43 5552  .    IMG_IDX_CUR
+-000007d0: 5245 4e54 203d 2078 0a20 2020 2069 6d67  RENT = x.    img
+-000007e0: 5f70 6174 6820 3d20 494d 4147 455f 5041  _path = IMAGE_PA
+-000007f0: 5448 5f4c 4953 545b 494d 475f 4944 585f  TH_LIST[IMG_IDX_
+-00000800: 4355 5252 454e 545d 0a20 2020 200a 2020  CURRENT].    .  
+-00000810: 2020 2320 6f70 656e 6376 2072 6561 6420    # opencv read 
+-00000820: 696d 670a 2020 2020 494d 475f 4355 5252  img.    IMG_CURR
+-00000830: 454e 5420 3d20 6376 322e 696d 7265 6164  ENT = cv2.imread
+-00000840: 2869 6d67 5f70 6174 6829 0a20 2020 2069  (img_path).    i
+-00000850: 6620 494d 475f 4355 5252 454e 5420 6973  f IMG_CURRENT is
+-00000860: 204e 6f6e 653a 0a20 2020 2020 2020 2049   None:.        I
+-00000870: 4d47 5f43 5552 5245 4e54 203d 206e 702e  MG_CURRENT = np.
+-00000880: 6f6e 6573 2828 3130 3030 2c20 3130 3030  ones((1000, 1000
+-00000890: 2c20 3329 2920 2023 2063 7265 6174 6520  , 3))  # create 
+-000008a0: 6120 656d 7074 7920 696d 670a 2020 2020  a empty img.    
+-000008b0: 2020 2020 2320 7368 6f77 206e 6f74 6966      # show notif
+-000008c0: 6963 6174 696f 6e0a 2020 2020 2020 2020  ication.        
+-000008d0: 6376 322e 7075 7454 6578 7428 494d 475f  cv2.putText(IMG_
+-000008e0: 4355 5252 454e 542c 2022 5772 6f6e 6720  CURRENT, "Wrong 
+-000008f0: 696d 6167 6520 666f 726d 6174 2120 4974  image format! It
+-00000900: 2077 696c 6c20 6465 6c65 7465 2061 6674   will delete aft
+-00000910: 6572 2070 7265 7373 696e 6720 4553 432e  er pressing ESC.
+-00000920: 222c 200a 2020 2020 2020 2020 2020 2020  ", .            
+-00000930: 2020 2020 2020 2020 2831 302c 2049 4d47          (10, IMG
+-00000940: 5f43 5552 5245 4e54 2e73 6861 7065 5b30  _CURRENT.shape[0
+-00000950: 5d2f 2f32 292c 2063 7632 2e46 4f4e 545f  ]//2), cv2.FONT_
+-00000960: 4845 5253 4845 595f 5349 4d50 4c45 582c  HERSHEY_SIMPLEX,
+-00000970: 200a 2020 2020 2020 2020 2020 2020 2020   .              
+-00000980: 2020 2020 2020 312c 2028 302c 302c 3029        1, (0,0,0)
+-00000990: 2c20 7468 6963 6b6e 6573 733d 322c 206c  , thickness=2, l
+-000009a0: 696e 6554 7970 653d 6376 322e 4c49 4e45  ineType=cv2.LINE
+-000009b0: 5f41 4129 0a20 2020 2020 2020 2023 2073  _AA).        # s
+-000009c0: 6176 6520 7772 6f6e 6720 696d 6167 6573  ave wrong images
+-000009d0: 2070 6174 682c 2064 656c 6574 6520 616c   path, delete al
+-000009e0: 6c20 7468 6573 6520 696d 6167 6520 6174  l these image at
+-000009f0: 2074 6865 2065 6e64 206f 6620 7468 6520   the end of the 
+-00000a00: 7072 6f67 7261 6d0a 2020 2020 2020 2020  program.        
+-00000a10: 5752 4f4e 475f 494d 475f 5345 542e 6164  WRONG_IMG_SET.ad
+-00000a20: 6428 696d 675f 7061 7468 290a 0a0a 0a23  d(img_path)....#
+-00000a30: 206d 6f75 7365 2063 616c 6c62 6163 6b20   mouse callback 
+-00000a40: 6675 6e63 7469 6f6e 0a64 6566 206d 6f75  function.def mou
+-00000a50: 7365 5f6c 6973 7465 6e65 7228 6576 656e  se_listener(even
+-00000a60: 742c 2078 2c20 792c 2066 6c61 6773 2c20  t, x, y, flags, 
+-00000a70: 7061 7261 6d29 3a0a 2020 2020 676c 6f62  param):.    glob
+-00000a80: 616c 204d 4f55 5345 5f58 2c20 4d4f 5553  al MOUSE_X, MOUS
+-00000a90: 455f 592c 2043 4c41 5353 4946 595f 4d4f  E_Y, CLASSIFY_MO
+-00000aa0: 4445 0a0a 2020 2020 2320 6d61 726b 206d  DE..    # mark m
+-00000ab0: 6f64 650a 2020 2020 6966 2043 4c41 5353  ode.    if CLASS
+-00000ac0: 4946 595f 4d4f 4445 3a0a 2020 2020 2020  IFY_MODE:.      
+-00000ad0: 2020 6966 2065 7665 6e74 203d 3d20 6376    if event == cv
+-00000ae0: 322e 4556 454e 545f 4d4f 5553 454d 4f56  2.EVENT_MOUSEMOV
+-00000af0: 453a 0a20 2020 2020 2020 2020 2020 204d  E:.            M
+-00000b00: 4f55 5345 5f58 203d 2078 0a20 2020 2020  OUSE_X = x.     
+-00000b10: 2020 2020 2020 204d 4f55 5345 5f59 203d         MOUSE_Y =
+-00000b20: 2079 0a0a 0a0a 6465 6620 636d 7028 732c   y....def cmp(s,
+-00000b30: 2072 3d72 652e 636f 6d70 696c 6528 2728   r=re.compile('(
+-00000b40: 5b30 2d39 5d2b 2927 2929 3a0a 2020 2020  [0-9]+)')):.    
+-00000b50: 2320 6b65 7920 666f 7220 736f 7274 0a20  # key for sort. 
+-00000b60: 2020 2072 6574 7572 6e20 5b69 6e74 2878     return [int(x
+-00000b70: 2920 6966 2078 2e69 7364 6967 6974 2829  ) if x.isdigit()
+-00000b80: 2065 6c73 6520 782e 6c6f 7765 7228 2920   else x.lower() 
+-00000b90: 666f 7220 7820 696e 2072 2e73 706c 6974  for x in r.split
+-00000ba0: 2873 295d 0a0a 0a64 6566 206f 7065 6e63  (s)]...def openc
+-00000bb0: 765f 7769 6e64 6f77 5f69 6e69 7428 293a  v_window_init():
+-00000bc0: 0a20 2020 2023 2069 6e69 7420 7769 6e64  .    # init wind
+-00000bd0: 6f77 2077 6974 6820 6f76 6572 6c61 700a  ow with overlap.
+-00000be0: 2020 2020 7472 793a 0a20 2020 2020 2020      try:.       
+-00000bf0: 2063 7632 2e6e 616d 6564 5769 6e64 6f77   cv2.namedWindow
+-00000c00: 2827 5465 7374 2729 2020 200a 2020 2020  ('Test')   .    
+-00000c10: 2020 2020 6376 322e 6469 7370 6c61 794f      cv2.displayO
+-00000c20: 7665 726c 6179 2827 5465 7374 272c 2027  verlay('Test', '
+-00000c30: 5465 7374 206f 7665 726c 6170 272c 2031  Test overlap', 1
+-00000c40: 3029 2020 0a20 2020 2020 2020 2063 7632  0)  .        cv2
+-00000c50: 2e64 6973 706c 6179 5374 6174 7573 4261  .displayStatusBa
+-00000c60: 7228 2754 6573 7427 2c20 2754 6573 7420  r('Test', 'Test 
+-00000c70: 7374 6174 7573 2062 6172 272c 2031 3029  status bar', 10)
+-00000c80: 0a20 2020 2065 7863 6570 7420 6376 322e  .    except cv2.
+-00000c90: 6572 726f 723a 0a20 2020 2020 2020 2070  error:.        p
+-00000ca0: 7269 6e74 2827 2d3e 2050 6c65 6173 6520  rint('-> Please 
+-00000cb0: 6967 6e6f 7265 2074 6869 7320 6572 726f  ignore this erro
+-00000cc0: 7220 6d65 7373 6167 655c 6e27 290a 2020  r message\n').  
+-00000cd0: 2020 6376 322e 6465 7374 726f 7941 6c6c    cv2.destroyAll
+-00000ce0: 5769 6e64 6f77 7328 2920 2020 0a0a 0a0a  Windows()   ....
+-00000cf0: 0a23 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  .# -------------
+-00000d00: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000d10: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000d20: 2d2d 2d2d 2d2d 0a23 2020 2063 6c61 7373  ------.#   class
+-00000d30: 6966 7920 0a23 2d2d 2d2d 2d2d 2d2d 2d2d  ify .#----------
+-00000d40: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000d50: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000d60: 2d2d 2d2d 2d2d 2d2d 0a64 6566 2063 6c61  --------.def cla
+-00000d70: 7373 6966 7928 2069 6d67 5f64 6972 2c20  ssify( img_dir, 
+-00000d80: 0a20 2020 2020 2020 2020 2020 2020 6c61  .             la
+-00000d90: 6265 6c5f 6469 722c 0a20 2020 2020 2020  bel_dir,.       
+-00000da0: 2020 2020 2020 6d76 5f64 6972 2c0a 2020        mv_dir,.  
+-00000db0: 2020 2020 2020 2020 2020 2077 726f 6e67             wrong
+-00000dc0: 5f69 6d67 5f64 6972 2c0a 2020 2020 2020  _img_dir,.      
+-00000dd0: 2020 2020 2020 2063 6c61 7373 6573 2c0a         classes,.
+-00000de0: 2020 2020 2020 2020 2020 2020 2077 696e               win
+-00000df0: 646f 775f 7769 6474 683d 3830 302c 0a20  dow_width=800,. 
+-00000e00: 2020 2020 2020 2020 2020 2020 7769 6e64              wind
+-00000e10: 6f77 5f68 6569 6768 743d 3630 302c 0a20  ow_height=600,. 
+-00000e20: 2020 2020 2020 2020 2020 2020 293a 0a20              ):. 
+-00000e30: 2020 200a 2020 2020 2320 676c 6f62 616c     .    # global
+-00000e40: 2076 6172 730a 2020 2020 676c 6f62 616c   vars.    global
+-00000e50: 2057 494e 444f 575f 4e41 4d45 2c5c 0a20   WINDOW_NAME,\. 
+-00000e60: 2020 2020 2020 2020 2020 434c 4153 5349            CLASSI
+-00000e70: 4659 5f4d 4f44 452c 2049 4d41 4745 5f43  FY_MODE, IMAGE_C
+-00000e80: 4c41 5353 4553 2c20 5c0a 2020 2020 2020  LASSES, \.      
+-00000e90: 2020 2020 2049 4d41 4745 5f50 4154 485f       IMAGE_PATH_
+-00000ea0: 4c49 5354 2c20 494d 475f 4944 585f 4355  LIST, IMG_IDX_CU
+-00000eb0: 5252 454e 542c 2049 4d47 5f49 4458 5f4c  RRENT, IMG_IDX_L
+-00000ec0: 4153 542c 2049 4d47 5f43 5552 5245 4e54  AST, IMG_CURRENT
+-00000ed0: 2c20 5752 4f4e 475f 494d 475f 5345 542c  , WRONG_IMG_SET,
+-00000ee0: 5c0a 2020 2020 2020 2020 2020 2043 4c41  \.           CLA
+-00000ef0: 5353 5f4c 4953 542c 2043 4c53 5f49 4458  SS_LIST, CLS_IDX
+-00000f00: 5f43 5552 5245 4e54 2c20 5c0a 2020 2020  _CURRENT, \.    
+-00000f10: 2020 2020 2020 2054 5241 434b 4241 525f         TRACKBAR_
+-00000f20: 494d 472c 5c0a 2020 2020 2020 2020 2020  IMG,\.          
+-00000f30: 204d 4f55 5345 5f58 2c20 4d4f 5553 455f   MOUSE_X, MOUSE_
+-00000f40: 592c 5c0a 2020 2020 2020 2020 2020 2049  Y,\.           I
+-00000f50: 4d47 5f43 4f55 4e54 2c20 434c 535f 434f  MG_COUNT, CLS_CO
+-00000f60: 554e 540a 2020 2020 0a0a 2020 2020 2320  UNT.    ..    # 
+-00000f70: 696e 7075 7420 696d 6720 6469 7220 2620  input img dir & 
+-00000f80: 6c61 6265 6c20 6469 720a 2020 2020 494e  label dir.    IN
+-00000f90: 5055 545f 494d 475f 4449 5220 203d 2069  PUT_IMG_DIR  = i
+-00000fa0: 6d67 5f64 6972 0a20 2020 204c 4f47 4745  mg_dir.    LOGGE
+-00000fb0: 522e 696e 666f 2866 2249 4d47 2020 2044  R.info(f"IMG   D
+-00000fc0: 4952 3a5c 747b 5061 7468 2849 4e50 5554  IR:\t{Path(INPUT
+-00000fd0: 5f49 4d47 5f44 4952 292e 7265 736f 6c76  _IMG_DIR).resolv
+-00000fe0: 6528 297d 2229 0a0a 2020 2020 232d 2d2d  e()}")..    #---
+-00000ff0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001000: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001010: 2d2d 2d2d 2d2d 2020 200a 2020 2020 5749  ------   .    WI
+-00001020: 4e44 4f57 5f49 4e49 545f 5749 4454 4820  NDOW_INIT_WIDTH 
+-00001030: 3d20 7769 6e64 6f77 5f77 6964 7468 2020  = window_width  
+-00001040: 2020 2320 696e 6974 6961 6c20 7769 6e64    # initial wind
+-00001050: 6f77 2077 6964 7468 0a20 2020 2057 494e  ow width.    WIN
+-00001060: 444f 575f 494e 4954 5f48 4549 4748 5420  DOW_INIT_HEIGHT 
+-00001070: 3d20 7769 6e64 6f77 5f68 6569 6768 7420  = window_height 
+-00001080: 2020 2023 2069 6e69 7469 616c 2077 696e     # initial win
+-00001090: 646f 7720 6865 6967 6874 0a0a 2020 2020  dow height..    
+-000010a0: 2320 6d61 726b 206d 6f64 6520 0a20 2020  # mark mode .   
+-000010b0: 2043 4c41 5353 4946 595f 4d4f 4445 203d   CLASSIFY_MODE =
+-000010c0: 2046 616c 7365 0a0a 2020 2020 2320 7772   False..    # wr
+-000010d0: 6f6e 6720 6469 7220 2620 6d6f 7665 2064  ong dir & move d
+-000010e0: 6972 0a20 2020 2057 524f 4e47 5f49 4d47  ir.    WRONG_IMG
+-000010f0: 5f44 4952 203d 2077 726f 6e67 5f69 6d67  _DIR = wrong_img
+-00001100: 5f64 6972 0a20 2020 204d 565f 4449 5220  _dir.    MV_DIR 
+-00001110: 3d20 6d76 5f64 6972 0a0a 0a20 2020 2023  = mv_dir...    #
+-00001120: 206f 6e6c 7920 7368 6f77 206f 6e65 2073   only show one s
+-00001130: 7065 6369 6669 6320 636c 6173 730a 2020  pecific class.  
+-00001140: 2020 5349 4e47 4c45 5f43 4c53 203d 204e    SINGLE_CLS = N
+-00001150: 6f6e 650a 0a20 2020 2023 206d 696e 206c  one..    # min l
+-00001160: 696e 6520 7769 6474 680a 2020 2020 4d49  ine width.    MI
+-00001170: 4e5f 4c49 4e45 5f57 4944 5448 203d 2046  N_LINE_WIDTH = F
+-00001180: 616c 7365 0a0a 2020 2020 2320 6262 6f78  alse..    # bbox
+-00001190: 6573 2062 6c69 6e6b 0a20 2020 2042 4c49  es blink.    BLI
+-000011a0: 4e4b 5f4f 525f 4e4f 5420 3d20 4661 6c73  NK_OR_NOT = Fals
+-000011b0: 650a 0a20 2020 2023 206c 696e 6520 7468  e..    # line th
+-000011c0: 6963 6b6e 6573 7320 2026 2020 6c69 6e65  ickness  &  line
+-000011d0: 2074 6869 636b 6573 2061 646a 7573 740a   thickes adjust.
+-000011e0: 2020 2020 4c49 4e45 5f54 4849 434b 4e45      LINE_THICKNE
+-000011f0: 5353 203d 2031 2020 2020 2020 2020 2020  SS = 1          
+-00001200: 2020 0a20 2020 204c 494e 455f 5448 4943    .    LINE_THIC
+-00001210: 4b4e 4553 535f 4144 4a55 5354 203d 2046  KNESS_ADJUST = F
+-00001220: 616c 7365 2020 2023 206c 696e 6520 7468  alse   # line th
+-00001230: 6963 6b6e 6573 7320 6164 6a75 7374 2066  ickness adjust f
+-00001240: 6c61 670a 0a20 2020 2023 202d 2d2d 2d2d  lag..    # -----
+-00001250: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001260: 2d0a 2020 2020 2320 434c 4153 535f 4c49  -.    # CLASS_LI
+-00001270: 5354 0a20 2020 2023 202d 2d2d 2d2d 2d2d  ST.    # -------
+-00001280: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a  ---------------.
+-00001290: 2020 2020 6966 206c 656e 2863 6c61 7373      if len(class
+-000012a0: 6573 2920 3d3d 2030 3a20 2020 2320 6e6f  es) == 0:   # no
+-000012b0: 2063 6c61 7373 6573 0a20 2020 2020 2020   classes.       
+-000012c0: 204c 4f47 4745 522e 6572 726f 7228 2245   LOGGER.error("E
+-000012d0: 7272 6f72 3a20 3c2d 2d69 6e73 7065 6374  rror: <--inspect
+-000012e0: 3e20 7368 6f75 6c64 2077 6f72 6b20 7769  > should work wi
+-000012f0: 7468 203c 2d2d 636c 6173 7365 733e 2120  th <--classes>! 
+-00001300: 4558 4954 2122 290a 2020 2020 2020 2020  EXIT!").        
+-00001310: 6578 6974 282d 3129 0a20 2020 2065 6c69  exit(-1).    eli
+-00001320: 6620 6c65 6e28 636c 6173 7365 7329 203d  f len(classes) =
+-00001330: 3d20 3120 616e 6420 636c 6173 7365 735b  = 1 and classes[
+-00001340: 305d 2e65 6e64 7377 6974 6828 272e 7478  0].endswith('.tx
+-00001350: 7427 293a 2020 2020 2320 7478 7420 696e  t'):    # txt in
+-00001360: 7075 740a 2020 2020 2020 2020 7769 7468  put.        with
+-00001370: 206f 7065 6e28 636c 6173 7365 735b 305d   open(classes[0]
+-00001380: 2920 6173 2066 3a0a 2020 2020 2020 2020  ) as f:.        
+-00001390: 2020 2020 666f 7220 6c69 6e65 2069 6e20      for line in 
+-000013a0: 663a 0a20 2020 2020 2020 2020 2020 2020  f:.             
+-000013b0: 2020 2043 4c41 5353 5f4c 4953 542e 6170     CLASS_LIST.ap
+-000013c0: 7065 6e64 286c 696e 652e 7374 7269 7028  pend(line.strip(
+-000013d0: 2929 0a20 2020 2065 6c73 653a 2023 2061  )).    else: # a
+-000013e0: 7267 7320 636c 6173 7365 7320 0a20 2020  rgs classes .   
+-000013f0: 2020 2020 2043 4c41 5353 5f4c 4953 5420       CLASS_LIST 
+-00001400: 3d20 636c 6173 7365 730a 0a20 2020 2023  = classes..    #
+-00001410: 2072 6570 6561 7420 636c 6173 7320 6368   repeat class ch
+-00001420: 6563 6b20 0a20 2020 2069 6620 6e6f 7420  eck .    if not 
+-00001430: 286c 656e 2843 4c41 5353 5f4c 4953 5429  (len(CLASS_LIST)
+-00001440: 203d 3d20 6c65 6e28 7365 7428 434c 4153   == len(set(CLAS
+-00001450: 535f 4c49 5354 2929 293a 0a20 2020 2020  S_LIST))):.     
+-00001460: 2020 204c 4f47 4745 522e 6572 726f 7228     LOGGER.error(
+-00001470: 2252 6570 6561 7420 636c 6173 7320 6e61  "Repeat class na
+-00001480: 6d65 2121 2122 290a 2020 2020 2020 2020  me!!!").        
+-00001490: 6578 6974 282d 3129 0a0a 2020 2020 2320  exit(-1)..    # 
+-000014a0: 6f70 656e 6376 2077 696e 646f 7773 2069  opencv windows i
+-000014b0: 6e69 740a 2020 2020 6f70 656e 6376 5f77  nit.    opencv_w
+-000014c0: 696e 646f 775f 696e 6974 2829 0a0a 2020  indow_init()..  
+-000014d0: 2020 2320 7265 6164 2061 6c6c 2069 6e70    # read all inp
+-000014e0: 7574 2069 6d61 6765 730a 2020 2020 4c4f  ut images.    LO
+-000014f0: 4747 4552 2e69 6e66 6f28 6622 4c6f 6164  GGER.info(f"Load
+-00001500: 696e 6720 616c 6c20 696d 6167 6573 2e2e  ing all images..
+-00001510: 2e22 290a 2020 2020 494d 4147 455f 5041  .").    IMAGE_PA
+-00001520: 5448 5f4c 4953 5420 3d20 736f 7274 6564  TH_LIST = sorted
+-00001530: 285b 7374 7228 7829 2066 6f72 2078 2069  ([str(x) for x i
+-00001540: 6e20 5061 7468 2849 4e50 5554 5f49 4d47  n Path(INPUT_IMG
+-00001550: 5f44 4952 292e 6974 6572 6469 7228 2920  _DIR).iterdir() 
+-00001560: 6966 2078 2e73 7566 6669 7820 696e 2049  if x.suffix in I
+-00001570: 4d47 5f46 4f52 4d41 545d 2c20 6b65 793d  MG_FORMAT], key=
+-00001580: 636d 7029 0a0a 2020 2020 2320 696d 6167  cmp)..    # imag
+-00001590: 6520 636c 6173 7320 6a73 6f6e 2066 696c  e class json fil
+-000015a0: 6520 696e 6974 0a20 2020 2049 4d41 4745  e init.    IMAGE
+-000015b0: 5f43 4c41 5353 4553 5f4a 534f 4e5f 5041  _CLASSES_JSON_PA
+-000015c0: 5448 203d 2050 6174 6828 494e 5055 545f  TH = Path(INPUT_
+-000015d0: 494d 475f 4449 5229 2e77 6974 685f 6e61  IMG_DIR).with_na
+-000015e0: 6d65 2827 636c 6173 7369 6679 2e6a 736f  me('classify.jso
+-000015f0: 6e27 290a 0a20 2020 2023 206c 6f61 6420  n')..    # load 
+-00001600: 6a73 6f6e 2066 6f72 2063 6c61 7373 6966  json for classif
+-00001610: 7920 7461 736b 0a20 2020 2069 6620 2849  y task.    if (I
+-00001620: 4d41 4745 5f43 4c41 5353 4553 5f4a 534f  MAGE_CLASSES_JSO
+-00001630: 4e5f 5041 5448 292e 6578 6973 7473 2829  N_PATH).exists()
+-00001640: 3a0a 2020 2020 2020 2020 494d 4147 455f  :.        IMAGE_
+-00001650: 434c 4153 5345 5320 3d20 6a73 6f6e 2e6c  CLASSES = json.l
+-00001660: 6f61 6428 6f70 656e 2849 4d41 4745 5f43  oad(open(IMAGE_C
+-00001670: 4c41 5353 4553 5f4a 534f 4e5f 5041 5448  LASSES_JSON_PATH
+-00001680: 2c20 656e 636f 6469 6e67 3d22 7574 662d  , encoding="utf-
+-00001690: 3822 2929 0a0a 2020 2020 2320 696d 6720  8"))..    # img 
+-000016a0: 2620 636c 6173 7320 636f 756e 740a 2020  & class count.  
+-000016b0: 2020 494d 475f 434f 554e 5420 3d20 6c65    IMG_COUNT = le
+-000016c0: 6e28 494d 4147 455f 5041 5448 5f4c 4953  n(IMAGE_PATH_LIS
+-000016d0: 5429 202d 2031 2020 0a20 2020 2043 4c53  T) - 1  .    CLS
+-000016e0: 5f43 4f55 4e54 203d 206c 656e 2843 4c41  _COUNT = len(CLA
+-000016f0: 5353 5f4c 4953 5429 202d 2031 0a0a 0a20  SS_LIST) - 1... 
+-00001700: 2020 2023 2063 7265 6174 6520 7769 6e64     # create wind
+-00001710: 6f77 200a 2020 2020 6376 322e 6e61 6d65  ow .    cv2.name
+-00001720: 6457 696e 646f 7728 5749 4e44 4f57 5f4e  dWindow(WINDOW_N
+-00001730: 414d 452c 2063 7632 2e57 494e 444f 575f  AME, cv2.WINDOW_
+-00001740: 4e4f 524d 414c 2920 2023 2063 7632 2e57  NORMAL)  # cv2.W
+-00001750: 494e 444f 575f 4652 4545 5241 5449 4f20  INDOW_FREERATIO 
+-00001760: 2020 6376 322e 5749 4e44 4f57 5f4b 4545    cv2.WINDOW_KEE
+-00001770: 5052 4154 494f 2c20 5749 4e44 4f57 5f47  PRATIO, WINDOW_G
+-00001780: 5549 5f4e 4f52 4d41 4c2c 2057 494e 444f  UI_NORMAL, WINDO
+-00001790: 575f 4755 495f 4558 5041 4e44 4544 0a20  W_GUI_EXPANDED. 
+-000017a0: 2020 2063 7632 2e72 6573 697a 6557 696e     cv2.resizeWin
+-000017b0: 646f 7728 5749 4e44 4f57 5f4e 414d 452c  dow(WINDOW_NAME,
+-000017c0: 2057 494e 444f 575f 494e 4954 5f57 4944   WINDOW_INIT_WID
+-000017d0: 5448 2c20 5749 4e44 4f57 5f49 4e49 545f  TH, WINDOW_INIT_
+-000017e0: 4845 4947 4854 290a 0a20 2020 2023 206d  HEIGHT)..    # m
+-000017f0: 6f75 7365 206c 6973 7465 6e20 6361 6c6c  ouse listen call
+-00001800: 6261 636b 0a20 2020 2063 7632 2e73 6574  back.    cv2.set
+-00001810: 4d6f 7573 6543 616c 6c62 6163 6b28 5749  MouseCallback(WI
+-00001820: 4e44 4f57 5f4e 414d 452c 206d 6f75 7365  NDOW_NAME, mouse
+-00001830: 5f6c 6973 7465 6e65 7229 0a0a 2020 2020  _listener)..    
+-00001840: 2320 696d 6167 6573 2074 7261 636b 6261  # images trackba
+-00001850: 720a 2020 2020 6966 2049 4d47 5f43 4f55  r.    if IMG_COU
+-00001860: 4e54 2021 3d20 303a 0a20 2020 2020 2020  NT != 0:.       
+-00001870: 2063 7632 2e63 7265 6174 6554 7261 636b   cv2.createTrack
+-00001880: 6261 7228 5452 4143 4b42 4152 5f49 4d47  bar(TRACKBAR_IMG
+-00001890: 2c20 5749 4e44 4f57 5f4e 414d 452c 2030  , WINDOW_NAME, 0
+-000018a0: 2c20 494d 475f 434f 554e 542c 2073 6574  , IMG_COUNT, set
+-000018b0: 5f69 6d67 5f69 6e64 6578 2920 2020 0a20  _img_index)   . 
+-000018c0: 0a0a 2020 2020 2320 696e 6974 6961 6c69  ..    # initiali
+-000018d0: 7a65 2074 6865 2069 6d67 2069 6e64 6578  ze the img index
+-000018e0: 0a20 2020 2073 6574 5f69 6d67 5f69 6e64  .    set_img_ind
+-000018f0: 6578 2830 290a 0a20 2020 2023 2063 6f6c  ex(0)..    # col
+-00001900: 6f72 7320 7061 6c65 7474 650a 2020 2020  ors palette.    
+-00001910: 434f 4c4f 525f 5041 4c45 5454 4520 3d20  COLOR_PALETTE = 
+-00001920: 436f 6c6f 7273 2873 6875 6666 6c65 3d46  Colors(shuffle=F
+-00001930: 616c 7365 2920 200a 2020 2020 4c4f 4747  alse)  .    LOGG
+-00001940: 4552 2e69 6e66 6f28 6622 7275 6e6e 696e  ER.info(f"runnin
+-00001950: 672e 2e2e 2229 0a0a 2020 2020 2320 6c6f  g...")..    # lo
+-00001960: 6f70 0a20 2020 2077 6869 6c65 2054 7275  op.    while Tru
+-00001970: 653a 0a20 2020 2020 2020 2063 6f6c 6f72  e:.        color
+-00001980: 203d 2043 4f4c 4f52 5f50 414c 4554 5445   = COLOR_PALETTE
+-00001990: 2869 6e74 2843 4c53 5f49 4458 5f43 5552  (int(CLS_IDX_CUR
+-000019a0: 5245 4e54 292c 2062 6772 3d46 616c 7365  RENT), bgr=False
+-000019b0: 2920 2023 2063 6f6c 6f72 2066 6f72 2065  )  # color for e
+-000019c0: 7665 7279 2063 6c61 7373 0a20 2020 2020  very class.     
+-000019d0: 2020 2074 6d70 5f69 6d67 203d 2049 4d47     tmp_img = IMG
+-000019e0: 5f43 5552 5245 4e54 2e63 6f70 7928 2920  _CURRENT.copy() 
+-000019f0: 2020 2023 2063 6c6f 6e65 2074 6865 2069     # clone the i
+-00001a00: 6d67 2020 200a 2020 2020 2020 2020 696d  mg   .        im
+-00001a10: 675f 6865 6967 6874 5f63 7572 7265 6e74  g_height_current
+-00001a20: 2c20 696d 675f 7769 6474 685f 6375 7272  , img_width_curr
+-00001a30: 656e 7420 3d20 746d 705f 696d 672e 7368  ent = tmp_img.sh
+-00001a40: 6170 655b 3a32 5d20 2020 2320 6865 6967  ape[:2]   # heig
+-00001a50: 6874 2c20 7769 6474 680a 0a20 2020 2020  ht, width..     
+-00001a60: 2020 2023 2063 616c 6375 6c61 7465 206c     # calculate l
+-00001a70: 696e 652d 7468 6963 6b6e 6573 730a 2020  ine-thickness.  
+-00001a80: 2020 2020 2020 6966 204d 494e 5f4c 494e        if MIN_LIN
+-00001a90: 455f 5749 4454 483a 0a20 2020 2020 2020  E_WIDTH:.       
+-00001aa0: 2020 2020 204c 494e 455f 5448 4943 4b4e       LINE_THICKN
+-00001ab0: 4553 5320 3d20 310a 2020 2020 2020 2020  ESS = 1.        
+-00001ac0: 656c 7365 3a0a 2020 2020 2020 2020 2020  else:.          
+-00001ad0: 2020 4c49 4e45 5f54 4849 434b 4e45 5353    LINE_THICKNESS
+-00001ae0: 203d 206d 6178 2872 6f75 6e64 2873 756d   = max(round(sum
+-00001af0: 2874 6d70 5f69 6d67 2e73 6861 7065 2920  (tmp_img.shape) 
+-00001b00: 2f20 3220 2a20 302e 3030 3329 2c20 3129  / 2 * 0.003), 1)
+-00001b10: 2069 6620 6e6f 7420 4c49 4e45 5f54 4849   if not LINE_THI
+-00001b20: 434b 4e45 5353 5f41 444a 5553 5420 656c  CKNESS_ADJUST el
+-00001b30: 7365 204c 494e 455f 5448 4943 4b4e 4553  se LINE_THICKNES
+-00001b40: 5320 2020 2020 2023 206c 696e 6520 7769  S      # line wi
+-00001b50: 6474 680a 0a20 2020 2020 2020 2023 2063  dth..        # c
+-00001b60: 7572 7265 6e74 2063 6c61 7373 2069 6e64  urrent class ind
+-00001b70: 6578 2061 6e64 2069 7427 7320 636c 6173  ex and it's clas
+-00001b80: 7320 6e61 6d65 0a20 2020 2020 2020 2023  s name.        #
+-00001b90: 2063 6c61 7373 5f6e 616d 6520 3d20 434c   class_name = CL
+-00001ba0: 4153 535f 4c49 5354 5b43 4c53 5f49 4458  ASS_LIST[CLS_IDX
+-00001bb0: 5f43 5552 5245 4e54 5d0a 2020 2020 2020  _CURRENT].      
+-00001bc0: 2020 0a20 2020 2020 2020 2023 2063 7572    .        # cur
+-00001bd0: 7265 6e74 2069 6d61 6765 2070 6174 682c  rent image path,
+-00001be0: 2072 656c 6174 6976 6520 7061 7468 3a20   relative path: 
+-00001bf0: 696d 672f 696d 675f 312e 6a70 670a 2020  img/img_1.jpg.  
+-00001c00: 2020 2020 2020 696d 675f 7061 7468 203d        img_path =
+-00001c10: 2049 4d41 4745 5f50 4154 485f 4c49 5354   IMAGE_PATH_LIST
+-00001c20: 5b49 4d47 5f49 4458 5f43 5552 5245 4e54  [IMG_IDX_CURRENT
+-00001c30: 5d20 2020 0a20 2020 2020 2020 200a 2020  ]   .        .  
+-00001c40: 2020 2020 2020 2320 7374 6174 7573 6261        # statusba
+-00001c50: 7220 696e 666f 0a20 2020 2020 2020 2073  r info.        s
+-00001c60: 7461 7475 735f 6d73 6720 3d20 2866 2243  tatus_msg = (f"C
+-00001c70: 5552 534f 523a 2028 7b4d 4f55 5345 5f58  URSOR: ({MOUSE_X
+-00001c80: 7d2c 207b 4d4f 5553 455f 597d 2922 202b  }, {MOUSE_Y})" +
+-00001c90: 2022 5c74 2220 2a20 3820 2b20 0a20 2020   "\t" * 8 + .   
+-00001ca0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001cb0: 2020 2066 2243 4c41 5353 3a20 7b43 4c41     f"CLASS: {CLA
+-00001cc0: 5353 5f4c 4953 547d 2220 2b20 225c 7422  SS_LIST}" + "\t"
+-00001cd0: 202a 2038 202b 0a20 2020 2020 2020 2020   * 8 +.         
+-00001ce0: 2020 2020 2020 2020 2020 2020 2066 2249               f"I
+-00001cf0: 4d47 2052 4553 4f4c 5554 494f 4e3a 2028  MG RESOLUTION: (
+-00001d00: 7b74 6d70 5f69 6d67 2e73 6861 7065 5b30  {tmp_img.shape[0
+-00001d10: 5d7d 2c20 7b74 6d70 5f69 6d67 2e73 6861  ]}, {tmp_img.sha
+-00001d20: 7065 5b31 5d7d 2922 202b 2022 5c74 2220  pe[1]})" + "\t" 
+-00001d30: 2a20 3520 2b0a 2020 2020 2020 2020 2020  * 5 +.          
+-00001d40: 2020 2020 2020 2020 2020 2020 6622 494d              f"IM
+-00001d50: 4147 4520 5041 5448 3a20 7b50 6174 6828  AGE PATH: {Path(
+-00001d60: 696d 675f 7061 7468 292e 6e61 6d65 7d22  img_path).name}"
+-00001d70: 2020 2b20 225c 7422 202a 2031 300a 2020    + "\t" * 10.  
+-00001d80: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001d90: 2020 290a 2020 2020 2020 2020 6376 322e    ).        cv2.
+-00001da0: 6469 7370 6c61 7953 7461 7475 7342 6172  displayStatusBar
+-00001db0: 2857 494e 444f 575f 4e41 4d45 2c20 7374  (WINDOW_NAME, st
+-00001dc0: 6174 7573 5f6d 7367 290a 0a20 2020 2020  atus_msg)..     
+-00001dd0: 2020 200a 0a0a 2020 2020 2020 2020 2320     ...        # 
+-00001de0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001df0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 200a 2020  ------------ .  
+-00001e00: 2020 2020 2020 2320 2020 434c 4153 5349        #   CLASSI
+-00001e10: 4659 5f4d 4f44 450a 2020 2020 2020 2020  FY_MODE.        
+-00001e20: 2320 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  # --------------
+-00001e30: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20  --------------. 
+-00001e40: 2020 2020 2020 2023 2069 6620 434c 4153         # if CLAS
+-00001e50: 5349 4659 5f4d 4f44 453a 0a0a 2020 2020  SIFY_MODE:..    
+-00001e60: 2020 2020 2320 6861 7368 6d61 7020 746f      # hashmap to
+-00001e70: 2073 6176 6520 6375 7272 656e 7420 696d   save current im
+-00001e80: 6167 6520 616e 6420 6974 7320 636c 6173  age and its clas
+-00001e90: 7320 7b69 6d61 6765 5f70 6174 683a 2063  s {image_path: c
+-00001ea0: 6c61 7373 7d0a 2020 2020 2020 2020 696d  lass}.        im
+-00001eb0: 675f 636c 7320 3d20 494d 4147 455f 434c  g_cls = IMAGE_CL
+-00001ec0: 4153 5345 532e 6765 7428 696d 675f 7061  ASSES.get(img_pa
+-00001ed0: 7468 290a 0a20 2020 2020 2020 2023 2074  th)..        # t
+-00001ee0: 6578 7420 6174 7472 0a20 2020 2020 2020  ext attr.       
+-00001ef0: 2069 6620 696d 675f 636c 7320 6973 206e   if img_cls is n
+-00001f00: 6f74 204e 6f6e 653a 0a20 2020 2020 2020  ot None:.       
+-00001f10: 2020 2020 2074 7874 5f6d 7367 203d 2043       txt_msg = C
+-00001f20: 4c41 5353 5f4c 4953 545b 696d 675f 636c  LASS_LIST[img_cl
+-00001f30: 735d 2020 2023 2073 7472 2869 6d67 5f63  s]   # str(img_c
+-00001f40: 6c73 290a 2020 2020 2020 2020 2020 2020  ls).            
+-00001f50: 636f 6c6f 725f 203d 2043 4f4c 4f52 5f50  color_ = COLOR_P
+-00001f60: 414c 4554 5445 2869 6e74 2869 6d67 5f63  ALETTE(int(img_c
+-00001f70: 6c73 292c 2062 6772 3d46 616c 7365 2920  ls), bgr=False) 
+-00001f80: 2023 2063 6f6c 6f72 2066 6f72 2065 7665   # color for eve
+-00001f90: 7279 2063 6c61 7373 0a20 2020 2020 2020  ry class.       
+-00001fa0: 2020 2020 2070 6f73 5f20 3d20 2874 6d70       pos_ = (tmp
+-00001fb0: 5f69 6d67 2e73 6861 7065 5b30 5d20 2f2f  _img.shape[0] //
+-00001fc0: 2031 302c 2074 6d70 5f69 6d67 2e73 6861   10, tmp_img.sha
+-00001fd0: 7065 5b31 5d20 2f2f 2035 290a 2020 2020  pe[1] // 5).    
+-00001fe0: 2020 2020 2020 2020 7363 616c 655f 203d          scale_ =
+-00001ff0: 204c 494e 455f 5448 4943 4b4e 4553 5320   LINE_THICKNESS 
+-00002000: 2f20 312e 350a 2020 2020 2020 2020 656c  / 1.5.        el
+-00002010: 7365 3a0a 2020 2020 2020 2020 2020 2020  se:.            
+-00002020: 7478 745f 6d73 6720 3d20 224e 6f74 2063  txt_msg = "Not c
+-00002030: 6c61 7373 6966 7921 220a 2020 2020 2020  lassify!".      
+-00002040: 2020 2020 2020 636f 6c6f 725f 203d 2028        color_ = (
+-00002050: 302c 2030 2c20 3235 3529 0a20 2020 2020  0, 0, 255).     
+-00002060: 2020 2020 2020 2070 6f73 5f20 3d20 2874         pos_ = (t
+-00002070: 6d70 5f69 6d67 2e73 6861 7065 5b30 5d20  mp_img.shape[0] 
+-00002080: 2f2f 2031 302c 2074 6d70 5f69 6d67 2e73  // 10, tmp_img.s
+-00002090: 6861 7065 5b31 5d20 2f2f 2035 290a 2020  hape[1] // 5).  
+-000020a0: 2020 2020 2020 2020 2020 7363 616c 655f            scale_
+-000020b0: 203d 204c 494e 455f 5448 4943 4b4e 4553   = LINE_THICKNES
+-000020c0: 5320 2f20 320a 0a20 2020 2020 2020 2023  S / 2..        #
+-000020d0: 2070 7574 2074 6578 740a 2020 2020 2020   put text.      
+-000020e0: 2020 6376 322e 7075 7454 6578 7428 746d    cv2.putText(tm
+-000020f0: 705f 696d 672c 200a 2020 2020 2020 2020  p_img, .        
+-00002100: 2020 2020 2020 2020 2020 2020 7478 745f              txt_
+-00002110: 6d73 672c 200a 2020 2020 2020 2020 2020  msg, .          
+-00002120: 2020 2020 2020 2020 2020 706f 735f 2c0a            pos_,.
+-00002130: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002140: 2020 2020 6376 322e 464f 4e54 5f48 4552      cv2.FONT_HER
+-00002150: 5348 4559 5f53 494d 504c 4558 2c20 0a20  SHEY_SIMPLEX, . 
+-00002160: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002170: 2020 2073 6361 6c65 5f2c 200a 2020 2020     scale_, .    
+-00002180: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002190: 636f 6c6f 725f 2c20 0a20 2020 2020 2020  color_, .       
+-000021a0: 2020 2020 2020 2020 2020 2020 2074 6869               thi
+-000021b0: 636b 6e65 7373 3d4c 494e 455f 5448 4943  ckness=LINE_THIC
+-000021c0: 4b4e 4553 532c 200a 2020 2020 2020 2020  KNESS, .        
+-000021d0: 2020 2020 2020 2020 2020 2020 6c69 6e65              line
+-000021e0: 5479 7065 3d63 7632 2e4c 494e 455f 4141  Type=cv2.LINE_AA
+-000021f0: 290a 0a0a 2020 2020 2020 2020 2320 6475  )...        # du
+-00002200: 6d70 2074 6f20 6a73 6f6e 2066 696c 650a  mp to json file.
+-00002210: 2020 2020 2020 2020 6a73 6f6e 2e64 756d          json.dum
+-00002220: 7028 494d 4147 455f 434c 4153 5345 532c  p(IMAGE_CLASSES,
+-00002230: 206f 7065 6e28 494d 4147 455f 434c 4153   open(IMAGE_CLAS
+-00002240: 5345 535f 4a53 4f4e 5f50 4154 482c 2027  SES_JSON_PATH, '
+-00002250: 7727 292c 2069 6e64 656e 743d 3429 0a20  w'), indent=4). 
+-00002260: 2020 2020 2020 2023 202d 2d2d 2d2d 2d2d         # -------
+-00002270: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00002280: 2d2d 2d2d 2d0a 0a0a 2020 2020 2020 2020  -----...        
+-00002290: 2320 6375 7272 656e 7420 7368 6f77 0a20  # current show. 
+-000022a0: 2020 2020 2020 2063 7632 2e69 6d73 686f         cv2.imsho
+-000022b0: 7728 5749 4e44 4f57 5f4e 414d 452c 2074  w(WINDOW_NAME, t
+-000022c0: 6d70 5f69 6d67 290a 2020 2020 2020 2020  mp_img).        
+-000022d0: 0a20 2020 2020 2020 2023 202d 2d2d 2d2d  .        # -----
+-000022e0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000022f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00002300: 2d2d 2d2d 0a20 2020 2020 2020 2023 206f  ----.        # o
+-00002310: 7065 6e63 7620 6b65 7920 6c69 7374 656e  pencv key listen
+-00002320: 696e 670a 2020 2020 2020 2020 2320 2d2d  ing.        # --
+-00002330: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00002340: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00002350: 2d2d 2d2d 2d2d 2d0a 2020 2020 2020 2020  -------.        
+-00002360: 2320 6b65 7920 6c69 7374 656e 0a20 2020  # key listen.   
+-00002370: 2020 2020 2070 7265 7373 6564 5f6b 6579       pressed_key
+-00002380: 203d 2063 7632 2e77 6169 744b 6579 2831   = cv2.waitKey(1
+-00002390: 290a 0a20 2020 2020 2020 2023 2068 2f48  )..        # h/H
+-000023a0: 203d 3e20 6865 6c70 200a 2020 2020 2020   => help .      
+-000023b0: 2020 6966 2070 7265 7373 6564 5f6b 6579    if pressed_key
+-000023c0: 2069 6e20 286f 7264 2827 6827 292c 206f   in (ord('h'), o
+-000023d0: 7264 2827 4827 2929 3a0a 2020 2020 2020  rd('H')):.      
+-000023e0: 2020 2020 2020 7465 7874 203d 2028 275b        text = ('[
+-000023f0: 4553 435d 2074 6f20 7175 6974 3b5c 6e27  ESC] to quit;\n'
+-00002400: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00002410: 2020 2020 2027 5b72 5d73 7769 7463 6820       '[r]switch 
+-00002420: 6d6f 6465 3a20 6d61 726b 3f20 7265 6164  mode: mark? read
+-00002430: 3f3b 5c6e 270a 2020 2020 2020 2020 2020  ?;\n'.          
+-00002440: 2020 2020 2020 2020 2020 275b 612f 645d            '[a/d]
+-00002450: 2074 6f20 7377 6974 6368 2049 6d61 6765   to switch Image
+-00002460: 3b5c 6e27 0a20 2020 2020 2020 2020 2020  ;\n'.           
+-00002470: 2020 2020 2020 2020 2027 5b77 2f73 5d20           '[w/s] 
+-00002480: 746f 2073 7769 7463 6820 436c 6173 733b  to switch Class;
+-00002490: 5c6e 270a 2020 2020 2020 2020 2020 2020  \n'.            
+-000024a0: 2020 2020 2020 2020 275b 646f 7562 6c65          '[double
+-000024b0: 2063 6c69 636b 2074 6f20 7365 6c65 6374   click to select
+-000024c0: 5d20 2b20 772f 7320 6361 6e20 6368 616e  ] + w/s can chan
+-000024d0: 6765 2063 6c61 7373 3b5c 6e27 0a20 2020  ge class;\n'.   
+-000024e0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000024f0: 2027 5b2d 2f2b 5d20 746f 2061 646a 7573   '[-/+] to adjus
+-00002500: 7420 6c69 6e65 2d74 6869 636b 6e65 7373  t line-thickness
+-00002510: 3b5c 6e27 0a20 2020 2020 2020 2020 2020  ;\n'.           
+-00002520: 2020 2020 2020 2020 2027 5b6e 5d20 746f           '[n] to
+-00002530: 2068 6964 6520 6c61 6265 6c73 3b5c 6e27   hide labels;\n'
+-00002540: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00002550: 2020 2020 2027 5b62 5d20 746f 2062 6c69       '[b] to bli
+-00002560: 6e6b 2074 6865 2062 626f 7865 7320 696e  nk the bboxes in
+-00002570: 2074 6865 2069 6d67 3b5c 6e27 0a20 2020   the img;\n'.   
+-00002580: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002590: 2027 5b6c 5d20 746f 2073 6875 6666 6c65   '[l] to shuffle
+-000025a0: 2062 626f 7820 636f 6c6f 7273 3b5c 6e27   bbox colors;\n'
+-000025b0: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-000025c0: 2020 2020 2027 5b63 5d20 746f 2074 6f20       '[c] to to 
+-000025d0: 7265 6d6f 7665 2061 6c6c 2062 626f 7865  remove all bboxe
+-000025e0: 733b 5c6e 270a 2020 2020 2020 2020 2020  s;\n'.          
+-000025f0: 2020 2020 2020 2020 2020 290a 0a20 2020            )..   
+-00002600: 2020 2020 2020 2020 2070 7269 6e74 5f69           print_i
+-00002610: 6e66 6f28 7465 7874 2c20 6d73 3d31 3030  nfo(text, ms=100
+-00002620: 302c 2077 6865 7265 3d22 4f76 6572 6c61  0, where="Overla
+-00002630: 7922 290a 0a20 2020 2020 2020 2023 202d  y")..        # -
+-00002640: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00002650: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00002660: 2d2d 2d2d 2d2d 0a20 2020 2020 2020 2023  ------.        #
+-00002670: 2061 2c64 202d 3e20 696d 6167 6573 205b   a,d -> images [
+-00002680: 7072 6576 696f 7573 2c20 6e65 7874 5d0a  previous, next].
+-00002690: 2020 2020 2020 2020 2320 2d2d 2d2d 2d2d          # ------
+-000026a0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000026b0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000026c0: 2d0a 2020 2020 2020 2020 656c 6966 2070  -.        elif p
+-000026d0: 7265 7373 6564 5f6b 6579 2069 6e20 286f  ressed_key in (o
+-000026e0: 7264 2827 6127 292c 206f 7264 2827 4127  rd('a'), ord('A'
+-000026f0: 292c 206f 7264 2827 6427 292c 206f 7264  ), ord('d'), ord
+-00002700: 2827 4427 2929 3a0a 2020 2020 2020 2020  ('D')):.        
+-00002710: 2020 2020 494d 475f 4944 585f 4c41 5354      IMG_IDX_LAST
+-00002720: 203d 2049 4d47 5f49 4458 5f43 5552 5245   = IMG_IDX_CURRE
+-00002730: 4e54 2020 2320 6c61 7374 2069 6d61 6765  NT  # last image
+-00002740: 2069 6e64 6578 0a0a 2020 2020 2020 2020   index..        
+-00002750: 2020 2020 2320 7368 6f77 2070 7265 7669      # show previ
+-00002760: 6f75 7320 696d 6167 650a 2020 2020 2020  ous image.      
+-00002770: 2020 2020 2020 6966 2070 7265 7373 6564        if pressed
+-00002780: 5f6b 6579 2069 6e20 286f 7264 2827 6127  _key in (ord('a'
+-00002790: 292c 206f 7264 2827 4127 2929 3a20 2020  ), ord('A')):   
+-000027a0: 2020 0a20 2020 2020 2020 2020 2020 2020    .             
+-000027b0: 2020 2049 4d47 5f49 4458 5f43 5552 5245     IMG_IDX_CURRE
+-000027c0: 4e54 203d 2030 2069 6620 494d 475f 4944  NT = 0 if IMG_ID
+-000027d0: 585f 4355 5252 454e 5420 2d20 3120 3c20  X_CURRENT - 1 < 
+-000027e0: 3020 656c 7365 2049 4d47 5f49 4458 5f43  0 else IMG_IDX_C
+-000027f0: 5552 5245 4e54 202d 2031 0a0a 2020 2020  URRENT - 1..    
+-00002800: 2020 2020 2020 2020 2320 7368 6f77 206e          # show n
+-00002810: 6578 7420 696d 6167 6520 696e 6465 780a  ext image index.
+-00002820: 2020 2020 2020 2020 2020 2020 656c 6966              elif
+-00002830: 2070 7265 7373 6564 5f6b 6579 2069 6e20   pressed_key in 
+-00002840: 286f 7264 2827 6427 292c 206f 7264 2827  (ord('d'), ord('
+-00002850: 4427 2929 3a0a 2020 2020 2020 2020 2020  D')):.          
+-00002860: 2020 2020 2020 494d 475f 4944 585f 4355        IMG_IDX_CU
+-00002870: 5252 454e 5420 3d20 494d 475f 434f 554e  RRENT = IMG_COUN
+-00002880: 5420 6966 2049 4d47 5f49 4458 5f43 5552  T if IMG_IDX_CUR
+-00002890: 5245 4e54 202b 2031 203e 2049 4d47 5f43  RENT + 1 > IMG_C
+-000028a0: 4f55 4e54 2065 6c73 6520 494d 475f 4944  OUNT else IMG_ID
+-000028b0: 585f 4355 5252 454e 5420 2b20 310a 0a20  X_CURRENT + 1.. 
+-000028c0: 2020 2020 2020 2020 2020 2023 2075 7064             # upd
+-000028d0: 6174 6520 696d 6720 7472 6163 6b62 6172  ate img trackbar
+-000028e0: 200a 2020 2020 2020 2020 2020 2020 6376   .            cv
+-000028f0: 322e 7365 7454 7261 636b 6261 7250 6f73  2.setTrackbarPos
+-00002900: 2854 5241 434b 4241 525f 494d 472c 2057  (TRACKBAR_IMG, W
+-00002910: 494e 444f 575f 4e41 4d45 2c20 494d 475f  INDOW_NAME, IMG_
+-00002920: 4944 585f 4355 5252 454e 5429 0a0a 2020  IDX_CURRENT)..  
+-00002930: 2020 2020 2020 2020 2020 2320 7365 7420            # set 
+-00002940: 7468 6520 6164 6a75 7374 2066 6c61 6720  the adjust flag 
+-00002950: 4661 6c73 650a 2020 2020 2020 2020 2020  False.          
+-00002960: 2020 4c49 4e45 5f54 4849 434b 4e45 5353    LINE_THICKNESS
+-00002970: 5f41 444a 5553 5420 3d20 4661 6c73 650a  _ADJUST = False.
+-00002980: 0a0a 2020 2020 2020 2020 2320 2d2d 2d2d  ..        # ----
+-00002990: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000029a0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000029b0: 2d2d 2d0a 2020 2020 2020 2020 2320 772c  ---.        # w,
+-000029c0: 7320 2d3e 2063 6c61 7373 2020 5b70 7265  s -> class  [pre
+-000029d0: 7669 6f75 732c 206e 6578 745d 0a20 2020  vious, next].   
+-000029e0: 2020 2020 2023 202d 2d2d 2d2d 2d2d 2d2d       # ---------
+-000029f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00002a00: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20  --------------. 
+-00002a10: 2020 2020 2020 2065 6c69 6620 7072 6573         elif pres
+-00002a20: 7365 645f 6b65 7920 696e 2028 6f72 6428  sed_key in (ord(
+-00002a30: 2773 2729 2c20 6f72 6428 2753 2729 2c20  's'), ord('S'), 
+-00002a40: 6f72 6428 2777 2729 2c20 6f72 6428 2757  ord('w'), ord('W
+-00002a50: 2729 293a 0a20 2020 2020 2020 2020 2020  ')):.           
+-00002a60: 200a 2020 2020 2020 2020 2020 2020 6966   .            if
+-00002a70: 2043 4c41 5353 4946 595f 4d4f 4445 3a0a   CLASSIFY_MODE:.
+-00002a80: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002a90: 6966 2070 7265 7373 6564 5f6b 6579 2069  if pressed_key i
+-00002aa0: 6e20 286f 7264 2827 7327 292c 206f 7264  n (ord('s'), ord
+-00002ab0: 2827 5327 2929 3a20 2020 2020 2320 6e65  ('S')):     # ne
+-00002ac0: 7874 2063 6c61 7373 0a20 2020 2020 2020  xt class.       
+-00002ad0: 2020 2020 2020 2020 2020 2020 2043 4c53               CLS
+-00002ae0: 5f49 4458 5f43 5552 5245 4e54 203d 2043  _IDX_CURRENT = C
+-00002af0: 4c53 5f43 4f55 4e54 2069 6620 434c 535f  LS_COUNT if CLS_
+-00002b00: 4944 585f 4355 5252 454e 5420 2d20 3120  IDX_CURRENT - 1 
+-00002b10: 3c20 3020 656c 7365 2043 4c53 5f49 4458  < 0 else CLS_IDX
+-00002b20: 5f43 5552 5245 4e54 202d 2031 2020 2020  _CURRENT - 1    
+-00002b30: 2023 206c 6f6f 700a 2020 2020 2020 2020   # loop.        
+-00002b40: 2020 2020 2020 2020 656c 6966 2070 7265          elif pre
+-00002b50: 7373 6564 5f6b 6579 2069 6e20 286f 7264  ssed_key in (ord
+-00002b60: 2827 7727 292c 206f 7264 2827 5727 2929  ('w'), ord('W'))
+-00002b70: 3a20 2020 2320 6c61 7374 2063 6c61 7373  :   # last class
+-00002b80: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00002b90: 2020 2020 2043 4c53 5f49 4458 5f43 5552       CLS_IDX_CUR
+-00002ba0: 5245 4e54 203d 2030 2069 6620 434c 535f  RENT = 0 if CLS_
+-00002bb0: 4944 585f 4355 5252 454e 5420 2b20 3120  IDX_CURRENT + 1 
+-00002bc0: 3e20 434c 535f 434f 554e 5420 656c 7365  > CLS_COUNT else
+-00002bd0: 2043 4c53 5f49 4458 5f43 5552 5245 4e54   CLS_IDX_CURRENT
+-00002be0: 202b 2031 0a0a 2020 2020 2020 2020 2020   + 1..          
+-00002bf0: 2020 2020 2020 2320 0a20 2020 2020 2020        # .       
+-00002c00: 2020 2020 2020 2020 2023 2069 6620 494d           # if IM
+-00002c10: 4147 455f 434c 4153 5345 532e 6765 7428  AGE_CLASSES.get(
+-00002c20: 696d 675f 7061 7468 2920 6973 206e 6f74  img_path) is not
+-00002c30: 204e 6f6e 653a 0a20 2020 2020 2020 2020   None:.         
+-00002c40: 2020 2020 2020 2049 4d41 4745 5f43 4c41         IMAGE_CLA
+-00002c50: 5353 4553 2e75 7064 6174 6528 7b69 6d67  SSES.update({img
+-00002c60: 5f70 6174 683a 2043 4c53 5f49 4458 5f43  _path: CLS_IDX_C
+-00002c70: 5552 5245 4e54 7d29 0a0a 0a0a 2020 2020  URRENT})....    
+-00002c80: 2020 2020 2320 2d2d 2d2d 2d2d 2d2d 2d2d      # ----------
+-00002c90: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00002ca0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020  -------------.  
+-00002cb0: 2020 2020 2020 2320 272b 202d 2720 3d3e        # '+ -' =>
+-00002cc0: 2062 6f6c 6420 6c69 6e65 2074 6869 636b   bold line thick
+-00002cd0: 6e65 7373 0a20 2020 2020 2020 2023 202d  ness.        # -
+-00002ce0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00002cf0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00002d00: 2d2d 2d2d 2d2d 0a20 2020 2020 2020 2065  ------.        e
+-00002d10: 6c69 6620 7072 6573 7365 645f 6b65 7920  lif pressed_key 
+-00002d20: 696e 2028 6f72 6428 273d 2729 2c20 6f72  in (ord('='), or
+-00002d30: 6428 272b 2729 293a 0a0a 2020 2020 2020  d('+')):..      
+-00002d40: 2020 2020 2020 2320 7365 7420 7468 6520        # set the 
+-00002d50: 6164 6a75 7374 2066 6c61 6720 5452 5545  adjust flag TRUE
+-00002d60: 0a20 2020 2020 2020 2020 2020 204c 494e  .            LIN
+-00002d70: 455f 5448 4943 4b4e 4553 535f 4144 4a55  E_THICKNESS_ADJU
+-00002d80: 5354 203d 2054 7275 650a 2020 2020 2020  ST = True.      
+-00002d90: 2020 2020 2020 0a20 2020 2020 2020 2020        .         
+-00002da0: 2020 2023 2067 6574 2074 6865 206d 6178     # get the max
+-00002db0: 206c 696e 6520 7769 6474 680a 2020 2020   line width.    
+-00002dc0: 2020 2020 2020 2020 6d61 785f 7420 3d20          max_t = 
+-00002dd0: 6d61 7828 726f 756e 6428 7375 6d28 746d  max(round(sum(tm
+-00002de0: 705f 696d 672e 7368 6170 6529 202f 2032  p_img.shape) / 2
+-00002df0: 202a 2030 2e30 3033 292c 2032 2920 2b20   * 0.003), 2) + 
+-00002e00: 350a 0a20 2020 2020 2020 2020 2020 2023  5..            #
+-00002e10: 2069 6e63 7265 6174 6520 7468 6520 6c69   increate the li
+-00002e20: 6e65 2077 6964 7468 0a20 2020 2020 2020  ne width.       
+-00002e30: 2020 2020 2069 6620 4c49 4e45 5f54 4849       if LINE_THI
+-00002e40: 434b 4e45 5353 203c 3d20 6d61 785f 743a  CKNESS <= max_t:
+-00002e50: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00002e60: 204c 494e 455f 5448 4943 4b4e 4553 5320   LINE_THICKNESS 
+-00002e70: 2b3d 2031 0a20 2020 2020 2020 2020 2020  += 1.           
+-00002e80: 2020 2020 2070 7269 6e74 5f69 6e66 6f28       print_info(
+-00002e90: 6627 4c69 6e65 2054 6869 636b 6e65 7373  f'Line Thickness
+-00002ea0: 202b 312c 206e 6f77 203d 207b 4c49 4e45   +1, now = {LINE
+-00002eb0: 5f54 4849 434b 4e45 5353 7d27 2c20 6d73  _THICKNESS}', ms
+-00002ec0: 3d31 3030 302c 2077 6865 7265 3d22 4f76  =1000, where="Ov
+-00002ed0: 6572 6c61 7922 290a 2020 2020 2020 2020  erlay").        
+-00002ee0: 2020 2020 656c 7365 3a0a 2020 2020 2020      else:.      
+-00002ef0: 2020 2020 2020 2020 2020 7072 696e 745f            print_
+-00002f00: 696e 666f 2827 4c69 6e65 2054 6869 636b  info('Line Thick
+-00002f10: 6e65 7373 2068 6173 2072 6561 6368 2074  ness has reach t
+-00002f20: 6865 206d 6178 2076 616c 7565 2127 2c20  he max value!', 
+-00002f30: 6d73 3d31 3030 302c 2077 6865 7265 3d22  ms=1000, where="
+-00002f40: 4f76 6572 6c61 7922 290a 0a20 2020 2020  Overlay")..     
+-00002f50: 2020 2065 6c69 6620 7072 6573 7365 645f     elif pressed_
+-00002f60: 6b65 7920 696e 2028 6f72 6428 272d 2729  key in (ord('-')
+-00002f70: 2c20 6f72 6428 275f 2729 293a 0a20 2020  , ord('_')):.   
+-00002f80: 2020 2020 2020 2020 204c 494e 455f 5448           LINE_TH
+-00002f90: 4943 4b4e 4553 535f 4144 4a55 5354 203d  ICKNESS_ADJUST =
+-00002fa0: 2054 7275 650a 2020 2020 2020 2020 2020   True.          
+-00002fb0: 2020 6d69 6e5f 7420 3d20 310a 2020 2020    min_t = 1.    
+-00002fc0: 2020 2020 2020 2020 6966 204c 494e 455f          if LINE_
+-00002fd0: 5448 4943 4b4e 4553 5320 3e20 6d69 6e5f  THICKNESS > min_
+-00002fe0: 743a 0a20 2020 2020 2020 2020 2020 2020  t:.             
+-00002ff0: 2020 204c 494e 455f 5448 4943 4b4e 4553     LINE_THICKNES
+-00003000: 5320 2d3d 2031 0a20 2020 2020 2020 2020  S -= 1.         
+-00003010: 2020 2020 2020 2070 7269 6e74 5f69 6e66         print_inf
+-00003020: 6f28 6627 4c69 6e65 2054 6869 636b 6e65  o(f'Line Thickne
+-00003030: 7373 202d 312c 206e 6f77 203d 207b 4c49  ss -1, now = {LI
+-00003040: 4e45 5f54 4849 434b 4e45 5353 7d27 2c20  NE_THICKNESS}', 
+-00003050: 6d73 3d31 3030 302c 2077 6865 7265 3d22  ms=1000, where="
+-00003060: 4f76 6572 6c61 7922 290a 2020 2020 2020  Overlay").      
+-00003070: 2020 2020 2020 656c 7365 3a20 0a20 2020        else: .   
+-00003080: 2020 2020 2020 2020 2020 2020 2070 7269               pri
+-00003090: 6e74 5f69 6e66 6f28 274c 696e 6520 5468  nt_info('Line Th
+-000030a0: 6963 6b6e 6573 7320 6861 7320 7265 6163  ickness has reac
+-000030b0: 6820 7468 6520 6d69 6e20 7661 6c75 6521  h the min value!
+-000030c0: 272c 206d 733d 3130 3030 2c20 7768 6572  ', ms=1000, wher
+-000030d0: 653d 224f 7665 726c 6179 2229 0a0a 0a20  e="Overlay")... 
+-000030e0: 2020 2020 2020 2023 202d 2d2d 2d2d 2d2d         # -------
+-000030f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003100: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003110: 0a20 2020 2020 2020 2023 2063 2f43 2020  .        # c/C  
+-00003120: 3d3e 2020 5265 6d6f 7665 2061 6c6c 2062  =>  Remove all b
+-00003130: 626f 7865 7320 696e 2074 6869 7320 696d  boxes in this im
+-00003140: 672c 2073 7065 6369 6669 6361 6c6c 792c  g, specifically,
+-00003150: 2064 656c 6574 6520 7468 6520 616e 6e6f   delete the anno
+-00003160: 7461 7469 6f6e 2066 696c 6528 2e74 7874  tation file(.txt
+-00003170: 290a 2020 2020 2020 2020 2320 2d2d 2d2d  ).        # ----
+-00003180: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003190: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000031a0: 2d2d 2d0a 2020 2020 2020 2020 656c 6966  ---.        elif
+-000031b0: 2070 7265 7373 6564 5f6b 6579 2069 6e20   pressed_key in 
+-000031c0: 286f 7264 2827 6327 292c 206f 7264 2827  (ord('c'), ord('
+-000031d0: 4327 2929 3a0a 2020 2020 2020 2020 2020  C')):.          
+-000031e0: 2020 2320 6465 6c65 7465 2069 7465 6d20    # delete item 
+-000031f0: 696e 2069 6d61 6765 5f63 6c61 7373 0a20  in image_class. 
+-00003200: 2020 2020 2020 2020 2020 2069 6620 494d             if IM
+-00003210: 4147 455f 434c 4153 5345 532e 6765 7428  AGE_CLASSES.get(
+-00003220: 696d 675f 7061 7468 2920 6973 206e 6f74  img_path) is not
+-00003230: 204e 6f6e 653a 0a20 2020 2020 2020 2020   None:.         
+-00003240: 2020 2020 2020 2049 4d41 4745 5f43 4c41         IMAGE_CLA
+-00003250: 5353 4553 2e70 6f70 2869 6d67 5f70 6174  SSES.pop(img_pat
+-00003260: 6829 0a20 2020 2020 2020 2020 2020 2020  h).             
+-00003270: 2020 2070 7269 6e74 5f69 6e66 6f28 6622     print_info(f"
+-00003280: 636c 6173 7320 7265 6d6f 7665 6422 2c20  class removed", 
+-00003290: 6d73 3d31 3030 302c 2077 6865 7265 3d22  ms=1000, where="
+-000032a0: 4f76 6572 6c61 7922 290a 0a20 2020 2020  Overlay")..     
+-000032b0: 2020 2023 202d 2d2d 2d2d 2d2d 2d2d 2d2d     # -----------
+-000032c0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000032d0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20 2020  ------------.   
+-000032e0: 2020 2020 2023 2072 2f52 2020 3d3e 2020       # r/R  =>  
+-000032f0: 7377 6974 6368 206d 6f64 650a 2020 2020  switch mode.    
+-00003300: 2020 2020 2320 2d2d 2d2d 2d2d 2d2d 2d2d      # ----------
+-00003310: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003320: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020  -------------.  
+-00003330: 2020 2020 2020 656c 6966 2070 7265 7373        elif press
+-00003340: 6564 5f6b 6579 2069 6e20 286f 7264 2827  ed_key in (ord('
+-00003350: 7227 292c 206f 7264 2827 5227 2929 3a0a  r'), ord('R')):.
+-00003360: 2020 2020 2020 2020 2020 2020 7072 696e              prin
+-00003370: 745f 696e 666f 2866 2253 7769 7463 6820  t_info(f"Switch 
+-00003380: 6d6f 6465 2062 6574 7765 656e 2052 4541  mode between REA
+-00003390: 4420 616e 6420 4d41 524b 222c 206d 733d  D and MARK", ms=
+-000033a0: 3130 3030 2c20 7768 6572 653d 224f 7665  1000, where="Ove
+-000033b0: 726c 6179 2229 0a20 2020 2020 2020 2020  rlay").         
+-000033c0: 2020 2043 4c41 5353 4946 595f 4d4f 4445     CLASSIFY_MODE
+-000033d0: 203d 206e 6f74 2043 4c41 5353 4946 595f   = not CLASSIFY_
+-000033e0: 4d4f 4445 0a0a 2020 2020 2020 2020 2320  MODE..        # 
+-000033f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003400: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003410: 2d2d 2d2d 2d2d 2d0a 2020 2020 2020 2020  -------.        
+-00003420: 2320 6c2f 4c20 203d 3e20 2073 6875 6666  # l/L  =>  shuff
+-00003430: 6c65 2062 626f 7820 636f 6c6f 720a 2020  le bbox color.  
+-00003440: 2020 2020 2020 2320 2d2d 2d2d 2d2d 2d2d        # --------
+-00003450: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003460: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a  ---------------.
+-00003470: 2020 2020 2020 2020 656c 6966 2070 7265          elif pre
+-00003480: 7373 6564 5f6b 6579 2069 6e20 286f 7264  ssed_key in (ord
+-00003490: 2827 6c27 292c 206f 7264 2827 4c27 2929  ('l'), ord('L'))
+-000034a0: 3a0a 2020 2020 2020 2020 2020 2020 434f  :.            CO
+-000034b0: 4c4f 525f 5041 4c45 5454 4520 3d20 436f  LOR_PALETTE = Co
+-000034c0: 6c6f 7273 2873 6875 6666 6c65 3d54 7275  lors(shuffle=Tru
+-000034d0: 6529 0a20 2020 2020 2020 2020 2020 2070  e).            p
+-000034e0: 7269 6e74 5f69 6e66 6f28 6622 436f 6c6f  rint_info(f"Colo
+-000034f0: 7273 2070 616c 6574 7465 2073 6875 6666  rs palette shuff
+-00003500: 6c65 6421 222c 206d 733d 3130 3030 2c20  led!", ms=1000, 
+-00003510: 7768 6572 653d 224f 7665 726c 6179 2229  where="Overlay")
+-00003520: 0a0a 0a20 2020 2020 2020 2023 202d 2d2d  ...        # ---
+-00003530: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003540: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003550: 2d2d 2d2d 0a20 2020 2020 2020 2023 2074  ----.        # t
+-00003560: 2f54 2020 3d3e 2020 6d69 6e20 6c69 6e65  /T  =>  min line
+-00003570: 2077 6964 7468 0a20 2020 2020 2020 2023   width.        #
+-00003580: 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   ---------------
+-00003590: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000035a0: 2d2d 2d2d 2d2d 2d2d 0a20 2020 2020 2020  --------.       
+-000035b0: 2065 6c69 6620 7072 6573 7365 645f 6b65   elif pressed_ke
+-000035c0: 7920 696e 2028 6f72 6428 2774 2729 2c20  y in (ord('t'), 
+-000035d0: 6f72 6428 2754 2729 293a 0a20 2020 2020  ord('T')):.     
+-000035e0: 2020 2020 2020 204d 494e 5f4c 494e 455f         MIN_LINE_
+-000035f0: 5749 4454 4820 3d20 6e6f 7420 4d49 4e5f  WIDTH = not MIN_
+-00003600: 4c49 4e45 5f57 4944 5448 0a0a 0a20 2020  LINE_WIDTH...   
+-00003610: 2020 2020 2023 202d 2d2d 2d2d 2d2d 2d2d       # ---------
+-00003620: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003630: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20  --------------. 
+-00003640: 2020 2020 2020 2023 2030 2d39 202d 3e20         # 0-9 -> 
+-00003650: 6368 616e 6765 2069 6d67 2773 2063 6c61  change img's cla
+-00003660: 7373 0a20 2020 2020 2020 2023 202d 2d2d  ss.        # ---
+-00003670: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003680: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003690: 2d2d 2d2d 0a20 2020 2020 2020 2065 6c69  ----.        eli
+-000036a0: 6620 7072 6573 7365 645f 6b65 7920 696e  f pressed_key in
+-000036b0: 2072 616e 6765 2834 382c 2035 3829 3a20   range(48, 58): 
+-000036c0: 2023 2030 2d38 203d 3e20 3438 2d35 360a   # 0-8 => 48-56.
+-000036d0: 0a20 2020 2020 2020 2020 2020 2069 6620  .            if 
+-000036e0: 434c 4153 5349 4659 5f4d 4f44 453a 0a20  CLASSIFY_MODE:. 
+-000036f0: 2020 2020 2020 2020 2020 2020 2020 2076                 v
+-00003700: 616c 7565 203d 2069 6e74 2863 6872 2870  alue = int(chr(p
+-00003710: 7265 7373 6564 5f6b 6579 2929 0a20 2020  ressed_key)).   
+-00003720: 2020 2020 2020 2020 2020 2020 2069 6620               if 
+-00003730: 7661 6c75 6520 3c20 6c65 6e28 434c 4153  value < len(CLAS
+-00003740: 535f 4c49 5354 293a 200a 2020 2020 2020  S_LIST): .      
+-00003750: 2020 2020 2020 2020 2020 2020 2020 2320                # 
+-00003760: 434c 535f 4944 585f 4355 5252 454e 5420  CLS_IDX_CURRENT 
+-00003770: 3d20 7661 6c75 650a 2020 2020 2020 2020  = value.        
+-00003780: 2020 2020 2020 2020 2020 2020 494d 4147              IMAG
+-00003790: 455f 434c 4153 5345 532e 7570 6461 7465  E_CLASSES.update
+-000037a0: 287b 696d 675f 7061 7468 3a20 7661 6c75  ({img_path: valu
+-000037b0: 657d 290a 2020 2020 2020 2020 2020 2020  e}).            
+-000037c0: 2020 2020 656c 7365 3a0a 2020 2020 2020      else:.      
+-000037d0: 2020 2020 2020 2020 2020 2020 2020 7072                pr
+-000037e0: 696e 745f 696e 666f 2866 226d 6178 2063  int_info(f"max c
+-000037f0: 6c61 7373 2069 6420 6973 207b 6c65 6e28  lass id is {len(
+-00003800: 434c 4153 535f 4c49 5354 297d 222c 206d  CLASS_LIST)}", m
+-00003810: 733d 3130 3030 2c20 7768 6572 653d 224f  s=1000, where="O
+-00003820: 7665 726c 6179 2229 0a0a 2020 2020 2020  verlay")..      
+-00003830: 2020 2020 2020 656c 7365 3a0a 2020 2020        else:.    
+-00003840: 2020 2020 2020 2020 2020 2020 7072 696e              prin
+-00003850: 745f 696e 666f 2866 224e 6f74 2069 6e20  t_info(f"Not in 
+-00003860: 636c 6173 7369 6679 206d 6f64 6521 2070  classify mode! p
+-00003870: 7265 7373 2072 2f52 2074 6f20 7374 6172  ress r/R to star
+-00003880: 7421 222c 206d 733d 3130 3030 2c20 7768  t!", ms=1000, wh
+-00003890: 6572 653d 224f 7665 726c 6179 2229 0a0a  ere="Overlay")..
+-000038a0: 0a20 2020 2020 2020 2023 202d 2d2d 2d2d  .        # -----
+-000038b0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000038c0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000038d0: 2d2d 0a20 2020 2020 2020 2023 2045 5343  --.        # ESC
+-000038e0: 202d 3e20 7175 6974 206b 6579 206c 6973   -> quit key lis
+-000038f0: 7465 6e65 720a 2020 2020 2020 2020 2320  tener.        # 
+-00003900: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003910: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003920: 2d2d 2d2d 2d2d 2d0a 2020 2020 2020 2020  -------.        
+-00003930: 656c 6966 2070 7265 7373 6564 5f6b 6579  elif pressed_key
+-00003940: 203d 3d20 3237 3a0a 2020 2020 2020 2020   == 27:.        
+-00003950: 2020 2020 6272 6561 6b0a 2020 2020 2020      break.      
+-00003960: 2020 2320 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d    # ------------
+-00003970: 2d2d 2d2d 204b 6579 204c 6973 7465 6e65  ---- Key Listene
+-00003980: 7273 2045 4e44 202d 2d2d 2d2d 2d2d 2d2d  rs END ---------
+-00003990: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a  ---------------.
+-000039a0: 0a20 2020 2020 2020 2023 2069 6620 7769  .        # if wi
+-000039b0: 6e64 6f77 2067 6574 7320 636c 6f73 6564  ndow gets closed
+-000039c0: 2074 6865 6e20 7175 6974 0a20 2020 2020   then quit.     
+-000039d0: 2020 2069 6620 6376 322e 6765 7457 696e     if cv2.getWin
+-000039e0: 646f 7750 726f 7065 7274 7928 5749 4e44  dowProperty(WIND
+-000039f0: 4f57 5f4e 414d 452c 2063 7632 2e57 4e44  OW_NAME, cv2.WND
+-00003a00: 5f50 524f 505f 5649 5349 424c 4529 203c  _PROP_VISIBLE) <
+-00003a10: 2031 3a0a 2020 2020 2020 2020 2020 2020   1:.            
+-00003a20: 6272 6561 6b0a 0a20 2020 2063 7632 2e64  break..    cv2.d
+-00003a30: 6573 7472 6f79 416c 6c57 696e 646f 7773  estroyAllWindows
+-00003a40: 2829 0a0a 0a20 2020 2023 202d 2d2d 2d2d  ()...    # -----
+-00003a50: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003a60: 2d2d 2d2d 2d2d 0a20 2020 2023 2020 6465  ------.    #  de
+-00003a70: 616c 2077 6974 6820 636c 6173 7369 6679  al with classify
+-00003a80: 2064 6963 740a 2020 2020 2320 2d2d 2d2d   dict.    # ----
+-00003a90: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003aa0: 2d2d 2d2d 2d2d 2d0a 2020 2020 6966 2049  -------.    if I
+-00003ab0: 4d41 4745 5f43 4c41 5353 4553 3a0a 0a20  MAGE_CLASSES:.. 
+-00003ac0: 2020 2020 2020 2023 2063 6865 636b 2069         # check i
+-00003ad0: 6620 6a73 6f6e 2066 696c 6520 6973 2073  f json file is s
+-00003ae0: 616d 6520 7769 7468 2049 4d41 4745 5f43  ame with IMAGE_C
+-00003af0: 4c41 5353 0a20 2020 2020 2020 2061 7373  LASS.        ass
+-00003b00: 6572 7420 6a73 6f6e 2e6c 6f61 6428 6f70  ert json.load(op
+-00003b10: 656e 2849 4d41 4745 5f43 4c41 5353 4553  en(IMAGE_CLASSES
+-00003b20: 5f4a 534f 4e5f 5041 5448 2c20 656e 636f  _JSON_PATH, enco
+-00003b30: 6469 6e67 3d22 7574 662d 3822 2929 203d  ding="utf-8")) =
+-00003b40: 3d20 494d 4147 455f 434c 4153 5345 530a  = IMAGE_CLASSES.
+-00003b50: 0a20 2020 2020 2020 2023 2069 6e20 6361  .        # in ca
+-00003b60: 7365 206f 6620 6f74 6865 7220 6b65 7973  se of other keys
+-00003b70: 2069 6e70 7574 0a20 2020 2020 2020 2077   input.        w
+-00003b80: 6869 6c65 2054 7275 653a 200a 2020 2020  hile True: .    
+-00003b90: 2020 2020 2020 2020 7265 7370 6f6e 7365          response
+-00003ba0: 203d 2069 6e70 7574 2827 3e20 4669 6e64   = input('> Find
+-00003bb0: 2063 6c61 7373 6966 792e 6a73 6f6e 2120   classify.json! 
+-00003bc0: 446f 2063 6c61 7373 6966 7969 6e67 3f20  Do classifying? 
+-00003bd0: 5b79 6573 202f 206e 6f5d 3a20 2729 0a20  [yes / no]: '). 
+-00003be0: 2020 2020 2020 2020 2020 2069 6620 7265             if re
+-00003bf0: 7370 6f6e 7365 2e6c 6f77 6572 2829 2069  sponse.lower() i
+-00003c00: 6e20 2827 6e27 2c20 276e 6f27 293a 2020  n ('n', 'no'):  
+-00003c10: 2023 2065 7869 740a 2020 2020 2020 2020   # exit.        
+-00003c20: 2020 2020 2020 2020 4c4f 4747 4552 2e69          LOGGER.i
+-00003c30: 6e66 6f28 274e 6f74 2064 6f69 6e67 2063  nfo('Not doing c
+-00003c40: 6c61 7373 6966 7969 6e67 2729 0a20 2020  lassifying').   
+-00003c50: 2020 2020 2020 2020 2020 2020 2062 7265               bre
+-00003c60: 616b 0a0a 2020 2020 2020 2020 2020 2020  ak..            
+-00003c70: 656c 6966 2072 6573 706f 6e73 652e 6c6f  elif response.lo
+-00003c80: 7765 7228 2920 696e 2028 2779 272c 2027  wer() in ('y', '
+-00003c90: 7965 7327 293a 0a20 2020 2020 2020 2020  yes'):.         
+-00003ca0: 2020 2020 2020 204c 4f47 4745 522e 696e         LOGGER.in
+-00003cb0: 666f 2827 446f 696e 6720 636c 6173 7369  fo('Doing classi
+-00003cc0: 6679 696e 6727 290a 0a20 2020 2020 2020  fying')..       
+-00003cd0: 2020 2020 2020 2020 2023 2069 7465 7261           # itera
+-00003ce0: 7465 2049 4d41 4745 5f43 4c41 5353 4553  te IMAGE_CLASSES
+-00003cf0: 2074 6f20 6d6f 7665 2069 6d61 6765 2074   to move image t
+-00003d00: 6f20 6469 7273 0a20 2020 2020 2020 2020  o dirs.         
+-00003d10: 2020 2020 2020 2066 6f72 2069 6478 2c20         for idx, 
+-00003d20: 286b 2c20 7629 2069 6e20 656e 756d 6572  (k, v) in enumer
+-00003d30: 6174 6528 7471 646d 2849 4d41 4745 5f43  ate(tqdm(IMAGE_C
+-00003d40: 4c41 5353 4553 2e69 7465 6d73 2829 2c20  LASSES.items(), 
+-00003d50: 6465 7363 3d27 436c 6173 7369 6679 696e  desc='Classifyin
+-00003d60: 6727 2929 3a0a 2020 2020 2020 2020 2020  g')):.          
+-00003d70: 2020 2020 2020 2020 2020 2320 6d6b 6469            # mkdi
+-00003d80: 7220 6469 7273 2066 6f72 2064 6966 6665  r dirs for diffe
+-00003d90: 7265 6e74 2063 6c61 7373 3a20 434c 4153  rent class: CLAS
+-00003da0: 532f 636c 6173 735f 612c 2043 4c41 5353  S/class_a, CLASS
+-00003db0: 2f63 6c61 7373 5f62 2c20 434c 4153 532f  /class_b, CLASS/
+-00003dc0: 636c 6173 735f 6320 0a20 2020 2020 2020  class_c .       
+-00003dd0: 2020 2020 2020 2020 2020 2020 2064 7374               dst
+-00003de0: 5f63 6c61 7373 5f64 6972 203d 2050 6174  _class_dir = Pat
+-00003df0: 6828 2749 4d41 4745 2d43 4c41 5353 2729  h('IMAGE-CLASS')
+-00003e00: 202f 2043 4c41 5353 5f4c 4953 545b 762d   / CLASS_LIST[v-
+-00003e10: 315d 0a20 2020 2020 2020 2020 2020 2020  1].             
+-00003e20: 2020 2020 2020 2069 6620 6e6f 7420 6473         if not ds
+-00003e30: 745f 636c 6173 735f 6469 722e 6578 6973  t_class_dir.exis
+-00003e40: 7473 2829 3a0a 2020 2020 2020 2020 2020  ts():.          
+-00003e50: 2020 2020 2020 2020 2020 2020 2020 6473                ds
+-00003e60: 745f 636c 6173 735f 6469 722e 6d6b 6469  t_class_dir.mkdi
+-00003e70: 7228 7061 7265 6e74 733d 5472 7565 2c20  r(parents=True, 
+-00003e80: 6578 6973 745f 6f6b 3d54 7275 6529 0a20  exist_ok=True). 
+-00003e90: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00003ea0: 2020 2073 6875 7469 6c2e 636f 7079 286b     shutil.copy(k
+-00003eb0: 2c20 7374 7228 6473 745f 636c 6173 735f  , str(dst_class_
+-00003ec0: 6469 7229 290a 0a20 2020 2020 2020 2020  dir))..         
+-00003ed0: 2020 2020 2020 2062 7265 616b 0a0a 2020         break..  
+-00003ee0: 2020 656c 7365 3a0a 2020 2020 2020 2020    else:.        
+-00003ef0: 2320 6465 6c65 7465 206a 736f 6e2e 6669  # delete json.fi
+-00003f00: 6c65 2069 6620 6974 2069 7320 656d 7074  le if it is empt
+-00003f10: 790a 2020 2020 2020 2020 5061 7468 2849  y.        Path(I
+-00003f20: 4d41 4745 5f43 4c41 5353 4553 5f4a 534f  MAGE_CLASSES_JSO
+-00003f30: 4e5f 5041 5448 292e 756e 6c69 6e6b 2829  N_PATH).unlink()
+-00003f40: 0a0a 0a0a 2020 2020 2320 2d2d 2d2d 2d2d  ....    # ------
+-00003f50: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00003f60: 2d2d 2d2d 2d0a 2020 2020 2320 6465 616c  -----.    # deal
+-00003f70: 2077 6974 6820 7772 6f6e 6720 696d 670a   with wrong img.
+-00003f80: 2020 2020 2320 6c61 7374 2073 7465 703a      # last step:
+-00003f90: 20e5 88a0 e999 a4e6 8980 e69c 89e6 97a0   ...............
+-00003fa0: e6b3 95e8 a2ab 6f70 656e 6376 e8af bbe5  ......opencv....
+-00003fb0: 8f96 e79a 84e5 9bbe e583 8f0a 2020 2020  ............    
+-00003fc0: 2320 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  # --------------
+-00003fd0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020  -------------.  
+-00003fe0: 2020 6966 206c 656e 2857 524f 4e47 5f49    if len(WRONG_I
+-00003ff0: 4d47 5f53 4554 2920 3e20 303a 0a20 2020  MG_SET) > 0:.   
+-00004000: 2020 2020 204c 4f47 4745 522e 7761 726e       LOGGER.warn
+-00004010: 696e 6728 6622 6861 7320 7b6c 656e 2857  ing(f"has {len(W
+-00004020: 524f 4e47 5f49 4d47 5f53 4554 297d 2069  RONG_IMG_SET)} i
+-00004030: 6d61 6765 7320 6361 6e20 6e6f 7420 6265  mages can not be
+-00004040: 2072 6561 6420 6279 204f 7065 6e43 562c   read by OpenCV,
+-00004050: 206d 6f76 696e 6720 746f 207b 5752 4f4e   moving to {WRON
+-00004060: 475f 494d 475f 4449 527d 2229 0a20 2020  G_IMG_DIR}").   
+-00004070: 2020 2020 200a 2020 2020 2020 2020 2320       .        # 
+-00004080: 6372 6561 7465 2064 6972 2069 6620 6e6f  create dir if no
+-00004090: 7420 6578 6973 740a 2020 2020 2020 2020  t exist.        
+-000040a0: 6966 206e 6f74 2050 6174 6828 5752 4f4e  if not Path(WRON
+-000040b0: 475f 494d 475f 4449 5229 2e65 7869 7374  G_IMG_DIR).exist
+-000040c0: 7328 293a 0a20 2020 2020 2020 2020 2020  s():.           
+-000040d0: 2050 6174 6828 5752 4f4e 475f 494d 475f   Path(WRONG_IMG_
+-000040e0: 4449 5229 2e6d 6b64 6972 2829 0a0a 2020  DIR).mkdir()..  
+-000040f0: 2020 2020 2020 2320 7265 6d6f 7665 0a20        # remove. 
+-00004100: 2020 2020 2020 2066 6f72 2069 6d67 2069         for img i
+-00004110: 6e20 5752 4f4e 475f 494d 475f 5345 543a  n WRONG_IMG_SET:
+-00004120: 0a20 2020 2020 2020 2020 2020 2073 6875  .            shu
+-00004130: 7469 6c2e 6d6f 7665 2869 6d67 2c20 5752  til.move(img, WR
+-00004140: 4f4e 475f 494d 475f 4449 5229 0a20 2020  ONG_IMG_DIR).   
+-00004150: 2020 2020 2020 2020 204c 4f47 4745 522e           LOGGER.
+-00004160: 696e 666f 2866 227b 5061 7468 2869 6d67  info(f"{Path(img
+-00004170: 292e 7265 736f 6c76 6528 297d 2229 0a20  ).resolve()}"). 
+-00004180: 2020 2065 6c73 653a 0a20 2020 2020 2020     else:.       
+-00004190: 204c 4f47 4745 522e 696e 666f 2866 2245   LOGGER.info(f"E
+-000041a0: 7665 7279 2069 6d61 6765 2063 616e 2062  very image can b
+-000041b0: 6520 7265 6164 2062 7920 4f70 656e 4356  e read by OpenCV
+-000041c0: 2e22 290a 0a0a 0a23 202d 2d2d 2d2d 2d2d  .")....# -------
+-000041d0: 2d2d 2d2d 2d2d 2d2d 2d6f 7074 696f 6e73  ---------options
+-000041e0: 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   ---------------
+-000041f0: 2d2d 2d2d 2d2d 2d2d 2d0a 6465 6620 7061  ---------.def pa
+-00004200: 7273 655f 6f70 7428 293a 0a20 2020 2070  rse_opt():.    p
+-00004210: 6172 7365 7220 3d20 6172 6770 6172 7365  arser = argparse
+-00004220: 2e41 7267 756d 656e 7450 6172 7365 7228  .ArgumentParser(
+-00004230: 6465 7363 7269 7074 696f 6e3d 274f 7065  description='Ope
+-00004240: 6e2d 736f 7572 6365 2069 6d61 6765 206c  n-source image l
+-00004250: 6162 656c 696e 6720 746f 6f6c 2729 0a20  abeling tool'). 
+-00004260: 2020 2070 6172 7365 722e 6164 645f 6172     parser.add_ar
+-00004270: 6775 6d65 6e74 2827 2d2d 696d 672d 6469  gument('--img-di
+-00004280: 7227 2c20 6465 6661 756c 743d 2769 6d67  r', default='img
+-00004290: 2d64 6972 272c 2074 7970 653d 7374 722c  -dir', type=str,
+-000042a0: 2068 656c 703d 2750 6174 6820 746f 2069   help='Path to i
+-000042b0: 6e70 7574 2064 6972 6563 746f 7279 2729  nput directory')
+-000042c0: 0a20 2020 2070 6172 7365 722e 6164 645f  .    parser.add_
+-000042d0: 6172 6775 6d65 6e74 2827 2d2d 6c61 6265  argument('--labe
+-000042e0: 6c2d 6469 7227 2c20 6465 6661 756c 743d  l-dir', default=
+-000042f0: 2727 2c20 7479 7065 3d73 7472 2c20 6865  '', type=str, he
+-00004300: 6c70 3d27 5061 7468 2074 6f20 6f75 7470  lp='Path to outp
+-00004310: 7574 2064 6972 6563 746f 7279 2729 0a20  ut directory'). 
+-00004320: 2020 2070 6172 7365 722e 6164 645f 6172     parser.add_ar
+-00004330: 6775 6d65 6e74 2827 2d2d 6d76 2d64 6972  gument('--mv-dir
+-00004340: 272c 2064 6566 6175 6c74 3d22 6d6f 7665  ', default="move
+-00004350: 645f 6469 7222 2c20 7479 7065 3d73 7472  d_dir", type=str
+-00004360: 2c20 6865 6c70 3d27 6d76 2d64 6972 2074  , help='mv-dir t
+-00004370: 6f20 7361 7665 206d 6f76 6564 2064 6174  o save moved dat
+-00004380: 615b 696d 672c 206c 6162 656c 5d27 290a  a[img, label]').
+-00004390: 2020 2020 7061 7273 6572 2e61 6464 5f61      parser.add_a
+-000043a0: 7267 756d 656e 7428 272d 2d77 726f 6e67  rgument('--wrong
+-000043b0: 2d69 6d67 2d64 6972 272c 2064 6566 6175  -img-dir', defau
+-000043c0: 6c74 3d22 7772 6f6e 672d 696d 672d 6469  lt="wrong-img-di
+-000043d0: 7222 2c20 7479 7065 3d73 7472 2c20 6865  r", type=str, he
+-000043e0: 6c70 3d27 7772 6f6e 6720 666f 726d 6174  lp='wrong format
+-000043f0: 2069 6d67 2074 6f20 7361 7665 2069 6d67   img to save img
+-00004400: 7320 6f70 656e 6376 2063 616e 7420 7265  s opencv cant re
+-00004410: 6164 2729 0a20 2020 2070 6172 7365 722e  ad').    parser.
+-00004420: 6164 645f 6172 6775 6d65 6e74 2827 2d2d  add_argument('--
+-00004430: 636c 6173 7365 7327 2c20 6465 6661 756c  classes', defaul
+-00004440: 743d 2727 2c20 6e61 7267 733d 222b 222c  t='', nargs="+",
+-00004450: 2074 7970 653d 7374 722c 2068 656c 703d   type=str, help=
+-00004460: 2763 6c61 7373 6573 206c 6973 7420 7465  'classes list te
+-00004470: 7874 2729 0a20 2020 2070 6172 7365 722e  xt').    parser.
+-00004480: 6164 645f 6172 6775 6d65 6e74 2827 2d2d  add_argument('--
+-00004490: 7769 6e64 6f77 5f77 6964 7468 272c 2064  window_width', d
+-000044a0: 6566 6175 6c74 3d38 3030 2c20 7479 7065  efault=800, type
+-000044b0: 3d69 6e74 2c20 6865 6c70 3d27 636c 6173  =int, help='clas
+-000044c0: 7365 7320 6c69 7374 2074 6578 7427 290a  ses list text').
+-000044d0: 2020 2020 7061 7273 6572 2e61 6464 5f61      parser.add_a
+-000044e0: 7267 756d 656e 7428 272d 2d77 696e 646f  rgument('--windo
+-000044f0: 775f 6865 6967 6874 272c 2064 6566 6175  w_height', defau
+-00004500: 6c74 3d36 3030 2c20 7479 7065 3d69 6e74  lt=600, type=int
+-00004510: 2c20 6865 6c70 3d27 636c 6173 7365 7320  , help='classes 
+-00004520: 6c69 7374 2074 6578 7427 290a 2020 2020  list text').    
+-00004530: 6f70 7420 3d20 7061 7273 6572 2e70 6172  opt = parser.par
+-00004540: 7365 5f61 7267 7328 290a 0a20 2020 2072  se_args()..    r
+-00004550: 6574 7572 6e20 6f70 740a 0a0a 0a23 202d  eturn opt....# -
+-00004560: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00004570: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00004580: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00004590: 2d2d 0a23 2020 206d 6169 6e0a 232d 2d2d  --.#   main.#---
+-000045a0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000045b0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000045c0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a  ---------------.
+-000045d0: 6966 205f 5f6e 616d 655f 5f20 3d3d 2027  if __name__ == '
+-000045e0: 5f5f 6d61 696e 5f5f 273a 0a0a 2020 2020  __main__':..    
+-000045f0: 6f70 7420 3d20 7061 7273 655f 6f70 7428  opt = parse_opt(
+-00004600: 290a 2020 2020 696e 7370 6563 7428 206f  ).    inspect( o
+-00004610: 7074 2e69 6d67 5f64 6972 2c20 0a20 2020  pt.img_dir, .   
+-00004620: 2020 2020 2020 2020 2020 6f70 742e 6c61            opt.la
+-00004630: 6265 6c5f 6469 722c 0a20 2020 2020 2020  bel_dir,.       
+-00004640: 2020 2020 2020 6f70 742e 6d76 5f64 6972        opt.mv_dir
+-00004650: 2c0a 2020 2020 2020 2020 2020 2020 206f  ,.             o
+-00004660: 7074 2e77 726f 6e67 5f69 6d67 5f64 6972  pt.wrong_img_dir
+-00004670: 2c0a 2020 2020 2020 2020 2020 2020 206f  ,.             o
+-00004680: 7074 2e63 6c61 7373 6573 2c0a 2020 2020  pt.classes,.    
+-00004690: 2020 2020 2020 2020 206f 7074 2e77 696e           opt.win
+-000046a0: 646f 775f 7769 6474 682c 0a20 2020 2020  dow_width,.     
+-000046b0: 2020 2020 2020 2020 6f70 742e 7769 6e64          opt.wind
+-000046c0: 6f77 5f68 6569 6768 742c 0a20 2020 2020  ow_height,.     
+-000046d0: 2020 2020 2020 2020 290a                         ).
++00000000: 0a                                       .
+```
+
+## usls/src/labelling_det_2.py
+
+```diff
+@@ -1,2552 +1 @@
+-00000000: 696d 706f 7274 2061 7267 7061 7273 650a  import argparse.
+-00000010: 696d 706f 7274 206f 730a 696d 706f 7274  import os.import
+-00000020: 2072 650a 696d 706f 7274 2063 7632 0a69   re.import cv2.i
+-00000030: 6d70 6f72 7420 6e75 6d70 7920 6173 206e  mport numpy as n
+-00000040: 700a 6672 6f6d 2074 7164 6d20 696d 706f  p.from tqdm impo
+-00000050: 7274 2074 7164 6d0a 6672 6f6d 2070 6174  rt tqdm.from pat
+-00000060: 686c 6962 2069 6d70 6f72 7420 5061 7468  hlib import Path
+-00000070: 0a69 6d70 6f72 7420 7379 730a 696d 706f  .import sys.impo
+-00000080: 7274 2073 6875 7469 6c0a 696d 706f 7274  rt shutil.import
+-00000090: 2072 616e 646f 6d0a 696d 706f 7274 2074   random.import t
+-000000a0: 696d 650a 696d 706f 7274 206a 736f 6e0a  ime.import json.
+-000000b0: 696d 706f 7274 2072 6963 680a 0a0a 232d  import rich...#-
+-000000c0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000000d0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000000e0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2320 2020  -----------.#   
+-000000f0: 2020 2020 4144 4420 544f 2050 5954 484f      ADD TO PYTHO
+-00000100: 4e5f 5041 5448 0a23 2d2d 2d2d 2d2d 2d2d  N_PATH.#--------
+-00000110: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000120: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000130: 2d2d 2d2d 0a46 494c 4520 3d20 5061 7468  ----.FILE = Path
+-00000140: 285f 5f66 696c 655f 5f29 2e72 6573 6f6c  (__file__).resol
+-00000150: 7665 2829 0a52 4f4f 5420 3d20 4649 4c45  ve().ROOT = FILE
+-00000160: 2e70 6172 656e 7473 5b30 5d20 2020 2320  .parents[0]   # 
+-00000170: 4649 4c45 2e70 6172 656e 7420 0a69 6620  FILE.parent .if 
+-00000180: 7374 7228 524f 4f54 2920 6e6f 7420 696e  str(ROOT) not in
+-00000190: 2073 7973 2e70 6174 683a 0a20 2020 2073   sys.path:.    s
+-000001a0: 7973 2e70 6174 682e 6170 7065 6e64 2873  ys.path.append(s
+-000001b0: 7472 2852 4f4f 5429 2920 2023 2061 6464  tr(ROOT))  # add
+-000001c0: 2052 4f4f 5420 746f 2050 4154 480a 232d   ROOT to PATH.#-
+-000001d0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000001e0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000001f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 0a66 726f  -----------..fro
+-00000200: 6d20 7574 696c 7320 696d 706f 7274 2043  m utils import C
+-00000210: 6f6c 6f72 732c 2049 4d47 5f46 4f52 4d41  olors, IMG_FORMA
+-00000220: 542c 2069 735f 706f 696e 745f 696e 5f72  T, is_point_in_r
+-00000230: 6563 742c 204c 4f47 4745 520a 0a0a 232d  ect, LOGGER...#-
+-00000240: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000250: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000260: 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2320 2020  -----------.#   
+-00000270: 2020 2020 2020 2047 6c6f 6261 6c20 5661         Global Va
+-00000280: 7269 6162 6c65 730a 232d 2d2d 2d2d 2d2d  riables.#-------
+-00000290: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000002a0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000002b0: 2d2d 2d2d 2d0a 0a48 454c 505f 4d53 4720  -----..HELP_MSG 
+-000002c0: 3d20 2727 270a 0a55 7361 6765 3a0a 2020  = '''..Usage:.  
+-000002d0: 2020 4553 433a 2020 2020 2020 2020 2020    ESC:          
+-000002e0: 2020 2020 2020 2020 2020 7175 6974 200a            quit .
+-000002f0: 2020 2020 722f 523a 2020 2020 2020 2020      r/R:        
+-00000300: 2020 2020 2020 2020 2020 2020 7377 6974              swit
+-00000310: 6368 206d 6f64 6520 6265 7477 6565 6e20  ch mode between 
+-00000320: 606d 6172 6b60 2061 6e64 2060 7265 6164  `mark` and `read
+-00000330: 600a 2020 2020 6128 4129 2f64 2844 293a  `.    a(A)/d(D):
+-00000340: 2020 2020 2020 2020 2020 2020 2020 7377                sw
+-00000350: 6974 6368 2069 6d61 6765 0a20 2020 2077  itch image.    w
+-00000360: 2857 292f 7328 5329 3a20 2020 2020 2020  (W)/s(S):       
+-00000370: 2020 2020 2020 2073 7769 7463 6820 636c         switch cl
+-00000380: 6173 730a 2020 2020 2d2f 2b3a 2020 2020  ass.    -/+:    
+-00000390: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000003a0: 6164 6a75 7374 206c 696e 652d 7468 6963  adjust line-thic
+-000003b0: 6b6e 6573 730a 2020 2020 742f 543a 2020  kness.    t/T:  
+-000003c0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000003d0: 2020 7377 6974 6368 206c 696e 652d 7468    switch line-th
+-000003e0: 6963 6b6e 6573 7320 6265 7477 6565 6e20  ickness between 
+-000003f0: 7468 6963 6b6e 6573 733d 3120 616e 6420  thickness=1 and 
+-00000400: 7468 6963 6b6e 6573 733d 6375 7272 656e  thickness=curren
+-00000410: 740a 2020 2020 6e2f 4e3a 2020 2020 2020  t.    n/N:      
+-00000420: 2020 2020 2020 2020 2020 2020 2020 6869                hi
+-00000430: 6465 2061 6c6c 2062 626f 7865 7327 206c  de all bboxes' l
+-00000440: 6162 656c 730a 2020 2020 622f 423a 2020  abels.    b/B:  
+-00000450: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000460: 2020 626c 696e 6b20 7468 6520 6262 6f78    blink the bbox
+-00000470: 6573 2026 206c 6162 656c 730a 2020 2020  es & labels.    
+-00000480: 6c2f 4c3a 2020 2020 2020 2020 2020 2020  l/L:            
+-00000490: 2020 2020 2020 2020 7368 7566 666c 6520          shuffle 
+-000004a0: 6262 6f78 2063 6f6c 6f72 730a 2020 2020  bbox colors.    
+-000004b0: 692f 493a 2020 2020 2020 2020 2020 2020  i/I:            
+-000004c0: 2020 2020 2020 2020 6469 7370 6c61 7920          display 
+-000004d0: 696e 666f 0a20 2020 2030 2d38 3a20 2020  info.    0-8:   
+-000004e0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000004f0: 2073 686f 7720 7369 6e67 6c65 2063 6c61   show single cla
+-00000500: 7373 2062 626f 7865 730a 2020 2020 393a  ss bboxes.    9:
+-00000510: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000520: 2020 2020 2020 7368 6f77 2061 6c6c 2063        show all c
+-00000530: 6c61 7373 6573 2062 626f 7865 730a 2020  lasses bboxes.  
+-00000540: 2020 6465 6c65 7465 3a20 2020 2020 2020    delete:       
+-00000550: 2020 2020 2020 2020 2020 7761 7920 312e            way 1.
+-00000560: 2070 7265 7373 2060 632f 4360 2074 6f20   press `c/C` to 
+-00000570: 7265 6d6f 7665 2061 6c6c 2062 626f 7865  remove all bboxe
+-00000580: 7320 616e 6420 7478 7420 6c61 6265 6c2e  s and txt label.
+-00000590: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-000005a0: 2020 2020 2020 2020 2020 2020 2077 6179               way
+-000005b0: 2032 2e20 7072 6573 7320 6062 6163 6b73   2. press `backs
+-000005c0: 7061 6365 6020 746f 2072 656d 6f76 6520  pace` to remove 
+-000005d0: 6262 6f78 206f 6e65 2062 7920 6f6e 6520  bbox one by one 
+-000005e0: 2873 7461 7274 2066 726f 6d20 7468 6520  (start from the 
+-000005f0: 6c61 7374 206f 6e65 292e 2074 7874 206c  last one). txt l
+-00000600: 6162 656c 206e 6f74 2069 6e63 6c75 6465  abel not include
+-00000610: 642e 0a20 2020 2020 2020 2020 2020 2020  d..             
+-00000620: 2020 2020 2020 2020 2020 2020 2020 2077                 w
+-00000630: 6179 2033 2e20 7072 6573 7320 2072 2f52  ay 3. press  r/R
+-00000640: 2074 6f20 656e 7465 7220 606d 6172 6b60   to enter `mark`
+-00000650: 206d 6f64 652c 2074 6865 6e20 636c 6963   mode, then clic
+-00000660: 6b20 7269 6768 7420 6275 7474 6f6e 206f  k right button o
+-00000670: 6e20 6262 6f78 2079 6f75 2772 6520 6162  n bbox you're ab
+-00000680: 6f75 7420 746f 2064 656c 6574 652e 2074  out to delete. t
+-00000690: 7874 206c 6162 656c 206e 6f74 2069 6e63  xt label not inc
+-000006a0: 6c75 6465 640a 2020 2020 7365 6c65 6374  luded.    select
+-000006b0: 2062 626f 783a 2020 2020 2020 2020 2020   bbox:          
+-000006c0: 2020 7072 6573 7320 722f 522c 2074 6865    press r/R, the
+-000006d0: 6e20 646f 7562 6c65 2063 6c69 636b 206f  n double click o
+-000006e0: 6e65 2062 626f 7865 7320 746f 2073 656c  ne bboxes to sel
+-000006f0: 6563 7420 6974 2e0a 2020 2020 6368 616e  ect it..    chan
+-00000700: 6765 2062 626f 7827 7320 636c 6173 733a  ge bbox's class:
+-00000710: 2020 2020 7365 6c65 6374 2062 626f 7820      select bbox 
+-00000720: 6669 7273 742c 2074 6865 6e20 7072 6573  first, then pres
+-00000730: 7320 6077 2f73 6020 746f 2063 6861 6e67  s `w/s` to chang
+-00000740: 6520 6974 7327 636c 6173 732e 200a 2727  e its'class. .''
+-00000750: 270a 0a0a 2320 7769 6e64 6f77 7320 0a57  '...# windows .W
+-00000760: 494e 444f 575f 4e41 4d45 203d 2027 4465  INDOW_NAME = 'De
+-00000770: 7465 6374 696f 6e2d 4c61 6265 6c6c 696e  tection-Labellin
+-00000780: 6727 0a0a 2320 7472 6163 6b65 7220 6261  g'..# tracker ba
+-00000790: 7273 0a54 5241 434b 4241 525f 494d 4720  rs.TRACKBAR_IMG 
+-000007a0: 3d20 2749 4d41 4745 5327 0a54 5241 434b  = 'IMAGES'.TRACK
+-000007b0: 4241 525f 434c 4153 5320 3d20 2743 4c41  BAR_CLASS = 'CLA
+-000007c0: 5353 4553 270a 0a0a 2320 696e 7075 7420  SSES'...# input 
+-000007d0: 6469 720a 494e 5055 545f 494d 475f 4449  dir.INPUT_IMG_DI
+-000007e0: 5220 203d 2022 220a 494e 5055 545f 4c41  R  = "".INPUT_LA
+-000007f0: 4245 4c5f 4449 5220 3d20 2222 0a49 4d41  BEL_DIR = "".IMA
+-00000800: 4745 5f43 4c41 5353 4553 5f4a 534f 4e5f  GE_CLASSES_JSON_
+-00000810: 5041 5448 203d 204e 6f6e 650a 0a0a 2320  PATH = None...# 
+-00000820: 6d6f 6465 200a 4d41 524b 5f4d 4f44 4520  mode .MARK_MODE 
+-00000830: 3d20 4661 6c73 650a 434c 4153 5349 4659  = False.CLASSIFY
+-00000840: 5f4d 4f44 4520 3d20 4661 6c73 650a 0a0a  _MODE = False...
+-00000850: 2320 696d 6167 6573 0a49 4d41 4745 5f50  # images.IMAGE_P
+-00000860: 4154 485f 4c49 5354 203d 205b 5d20 0a49  ATH_LIST = [] .I
+-00000870: 4d47 5f49 4458 5f43 5552 5245 4e54 203d  MG_IDX_CURRENT =
+-00000880: 2030 2020 2020 2020 2020 2023 20e5 bd93   0         # ...
+-00000890: e589 8de7 9a84 696d 6720 696e 6465 780a  ......img index.
+-000008a0: 494d 475f 4944 585f 4c41 5354 203d 2030  IMG_IDX_LAST = 0
+-000008b0: 2020 2020 2020 2020 2020 2020 2320 6c61              # la
+-000008c0: 7374 20e7 9a84 696d 6720 696e 6465 780a  st ...img index.
+-000008d0: 494d 475f 4355 5252 454e 5420 3d20 4e6f  IMG_CURRENT = No
+-000008e0: 6e65 2020 2020 2020 2020 2020 2320 e5bd  ne          # ..
+-000008f0: 93e5 898d e9a1 b5e9 9da2 e698 bee7 a4ba  ................
+-00000900: e79a 8469 6d67 0a49 4d47 5f4f 424a 4543  ...img.IMG_OBJEC
+-00000910: 5453 203d 205b 5d20 2020 2020 2020 2020  TS = []         
+-00000920: 2020 2023 20e5 bd93 e589 8de9 a1b5 e99d     # ...........
+-00000930: a2e6 80bb e689 80e6 9c89 6262 6f78 0a57  ..........bbox.W
+-00000940: 524f 4e47 5f49 4d47 5f53 4554 203d 2073  RONG_IMG_SET = s
+-00000950: 6574 2829 2020 2020 2020 2023 20e6 97a0  et()       # ...
+-00000960: e6b3 95e6 ada3 e5b8 b8e8 afbb e58f 96e7  ................
+-00000970: 9a84 696d 6167 650a 494d 475f 434f 554e  ..image.IMG_COUN
+-00000980: 5420 3d20 300a 0a23 2063 6c61 7373 6573  T = 0..# classes
+-00000990: 0a43 4c41 5353 5f4c 4953 5420 3d20 5b5d  .CLASS_LIST = []
+-000009a0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000009b0: 2020 2020 2020 2020 2023 2061 6c6c 2063           # all c
+-000009c0: 6c61 7373 2049 440a 434c 535f 4944 585f  lass ID.CLS_IDX_
+-000009d0: 4355 5252 454e 5420 3d20 3020 2020 2020  CURRENT = 0     
+-000009e0: 2020 2020 2320 e5bd 93e5 898d e79a 8463      # .........c
+-000009f0: 6c61 7373 2069 6e64 6578 0a43 4c53 5f43  lass index.CLS_C
+-00000a00: 4f55 4e54 203d 2030 0a49 4d41 4745 5f43  OUNT = 0.IMAGE_C
+-00000a10: 4c41 5353 4553 203d 207b 7d0a 0a23 2062  LASSES = {}..# b
+-00000a20: 626f 7820 7374 6174 7573 0a50 5256 455f  box status.PRVE_
+-00000a30: 5741 535f 444f 5542 4c45 5f43 4c49 434b  WAS_DOUBLE_CLICK
+-00000a40: 203d 2046 616c 7365 2020 2023 20e4 b98b   = False   # ...
+-00000a50: e589 8de6 98af e590 a6e5 8f8c e587 bbe4  ................
+-00000a60: ba86 0a49 535f 4242 4f58 5f53 454c 4543  ...IS_BBOX_SELEC
+-00000a70: 5445 4420 3d20 4661 6c73 6520 2020 2020  TED = False     
+-00000a80: 2020 2023 20e6 98af e590 a6e9 8089 e4b8     # ...........
+-00000a90: ade4 ba86 e5bd 93e5 898d 6262 6f78 0a53  ..........bbox.S
+-00000aa0: 454c 4543 5445 445f 4242 4f58 203d 202d  ELECTED_BBOX = -
+-00000ab0: 3120 2020 2020 2020 2020 2020 2020 2023  1              #
+-00000ac0: 20e9 8089 e4b8 ade5 908e efbc 8c49 4d47   ............IMG
+-00000ad0: 5f4f 424a 4543 5453 e4b8 ade7 9a84 e7ac  _OBJECTS........
+-00000ae0: ac20 6964 7820 e4b8 aa0a 0a23 2070 6f69  . idx .....# poi
+-00000af0: 6e74 5f78 7920 2620 6d6f 7573 655f 7879  nt_xy & mouse_xy
+-00000b00: 0a4d 4f55 5345 5f58 203d 2030 0a4d 4f55  .MOUSE_X = 0.MOU
+-00000b10: 5345 5f59 203d 2030 0a50 4f49 4e54 5f31  SE_Y = 0.POINT_1
+-00000b20: 203d 2028 2d31 2c20 2d31 290a 504f 494e   = (-1, -1).POIN
+-00000b30: 545f 3220 3d20 282d 312c 202d 3129 0a0a  T_2 = (-1, -1)..
+-00000b40: 2320 6c69 6e65 2074 6869 636b 6e65 7373  # line thickness
+-00000b50: 0a4c 494e 455f 5448 4943 4b4e 4553 5320  .LINE_THICKNESS 
+-00000b60: 3d20 310a 0a23 2d2d 2d2d 2d2d 2d2d 2d2d  = 1..#----------
+-00000b70: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000b80: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000b90: 2d2d 0a23 2020 2020 2020 2020 2020 4675  --.#          Fu
+-00000ba0: 6e63 7469 6f6e 730a 232d 2d2d 2d2d 2d2d  nctions.#-------
+-00000bb0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000bc0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00000bd0: 2d2d 2d2d 2d0a 0a23 2073 6574 2063 7572  -----..# set cur
+-00000be0: 7265 6e74 2063 6c61 7373 2069 6e64 6578  rent class index
+-00000bf0: 200a 6465 6620 7365 745f 636c 6173 735f   .def set_class_
+-00000c00: 696e 6465 7828 7829 3a0a 0a20 2020 2023  index(x):..    #
+-00000c10: 2063 7572 7265 6e74 5f63 6c61 7373 5f69   current_class_i
+-00000c20: 6e64 6578 2c20 636c 6173 735f 6c69 7374  ndex, class_list
+-00000c30: 2c20 7769 6e64 6f77 5f6e 616d 650a 2020  , window_name.  
+-00000c40: 2020 676c 6f62 616c 2043 4c53 5f49 4458    global CLS_IDX
+-00000c50: 5f43 5552 5245 4e54 2c20 434c 4153 535f  _CURRENT, CLASS_
+-00000c60: 4c49 5354 2c20 5749 4e44 4f57 5f4e 414d  LIST, WINDOW_NAM
+-00000c70: 450a 0a20 2020 2043 4c53 5f49 4458 5f43  E..    CLS_IDX_C
+-00000c80: 5552 5245 4e54 203d 2078 0a20 2020 2023  URRENT = x.    #
+-00000c90: 2074 6578 7420 3d20 6622 5365 6c65 6374   text = f"Select
+-00000ca0: 6564 2063 6c61 7373 3a20 7b43 4c41 5353  ed class: {CLASS
+-00000cb0: 5f4c 4953 545b 434c 535f 4944 585f 4355  _LIST[CLS_IDX_CU
+-00000cc0: 5252 454e 545d 7d20 287b 7374 7228 434c  RRENT]} ({str(CL
+-00000cd0: 535f 4944 585f 4355 5252 454e 5429 7d2f  S_IDX_CURRENT)}/
+-00000ce0: 7b73 7472 2843 4c53 5f43 4f55 4e54 297d  {str(CLS_COUNT)}
+-00000cf0: 2922 200a 2020 2020 2320 7072 696e 745f  )" .    # print_
+-00000d00: 696e 666f 2874 6578 742c 206d 733d 3530  info(text, ms=50
+-00000d10: 302c 2077 6865 7265 3d22 4f76 6572 6c61  0, where="Overla
+-00000d20: 7922 290a 0a0a 0a23 20e2 889a 2064 6973  y")....# ... dis
+-00000d30: 706c 6179 2074 6578 7420 696e 2074 6865  play text in the
+-00000d40: 205b 6f76 6572 6c61 702c 2074 6572 6d69   [overlap, termi
+-00000d50: 6e61 6c2c 2073 7461 7475 735f 6261 725d  nal, status_bar]
+-00000d60: 0a64 6566 2070 7269 6e74 5f69 6e66 6f28  .def print_info(
+-00000d70: 7465 7874 3d22 666f 7220 6578 616d 706c  text="for exampl
+-00000d80: 6522 2c20 6d73 3d31 3030 302c 2077 6865  e", ms=1000, whe
+-00000d90: 7265 3d4e 6f6e 6529 3a0a 2020 2020 676c  re=None):.    gl
+-00000da0: 6f62 616c 2057 494e 444f 575f 4e41 4d45  obal WINDOW_NAME
+-00000db0: 0a0a 2020 2020 6966 2077 6865 7265 203d  ..    if where =
+-00000dc0: 3d20 274f 7665 726c 6179 273a 0a20 2020  = 'Overlay':.   
+-00000dd0: 2020 2020 2063 7632 2e64 6973 706c 6179       cv2.display
+-00000de0: 4f76 6572 6c61 7928 5749 4e44 4f57 5f4e  Overlay(WINDOW_N
+-00000df0: 414d 452c 2074 6578 742c 206d 7329 0a20  AME, text, ms). 
+-00000e00: 2020 2065 6c69 6620 7768 6572 6520 3d3d     elif where ==
+-00000e10: 2027 5374 6174 7573 6261 7227 3a0a 2020   'Statusbar':.  
+-00000e20: 2020 2020 2020 6376 322e 6469 7370 6c61        cv2.displa
+-00000e30: 7953 7461 7475 7342 6172 2857 494e 444f  yStatusBar(WINDO
+-00000e40: 575f 4e41 4d45 2c20 7465 7874 2c20 6d73  W_NAME, text, ms
+-00000e50: 290a 2020 2020 656c 7365 3a0a 2020 2020  ).    else:.    
+-00000e60: 2020 2020 4c4f 4747 4552 2e69 6e66 6f28      LOGGER.info(
+-00000e70: 6622 7b74 6578 747d 2229 0a0a 0a0a 2320  f"{text}")....# 
+-00000e80: 696e 6465 7820 2d31 0a64 6566 2064 6563  index -1.def dec
+-00000e90: 7265 6173 655f 696e 6465 7828 6375 7272  rease_index(curr
+-00000ea0: 656e 745f 6964 782c 206d 6178 5f69 6478  ent_idx, max_idx
+-00000eb0: 293a 0a20 2020 2063 7572 7265 6e74 5f69  ):.    current_i
+-00000ec0: 6478 202d 3d20 310a 2020 2020 6966 2063  dx -= 1.    if c
+-00000ed0: 7572 7265 6e74 5f69 6478 203c 2030 3a0a  urrent_idx < 0:.
+-00000ee0: 2020 2020 2020 2020 6375 7272 656e 745f          current_
+-00000ef0: 6964 7820 3d20 6d61 785f 6964 780a 2020  idx = max_idx.  
+-00000f00: 2020 7265 7475 726e 2063 7572 7265 6e74    return current
+-00000f10: 5f69 6478 0a0a 2320 696e 6465 7820 2b31  _idx..# index +1
+-00000f20: 0a64 6566 2069 6e63 7265 6173 655f 696e  .def increase_in
+-00000f30: 6465 7828 6375 7272 656e 745f 6964 782c  dex(current_idx,
+-00000f40: 206d 6178 5f69 6478 293a 0a20 2020 2063   max_idx):.    c
+-00000f50: 7572 7265 6e74 5f69 6478 202b 3d20 310a  urrent_idx += 1.
+-00000f60: 2020 2020 6966 2063 7572 7265 6e74 5f69      if current_i
+-00000f70: 6478 203e 206d 6178 5f69 6478 3a0a 2020  dx > max_idx:.  
+-00000f80: 2020 2020 2020 6375 7272 656e 745f 6964        current_id
+-00000f90: 7820 3d20 300a 2020 2020 7265 7475 726e  x = 0.    return
+-00000fa0: 2063 7572 7265 6e74 5f69 6478 0a0a 0a0a   current_idx....
+-00000fb0: 2320 7365 7420 6375 7272 656e 7420 696d  # set current im
+-00000fc0: 6720 696e 6465 7820 2620 696d 7368 6f77  g index & imshow
+-00000fd0: 2069 6d61 6765 0a64 6566 2073 6574 5f69   image.def set_i
+-00000fe0: 6d67 5f69 6e64 6578 2878 293a 0a20 2020  mg_index(x):.   
+-00000ff0: 2067 6c6f 6261 6c20 494d 475f 4944 585f   global IMG_IDX_
+-00001000: 4355 5252 454e 542c 2049 4d47 5f43 5552  CURRENT, IMG_CUR
+-00001010: 5245 4e54 2c20 5749 4e44 4f57 5f4e 414d  RENT, WINDOW_NAM
+-00001020: 452c 2049 4d41 4745 5f50 4154 485f 4c49  E, IMAGE_PATH_LI
+-00001030: 5354 2c20 5752 4f4e 475f 494d 475f 5345  ST, WRONG_IMG_SE
+-00001040: 540a 0a20 2020 2049 4d47 5f49 4458 5f43  T..    IMG_IDX_C
+-00001050: 5552 5245 4e54 203d 2078 0a20 2020 2069  URRENT = x.    i
+-00001060: 6d67 5f70 6174 6820 3d20 494d 4147 455f  mg_path = IMAGE_
+-00001070: 5041 5448 5f4c 4953 545b 494d 475f 4944  PATH_LIST[IMG_ID
+-00001080: 585f 4355 5252 454e 545d 0a20 2020 200a  X_CURRENT].    .
+-00001090: 2020 2020 2320 6f70 656e 6376 2072 6561      # opencv rea
+-000010a0: 6420 696d 670a 2020 2020 494d 475f 4355  d img.    IMG_CU
+-000010b0: 5252 454e 5420 3d20 6376 322e 696d 7265  RRENT = cv2.imre
+-000010c0: 6164 2869 6d67 5f70 6174 6829 0a20 2020  ad(img_path).   
+-000010d0: 2069 6620 494d 475f 4355 5252 454e 5420   if IMG_CURRENT 
+-000010e0: 6973 204e 6f6e 653a 0a20 2020 2020 2020  is None:.       
+-000010f0: 2049 4d47 5f43 5552 5245 4e54 203d 206e   IMG_CURRENT = n
+-00001100: 702e 6f6e 6573 2828 3130 3030 2c20 3130  p.ones((1000, 10
+-00001110: 3030 2c20 3329 2920 2023 2063 7265 6174  00, 3))  # creat
+-00001120: 6520 6120 656d 7074 7920 696d 670a 2020  e a empty img.  
+-00001130: 2020 2020 2020 2320 7368 6f77 206e 6f74        # show not
+-00001140: 6966 6963 6174 696f 6e0a 2020 2020 2020  ification.      
+-00001150: 2020 6376 322e 7075 7454 6578 7428 494d    cv2.putText(IM
+-00001160: 475f 4355 5252 454e 542c 2022 5772 6f6e  G_CURRENT, "Wron
+-00001170: 6720 696d 6167 6520 666f 726d 6174 2120  g image format! 
+-00001180: 4974 2077 696c 6c20 6465 6c65 7465 2061  It will delete a
+-00001190: 6674 6572 2070 7265 7373 696e 6720 4553  fter pressing ES
+-000011a0: 432e 222c 200a 2020 2020 2020 2020 2020  C.", .          
+-000011b0: 2020 2020 2020 2020 2020 2831 302c 2049            (10, I
+-000011c0: 4d47 5f43 5552 5245 4e54 2e73 6861 7065  MG_CURRENT.shape
+-000011d0: 5b30 5d2f 2f32 292c 2063 7632 2e46 4f4e  [0]//2), cv2.FON
+-000011e0: 545f 4845 5253 4845 595f 5349 4d50 4c45  T_HERSHEY_SIMPLE
+-000011f0: 582c 200a 2020 2020 2020 2020 2020 2020  X, .            
+-00001200: 2020 2020 2020 2020 312c 2028 302c 302c          1, (0,0,
+-00001210: 3029 2c20 7468 6963 6b6e 6573 733d 322c  0), thickness=2,
+-00001220: 206c 696e 6554 7970 653d 6376 322e 4c49   lineType=cv2.LI
+-00001230: 4e45 5f41 4129 0a20 2020 2020 2020 2023  NE_AA).        #
+-00001240: 2073 6176 6520 7772 6f6e 6720 696d 6167   save wrong imag
+-00001250: 6573 2070 6174 682c 2064 656c 6574 6520  es path, delete 
+-00001260: 616c 6c20 7468 6573 6520 696d 6167 6520  all these image 
+-00001270: 6174 2074 6865 2065 6e64 206f 6620 7468  at the end of th
+-00001280: 6520 7072 6f67 7261 6d0a 2020 2020 2020  e program.      
+-00001290: 2020 5752 4f4e 475f 494d 475f 5345 542e    WRONG_IMG_SET.
+-000012a0: 6164 6428 696d 675f 7061 7468 290a 0a0a  add(img_path)...
+-000012b0: 0a0a 2320 6465 6620 746f 5f79 6f6c 6f5f  ..# def to_yolo_
+-000012c0: 666f 726d 6174 2863 6c73 5f69 6478 2c20  format(cls_idx, 
+-000012d0: 706f 696e 745f 312c 2070 6f69 6e74 5f32  point_1, point_2
+-000012e0: 2c20 696d 675f 772c 2069 6d67 5f68 2c20  , img_w, img_h, 
+-000012f0: 6570 7320 3d20 3165 2d38 293a 0a64 6566  eps = 1e-8):.def
+-00001300: 2069 6478 7978 7932 6964 6378 6379 7768   idxyxy2idcxcywh
+-00001310: 2863 6c73 5f69 6478 2c20 706f 696e 745f  (cls_idx, point_
+-00001320: 312c 2070 6f69 6e74 5f32 2c20 696d 675f  1, point_2, img_
+-00001330: 772c 2069 6d67 5f68 2c20 6570 7320 3d20  w, img_h, eps = 
+-00001340: 3165 2d38 293a 0a20 2020 2023 2078 7978  1e-8):.    # xyx
+-00001350: 7920 2d3e 2063 7863 7977 680a 2020 2020  y -> cxcywh.    
+-00001360: 2320 626f 756e 6461 7279 2063 6865 636b  # boundary check
+-00001370: 0a20 2020 2069 6620 706f 696e 745f 315b  .    if point_1[
+-00001380: 305d 203c 2030 3a0a 2020 2020 2020 2020  0] < 0:.        
+-00001390: 706f 696e 745f 3120 3d20 2865 7073 2c20  point_1 = (eps, 
+-000013a0: 706f 696e 745f 315b 315d 290a 2020 2020  point_1[1]).    
+-000013b0: 6966 2070 6f69 6e74 5f32 5b30 5d20 3e20  if point_2[0] > 
+-000013c0: 696d 675f 773a 0a20 2020 2020 2020 2070  img_w:.        p
+-000013d0: 6f69 6e74 5f32 203d 2028 696d 675f 7720  oint_2 = (img_w 
+-000013e0: 2d20 6570 732c 2070 6f69 6e74 5f32 5b31  - eps, point_2[1
+-000013f0: 5d29 0a20 2020 2069 6620 706f 696e 745f  ]).    if point_
+-00001400: 315b 315d 203c 2030 3a0a 2020 2020 2020  1[1] < 0:.      
+-00001410: 2020 706f 696e 745f 3120 3d20 2870 6f69    point_1 = (poi
+-00001420: 6e74 5f31 5b30 5d2c 2065 7073 290a 2020  nt_1[0], eps).  
+-00001430: 2020 6966 2070 6f69 6e74 5f32 5b31 5d20    if point_2[1] 
+-00001440: 3e20 696d 675f 683a 0a20 2020 2020 2020  > img_h:.       
+-00001450: 2070 6f69 6e74 5f32 203d 2028 706f 696e   point_2 = (poin
+-00001460: 745f 325b 305d 2c20 696d 675f 7720 2d20  t_2[0], img_w - 
+-00001470: 6570 7329 0a0a 2020 2020 2320 636f 6e76  eps)..    # conv
+-00001480: 6572 740a 2020 2020 6378 203d 2066 6c6f  ert.    cx = flo
+-00001490: 6174 2828 706f 696e 745f 315b 305d 202b  at((point_1[0] +
+-000014a0: 2070 6f69 6e74 5f32 5b30 5d29 202f 2028   point_2[0]) / (
+-000014b0: 322e 3020 2a20 696d 675f 7729 2029 0a20  2.0 * img_w) ). 
+-000014c0: 2020 2063 7920 3d20 666c 6f61 7428 2870     cy = float((p
+-000014d0: 6f69 6e74 5f31 5b31 5d20 2b20 706f 696e  oint_1[1] + poin
+-000014e0: 745f 325b 315d 2920 2f20 2832 2e30 202a  t_2[1]) / (2.0 *
+-000014f0: 2069 6d67 5f68 2929 0a20 2020 2077 203d   img_h)).    w =
+-00001500: 2066 6c6f 6174 2861 6273 2870 6f69 6e74   float(abs(point
+-00001510: 5f32 5b30 5d20 2d20 706f 696e 745f 315b  _2[0] - point_1[
+-00001520: 305d 2929 202f 2069 6d67 5f77 0a20 2020  0])) / img_w.   
+-00001530: 2068 203d 2066 6c6f 6174 2861 6273 2870   h = float(abs(p
+-00001540: 6f69 6e74 5f32 5b31 5d20 2d20 706f 696e  oint_2[1] - poin
+-00001550: 745f 315b 315d 2929 202f 2069 6d67 5f68  t_1[1])) / img_h
+-00001560: 0a20 2020 200a 2020 2020 2320 646f 7562  .    .    # doub
+-00001570: 6c65 2063 6865 636b 206f 6620 626f 756e  le check of boun
+-00001580: 6461 7279 0a20 2020 2069 6620 6e6f 7420  dary.    if not 
+-00001590: 616c 6c28 5b30 203c 3d20 7820 3c3d 2031  all([0 <= x <= 1
+-000015a0: 2066 6f72 2078 2069 6e20 5b63 782c 2063   for x in [cx, c
+-000015b0: 792c 2077 2c20 685d 5d29 3a0a 2020 2020  y, w, h]]):.    
+-000015c0: 2020 2020 4c4f 4747 4552 2e65 7272 6f72      LOGGER.error
+-000015d0: 2866 2257 726f 6e67 2063 6f6f 7264 696e  (f"Wrong coordin
+-000015e0: 6174 696f 6e20 6f66 2063 782c 2063 792c  ation of cx, cy,
+-000015f0: 2077 2c20 6821 2229 0a20 2020 2020 2020   w, h!").       
+-00001600: 200a 2020 2020 2020 2020 2320 746f 646f   .        # todo
+-00001610: 0a0a 0a20 2020 2069 7465 6d73 203d 206d  ...    items = m
+-00001620: 6170 2873 7472 2c20 5b63 6c73 5f69 6478  ap(str, [cls_idx
+-00001630: 2c20 6378 2c20 6379 2c20 772c 2068 5d29  , cx, cy, w, h])
+-00001640: 0a20 2020 2072 6574 7572 6e20 2720 272e  .    return ' '.
+-00001650: 6a6f 696e 2869 7465 6d73 290a 0a0a 2320  join(items)...# 
+-00001660: 7265 6164 206c 6162 656c 2e74 7874 2061  read label.txt a
+-00001670: 6e64 2064 7261 7720 616c 6c20 6262 6f78  nd draw all bbox
+-00001680: 6573 0a23 2074 6f64 6f20 3a20 7265 6e61  es.# todo : rena
+-00001690: 6d65 0a64 6566 2064 7261 775f 6262 6f78  me.def draw_bbox
+-000016a0: 6573 5f66 726f 6d5f 6669 6c65 2869 6d67  es_from_file(img
+-000016b0: 2c20 6c61 6265 6c5f 7061 7468 2c20 7769  , label_path, wi
+-000016c0: 6474 682c 2068 6569 6768 742c 2063 6f6c  dth, height, col
+-000016d0: 6f72 732c 206c 696e 655f 7468 6963 6b6e  ors, line_thickn
+-000016e0: 6573 732c 2073 696e 676c 655f 636c 733d  ess, single_cls=
+-000016f0: 4e6f 6e65 2c20 6869 6465 5f6c 6162 656c  None, hide_label
+-00001700: 3d46 616c 7365 293a 0a0a 2020 2020 2320  =False):..    # 
+-00001710: 6375 7272 656e 745f 696d 675f 616c 6c5f  current_img_all_
+-00001720: 6262 6f78 6573 2c20 6973 5f63 7572 7265  bboxes, is_curre
+-00001730: 6e74 5f62 626f 785f 7365 6c65 6374 6564  nt_bbox_selected
+-00001740: 2c20 696e 6465 785f 6f66 5f73 656c 6563  , index_of_selec
+-00001750: 745f 6262 6f78 2c20 636c 6173 735f 6c69  t_bbox, class_li
+-00001760: 7374 0a20 2020 2067 6c6f 6261 6c20 494d  st.    global IM
+-00001770: 475f 4f42 4a45 4354 532c 2049 535f 4242  G_OBJECTS, IS_BB
+-00001780: 4f58 5f53 454c 4543 5445 442c 2053 454c  OX_SELECTED, SEL
+-00001790: 4543 5445 445f 4242 4f58 2c20 434c 4153  ECTED_BBOX, CLAS
+-000017a0: 535f 4c49 5354 0a0a 2020 2020 2320 696e  S_LIST..    # in
+-000017b0: 6974 6961 6c20 6f62 6a65 7874 730a 2020  itial objexts.  
+-000017c0: 2020 494d 475f 4f42 4a45 4354 5320 3d20    IMG_OBJECTS = 
+-000017d0: 5b5d 0a0a 2020 2020 2320 4472 6177 696e  []..    # Drawin
+-000017e0: 6720 626f 756e 6469 6e67 2062 6f78 6573  g bounding boxes
+-000017f0: 2066 726f 6d20 7468 6520 594f 4c4f 2066   from the YOLO f
+-00001800: 696c 6573 0a20 2020 2023 2069 6620 6f73  iles.    # if os
+-00001810: 2e70 6174 682e 6973 6669 6c65 286c 6162  .path.isfile(lab
+-00001820: 656c 5f70 6174 6829 3a0a 2020 2020 6966  el_path):.    if
+-00001830: 2050 6174 6828 6c61 6265 6c5f 7061 7468   Path(label_path
+-00001840: 292e 6973 5f66 696c 6528 293a 0a0a 2020  ).is_file():..  
+-00001850: 2020 2020 2020 2320 7265 6164 206c 6162        # read lab
+-00001860: 656c 2066 696c 650a 2020 2020 2020 2020  el file.        
+-00001870: 7769 7468 206f 7065 6e28 6c61 6265 6c5f  with open(label_
+-00001880: 7061 7468 2920 6173 2066 3a0a 2020 2020  path) as f:.    
+-00001890: 2020 2020 2020 2020 666f 7220 6964 782c          for idx,
+-000018a0: 206c 696e 6520 696e 2065 6e75 6d65 7261   line in enumera
+-000018b0: 7465 2866 293a 0a20 2020 2020 2020 2020  te(f):.         
+-000018c0: 2020 2020 2020 2023 2070 7269 6e74 2866         # print(f
+-000018d0: 223e 206c 696e 653a 207b 6c69 6e65 7d22  "> line: {line}"
+-000018e0: 290a 2020 2020 2020 2020 2020 2020 2020  ).              
+-000018f0: 2020 2320 7072 696e 7428 6622 3e20 6c65    # print(f"> le
+-00001900: 6e20 6c69 6e65 3a20 7b6c 656e 286c 696e  n line: {len(lin
+-00001910: 6529 7d22 290a 0a20 2020 2020 2020 2020  e)}")..         
+-00001920: 2020 2020 2020 2023 2069 6620 6c69 6e65         # if line
+-00001930: 203d 3d20 2727 3a0a 2020 2020 2020 2020   == '':.        
+-00001940: 2020 2020 2020 2020 2320 2020 2020 7072          #     pr
+-00001950: 696e 7428 6622 3e20 6c69 6e65 3a20 7b6c  int(f"> line: {l
+-00001960: 696e 657d 2229 0a20 2020 2020 2020 2020  ine}").         
+-00001970: 2020 2020 2020 2023 2020 2020 2070 7269         #     pri
+-00001980: 6e74 2866 223e 206c 656e 206c 696e 653a  nt(f"> len line:
+-00001990: 207b 6c65 6e28 6c69 6e65 297d 2229 0a0a   {len(line)}")..
+-000019a0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000019b0: 2320 2869 642c 2063 782c 2063 792c 2077  # (id, cx, cy, w
+-000019c0: 2c20 6829 203d 3e20 2869 642c 206e 616d  , h) => (id, nam
+-000019d0: 652c 2078 6d69 6e2c 2079 6d69 6e2c 2078  e, xmin, ymin, x
+-000019e0: 6d61 782c 2079 6d61 7829 0a20 2020 2020  max, ymax).     
+-000019f0: 2020 2020 2020 2020 2020 2063 6c61 7373             class
+-00001a00: 4964 2c20 6365 6e74 6572 582c 2063 656e  Id, centerX, cen
+-00001a10: 7465 7259 2c20 6262 6f78 5f77 6964 7468  terY, bbox_width
+-00001a20: 2c20 6262 6f78 5f68 6569 6768 742c 202a  , bbox_height, *
+-00001a30: 6b70 7473 5f6c 6973 7420 3d20 6c69 6e65  kpts_list = line
+-00001a40: 2e73 706c 6974 2829 0a20 2020 2020 2020  .split().       
+-00001a50: 2020 2020 2020 2020 2062 626f 785f 7769           bbox_wi
+-00001a60: 6474 6820 3d20 666c 6f61 7428 6262 6f78  dth = float(bbox
+-00001a70: 5f77 6964 7468 290a 2020 2020 2020 2020  _width).        
+-00001a80: 2020 2020 2020 2020 6262 6f78 5f68 6569          bbox_hei
+-00001a90: 6768 7420 203d 2066 6c6f 6174 2862 626f  ght  = float(bbo
+-00001aa0: 785f 6865 6967 6874 290a 2020 2020 2020  x_height).      
+-00001ab0: 2020 2020 2020 2020 2020 6365 6e74 6572            center
+-00001ac0: 5820 3d20 666c 6f61 7428 6365 6e74 6572  X = float(center
+-00001ad0: 5829 0a20 2020 2020 2020 2020 2020 2020  X).             
+-00001ae0: 2020 2063 656e 7465 7259 203d 2066 6c6f     centerY = flo
+-00001af0: 6174 2863 656e 7465 7259 290a 0a20 2020  at(centerY)..   
+-00001b00: 2020 2020 2020 2020 2020 2020 2063 6c61               cla
+-00001b10: 7373 5f69 6e64 6578 203d 2069 6e74 2863  ss_index = int(c
+-00001b20: 6c61 7373 4964 290a 2020 2020 2020 2020  lassId).        
+-00001b30: 2020 2020 2020 2020 636c 6173 735f 6e61          class_na
+-00001b40: 6d65 203d 2043 4c41 5353 5f4c 4953 545b  me = CLASS_LIST[
+-00001b50: 636c 6173 735f 696e 6465 785d 0a20 2020  class_index].   
+-00001b60: 2020 2020 2020 2020 2020 2020 2078 6d69               xmi
+-00001b70: 6e20 3d20 696e 7428 7769 6474 6820 2a20  n = int(width * 
+-00001b80: 6365 6e74 6572 5820 2d20 7769 6474 6820  centerX - width 
+-00001b90: 2a20 6262 6f78 5f77 6964 7468 202f 2032  * bbox_width / 2
+-00001ba0: 2e30 290a 2020 2020 2020 2020 2020 2020  .0).            
+-00001bb0: 2020 2020 786d 6178 203d 2069 6e74 2877      xmax = int(w
+-00001bc0: 6964 7468 202a 2063 656e 7465 7258 202b  idth * centerX +
+-00001bd0: 2077 6964 7468 202a 2062 626f 785f 7769   width * bbox_wi
+-00001be0: 6474 6820 2f20 322e 3029 0a20 2020 2020  dth / 2.0).     
+-00001bf0: 2020 2020 2020 2020 2020 2079 6d69 6e20             ymin 
+-00001c00: 3d20 696e 7428 6865 6967 6874 202a 2063  = int(height * c
+-00001c10: 656e 7465 7259 202d 2068 6569 6768 7420  enterY - height 
+-00001c20: 2a20 6262 6f78 5f68 6569 6768 7420 2f20  * bbox_height / 
+-00001c30: 322e 3029 0a20 2020 2020 2020 2020 2020  2.0).           
+-00001c40: 2020 2020 2079 6d61 7820 3d20 696e 7428       ymax = int(
+-00001c50: 6865 6967 6874 202a 2063 656e 7465 7259  height * centerY
+-00001c60: 202b 2068 6569 6768 7420 2a20 6262 6f78   + height * bbox
+-00001c70: 5f68 6569 6768 7420 2f20 322e 3029 0a0a  _height / 2.0)..
+-00001c80: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00001c90: 2023 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   # -------------
+-00001ca0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001cb0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001cc0: 2d2d 2d2d 2d2d 2d2d 0a20 2020 2020 2020  --------.       
+-00001cd0: 2020 2020 2020 2020 2023 206e 6577 206b           # new k
+-00001ce0: 7074 730a 2020 2020 2020 2020 2020 2020  pts.            
+-00001cf0: 2020 2020 2320 2d2d 2d2d 2d2d 2d2d 2d2d      # ----------
+-00001d00: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001d10: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001d20: 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020 2020  -----------.    
+-00001d30: 2020 2020 2020 2020 2020 2020 7374 6570              step
+-00001d40: 203d 2032 2020 2020 2320 6b70 7473 5f66   = 2    # kpts_f
+-00001d50: 6f72 6d61 7420 3d20 2778 7927 2020 2320  ormat = 'xy'  # 
+-00001d60: 2778 7963 270a 2020 2020 2020 2020 2020  'xyc'.          
+-00001d70: 2020 2020 2020 6b70 7473 203d 205b 5d0a        kpts = [].
+-00001d80: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001d90: 666f 7220 6964 7820 696e 2072 616e 6765  for idx in range
+-00001da0: 286c 656e 286b 7074 735f 6c69 7374 2920  (len(kpts_list) 
+-00001db0: 2f2f 2073 7465 7029 3a0a 2020 2020 2020  // step):.      
+-00001dc0: 2020 2020 2020 2020 2020 2020 2020 6966                if
+-00001dd0: 206b 7074 735f 6c69 7374 5b69 6478 202a   kpts_list[idx *
+-00001de0: 2073 7465 705d 203d 3d20 272d 3127 206f   step] == '-1' o
+-00001df0: 7220 6b70 7473 5f6c 6973 745b 6964 7820  r kpts_list[idx 
+-00001e00: 2a20 7374 6570 5d20 3d3d 2027 2d31 273a  * step] == '-1':
+-00001e10: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00001e20: 2020 2020 2020 2020 206b 7074 732e 6170           kpts.ap
+-00001e30: 7065 6e64 285b 302c 2030 5d29 0a0a 2020  pend([0, 0])..  
+-00001e40: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001e50: 2020 656c 7365 3a0a 2020 2020 2020 2020    else:.        
+-00001e60: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001e70: 6b70 745f 7820 3d20 696e 7428 666c 6f61  kpt_x = int(floa
+-00001e80: 7428 6b70 7473 5f6c 6973 745b 6964 7820  t(kpts_list[idx 
+-00001e90: 2a20 7374 6570 5d29 202a 2077 6964 7468  * step]) * width
+-00001ea0: 2920 0a20 2020 2020 2020 2020 2020 2020  ) .             
+-00001eb0: 2020 2020 2020 2020 2020 206b 7074 5f79             kpt_y
+-00001ec0: 203d 2069 6e74 2866 6c6f 6174 286b 7074   = int(float(kpt
+-00001ed0: 735f 6c69 7374 5b69 6478 202a 2073 7465  s_list[idx * ste
+-00001ee0: 7020 2b20 315d 2920 2a20 6865 6967 6874  p + 1]) * height
+-00001ef0: 2920 0a20 2020 2020 2020 2020 2020 2020  ) .             
+-00001f00: 2020 2020 2020 2020 2020 206b 7074 732e             kpts.
+-00001f10: 6170 7065 6e64 285b 6b70 745f 782c 206b  append([kpt_x, k
+-00001f20: 7074 5f79 5d29 0a0a 0a0a 2020 2020 2020  pt_y])....      
+-00001f30: 2020 2020 2020 2020 2020 2320 7368 6f77            # show
+-00001f40: 2073 696e 676c 6520 636c 6173 730a 2020   single class.  
+-00001f50: 2020 2020 2020 2020 2020 2020 2020 6966                if
+-00001f60: 2073 696e 676c 655f 636c 7320 6973 206e   single_cls is n
+-00001f70: 6f74 204e 6f6e 653a 0a20 2020 2020 2020  ot None:.       
+-00001f80: 2020 2020 2020 2020 2020 2020 2069 6620               if 
+-00001f90: 7374 7228 636c 6173 735f 696e 6465 7829  str(class_index)
+-00001fa0: 2021 3d20 7374 7228 7369 6e67 6c65 5f63   != str(single_c
+-00001fb0: 6c73 293a 0a20 2020 2020 2020 2020 2020  ls):.           
+-00001fc0: 2020 2020 2020 2020 2020 2020 2063 6f6e               con
+-00001fd0: 7469 6e75 6520 2020 200a 0a20 2020 2020  tinue    ..     
+-00001fe0: 2020 2020 2020 2020 2020 2023 2061 6c6c             # all
+-00001ff0: 206f 626a 6563 7420 0a20 2020 2020 2020   object .       
+-00002000: 2020 2020 2020 2020 2049 4d47 5f4f 424a           IMG_OBJ
+-00002010: 4543 5453 2e61 7070 656e 6428 5b63 6c61  ECTS.append([cla
+-00002020: 7373 5f69 6e64 6578 2c20 786d 696e 2c20  ss_index, xmin, 
+-00002030: 796d 696e 2c20 786d 6178 2c20 796d 6178  ymin, xmax, ymax
+-00002040: 5d29 0a0a 2020 2020 2020 2020 2020 2020  ])..            
+-00002050: 2020 2020 2320 6472 6177 2062 626f 780a      # draw bbox.
+-00002060: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002070: 636f 6c6f 7220 3d20 636f 6c6f 7273 2869  color = colors(i
+-00002080: 6e74 2863 6c61 7373 5f69 6e64 6578 292c  nt(class_index),
+-00002090: 2062 6772 3d46 616c 7365 290a 2020 2020   bgr=False).    
+-000020a0: 2020 2020 2020 2020 2020 2020 6376 322e              cv2.
+-000020b0: 7265 6374 616e 676c 6528 696d 672c 2028  rectangle(img, (
+-000020c0: 786d 696e 2c20 796d 696e 292c 2028 786d  xmin, ymin), (xm
+-000020d0: 6178 2c20 796d 6178 292c 2063 6f6c 6f72  ax, ymax), color
+-000020e0: 2c20 6c69 6e65 5f74 6869 636b 6e65 7373  , line_thickness
+-000020f0: 2c20 6376 322e 4c49 4e45 5f41 4129 2020  , cv2.LINE_AA)  
+-00002100: 0a0a 2020 2020 2020 2020 2020 2020 2020  ..              
+-00002110: 2020 2320 6869 6465 206c 6162 656c 206f    # hide label o
+-00002120: 7220 6e6f 740a 2020 2020 2020 2020 2020  r not.          
+-00002130: 2020 2020 2020 6966 206e 6f74 2068 6964        if not hid
+-00002140: 655f 6c61 6265 6c3a 0a20 2020 2020 2020  e_label:.       
+-00002150: 2020 2020 2020 2020 2020 2020 2066 6f6e               fon
+-00002160: 743d 6376 322e 464f 4e54 5f48 4552 5348  t=cv2.FONT_HERSH
+-00002170: 4559 5f53 494d 504c 4558 0a20 2020 2020  EY_SIMPLEX.     
+-00002180: 2020 2020 2020 2020 2020 2020 2020 2066                 f
+-00002190: 6f6e 745f 7468 6963 6b6e 6573 7320 3d20  ont_thickness = 
+-000021a0: 6d61 7828 6c69 6e65 5f74 6869 636b 6e65  max(line_thickne
+-000021b0: 7373 202d 2031 2c20 3129 2020 2320 666f  ss - 1, 1)  # fo
+-000021c0: 6e74 2074 6869 636b 6e65 7373 0a20 2020  nt thickness.   
+-000021d0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000021e0: 2066 6f6e 7453 6361 6c65 203d 206c 696e   fontScale = lin
+-000021f0: 655f 7468 6963 6b6e 6573 7320 2f20 330a  e_thickness / 3.
+-00002200: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002210: 2020 2020 7465 7874 5f77 2c20 7465 7874      text_w, text
+-00002220: 5f68 203d 2063 7632 2e67 6574 5465 7874  _h = cv2.getText
+-00002230: 5369 7a65 2863 6c61 7373 5f6e 616d 652c  Size(class_name,
+-00002240: 2030 2c20 666f 6e74 5363 616c 653d 666f   0, fontScale=fo
+-00002250: 6e74 5363 616c 652c 2074 6869 636b 6e65  ntScale, thickne
+-00002260: 7373 3d66 6f6e 745f 7468 6963 6b6e 6573  ss=font_thicknes
+-00002270: 7329 5b30 5d20 2023 2074 6578 7420 7769  s)[0]  # text wi
+-00002280: 6474 682c 2068 6569 6768 740a 200a 2020  dth, height. .  
+-00002290: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000022a0: 2020 2320 6368 6563 6b20 6966 206f 7574    # check if out
+-000022b0: 7369 6465 206f 6620 696d 670a 2020 2020  side of img.    
+-000022c0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000022d0: 6f75 7473 6964 6520 3d20 796d 696e 202d  outside = ymin -
+-000022e0: 2074 6578 745f 6820 2d20 3320 3e3d 2030   text_h - 3 >= 0
+-000022f0: 2020 2320 6c61 6265 6c20 6669 7473 206f    # label fits o
+-00002300: 7574 7369 6465 2062 6f78 0a20 2020 2020  utside box.     
+-00002310: 2020 2020 2020 2020 2020 2020 2020 2023                 #
+-00002320: 2063 7632 2e72 6563 7461 6e67 6c65 2869   cv2.rectangle(i
+-00002330: 6d67 2c20 2878 6d69 6e2c 2079 6d69 6e29  mg, (xmin, ymin)
+-00002340: 2c20 2878 6d61 782c 2079 6d61 7829 2c20  , (xmax, ymax), 
+-00002350: 636f 6c6f 722c 202d 312c 2063 7632 2e4c  color, -1, cv2.L
+-00002360: 494e 455f 4141 2920 2023 2066 696c 6c65  INE_AA)  # fille
+-00002370: 640a 2020 2020 2020 2020 2020 2020 2020  d.              
+-00002380: 2020 2020 2020 6376 322e 7075 7454 6578        cv2.putTex
+-00002390: 7428 696d 672c 2063 6c61 7373 5f6e 616d  t(img, class_nam
+-000023a0: 652c 2028 786d 696e 2c20 796d 696e 202d  e, (xmin, ymin -
+-000023b0: 2034 2069 6620 6f75 7473 6964 6520 656c   4 if outside el
+-000023c0: 7365 2079 6d69 6e20 2b20 7465 7874 5f68  se ymin + text_h
+-000023d0: 202b 2033 292c 200a 2020 2020 2020 2020   + 3), .        
+-000023e0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000023f0: 2020 2020 2020 2020 666f 6e74 2c20 666f          font, fo
+-00002400: 6e74 5363 616c 652c 2063 6f6c 6f72 2c20  ntScale, color, 
+-00002410: 7468 6963 6b6e 6573 733d 696e 7428 6c69  thickness=int(li
+-00002420: 6e65 5f74 6869 636b 6e65 7373 202a 2030  ne_thickness * 0
+-00002430: 2e37 292c 206c 696e 6554 7970 653d 6376  .7), lineType=cv
+-00002440: 322e 4c49 4e45 5f41 4129 0a20 2020 200a  2.LINE_AA).    .
+-00002450: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00002460: 2023 206e 6577 3a20 6472 6177 206b 7074   # new: draw kpt
+-00002470: 730a 2020 2020 2020 2020 2020 2020 2020  s.              
+-00002480: 2020 2320 6966 206c 656e 286b 7074 7329    # if len(kpts)
+-00002490: 203e 2030 3a0a 2020 2020 2020 2020 2020   > 0:.          
+-000024a0: 2020 2020 2020 666f 7220 6964 782c 206b        for idx, k
+-000024b0: 7074 2069 6e20 656e 756d 6572 6174 6528  pt in enumerate(
+-000024c0: 6b70 7473 293a 0a20 2020 2020 2020 2020  kpts):.         
+-000024d0: 2020 2020 2020 2020 2020 2069 6620 6b70             if kp
+-000024e0: 745b 305d 203d 3d20 3020 6f72 206b 7074  t[0] == 0 or kpt
+-000024f0: 5b31 5d20 3d3d 2030 3a0a 2020 2020 2020  [1] == 0:.      
+-00002500: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002510: 2020 636f 6e74 696e 7565 0a0a 2020 2020    continue..    
+-00002520: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002530: 6b70 745f 636f 6c6f 7220 3d20 636f 6c6f  kpt_color = colo
+-00002540: 7273 2869 6e74 2869 6478 292c 2062 6772  rs(int(idx), bgr
+-00002550: 3d46 616c 7365 290a 2020 2020 2020 2020  =False).        
+-00002560: 2020 2020 2020 2020 2020 2020 6376 322e              cv2.
+-00002570: 6369 7263 6c65 2869 6d67 2c20 2869 6e74  circle(img, (int
+-00002580: 286b 7074 5b30 5d29 2c20 696e 7428 6b70  (kpt[0]), int(kp
+-00002590: 745b 315d 2929 2c20 6c69 6e65 5f74 6869  t[1])), line_thi
+-000025a0: 636b 6e65 7373 2c20 6b70 745f 636f 6c6f  ckness, kpt_colo
+-000025b0: 722c 202d 3129 2020 2320 676f 6c64 0a0a  r, -1)  # gold..
+-000025c0: 2020 2020 7265 7475 726e 2069 6d67 0a0a      return img..
+-000025d0: 0a0a 2320 6c65 6674 2064 6f75 626c 6520  ..# left double 
+-000025e0: 636c 6963 6b20 696e 2062 626f 7820 3d3e  click in bbox =>
+-000025f0: 2073 656c 6563 7420 7468 6520 736d 616c   select the smal
+-00002600: 6c65 7374 2062 626f 782c 2061 6e64 2073  lest bbox, and s
+-00002610: 6574 2074 6861 7420 6262 6f78 0a64 6566  et that bbox.def
+-00002620: 2073 6574 5f73 656c 6563 7465 645f 6262   set_selected_bb
+-00002630: 6f78 2873 6574 5f63 6c73 5f74 7261 636b  ox(set_cls_track
+-00002640: 6261 723d 5472 7565 293a 0a20 2020 2067  bar=True):.    g
+-00002650: 6c6f 6261 6c20 4953 5f42 424f 585f 5345  lobal IS_BBOX_SE
+-00002660: 4c45 4354 4544 2c20 5345 4c45 4354 4544  LECTED, SELECTED
+-00002670: 5f42 424f 582c 2049 4d47 5f4f 424a 4543  _BBOX, IMG_OBJEC
+-00002680: 5453 2020 0a0a 2020 2020 2320 736d 616c  TS  ..    # smal
+-00002690: 6c65 7374 2062 626f 7820 666c 6167 0a20  lest bbox flag. 
+-000026a0: 2020 2073 6d61 6c6c 6573 745f 6172 6561     smallest_area
+-000026b0: 203d 202d 310a 0a20 2020 2023 2069 6620   = -1..    # if 
+-000026c0: 636c 6963 6b65 6420 696e 7369 6465 206d  clicked inside m
+-000026d0: 756c 7469 706c 6520 6262 6f78 6573 2073  ultiple bboxes s
+-000026e0: 656c 6563 7473 2074 6865 2073 6d61 6c6c  elects the small
+-000026f0: 6573 7420 6f6e 650a 2020 2020 666f 7220  est one.    for 
+-00002700: 6964 782c 206f 626a 2069 6e20 656e 756d  idx, obj in enum
+-00002710: 6572 6174 6528 494d 475f 4f42 4a45 4354  erate(IMG_OBJECT
+-00002720: 5329 3a0a 2020 2020 2020 2020 696e 642c  S):.        ind,
+-00002730: 2078 312c 2079 312c 2078 322c 2079 3220   x1, y1, x2, y2 
+-00002740: 3d20 6f62 6a0a 0a20 2020 2020 2020 2023  = obj..        #
+-00002750: 2023 206c 696e 6520 7769 6474 6820 2863   # line width (c
+-00002760: 6f6e 7369 6465 7229 200a 2020 2020 2020  onsider) .      
+-00002770: 2020 2320 6d61 7267 696e 203d 2032 202a    # margin = 2 *
+-00002780: 204c 494e 455f 5448 4943 4b4e 4553 530a   LINE_THICKNESS.
+-00002790: 2020 2020 2020 2020 2320 7831 203d 2078          # x1 = x
+-000027a0: 3120 2d20 6d61 7267 696e 2020 0a20 2020  1 - margin  .   
+-000027b0: 2020 2020 2023 2079 3120 3d20 7931 202d       # y1 = y1 -
+-000027c0: 206d 6172 6769 6e0a 2020 2020 2020 2020   margin.        
+-000027d0: 2320 7832 203d 2078 3220 2b20 6d61 7267  # x2 = x2 + marg
+-000027e0: 696e 0a20 2020 2020 2020 2023 2079 3220  in.        # y2 
+-000027f0: 3d20 7932 202b 206d 6172 6769 6e0a 0a20  = y2 + margin.. 
+-00002800: 2020 2020 2020 2023 2069 7320 6d6f 7573         # is mous
+-00002810: 655f 7879 2069 6e20 6262 6f78 0a20 2020  e_xy in bbox.   
+-00002820: 2020 2020 2069 6620 6973 5f70 6f69 6e74       if is_point
+-00002830: 5f69 6e5f 7265 6374 284d 4f55 5345 5f58  _in_rect(MOUSE_X
+-00002840: 2c20 4d4f 5553 455f 592c 2078 312c 2079  , MOUSE_Y, x1, y
+-00002850: 312c 2078 322c 2079 3229 3a0a 0a20 2020  1, x2, y2):..   
+-00002860: 2020 2020 2020 2020 2049 535f 4242 4f58           IS_BBOX
+-00002870: 5f53 454c 4543 5445 4420 3d20 5472 7565  _SELECTED = True
+-00002880: 2020 2020 2023 2073 6574 2062 626f 7820       # set bbox 
+-00002890: 7365 6c65 6374 6564 0a20 2020 2020 2020  selected.       
+-000028a0: 2020 2020 2074 6d70 5f61 7265 6120 3d20       tmp_area = 
+-000028b0: 6162 7328 7832 202d 2078 3129 202a 2061  abs(x2 - x1) * a
+-000028c0: 6273 2879 3220 2d20 7931 2920 2023 2061  bs(y2 - y1)  # a
+-000028d0: 7265 6120 6f66 2062 626f 780a 0a20 2020  rea of bbox..   
+-000028e0: 2020 2020 2020 2020 2069 6620 746d 705f           if tmp_
+-000028f0: 6172 6561 203c 2073 6d61 6c6c 6573 745f  area < smallest_
+-00002900: 6172 6561 206f 7220 736d 616c 6c65 7374  area or smallest
+-00002910: 5f61 7265 6120 3d3d 202d 313a 0a20 2020  _area == -1:.   
+-00002920: 2020 2020 2020 2020 2020 2020 2073 6d61               sma
+-00002930: 6c6c 6573 745f 6172 6561 203d 2074 6d70  llest_area = tmp
+-00002940: 5f61 7265 610a 2020 2020 2020 2020 2020  _area.          
+-00002950: 2020 2020 2020 5345 4c45 4354 4544 5f42        SELECTED_B
+-00002960: 424f 5820 3d20 6964 780a 2020 2020 2020  BOX = idx.      
+-00002970: 2020 2020 2020 2020 2020 6966 2073 6574            if set
+-00002980: 5f63 6c73 5f74 7261 636b 6261 723a 200a  _cls_trackbar: .
+-00002990: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000029a0: 2020 2020 6376 322e 7365 7454 7261 636b      cv2.setTrack
+-000029b0: 6261 7250 6f73 2854 5241 434b 4241 525f  barPos(TRACKBAR_
+-000029c0: 434c 4153 532c 2057 494e 444f 575f 4e41  CLASS, WINDOW_NA
+-000029d0: 4d45 2c20 696e 6429 2020 2020 2320 e5b0  ME, ind)    # ..
+-000029e0: 8674 7261 636b 2042 6172 e79a 84e7 b1bb  .track Bar......
+-000029f0: e588 abe7 a7bb e58a a8e5 88b0 e689 80e5  ................
+-00002a00: b19e 636c 6173 730a 0a0a 6465 6620 6368  ..class...def ch
+-00002a10: 6563 6b5f 6966 5f63 7572 736f 725f 6973  eck_if_cursor_is
+-00002a20: 5f69 6e5f 6262 6f78 2869 6d67 2c20 6c69  _in_bbox(img, li
+-00002a30: 6e65 5f74 6869 636b 6e65 7373 2c20 616c  ne_thickness, al
+-00002a40: 7068 613d 312c 2062 6574 613d 302e 352c  pha=1, beta=0.5,
+-00002a50: 2067 616d 6d61 3d30 2c20 7365 745f 636c   gamma=0, set_cl
+-00002a60: 735f 7472 6163 6b62 6172 3d54 7275 6529  s_trackbar=True)
+-00002a70: 3a0a 2020 2020 676c 6f62 616c 2049 535f  :.    global IS_
+-00002a80: 4242 4f58 5f53 454c 4543 5445 442c 2053  BBOX_SELECTED, S
+-00002a90: 454c 4543 5445 445f 4242 4f58 2c20 494d  ELECTED_BBOX, IM
+-00002aa0: 475f 4f42 4a45 4354 5320 200a 0a20 2020  G_OBJECTS  ..   
+-00002ab0: 2023 2073 6d61 6c6c 6573 7420 6262 6f78   # smallest bbox
+-00002ac0: 2066 6c61 670a 2020 2020 736d 616c 6c65   flag.    smalle
+-00002ad0: 7374 5f61 7265 6120 3d20 2d31 0a0a 2020  st_area = -1..  
+-00002ae0: 2020 2320 6174 206c 6561 7365 2069 6e20    # at lease in 
+-00002af0: 6f6e 6520 6262 6f78 0a20 2020 2061 745f  one bbox.    at_
+-00002b00: 6c65 6173 745f 696e 5f31 5f62 6f78 203d  least_in_1_box =
+-00002b10: 2046 616c 7365 0a0a 2020 2020 2320 6966   False..    # if
+-00002b20: 2063 6c69 636b 6564 2069 6e73 6964 6520   clicked inside 
+-00002b30: 6d75 6c74 6970 6c65 2062 626f 7865 7320  multiple bboxes 
+-00002b40: 7365 6c65 6374 7320 7468 6520 736d 616c  selects the smal
+-00002b50: 6c65 7374 206f 6e65 0a20 2020 2066 6f72  lest one.    for
+-00002b60: 2069 6478 2c20 6f62 6a20 696e 2065 6e75   idx, obj in enu
+-00002b70: 6d65 7261 7465 2849 4d47 5f4f 424a 4543  merate(IMG_OBJEC
+-00002b80: 5453 293a 0a20 2020 2020 2020 2069 6e64  TS):.        ind
+-00002b90: 2c20 7831 2c20 7931 2c20 7832 2c20 7932  , x1, y1, x2, y2
+-00002ba0: 203d 206f 626a 0a0a 2020 2020 2020 2020   = obj..        
+-00002bb0: 2320 6973 206d 6f75 7365 5f78 7920 696e  # is mouse_xy in
+-00002bc0: 2062 626f 780a 2020 2020 2020 2020 6966   bbox.        if
+-00002bd0: 2069 735f 706f 696e 745f 696e 5f72 6563   is_point_in_rec
+-00002be0: 7428 4d4f 5553 455f 582c 204d 4f55 5345  t(MOUSE_X, MOUSE
+-00002bf0: 5f59 2c20 7831 2c20 7931 2c20 7832 2c20  _Y, x1, y1, x2, 
+-00002c00: 7932 293a 0a0a 2020 2020 2020 2020 2020  y2):..          
+-00002c10: 2020 746d 705f 6172 6561 203d 2061 6273    tmp_area = abs
+-00002c20: 2878 3220 2d20 7831 2920 2a20 6162 7328  (x2 - x1) * abs(
+-00002c30: 7932 202d 2079 3129 2020 2320 6172 6561  y2 - y1)  # area
+-00002c40: 206f 6620 6262 6f78 0a0a 2020 2020 2020   of bbox..      
+-00002c50: 2020 2020 2020 6966 2074 6d70 5f61 7265        if tmp_are
+-00002c60: 6120 3c20 736d 616c 6c65 7374 5f61 7265  a < smallest_are
+-00002c70: 6120 6f72 2073 6d61 6c6c 6573 745f 6172  a or smallest_ar
+-00002c80: 6561 203d 3d20 2d31 3a0a 2020 2020 2020  ea == -1:.      
+-00002c90: 2020 2020 2020 2020 2020 736d 616c 6c65            smalle
+-00002ca0: 7374 5f61 7265 6120 3d20 746d 705f 6172  st_area = tmp_ar
+-00002cb0: 6561 0a20 2020 2020 2020 2020 2020 2020  ea.             
+-00002cc0: 2020 2053 454c 4543 5445 445f 4242 4f58     SELECTED_BBOX
+-00002cd0: 203d 2069 6478 0a20 2020 2020 2020 2020   = idx.         
+-00002ce0: 2020 2020 2020 2061 745f 6c65 6173 745f         at_least_
+-00002cf0: 696e 5f31 5f62 6f78 203d 2054 7275 6520  in_1_box = True 
+-00002d00: 2020 2023 2061 7420 6c65 6173 6520 696e     # at lease in
+-00002d10: 206f 6e65 2062 6f78 0a20 2020 2020 2020   one box.       
+-00002d20: 2020 2020 2020 2020 2049 535f 4242 4f58           IS_BBOX
+-00002d30: 5f53 454c 4543 5445 4420 3d20 5472 7565  _SELECTED = True
+-00002d40: 2020 2020 2023 2073 6574 2062 626f 7820       # set bbox 
+-00002d50: 7365 6c65 6374 6564 0a0a 2020 2020 2020  selected..      
+-00002d60: 2020 2020 2020 2020 2020 6966 2073 6574            if set
+-00002d70: 5f63 6c73 5f74 7261 636b 6261 723a 200a  _cls_trackbar: .
+-00002d80: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002d90: 2020 2020 6376 322e 7365 7454 7261 636b      cv2.setTrack
+-00002da0: 6261 7250 6f73 2854 5241 434b 4241 525f  barPos(TRACKBAR_
+-00002db0: 434c 4153 532c 2057 494e 444f 575f 4e41  CLASS, WINDOW_NA
+-00002dc0: 4d45 2c20 696e 6429 2020 2020 2320 e5b0  ME, ind)    # ..
+-00002dd0: 8674 7261 636b 2042 6172 e79a 84e7 b1bb  .track Bar......
+-00002de0: e588 abe7 a7bb e58a a8e5 88b0 e689 80e5  ................
+-00002df0: b19e 636c 6173 730a 2020 2020 0a20 2020  ..class.    .   
+-00002e00: 2020 2020 2020 2020 2023 2068 6967 686c           # highl
+-00002e10: 6967 6874 2074 6861 7420 6262 6f78 0a20  ight that bbox. 
+-00002e20: 2020 2020 2020 2020 2020 2069 6d67 203d             img =
+-00002e30: 2068 6967 686c 6967 6874 5f73 656c 6563   highlight_selec
+-00002e40: 7465 645f 6262 6f78 2869 6d67 2c20 6c69  ted_bbox(img, li
+-00002e50: 6e65 5f74 6869 636b 6e65 7373 2c20 616c  ne_thickness, al
+-00002e60: 7068 612c 2062 6574 612c 2067 616d 6d61  pha, beta, gamma
+-00002e70: 290a 0a0a 2020 2020 2320 6e6f 7420 696e  )...    # not in
+-00002e80: 2061 6e79 206f 6e65 206f 6620 7468 6520   any one of the 
+-00002e90: 6262 6f78 0a20 2020 2069 6620 6174 5f6c  bbox.    if at_l
+-00002ea0: 6561 7374 5f69 6e5f 315f 626f 7820 3d3d  east_in_1_box ==
+-00002eb0: 2046 616c 7365 3a0a 2020 2020 2020 2020   False:.        
+-00002ec0: 4953 5f42 424f 585f 5345 4c45 4354 4544  IS_BBOX_SELECTED
+-00002ed0: 203d 2046 616c 7365 0a20 2020 2020 2020   = False.       
+-00002ee0: 2053 454c 4543 5445 445f 4242 4f58 203d   SELECTED_BBOX =
+-00002ef0: 202d 310a 0a20 2020 2072 6574 7572 6e20   -1..    return 
+-00002f00: 696d 670a 0a0a 2320 746f 646f 3a20 e689  img...# todo: ..
+-00002f10: bee5 87ba e588 a0e9 99a4 e4ba 86e7 9a84  ................
+-00002f20: e688 96e8 8085 e4bf aee6 94b9 e4ba 86e7  ................
+-00002f30: b1bb e588 abe7 9a84 e982 a3e4 b880 e8a1  ................
+-00002f40: 8c69 6478 0a64 6566 2066 696e 6449 6e64  .idx.def findInd
+-00002f50: 6578 2862 626f 785f 7769 7468 5f69 6429  ex(bbox_with_id)
+-00002f60: 3a0a 2020 2020 676c 6f62 616c 2049 4d47  :.    global IMG
+-00002f70: 5f4f 424a 4543 5453 0a20 2020 2069 6e64  _OBJECTS.    ind
+-00002f80: 203d 202d 310a 2020 2020 696e 645f 203d   = -1.    ind_ =
+-00002f90: 2030 0a20 2020 2066 6f72 206c 6973 7445   0.    for listE
+-00002fa0: 6c65 6d20 696e 2049 4d47 5f4f 424a 4543  lem in IMG_OBJEC
+-00002fb0: 5453 3a0a 2020 2020 2020 2020 6966 206c  TS:.        if l
+-00002fc0: 6973 7445 6c65 6d20 3d3d 2062 626f 785f  istElem == bbox_
+-00002fd0: 7769 7468 5f69 643a 0a20 2020 2020 2020  with_id:.       
+-00002fe0: 2020 2020 2069 6e64 203d 2069 6e64 5f0a       ind = ind_.
+-00002ff0: 2020 2020 2020 2020 2020 2020 7265 7475              retu
+-00003000: 726e 2069 6e64 0a20 2020 2020 2020 2069  rn ind.        i
+-00003010: 6e64 5f20 3d20 696e 645f 2b31 0a20 2020  nd_ = ind_+1.   
+-00003020: 2072 6574 7572 6e20 696e 640a 0a0a 2320   return ind...# 
+-00003030: 6564 6974 2062 626f 780a 2320 746f 646f  edit bbox.# todo
+-00003040: 203a 2072 656e 616d 652c 2077 6964 7468   : rename, width
+-00003050: 2c20 6865 6967 6874 0a64 6566 2065 6469  , height.def edi
+-00003060: 745f 6262 6f78 2862 626f 785f 7769 7468  t_bbox(bbox_with
+-00003070: 5f69 642c 2061 6374 696f 6e29 3a0a 2020  _id, action):.  
+-00003080: 2020 676c 6f62 616c 2049 4d41 4745 5f50    global IMAGE_P
+-00003090: 4154 485f 4c49 5354 2c20 494d 475f 4944  ATH_LIST, IMG_ID
+-000030a0: 585f 4355 5252 454e 542c 2049 4e50 5554  X_CURRENT, INPUT
+-000030b0: 5f4c 4142 454c 5f44 4952 2c20 494d 475f  _LABEL_DIR, IMG_
+-000030c0: 4355 5252 454e 540a 2020 2020 696d 675f  CURRENT.    img_
+-000030d0: 6865 6967 6874 2c20 696d 675f 7769 6474  height, img_widt
+-000030e0: 683d 2049 4d47 5f43 5552 5245 4e54 2e73  h= IMG_CURRENT.s
+-000030f0: 6861 7065 5b3a 325d 0a0a 2020 2020 2727  hape[:2]..    ''
+-00003100: 270a 2020 2020 7072 696e 7428 6622 6163  '.    print(f"ac
+-00003110: 7469 6f6e 203a 207b 6163 7469 6f6e 7d22  tion : {action}"
+-00003120: 290a 2020 2020 6163 7469 6f6e 203d 205b  ).    action = [
+-00003130: 6064 656c 6574 6560 5d20 5b60 6368 616e  `delete`] [`chan
+-00003140: 6765 5f63 6c61 7373 3a6e 6577 5f63 6c61  ge_class:new_cla
+-00003150: 7373 5f69 6e64 6578 605d 0a20 2020 2027  ss_index`].    '
+-00003160: 2727 0a20 2020 200a 2020 2020 6966 2027  ''.    .    if '
+-00003170: 6368 616e 6765 5f63 6c61 7373 2720 696e  change_class' in
+-00003180: 2061 6374 696f 6e3a 0a20 2020 2020 2020   action:.       
+-00003190: 206e 6577 5f63 6c61 7373 5f69 6e64 6578   new_class_index
+-000031a0: 203d 2069 6e74 2861 6374 696f 6e2e 7370   = int(action.sp
+-000031b0: 6c69 7428 273a 2729 5b31 5d29 0a0a 0a20  lit(':')[1])... 
+-000031c0: 2020 2023 2069 6e69 7469 616c 697a 6520     # initialize 
+-000031d0: 6262 6f78 6573 5f74 6f5f 6564 6974 5f64  bboxes_to_edit_d
+-000031e0: 6963 740a 2020 2020 6262 6f78 6573 5f74  ict.    bboxes_t
+-000031f0: 6f5f 6564 6974 5f64 6963 7420 3d20 7b7d  o_edit_dict = {}
+-00003200: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00003210: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00003220: 2320 7b70 6174 683a 205b 6964 2c20 782c  # {path: [id, x,
+-00003230: 792c 782c 795d 7d0a 2020 2020 6375 7272  y,x,y]}.    curr
+-00003240: 656e 745f 696d 675f 7061 7468 203d 2049  ent_img_path = I
+-00003250: 4d41 4745 5f50 4154 485f 4c49 5354 5b49  MAGE_PATH_LIST[I
+-00003260: 4d47 5f49 4458 5f43 5552 5245 4e54 5d0a  MG_IDX_CURRENT].
+-00003270: 2020 2020 6262 6f78 6573 5f74 6f5f 6564      bboxes_to_ed
+-00003280: 6974 5f64 6963 745b 6375 7272 656e 745f  it_dict[current_
+-00003290: 696d 675f 7061 7468 5d20 3d20 6262 6f78  img_path] = bbox
+-000032a0: 5f77 6974 685f 6964 2020 2020 2023 207b  _with_id     # {
+-000032b0: 2734 2f32 2e6a 7067 273a 205b 302c 2031  '4/2.jpg': [0, 1
+-000032c0: 3434 2c20 3937 302c 2033 3836 2c20 3134  44, 970, 386, 14
+-000032d0: 3638 5d7d 0a0a 0a20 2020 2023 2061 6464  68]}...    # add
+-000032e0: 2065 6c65 6d65 6e74 7320 746f 2062 626f   elements to bbo
+-000032f0: 7865 735f 746f 5f65 6469 745f 6469 6374  xes_to_edit_dict
+-00003300: 0a20 2020 2023 206c 6f6f 7020 7468 726f  .    # loop thro
+-00003310: 7567 6820 6262 6f78 6573 5f74 6f5f 6564  ugh bboxes_to_ed
+-00003320: 6974 5f64 6963 7420 616e 6420 6564 6974  it_dict and edit
+-00003330: 2074 6865 2063 6f72 7265 7370 6f6e 6469   the correspondi
+-00003340: 6e67 2061 6e6e 6f74 6174 696f 6e20 6669  ng annotation fi
+-00003350: 6c65 730a 2020 2020 666f 7220 7061 7468  les.    for path
+-00003360: 2069 6e20 6262 6f78 6573 5f74 6f5f 6564   in bboxes_to_ed
+-00003370: 6974 5f64 6963 743a 0a20 2020 2020 2020  it_dict:.       
+-00003380: 2062 626f 785f 7769 7468 5f69 6420 3d20   bbox_with_id = 
+-00003390: 6262 6f78 6573 5f74 6f5f 6564 6974 5f64  bboxes_to_edit_d
+-000033a0: 6963 745b 7061 7468 5d20 2020 2020 2020  ict[path]       
+-000033b0: 2023 205b 302c 2031 3434 2c20 3937 302c   # [0, 144, 970,
+-000033c0: 2033 3836 2c20 3134 3638 5d0a 2020 2020   386, 1468].    
+-000033d0: 2020 2020 636c 735f 6964 782c 2078 6d69      cls_idx, xmi
+-000033e0: 6e2c 2079 6d69 6e2c 2078 6d61 782c 2079  n, ymin, xmax, y
+-000033f0: 6d61 7820 3d20 6d61 7028 696e 742c 2062  max = map(int, b
+-00003400: 626f 785f 7769 7468 5f69 6429 0a0a 2020  box_with_id)..  
+-00003410: 2020 2020 2020 2320 6765 7420 6765 745f        # get get_
+-00003420: 636f 7272 6573 706f 6e64 696e 6720 6c61  corresponding la
+-00003430: 6265 6c20 7061 7468 0a20 2020 2020 2020  bel path.       
+-00003440: 2061 6e6e 5f70 6174 6820 3d20 5061 7468   ann_path = Path
+-00003450: 2849 4e50 5554 5f4c 4142 454c 5f44 4952  (INPUT_LABEL_DIR
+-00003460: 2920 2f20 2850 6174 6828 7061 7468 292e  ) / (Path(path).
+-00003470: 7374 656d 202b 2027 2e74 7874 2729 2020  stem + '.txt')  
+-00003480: 0a0a 2020 2020 2020 2020 7769 7468 206f  ..        with o
+-00003490: 7065 6e28 616e 6e5f 7061 7468 2c20 2772  pen(ann_path, 'r
+-000034a0: 2729 2061 7320 6f6c 645f 6669 6c65 3a0a  ') as old_file:.
+-000034b0: 2020 2020 2020 2020 2020 2020 6c69 6e65              line
+-000034c0: 7320 3d20 6f6c 645f 6669 6c65 2e72 6561  s = old_file.rea
+-000034d0: 646c 696e 6573 2829 0a0a 2020 2020 2020  dlines()..      
+-000034e0: 2020 796f 6c6f 5f6c 696e 6520 3d20 6964    yolo_line = id
+-000034f0: 7879 7879 3269 6463 7863 7977 6828 636c  xyxy2idcxcywh(cl
+-00003500: 735f 6964 782c 2028 786d 696e 2c20 796d  s_idx, (xmin, ym
+-00003510: 696e 292c 2028 786d 6178 2c20 796d 6178  in), (xmax, ymax
+-00003520: 292c 2069 6d67 5f77 6964 7468 2c20 696d  ), img_width, im
+-00003530: 675f 6865 6967 6874 2920 2320 544f 444f  g_height) # TODO
+-00003540: 3a20 6865 6967 6874 2061 6e64 2077 6964  : height and wid
+-00003550: 7468 206f 7567 6874 2074 6f20 6265 2073  th ought to be s
+-00003560: 746f 7265 640a 2020 2020 2020 2020 0a20  tored.        . 
+-00003570: 2020 2020 2020 2023 20e6 89be e587 bae5         # .......
+-00003580: 88a0 e999 a4e4 ba86 e79a 84e6 8896 e880  ................
+-00003590: 85e4 bfae e694 b9e4 ba86 e7b1 bbe5 88ab  ................
+-000035a0: e79a 84e9 82a3 e4b8 80e8 a18c 6964 780a  ............idx.
+-000035b0: 2020 2020 2020 2020 696e 6420 3d20 6669          ind = fi
+-000035c0: 6e64 496e 6465 7828 6262 6f78 5f77 6974  ndIndex(bbox_wit
+-000035d0: 685f 6964 290a 0a0a 2020 2020 2020 2020  h_id)...        
+-000035e0: 2320 7265 2d77 7269 7465 206c 6162 656c  # re-write label
+-000035f0: 282e 7478 7429 0a20 2020 2020 2020 2077  (.txt).        w
+-00003600: 6974 6820 6f70 656e 2861 6e6e 5f70 6174  ith open(ann_pat
+-00003610: 682c 2027 7727 2920 6173 206e 6577 5f66  h, 'w') as new_f
+-00003620: 696c 653a 0a20 2020 2020 2020 2020 2020  ile:.           
+-00003630: 2066 6f72 2069 6478 2c20 6c69 6e65 2069   for idx, line i
+-00003640: 6e20 656e 756d 6572 6174 6528 6c69 6e65  n enumerate(line
+-00003650: 7329 3a0a 2020 2020 2020 2020 2020 2020  s):.            
+-00003660: 2020 2020 6966 2069 6478 2021 3d20 696e      if idx != in
+-00003670: 643a 2020 2020 2020 2020 2020 2020 2020  d:              
+-00003680: 2320 e5a6 82e6 9e9c e69c aae4 bfae e694  # ..............
+-00003690: b9e7 9a84 e8a1 8cef bc8c e79b b4e6 8ea5  ................
+-000036a0: e586 99e5 85a5 0a20 2020 2020 2020 2020  .......         
+-000036b0: 2020 2020 2020 2020 2020 206e 6577 5f66             new_f
+-000036c0: 696c 652e 7772 6974 6528 6c69 6e65 290a  ile.write(line).
+-000036d0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000036e0: 656c 6966 2027 6368 616e 6765 5f63 6c61  elif 'change_cla
+-000036f0: 7373 2720 696e 2061 6374 696f 6e3a 2020  ss' in action:  
+-00003700: 2320 e5a6 82e6 9e9c e698 afe4 bfae e694  # ..............
+-00003710: b9e7 9a84 e8a1 8cef bc8c e5b9 b6e4 b894  ................
+-00003720: e4bf aee7 9a84 e698 afe7 b1bb e588 abef  ................
+-00003730: bc8c e5b0 86e6 9bb4 e68d a2e5 908e e696  ................
+-00003740: b0e7 9a84 e7b1 bbe5 88ab e586 99e5 85a5  ................
+-00003750: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00003760: 2020 2020 2023 2070 7269 6e74 2866 273e       # print(f'>
+-00003770: 206f 6c64 206c 696e 6520 3a20 7b6c 696e   old line : {lin
+-00003780: 657d 2729 0a0a 2020 2020 2020 2020 2020  e}')..          
+-00003790: 2020 2020 2020 2020 2020 6e65 775f 796f            new_yo
+-000037a0: 6c6f 5f6c 696e 6520 3d20 6964 7879 7879  lo_line = idxyxy
+-000037b0: 3269 6463 7863 7977 6828 6e65 775f 636c  2idcxcywh(new_cl
+-000037c0: 6173 735f 696e 6465 782c 2028 786d 696e  ass_index, (xmin
+-000037d0: 2c20 796d 696e 292c 2028 786d 6178 2c20  , ymin), (xmax, 
+-000037e0: 796d 6178 292c 2069 6d67 5f77 6964 7468  ymax), img_width
+-000037f0: 2c20 696d 675f 6865 6967 6874 290a 0a0a  , img_height)...
+-00003800: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00003810: 2020 2020 6e65 775f 6c61 6265 6c5f 6c69      new_label_li
+-00003820: 6e65 203d 2073 7472 286e 6577 5f63 6c61  ne = str(new_cla
+-00003830: 7373 5f69 6e64 6578 2920 2b20 6c69 6e65  ss_index) + line
+-00003840: 5b31 3a5d 0a20 2020 2020 2020 2020 2020  [1:].           
+-00003850: 2020 2020 2020 2020 2023 2070 7269 6e74           # print
+-00003860: 2866 273e 206e 6577 206c 696e 6520 3a20  (f'> new line : 
+-00003870: 7b6e 6577 5f6c 6162 656c 5f6c 696e 657d  {new_label_line}
+-00003880: 2729 0a20 2020 2020 2020 2020 2020 2020  ').             
+-00003890: 2020 2020 2020 206e 6577 5f66 696c 652e         new_file.
+-000038a0: 7772 6974 6528 6e65 775f 6c61 6265 6c5f  write(new_label_
+-000038b0: 6c69 6e65 290a 0a20 2020 2020 2020 2020  line)..         
+-000038c0: 2020 2020 2020 200a 2020 2020 2020 2020         .        
+-000038d0: 2020 2020 2020 2020 2320 e5a6 82e6 9e9c          # ......
+-000038e0: e4b8 8de5 b19e e4ba 8ee4 bba5 e4b8 8ae6  ................
+-000038f0: 8385 e586 b5ef bc8c e982 a3e4 b988 e5b0  ................
+-00003900: b1e6 98af e588 a0e9 99a4 efbc 8ce5 8899  ................
+-00003910: e4b8 8de5 8699 e585 a5e8 afa5 e8a1 8c0a  ................
+-00003920: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00003930: 656c 7365 3a0a 2020 2020 2020 2020 2020  else:.          
+-00003940: 2020 2020 2020 2020 2020 2320 6e65 775f            # new_
+-00003950: 6669 6c65 2e77 7269 7465 2827 3020 3920  file.write('0 9 
+-00003960: 3920 3920 3927 290a 2020 2020 2020 2020  9 9 9').        
+-00003970: 2020 2020 2020 2020 2020 2020 636f 6e74              cont
+-00003980: 696e 7565 0a0a 0a23 206d 6f75 7365 2063  inue...# mouse c
+-00003990: 616c 6c62 6163 6b20 6675 6e63 7469 6f6e  allback function
+-000039a0: 0a64 6566 206d 6f75 7365 5f6c 6973 7465  .def mouse_liste
+-000039b0: 6e65 7228 6576 656e 742c 2078 2c20 792c  ner(event, x, y,
+-000039c0: 2066 6c61 6773 2c20 7061 7261 6d29 3a0a   flags, param):.
+-000039d0: 2020 2020 676c 6f62 616c 2049 535f 4242      global IS_BB
+-000039e0: 4f58 5f53 454c 4543 5445 442c 2053 454c  OX_SELECTED, SEL
+-000039f0: 4543 5445 445f 4242 4f58 2c20 5052 5645  ECTED_BBOX, PRVE
+-00003a00: 5f57 4153 5f44 4f55 424c 455f 434c 4943  _WAS_DOUBLE_CLIC
+-00003a10: 4b2c 204d 4f55 5345 5f58 2c20 4d4f 5553  K, MOUSE_X, MOUS
+-00003a20: 455f 592c 2050 4f49 4e54 5f31 2c20 504f  E_Y, POINT_1, PO
+-00003a30: 494e 545f 322c 2049 4d47 5f4f 424a 4543  INT_2, IMG_OBJEC
+-00003a40: 5453 2c20 4d41 524b 5f4d 4f44 450a 2020  TS, MARK_MODE.  
+-00003a50: 2020 676c 6f62 616c 2054 5241 434b 4241    global TRACKBA
+-00003a60: 525f 434c 4153 532c 2057 494e 444f 575f  R_CLASS, WINDOW_
+-00003a70: 4e41 4d45 2c20 4c49 4e45 5f54 4849 434b  NAME, LINE_THICK
+-00003a80: 4e45 5353 2020 2320 2c20 746d 705f 696d  NESS  # , tmp_im
+-00003a90: 670a 0a0a 2020 2020 2320 6d61 726b 206d  g...    # mark m
+-00003aa0: 6f64 650a 2020 2020 6966 204d 4152 4b5f  ode.    if MARK_
+-00003ab0: 4d4f 4445 3a0a 2020 2020 2020 2020 2320  MODE:.        # 
+-00003ac0: 6d6f 7665 3a20 2074 7261 636b 696e 6720  move:  tracking 
+-00003ad0: 4d4f 5553 455f 5820 206d 6f75 7365 5f79  MOUSE_X  mouse_y
+-00003ae0: 0a20 2020 2020 2020 2069 6620 6576 656e  .        if even
+-00003af0: 7420 3d3d 2063 7632 2e45 5645 4e54 5f4d  t == cv2.EVENT_M
+-00003b00: 4f55 5345 4d4f 5645 3a0a 2020 2020 2020  OUSEMOVE:.      
+-00003b10: 2020 2020 2020 4d4f 5553 455f 5820 3d20        MOUSE_X = 
+-00003b20: 780a 2020 2020 2020 2020 2020 2020 4d4f  x.            MO
+-00003b30: 5553 455f 5920 3d20 790a 0a20 2020 2020  USE_Y = y..     
+-00003b40: 2020 2023 206c 6566 7420 6275 7474 6f6e     # left button
+-00003b50: 2064 6f75 626c 6520 636c 6963 6b20 2d3e   double click ->
+-00003b60: 2073 656c 6563 7420 6f62 6a65 6374 0a20   select object. 
+-00003b70: 2020 2020 2020 2065 6c69 6620 6576 656e         elif even
+-00003b80: 7420 3d3d 2063 7632 2e45 5645 4e54 5f4c  t == cv2.EVENT_L
+-00003b90: 4255 5454 4f4e 4442 4c43 4c4b 3a0a 2020  BUTTONDBLCLK:.  
+-00003ba0: 2020 2020 2020 2020 2020 5052 5645 5f57            PRVE_W
+-00003bb0: 4153 5f44 4f55 424c 455f 434c 4943 4b20  AS_DOUBLE_CLICK 
+-00003bc0: 3d20 5472 7565 2020 2020 0a20 2020 2020  = True    .     
+-00003bd0: 2020 2020 2020 2050 4f49 4e54 5f31 203d         POINT_1 =
+-00003be0: 2028 2d31 2c20 2d31 2920 2023 2072 6573   (-1, -1)  # res
+-00003bf0: 6574 2074 6f70 5f6c 6566 7420 706f 696e  et top_left poin
+-00003c00: 7420 3d3e 2070 6f6e 6974 5f31 0a0a 2020  t => ponit_1..  
+-00003c10: 2020 2020 2020 2020 2020 2320 6966 2063            # if c
+-00003c20: 6c69 636b 6564 2069 6e73 6964 6520 6120  licked inside a 
+-00003c30: 626f 756e 6469 6e67 2062 6f78 2077 6520  bounding box we 
+-00003c40: 7365 7420 7468 6174 2062 626f 780a 2020  set that bbox.  
+-00003c50: 2020 2020 2020 2020 2020 2320 7365 745f            # set_
+-00003c60: 7365 6c65 6374 6564 5f62 626f 7828 7365  selected_bbox(se
+-00003c70: 745f 636c 735f 7472 6163 6b62 6172 3d54  t_cls_trackbar=T
+-00003c80: 7275 6529 0a0a 2020 2020 2020 2020 2320  rue)..        # 
+-00003c90: 7269 6768 7420 6275 7474 6f6e 2070 7265  right button pre
+-00003ca0: 7373 6564 2064 6f77 6e0a 2020 2020 2020  ssed down.      
+-00003cb0: 2020 656c 6966 2065 7665 6e74 203d 3d20    elif event == 
+-00003cc0: 6376 322e 4556 454e 545f 5242 5554 544f  cv2.EVENT_RBUTTO
+-00003cd0: 4e44 4f57 4e3a 2020 2320 2020 2020 4556  NDOWN:  #     EV
+-00003ce0: 454e 545f 5242 5554 544f 4e55 5020 0a20  ENT_RBUTTONUP . 
+-00003cf0: 2020 2020 2020 2020 2020 2023 2073 6574             # set
+-00003d00: 5f73 656c 6563 7465 645f 6262 6f78 2873  _selected_bbox(s
+-00003d10: 6574 5f63 6c73 5f74 7261 636b 6261 723d  et_cls_trackbar=
+-00003d20: 4661 6c73 6529 2020 2023 2063 616e 6365  False)   # cance
+-00003d30: 6c20 7365 7420 636c 6173 730a 2020 2020  l set class.    
+-00003d40: 2020 2020 2020 2020 0a0a 2020 2020 2020          ..      
+-00003d50: 2020 2020 2020 2320 e5a6 82e6 9e9c e980        # ........
+-00003d60: 89e4 b8ad e4ba 8662 626f 78ef bc8c e58f  .......bbox.....
+-00003d70: b3e9 94ae e588 a0e9 99a4 e8af a5e9 8089  ................
+-00003d80: e4b8 ade7 9a84 e6a1 860a 2020 2020 2020  ..........      
+-00003d90: 2020 2020 2020 6966 2049 535f 4242 4f58        if IS_BBOX
+-00003da0: 5f53 454c 4543 5445 443a 0a20 2020 2020  _SELECTED:.     
+-00003db0: 2020 2020 2020 2020 2020 2062 626f 785f             bbox_
+-00003dc0: 7769 7468 5f69 6420 3d20 494d 475f 4f42  with_id = IMG_OB
+-00003dd0: 4a45 4354 535b 5345 4c45 4354 4544 5f42  JECTS[SELECTED_B
+-00003de0: 424f 585d 0a20 2020 2020 2020 2020 2020  BOX].           
+-00003df0: 2020 2020 2065 6469 745f 6262 6f78 2862       edit_bbox(b
+-00003e00: 626f 785f 7769 7468 5f69 642c 2027 6465  box_with_id, 'de
+-00003e10: 6c65 7465 2729 2020 2020 2020 2020 2320  lete')        # 
+-00003e20: 746f 2064 6f0a 2020 2020 2020 2020 2020  to do.          
+-00003e30: 2020 2020 2020 4953 5f42 424f 585f 5345        IS_BBOX_SE
+-00003e40: 4c45 4354 4544 203d 2046 616c 7365 0a0a  LECTED = False..
+-00003e50: 2020 2020 2020 2020 2320 e5b7 a6e9 94ae          # ......
+-00003e60: e68c 89e4 b88b 0a20 2020 2020 2020 2065  .......        e
+-00003e70: 6c69 6620 6576 656e 7420 3d3d 2063 7632  lif event == cv2
+-00003e80: 2e45 5645 4e54 5f4c 4255 5454 4f4e 444f  .EVENT_LBUTTONDO
+-00003e90: 574e 3a0a 0a20 2020 2020 2020 2020 2020  WN:..           
+-00003ea0: 2023 20e5 898d e4b8 80e6 aca1 e698 afe5   # .............
+-00003eb0: 8f8c e587 bbef bc8c e58d 95e5 87bb e58f  ................
+-00003ec0: 96e6 b688 0a20 2020 2020 2020 2020 2020  .....           
+-00003ed0: 2069 6620 5052 5645 5f57 4153 5f44 4f55   if PRVE_WAS_DOU
+-00003ee0: 424c 455f 434c 4943 4b3a 0a20 2020 2020  BLE_CLICK:.     
+-00003ef0: 2020 2020 2020 2020 2020 2050 5256 455f             PRVE_
+-00003f00: 5741 535f 444f 5542 4c45 5f43 4c49 434b  WAS_DOUBLE_CLICK
+-00003f10: 203d 2046 616c 7365 0a0a 2020 2020 2020   = False..      
+-00003f20: 2020 2020 2020 656c 7365 3a20 2020 2320        else:   # 
+-00003f30: 4e6f 726d 616c 206c 6566 7420 636c 6963  Normal left clic
+-00003f40: 6b0a 2020 2020 2020 2020 2020 2020 2020  k.              
+-00003f50: 2020 2320 e5a6 82e6 9e9c e9bc a0e6 a087    # ............
+-00003f60: e59c a8e9 8089 e4b8 ade7 9a84 e6a1 86e5  ................
+-00003f70: 8685 0a20 2020 2020 2020 2020 2020 2020  ...             
+-00003f80: 2020 2069 6620 504f 494e 545f 315b 305d     if POINT_1[0]
+-00003f90: 203d 3d20 2d31 3a0a 2020 2020 2020 2020   == -1:.        
+-00003fa0: 2020 2020 2020 2020 2020 2020 2320 7365              # se
+-00003fb0: 6c65 6374 6564 3f20 0a20 2020 2020 2020  lected? .       
+-00003fc0: 2020 2020 2020 2020 2020 2020 2069 6620               if 
+-00003fd0: 4953 5f42 424f 585f 5345 4c45 4354 4544  IS_BBOX_SELECTED
+-00003fe0: 3a0a 2020 2020 2020 2020 2020 2020 2020  :.              
+-00003ff0: 2020 2020 2020 2020 2020 4953 5f42 424f            IS_BBO
+-00004000: 585f 5345 4c45 4354 4544 203d 2046 616c  X_SELECTED = Fal
+-00004010: 7365 0a20 2020 2020 2020 2020 2020 2020  se.             
+-00004020: 2020 2020 2020 2065 6c73 653a 0a20 2020         else:.   
+-00004030: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00004040: 2020 2020 2023 2066 6972 7374 2063 6c69       # first cli
+-00004050: 636b 2028 7374 6172 7420 6472 6177 696e  ck (start drawin
+-00004060: 6720 6120 626f 756e 6469 6e67 2062 6f78  g a bounding box
+-00004070: 206f 7220 6465 6c65 7465 2061 6e20 6974   or delete an it
+-00004080: 656d 290a 2020 2020 2020 2020 2020 2020  em).            
+-00004090: 2020 2020 2020 2020 2020 2020 504f 494e              POIN
+-000040a0: 545f 3120 3d20 2878 2c20 7929 0a20 2020  T_1 = (x, y).   
+-000040b0: 2020 2020 2020 2020 2020 2020 2065 6c73               els
+-000040c0: 653a 0a20 2020 2020 2020 2020 2020 2020  e:.             
+-000040d0: 2020 2020 2020 2023 206d 696e 696d 616c         # minimal
+-000040e0: 2073 697a 6520 666f 7220 626f 756e 6469   size for boundi
+-000040f0: 6e67 2062 6f78 2074 6f20 6176 6f69 6420  ng box to avoid 
+-00004100: 6572 726f 7273 0a20 2020 2020 2020 2020  errors.         
+-00004110: 2020 2020 2020 2020 2020 2074 6872 6573             thres
+-00004120: 686f 6c64 203d 2035 0a20 2020 2020 2020  hold = 5.       
+-00004130: 2020 2020 2020 2020 2020 2020 2069 6620               if 
+-00004140: 6162 7328 7820 2d20 504f 494e 545f 315b  abs(x - POINT_1[
+-00004150: 305d 2920 3e20 7468 7265 7368 6f6c 6420  0]) > threshold 
+-00004160: 6f72 2061 6273 2879 202d 2050 4f49 4e54  or abs(y - POINT
+-00004170: 5f31 5b31 5d29 203e 2074 6872 6573 686f  _1[1]) > thresho
+-00004180: 6c64 3a0a 2020 2020 2020 2020 2020 2020  ld:.            
+-00004190: 2020 2020 2020 2020 2020 2020 2320 7365              # se
+-000041a0: 636f 6e64 2063 6c69 636b 0a20 2020 2020  cond click.     
+-000041b0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000041c0: 2020 2050 4f49 4e54 5f32 203d 2028 782c     POINT_2 = (x,
+-000041d0: 2079 290a 0a0a 2020 2020 2020 2020 2020   y)...          
+-000041e0: 2020 2320 6472 6167 2074 6f20 6d6f 6469    # drag to modi
+-000041f0: 6679 2062 626f 780a 2020 2020 2020 2020  fy bbox.        
+-00004200: 2020 2020 6966 2049 535f 4242 4f58 5f53      if IS_BBOX_S
+-00004210: 454c 4543 5445 443a 0a20 2020 2020 2020  ELECTED:.       
+-00004220: 2020 2020 2020 2020 2062 626f 785f 7769           bbox_wi
+-00004230: 7468 5f69 6420 3d20 494d 475f 4f42 4a45  th_id = IMG_OBJE
+-00004240: 4354 535b 5345 4c45 4354 4544 5f42 424f  CTS[SELECTED_BBO
+-00004250: 585d 0a20 2020 2020 2020 2020 2020 2020  X].             
+-00004260: 2020 2023 2065 6469 745f 6262 6f78 2862     # edit_bbox(b
+-00004270: 626f 785f 7769 7468 5f69 642c 2027 6465  box_with_id, 'de
+-00004280: 6c65 7465 2729 2020 2020 2020 2020 2320  lete')        # 
+-00004290: 746f 2064 6f0a 2020 2020 2020 2020 2020  to do.          
+-000042a0: 2020 2020 2020 2320 4953 5f42 424f 585f        # IS_BBOX_
+-000042b0: 5345 4c45 4354 4544 203d 2046 616c 7365  SELECTED = False
+-000042c0: 0a0a 0a0a 2320 7768 656e 2073 656c 6563  ....# when selec
+-000042d0: 7428 646f 7562 6c65 2063 6c69 636b 2920  t(double click) 
+-000042e0: 203d 3e20 6869 6768 7420 6c69 6768 7420   => hight light 
+-000042f0: 6262 6f78 6573 0a64 6566 2068 6967 686c  bboxes.def highl
+-00004300: 6967 6874 5f73 656c 6563 7465 645f 6262  ight_selected_bb
+-00004310: 6f78 2869 6d67 2c20 6c69 6e65 5f74 6869  ox(img, line_thi
+-00004320: 636b 6e65 7373 2c20 616c 7068 613d 312c  ckness, alpha=1,
+-00004330: 2062 6574 613d 302e 352c 2067 616d 6d61   beta=0.5, gamma
+-00004340: 3d30 293a 0a20 2020 2067 6c6f 6261 6c20  =0):.    global 
+-00004350: 494d 475f 4f42 4a45 4354 532c 2053 454c  IMG_OBJECTS, SEL
+-00004360: 4543 5445 445f 4242 4f58 0a0a 2020 2020  ECTED_BBOX..    
+-00004370: 2320 6c69 6e65 2077 6964 7468 0a20 2020  # line width.   
+-00004380: 206c 7720 3d20 6c69 6e65 5f74 6869 636b   lw = line_thick
+-00004390: 6e65 7373 202f 2f20 320a 2020 2020 666f  ness // 2.    fo
+-000043a0: 7220 6964 782c 206f 626a 2069 6e20 656e  r idx, obj in en
+-000043b0: 756d 6572 6174 6528 494d 475f 4f42 4a45  umerate(IMG_OBJE
+-000043c0: 4354 5329 3a0a 2020 2020 2020 2020 696e  CTS):.        in
+-000043d0: 642c 2078 312c 2079 312c 2078 322c 2079  d, x1, y1, x2, y
+-000043e0: 3220 3d20 6f62 6a0a 2020 2020 2020 2020  2 = obj.        
+-000043f0: 6966 2069 6478 203d 3d20 5345 4c45 4354  if idx == SELECT
+-00004400: 4544 5f42 424f 583a 0a20 2020 2020 2020  ED_BBOX:.       
+-00004410: 2020 2020 2023 2063 6f70 7920 6f72 6967       # copy orig
+-00004420: 696e 616c 2069 6d61 6765 0a20 2020 2020  inal image.     
+-00004430: 2020 2020 2020 206d 6173 6b20 3d20 6e70         mask = np
+-00004440: 2e7a 6572 6f73 2828 696d 672e 7368 6170  .zeros((img.shap
+-00004450: 6529 2c20 6474 7970 653d 6e70 2e75 696e  e), dtype=np.uin
+-00004460: 7438 290a 2020 2020 2020 2020 2020 2020  t8).            
+-00004470: 6376 322e 7265 6374 616e 676c 6528 6d61  cv2.rectangle(ma
+-00004480: 736b 2c20 2878 312d 6c77 2c20 7931 2d6c  sk, (x1-lw, y1-l
+-00004490: 7729 2c20 2878 322b 6c77 2c20 7932 2b6c  w), (x2+lw, y2+l
+-000044a0: 7729 2c20 2832 3535 2c20 3235 352c 2032  w), (255, 255, 2
+-000044b0: 3535 2c20 3029 2c20 2d31 2c20 6376 322e  55, 0), -1, cv2.
+-000044c0: 4c49 4e45 5f41 4129 0a20 2020 2020 2020  LINE_AA).       
+-000044d0: 2020 2020 2069 6d67 5f77 6569 6768 7465       img_weighte
+-000044e0: 6420 3d20 6376 322e 6164 6457 6569 6768  d = cv2.addWeigh
+-000044f0: 7465 6428 696d 672c 2061 6c70 6861 2c20  ted(img, alpha, 
+-00004500: 6d61 736b 2c20 6265 7461 2c20 6761 6d6d  mask, beta, gamm
+-00004510: 6129 0a20 2020 2020 2020 2020 2020 200a  a).            .
+-00004520: 2020 2020 7265 7475 726e 2069 6d67 5f77      return img_w
+-00004530: 6569 6768 7465 640a 0a0a 6465 6620 636d  eighted...def cm
+-00004540: 7028 732c 2072 3d72 652e 636f 6d70 696c  p(s, r=re.compil
+-00004550: 6528 2728 5b30 2d39 5d2b 2927 2929 3a0a  e('([0-9]+)')):.
+-00004560: 2020 2020 2320 6b65 7920 666f 7220 736f      # key for so
+-00004570: 7274 0a20 2020 2072 6574 7572 6e20 5b69  rt.    return [i
+-00004580: 6e74 2878 2920 6966 2078 2e69 7364 6967  nt(x) if x.isdig
+-00004590: 6974 2829 2065 6c73 6520 782e 6c6f 7765  it() else x.lowe
+-000045a0: 7228 2920 666f 7220 7820 696e 2072 2e73  r() for x in r.s
+-000045b0: 706c 6974 2873 295d 0a0a 0a64 6566 206f  plit(s)]...def o
+-000045c0: 7065 6e63 765f 7769 6e64 6f77 5f69 6e69  pencv_window_ini
+-000045d0: 7428 293a 0a20 2020 2023 2069 6e69 7420  t():.    # init 
+-000045e0: 7769 6e64 6f77 2077 6974 6820 6f76 6572  window with over
+-000045f0: 6c61 700a 2020 2020 7472 793a 0a20 2020  lap.    try:.   
+-00004600: 2020 2020 2063 7632 2e6e 616d 6564 5769       cv2.namedWi
+-00004610: 6e64 6f77 2827 5465 7374 2729 2020 200a  ndow('Test')   .
+-00004620: 2020 2020 2020 2020 6376 322e 6469 7370          cv2.disp
+-00004630: 6c61 794f 7665 726c 6179 2827 5465 7374  layOverlay('Test
+-00004640: 272c 2027 5465 7374 206f 7665 726c 6170  ', 'Test overlap
+-00004650: 272c 2031 3029 2020 0a20 2020 2020 2020  ', 10)  .       
+-00004660: 2063 7632 2e64 6973 706c 6179 5374 6174   cv2.displayStat
+-00004670: 7573 4261 7228 2754 6573 7427 2c20 2754  usBar('Test', 'T
+-00004680: 6573 7420 7374 6174 7573 2062 6172 272c  est status bar',
+-00004690: 2031 3029 0a20 2020 2065 7863 6570 7420   10).    except 
+-000046a0: 6376 322e 6572 726f 723a 0a20 2020 2020  cv2.error:.     
+-000046b0: 2020 2070 7269 6e74 2827 2d3e 2050 6c65     print('-> Ple
+-000046c0: 6173 6520 6967 6e6f 7265 2074 6869 7320  ase ignore this 
+-000046d0: 6572 726f 7220 6d65 7373 6167 655c 6e27  error message\n'
+-000046e0: 290a 2020 2020 6376 322e 6465 7374 726f  ).    cv2.destro
+-000046f0: 7941 6c6c 5769 6e64 6f77 7328 2920 2020  yAllWindows()   
+-00004700: 0a0a 0a0a 0a23 202d 2d2d 2d2d 2d2d 2d2d  .....# ---------
+-00004710: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00004720: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00004730: 2d2d 2d2d 2d2d 2d2d 2d2d 0a23 2020 2069  ----------.#   i
+-00004740: 6e73 7065 6374 203a 206d 6169 6e20 666f  nspect : main fo
+-00004750: 7220 6361 6c6c 696e 670a 232d 2d2d 2d2d  r calling.#-----
+-00004760: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00004770: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00004780: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 6465  -------------.de
+-00004790: 6620 696e 7370 6563 7432 2820 696d 675f  f inspect2( img_
+-000047a0: 6469 722c 200a 2020 2020 2020 2020 2020  dir, .          
+-000047b0: 2020 206c 6162 656c 5f64 6972 2c0a 2020     label_dir,.  
+-000047c0: 2020 2020 2020 2020 2020 206d 765f 6469             mv_di
+-000047d0: 722c 0a20 2020 2020 2020 2020 2020 2020  r,.             
+-000047e0: 7772 6f6e 675f 696d 675f 6469 722c 0a20  wrong_img_dir,. 
+-000047f0: 2020 2020 2020 2020 2020 2020 636c 6173              clas
+-00004800: 7365 732c 0a20 2020 2020 2020 2020 2020  ses,.           
+-00004810: 2020 7769 6e64 6f77 5f77 6964 7468 3d38    window_width=8
+-00004820: 3030 2c0a 2020 2020 2020 2020 2020 2020  00,.            
+-00004830: 2077 696e 646f 775f 6865 6967 6874 3d36   window_height=6
+-00004840: 3030 2c0a 2020 2020 2020 2020 2020 2020  00,.            
+-00004850: 2029 3a0a 2020 2020 0a20 2020 2023 2067   ):.    .    # g
+-00004860: 6c6f 6261 6c20 7661 7273 0a20 2020 2067  lobal vars.    g
+-00004870: 6c6f 6261 6c20 5749 4e44 4f57 5f4e 414d  lobal WINDOW_NAM
+-00004880: 452c 5c0a 2020 2020 2020 2020 2020 2049  E,\.           I
+-00004890: 4e50 5554 5f4c 4142 454c 5f44 4952 2c20  NPUT_LABEL_DIR, 
+-000048a0: 5c0a 2020 2020 2020 2020 2020 204d 4152  \.           MAR
+-000048b0: 4b5f 4d4f 4445 2c20 434c 4153 5349 4659  K_MODE, CLASSIFY
+-000048c0: 5f4d 4f44 452c 2049 4d41 4745 5f43 4c41  _MODE, IMAGE_CLA
+-000048d0: 5353 4553 2c20 5c0a 2020 2020 2020 2020  SSES, \.        
+-000048e0: 2020 2049 4d41 4745 5f50 4154 485f 4c49     IMAGE_PATH_LI
+-000048f0: 5354 2c20 494d 475f 4944 585f 4355 5252  ST, IMG_IDX_CURR
+-00004900: 454e 542c 2049 4d47 5f49 4458 5f4c 4153  ENT, IMG_IDX_LAS
+-00004910: 542c 2049 4d47 5f43 5552 5245 4e54 2c20  T, IMG_CURRENT, 
+-00004920: 494d 475f 4f42 4a45 4354 532c 2057 524f  IMG_OBJECTS, WRO
+-00004930: 4e47 5f49 4d47 5f53 4554 2c5c 0a20 2020  NG_IMG_SET,\.   
+-00004940: 2020 2020 2020 2020 434c 4153 535f 4c49          CLASS_LI
+-00004950: 5354 2c20 434c 535f 4944 585f 4355 5252  ST, CLS_IDX_CURR
+-00004960: 454e 542c 205c 0a20 2020 2020 2020 2020  ENT, \.         
+-00004970: 2020 5452 4143 4b42 4152 5f49 4d47 2c20    TRACKBAR_IMG, 
+-00004980: 5452 4143 4b42 4152 5f43 4c41 5353 2c5c  TRACKBAR_CLASS,\
+-00004990: 0a20 2020 2020 2020 2020 2020 5052 5645  .           PRVE
+-000049a0: 5f57 4153 5f44 4f55 424c 455f 434c 4943  _WAS_DOUBLE_CLIC
+-000049b0: 4b2c 2049 535f 4242 4f58 5f53 454c 4543  K, IS_BBOX_SELEC
+-000049c0: 5445 442c 2053 454c 4543 5445 445f 4242  TED, SELECTED_BB
+-000049d0: 4f58 2c20 4d4f 5553 455f 582c 204d 4f55  OX, MOUSE_X, MOU
+-000049e0: 5345 5f59 2c20 504f 494e 545f 312c 2050  SE_Y, POINT_1, P
+-000049f0: 4f49 4e54 5f32 2c5c 0a20 2020 2020 2020  OINT_2,\.       
+-00004a00: 2020 2020 494d 475f 434f 554e 542c 2043      IMG_COUNT, C
+-00004a10: 4c53 5f43 4f55 4e54 2c20 746d 705f 696d  LS_COUNT, tmp_im
+-00004a20: 670a 2020 2020 0a0a 2020 2020 2320 696e  g.    ..    # in
+-00004a30: 7075 7420 696d 6720 6469 7220 2620 6c61  put img dir & la
+-00004a40: 6265 6c20 6469 720a 2020 2020 494e 5055  bel dir.    INPU
+-00004a50: 545f 494d 475f 4449 5220 203d 2069 6d67  T_IMG_DIR  = img
+-00004a60: 5f64 6972 0a20 2020 2049 4e50 5554 5f4c  _dir.    INPUT_L
+-00004a70: 4142 454c 5f44 4952 203d 206c 6162 656c  ABEL_DIR = label
+-00004a80: 5f64 6972 2069 6620 6c61 6265 6c5f 6469  _dir if label_di
+-00004a90: 7220 656c 7365 2049 4e50 5554 5f49 4d47  r else INPUT_IMG
+-00004aa0: 5f44 4952 0a20 2020 204c 4f47 4745 522e  _DIR.    LOGGER.
+-00004ab0: 696e 666f 2866 2249 4d47 2020 2044 4952  info(f"IMG   DIR
+-00004ac0: 3a20 7b50 6174 6828 494e 5055 545f 494d  : {Path(INPUT_IM
+-00004ad0: 475f 4449 5229 2e72 6573 6f6c 7665 2829  G_DIR).resolve()
+-00004ae0: 7d22 290a 2020 2020 4c4f 4747 4552 2e69  }").    LOGGER.i
+-00004af0: 6e66 6f28 6622 4c41 4245 4c20 4449 523a  nfo(f"LABEL DIR:
+-00004b00: 207b 5061 7468 2849 4e50 5554 5f4c 4142   {Path(INPUT_LAB
+-00004b10: 454c 5f44 4952 292e 7265 736f 6c76 6528  EL_DIR).resolve(
+-00004b20: 297d 2229 0a0a 2020 2020 232d 2d2d 2d2d  )}")..    #-----
+-00004b30: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00004b40: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00004b50: 2d2d 2d2d 2020 200a 2020 2020 5749 4e44  ----   .    WIND
+-00004b60: 4f57 5f49 4e49 545f 5749 4454 4820 3d20  OW_INIT_WIDTH = 
+-00004b70: 7769 6e64 6f77 5f77 6964 7468 2020 2020  window_width    
+-00004b80: 2320 696e 6974 6961 6c20 7769 6e64 6f77  # initial window
+-00004b90: 2077 6964 7468 0a20 2020 2057 494e 444f   width.    WINDO
+-00004ba0: 575f 494e 4954 5f48 4549 4748 5420 3d20  W_INIT_HEIGHT = 
+-00004bb0: 7769 6e64 6f77 5f68 6569 6768 7420 2020  window_height   
+-00004bc0: 2023 2069 6e69 7469 616c 2077 696e 646f   # initial windo
+-00004bd0: 7720 6865 6967 6874 0a0a 2020 2020 2320  w height..    # 
+-00004be0: 6d61 726b 206d 6f64 6520 0a20 2020 204d  mark mode .    M
+-00004bf0: 4152 4b5f 4d4f 4445 203d 2046 616c 7365  ARK_MODE = False
+-00004c00: 0a20 2020 2043 4c41 5353 4946 595f 4d4f  .    CLASSIFY_MO
+-00004c10: 4445 203d 2046 616c 7365 0a0a 2020 2020  DE = False..    
+-00004c20: 2320 7772 6f6e 6720 6469 7220 2620 6d6f  # wrong dir & mo
+-00004c30: 7665 2064 6972 0a20 2020 2057 524f 4e47  ve dir.    WRONG
+-00004c40: 5f49 4d47 5f44 4952 203d 2077 726f 6e67  _IMG_DIR = wrong
+-00004c50: 5f69 6d67 5f64 6972 0a20 2020 204d 565f  _img_dir.    MV_
+-00004c60: 4449 5220 3d20 6d76 5f64 6972 0a0a 2020  DIR = mv_dir..  
+-00004c70: 2020 2320 6869 6465 206c 6162 656c 0a20    # hide label. 
+-00004c80: 2020 2048 4944 455f 4c41 4245 4c20 3d20     HIDE_LABEL = 
+-00004c90: 4661 6c73 650a 0a20 2020 2023 206e 756d  False..    # num
+-00004ca0: 5f62 626f 7865 730a 2020 2020 2320 4849  _bboxes.    # HI
+-00004cb0: 4445 5f4e 554d 5f42 424f 5845 5320 3d20  DE_NUM_BBOXES = 
+-00004cc0: 4661 6c73 650a 0a20 2020 2023 206f 6e6c  False..    # onl
+-00004cd0: 7920 7368 6f77 206f 6e65 2073 7065 6369  y show one speci
+-00004ce0: 6669 6320 636c 6173 730a 2020 2020 5349  fic class.    SI
+-00004cf0: 4e47 4c45 5f43 4c53 203d 204e 6f6e 650a  NGLE_CLS = None.
+-00004d00: 0a20 2020 2023 206d 696e 206c 696e 6520  .    # min line 
+-00004d10: 7769 6474 680a 2020 2020 4d49 4e5f 4c49  width.    MIN_LI
+-00004d20: 4e45 5f57 4944 5448 203d 2046 616c 7365  NE_WIDTH = False
+-00004d30: 0a0a 2020 2020 2320 6262 6f78 6573 2062  ..    # bboxes b
+-00004d40: 6c69 6e6b 0a20 2020 2044 4f5f 424c 494e  link.    DO_BLIN
+-00004d50: 4b5f 4242 4f58 4553 203d 2046 616c 7365  K_BBOXES = False
+-00004d60: 0a20 2020 2042 4c49 4e4b 5f4f 525f 4e4f  .    BLINK_OR_NO
+-00004d70: 5420 3d20 4661 6c73 650a 0a20 2020 2023  T = False..    #
+-00004d80: 206c 696e 6520 7468 6963 6b6e 6573 7320   line thickness 
+-00004d90: 2026 2020 6c69 6e65 2074 6869 636b 6573   &  line thickes
+-00004da0: 2061 646a 7573 740a 2020 2020 4c49 4e45   adjust.    LINE
+-00004db0: 5f54 4849 434b 4e45 5353 203d 2031 2020  _THICKNESS = 1  
+-00004dc0: 2020 2020 2020 2020 2020 0a20 2020 204c            .    L
+-00004dd0: 494e 455f 5448 4943 4b4e 4553 535f 4144  INE_THICKNESS_AD
+-00004de0: 4a55 5354 203d 2046 616c 7365 2020 2023  JUST = False   #
+-00004df0: 206c 696e 6520 7468 6963 6b6e 6573 7320   line thickness 
+-00004e00: 6164 6a75 7374 2066 6c61 670a 0a20 2020  adjust flag..   
+-00004e10: 2023 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   # -------------
+-00004e20: 2d2d 2d2d 2d2d 2d2d 2d0a 2020 2020 2320  ---------.    # 
+-00004e30: 434c 4153 535f 4c49 5354 0a20 2020 2023  CLASS_LIST.    #
+-00004e40: 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   ---------------
+-00004e50: 2d2d 2d2d 2d2d 2d0a 2020 2020 6966 206c  -------.    if l
+-00004e60: 656e 2863 6c61 7373 6573 2920 3d3d 2030  en(classes) == 0
+-00004e70: 3a20 2020 2320 6e6f 2063 6c61 7373 6573  :   # no classes
+-00004e80: 0a20 2020 2020 2020 204c 4f47 4745 522e  .        LOGGER.
+-00004e90: 6572 726f 7228 2245 7272 6f72 3a20 3c2d  error("Error: <-
+-00004ea0: 2d69 6e73 7065 6374 3e20 7368 6f75 6c64  -inspect> should
+-00004eb0: 2077 6f72 6b20 7769 7468 203c 2d2d 636c   work with <--cl
+-00004ec0: 6173 7365 733e 2120 4558 4954 2122 290a  asses>! EXIT!").
+-00004ed0: 2020 2020 2020 2020 6578 6974 282d 3129          exit(-1)
+-00004ee0: 0a20 2020 2065 6c69 6620 6c65 6e28 636c  .    elif len(cl
+-00004ef0: 6173 7365 7329 203d 3d20 3120 616e 6420  asses) == 1 and 
+-00004f00: 636c 6173 7365 735b 305d 2e65 6e64 7377  classes[0].endsw
+-00004f10: 6974 6828 272e 7478 7427 293a 2020 2020  ith('.txt'):    
+-00004f20: 2320 7478 7420 696e 7075 740a 2020 2020  # txt input.    
+-00004f30: 2020 2020 7769 7468 206f 7065 6e28 636c      with open(cl
+-00004f40: 6173 7365 735b 305d 2920 6173 2066 3a0a  asses[0]) as f:.
+-00004f50: 2020 2020 2020 2020 2020 2020 666f 7220              for 
+-00004f60: 6c69 6e65 2069 6e20 663a 0a20 2020 2020  line in f:.     
+-00004f70: 2020 2020 2020 2020 2020 2043 4c41 5353             CLASS
+-00004f80: 5f4c 4953 542e 6170 7065 6e64 286c 696e  _LIST.append(lin
+-00004f90: 652e 7374 7269 7028 2929 0a20 2020 2065  e.strip()).    e
+-00004fa0: 6c73 653a 2023 2061 7267 7320 636c 6173  lse: # args clas
+-00004fb0: 7365 7320 0a20 2020 2020 2020 2043 4c41  ses .        CLA
+-00004fc0: 5353 5f4c 4953 5420 3d20 636c 6173 7365  SS_LIST = classe
+-00004fd0: 730a 0a20 2020 2023 2072 6570 6561 7420  s..    # repeat 
+-00004fe0: 636c 6173 7320 6368 6563 6b20 0a20 2020  class check .   
+-00004ff0: 2069 6620 6e6f 7420 286c 656e 2843 4c41   if not (len(CLA
+-00005000: 5353 5f4c 4953 5429 203d 3d20 6c65 6e28  SS_LIST) == len(
+-00005010: 7365 7428 434c 4153 535f 4c49 5354 2929  set(CLASS_LIST))
+-00005020: 293a 0a20 2020 2020 2020 204c 4f47 4745  ):.        LOGGE
+-00005030: 522e 6572 726f 7228 2252 6570 6561 7420  R.error("Repeat 
+-00005040: 636c 6173 7320 6e61 6d65 2121 2122 290a  class name!!!").
+-00005050: 2020 2020 2020 2020 6578 6974 282d 3129          exit(-1)
+-00005060: 0a0a 2020 2020 2320 6f70 656e 6376 2077  ..    # opencv w
+-00005070: 696e 646f 7773 2069 6e69 740a 2020 2020  indows init.    
+-00005080: 6f70 656e 6376 5f77 696e 646f 775f 696e  opencv_window_in
+-00005090: 6974 2829 0a0a 2020 2020 2320 7265 6164  it()..    # read
+-000050a0: 2061 6c6c 2069 6e70 7574 2069 6d61 6765   all input image
+-000050b0: 730a 2020 2020 4c4f 4747 4552 2e69 6e66  s.    LOGGER.inf
+-000050c0: 6f28 6622 4c6f 6164 696e 6720 616c 6c20  o(f"Loading all 
+-000050d0: 696d 6167 6573 2e2e 2e22 290a 2020 2020  images...").    
+-000050e0: 494d 4147 455f 5041 5448 5f4c 4953 5420  IMAGE_PATH_LIST 
+-000050f0: 3d20 736f 7274 6564 285b 7374 7228 7829  = sorted([str(x)
+-00005100: 2066 6f72 2078 2069 6e20 5061 7468 2849   for x in Path(I
+-00005110: 4e50 5554 5f49 4d47 5f44 4952 292e 6974  NPUT_IMG_DIR).it
+-00005120: 6572 6469 7228 2920 6966 2078 2e73 7566  erdir() if x.suf
+-00005130: 6669 7820 696e 2049 4d47 5f46 4f52 4d41  fix in IMG_FORMA
+-00005140: 545d 2c20 6b65 793d 636d 7029 0a0a 2020  T], key=cmp)..  
+-00005150: 2020 2320 696d 6167 6520 636c 6173 7320    # image class 
+-00005160: 6a73 6f6e 2066 696c 6520 696e 6974 0a20  json file init. 
+-00005170: 2020 2049 4d41 4745 5f43 4c41 5353 4553     IMAGE_CLASSES
+-00005180: 5f4a 534f 4e5f 5041 5448 203d 2050 6174  _JSON_PATH = Pat
+-00005190: 6828 494e 5055 545f 494d 475f 4449 5229  h(INPUT_IMG_DIR)
+-000051a0: 2e77 6974 685f 6e61 6d65 2827 636c 6173  .with_name('clas
+-000051b0: 7369 6679 2e6a 736f 6e27 290a 0a20 2020  sify.json')..   
+-000051c0: 2023 206c 6f61 6420 6a73 6f6e 2066 6f72   # load json for
+-000051d0: 2063 6c61 7373 6966 7920 7461 736b 0a20   classify task. 
+-000051e0: 2020 2069 6620 2849 4d41 4745 5f43 4c41     if (IMAGE_CLA
+-000051f0: 5353 4553 5f4a 534f 4e5f 5041 5448 292e  SSES_JSON_PATH).
+-00005200: 6578 6973 7473 2829 3a0a 2020 2020 2020  exists():.      
+-00005210: 2020 494d 4147 455f 434c 4153 5345 5320    IMAGE_CLASSES 
+-00005220: 3d20 6a73 6f6e 2e6c 6f61 6428 6f70 656e  = json.load(open
+-00005230: 2849 4d41 4745 5f43 4c41 5353 4553 5f4a  (IMAGE_CLASSES_J
+-00005240: 534f 4e5f 5041 5448 2c20 656e 636f 6469  SON_PATH, encodi
+-00005250: 6e67 3d22 7574 662d 3822 2929 0a0a 2020  ng="utf-8"))..  
+-00005260: 2020 2320 696d 6720 2620 636c 6173 7320    # img & class 
+-00005270: 636f 756e 740a 2020 2020 494d 475f 434f  count.    IMG_CO
+-00005280: 554e 5420 3d20 6c65 6e28 494d 4147 455f  UNT = len(IMAGE_
+-00005290: 5041 5448 5f4c 4953 5429 202d 2031 2020  PATH_LIST) - 1  
+-000052a0: 0a20 2020 2043 4c53 5f43 4f55 4e54 203d  .    CLS_COUNT =
+-000052b0: 206c 656e 2843 4c41 5353 5f4c 4953 5429   len(CLASS_LIST)
+-000052c0: 202d 2031 0a0a 2020 2020 2320 6372 6561   - 1..    # crea
+-000052d0: 7465 206f 7574 7075 7420 6469 7220 6966  te output dir if
+-000052e0: 206e 6f74 2065 7869 7374 0a20 2020 2069   not exist.    i
+-000052f0: 6620 6e6f 7420 5061 7468 2849 4e50 5554  f not Path(INPUT
+-00005300: 5f4c 4142 454c 5f44 4952 292e 6578 6973  _LABEL_DIR).exis
+-00005310: 7473 2829 3a0a 2020 2020 2020 2020 5061  ts():.        Pa
+-00005320: 7468 2849 4e50 5554 5f4c 4142 454c 5f44  th(INPUT_LABEL_D
+-00005330: 4952 292e 6d6b 6469 7228 290a 0a20 2020  IR).mkdir()..   
+-00005340: 2023 2063 7265 6174 6520 7769 6e64 6f77   # create window
+-00005350: 200a 2020 2020 6376 322e 6e61 6d65 6457   .    cv2.namedW
+-00005360: 696e 646f 7728 5749 4e44 4f57 5f4e 414d  indow(WINDOW_NAM
+-00005370: 452c 2063 7632 2e57 494e 444f 575f 4e4f  E, cv2.WINDOW_NO
+-00005380: 524d 414c 2920 2023 2063 7632 2e57 494e  RMAL)  # cv2.WIN
+-00005390: 444f 575f 4652 4545 5241 5449 4f20 2020  DOW_FREERATIO   
+-000053a0: 6376 322e 5749 4e44 4f57 5f4b 4545 5052  cv2.WINDOW_KEEPR
+-000053b0: 4154 494f 2c20 5749 4e44 4f57 5f47 5549  ATIO, WINDOW_GUI
+-000053c0: 5f4e 4f52 4d41 4c2c 2057 494e 444f 575f  _NORMAL, WINDOW_
+-000053d0: 4755 495f 4558 5041 4e44 4544 0a20 2020  GUI_EXPANDED.   
+-000053e0: 2063 7632 2e72 6573 697a 6557 696e 646f   cv2.resizeWindo
+-000053f0: 7728 5749 4e44 4f57 5f4e 414d 452c 2057  w(WINDOW_NAME, W
+-00005400: 494e 444f 575f 494e 4954 5f57 4944 5448  INDOW_INIT_WIDTH
+-00005410: 2c20 5749 4e44 4f57 5f49 4e49 545f 4845  , WINDOW_INIT_HE
+-00005420: 4947 4854 290a 0a20 2020 2023 206d 6f75  IGHT)..    # mou
+-00005430: 7365 206c 6973 7465 6e20 6361 6c6c 6261  se listen callba
+-00005440: 636b 0a20 2020 2063 7632 2e73 6574 4d6f  ck.    cv2.setMo
+-00005450: 7573 6543 616c 6c62 6163 6b28 5749 4e44  useCallback(WIND
+-00005460: 4f57 5f4e 414d 452c 206d 6f75 7365 5f6c  OW_NAME, mouse_l
+-00005470: 6973 7465 6e65 7229 0a20 2020 2023 2063  istener).    # c
+-00005480: 7632 2e73 6574 4d6f 7573 6543 616c 6c62  v2.setMouseCallb
+-00005490: 6163 6b28 5749 4e44 4f57 5f4e 414d 452c  ack(WINDOW_NAME,
+-000054a0: 206d 6f75 7365 5f6c 6973 7465 6e65 722c   mouse_listener,
+-000054b0: 2070 6172 616d 3d7b 2774 6d70 5f69 6d67   param={'tmp_img
+-000054c0: 273a 2074 6d70 5f69 6d67 7d29 0a0a 0a20  ': tmp_img})... 
+-000054d0: 2020 2023 2069 6d61 6765 7320 7472 6163     # images trac
+-000054e0: 6b62 6172 0a20 2020 2069 6620 494d 475f  kbar.    if IMG_
+-000054f0: 434f 554e 5420 213d 2030 3a0a 2020 2020  COUNT != 0:.    
+-00005500: 2020 2020 6376 322e 6372 6561 7465 5472      cv2.createTr
+-00005510: 6163 6b62 6172 2854 5241 434b 4241 525f  ackbar(TRACKBAR_
+-00005520: 494d 472c 2057 494e 444f 575f 4e41 4d45  IMG, WINDOW_NAME
+-00005530: 2c20 302c 2049 4d47 5f43 4f55 4e54 2c20  , 0, IMG_COUNT, 
+-00005540: 7365 745f 696d 675f 696e 6465 7829 2020  set_img_index)  
+-00005550: 200a 200a 2020 2020 2320 636c 6173 7320   . .    # class 
+-00005560: 7472 6163 6b62 6172 0a20 2020 2054 5241  trackbar.    TRA
+-00005570: 434b 4241 525f 434c 4153 5320 3d20 5452  CKBAR_CLASS = TR
+-00005580: 4143 4b42 4152 5f43 4c41 5353 202b 2027  ACKBAR_CLASS + '
+-00005590: 5c6e 2720 2b20 7374 7228 636c 6173 7365  \n' + str(classe
+-000055a0: 7329 202b 2027 5c6e 270a 2020 2020 6966  s) + '\n'.    if
+-000055b0: 2043 4c53 5f43 4f55 4e54 2021 3d20 303a   CLS_COUNT != 0:
+-000055c0: 0a20 2020 2020 2020 2063 7632 2e63 7265  .        cv2.cre
+-000055d0: 6174 6554 7261 636b 6261 7228 5452 4143  ateTrackbar(TRAC
+-000055e0: 4b42 4152 5f43 4c41 5353 2c20 5749 4e44  KBAR_CLASS, WIND
+-000055f0: 4f57 5f4e 414d 452c 2030 2c20 434c 535f  OW_NAME, 0, CLS_
+-00005600: 434f 554e 542c 2073 6574 5f63 6c61 7373  COUNT, set_class
+-00005610: 5f69 6e64 6578 290a 0a20 2020 2023 2069  _index)..    # i
+-00005620: 6e69 7469 616c 697a 6520 7468 6520 696d  nitialize the im
+-00005630: 6720 696e 6465 780a 2020 2020 7365 745f  g index.    set_
+-00005640: 696d 675f 696e 6465 7828 3029 0a0a 2020  img_index(0)..  
+-00005650: 2020 2320 6865 6c70 2069 6e66 6f0a 2020    # help info.  
+-00005660: 2020 7269 6368 2e70 7269 6e74 2848 454c    rich.print(HEL
+-00005670: 505f 4d53 4729 0a0a 2020 2020 2320 636f  P_MSG)..    # co
+-00005680: 6c6f 7273 2070 616c 6574 7465 0a20 2020  lors palette.   
+-00005690: 2043 4f4c 4f52 5f50 414c 4554 5445 203d   COLOR_PALETTE =
+-000056a0: 2043 6f6c 6f72 7328 7368 7566 666c 653d   Colors(shuffle=
+-000056b0: 4661 6c73 6529 2020 0a20 2020 2023 204c  False)  .    # L
+-000056c0: 4f47 4745 522e 696e 666f 2866 2272 756e  OGGER.info(f"run
+-000056d0: 6e69 6e67 2e2e 2e22 290a 0a20 2020 2023  ning...")..    #
+-000056e0: 206c 6f6f 700a 2020 2020 7768 696c 6520   loop.    while 
+-000056f0: 5472 7565 3a0a 2020 2020 2020 2020 636f  True:.        co
+-00005700: 6c6f 7220 3d20 434f 4c4f 525f 5041 4c45  lor = COLOR_PALE
+-00005710: 5454 4528 696e 7428 434c 535f 4944 585f  TTE(int(CLS_IDX_
+-00005720: 4355 5252 454e 5429 2c20 6267 723d 4661  CURRENT), bgr=Fa
+-00005730: 6c73 6529 2020 2320 636f 6c6f 7220 666f  lse)  # color fo
+-00005740: 7220 6576 6572 7920 636c 6173 730a 2020  r every class.  
+-00005750: 2020 2020 2020 746d 705f 696d 6720 3d20        tmp_img = 
+-00005760: 494d 475f 4355 5252 454e 542e 636f 7079  IMG_CURRENT.copy
+-00005770: 2829 2020 2020 2320 636c 6f6e 6520 7468  ()    # clone th
+-00005780: 6520 696d 6720 2020 0a20 2020 2020 2020  e img   .       
+-00005790: 2069 6d67 5f68 6569 6768 745f 6375 7272   img_height_curr
+-000057a0: 656e 742c 2069 6d67 5f77 6964 7468 5f63  ent, img_width_c
+-000057b0: 7572 7265 6e74 203d 2074 6d70 5f69 6d67  urrent = tmp_img
+-000057c0: 2e73 6861 7065 5b3a 325d 2020 2023 2068  .shape[:2]   # h
+-000057d0: 6569 6768 742c 2077 6964 7468 0a0a 0a20  eight, width... 
+-000057e0: 2020 2020 2020 2023 2063 616c 6375 6c61         # calcula
+-000057f0: 7465 206c 696e 652d 7468 6963 6b6e 6573  te line-thicknes
+-00005800: 730a 2020 2020 2020 2020 6966 204d 494e  s.        if MIN
+-00005810: 5f4c 494e 455f 5749 4454 483a 0a20 2020  _LINE_WIDTH:.   
+-00005820: 2020 2020 2020 2020 204c 494e 455f 5448           LINE_TH
+-00005830: 4943 4b4e 4553 5320 3d20 310a 2020 2020  ICKNESS = 1.    
+-00005840: 2020 2020 656c 7365 3a0a 2020 2020 2020      else:.      
+-00005850: 2020 2020 2020 4c49 4e45 5f54 4849 434b        LINE_THICK
+-00005860: 4e45 5353 203d 206d 6178 2872 6f75 6e64  NESS = max(round
+-00005870: 2873 756d 2874 6d70 5f69 6d67 2e73 6861  (sum(tmp_img.sha
+-00005880: 7065 2920 2f20 3220 2a20 302e 3030 3329  pe) / 2 * 0.003)
+-00005890: 2c20 3129 2069 6620 6e6f 7420 4c49 4e45  , 1) if not LINE
+-000058a0: 5f54 4849 434b 4e45 5353 5f41 444a 5553  _THICKNESS_ADJUS
+-000058b0: 5420 656c 7365 204c 494e 455f 5448 4943  T else LINE_THIC
+-000058c0: 4b4e 4553 5320 2020 2020 2023 206c 696e  KNESS      # lin
+-000058d0: 6520 7769 6474 680a 0a0a 2020 2020 2020  e width...      
+-000058e0: 2020 2320 6375 7272 656e 7420 636c 6173    # current clas
+-000058f0: 7320 696e 6465 7820 616e 6420 6974 2773  s index and it's
+-00005900: 2063 6c61 7373 206e 616d 650a 2020 2020   class name.    
+-00005910: 2020 2020 636c 6173 735f 6e61 6d65 203d      class_name =
+-00005920: 2043 4c41 5353 5f4c 4953 545b 434c 535f   CLASS_LIST[CLS_
+-00005930: 4944 585f 4355 5252 454e 545d 0a20 2020  IDX_CURRENT].   
+-00005940: 2020 2020 200a 2020 2020 2020 2020 2320       .        # 
+-00005950: 6375 7272 656e 7420 696d 6167 6520 7061  current image pa
+-00005960: 7468 2c20 7265 6c61 7469 7665 2070 6174  th, relative pat
+-00005970: 683a 2069 6d67 2f69 6d67 5f31 2e6a 7067  h: img/img_1.jpg
+-00005980: 0a20 2020 2020 2020 2069 6d67 5f70 6174  .        img_pat
+-00005990: 6820 3d20 494d 4147 455f 5041 5448 5f4c  h = IMAGE_PATH_L
+-000059a0: 4953 545b 494d 475f 4944 585f 4355 5252  IST[IMG_IDX_CURR
+-000059b0: 454e 545d 2020 200a 2020 2020 2020 2020  ENT]   .        
+-000059c0: 6c61 6265 6c5f 7061 7468 203d 2050 6174  label_path = Pat
+-000059d0: 6828 494e 5055 545f 4c41 4245 4c5f 4449  h(INPUT_LABEL_DI
+-000059e0: 5229 202f 2028 5061 7468 2869 6d67 5f70  R) / (Path(img_p
+-000059f0: 6174 6829 2e73 7465 6d20 2b20 272e 7478  ath).stem + '.tx
+-00005a00: 7427 2920 2023 2067 6574 2067 6574 2063  t')  # get get c
+-00005a10: 6f72 7265 7370 6f6e 6469 6e67 206c 6162  orresponding lab
+-00005a20: 656c 2070 6174 680a 2020 2020 2020 2020  el path.        
+-00005a30: 0a20 2020 2020 2020 2023 2073 7461 7475  .        # statu
+-00005a40: 7362 6172 2069 6e66 6f0a 2020 2020 2020  sbar info.      
+-00005a50: 2020 7374 6174 7573 5f6d 7367 203d 2028    status_msg = (
+-00005a60: 6622 4355 5253 4f52 3a20 287b 4d4f 5553  f"CURSOR: ({MOUS
+-00005a70: 455f 587d 2c20 7b4d 4f55 5345 5f59 7d29  E_X}, {MOUSE_Y})
+-00005a80: 2220 2b20 225c 7422 202a 2038 202b 200a  " + "\t" * 8 + .
+-00005a90: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00005aa0: 2020 2020 2020 6622 4e55 4d5f 4242 4f58        f"NUM_BBOX
+-00005ab0: 4553 3a20 7b73 7472 286c 656e 2849 4d47  ES: {str(len(IMG
+-00005ac0: 5f4f 424a 4543 5453 2929 7d22 202b 2022  _OBJECTS))}" + "
+-00005ad0: 5c74 2220 2a20 3820 2b0a 2020 2020 2020  \t" * 8 +.      
+-00005ae0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00005af0: 6622 494d 4720 5245 534f 4c55 5449 4f4e  f"IMG RESOLUTION
+-00005b00: 3a20 287b 746d 705f 696d 672e 7368 6170  : ({tmp_img.shap
+-00005b10: 655b 305d 7d2c 207b 746d 705f 696d 672e  e[0]}, {tmp_img.
+-00005b20: 7368 6170 655b 315d 7d29 2220 2b20 225c  shape[1]})" + "\
+-00005b30: 7422 202a 2035 202b 0a20 2020 2020 2020  t" * 5 +.       
+-00005b40: 2020 2020 2020 2020 2020 2020 2020 2066                 f
+-00005b50: 2249 4d41 4745 2050 4154 483a 207b 5061  "IMAGE PATH: {Pa
+-00005b60: 7468 2869 6d67 5f70 6174 6829 2e6e 616d  th(img_path).nam
+-00005b70: 657d 2220 202b 2022 5c74 2220 2a20 3130  e}"  + "\t" * 10
+-00005b80: 202b 200a 2020 2020 2020 2020 2020 2020   + .            
+-00005b90: 2020 2020 2020 2020 2020 6622 4c41 4245            f"LABE
+-00005ba0: 4c20 5041 5448 3a20 7b50 6174 6828 6c61  L PATH: {Path(la
+-00005bb0: 6265 6c5f 7061 7468 292e 6e61 6d65 7d22  bel_path).name}"
+-00005bc0: 2020 2b20 225c 7422 202a 2031 300a 2020    + "\t" * 10.  
+-00005bd0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00005be0: 2020 290a 2020 2020 2020 2020 6376 322e    ).        cv2.
+-00005bf0: 6469 7370 6c61 7953 7461 7475 7342 6172  displayStatusBar
+-00005c00: 2857 494e 444f 575f 4e41 4d45 2c20 7374  (WINDOW_NAME, st
+-00005c10: 6174 7573 5f6d 7367 290a 0a20 2020 2020  atus_msg)..     
+-00005c20: 2020 200a 2020 2020 2020 2020 2320 4469     .        # Di
+-00005c30: 7370 6c61 7920 4c61 6265 6c20 6966 2068  splay Label if h
+-00005c40: 6173 206c 6162 656c 2074 7874 0a20 2020  as label txt.   
+-00005c50: 2020 2020 2023 2042 6c69 6e6b 2062 626f       # Blink bbo
+-00005c60: 7865 730a 2020 2020 2020 2020 6966 2044  xes.        if D
+-00005c70: 4f5f 424c 494e 4b5f 4242 4f58 4553 3a0a  O_BLINK_BBOXES:.
+-00005c80: 2020 2020 2020 2020 2020 2020 6966 2042              if B
+-00005c90: 4c49 4e4b 5f4f 525f 4e4f 5420 3d3d 2046  LINK_OR_NOT == F
+-00005ca0: 616c 7365 3a0a 2020 2020 2020 2020 2020  alse:.          
+-00005cb0: 2020 2020 2020 746d 705f 696d 6720 3d20        tmp_img = 
+-00005cc0: 6472 6177 5f62 626f 7865 735f 6672 6f6d  draw_bboxes_from
+-00005cd0: 5f66 696c 6528 746d 705f 696d 672c 206c  _file(tmp_img, l
+-00005ce0: 6162 656c 5f70 6174 682c 2069 6d67 5f77  abel_path, img_w
+-00005cf0: 6964 7468 5f63 7572 7265 6e74 2c20 696d  idth_current, im
+-00005d00: 675f 6865 6967 6874 5f63 7572 7265 6e74  g_height_current
+-00005d10: 2c20 434f 4c4f 525f 5041 4c45 5454 452c  , COLOR_PALETTE,
+-00005d20: 2030 2c20 5349 4e47 4c45 5f43 4c53 2c20   0, SINGLE_CLS, 
+-00005d30: 4849 4445 5f4c 4142 454c 290a 2020 2020  HIDE_LABEL).    
+-00005d40: 2020 2020 2020 2020 2020 2020 424c 494e              BLIN
+-00005d50: 4b5f 4f52 5f4e 4f54 203d 2054 7275 650a  K_OR_NOT = True.
+-00005d60: 2020 2020 2020 2020 2020 2020 656c 7365              else
+-00005d70: 3a0a 2020 2020 2020 2020 2020 2020 2020  :.              
+-00005d80: 2020 746d 705f 696d 6720 3d20 6472 6177    tmp_img = draw
+-00005d90: 5f62 626f 7865 735f 6672 6f6d 5f66 696c  _bboxes_from_fil
+-00005da0: 6528 746d 705f 696d 672c 206c 6162 656c  e(tmp_img, label
+-00005db0: 5f70 6174 682c 2069 6d67 5f77 6964 7468  _path, img_width
+-00005dc0: 5f63 7572 7265 6e74 2c20 696d 675f 6865  _current, img_he
+-00005dd0: 6967 6874 5f63 7572 7265 6e74 2c20 434f  ight_current, CO
+-00005de0: 4c4f 525f 5041 4c45 5454 452c 204c 494e  LOR_PALETTE, LIN
+-00005df0: 455f 5448 4943 4b4e 4553 532c 2053 494e  E_THICKNESS, SIN
+-00005e00: 474c 455f 434c 532c 2048 4944 455f 4c41  GLE_CLS, HIDE_LA
+-00005e10: 4245 4c29 0a20 2020 2020 2020 2020 2020  BEL).           
+-00005e20: 2020 2020 2042 4c49 4e4b 5f4f 525f 4e4f       BLINK_OR_NO
+-00005e30: 5420 3d20 4661 6c73 650a 2020 2020 2020  T = False.      
+-00005e40: 2020 656c 7365 3a0a 2020 2020 2020 2020    else:.        
+-00005e50: 2020 2020 2320 6472 6177 2061 6c72 6561      # draw alrea
+-00005e60: 6479 2064 6f6e 6520 626f 756e 6469 6e67  dy done bounding
+-00005e70: 2062 6f78 6573 0a20 2020 2020 2020 2020   boxes.         
+-00005e80: 2020 2074 6d70 5f69 6d67 203d 2064 7261     tmp_img = dra
+-00005e90: 775f 6262 6f78 6573 5f66 726f 6d5f 6669  w_bboxes_from_fi
+-00005ea0: 6c65 2874 6d70 5f69 6d67 2c20 6c61 6265  le(tmp_img, labe
+-00005eb0: 6c5f 7061 7468 2c20 696d 675f 7769 6474  l_path, img_widt
+-00005ec0: 685f 6375 7272 656e 742c 2069 6d67 5f68  h_current, img_h
+-00005ed0: 6569 6768 745f 6375 7272 656e 742c 2043  eight_current, C
+-00005ee0: 4f4c 4f52 5f50 414c 4554 5445 2c20 4c49  OLOR_PALETTE, LI
+-00005ef0: 4e45 5f54 4849 434b 4e45 5353 2c20 5349  NE_THICKNESS, SI
+-00005f00: 4e47 4c45 5f43 4c53 2c20 4849 4445 5f4c  NGLE_CLS, HIDE_L
+-00005f10: 4142 454c 290a 0a0a 2020 2020 2020 2020  ABEL)...        
+-00005f20: 2320 696e 7370 6563 7420 6d6f 6465 0a20  # inspect mode. 
+-00005f30: 2020 2020 2020 2069 6620 4d41 524b 5f4d         if MARK_M
+-00005f40: 4f44 453a 0a20 2020 2020 2020 2020 2020  ODE:.           
+-00005f50: 2023 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   # -------------
+-00005f60: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020  -------------.  
+-00005f70: 2020 2020 2020 2020 2020 2320 7368 6f77            # show
+-00005f80: 2063 7572 736f 7220 6c69 6e65 2066 6f72   cursor line for
+-00005f90: 2064 7261 7769 6e67 0a20 2020 2020 2020   drawing.       
+-00005fa0: 2020 2020 2023 202d 2d2d 2d2d 2d2d 2d2d       # ---------
+-00005fb0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00005fc0: 2d2d 2d0a 2020 2020 2020 2020 2020 2020  ---.            
+-00005fd0: 6376 322e 6c69 6e65 2874 6d70 5f69 6d67  cv2.line(tmp_img
+-00005fe0: 2c20 284d 4f55 5345 5f58 2c20 3029 2c20  , (MOUSE_X, 0), 
+-00005ff0: 284d 4f55 5345 5f58 2c20 696d 675f 6865  (MOUSE_X, img_he
+-00006000: 6967 6874 5f63 7572 7265 6e74 292c 2063  ight_current), c
+-00006010: 6f6c 6f72 2c20 4c49 4e45 5f54 4849 434b  olor, LINE_THICK
+-00006020: 4e45 5353 290a 2020 2020 2020 2020 2020  NESS).          
+-00006030: 2020 6376 322e 6c69 6e65 2874 6d70 5f69    cv2.line(tmp_i
+-00006040: 6d67 2c20 2830 2c20 4d4f 5553 455f 5929  mg, (0, MOUSE_Y)
+-00006050: 2c20 2869 6d67 5f77 6964 7468 5f63 7572  , (img_width_cur
+-00006060: 7265 6e74 2c20 4d4f 5553 455f 5929 2c20  rent, MOUSE_Y), 
+-00006070: 636f 6c6f 722c 204c 494e 455f 5448 4943  color, LINE_THIC
+-00006080: 4b4e 4553 5329 0a0a 2020 2020 2020 2020  KNESS)..        
+-00006090: 2020 2020 2320 7368 6f77 206c 6162 656c      # show label
+-000060a0: 206f 7220 6e6f 7420 7768 656e 2064 7261   or not when dra
+-000060b0: 7769 6e67 0a20 2020 2020 2020 2020 2020  wing.           
+-000060c0: 2069 6620 6e6f 7420 4849 4445 5f4c 4142   if not HIDE_LAB
+-000060d0: 454c 3a0a 2020 2020 2020 2020 2020 2020  EL:.            
+-000060e0: 2020 2020 7465 7874 5f77 2c20 7465 7874      text_w, text
+-000060f0: 5f68 203d 2063 7632 2e67 6574 5465 7874  _h = cv2.getText
+-00006100: 5369 7a65 2863 6c61 7373 5f6e 616d 652c  Size(class_name,
+-00006110: 200a 2020 2020 2020 2020 2020 2020 2020   .              
+-00006120: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006130: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006140: 2020 2030 2c0a 2020 2020 2020 2020 2020     0,.          
+-00006150: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006160: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006170: 2020 2020 2020 2066 6f6e 7453 6361 6c65         fontScale
+-00006180: 3d4c 494e 455f 5448 4943 4b4e 4553 5320  =LINE_THICKNESS 
+-00006190: 2f20 332c 200a 2020 2020 2020 2020 2020  / 3, .          
+-000061a0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000061b0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000061c0: 2020 2020 2020 2074 6869 636b 6e65 7373         thickness
+-000061d0: 3d6d 6178 284c 494e 455f 5448 4943 4b4e  =max(LINE_THICKN
+-000061e0: 4553 5320 2d20 312c 2031 290a 2020 2020  ESS - 1, 1).    
+-000061f0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006200: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006210: 2020 2020 2020 2020 2020 2020 2029 5b30               )[0
+-00006220: 5d20 2023 2074 6578 7420 7769 6474 682c  ]  # text width,
+-00006230: 2068 6569 6768 740a 2020 2020 2020 2020   height.        
+-00006240: 2020 2020 2020 2020 2320 6368 6563 6b20          # check 
+-00006250: 6966 206f 7574 7369 6465 206f 6620 696d  if outside of im
+-00006260: 670a 2020 2020 2020 2020 2020 2020 2020  g.              
+-00006270: 2020 6f75 7473 6964 6520 3d20 4d4f 5553    outside = MOUS
+-00006280: 455f 5920 2d20 7465 7874 5f68 202d 2033  E_Y - text_h - 3
+-00006290: 203e 3d20 3020 2023 206c 6162 656c 2066   >= 0  # label f
+-000062a0: 6974 7320 6f75 7473 6964 6520 626f 780a  its outside box.
+-000062b0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000062c0: 6376 322e 7075 7454 6578 7428 746d 705f  cv2.putText(tmp_
+-000062d0: 696d 672c 200a 2020 2020 2020 2020 2020  img, .          
+-000062e0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000062f0: 2020 636c 6173 735f 6e61 6d65 2c20 0a20    class_name, . 
+-00006300: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006310: 2020 2020 2020 2020 2020 2028 4d4f 5553             (MOUS
+-00006320: 455f 582c 204d 4f55 5345 5f59 202d 2032  E_X, MOUSE_Y - 2
+-00006330: 2069 6620 6f75 7473 6964 6520 656c 7365   if outside else
+-00006340: 204d 4f55 5345 5f59 202b 2074 6578 745f   MOUSE_Y + text_
+-00006350: 6820 2b20 3329 2c20 0a20 2020 2020 2020  h + 3), .       
+-00006360: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006370: 2020 2020 2063 7632 2e46 4f4e 545f 4845       cv2.FONT_HE
+-00006380: 5253 4845 595f 5349 4d50 4c45 582c 200a  RSHEY_SIMPLEX, .
+-00006390: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000063a0: 2020 2020 2020 2020 2020 2020 4c49 4e45              LINE
+-000063b0: 5f54 4849 434b 4e45 5353 202f 2033 2c20  _THICKNESS / 3, 
+-000063c0: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-000063d0: 2020 2020 2020 2020 2020 2020 2063 6f6c               col
+-000063e0: 6f72 2c20 0a20 2020 2020 2020 2020 2020  or, .           
+-000063f0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006400: 2074 6869 636b 6e65 7373 3d69 6e74 284c   thickness=int(L
+-00006410: 494e 455f 5448 4943 4b4e 4553 5320 2a20  INE_THICKNESS * 
+-00006420: 302e 3729 2c20 0a20 2020 2020 2020 2020  0.7), .         
+-00006430: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006440: 2020 206c 696e 6554 7970 653d 6376 322e     lineType=cv2.
+-00006450: 4c49 4e45 5f41 410a 2020 2020 2020 2020  LINE_AA.        
+-00006460: 2020 2020 2020 2020 290a 0a0a 2020 2020          )...    
+-00006470: 2020 2020 2020 2020 2320 3033 2e31 350a          # 03.15.
+-00006480: 2020 2020 2020 2020 2020 2020 2320 7768              # wh
+-00006490: 656e 2063 7572 736f 7220 6d6f 7665 2069  en cursor move i
+-000064a0: 6e74 6f20 6262 6f78 2061 7265 612c 2068  nto bbox area, h
+-000064b0: 6967 682d 6c69 6768 7420 7468 6174 2062  igh-light that b
+-000064c0: 6f78 0a20 2020 2020 2020 2020 2020 2023  ox.            #
+-000064d0: 2073 6574 5f73 656c 6563 7465 645f 6262   set_selected_bb
+-000064e0: 6f78 2873 6574 5f63 6c73 5f74 7261 636b  ox(set_cls_track
+-000064f0: 6261 723d 5472 7565 290a 2020 2020 2020  bar=True).      
+-00006500: 2020 2020 2020 2320 7269 6368 2e70 7269        # rich.pri
+-00006510: 6e74 2866 2249 535f 4242 4f58 5f53 454c  nt(f"IS_BBOX_SEL
+-00006520: 4543 5445 443a 207b 4953 5f42 424f 585f  ECTED: {IS_BBOX_
+-00006530: 5345 4c45 4354 4544 7d22 290a 2020 2020  SELECTED}").    
+-00006540: 2020 2020 2020 2020 2320 7269 6368 2e70          # rich.p
+-00006550: 7269 6e74 2866 2253 454c 4543 5445 445f  rint(f"SELECTED_
+-00006560: 4242 4f58 3a20 7b53 454c 4543 5445 445f  BBOX: {SELECTED_
+-00006570: 4242 4f58 7d22 290a 2020 2020 2020 2020  BBOX}").        
+-00006580: 2020 2020 2320 7269 6368 2e70 7269 6e74      # rich.print
+-00006590: 2866 2249 4d47 5f4f 424a 4543 5453 3a20  (f"IMG_OBJECTS: 
+-000065a0: 7b49 4d47 5f4f 424a 4543 5453 7d22 290a  {IMG_OBJECTS}").
+-000065b0: 0a20 2020 2020 2020 2020 2020 2023 202d  .            # -
+-000065c0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000065d0: 2d2d 2d2d 2d2d 2d2d 2d0a 2020 2020 2020  ---------.      
+-000065e0: 2020 2020 2020 2320 2063 6865 636b 2069        #  check i
+-000065f0: 6620 6262 6f78 2069 7320 7365 6c65 6374  f bbox is select
+-00006600: 6564 0a20 2020 2020 2020 2020 2020 2023  ed.            #
+-00006610: 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   ---------------
+-00006620: 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020 2020  -----------.    
+-00006630: 2020 2020 2020 2020 2320 6c65 6674 2062          # left b
+-00006640: 7574 746f 6e20 646f 7562 6c65 2063 6c69  utton double cli
+-00006650: 636b 2020 3d3e 2020 6869 6768 746c 6967  ck  =>  hightlig
+-00006660: 6874 2073 656c 6563 7465 6420 6262 6f78  ht selected bbox
+-00006670: 0a20 2020 2020 2020 2020 2020 2023 2069  .            # i
+-00006680: 6620 4953 5f42 424f 585f 5345 4c45 4354  f IS_BBOX_SELECT
+-00006690: 4544 3a0a 2020 2020 2020 2020 2020 2020  ED:.            
+-000066a0: 2320 2020 2020 746d 705f 696d 6720 3d20  #     tmp_img = 
+-000066b0: 6869 6768 6c69 6768 745f 7365 6c65 6374  highlight_select
+-000066c0: 6564 5f62 626f 7828 746d 705f 696d 672c  ed_bbox(tmp_img,
+-000066d0: 204c 494e 455f 5448 4943 4b4e 4553 532c   LINE_THICKNESS,
+-000066e0: 2061 6c70 6861 3d31 2c20 6265 7461 3d30   alpha=1, beta=0
+-000066f0: 2e35 2c20 6761 6d6d 613d 3029 0a0a 0a20  .5, gamma=0)... 
+-00006700: 2020 2020 2020 2020 2020 2023 2077 6865             # whe
+-00006710: 6e20 6375 7273 6f72 206d 6f76 6520 6f75  n cursor move ou
+-00006720: 742c 2064 652d 7365 6c65 7465 6420 7468  t, de-seleted th
+-00006730: 6174 2062 626f 780a 2020 2020 2020 2020  at bbox.        
+-00006740: 2020 2020 746d 705f 696d 6720 3d20 6368      tmp_img = ch
+-00006750: 6563 6b5f 6966 5f63 7572 736f 725f 6973  eck_if_cursor_is
+-00006760: 5f69 6e5f 6262 6f78 2874 6d70 5f69 6d67  _in_bbox(tmp_img
+-00006770: 2c20 4c49 4e45 5f54 4849 434b 4e45 5353  , LINE_THICKNESS
+-00006780: 2c20 7365 745f 636c 735f 7472 6163 6b62  , set_cls_trackb
+-00006790: 6172 3d54 7275 6529 0a0a 0a20 2020 2020  ar=True)...     
+-000067a0: 2020 2020 2020 2023 202d 2d2d 2d2d 2d2d         # -------
+-000067b0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000067c0: 2d2d 2d0a 2020 2020 2020 2020 2020 2020  ---.            
+-000067d0: 2320 2020 6472 6177 2077 6974 6820 7265  #   draw with re
+-000067e0: 6374 0a20 2020 2020 2020 2020 2020 2023  ct.            #
+-000067f0: 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   ---------------
+-00006800: 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020 2020  -----------.    
+-00006810: 2020 2020 2020 2020 2320 6669 7273 7420          # first 
+-00006820: 636c 6963 6b3a 2074 6f70 5f6c 6566 7420  click: top_left 
+-00006830: 706f 696e 740a 2020 2020 2020 2020 2020  point.          
+-00006840: 2020 6966 2050 4f49 4e54 5f31 5b30 5d20    if POINT_1[0] 
+-00006850: 213d 202d 313a 2020 2020 0a20 2020 2020  != -1:    .     
+-00006860: 2020 2020 2020 2020 2020 2023 2064 7261             # dra
+-00006870: 7720 7061 7274 6961 6c20 6262 6f78 200a  w partial bbox .
+-00006880: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006890: 6376 322e 7265 6374 616e 676c 6528 746d  cv2.rectangle(tm
+-000068a0: 705f 696d 672c 2050 4f49 4e54 5f31 2c20  p_img, POINT_1, 
+-000068b0: 284d 4f55 5345 5f58 2c20 4d4f 5553 455f  (MOUSE_X, MOUSE_
+-000068c0: 5929 2c20 636f 6c6f 722c 204c 494e 455f  Y), color, LINE_
+-000068d0: 5448 4943 4b4e 4553 5329 0a0a 2020 2020  THICKNESS)..    
+-000068e0: 2020 2020 2020 2020 2020 2020 2320 6966              # if
+-000068f0: 2073 6563 6f6e 6420 636c 6963 6b3a 2062   second click: b
+-00006900: 6f74 746f 6d5f 7269 6768 7420 706f 696e  ottom_right poin
+-00006910: 740a 2020 2020 2020 2020 2020 2020 2020  t.              
+-00006920: 2020 6966 2050 4f49 4e54 5f32 5b30 5d20    if POINT_2[0] 
+-00006930: 213d 202d 313a 0a0a 2020 2020 2020 2020  != -1:..        
+-00006940: 2020 2020 2020 2020 2020 2020 2320 7361              # sa
+-00006950: 7665 2062 626f 7820 7269 6768 7420 6166  ve bbox right af
+-00006960: 7465 7220 6765 7420 706f 696e 745f 3220  ter get point_2 
+-00006970: 203d 3e20 206c 6162 656c 2e74 7874 0a20   =>  label.txt. 
+-00006980: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006990: 2020 206c 696e 6520 3d20 6964 7879 7879     line = idxyxy
+-000069a0: 3269 6463 7863 7977 6828 434c 535f 4944  2idcxcywh(CLS_ID
+-000069b0: 585f 4355 5252 454e 542c 2050 4f49 4e54  X_CURRENT, POINT
+-000069c0: 5f31 2c20 504f 494e 545f 322c 2069 6d67  _1, POINT_2, img
+-000069d0: 5f77 6964 7468 5f63 7572 7265 6e74 2c20  _width_current, 
+-000069e0: 696d 675f 6865 6967 6874 5f63 7572 7265  img_height_curre
+-000069f0: 6e74 2920 2320 2878 2c79 2c78 2c79 2920  nt) # (x,y,x,y) 
+-00006a00: 3d3e 2028 782c 792c 772c 6829 0a20 2020  => (x,y,w,h).   
+-00006a10: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006a20: 2023 2066 2e77 7269 7465 286c 696e 6520   # f.write(line 
+-00006a30: 2b20 275c 6e27 2920 2320 6170 7065 6e64  + '\n') # append
+-00006a40: 206c 696e 650a 0a20 2020 2020 2020 2020   line..         
+-00006a50: 2020 2020 2020 2020 2020 2023 2073 6176             # sav
+-00006a60: 6520 6c61 6265 6c0a 2020 2020 2020 2020  e label.        
+-00006a70: 2020 2020 2020 2020 2020 2020 7769 7468              with
+-00006a80: 206f 7065 6e28 6c61 6265 6c5f 7061 7468   open(label_path
+-00006a90: 2c20 2761 2729 2061 7320 663a 0a0a 2020  , 'a') as f:..  
+-00006aa0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006ab0: 2020 2020 2020 6966 206f 732e 7061 7468        if os.path
+-00006ac0: 2e67 6574 7369 7a65 286c 6162 656c 5f70  .getsize(label_p
+-00006ad0: 6174 6829 203d 3d20 303a 0a20 2020 2020  ath) == 0:.     
+-00006ae0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006af0: 2020 2020 2020 2066 2e77 7269 7465 286c         f.write(l
+-00006b00: 696e 6529 0a20 2020 2020 2020 2020 2020  ine).           
+-00006b10: 2020 2020 2020 2020 2020 2020 2065 6c73               els
+-00006b20: 653a 0a20 2020 2020 2020 2020 2020 2020  e:.             
+-00006b30: 2020 2020 2020 2020 2020 2020 2020 2066                 f
+-00006b40: 5f72 203d 206f 7065 6e28 6c61 6265 6c5f  _r = open(label_
+-00006b50: 7061 7468 2c20 2272 2229 2e72 6561 6428  path, "r").read(
+-00006b60: 2920 2020 2320 7265 6164 2061 0a20 2020  )   # read a.   
+-00006b70: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006b80: 2020 2020 2020 2020 2069 6620 665f 725b           if f_r[
+-00006b90: 2d31 5d20 3d3d 2027 5c6e 273a 0a20 2020  -1] == '\n':.   
+-00006ba0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006bb0: 2020 2020 2020 2020 2020 2020 2023 206d               # m
+-00006bc0: 7367 203d 206c 696e 6520 2b20 275c 6e27  sg = line + '\n'
+-00006bd0: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00006be0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006bf0: 206d 7367 203d 206c 696e 650a 2020 2020   msg = line.    
+-00006c00: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006c10: 2020 2020 2020 2020 656c 7365 3a0a 2020          else:.  
+-00006c20: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006c30: 2020 2020 2020 2020 2020 2020 2020 2320                # 
+-00006c40: 6d73 6720 3d20 275c 6e27 202b 206c 696e  msg = '\n' + lin
+-00006c50: 6520 2b20 275c 6e27 0a20 2020 2020 2020  e + '\n'.       
+-00006c60: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006c70: 2020 2020 2020 2020 206d 7367 203d 2027           msg = '
+-00006c80: 5c6e 2720 2b20 6c69 6e65 0a20 2020 2020  \n' + line.     
+-00006c90: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006ca0: 2020 2020 2020 2066 2e77 7269 7465 286d         f.write(m
+-00006cb0: 7367 290a 2020 2020 2020 2020 2020 2020  sg).            
+-00006cc0: 2020 2020 2020 2020 0a20 2020 2020 2020          .       
+-00006cd0: 2020 2020 2020 2020 2020 2020 2023 2072               # r
+-00006ce0: 6573 6574 2074 6865 2070 6f69 6e74 730a  eset the points.
+-00006cf0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00006d00: 2020 2020 504f 494e 545f 3120 3d20 282d      POINT_1 = (-
+-00006d10: 312c 202d 3129 0a20 2020 2020 2020 2020  1, -1).         
+-00006d20: 2020 2020 2020 2020 2020 2050 4f49 4e54             POINT
+-00006d30: 5f32 203d 2028 2d31 2c20 2d31 290a 0a0a  _2 = (-1, -1)...
+-00006d40: 0a20 2020 2020 2020 2023 2063 7572 7265  .        # curre
+-00006d50: 6e74 2073 686f 770a 2020 2020 2020 2020  nt show.        
+-00006d60: 6376 322e 696d 7368 6f77 2857 494e 444f  cv2.imshow(WINDO
+-00006d70: 575f 4e41 4d45 2c20 746d 705f 696d 6729  W_NAME, tmp_img)
+-00006d80: 0a20 2020 2020 2020 200a 2020 2020 2020  .        .      
+-00006d90: 2020 2320 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d    # ------------
+-00006da0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00006db0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020  -------------.  
+-00006dc0: 2020 2020 2020 2320 6f70 656e 6376 206b        # opencv k
+-00006dd0: 6579 206c 6973 7465 6e69 6e67 0a20 2020  ey listening.   
+-00006de0: 2020 2020 2023 202d 2d2d 2d2d 2d2d 2d2d       # ---------
+-00006df0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00006e00: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00006e10: 0a20 2020 2020 2020 2023 206b 6579 206c  .        # key l
+-00006e20: 6973 7465 6e0a 2020 2020 2020 2020 7072  isten.        pr
+-00006e30: 6573 7365 645f 6b65 7920 3d20 6376 322e  essed_key = cv2.
+-00006e40: 7761 6974 4b65 7928 3129 0a0a 2020 2020  waitKey(1)..    
+-00006e50: 2020 2020 2320 682f 4820 3d3e 2068 656c      # h/H => hel
+-00006e60: 7020 0a20 2020 2020 2020 2069 6620 7072  p .        if pr
+-00006e70: 6573 7365 645f 6b65 7920 696e 2028 6f72  essed_key in (or
+-00006e80: 6428 2768 2729 2c20 6f72 6428 2748 2729  d('h'), ord('H')
+-00006e90: 293a 0a20 2020 2020 2020 2020 2020 2070  ):.            p
+-00006ea0: 7269 6e74 5f69 6e66 6f28 4845 4c50 5f4d  rint_info(HELP_M
+-00006eb0: 5347 2c20 6d73 3d31 3030 302c 2077 6865  SG, ms=1000, whe
+-00006ec0: 7265 3d22 4f76 6572 6c61 7922 290a 0a20  re="Overlay").. 
+-00006ed0: 2020 2020 2020 2023 202d 2d2d 2d2d 2d2d         # -------
+-00006ee0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00006ef0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00006f00: 0a20 2020 2020 2020 2023 2061 2c64 202d  .        # a,d -
+-00006f10: 3e20 696d 6167 6573 205b 7072 6576 696f  > images [previo
+-00006f20: 7573 2c20 6e65 7874 5d0a 2020 2020 2020  us, next].      
+-00006f30: 2020 2320 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d    # ------------
+-00006f40: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00006f50: 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020 2020  -----------.    
+-00006f60: 2020 2020 656c 6966 2070 7265 7373 6564      elif pressed
+-00006f70: 5f6b 6579 2069 6e20 286f 7264 2827 6127  _key in (ord('a'
+-00006f80: 292c 206f 7264 2827 4127 292c 206f 7264  ), ord('A'), ord
+-00006f90: 2827 6427 292c 206f 7264 2827 4427 2929  ('d'), ord('D'))
+-00006fa0: 3a0a 0a20 2020 2020 2020 2020 2020 2069  :..            i
+-00006fb0: 6620 6e6f 7420 4953 5f42 424f 585f 5345  f not IS_BBOX_SE
+-00006fc0: 4c45 4354 4544 3a0a 0a20 2020 2020 2020  LECTED:..       
+-00006fd0: 2020 2020 2020 2020 2023 206c 6173 7420           # last 
+-00006fe0: 696d 6167 6520 696e 6465 780a 2020 2020  image index.    
+-00006ff0: 2020 2020 2020 2020 2020 2020 494d 475f              IMG_
+-00007000: 4944 585f 4c41 5354 203d 2049 4d47 5f49  IDX_LAST = IMG_I
+-00007010: 4458 5f43 5552 5245 4e54 0a0a 2020 2020  DX_CURRENT..    
+-00007020: 2020 2020 2020 2020 2020 2020 2320 7368              # sh
+-00007030: 6f77 2070 7265 7669 6f75 7320 696d 6167  ow previous imag
+-00007040: 650a 2020 2020 2020 2020 2020 2020 2020  e.              
+-00007050: 2020 6966 2070 7265 7373 6564 5f6b 6579    if pressed_key
+-00007060: 2069 6e20 286f 7264 2827 6127 292c 206f   in (ord('a'), o
+-00007070: 7264 2827 4127 2929 3a20 2020 2020 0a20  rd('A')):     . 
+-00007080: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00007090: 2020 2023 2049 4d47 5f49 4458 5f43 5552     # IMG_IDX_CUR
+-000070a0: 5245 4e54 203d 2064 6563 7265 6173 655f  RENT = decrease_
+-000070b0: 696e 6465 7828 494d 475f 4944 585f 4355  index(IMG_IDX_CU
+-000070c0: 5252 454e 542c 2049 4d47 5f43 4f55 4e54  RRENT, IMG_COUNT
+-000070d0: 290a 2020 2020 2020 2020 2020 2020 2020  ).              
+-000070e0: 2020 2020 2020 494d 475f 4944 585f 4355        IMG_IDX_CU
+-000070f0: 5252 454e 5420 3d20 3020 6966 2049 4d47  RRENT = 0 if IMG
+-00007100: 5f49 4458 5f43 5552 5245 4e54 202d 2031  _IDX_CURRENT - 1
+-00007110: 203c 2030 2065 6c73 6520 494d 475f 4944   < 0 else IMG_ID
+-00007120: 585f 4355 5252 454e 5420 2d20 310a 0a20  X_CURRENT - 1.. 
+-00007130: 2020 2020 2020 2020 2020 2020 2020 2023                 #
+-00007140: 2073 686f 7720 6e65 7874 2069 6d61 6765   show next image
+-00007150: 2069 6e64 6578 0a20 2020 2020 2020 2020   index.         
+-00007160: 2020 2020 2020 2065 6c69 6620 7072 6573         elif pres
+-00007170: 7365 645f 6b65 7920 696e 2028 6f72 6428  sed_key in (ord(
+-00007180: 2764 2729 2c20 6f72 6428 2744 2729 293a  'd'), ord('D')):
+-00007190: 0a0a 2020 2020 2020 2020 2020 2020 2020  ..              
+-000071a0: 2020 2020 2020 2320 494d 475f 4944 585f        # IMG_IDX_
+-000071b0: 4355 5252 454e 5420 3d20 696e 6372 6561  CURRENT = increa
+-000071c0: 7365 5f69 6e64 6578 2849 4d47 5f49 4458  se_index(IMG_IDX
+-000071d0: 5f43 5552 5245 4e54 2c20 494d 475f 434f  _CURRENT, IMG_CO
+-000071e0: 554e 5429 0a20 2020 2020 2020 2020 2020  UNT).           
+-000071f0: 2020 2020 2020 2020 2049 4d47 5f49 4458           IMG_IDX
+-00007200: 5f43 5552 5245 4e54 203d 2049 4d47 5f43  _CURRENT = IMG_C
+-00007210: 4f55 4e54 2069 6620 494d 475f 4944 585f  OUNT if IMG_IDX_
+-00007220: 4355 5252 454e 5420 2b20 3120 3e20 494d  CURRENT + 1 > IM
+-00007230: 475f 434f 554e 5420 656c 7365 2049 4d47  G_COUNT else IMG
+-00007240: 5f49 4458 5f43 5552 5245 4e54 202b 2031  _IDX_CURRENT + 1
+-00007250: 0a0a 2020 2020 2020 2020 2020 2020 2020  ..              
+-00007260: 2020 2320 7365 7420 6375 7272 656e 7420    # set current 
+-00007270: 696d 6720 696e 6465 780a 2020 2020 2020  img index.      
+-00007280: 2020 2020 2020 2020 2020 7365 745f 696d            set_im
+-00007290: 675f 696e 6465 7828 494d 475f 4944 585f  g_index(IMG_IDX_
+-000072a0: 4355 5252 454e 5429 0a0a 2020 2020 2020  CURRENT)..      
+-000072b0: 2020 2020 2020 2020 2020 2320 7570 6461            # upda
+-000072c0: 7465 2069 6d67 2074 7261 636b 6261 7220  te img trackbar 
+-000072d0: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-000072e0: 2063 7632 2e73 6574 5472 6163 6b62 6172   cv2.setTrackbar
+-000072f0: 506f 7328 5452 4143 4b42 4152 5f49 4d47  Pos(TRACKBAR_IMG
+-00007300: 2c20 5749 4e44 4f57 5f4e 414d 452c 2049  , WINDOW_NAME, I
+-00007310: 4d47 5f49 4458 5f43 5552 5245 4e54 290a  MG_IDX_CURRENT).
+-00007320: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00007330: 2023 2073 6574 2074 6865 2061 646a 7573   # set the adjus
+-00007340: 7420 666c 6167 2046 616c 7365 0a20 2020  t flag False.   
+-00007350: 2020 2020 2020 2020 2020 2020 204c 494e               LIN
+-00007360: 455f 5448 4943 4b4e 4553 535f 4144 4a55  E_THICKNESS_ADJU
+-00007370: 5354 203d 2046 616c 7365 0a0a 2020 2020  ST = False..    
+-00007380: 2020 2020 0a0a 2020 2020 2020 2020 2320      ..        # 
+-00007390: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000073a0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000073b0: 2d2d 2d2d 2d2d 2d0a 2020 2020 2020 2020  -------.        
+-000073c0: 2320 772c 7320 2d3e 2063 6c61 7373 2020  # w,s -> class  
+-000073d0: 5b70 7265 7669 6f75 732c 206e 6578 745d  [previous, next]
+-000073e0: 0a20 2020 2020 2020 2023 202d 2d2d 2d2d  .        # -----
+-000073f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007400: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007410: 2d2d 0a20 2020 2020 2020 2065 6c69 6620  --.        elif 
+-00007420: 7072 6573 7365 645f 6b65 7920 696e 2028  pressed_key in (
+-00007430: 6f72 6428 2773 2729 2c20 6f72 6428 2753  ord('s'), ord('S
+-00007440: 2729 2c20 6f72 6428 2777 2729 2c20 6f72  '), ord('w'), or
+-00007450: 6428 2757 2729 293a 0a0a 2020 2020 2020  d('W')):..      
+-00007460: 2020 2020 2020 2320 6e65 7874 2063 6c61        # next cla
+-00007470: 7373 0a20 2020 2020 2020 2020 2020 2069  ss.            i
+-00007480: 6620 7072 6573 7365 645f 6b65 7920 696e  f pressed_key in
+-00007490: 2028 6f72 6428 2773 2729 2c20 6f72 6428   (ord('s'), ord(
+-000074a0: 2753 2729 293a 0a20 2020 2020 2020 2020  'S')):.         
+-000074b0: 2020 2020 2020 2043 4c53 5f49 4458 5f43         CLS_IDX_C
+-000074c0: 5552 5245 4e54 203d 2064 6563 7265 6173  URRENT = decreas
+-000074d0: 655f 696e 6465 7828 434c 535f 4944 585f  e_index(CLS_IDX_
+-000074e0: 4355 5252 454e 542c 2043 4c53 5f43 4f55  CURRENT, CLS_COU
+-000074f0: 4e54 290a 2020 2020 2020 2020 2020 2020  NT).            
+-00007500: 2020 2020 2320 434c 535f 4944 585f 4355      # CLS_IDX_CU
+-00007510: 5252 454e 5420 3d20 434c 535f 434f 554e  RRENT = CLS_COUN
+-00007520: 5420 6966 2043 4c53 5f49 4458 5f43 5552  T if CLS_IDX_CUR
+-00007530: 5245 4e54 202d 2031 203c 2030 2065 6c73  RENT - 1 < 0 els
+-00007540: 6520 434c 535f 4944 585f 4355 5252 454e  e CLS_IDX_CURREN
+-00007550: 5420 2d20 3120 2020 2020 2320 6c6f 6f70  T - 1     # loop
+-00007560: 0a0a 2020 2020 2020 2020 2020 2020 2320  ..            # 
+-00007570: 6c61 7374 2063 6c61 7373 0a20 2020 2020  last class.     
+-00007580: 2020 2020 2020 2065 6c69 6620 7072 6573         elif pres
+-00007590: 7365 645f 6b65 7920 696e 2028 6f72 6428  sed_key in (ord(
+-000075a0: 2777 2729 2c20 6f72 6428 2757 2729 293a  'w'), ord('W')):
+-000075b0: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-000075c0: 2043 4c53 5f49 4458 5f43 5552 5245 4e54   CLS_IDX_CURRENT
+-000075d0: 203d 2069 6e63 7265 6173 655f 696e 6465   = increase_inde
+-000075e0: 7828 434c 535f 4944 585f 4355 5252 454e  x(CLS_IDX_CURREN
+-000075f0: 542c 2043 4c53 5f43 4f55 4e54 290a 2020  T, CLS_COUNT).  
+-00007600: 2020 2020 2020 2020 2020 2020 2020 2320                # 
+-00007610: 434c 535f 4944 585f 4355 5252 454e 5420  CLS_IDX_CURRENT 
+-00007620: 3d20 3020 6966 2043 4c53 5f49 4458 5f43  = 0 if CLS_IDX_C
+-00007630: 5552 5245 4e54 202b 2031 203e 2043 4c53  URRENT + 1 > CLS
+-00007640: 5f43 4f55 4e54 2065 6c73 6520 434c 535f  _COUNT else CLS_
+-00007650: 4944 585f 4355 5252 454e 5420 2b20 310a  IDX_CURRENT + 1.
+-00007660: 0a20 2020 2020 2020 2020 2020 2023 2073  .            # s
+-00007670: 6574 2063 7572 7265 6e74 2063 6c61 7373  et current class
+-00007680: 2069 6e64 6578 0a20 2020 2020 2020 2020   index.         
+-00007690: 2020 2073 6574 5f63 6c61 7373 5f69 6e64     set_class_ind
+-000076a0: 6578 2843 4c53 5f49 4458 5f43 5552 5245  ex(CLS_IDX_CURRE
+-000076b0: 4e54 290a 0a0a 2020 2020 2020 2020 2020  NT)...          
+-000076c0: 2020 2320 7570 6461 7465 2063 6c61 7373    # update class
+-000076d0: 2074 7261 636b 6261 7220 2020 2020 2020   trackbar       
+-000076e0: 2020 2020 2020 2020 200a 2020 2020 2020           .      
+-000076f0: 2020 2020 2020 6376 322e 7365 7454 7261        cv2.setTra
+-00007700: 636b 6261 7250 6f73 2854 5241 434b 4241  ckbarPos(TRACKBA
+-00007710: 525f 434c 4153 532c 2057 494e 444f 575f  R_CLASS, WINDOW_
+-00007720: 4e41 4d45 2c20 434c 535f 4944 585f 4355  NAME, CLS_IDX_CU
+-00007730: 5252 454e 5429 0a0a 2020 2020 2020 2020  RRENT)..        
+-00007740: 2020 2020 2320 7768 656e 2073 656c 6563      # when selec
+-00007750: 742c 2075 7365 2057 2f53 2074 6f20 6564  t, use W/S to ed
+-00007760: 6974 2062 626f 7827 7320 636c 6173 730a  it bbox's class.
+-00007770: 2020 2020 2020 2020 2020 2020 6966 2049              if I
+-00007780: 535f 4242 4f58 5f53 454c 4543 5445 443a  S_BBOX_SELECTED:
+-00007790: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-000077a0: 2062 626f 785f 7769 7468 5f69 6420 3d20   bbox_with_id = 
+-000077b0: 494d 475f 4f42 4a45 4354 535b 5345 4c45  IMG_OBJECTS[SELE
+-000077c0: 4354 4544 5f42 424f 585d 0a20 2020 2020  CTED_BBOX].     
+-000077d0: 2020 2020 2020 2020 2020 2065 6469 745f             edit_
+-000077e0: 6262 6f78 2862 626f 785f 7769 7468 5f69  bbox(bbox_with_i
+-000077f0: 642c 2027 6368 616e 6765 5f63 6c61 7373  d, 'change_class
+-00007800: 3a7b 7d27 2e66 6f72 6d61 7428 434c 535f  :{}'.format(CLS_
+-00007810: 4944 585f 4355 5252 454e 5429 290a 0a20  IDX_CURRENT)).. 
+-00007820: 2020 2020 2020 2023 202d 2d2d 2d2d 2d2d         # -------
+-00007830: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007840: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007850: 0a20 2020 2020 2020 2023 206e 2f4e 203d  .        # n/N =
+-00007860: 3e20 6869 6465 206c 6162 656c 0a20 2020  > hide label.   
+-00007870: 2020 2020 2023 202d 2d2d 2d2d 2d2d 2d2d       # ---------
+-00007880: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007890: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20  --------------. 
+-000078a0: 2020 2020 2020 2065 6c69 6620 7072 6573         elif pres
+-000078b0: 7365 645f 6b65 7920 696e 2028 6f72 6428  sed_key in (ord(
+-000078c0: 276e 2729 2c20 6f72 6428 274e 2729 293a  'n'), ord('N')):
+-000078d0: 0a20 2020 2020 2020 2020 2020 2048 4944  .            HID
+-000078e0: 455f 4c41 4245 4c20 3d20 6e6f 7420 4849  E_LABEL = not HI
+-000078f0: 4445 5f4c 4142 454c 0a20 2020 2020 2020  DE_LABEL.       
+-00007900: 2020 2020 2070 7269 6e74 5f69 6e66 6f28       print_info(
+-00007910: 2750 7265 7373 206e 2074 6f20 6869 6465  'Press n to hide
+-00007920: 204c 6162 656c 206f 7220 7368 6f77 204c   Label or show L
+-00007930: 6162 656c 2e27 2c20 6d73 3d31 3030 302c  abel.', ms=1000,
+-00007940: 2077 6865 7265 3d22 4f76 6572 6c61 7922   where="Overlay"
+-00007950: 290a 0a20 2020 2020 2020 2023 202d 2d2d  )..        # ---
+-00007960: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007970: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007980: 2d2d 2d2d 0a20 2020 2020 2020 2023 2027  ----.        # '
+-00007990: 3d2b 2720 3d3e 2062 6f6c 6420 6c69 6e65  =+' => bold line
+-000079a0: 2074 6869 636b 6e65 7373 0a20 2020 2020   thickness.     
+-000079b0: 2020 2023 2027 2d5f 2720 3d3e 2074 6869     # '-_' => thi
+-000079c0: 6e20 6c69 6e65 2074 6869 636b 6e65 7373  n line thickness
+-000079d0: 0a20 2020 2020 2020 2023 202d 2d2d 2d2d  .        # -----
+-000079e0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000079f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007a00: 2d2d 0a20 2020 2020 2020 2065 6c69 6620  --.        elif 
+-00007a10: 7072 6573 7365 645f 6b65 7920 696e 2028  pressed_key in (
+-00007a20: 6f72 6428 273d 2729 2c20 6f72 6428 272b  ord('='), ord('+
+-00007a30: 2729 293a 0a0a 2020 2020 2020 2020 2020  ')):..          
+-00007a40: 2020 2320 7365 7420 7468 6520 6164 6a75    # set the adju
+-00007a50: 7374 2066 6c61 6720 5452 5545 0a20 2020  st flag TRUE.   
+-00007a60: 2020 2020 2020 2020 204c 494e 455f 5448           LINE_TH
+-00007a70: 4943 4b4e 4553 535f 4144 4a55 5354 203d  ICKNESS_ADJUST =
+-00007a80: 2054 7275 650a 2020 2020 2020 2020 2020   True.          
+-00007a90: 2020 0a20 2020 2020 2020 2020 2020 2023    .            #
+-00007aa0: 2067 6574 2074 6865 206d 6178 206c 696e   get the max lin
+-00007ab0: 6520 7769 6474 680a 2020 2020 2020 2020  e width.        
+-00007ac0: 2020 2020 6d61 785f 7420 3d20 6d61 7828      max_t = max(
+-00007ad0: 726f 756e 6428 7375 6d28 746d 705f 696d  round(sum(tmp_im
+-00007ae0: 672e 7368 6170 6529 202f 2032 202a 2030  g.shape) / 2 * 0
+-00007af0: 2e30 3033 292c 2032 2920 2b20 350a 0a20  .003), 2) + 5.. 
+-00007b00: 2020 2020 2020 2020 2020 2023 2069 6e63             # inc
+-00007b10: 7265 6174 6520 7468 6520 6c69 6e65 2077  reate the line w
+-00007b20: 6964 7468 0a20 2020 2020 2020 2020 2020  idth.           
+-00007b30: 2069 6620 4c49 4e45 5f54 4849 434b 4e45   if LINE_THICKNE
+-00007b40: 5353 203c 3d20 6d61 785f 743a 0a20 2020  SS <= max_t:.   
+-00007b50: 2020 2020 2020 2020 2020 2020 204c 494e               LIN
+-00007b60: 455f 5448 4943 4b4e 4553 5320 2b3d 2031  E_THICKNESS += 1
+-00007b70: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00007b80: 2070 7269 6e74 5f69 6e66 6f28 6627 4c69   print_info(f'Li
+-00007b90: 6e65 2054 6869 636b 6e65 7373 202b 312c  ne Thickness +1,
+-00007ba0: 206e 6f77 203d 207b 4c49 4e45 5f54 4849   now = {LINE_THI
+-00007bb0: 434b 4e45 5353 7d27 2c20 6d73 3d31 3030  CKNESS}', ms=100
+-00007bc0: 302c 2077 6865 7265 3d22 4f76 6572 6c61  0, where="Overla
+-00007bd0: 7922 290a 2020 2020 2020 2020 2020 2020  y").            
+-00007be0: 656c 7365 3a0a 2020 2020 2020 2020 2020  else:.          
+-00007bf0: 2020 2020 2020 7072 696e 745f 696e 666f        print_info
+-00007c00: 2827 4c69 6e65 2054 6869 636b 6e65 7373  ('Line Thickness
+-00007c10: 2068 6173 2072 6561 6368 2074 6865 206d   has reach the m
+-00007c20: 6178 2076 616c 7565 2127 2c20 6d73 3d31  ax value!', ms=1
+-00007c30: 3030 302c 2077 6865 7265 3d22 4f76 6572  000, where="Over
+-00007c40: 6c61 7922 290a 0a20 2020 2020 2020 2065  lay")..        e
+-00007c50: 6c69 6620 7072 6573 7365 645f 6b65 7920  lif pressed_key 
+-00007c60: 696e 2028 6f72 6428 272d 2729 2c20 6f72  in (ord('-'), or
+-00007c70: 6428 275f 2729 293a 0a20 2020 2020 2020  d('_')):.       
+-00007c80: 2020 2020 204c 494e 455f 5448 4943 4b4e       LINE_THICKN
+-00007c90: 4553 535f 4144 4a55 5354 203d 2054 7275  ESS_ADJUST = Tru
+-00007ca0: 650a 2020 2020 2020 2020 2020 2020 6d69  e.            mi
+-00007cb0: 6e5f 7420 3d20 310a 2020 2020 2020 2020  n_t = 1.        
+-00007cc0: 2020 2020 6966 204c 494e 455f 5448 4943      if LINE_THIC
+-00007cd0: 4b4e 4553 5320 3e20 6d69 6e5f 743a 0a20  KNESS > min_t:. 
+-00007ce0: 2020 2020 2020 2020 2020 2020 2020 204c                 L
+-00007cf0: 494e 455f 5448 4943 4b4e 4553 5320 2d3d  INE_THICKNESS -=
+-00007d00: 2031 0a20 2020 2020 2020 2020 2020 2020   1.             
+-00007d10: 2020 2070 7269 6e74 5f69 6e66 6f28 6627     print_info(f'
+-00007d20: 4c69 6e65 2054 6869 636b 6e65 7373 202d  Line Thickness -
+-00007d30: 312c 206e 6f77 203d 207b 4c49 4e45 5f54  1, now = {LINE_T
+-00007d40: 4849 434b 4e45 5353 7d27 2c20 6d73 3d31  HICKNESS}', ms=1
+-00007d50: 3030 302c 2077 6865 7265 3d22 4f76 6572  000, where="Over
+-00007d60: 6c61 7922 290a 2020 2020 2020 2020 2020  lay").          
+-00007d70: 2020 656c 7365 3a20 0a20 2020 2020 2020    else: .       
+-00007d80: 2020 2020 2020 2020 2070 7269 6e74 5f69           print_i
+-00007d90: 6e66 6f28 274c 696e 6520 5468 6963 6b6e  nfo('Line Thickn
+-00007da0: 6573 7320 6861 7320 7265 6163 6820 7468  ess has reach th
+-00007db0: 6520 6d69 6e20 7661 6c75 6521 272c 206d  e min value!', m
+-00007dc0: 733d 3130 3030 2c20 7768 6572 653d 224f  s=1000, where="O
+-00007dd0: 7665 726c 6179 2229 0a0a 2020 2020 2020  verlay")..      
+-00007de0: 2020 2320 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d    # ------------
+-00007df0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007e00: 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020 2020  -----------.    
+-00007e10: 2020 2020 2320 692f 4920 3d3e 2064 6973      # i/I => dis
+-00007e20: 706c 6179 2074 6865 2069 6e66 6f20 696e  play the info in
+-00007e30: 2074 6869 7320 696d 6728 7369 7a65 2c20   this img(size, 
+-00007e40: 7061 7468 2c20 6e75 6d5f 6262 6f78 6573  path, num_bboxes
+-00007e50: 290a 2020 2020 2020 2020 2320 2d2d 2d2d  ).        # ----
+-00007e60: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007e70: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00007e80: 2d2d 2d0a 2020 2020 2020 2020 656c 6966  ---.        elif
+-00007e90: 2070 7265 7373 6564 5f6b 6579 2069 6e20   pressed_key in 
+-00007ea0: 286f 7264 2827 6927 292c 206f 7264 2827  (ord('i'), ord('
+-00007eb0: 4927 2929 3a0a 2020 2020 2020 2020 2020  I')):.          
+-00007ec0: 2020 6d73 6720 3d20 2866 2243 7572 7265    msg = (f"Curre
+-00007ed0: 6e74 2069 6d61 6765 3a20 7b50 6174 6828  nt image: {Path(
+-00007ee0: 696d 675f 7061 7468 292e 6e61 6d65 7d5c  img_path).name}\
+-00007ef0: 6e2c 220a 2020 2020 2020 2020 2020 2020  n,".            
+-00007f00: 2020 2020 2020 2020 6622 4375 7272 656e          f"Curren
+-00007f10: 7420 6c61 6265 6c73 3a20 7b50 6174 6828  t labels: {Path(
+-00007f20: 6c61 6265 6c5f 7061 7468 292e 7265 736f  label_path).reso
+-00007f30: 6c76 6528 297d 5c6e 2c22 0a20 2020 2020  lve()}\n,".     
+-00007f40: 2020 2020 2020 2020 2020 2020 2066 2243               f"C
+-00007f50: 7572 726e 6574 2042 426f 7865 733a 207b  urrnet BBoxes: {
+-00007f60: 6c65 6e28 494d 475f 4f42 4a45 4354 5329  len(IMG_OBJECTS)
+-00007f70: 7d5c 6e22 0a20 2020 2020 2020 2020 2020  }\n".           
+-00007f80: 2020 2020 2020 2066 2249 6d67 2073 697a         f"Img siz
+-00007f90: 653a 2028 7b74 6d70 5f69 6d67 2e73 6861  e: ({tmp_img.sha
+-00007fa0: 7065 5b30 5d7d 2c20 7b74 6d70 5f69 6d67  pe[0]}, {tmp_img
+-00007fb0: 2e73 6861 7065 5b31 5d7d 2922 290a 2020  .shape[1]})").  
+-00007fc0: 2020 2020 2020 2020 2020 7072 696e 745f            print_
+-00007fd0: 696e 666f 286d 7367 2c20 6d73 3d32 3030  info(msg, ms=200
+-00007fe0: 302c 2077 6865 7265 3d22 4f76 6572 6c61  0, where="Overla
+-00007ff0: 7922 290a 0a20 2020 2020 2020 2020 2020  y")..           
+-00008000: 2023 2064 6973 706c 6179 2074 6865 206e   # display the n
+-00008010: 756d 5f62 626f 7865 7320 696e 2074 6865  um_bboxes in the
+-00008020: 2069 6d67 0a20 2020 2020 2020 2020 2020   img.           
+-00008030: 2023 2048 4944 455f 4e55 4d5f 4242 4f58   # HIDE_NUM_BBOX
+-00008040: 4553 203d 206e 6f74 2048 4944 455f 4e55  ES = not HIDE_NU
+-00008050: 4d5f 4242 4f58 4553 0a0a 0a20 2020 2020  M_BBOXES...     
+-00008060: 2020 2023 202d 2d2d 2d2d 2d2d 2d2d 2d2d     # -----------
+-00008070: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008080: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20 2020  ------------.   
+-00008090: 2020 2020 2023 2062 2f62 203d 3e20 626c       # b/b => bl
+-000080a0: 696e 6b20 6262 6f78 6573 2069 6e20 6375  ink bboxes in cu
+-000080b0: 7272 656e 7420 696d 670a 2020 2020 2020  rrent img.      
+-000080c0: 2020 2320 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d    # ------------
+-000080d0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000080e0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020 2020  -----------.    
+-000080f0: 2020 2020 656c 6966 2070 7265 7373 6564      elif pressed
+-00008100: 5f6b 6579 2069 6e20 286f 7264 2827 6227  _key in (ord('b'
+-00008110: 292c 206f 7264 2827 4227 2929 3a0a 2020  ), ord('B')):.  
+-00008120: 2020 2020 2020 2020 2020 444f 5f42 4c49            DO_BLI
+-00008130: 4e4b 5f42 424f 5845 5320 3d20 6e6f 7420  NK_BBOXES = not 
+-00008140: 444f 5f42 4c49 4e4b 5f42 424f 5845 530a  DO_BLINK_BBOXES.
+-00008150: 0a20 2020 2020 2020 2023 202d 2d2d 2d2d  .        # -----
+-00008160: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008170: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008180: 2d2d 0a20 2020 2020 2020 2023 2042 4143  --.        # BAC
+-00008190: 4b53 5041 4345 203d 3e20 7265 6d6f 7665  KSPACE => remove
+-000081a0: 206c 6173 7420 6262 6f78 6573 2069 6e20   last bboxes in 
+-000081b0: 6375 7272 656e 7420 696d 6167 650a 2020  current image.  
+-000081c0: 2020 2020 2020 2320 2d2d 2d2d 2d2d 2d2d        # --------
+-000081d0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000081e0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a  ---------------.
+-000081f0: 2020 2020 2020 2020 2320 656c 6966 2070          # elif p
+-00008200: 7265 7373 6564 5f6b 6579 203d 3d20 383a  ressed_key == 8:
+-00008210: 0a20 2020 2020 2020 2023 2020 2020 2069  .        #     i
+-00008220: 6620 6e6f 7420 4953 5f42 424f 585f 5345  f not IS_BBOX_SE
+-00008230: 4c45 4354 4544 3a0a 2020 2020 2020 2020  LECTED:.        
+-00008240: 2320 2020 2020 2020 2020 7072 696e 745f  #         print_
+-00008250: 696e 666f 2866 2252 656d 6f76 6520 616c  info(f"Remove al
+-00008260: 6c20 6262 6f78 222c 206d 733d 3130 3030  l bbox", ms=1000
+-00008270: 2c20 7768 6572 653d 224f 7665 726c 6179  , where="Overlay
+-00008280: 2229 0a20 2020 2020 2020 2023 2020 2020  ").        #    
+-00008290: 2020 2020 2069 6620 494d 475f 4f42 4a45       if IMG_OBJE
+-000082a0: 4354 533a 0a20 2020 2020 2020 2023 2020  CTS:.        #  
+-000082b0: 2020 2020 2020 2020 2020 2023 2070 7269             # pri
+-000082c0: 6e74 2866 226e 756d 3a20 7b6c 656e 2849  nt(f"num: {len(I
+-000082d0: 4d47 5f4f 424a 4543 5453 297d 2229 0a20  MG_OBJECTS)}"). 
+-000082e0: 2020 2020 2020 2023 2020 2020 2020 2020         #        
+-000082f0: 2020 2020 2062 626f 785f 7769 7468 5f69       bbox_with_i
+-00008300: 6420 3d20 494d 475f 4f42 4a45 4354 535b  d = IMG_OBJECTS[
+-00008310: 2d31 5d0a 2020 2020 2020 2020 2320 2020  -1].        #   
+-00008320: 2020 2020 2020 2020 2020 6564 6974 5f62            edit_b
+-00008330: 626f 7828 6262 6f78 5f77 6974 685f 6964  box(bbox_with_id
+-00008340: 2c20 2764 656c 6574 6527 290a 0a20 2020  , 'delete')..   
+-00008350: 2020 2020 2023 202d 2d2d 2d2d 2d2d 2d2d       # ---------
+-00008360: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008370: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20  --------------. 
+-00008380: 2020 2020 2020 2023 2063 2f43 2020 3d3e         # c/C  =>
+-00008390: 2020 5265 6d6f 7665 2061 6c6c 2062 626f    Remove all bbo
+-000083a0: 7865 7320 696e 2074 6869 7320 696d 672c  xes in this img,
+-000083b0: 2073 7065 6369 6669 6361 6c6c 792c 2064   specifically, d
+-000083c0: 656c 6574 6520 7468 6520 616e 6e6f 7461  elete the annota
+-000083d0: 7469 6f6e 2066 696c 6528 2e74 7874 290a  tion file(.txt).
+-000083e0: 2020 2020 2020 2020 2320 2d2d 2d2d 2d2d          # ------
+-000083f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008400: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008410: 2d0a 2020 2020 2020 2020 656c 6966 2070  -.        elif p
+-00008420: 7265 7373 6564 5f6b 6579 2069 6e20 286f  ressed_key in (o
+-00008430: 7264 2827 6327 292c 206f 7264 2827 4327  rd('c'), ord('C'
+-00008440: 2929 3a0a 0a20 2020 2020 2020 2020 2020  )):..           
+-00008450: 2069 6620 6e6f 7420 4953 5f42 424f 585f   if not IS_BBOX_
+-00008460: 5345 4c45 4354 4544 3a0a 2020 2020 2020  SELECTED:.      
+-00008470: 2020 2020 2020 2020 2020 7072 696e 745f            print_
+-00008480: 696e 666f 2866 2243 6c65 616e 2062 626f  info(f"Clean bbo
+-00008490: 7820 6f6e 6520 6279 206f 6e65 2120 7265  x one by one! re
+-000084a0: 7374 206e 756d 203d 207b 6c65 6e28 494d  st num = {len(IM
+-000084b0: 475f 4f42 4a45 4354 5329 7d22 2c20 6d73  G_OBJECTS)}", ms
+-000084c0: 3d31 3030 302c 2077 6865 7265 3d22 4f76  =1000, where="Ov
+-000084d0: 6572 6c61 7922 290a 2020 2020 2020 2020  erlay").        
+-000084e0: 2020 2020 2020 2020 6966 2050 6174 6828          if Path(
+-000084f0: 6c61 6265 6c5f 7061 7468 292e 6578 6973  label_path).exis
+-00008500: 7473 2829 3a0a 2020 2020 2020 2020 2020  ts():.          
+-00008510: 2020 2020 2020 2020 2020 5061 7468 286c            Path(l
+-00008520: 6162 656c 5f70 6174 6829 2e75 6e6c 696e  abel_path).unlin
+-00008530: 6b28 290a 2020 2020 2020 2020 2020 2020  k().            
+-00008540: 2020 2020 656c 7365 3a0a 2020 2020 2020      else:.      
+-00008550: 2020 2020 2020 2020 2020 2020 2020 7072                pr
+-00008560: 696e 745f 696e 666f 2866 224e 6f20 6262  int_info(f"No bb
+-00008570: 6f78 6573 2069 6e20 7468 6973 2069 6d67  oxes in this img
+-00008580: 2122 2c20 6d73 3d31 3030 302c 2077 6865  !", ms=1000, whe
+-00008590: 7265 3d22 4f76 6572 6c61 7922 290a 0a0a  re="Overlay")...
+-000085a0: 0a20 2020 2020 2020 2023 202d 2d2d 2d2d  .        # -----
+-000085b0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000085c0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000085d0: 2d2d 0a20 2020 2020 2020 2023 2072 2f52  --.        # r/R
+-000085e0: 2020 3d3e 2020 7377 6974 6368 206d 6f64    =>  switch mod
+-000085f0: 650a 2020 2020 2020 2020 2320 2d2d 2d2d  e.        # ----
+-00008600: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008610: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008620: 2d2d 2d0a 2020 2020 2020 2020 656c 6966  ---.        elif
+-00008630: 2070 7265 7373 6564 5f6b 6579 2069 6e20   pressed_key in 
+-00008640: 286f 7264 2827 7227 292c 206f 7264 2827  (ord('r'), ord('
+-00008650: 5227 2929 3a0a 2020 2020 2020 2020 2020  R')):.          
+-00008660: 2020 7072 696e 745f 696e 666f 2866 2253    print_info(f"S
+-00008670: 7769 7463 6820 6d6f 6465 2062 6574 7765  witch mode betwe
+-00008680: 656e 2052 4541 4420 616e 6420 4d41 524b  en READ and MARK
+-00008690: 222c 206d 733d 3130 3030 2c20 7768 6572  ", ms=1000, wher
+-000086a0: 653d 224f 7665 726c 6179 2229 0a20 2020  e="Overlay").   
+-000086b0: 2020 2020 2020 2020 204d 4152 4b5f 4d4f           MARK_MO
+-000086c0: 4445 203d 206e 6f74 204d 4152 4b5f 4d4f  DE = not MARK_MO
+-000086d0: 4445 0a0a 2020 2020 2020 2020 2020 2020  DE..            
+-000086e0: 6966 2049 535f 4242 4f58 5f53 454c 4543  if IS_BBOX_SELEC
+-000086f0: 5445 4420 3d3d 2054 7275 653a 0a20 2020  TED == True:.   
+-00008700: 2020 2020 2020 2020 2020 2020 2049 535f               IS_
+-00008710: 4242 4f58 5f53 454c 4543 5445 4420 3d20  BBOX_SELECTED = 
+-00008720: 4661 6c73 6520 2020 2020 2020 2023 20e6  False        # .
+-00008730: 98af e590 a6e9 8089 e4b8 ade4 ba86 e5bd  ................
+-00008740: 93e5 898d 6262 6f78 0a20 2020 2020 2020  ....bbox.       
+-00008750: 2020 2020 2020 2020 2053 454c 4543 5445           SELECTE
+-00008760: 445f 4242 4f58 203d 202d 3120 2020 2020  D_BBOX = -1     
+-00008770: 2020 2020 2020 2020 2023 20e9 8089 e4b8           # .....
+-00008780: ade5 908e efbc 8c49 4d47 5f4f 424a 4543  .......IMG_OBJEC
+-00008790: 5453 e4b8 ade7 9a84 e7ac ac20 6964 7820  TS......... idx 
+-000087a0: e4b8 aa0a 0a20 2020 2020 2020 2023 202d  .....        # -
+-000087b0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000087c0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000087d0: 2d2d 2d2d 2d2d 0a20 2020 2020 2020 2023  ------.        #
+-000087e0: 206c 2f4c 2020 3d3e 2020 7368 7566 666c   l/L  =>  shuffl
+-000087f0: 6520 6262 6f78 2063 6f6c 6f72 0a20 2020  e bbox color.   
+-00008800: 2020 2020 2023 202d 2d2d 2d2d 2d2d 2d2d       # ---------
+-00008810: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008820: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20  --------------. 
+-00008830: 2020 2020 2020 2065 6c69 6620 7072 6573         elif pres
+-00008840: 7365 645f 6b65 7920 696e 2028 6f72 6428  sed_key in (ord(
+-00008850: 276c 2729 2c20 6f72 6428 274c 2729 293a  'l'), ord('L')):
+-00008860: 0a20 2020 2020 2020 2020 2020 2043 4f4c  .            COL
+-00008870: 4f52 5f50 414c 4554 5445 203d 2043 6f6c  OR_PALETTE = Col
+-00008880: 6f72 7328 7368 7566 666c 653d 5472 7565  ors(shuffle=True
+-00008890: 290a 2020 2020 2020 2020 2020 2020 7072  ).            pr
+-000088a0: 696e 745f 696e 666f 2866 2243 6f6c 6f72  int_info(f"Color
+-000088b0: 7320 7061 6c65 7474 6520 7368 7566 666c  s palette shuffl
+-000088c0: 6564 2122 2c20 6d73 3d31 3030 302c 2077  ed!", ms=1000, w
+-000088d0: 6865 7265 3d22 4f76 6572 6c61 7922 290a  here="Overlay").
+-000088e0: 0a0a 2020 2020 2020 2020 2320 2d2d 2d2d  ..        # ----
+-000088f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008900: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008910: 2d2d 2d0a 2020 2020 2020 2020 2320 742f  ---.        # t/
+-00008920: 5420 203d 3e20 206d 696e 206c 696e 6520  T  =>  min line 
+-00008930: 7769 6474 680a 2020 2020 2020 2020 2320  width.        # 
+-00008940: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008950: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008960: 2d2d 2d2d 2d2d 2d0a 2020 2020 2020 2020  -------.        
+-00008970: 656c 6966 2070 7265 7373 6564 5f6b 6579  elif pressed_key
+-00008980: 2069 6e20 286f 7264 2827 7427 292c 206f   in (ord('t'), o
+-00008990: 7264 2827 5427 2929 3a0a 2020 2020 2020  rd('T')):.      
+-000089a0: 2020 2020 2020 4d49 4e5f 4c49 4e45 5f57        MIN_LINE_W
+-000089b0: 4944 5448 203d 206e 6f74 204d 494e 5f4c  IDTH = not MIN_L
+-000089c0: 494e 455f 5749 4454 480a 0a0a 2020 2020  INE_WIDTH...    
+-000089d0: 2020 2020 2320 2320 2d2d 2d2d 2d2d 2d2d      # # --------
+-000089e0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000089f0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a  ---------------.
+-00008a00: 2020 2020 2020 2020 2320 2320 652f 4520          # # e/E 
+-00008a10: 203d 3e20 2064 6f20 6578 616d 696e 696e   =>  do examinin
+-00008a20: 6720 6262 6f78 0a20 2020 2020 2020 2023  g bbox.        #
+-00008a30: 2023 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   # -------------
+-00008a40: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008a50: 2d2d 2d2d 2d2d 2d2d 2d2d 0a20 2020 2020  ----------.     
+-00008a60: 2020 2023 2065 6c69 6620 7072 6573 7365     # elif presse
+-00008a70: 645f 6b65 7920 696e 2028 6f72 6428 2765  d_key in (ord('e
+-00008a80: 2729 2c20 6f72 6428 2745 2729 293a 0a0a  '), ord('E')):..
+-00008a90: 2020 2020 2020 2020 2320 2020 2020 666f          #     fo
+-00008aa0: 7220 6262 6f78 2069 6e20 7471 646d 2849  r bbox in tqdm(I
+-00008ab0: 4d47 5f4f 424a 4543 5453 293a 0a20 2020  MG_OBJECTS):.   
+-00008ac0: 2020 2020 2023 2020 2020 2020 2020 2070       #         p
+-00008ad0: 7269 6e74 2862 626f 7829 0a20 2020 2020  rint(bbox).     
+-00008ae0: 2020 2023 2020 2020 2020 2020 2023 2054     #         # T
+-00008af0: 4f44 4f3a 2063 6865 636b 2069 6620 7477  ODO: check if tw
+-00008b00: 6f20 626f 7820 6973 2068 6967 686c 7920  o box is highly 
+-00008b10: 6f63 636c 7564 6564 210a 2020 2020 2020  occluded!.      
+-00008b20: 2020 2320 2020 2020 2020 2020 2320 544f    #         # TO
+-00008b30: 444f 3a20 6368 6563 6b20 6966 2062 6f78  DO: check if box
+-00008b40: 2069 7320 736d 616c 6c20 656e 6f75 6768   is small enough
+-00008b50: 206f 7220 6c61 7920 6174 2074 6865 2063   or lay at the c
+-00008b60: 6f72 6e65 7221 2020 4469 7374 203c 2074  orner!  Dist < t
+-00008b70: 6872 6573 6821 0a0a 0a20 2020 2020 2020  hresh!...       
+-00008b80: 2023 2023 202d 2d2d 2d2d 2d2d 2d2d 2d2d   # # -----------
+-00008b90: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008ba0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20 2020  ------------.   
+-00008bb0: 2020 2020 2023 2023 2070 2f50 2020 3d3e       # # p/P  =>
+-00008bc0: 2020 696d 6167 6520 7072 652d 7072 6f63    image pre-proc
+-00008bd0: 6573 7369 6e67 0a20 2020 2020 2020 2023  essing.        #
+-00008be0: 2023 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   # -------------
+-00008bf0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008c00: 2d2d 2d2d 2d2d 2d2d 2d2d 0a20 2020 2020  ----------.     
+-00008c10: 2020 2023 2065 6c69 6620 7072 6573 7365     # elif presse
+-00008c20: 645f 6b65 7920 696e 2028 6f72 6428 2770  d_key in (ord('p
+-00008c30: 2729 2c20 6f72 6428 2750 2729 293a 0a20  '), ord('P')):. 
+-00008c40: 2020 2020 2020 2023 2020 2020 2023 2070         #     # p
+-00008c50: 6173 730a 2020 2020 2020 2020 2320 2020  ass.        #   
+-00008c60: 2020 2320 6873 7620 3d20 6376 2e63 7674    # hsv = cv.cvt
+-00008c70: 436f 6c6f 7228 6672 616d 652c 2063 762e  Color(frame, cv.
+-00008c80: 434f 4c4f 525f 4247 5232 4853 5629 0a20  COLOR_BGR2HSV). 
+-00008c90: 2020 2020 2020 2023 2020 2020 2074 6d70         #     tmp
+-00008ca0: 5f69 6d67 203d 2063 7632 2e63 7674 436f  _img = cv2.cvtCo
+-00008cb0: 6c6f 7228 746d 705f 696d 672c 2063 7632  lor(tmp_img, cv2
+-00008cc0: 2e43 4f4c 4f52 5f52 4742 3242 4752 290a  .COLOR_RGB2BGR).
+-00008cd0: 0a20 2020 2020 2020 2023 2020 2020 2023  .        #     #
+-00008ce0: 2054 4f44 4f3a 2063 6865 636b 2069 6620   TODO: check if 
+-00008cf0: 7477 6f20 626f 7820 6973 2068 6967 686c  two box is highl
+-00008d00: 7920 6f63 636c 7564 6564 210a 0a0a 0a20  y occluded!.... 
+-00008d10: 2020 2020 2020 2023 202d 2d2d 2d2d 2d2d         # -------
+-00008d20: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008d30: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008d40: 0a20 2020 2020 2020 2023 2030 2d38 202d  .        # 0-8 -
+-00008d50: 3e20 7365 6c65 6374 2074 6f20 7368 6f77  > select to show
+-00008d60: 2073 696e 676c 6520 636c 6173 730a 2020   single class.  
+-00008d70: 2020 2020 2020 2320 3920 2d3e 2073 686f        # 9 -> sho
+-00008d80: 7720 616c 6c0a 2020 2020 2020 2020 2320  w all.        # 
+-00008d90: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008da0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00008db0: 2d2d 2d2d 2d2d 2d0a 2020 2020 2020 2020  -------.        
+-00008dc0: 656c 6966 2070 7265 7373 6564 5f6b 6579  elif pressed_key
+-00008dd0: 2069 6e20 7261 6e67 6528 3438 2c20 3537   in range(48, 57
+-00008de0: 293a 2020 2320 302d 3820 3d3e 2034 382d  ):  # 0-8 => 48-
+-00008df0: 3536 0a20 2020 2020 2020 2020 2020 2076  56.            v
+-00008e00: 616c 7565 203d 2069 6e74 2863 6872 2870  alue = int(chr(p
+-00008e10: 7265 7373 6564 5f6b 6579 2929 0a0a 2020  ressed_key))..  
+-00008e20: 2020 2020 2020 2020 2020 2320 6e6f 7420            # not 
+-00008e30: 696e 2063 6c61 7373 6966 7920 6d6f 6465  in classify mode
+-00008e40: 0a20 2020 2020 2020 2020 2020 2069 6620  .            if 
+-00008e50: 6e6f 7420 434c 4153 5349 4659 5f4d 4f44  not CLASSIFY_MOD
+-00008e60: 453a 0a20 2020 2020 2020 2020 2020 2020  E:.             
+-00008e70: 2020 2069 6620 7661 6c75 6520 3c3d 2043     if value <= C
+-00008e80: 4c53 5f43 4f55 4e54 3a0a 2020 2020 2020  LS_COUNT:.      
+-00008e90: 2020 2020 2020 2020 2020 2020 2020 5349                SI
+-00008ea0: 4e47 4c45 5f43 4c53 203d 2076 616c 7565  NGLE_CLS = value
+-00008eb0: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00008ec0: 2020 2020 2070 7269 6e74 5f69 6e66 6f28       print_info(
+-00008ed0: 6622 4f6e 6c79 2073 686f 7720 636c 6173  f"Only show clas
+-00008ee0: 733a 207b 5349 4e47 4c45 5f43 4c53 7d20  s: {SINGLE_CLS} 
+-00008ef0: 3d3e 207b 434c 4153 535f 4c49 5354 5b53  => {CLASS_LIST[S
+-00008f00: 494e 474c 455f 434c 535d 7d22 2c20 6d73  INGLE_CLS]}", ms
+-00008f10: 3d31 3030 302c 2077 6865 7265 3d22 4f76  =1000, where="Ov
+-00008f20: 6572 6c61 7922 290a 2020 2020 2020 2020  erlay").        
+-00008f30: 2020 2020 2020 2020 656c 7365 3a0a 2020          else:.  
+-00008f40: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00008f50: 2020 5349 4e47 4c45 5f43 4c53 203d 204e    SINGLE_CLS = N
+-00008f60: 6f6e 650a 2020 2020 2020 2020 2020 2020  one.            
+-00008f70: 2020 2020 2020 2020 7072 696e 745f 696e          print_in
+-00008f80: 666f 2866 224e 6f20 636c 6173 733a 207b  fo(f"No class: {
+-00008f90: 7661 6c75 657d 2c20 4d61 7820 636c 6173  value}, Max clas
+-00008fa0: 7320 6973 207b 434c 535f 434f 554e 547d  s is {CLS_COUNT}
+-00008fb0: 203d 3e20 7b43 4c41 5353 5f4c 4953 545b   => {CLASS_LIST[
+-00008fc0: 434c 535f 434f 554e 545d 7d2e 2053 686f  CLS_COUNT]}. Sho
+-00008fd0: 7720 416c 6c20 6262 6f78 6573 222c 206d  w All bboxes", m
+-00008fe0: 733d 3130 3030 2c20 7768 6572 653d 224f  s=1000, where="O
+-00008ff0: 7665 726c 6179 2229 0a0a 2020 2020 2020  verlay")..      
+-00009000: 2020 2020 2020 656c 7365 3a20 2020 2320        else:   # 
+-00009010: 636c 6173 7369 6679 206d 6f64 650a 2020  classify mode.  
+-00009020: 2020 2020 2020 2020 2020 2020 2020 494d                IM
+-00009030: 4147 455f 434c 4153 5345 532e 7570 6461  AGE_CLASSES.upda
+-00009040: 7465 287b 696d 675f 7061 7468 3a20 7661  te({img_path: va
+-00009050: 6c75 657d 290a 2020 2020 2020 2020 2020  lue}).          
+-00009060: 2020 2020 2020 7072 696e 745f 696e 666f        print_info
+-00009070: 2866 2269 6d61 6765 3a20 7b69 6d67 5f70  (f"image: {img_p
+-00009080: 6174 687d 2061 7373 6967 6e20 636c 6173  ath} assign clas
+-00009090: 733a 207b 7661 6c75 657d 222c 206d 733d  s: {value}", ms=
+-000090a0: 3130 3030 2c20 7768 6572 653d 224f 7665  1000, where="Ove
+-000090b0: 726c 6179 2229 0a0a 0a20 2020 2020 2020  rlay")...       
+-000090c0: 2065 6c69 6620 7072 6573 7365 645f 6b65   elif pressed_ke
+-000090d0: 7920 3d3d 2035 373a 2020 2320 390a 2020  y == 57:  # 9.  
+-000090e0: 2020 2020 2020 2020 2020 2320 6e6f 7420            # not 
+-000090f0: 696e 2063 6c61 7373 6966 7920 6d6f 6465  in classify mode
+-00009100: 0a20 2020 2020 2020 2020 2020 2069 6620  .            if 
+-00009110: 6e6f 7420 434c 4153 5349 4659 5f4d 4f44  not CLASSIFY_MOD
+-00009120: 453a 0a20 2020 2020 2020 2020 2020 2020  E:.             
+-00009130: 2020 2053 494e 474c 455f 434c 5320 3d20     SINGLE_CLS = 
+-00009140: 4e6f 6e65 0a0a 0a20 2020 2020 2020 2023  None...        #
+-00009150: 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   ---------------
+-00009160: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00009170: 2d2d 2d2d 2d2d 2d2d 0a20 2020 2020 2020  --------.       
+-00009180: 2023 2045 5343 202d 3e20 7175 6974 206b   # ESC -> quit k
+-00009190: 6579 206c 6973 7465 6e65 720a 2020 2020  ey listener.    
+-000091a0: 2020 2020 2320 2d2d 2d2d 2d2d 2d2d 2d2d      # ----------
+-000091b0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-000091c0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020  -------------.  
+-000091d0: 2020 2020 2020 656c 6966 2070 7265 7373        elif press
+-000091e0: 6564 5f6b 6579 203d 3d20 3237 3a0a 2020  ed_key == 27:.  
+-000091f0: 2020 2020 2020 2020 2020 6272 6561 6b0a            break.
+-00009200: 2020 2020 2020 2020 2320 2d2d 2d2d 2d2d          # ------
+-00009210: 2d2d 2d2d 2d2d 2d2d 2d2d 204b 6579 204c  ---------- Key L
+-00009220: 6973 7465 6e65 7273 2045 4e44 202d 2d2d  isteners END ---
+-00009230: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00009240: 2d2d 2d2d 2d0a 0a20 2020 2020 2020 2023  -----..        #
+-00009250: 2069 6620 7769 6e64 6f77 2067 6574 7320   if window gets 
+-00009260: 636c 6f73 6564 2074 6865 6e20 7175 6974  closed then quit
+-00009270: 0a20 2020 2020 2020 2069 6620 6376 322e  .        if cv2.
+-00009280: 6765 7457 696e 646f 7750 726f 7065 7274  getWindowPropert
+-00009290: 7928 5749 4e44 4f57 5f4e 414d 452c 2063  y(WINDOW_NAME, c
+-000092a0: 7632 2e57 4e44 5f50 524f 505f 5649 5349  v2.WND_PROP_VISI
+-000092b0: 424c 4529 203c 2031 3a0a 2020 2020 2020  BLE) < 1:.      
+-000092c0: 2020 2020 2020 6272 6561 6b0a 0a20 2020        break..   
+-000092d0: 2063 7632 2e64 6573 7472 6f79 416c 6c57   cv2.destroyAllW
+-000092e0: 696e 646f 7773 2829 0a0a 0a20 2020 2023  indows()...    #
+-000092f0: 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   ---------------
+-00009300: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20 2020  ------------.   
+-00009310: 2023 2020 6465 616c 2077 6974 6820 636c   #  deal with cl
+-00009320: 6173 7369 6679 2064 6963 740a 2020 2020  assify dict.    
+-00009330: 2320 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  # --------------
+-00009340: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 2020  -------------.  
+-00009350: 2020 6966 2049 4d41 4745 5f43 4c41 5353    if IMAGE_CLASS
+-00009360: 4553 3a0a 0a20 2020 2020 2020 2023 2063  ES:..        # c
+-00009370: 6865 636b 2069 6620 6a73 6f6e 2066 696c  heck if json fil
+-00009380: 6520 6973 2073 616d 6520 7769 7468 2049  e is same with I
+-00009390: 4d41 4745 5f43 4c41 5353 0a20 2020 2020  MAGE_CLASS.     
+-000093a0: 2020 2061 7373 6572 7420 6a73 6f6e 2e6c     assert json.l
+-000093b0: 6f61 6428 6f70 656e 2849 4d41 4745 5f43  oad(open(IMAGE_C
+-000093c0: 4c41 5353 4553 5f4a 534f 4e5f 5041 5448  LASSES_JSON_PATH
+-000093d0: 2c20 656e 636f 6469 6e67 3d22 7574 662d  , encoding="utf-
+-000093e0: 3822 2929 203d 3d20 494d 4147 455f 434c  8")) == IMAGE_CL
+-000093f0: 4153 5345 530a 0a20 2020 2020 2020 2023  ASSES..        #
+-00009400: 2069 6e20 6361 7365 206f 6620 6f74 6865   in case of othe
+-00009410: 7220 6b65 7973 2069 6e70 7574 0a20 2020  r keys input.   
+-00009420: 2020 2020 2077 6869 6c65 2054 7275 653a       while True:
+-00009430: 200a 2020 2020 2020 2020 2020 2020 7265   .            re
+-00009440: 7370 6f6e 7365 203d 2069 6e70 7574 2827  sponse = input('
+-00009450: 3e20 4669 6e64 2063 6c61 7373 6966 792e  > Find classify.
+-00009460: 6a73 6f6e 2120 446f 2063 6c61 7373 6966  json! Do classif
+-00009470: 7969 6e67 3f20 5b79 6573 202f 206e 6f5d  ying? [yes / no]
+-00009480: 3a20 2729 0a20 2020 2020 2020 2020 2020  : ').           
+-00009490: 2069 6620 7265 7370 6f6e 7365 2e6c 6f77   if response.low
+-000094a0: 6572 2829 2069 6e20 2827 6e27 2c20 276e  er() in ('n', 'n
+-000094b0: 6f27 293a 2020 2023 2065 7869 740a 2020  o'):   # exit.  
+-000094c0: 2020 2020 2020 2020 2020 2020 2020 4c4f                LO
+-000094d0: 4747 4552 2e69 6e66 6f28 274e 6f74 2064  GGER.info('Not d
+-000094e0: 6f69 6e67 2063 6c61 7373 6966 7969 6e67  oing classifying
+-000094f0: 2729 0a20 2020 2020 2020 2020 2020 2020  ').             
+-00009500: 2020 2062 7265 616b 0a0a 2020 2020 2020     break..      
+-00009510: 2020 2020 2020 656c 6966 2072 6573 706f        elif respo
+-00009520: 6e73 652e 6c6f 7765 7228 2920 696e 2028  nse.lower() in (
+-00009530: 2779 272c 2027 7965 7327 293a 0a20 2020  'y', 'yes'):.   
+-00009540: 2020 2020 2020 2020 2020 2020 204c 4f47               LOG
+-00009550: 4745 522e 696e 666f 2827 446f 696e 6720  GER.info('Doing 
+-00009560: 636c 6173 7369 6679 696e 6727 290a 0a0a  classifying')...
+-00009570: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00009580: 2320 6974 6572 6174 6520 494d 4147 455f  # iterate IMAGE_
+-00009590: 434c 4153 5345 5320 746f 206d 6f76 6520  CLASSES to move 
+-000095a0: 696d 6167 6520 746f 2064 6972 730a 2020  image to dirs.  
+-000095b0: 2020 2020 2020 2020 2020 2020 2020 666f                fo
+-000095c0: 7220 6964 782c 2028 6b2c 2076 2920 696e  r idx, (k, v) in
+-000095d0: 2065 6e75 6d65 7261 7465 2874 7164 6d28   enumerate(tqdm(
+-000095e0: 494d 4147 455f 434c 4153 5345 532e 6974  IMAGE_CLASSES.it
+-000095f0: 656d 7328 292c 2064 6573 633d 2743 6c61  ems(), desc='Cla
+-00009600: 7373 6966 7969 6e67 2729 293a 0a20 2020  ssifying')):.   
+-00009610: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00009620: 2023 2070 7269 6e74 2866 277b 6964 787d   # print(f'{idx}
+-00009630: 202d 2d3e 207b 6b7d 202d 2d3e 207b 767d   --> {k} --> {v}
+-00009640: 2729 0a0a 2020 2020 2020 2020 2020 2020  ')..            
+-00009650: 2020 2020 2020 2020 2320 6d6b 6469 7220          # mkdir 
+-00009660: 6469 7273 2066 6f72 2064 6966 6665 7265  dirs for differe
+-00009670: 6e74 2063 6c61 7373 3a20 434c 4153 532f  nt class: CLASS/
+-00009680: 636c 6173 735f 612c 2043 4c41 5353 2f63  class_a, CLASS/c
+-00009690: 6c61 7373 5f62 2c20 434c 4153 532f 636c  lass_b, CLASS/cl
+-000096a0: 6173 735f 6320 0a20 2020 2020 2020 2020  ass_c .         
+-000096b0: 2020 2020 2020 2020 2020 2064 7374 5f63             dst_c
+-000096c0: 6c61 7373 5f64 6972 203d 2050 6174 6828  lass_dir = Path(
+-000096d0: 2749 4d41 4745 2d43 4c41 5353 2729 202f  'IMAGE-CLASS') /
+-000096e0: 2063 6c61 7373 6573 5b76 2d31 5d0a 2020   classes[v-1].  
+-000096f0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00009700: 2020 6966 206e 6f74 2064 7374 5f63 6c61    if not dst_cla
+-00009710: 7373 5f64 6972 2e65 7869 7374 7328 293a  ss_dir.exists():
+-00009720: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00009730: 2020 2020 2020 2020 2064 7374 5f63 6c61           dst_cla
+-00009740: 7373 5f64 6972 2e6d 6b64 6972 2870 6172  ss_dir.mkdir(par
+-00009750: 656e 7473 3d54 7275 652c 2065 7869 7374  ents=True, exist
+-00009760: 5f6f 6b3d 5472 7565 290a 2020 2020 2020  _ok=True).      
+-00009770: 2020 2020 2020 2020 2020 2020 2020 7368                sh
+-00009780: 7574 696c 2e63 6f70 7928 6b2c 2073 7472  util.copy(k, str
+-00009790: 2864 7374 5f63 6c61 7373 5f64 6972 2929  (dst_class_dir))
+-000097a0: 0a0a 0a0a 2020 2020 2020 2020 2020 2020  ....            
+-000097b0: 2020 2020 6272 6561 6b0a 0a0a 0a20 2020      break....   
+-000097c0: 2023 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   # -------------
+-000097d0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a20  --------------. 
+-000097e0: 2020 2023 2064 6561 6c20 7769 7468 2077     # deal with w
+-000097f0: 726f 6e67 2069 6d67 0a20 2020 2023 206c  rong img.    # l
+-00009800: 6173 7420 7374 6570 3a20 e588 a0e9 99a4  ast step: ......
+-00009810: e689 80e6 9c89 e697 a0e6 b395 e8a2 ab6f  ...............o
+-00009820: 7065 6e63 76e8 afbb e58f 96e7 9a84 e59b  pencv...........
+-00009830: bee5 838f 0a20 2020 2023 202d 2d2d 2d2d  .....    # -----
+-00009840: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00009850: 2d2d 2d2d 2d2d 0a20 2020 2069 6620 6c65  ------.    if le
+-00009860: 6e28 5752 4f4e 475f 494d 475f 5345 5429  n(WRONG_IMG_SET)
+-00009870: 203e 2030 3a0a 2020 2020 2020 2020 4c4f   > 0:.        LO
+-00009880: 4747 4552 2e77 6172 6e69 6e67 2866 2268  GGER.warning(f"h
+-00009890: 6173 207b 6c65 6e28 5752 4f4e 475f 494d  as {len(WRONG_IM
+-000098a0: 475f 5345 5429 7d20 696d 6167 6573 2063  G_SET)} images c
+-000098b0: 616e 206e 6f74 2062 6520 7265 6164 2062  an not be read b
+-000098c0: 7920 4f70 656e 4356 2c20 6d6f 7669 6e67  y OpenCV, moving
+-000098d0: 2074 6f20 7b57 524f 4e47 5f49 4d47 5f44   to {WRONG_IMG_D
+-000098e0: 4952 7d22 290a 2020 2020 2020 2020 0a20  IR}").        . 
+-000098f0: 2020 2020 2020 2023 2063 7265 6174 6520         # create 
+-00009900: 6469 7220 6966 206e 6f74 2065 7869 7374  dir if not exist
+-00009910: 0a20 2020 2020 2020 2069 6620 6e6f 7420  .        if not 
+-00009920: 5061 7468 2857 524f 4e47 5f49 4d47 5f44  Path(WRONG_IMG_D
+-00009930: 4952 292e 6578 6973 7473 2829 3a0a 2020  IR).exists():.  
+-00009940: 2020 2020 2020 2020 2020 5061 7468 2857            Path(W
+-00009950: 524f 4e47 5f49 4d47 5f44 4952 292e 6d6b  RONG_IMG_DIR).mk
+-00009960: 6469 7228 290a 0a20 2020 2020 2020 2023  dir()..        #
+-00009970: 2072 656d 6f76 650a 2020 2020 2020 2020   remove.        
+-00009980: 666f 7220 696d 6720 696e 2057 524f 4e47  for img in WRONG
+-00009990: 5f49 4d47 5f53 4554 3a0a 2020 2020 2020  _IMG_SET:.      
+-000099a0: 2020 2020 2020 7368 7574 696c 2e6d 6f76        shutil.mov
+-000099b0: 6528 696d 672c 2057 524f 4e47 5f49 4d47  e(img, WRONG_IMG
+-000099c0: 5f44 4952 290a 2020 2020 2020 2020 2020  _DIR).          
+-000099d0: 2020 4c4f 4747 4552 2e69 6e66 6f28 6622    LOGGER.info(f"
+-000099e0: 7b50 6174 6828 696d 6729 2e72 6573 6f6c  {Path(img).resol
+-000099f0: 7665 2829 7d22 290a 0a20 2020 2065 6c73  ve()}")..    els
+-00009a00: 653a 0a20 2020 2020 2020 204c 4f47 4745  e:.        LOGGE
+-00009a10: 522e 696e 666f 2866 225c 6e45 7665 7279  R.info(f"\nEvery
+-00009a20: 2069 6d61 6765 2063 616e 2062 6520 7265   image can be re
+-00009a30: 6164 2062 7920 4f70 656e 4356 2e5c 6e22  ad by OpenCV.\n"
+-00009a40: 290a 0a0a 0a0a 0a0a 0a23 202d 2d2d 2d2d  )........# -----
+-00009a50: 2d2d 2d2d 2d2d 2d2d 2d2d 2d6f 7074 696f  -----------optio
+-00009a60: 6e73 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ns -------------
+-00009a70: 2d2d 2d2d 2d2d 2d2d 2d2d 2d0a 6465 6620  -----------.def 
+-00009a80: 7061 7273 655f 6f70 7428 293a 0a20 2020  parse_opt():.   
+-00009a90: 2070 6172 7365 7220 3d20 6172 6770 6172   parser = argpar
+-00009aa0: 7365 2e41 7267 756d 656e 7450 6172 7365  se.ArgumentParse
+-00009ab0: 7228 6465 7363 7269 7074 696f 6e3d 274f  r(description='O
+-00009ac0: 7065 6e2d 736f 7572 6365 2069 6d61 6765  pen-source image
+-00009ad0: 206c 6162 656c 696e 6720 746f 6f6c 2729   labeling tool')
+-00009ae0: 0a20 2020 2070 6172 7365 722e 6164 645f  .    parser.add_
+-00009af0: 6172 6775 6d65 6e74 2827 2d2d 696d 672d  argument('--img-
+-00009b00: 6469 7227 2c20 6465 6661 756c 743d 2769  dir', default='i
+-00009b10: 6d67 2d64 6972 272c 2074 7970 653d 7374  mg-dir', type=st
+-00009b20: 722c 2068 656c 703d 2750 6174 6820 746f  r, help='Path to
+-00009b30: 2069 6e70 7574 2064 6972 6563 746f 7279   input directory
+-00009b40: 2729 0a20 2020 2070 6172 7365 722e 6164  ').    parser.ad
+-00009b50: 645f 6172 6775 6d65 6e74 2827 2d2d 6c61  d_argument('--la
+-00009b60: 6265 6c2d 6469 7227 2c20 6465 6661 756c  bel-dir', defaul
+-00009b70: 743d 2727 2c20 7479 7065 3d73 7472 2c20  t='', type=str, 
+-00009b80: 6865 6c70 3d27 5061 7468 2074 6f20 6f75  help='Path to ou
+-00009b90: 7470 7574 2064 6972 6563 746f 7279 2729  tput directory')
+-00009ba0: 0a20 2020 2070 6172 7365 722e 6164 645f  .    parser.add_
+-00009bb0: 6172 6775 6d65 6e74 2827 2d2d 6d76 2d64  argument('--mv-d
+-00009bc0: 6972 272c 2064 6566 6175 6c74 3d22 6d6f  ir', default="mo
+-00009bd0: 7665 645f 6469 7222 2c20 7479 7065 3d73  ved_dir", type=s
+-00009be0: 7472 2c20 6865 6c70 3d27 6d76 2d64 6972  tr, help='mv-dir
+-00009bf0: 2074 6f20 7361 7665 206d 6f76 6564 2064   to save moved d
+-00009c00: 6174 615b 696d 672c 206c 6162 656c 5d27  ata[img, label]'
+-00009c10: 290a 2020 2020 7061 7273 6572 2e61 6464  ).    parser.add
+-00009c20: 5f61 7267 756d 656e 7428 272d 2d77 726f  _argument('--wro
+-00009c30: 6e67 2d69 6d67 2d64 6972 272c 2064 6566  ng-img-dir', def
+-00009c40: 6175 6c74 3d22 7772 6f6e 672d 696d 672d  ault="wrong-img-
+-00009c50: 6469 7222 2c20 7479 7065 3d73 7472 2c20  dir", type=str, 
+-00009c60: 6865 6c70 3d27 7772 6f6e 6720 666f 726d  help='wrong form
+-00009c70: 6174 2069 6d67 2074 6f20 7361 7665 2069  at img to save i
+-00009c80: 6d67 7320 6f70 656e 6376 2063 616e 7420  mgs opencv cant 
+-00009c90: 7265 6164 2729 0a20 2020 2070 6172 7365  read').    parse
+-00009ca0: 722e 6164 645f 6172 6775 6d65 6e74 2827  r.add_argument('
+-00009cb0: 2d2d 636c 6173 7365 7327 2c20 6465 6661  --classes', defa
+-00009cc0: 756c 743d 2727 2c20 6e61 7267 733d 222b  ult='', nargs="+
+-00009cd0: 222c 2074 7970 653d 7374 722c 2068 656c  ", type=str, hel
+-00009ce0: 703d 2763 6c61 7373 6573 206c 6973 7420  p='classes list 
+-00009cf0: 7465 7874 2729 0a20 2020 2070 6172 7365  text').    parse
+-00009d00: 722e 6164 645f 6172 6775 6d65 6e74 2827  r.add_argument('
+-00009d10: 2d2d 7769 6e64 6f77 5f77 6964 7468 272c  --window_width',
+-00009d20: 2064 6566 6175 6c74 3d38 3030 2c20 7479   default=800, ty
+-00009d30: 7065 3d69 6e74 2c20 6865 6c70 3d27 636c  pe=int, help='cl
+-00009d40: 6173 7365 7320 6c69 7374 2074 6578 7427  asses list text'
+-00009d50: 290a 2020 2020 7061 7273 6572 2e61 6464  ).    parser.add
+-00009d60: 5f61 7267 756d 656e 7428 272d 2d77 696e  _argument('--win
+-00009d70: 646f 775f 6865 6967 6874 272c 2064 6566  dow_height', def
+-00009d80: 6175 6c74 3d36 3030 2c20 7479 7065 3d69  ault=600, type=i
+-00009d90: 6e74 2c20 6865 6c70 3d27 636c 6173 7365  nt, help='classe
+-00009da0: 7320 6c69 7374 2074 6578 7427 290a 2020  s list text').  
+-00009db0: 2020 6f70 7420 3d20 7061 7273 6572 2e70    opt = parser.p
+-00009dc0: 6172 7365 5f61 7267 7328 290a 2020 2020  arse_args().    
+-00009dd0: 2320 4c4f 4747 4552 2e69 6e66 6f28 6622  # LOGGER.info(f"
+-00009de0: 7b6f 7074 7d5c 6e22 290a 0a20 2020 2072  {opt}\n")..    r
+-00009df0: 6574 7572 6e20 6f70 740a 0a0a 0a0a 0a23  eturn opt......#
+-00009e00: 202d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d   ---------------
+-00009e10: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00009e20: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00009e30: 2d2d 2d2d 0a23 2020 206d 6169 6e0a 232d  ----.#   main.#-
+-00009e40: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00009e50: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00009e60: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00009e70: 2d0a 6966 205f 5f6e 616d 655f 5f20 3d3d  -.if __name__ ==
+-00009e80: 2027 5f5f 6d61 696e 5f5f 273a 0a0a 2020   '__main__':..  
+-00009e90: 2020 6f70 7420 3d20 7061 7273 655f 6f70    opt = parse_op
+-00009ea0: 7428 290a 2020 2020 696e 7370 6563 7432  t().    inspect2
+-00009eb0: 2820 6f70 742e 696d 675f 6469 722c 200a  ( opt.img_dir, .
+-00009ec0: 2020 2020 2020 2020 2020 2020 206f 7074               opt
+-00009ed0: 2e6c 6162 656c 5f64 6972 2c0a 2020 2020  .label_dir,.    
+-00009ee0: 2020 2020 2020 2020 206f 7074 2e6d 765f           opt.mv_
+-00009ef0: 6469 722c 0a20 2020 2020 2020 2020 2020  dir,.           
+-00009f00: 2020 6f70 742e 7772 6f6e 675f 696d 675f    opt.wrong_img_
+-00009f10: 6469 722c 0a20 2020 2020 2020 2020 2020  dir,.           
+-00009f20: 2020 6f70 742e 636c 6173 7365 732c 0a20    opt.classes,. 
+-00009f30: 2020 2020 2020 2020 2020 2020 6f70 742e              opt.
+-00009f40: 7769 6e64 6f77 5f77 6964 7468 2c0a 2020  window_width,.  
+-00009f50: 2020 2020 2020 2020 2020 206f 7074 2e77             opt.w
+-00009f60: 696e 646f 775f 6865 6967 6874 2c0a 2020  indow_height,.  
+-00009f70: 2020 2020 2020 2020 2020 2029 0a                    ).
++00000000: 0a                                       .
+```
+
+## usls/src/utils.py
+
+```diff
+@@ -137,56 +137,67 @@
+ # img_path => label_path(txt)
+ def get_corresponding_label_path(img_path, output_dir):
+     label_name = Path(img_path).stem + '.txt'
+     saveout = Path(output_dir) / label_name 
+     return str(saveout)
+ 
+ 
+-# Check if a point belongs to a rectangle
+-def is_point_in_rect(x, y, l, t, r, b):
+-    return l <= x <= r and t <= y <= b
+ 
+-
+-# colors palette
+ class Colors:
+     '''
++        colors palette
+         # hex 颜色对照表    https://www.cnblogs.com/summary-2017/p/7504126.html
+         # RGB的数值 = 16 * HEX的第一位 + HEX的第二位
+         # RGB: 92, 184, 232 
+         # 92 / 16 = 5余12 -> 5C
+         # 184 / 16 = 11余8 -> B8
+         # 232 / 16 = 14余8 -> E8
+         # HEX = 5CB8E8
+     '''
+-
+-    # def __init__(self, random=0, shuffle=False):
+     def __init__(self, shuffle=False):
+-        # hex = matplotlib.colors.TABLEAU_COLORS.values()
+-        hex = ('33FF00', '9933FF', 'CC0000', 'FFCC00', '99FFFF', '3300FF', 'FF3333', # new add
+-               'FF3838', 'FF9D97', 'FF701F', 'FFB21D', 'CFD231', '48F90A', '92CC17', '3DDB86', 
+-               '1A9334', '00D4BB', '2C99A8', '00C2FF', '344593', '6473FF', '0018EC', '8438FF', 
+-               '520085', 'CB38FF', 'FF95C8', 'FF37C7')
++        hex_color = (
++            '33FF00', '9933FF', 'CC0000', 'FFCC00', '99FFFF', '3300FF', 'FF3333', # new add
++            'FF3838', 'FF9D97', 'FF701F', 'FFB21D', 'CFD231', '48F90A', '92CC17', '3DDB86', 
++            '1A9334', '00D4BB', '2C99A8', '00C2FF', '344593', '6473FF', '0018EC', '8438FF', 
++            '520085', 'CB38FF', 'FF95C8', 'FF37C7', '#F0F8FF', '#4682B4', '#0000CD', '#9932CC',  
++            '#FFB6C1', '#FFC0CB', '#DC143C', '#FFF0F5', '#DB7093', '#FF69B4', '#FF1493', '#C71585',  
++            '#DDA0DD', '#EE82EE', '#FF00FF', '#FF00FF', '#8B008B', '#800080', '#BA55D3', '#9400D3',   
++            '#8A2BE2', '#9370DB', '#7B68EE', '#6A5ACD', '#483D8B', '#E6E6FA', '#F8F8FF', '#0000FF', 
++            '#00008B', '#000080', '#4169E1', '#6495ED', '#B0C4DE', '#778899', '#708090', '#1E90FF', 
++            '#87CEFA', '#87CEEB', '#00BFFF', '#808080', '#696969', '#000000', '#DA70D6', '#D8BFD8', 
++            '#ADD8E6', '#B0E0E6', '#5F9EA0', '#F0FFFF', '#E1FFFF', '#AFEEEE', '#00FFFF', '#00FFFF', 
++            '#008B8B', '#008080', '#48D1CC', '#20B2AA', '#40E0D0', '#7FFFAA', '#00FA9A', '#F5FFFA',  
++            '#2E8B57', '#F0FFF0', '#90EE90', '#98FB98', '#8FBC8F', '#32CD32', '#00FF00', '#228B22',  
++            '#7FFF00', '#7CFC00', '#ADFF2F', '#556B2F', '#6B8E23', '#FAFAD2', '#FFFFF0', '#FFFFE0',  
++            '#BDB76B', '#FFFACD', '#EEE8AA', '#F0E68C', '#FFD700', '#FFF8DC', '#DAA520', '#FFFAF0',  
++            '#FFE4B5', '#FFA500', '#FFEFD5', '#FFEBCD', '#FFDEAD', '#FAEBD7', '#D2B48C', '#DEB887',
++            '#FAF0E6', '#CD853F', '#FFDAB9', '#F4A460', '#D2691E', '#8B4513', '#FFF5EE', '#A0522D', 
++            '#FF4500', '#E9967A', '#FF6347', '#FFE4E1', '#FA8072', '#FFFAFA', '#F08080', '#BC8F8F', 
++            '#A52A2A', '#B22222', '#8B0000', '#800000', '#FFFFFF', '#F5F5F5', '#DCDCDC', '#D3D3D3', 
++            '#191970', '#9932CC', '#00CED1', '#2F4F4F', '#C0C0C0', '#A9A9A9', '#CD5C5C', '#FF0000',
++            '#FFA07A', '#FF7F50', '#FFE4C4', '#FF8C00', '#FDF5E6', '#F5DEB3', '#FFFF00', '#808000',
++            '#008000', '#006400', '#00FF7F', '#3CB371', '#4B0082',
++        )
+         
+         # shuffle color 
+         if shuffle:
+-            hex_list = list(hex)
++            hex_list = list(hex_color)
+             random.shuffle(hex_list)
+-            hex = tuple(hex_list)
++            hex_color = tuple(hex_list)
+ 
+-        self.palette = [self.hex2rgb('#' + c) for c in hex]
++        self.palette = [self.hex2rgb(c) if c.startswith('#') else self.hex2rgb('#' + c) for c in hex_color]
+         self.n = len(self.palette)
+-        # self.b = random   # also for shuffle color 
+ 
+ 
+     def __call__(self, i, bgr=False):        
+         c = self.palette[int(i) % self.n]
+         return (c[2], c[1], c[0]) if bgr else c
+ 
+     @staticmethod  
+-    def hex2rgb(h):  # int('CC', base=16) 将16进制的CC转成10进制 
++    def hex2rgb(h):  # int('CC', base=16) hex -> 10
+         return tuple(int(h[1 + i:1 + i + 2], 16) for i in (0, 2, 4))
+ 
+ 
+ 
+ 
+ def increment_path(path, exist_ok=False, sep='', mkdir=False):
+     # Increment file or directory path, i.e. runs/exp --> runs/exp{sep}2, runs/exp{sep}3, ... etc.
+```
+
+## Comparing `usls-0.2.3.dist-info/LICENSE` & `usls-0.2.4.dist-info/LICENSE`
+
+ * *Files identical despite different names*
+
+## Comparing `usls-0.2.3.dist-info/METADATA` & `usls-0.2.4.dist-info/METADATA`
+
+ * *Files 15% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: usls
+-Version: 0.2.3
++Version: 0.2.4
+ Summary: Useless CV toolkits
+ Home-page: https://github.com/jamjamjon/usls
+ Author: jamjamjon
+ License: GPL-3.0
+ Requires-Python: >=3.9
+ Description-Content-Type: text/markdown
+ License-File: LICENSE
+```
+
+## Comparing `usls-0.2.3.dist-info/RECORD` & `usls-0.2.4.dist-info/RECORD`
+
+ * *Files 12% similar despite different names*
+
+```diff
+@@ -1,23 +1,23 @@
+-usls/__init__.py,sha256=har69mxsRjWV7c7sBbZfSl6X7sbW5Fa9jRxEJC1ofwA,171
++usls/__init__.py,sha256=WgRAll4dPMlT1JOSl3EGCqXElRj_ZFGv9rWVRUMZqz0,171
+ usls/cli.py,sha256=tChIen0X0Crs6PKFhWADxfp0KYDd0M9LfxeAxCqbIXw,11772
+-usls/run.py,sha256=bSl-x3wSxrGIh9I2QwoTESi_e2WyI8QN9ruE_7bl1Zk,2629
+-usls/src/__init__.py,sha256=taQDSBFDUilwiGM8wY4BJ1rZL90B8Ahvc-UpHy5d5pE,309
++usls/run.py,sha256=jwpzTJ6v1pWe39iMY8mpK-7OQ9BQOx1hkdhSpe_rd48,2625
++usls/src/__init__.py,sha256=x_CWzE-z_jOmeRTUbEjDZ7jMmw1vc2ZYes2ztGRYWyg,276
+ usls/src/class_modify.py,sha256=MVwj18Z47GV67EfLv77wEKMfRLT2DgOmckQPFQQkU2I,2171
+ usls/src/cleanup.py,sha256=owKLqy3pUI9O7e1FiIJz2JWKl4Y0bLlbdZYccZmPFtk,6119
+ usls/src/deduplicate.py,sha256=7Uaq4QScnOVPVMWRZiG1eBXorg9oF6SWjJklsL6rc_w,5530
+ usls/src/dir_combine.py,sha256=7xlIFvksHWn53awmp_0jCFbJPbglTEsRiWIgrFNZFwo,2071
+ usls/src/info.py,sha256=bYY6yaWDGnv1Fz5E2tBNCKaqKVQbxEom1Ba8vHGrNqA,4010
+ usls/src/label_combine.py,sha256=T99nvA4fcHt94cCV9zZVPJvmgj_Lus-5H3lowCbp9So,3204
+-usls/src/labelling_cls.py,sha256=yFW_zeBBFr_HS6fu5mqUpPq9-z0F_txAhUGpg-RchRQ,18138
+-usls/src/labelling_det.py,sha256=VnoxsLxSl3DokJcKx6VNp4Fa9uUXYVbeFRkJ-9OsnJE,39435
+-usls/src/labelling_det_2.py,sha256=jfiW3F7NifoV64QylkRi5yYmeWJW6HMUkJchEzCjAJ4,40829
++usls/src/labelling.py,sha256=L2NF_ASvNnsCROr0OqoyGFWnur0zWczC-XmVqskd4yw,34798
++usls/src/labelling_cls.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
++usls/src/labelling_det_2.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ usls/src/rename.py,sha256=2vqbHZUCjuxVOwM99Mz8Mng9SQ6Li0SE2HQxa7yq9k8,2616
+ usls/src/spider.py,sha256=g70JjlPX5H2qOjMrmdHspaW9lki9kVIprEBtV49lD8M,3470
+-usls/src/utils.py,sha256=ZLQSbWv6XM906y8p_KIsWbznPxSl9Ugd8Icv8IESf1Y,6282
++usls/src/utils.py,sha256=QQAqlRjNbsnoyTqot63cMnNioUGOBpOGwmXqGDKCfmM,7793
+ usls/src/video_tools.py,sha256=NxKNndtCOBldES3XEXRDAjflQKMznNg6kJS7iTBjJUs,9412
+-usls-0.2.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+-usls-0.2.3.dist-info/METADATA,sha256=kh5aVHN0CAlxxbwoXXDJqPpuPYRcWmvLSsMxZQdAgts,540
+-usls-0.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+-usls-0.2.3.dist-info/entry_points.txt,sha256=NtT7OjVpekraB5xlzXzTbTQ9q8VOKMUrByrtciZMJms,34
+-usls-0.2.3.dist-info/top_level.txt,sha256=oS7b-J2DgqOuJIQaKnSyirCC_Rt6yeQCLkbNqh2H_DM,5
+-usls-0.2.3.dist-info/RECORD,,
++usls-0.2.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
++usls-0.2.4.dist-info/METADATA,sha256=FeUxPw5ZAvSNYFjxlNQYRkJAspIrOI4Oabf-cdzBGMI,540
++usls-0.2.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
++usls-0.2.4.dist-info/entry_points.txt,sha256=NtT7OjVpekraB5xlzXzTbTQ9q8VOKMUrByrtciZMJms,34
++usls-0.2.4.dist-info/top_level.txt,sha256=oS7b-J2DgqOuJIQaKnSyirCC_Rt6yeQCLkbNqh2H_DM,5
++usls-0.2.4.dist-info/RECORD,,
+```
+

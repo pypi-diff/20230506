@@ -8120,3 +8120,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 10:46:10] INFO root fetch - main [MainThread]: End processing [ipybbycell]: success
 [2023-05-06 10:46:27] INFO root fetch - main [MainThread]: End processing [pydozer-log]: success
 [2023-05-06 10:46:27] INFO root fetch - main [MainThread]: Store serial: [17998314]
+[2023-05-06 10:51:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998314]
+[2023-05-06 10:51:39] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 10:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: p-ttauto-crawler
+[2023-05-06 10:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magic-decorator
+[2023-05-06 10:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: p-ttauto-crawler
+[2023-05-06 10:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qfinuwa
+[2023-05-06 10:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rootbox
+[2023-05-06 10:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cyber-record-util
+[2023-05-06 10:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tfp-nightly
+[2023-05-06 10:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-nightly
+[2023-05-06 10:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: agent-link
+[2023-05-06 10:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: usls
+[2023-05-06 10:51:39] INFO root fetch - processPackages [p-ttauto-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 10:51:39] WARNING root fetch - processPackages [magic-decorator]: Skipping, unable to determine old version
+[2023-05-06 10:51:39] INFO root fetch - main [MainThread]: End processing [magic-decorator] error
+[2023-05-06 10:51:39] INFO root fetch - processPackages [cyber-record-util]: New version: [9] Old Version: [8]
+[2023-05-06 10:51:39] INFO root fetch - processPackages [rootbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 10:51:39] INFO root fetch - processPackages [usls]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-06 10:51:39] INFO root fetch - processPackages [qfinuwa]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-06 10:51:39] INFO root fetch - processPackages [agent-link]: New version: [0.1.9] Old Version: [0.1.2]
+[2023-05-06 10:51:39] INFO root fetch - processPackages [p-ttauto-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 10:51:39] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-05-06 10:51:39] INFO root fetch - processPackages [tf-nightly]: New version: [2.14.0.dev20230506] Old Version: [2.14.0.dev20230505]
+[2023-05-06 10:51:39] INFO root fetch - processPackages [p-ttauto-crawler]: executing diffoscope
+[2023-05-06 10:51:39] INFO root fetch - processPackages [p-ttauto-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-ttauto-crawler-0.0.8.tar.gz tmp/p-ttauto-crawler-0.0.9.tar.gz --markdown 20230506/p/p-ttauto-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 10:51:39] INFO root fetch - processPackages [p-ttauto-crawler]: executing diffoscope
+[2023-05-06 10:51:39] INFO root fetch - processPackages [p-ttauto-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-ttauto-crawler-0.0.8.tar.gz tmp/p-ttauto-crawler-0.0.9.tar.gz --markdown 20230506/p/p-ttauto-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 10:51:39] INFO root fetch - processPackages [rootbox]: Downloading https://files.pythonhosted.org/packages/e4/91/4a414667a3c1982e04a1bc670028035dc1ba2b085afca3b971aefa21924e/rootbox-0.0.8.tar.gz
+[2023-05-06 10:51:39] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-05-06 10:51:39] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230506/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-05-06 10:51:39] INFO root fetch - processPackages [agent-link]: Downloading https://files.pythonhosted.org/packages/ed/5c/57931bbb971a921efd05480fefcb72397a18b345031387764c69c27b90fc/agent_link-0.1.2.tar.gz
+[2023-05-06 10:51:39] INFO root fetch - processPackages [cyber-record-util]: Downloading https://files.pythonhosted.org/packages/d1/6d/1c20b8b889a92e2367803e1cdcc8d14349cf42860d04d3dceaa3511f6dd6/cyber-record-util-8.tar.gz
+[2023-05-06 10:51:39] INFO root fetch - processPackages [usls]: Downloading https://files.pythonhosted.org/packages/6d/dd/7f7b6cf8a413bfc8bf1be54aeea620724a602cfc92bb0c130bb767a2b65b/usls-0.2.4-py3-none-any.whl
+[2023-05-06 10:51:39] WARNING root fetch - processPackages [agent-link]: Skipping package: exceeds size limit 15899943>=10485760
+[2023-05-06 10:51:39] INFO root fetch - main [MainThread]: End processing [agent-link] error
+[2023-05-06 10:51:39] INFO root fetch - processPackages [qfinuwa]: Downloading https://files.pythonhosted.org/packages/06/d7/d6995e7dedc7b134b3972d85354048318809bcbf420581103cde23e44cc1/qfinuwa-1.1.9.tar.gz
+[2023-05-06 10:51:39] INFO root fetch - processPackages [usls]: executing diffoscope
+[2023-05-06 10:51:39] INFO root fetch - processPackages [usls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usls-0.2.3-py3-none-any.whl.zip tmp/usls-0.2.4-py3-none-any.whl.zip --markdown 20230506/u/usls/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-06 10:51:39] INFO root fetch - processPackages [qfinuwa]: executing diffoscope
+[2023-05-06 10:51:39] INFO root fetch - processPackages [qfinuwa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qfinuwa-1.1.8.tar.gz tmp/qfinuwa-1.1.9.tar.gz --markdown 20230506/q/qfinuwa/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-06 10:51:39] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/8d/52/49fced97f113ec143518238fd07fe93ebd8c8d8f986613e27c151047281f/tf_nightly-2.14.0.dev20230506-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-06 10:51:39] WARNING root fetch - processPackages [tf-nightly]: Skipping package: exceeds size limit 527284321>=10485760
+[2023-05-06 10:51:39] INFO root fetch - main [MainThread]: End processing [tf-nightly] error
+[2023-05-06 10:51:39] INFO root fetch - processPackages [rootbox]: Downloading https://files.pythonhosted.org/packages/28/6b/93e91460f93ae6ca8574487a0dfc47cdca5bd4b56502104dcb0b4c631cc6/rootbox-0.0.9.tar.gz
+[2023-05-06 10:51:39] INFO root fetch - processPackages [cyber-record-util]: Downloading https://files.pythonhosted.org/packages/80/0a/8bf6d1eae513672c16072f855f5a1f7b741f22094685592db89173e81cbb/cyber-record-util-9.tar.gz
+[2023-05-06 10:51:39] INFO root fetch - processPackages [rootbox]: executing diffoscope
+[2023-05-06 10:51:39] INFO root fetch - processPackages [rootbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rootbox-0.0.8.tar.gz tmp/rootbox-0.0.9.tar.gz --markdown 20230506/r/rootbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 10:51:39] INFO root fetch - processPackages [cyber-record-util]: executing diffoscope
+[2023-05-06 10:51:39] INFO root fetch - processPackages [cyber-record-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyber-record-util-8.tar.gz tmp/cyber-record-util-9.tar.gz --markdown 20230506/c/cyber-record-util/8-9/diff.md --exclude *.pyd
+[2023-05-06 10:51:40] INFO root fetch - main [MainThread]: End processing [p-ttauto-crawler]: success
+[2023-05-06 10:51:40] INFO root fetch - main [MainThread]: End processing [p-ttauto-crawler]: success
+[2023-05-06 10:51:40] INFO root fetch - main [MainThread]: End processing [usls]: success
+[2023-05-06 10:51:40] INFO root fetch - main [MainThread]: End processing [qfinuwa]: success
+[2023-05-06 10:51:41] INFO root fetch - main [MainThread]: End processing [rootbox]: success
+[2023-05-06 10:51:41] INFO root fetch - main [MainThread]: End processing [cyber-record-util]: success
+[2023-05-06 10:51:55] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-05-06 10:51:55] INFO root fetch - main [MainThread]: Store serial: [17998344]
