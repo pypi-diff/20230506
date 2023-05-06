@@ -10459,3 +10459,26 @@ EOFError: EOF read where object expected
 [2023-05-06 14:32:47] INFO root fetch - main [MainThread]: End processing [betanegbinfit]: success
 [2023-05-06 14:32:48] INFO root fetch - main [MainThread]: End processing [zengl]: success
 [2023-05-06 14:32:48] INFO root fetch - main [MainThread]: Store serial: [17999605]
+[2023-05-06 14:37:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999605]
+[2023-05-06 14:37:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 14:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxsnn
+[2023-05-06 14:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-erp-framework
+[2023-05-06 14:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: enhancedocs
+[2023-05-06 14:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: syops
+[2023-05-06 14:37:57] INFO root fetch - processPackages [enhancedocs]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-06 14:37:57] WARNING root fetch - processPackages [django-erp-framework]: Skipping, unable to determine old version
+[2023-05-06 14:37:57] INFO root fetch - main [MainThread]: End processing [django-erp-framework] error
+[2023-05-06 14:37:57] WARNING root fetch - processPackages [jaxsnn]: Skipping, unable to determine old version
+[2023-05-06 14:37:57] INFO root fetch - main [MainThread]: End processing [jaxsnn] error
+[2023-05-06 14:37:57] INFO root fetch - processPackages [syops]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-06 14:37:57] INFO root fetch - processPackages [enhancedocs]: Downloading https://files.pythonhosted.org/packages/6c/f6/97299bbfa449c8b90b6c6a72032aa0844eacf584d50883566b979bef2089/enhancedocs-0.5.4.tar.gz
+[2023-05-06 14:37:57] INFO root fetch - processPackages [syops]: Downloading https://files.pythonhosted.org/packages/a8/02/fa5df92edfb96abd7a0fb76a049b1536a2301fd7f02b98ca02456b3d7a9b/syops-0.0.4.tar.gz
+[2023-05-06 14:37:57] INFO root fetch - processPackages [enhancedocs]: Downloading https://files.pythonhosted.org/packages/0a/c9/73f9fa29a65e67956f0ffde9721a3bd4b3c94fa9d14d34294277ca520aca/enhancedocs-0.5.5.tar.gz
+[2023-05-06 14:37:57] INFO root fetch - processPackages [syops]: Downloading https://files.pythonhosted.org/packages/30/d7/ff58b08e299db0df20987dc77ff14e1b4dfc1fe24b754abff3b5e21f3469/syops-0.0.5-py3-none-any.whl
+[2023-05-06 14:37:57] INFO root fetch - processPackages [enhancedocs]: executing diffoscope
+[2023-05-06 14:37:57] INFO root fetch - processPackages [enhancedocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhancedocs-0.5.4.tar.gz tmp/enhancedocs-0.5.5.tar.gz --markdown 20230506/e/enhancedocs/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-06 14:37:58] INFO root fetch - processPackages [syops]: executing diffoscope
+[2023-05-06 14:37:58] INFO root fetch - processPackages [syops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syops-0.0.4.tar.gz tmp/syops-0.0.5-py3-none-any.whl.zip --markdown 20230506/s/syops/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-06 14:37:58] INFO root fetch - main [MainThread]: End processing [enhancedocs]: success
+[2023-05-06 14:37:58] INFO root fetch - main [MainThread]: End processing [syops]: success
+[2023-05-06 14:37:58] INFO root fetch - main [MainThread]: Store serial: [17999662]
