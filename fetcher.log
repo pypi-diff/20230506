@@ -13882,3 +13882,31 @@ EOFError: EOF read where object expected
 [2023-05-06 21:36:24] INFO root fetch - main [MainThread]: End processing [micropython-rp2-stubs]: success
 [2023-05-06 21:36:25] INFO root fetch - main [MainThread]: End processing [steammy]: success
 [2023-05-06 21:36:25] INFO root fetch - main [MainThread]: Store serial: [18001782]
+[2023-05-06 21:41:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001782]
+[2023-05-06 21:41:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 21:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iambic-core
+[2023-05-06 21:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coder-coder
+[2023-05-06 21:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gql
+[2023-05-06 21:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: duckcloud
+[2023-05-06 21:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SysInfo32
+[2023-05-06 21:41:34] WARNING root fetch - processPackages [SysInfo32]: Skipping, unable to determine old version
+[2023-05-06 21:41:34] INFO root fetch - main [MainThread]: End processing [SysInfo32] error
+[2023-05-06 21:41:34] INFO root fetch - processPackages [iambic-core]: New version: [0.6.3] Old Version: [0.6.1]
+[2023-05-06 21:41:34] INFO root fetch - processPackages [gql]: New version: [3.5.0b4] Old Version: [3.5.0b3]
+[2023-05-06 21:41:34] INFO root fetch - processPackages [duckcloud]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-06 21:41:34] WARNING root fetch - processPackages [coder-coder]: Skipping, unable to determine old version
+[2023-05-06 21:41:34] INFO root fetch - main [MainThread]: End processing [coder-coder] error
+[2023-05-06 21:41:34] INFO root fetch - processPackages [iambic-core]: Downloading https://files.pythonhosted.org/packages/00/a4/f7da8f861e6b1496d3a582d6c205c62f22fe142cf34812c42afd34351bae/iambic_core-0.6.1.tar.gz
+[2023-05-06 21:41:34] INFO root fetch - processPackages [duckcloud]: Downloading https://files.pythonhosted.org/packages/00/4b/156ff5aa9d69af739026bd7acd69c84d9519f2122d770f61065a1e97ed2d/duckcloud-0.2.1.tar.gz
+[2023-05-06 21:41:34] INFO root fetch - processPackages [gql]: Downloading https://files.pythonhosted.org/packages/f8/cc/442255cd6ed9ff126ff1a0bd7a7d4509614c7f0cda7aa9e92355b042761b/gql-3.5.0b4.tar.gz
+[2023-05-06 21:41:34] INFO root fetch - processPackages [duckcloud]: executing diffoscope
+[2023-05-06 21:41:34] INFO root fetch - processPackages [duckcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckcloud-0.2.0.tar.gz tmp/duckcloud-0.2.1.tar.gz --markdown 20230506/d/duckcloud/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 21:41:34] INFO root fetch - processPackages [gql]: executing diffoscope
+[2023-05-06 21:41:34] INFO root fetch - processPackages [gql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gql-3.5.0b3.tar.gz tmp/gql-3.5.0b4.tar.gz --markdown 20230506/g/gql/3.5.0b3-3.5.0b4/diff.md --exclude *.pyd
+[2023-05-06 21:41:34] INFO root fetch - processPackages [iambic-core]: Downloading https://files.pythonhosted.org/packages/89/17/bfa863d9477fa8f92614a965c67036e41bc9833d0444fd29de71a3cf8b78/iambic_core-0.6.3.tar.gz
+[2023-05-06 21:41:34] INFO root fetch - processPackages [iambic-core]: executing diffoscope
+[2023-05-06 21:41:34] INFO root fetch - processPackages [iambic-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iambic_core-0.6.1.tar.gz tmp/iambic_core-0.6.3.tar.gz --markdown 20230506/i/iambic-core/0.6.1-0.6.3/diff.md --exclude *.pyd
+[2023-05-06 21:41:35] INFO root fetch - main [MainThread]: End processing [duckcloud]: success
+[2023-05-06 21:41:36] INFO root fetch - main [MainThread]: End processing [iambic-core]: success
+[2023-05-06 21:41:36] INFO root fetch - main [MainThread]: End processing [gql]: success
+[2023-05-06 21:41:36] INFO root fetch - main [MainThread]: Store serial: [18001801]
