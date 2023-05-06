@@ -9629,3 +9629,78 @@ EOFError: EOF read where object expected
 [2023-05-06 13:14:14] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
 [2023-05-06 13:14:14] INFO root fetch - main [MainThread]: End processing [spiderx]: success
 [2023-05-06 13:14:14] INFO root fetch - main [MainThread]: Store serial: [17999131]
+[2023-05-06 13:19:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999131]
+[2023-05-06 13:19:23] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-06 13:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: renault-api-lite
+[2023-05-06 13:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbt-ai
+[2023-05-06 13:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frontengine
+[2023-05-06 13:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: frontengine-dev
+[2023-05-06 13:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nlptoolssna
+[2023-05-06 13:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbt-ai
+[2023-05-06 13:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vents
+[2023-05-06 13:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-erp-framework
+[2023-05-06 13:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: interactive-multi-category-table
+[2023-05-06 13:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: semisup-segmentation
+[2023-05-06 13:19:23] INFO root fetch - processPackages [frontengine-dev]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 13:19:23] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 13:19:23] INFO root fetch - processPackages [frontengine]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 13:19:23] INFO root fetch - processPackages [nlptoolssna]: New version: [0.8.0] Old Version: [0.7.9]
+[2023-05-06 13:19:23] INFO root fetch - processPackages [vents]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 13:19:23] INFO root fetch - processPackages [dbt-ai]: New version: [0.0.4a0] Old Version: [0.0.3]
+[2023-05-06 13:19:23] INFO root fetch - processPackages [dbt-ai]: New version: [0.0.4a0] Old Version: [0.0.3]
+[2023-05-06 13:19:23] INFO root fetch - processPackages [frontengine-dev]: executing diffoscope
+[2023-05-06 13:19:23] INFO root fetch - processPackages [renault-api-lite]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-06 13:19:23] INFO root fetch - processPackages [frontengine-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine_dev-0.0.1.tar.gz tmp/frontengine_dev-0.0.2.tar.gz --markdown 20230506/f/frontengine-dev/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 13:19:23] WARNING root fetch - processPackages [django-erp-framework]: Skipping, unable to determine old version
+[2023-05-06 13:19:23] INFO root fetch - processPackages [django-erp-framework]: Start processing: tronapi-JCO
+[2023-05-06 13:19:23] INFO root fetch - main [MainThread]: End processing [django-erp-framework] error
+[2023-05-06 13:19:23] WARNING root fetch - processPackages [interactive-multi-category-table]: Skipping, unable to determine old version
+[2023-05-06 13:19:23] INFO root fetch - processPackages [frontengine]: executing diffoscope
+[2023-05-06 13:19:23] INFO root fetch - processPackages [interactive-multi-category-table]: Start processing: panfeed
+[2023-05-06 13:19:23] INFO root fetch - main [MainThread]: End processing [interactive-multi-category-table] error
+[2023-05-06 13:19:23] INFO root fetch - processPackages [frontengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine-0.0.1.tar.gz tmp/frontengine-0.0.2.tar.gz --markdown 20230506/f/frontengine/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 13:19:23] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 13:19:23] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 13:19:23] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 13:19:23] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.7.9.tar.gz tmp/nlptoolssna-0.8.0.tar.gz --markdown 20230506/n/nlptoolssna/0.7.9-0.8.0/diff.md --exclude *.pyd
+[2023-05-06 13:19:23] INFO root fetch - processPackages [tronapi-JCO]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-05-06 13:19:23] INFO root fetch - processPackages [panfeed]: New version: [1.2.1] Old Version: [1.1.1]
+[2023-05-06 13:19:23] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/22/c3/5f2f6f949a8780705e5cf7a6c0948d275eff87bcf2ed8c6e0d32282412ed/dbt-ai-0.0.3.tar.gz
+[2023-05-06 13:19:23] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/22/c3/5f2f6f949a8780705e5cf7a6c0948d275eff87bcf2ed8c6e0d32282412ed/dbt-ai-0.0.3.tar.gz
+[2023-05-06 13:19:23] INFO root fetch - processPackages [vents]: Downloading https://files.pythonhosted.org/packages/2b/70/757961b9e0ce940aae2afeb1158ae09267d98ec1e8c35edd83e20f3fe081/vents-0.1.1.tar.gz
+[2023-05-06 13:19:23] INFO root fetch - processPackages [renault-api-lite]: Downloading https://files.pythonhosted.org/packages/99/0f/47f7451946892188e56437ec79a743d7d51781f59ad81e2c67efbab97b29/renault-api-lite-0.8.1.tar.gz
+[2023-05-06 13:19:23] INFO root fetch - processPackages [vents]: executing diffoscope
+[2023-05-06 13:19:23] INFO root fetch - processPackages [vents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vents-0.1.0.tar.gz tmp/vents-0.1.1.tar.gz --markdown 20230506/v/vents/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 13:19:23] INFO root fetch - processPackages [tronapi-JCO]: Downloading https://files.pythonhosted.org/packages/7a/24/1394b0dd1d24559beed3200c319bb23fd462c9844649ee9804b54ff2f3d9/tronapi-JCO-3.1.8.tar.gz
+[2023-05-06 13:19:23] INFO root fetch - processPackages [panfeed]: Downloading https://files.pythonhosted.org/packages/6e/9c/2647803d425aabaa0e89968962242f8182d42a10a54a483d55269b79172f/panfeed-1.1.1.tar.gz
+[2023-05-06 13:19:23] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/15/71/89556569369f1ffd85e76f94f62d7bcbb4b797868c5d6d2e4f7b845ad4ad/dbt-ai-0.0.4a0.tar.gz
+[2023-05-06 13:19:23] INFO root fetch - processPackages [dbt-ai]: Downloading https://files.pythonhosted.org/packages/15/71/89556569369f1ffd85e76f94f62d7bcbb4b797868c5d6d2e4f7b845ad4ad/dbt-ai-0.0.4a0.tar.gz
+[2023-05-06 13:19:24] INFO root fetch - processPackages [renault-api-lite]: Downloading https://files.pythonhosted.org/packages/8a/f8/6aa27060a81d0392e44e5fd606c8eb3418b6cb03c659612289ed9fa43996/renault-api-lite-0.8.2.tar.gz
+[2023-05-06 13:19:24] INFO root fetch - processPackages [dbt-ai]: executing diffoscope
+[2023-05-06 13:19:24] INFO root fetch - processPackages [dbt-ai]: executing diffoscope
+[2023-05-06 13:19:24] INFO root fetch - processPackages [dbt-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-ai-0.0.3.tar.gz tmp/dbt-ai-0.0.4a0.tar.gz --markdown 20230506/d/dbt-ai/0.0.3-0.0.4a0/diff.md --exclude *.pyd
+[2023-05-06 13:19:24] INFO root fetch - processPackages [dbt-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-ai-0.0.3.tar.gz tmp/dbt-ai-0.0.4a0.tar.gz --markdown 20230506/d/dbt-ai/0.0.3-0.0.4a0/diff.md --exclude *.pyd
+[2023-05-06 13:19:24] INFO root fetch - processPackages [panfeed]: Downloading https://files.pythonhosted.org/packages/c0/c3/d5e04f53099bea19581d76193ab1ec3cb60e49f3bcf71926a935a7495dc4/panfeed-1.2.1.tar.gz
+[2023-05-06 13:19:24] INFO root fetch - processPackages [tronapi-JCO]: Downloading https://files.pythonhosted.org/packages/6d/ec/a33142b161553ba771f96997039ebbeb62c82b2576bf7ad8ed673b86a24b/tronapi-JCO-3.1.9.tar.gz
+[2023-05-06 13:19:24] INFO root fetch - processPackages [renault-api-lite]: executing diffoscope
+[2023-05-06 13:19:24] INFO root fetch - processPackages [renault-api-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renault-api-lite-0.8.1.tar.gz tmp/renault-api-lite-0.8.2.tar.gz --markdown 20230506/r/renault-api-lite/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-06 13:19:24] INFO root fetch - processPackages [tronapi-JCO]: executing diffoscope
+[2023-05-06 13:19:24] INFO root fetch - processPackages [tronapi-JCO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tronapi-JCO-3.1.8.tar.gz tmp/tronapi-JCO-3.1.9.tar.gz --markdown 20230506/t/tronapi-JCO/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-05-06 13:19:24] INFO root fetch - processPackages [panfeed]: executing diffoscope
+[2023-05-06 13:19:24] INFO root fetch - processPackages [panfeed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panfeed-1.1.1.tar.gz tmp/panfeed-1.2.1.tar.gz --markdown 20230506/p/panfeed/1.1.1-1.2.1/diff.md --exclude *.pyd
+[2023-05-06 13:19:24] INFO root fetch - processPackages [semisup-segmentation]: Start processing: drf-openapi-schema
+[2023-05-06 13:19:24] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 13:19:24] INFO root fetch - processPackages [drf-openapi-schema]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 13:19:25] INFO root fetch - processPackages [drf-openapi-schema]: executing diffoscope
+[2023-05-06 13:19:25] INFO root fetch - processPackages [drf-openapi-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_openapi_schema-0.0.1.tar.gz tmp/drf_openapi_schema-0.0.2.tar.gz --markdown 20230506/d/drf-openapi-schema/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 13:19:25] INFO root fetch - main [MainThread]: End processing [frontengine-dev]: success
+[2023-05-06 13:19:25] INFO root fetch - main [MainThread]: End processing [frontengine]: success
+[2023-05-06 13:19:25] INFO root fetch - main [MainThread]: End processing [tronapi-JCO]: success
+[2023-05-06 13:19:25] INFO root fetch - main [MainThread]: End processing [dbt-ai]: success
+[2023-05-06 13:19:25] INFO root fetch - main [MainThread]: End processing [dbt-ai]: success
+[2023-05-06 13:19:25] INFO root fetch - main [MainThread]: End processing [renault-api-lite]: success
+[2023-05-06 13:19:25] INFO root fetch - main [MainThread]: End processing [vents]: success
+[2023-05-06 13:19:26] INFO root fetch - main [MainThread]: End processing [panfeed]: success
+[2023-05-06 13:19:26] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 13:19:26] INFO root fetch - main [MainThread]: End processing [drf-openapi-schema]: success
+[2023-05-06 13:19:26] INFO root fetch - main [MainThread]: Store serial: [17999176]
