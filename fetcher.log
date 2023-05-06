@@ -11780,3 +11780,41 @@ EOFError: EOF read where object expected
 [2023-05-06 17:15:33] INFO root fetch - main [MainThread]: End processing [dfdatetime]: success
 [2023-05-06 17:15:34] INFO root fetch - main [MainThread]: End processing [fastapi-template]: success
 [2023-05-06 17:15:34] INFO root fetch - main [MainThread]: Store serial: [18000498]
+[2023-05-06 17:20:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000498]
+[2023-05-06 17:20:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-06 17:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiostretchy
+[2023-05-06 17:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chainedci
+[2023-05-06 17:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pointclass
+[2023-05-06 17:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mljet
+[2023-05-06 17:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pagesnap
+[2023-05-06 17:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-l10n-es-ticketbai-batuz
+[2023-05-06 17:20:44] INFO root fetch - processPackages [pagesnap]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 17:20:44] INFO root fetch - processPackages [pointclass]: New version: [0.7] Old Version: [0.6]
+[2023-05-06 17:20:44] INFO root fetch - processPackages [chainedci]: New version: [1.5.27] Old Version: [1.5.26]
+[2023-05-06 17:20:44] INFO root fetch - processPackages [audiostretchy]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-06 17:20:44] WARNING root fetch - processPackages [mljet]: Skipping, unable to determine old version
+[2023-05-06 17:20:44] INFO root fetch - main [MainThread]: End processing [mljet] error
+[2023-05-06 17:20:44] INFO root fetch - processPackages [odoo14-addon-l10n-es-ticketbai-batuz]: New version: [14.0.1.2.2] Old Version: [14.0.1.2.1]
+[2023-05-06 17:20:44] INFO root fetch - processPackages [pagesnap]: Downloading https://files.pythonhosted.org/packages/3e/82/673401f761db26015e1424e08e9ed636737e680c92b3041f73252223dd8d/pagesnap-0.0.1.tar.gz
+[2023-05-06 17:20:44] INFO root fetch - processPackages [odoo14-addon-l10n-es-ticketbai-batuz]: Downloading https://files.pythonhosted.org/packages/13/3a/cdea222bab5d6927a8eff34bfca31571aad66caede155ed7db4f6269252a/odoo14_addon_l10n_es_ticketbai_batuz-14.0.1.2.1-py3-none-any.whl
+[2023-05-06 17:20:44] INFO root fetch - processPackages [pointclass]: Downloading https://files.pythonhosted.org/packages/b5/54/f914c9a02267c3300b65a9f40c91e78a6732e2cb22cd615d22e044c28054/pointclass-0.7.tar.gz
+[2023-05-06 17:20:44] INFO root fetch - processPackages [audiostretchy]: Downloading https://files.pythonhosted.org/packages/38/84/95367ec33ecc6260e438b256cadf849b949d794f4782c27cc343700206e7/audiostretchy-1.2.2.tar.gz
+[2023-05-06 17:20:44] INFO root fetch - processPackages [pointclass]: executing diffoscope
+[2023-05-06 17:20:44] INFO root fetch - processPackages [pointclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointclass-0.6.tar.gz tmp/pointclass-0.7.tar.gz --markdown 20230506/p/pointclass/0.6-0.7/diff.md --exclude *.pyd
+[2023-05-06 17:20:44] INFO root fetch - processPackages [chainedci]: Downloading https://files.pythonhosted.org/packages/cc/5b/74341a4f7de6199004b52920bc6f86441cfc0a5fcb3ef552fc9222b16ca4/chainedci-1.5.27.tar.gz
+[2023-05-06 17:20:44] INFO root fetch - processPackages [pagesnap]: Downloading https://files.pythonhosted.org/packages/df/f5/fd6b613bfc3e1340afcefc1830e048de479d1d022a1504fe53c0ed034dbb/pagesnap-0.0.2.tar.gz
+[2023-05-06 17:20:44] INFO root fetch - processPackages [odoo14-addon-l10n-es-ticketbai-batuz]: Downloading https://files.pythonhosted.org/packages/db/f9/9318c7a6ccf628dba8a2a2801fd7d4e6d0ec2be824986722e80920e6c5e5/odoo14_addon_l10n_es_ticketbai_batuz-14.0.1.2.2-py3-none-any.whl
+[2023-05-06 17:20:44] INFO root fetch - processPackages [chainedci]: executing diffoscope
+[2023-05-06 17:20:44] INFO root fetch - processPackages [chainedci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainedci-1.5.26.tar.gz tmp/chainedci-1.5.27.tar.gz --markdown 20230506/c/chainedci/1.5.26-1.5.27/diff.md --exclude *.pyd
+[2023-05-06 17:20:44] INFO root fetch - processPackages [audiostretchy]: executing diffoscope
+[2023-05-06 17:20:44] INFO root fetch - processPackages [audiostretchy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiostretchy-1.2.1.tar.gz tmp/audiostretchy-1.2.2.tar.gz --markdown 20230506/a/audiostretchy/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-06 17:20:44] INFO root fetch - processPackages [pagesnap]: executing diffoscope
+[2023-05-06 17:20:44] INFO root fetch - processPackages [pagesnap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pagesnap-0.0.1.tar.gz tmp/pagesnap-0.0.2.tar.gz --markdown 20230506/p/pagesnap/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 17:20:45] INFO root fetch - processPackages [odoo14-addon-l10n-es-ticketbai-batuz]: executing diffoscope
+[2023-05-06 17:20:45] INFO root fetch - processPackages [odoo14-addon-l10n-es-ticketbai-batuz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_es_ticketbai_batuz-14.0.1.2.1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_es_ticketbai_batuz-14.0.1.2.2-py3-none-any.whl.zip --markdown 20230506/o/odoo14-addon-l10n-es-ticketbai-batuz/14.0.1.2.1-14.0.1.2.2/diff.md --exclude *.pyd
+[2023-05-06 17:20:45] INFO root fetch - main [MainThread]: End processing [pointclass]: success
+[2023-05-06 17:20:46] INFO root fetch - main [MainThread]: End processing [chainedci]: success
+[2023-05-06 17:20:46] INFO root fetch - main [MainThread]: End processing [pagesnap]: success
+[2023-05-06 17:20:46] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-es-ticketbai-batuz]: success
+[2023-05-06 17:20:47] INFO root fetch - main [MainThread]: End processing [audiostretchy]: success
+[2023-05-06 17:20:47] INFO root fetch - main [MainThread]: Store serial: [18000527]
