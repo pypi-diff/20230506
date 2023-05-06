@@ -13814,3 +13814,71 @@ EOFError: EOF read where object expected
 [2023-05-06 21:31:12] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator]: success
 [2023-05-06 21:31:13] INFO root fetch - main [MainThread]: End processing [esentity]: success
 [2023-05-06 21:31:13] INFO root fetch - main [MainThread]: Store serial: [18001752]
+[2023-05-06 21:36:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001752]
+[2023-05-06 21:36:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 21:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckcloud
+[2023-05-06 21:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: replit-bot
+[2023-05-06 21:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mojo-xmodules
+[2023-05-06 21:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RaphaelSomaDIT
+[2023-05-06 21:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: micropython-rp2-stubs
+[2023-05-06 21:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pikachu-chem
+[2023-05-06 21:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: termimal
+[2023-05-06 21:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mojo-runtime
+[2023-05-06 21:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nashbanksync
+[2023-05-06 21:36:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: budgetcli
+[2023-05-06 21:36:21] INFO root fetch - processPackages [replit-bot]: New version: [4.2.9] Old Version: [4.2.8]
+[2023-05-06 21:36:21] INFO root fetch - processPackages [micropython-rp2-stubs]: New version: [1.20.0.post1] Old Version: [1.19.1.post9]
+[2023-05-06 21:36:21] INFO root fetch - processPackages [mojo-xmodules]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 21:36:21] INFO root fetch - processPackages [RaphaelSomaDIT]: New version: [2.6] Old Version: [2.5]
+[2023-05-06 21:36:21] INFO root fetch - processPackages [pikachu-chem]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 21:36:21] INFO root fetch - processPackages [termimal]: New version: [0.2] Old Version: [0.1]
+[2023-05-06 21:36:21] INFO root fetch - processPackages [mojo-runtime]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 21:36:21] INFO root fetch - processPackages [budgetcli]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-06 21:36:21] INFO root fetch - processPackages [duckcloud]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-06 21:36:21] INFO root fetch - processPackages [nashbanksync]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 21:36:22] INFO root fetch - processPackages [replit-bot]: executing diffoscope
+[2023-05-06 21:36:22] INFO root fetch - processPackages [replit-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replit-bot-4.2.8.tar.gz tmp/replit-bot-4.2.9.tar.gz --markdown 20230506/r/replit-bot/4.2.8-4.2.9/diff.md --exclude *.pyd
+[2023-05-06 21:36:22] INFO root fetch - processPackages [pikachu-chem]: executing diffoscope
+[2023-05-06 21:36:22] INFO root fetch - processPackages [pikachu-chem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pikachu-chem-1.0.8.tar.gz tmp/pikachu-chem-1.0.9.tar.gz --markdown 20230506/p/pikachu-chem/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 21:36:22] INFO root fetch - processPackages [duckcloud]: Downloading https://files.pythonhosted.org/packages/fd/32/267dde78440829c38a1371c0e4617c19682db9b0c98645e519d84cd5862d/duckcloud-0.1.0.tar.gz
+[2023-05-06 21:36:22] INFO root fetch - processPackages [termimal]: Downloading https://files.pythonhosted.org/packages/77/1b/d1127b7b00874b7c526d719f1d89d21569173d6d27dc3b73b39d52ac7b99/termimal-0.1.tar.gz
+[2023-05-06 21:36:22] INFO root fetch - processPackages [RaphaelSomaDIT]: Downloading https://files.pythonhosted.org/packages/63/20/048a46404f461c218994af8b40d068f10f33ae03056885f04e556bafb2e4/RaphaelSomaDIT-2.5-py3-none-any.whl
+[2023-05-06 21:36:22] INFO root fetch - processPackages [micropython-rp2-stubs]: Downloading https://files.pythonhosted.org/packages/13/6c/b9018cd374ccf7914abc0211e921644dc61dbe49c24625d84e6b97573cda/micropython_rp2_stubs-1.19.1.post9.tar.gz
+[2023-05-06 21:36:22] INFO root fetch - processPackages [budgetcli]: Downloading https://files.pythonhosted.org/packages/94/a6/fed847fd5a759de49c612e52dfbf7f05423cc1255255f1ca55b5b3152f9b/budgetcli-1.1.1.tar.gz
+[2023-05-06 21:36:22] INFO root fetch - processPackages [budgetcli]: executing diffoscope
+[2023-05-06 21:36:22] INFO root fetch - processPackages [budgetcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/budgetcli-1.1.0.tar.gz tmp/budgetcli-1.1.1.tar.gz --markdown 20230506/b/budgetcli/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-06 21:36:22] INFO root fetch - processPackages [mojo-xmodules]: executing diffoscope
+[2023-05-06 21:36:22] INFO root fetch - processPackages [mojo-xmodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_xmodules-0.0.8.tar.gz tmp/mojo_xmodules-0.0.9.tar.gz --markdown 20230506/m/mojo-xmodules/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 21:36:22] INFO root fetch - processPackages [termimal]: Downloading https://files.pythonhosted.org/packages/0c/f9/32e827e40aaf8434ee2fa6b72c465c43bb4f21478e2c183255b65f66c76b/termimal-0.2.tar.gz
+[2023-05-06 21:36:22] INFO root fetch - processPackages [nashbanksync]: executing diffoscope
+[2023-05-06 21:36:22] INFO root fetch - processPackages [nashbanksync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nashbanksync-0.1.8.tar.gz tmp/nashbanksync-0.1.9.tar.gz --markdown 20230506/n/nashbanksync/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 21:36:22] INFO root fetch - processPackages [mojo-runtime]: executing diffoscope
+[2023-05-06 21:36:22] INFO root fetch - processPackages [mojo-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_runtime-0.0.8.tar.gz tmp/mojo_runtime-0.0.9.tar.gz --markdown 20230506/m/mojo-runtime/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 21:36:22] INFO root fetch - processPackages [RaphaelSomaDIT]: Downloading https://files.pythonhosted.org/packages/7e/be/1dd8144f991bd5142563e08d0d894dad72d5fa33146dffee0faa89f91f7c/RaphaelSomaDIT-2.6-py3-none-any.whl
+[2023-05-06 21:36:22] INFO root fetch - processPackages [duckcloud]: Downloading https://files.pythonhosted.org/packages/25/ba/be00043aba0298e4d8f2361de708fd7d0efb2909be81aa92e126a368954a/duckcloud-0.2.0.tar.gz
+[2023-05-06 21:36:22] INFO root fetch - processPackages [termimal]: executing diffoscope
+[2023-05-06 21:36:22] INFO root fetch - processPackages [termimal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/termimal-0.1.tar.gz tmp/termimal-0.2.tar.gz --markdown 20230506/t/termimal/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-06 21:36:22] INFO root fetch - processPackages [RaphaelSomaDIT]: executing diffoscope
+[2023-05-06 21:36:22] INFO root fetch - processPackages [RaphaelSomaDIT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RaphaelSomaDIT-2.5-py3-none-any.whl.zip tmp/RaphaelSomaDIT-2.6-py3-none-any.whl.zip --markdown 20230506/R/RaphaelSomaDIT/2.5-2.6/diff.md --exclude *.pyd
+[2023-05-06 21:36:22] INFO root fetch - processPackages [micropython-rp2-stubs]: Downloading https://files.pythonhosted.org/packages/b1/eb/45d81b2baf70f6740d4de7e01ce20db5215ceb906ff8385e842b36fa3dd3/micropython_rp2_stubs-1.20.0.post1.tar.gz
+[2023-05-06 21:36:22] INFO root fetch - processPackages [duckcloud]: executing diffoscope
+[2023-05-06 21:36:22] INFO root fetch - processPackages [duckcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckcloud-0.1.0.tar.gz tmp/duckcloud-0.2.0.tar.gz --markdown 20230506/d/duckcloud/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 21:36:22] INFO root fetch - processPackages [micropython-rp2-stubs]: executing diffoscope
+[2023-05-06 21:36:22] INFO root fetch - processPackages [micropython-rp2-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micropython_rp2_stubs-1.19.1.post9.tar.gz tmp/micropython_rp2_stubs-1.20.0.post1.tar.gz --markdown 20230506/m/micropython-rp2-stubs/1.19.1.post9-1.20.0.post1/diff.md --exclude *.pyd
+[2023-05-06 21:36:23] INFO root fetch - processPackages [mojo-runtime]: Start processing: steammy
+[2023-05-06 21:36:23] INFO root fetch - main [MainThread]: End processing [mojo-runtime]: success
+[2023-05-06 21:36:23] INFO root fetch - processPackages [steammy]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 21:36:24] INFO root fetch - main [MainThread]: End processing [duckcloud]: success
+[2023-05-06 21:36:24] INFO root fetch - main [MainThread]: End processing [budgetcli]: success
+[2023-05-06 21:36:24] INFO root fetch - processPackages [steammy]: Downloading https://files.pythonhosted.org/packages/f1/a5/79edd3c3521949ffc22f612de8f6bc85019bcca0055477451da670631a0e/steammy-0.1.2-py3-none-any.whl
+[2023-05-06 21:36:24] INFO root fetch - main [MainThread]: End processing [termimal]: success
+[2023-05-06 21:36:24] INFO root fetch - main [MainThread]: End processing [replit-bot]: success
+[2023-05-06 21:36:24] INFO root fetch - main [MainThread]: End processing [nashbanksync]: success
+[2023-05-06 21:36:24] INFO root fetch - main [MainThread]: End processing [RaphaelSomaDIT]: success
+[2023-05-06 21:36:24] INFO root fetch - processPackages [steammy]: executing diffoscope
+[2023-05-06 21:36:24] INFO root fetch - processPackages [steammy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steammy-0.1.1.tar.gz tmp/steammy-0.1.2-py3-none-any.whl.zip --markdown 20230506/s/steammy/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 21:36:24] INFO root fetch - main [MainThread]: End processing [pikachu-chem]: success
+[2023-05-06 21:36:24] INFO root fetch - main [MainThread]: End processing [mojo-xmodules]: success
+[2023-05-06 21:36:24] INFO root fetch - main [MainThread]: End processing [micropython-rp2-stubs]: success
+[2023-05-06 21:36:25] INFO root fetch - main [MainThread]: End processing [steammy]: success
+[2023-05-06 21:36:25] INFO root fetch - main [MainThread]: Store serial: [18001782]
