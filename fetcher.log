@@ -5573,3 +5573,31 @@
 [2023-05-06 06:16:53] INFO root fetch - main [MainThread]: End processing [flatnet]: success
 [2023-05-06 06:17:03] INFO root fetch - main [MainThread]: End processing [ezdxf]: success
 [2023-05-06 06:17:03] INFO root fetch - main [MainThread]: Store serial: [17996756]
+[2023-05-06 06:22:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996756]
+[2023-05-06 06:22:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 06:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatnet
+[2023-05-06 06:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: findmyorder
+[2023-05-06 06:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spacetool
+[2023-05-06 06:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: callingcardstools
+[2023-05-06 06:22:12] INFO root fetch - processPackages [spacetool]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-06 06:22:12] INFO root fetch - processPackages [flatnet]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-06 06:22:12] INFO root fetch - processPackages [findmyorder]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-05-06 06:22:12] INFO root fetch - processPackages [callingcardstools]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 06:22:12] INFO root fetch - processPackages [findmyorder]: Downloading https://files.pythonhosted.org/packages/a7/ab/00a73d60010fbd409ea1cd185a5f071daa1762a0427495d5adb0910b2f00/findmyorder-1.3.1.tar.gz
+[2023-05-06 06:22:12] INFO root fetch - processPackages [callingcardstools]: Downloading https://files.pythonhosted.org/packages/cf/02/fb8d6a17c0a0589e2cf3015fea27d7901dd70eb6e4df8733d0a38fc3aafe/callingcardstools-0.1.0.tar.gz
+[2023-05-06 06:22:12] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-05-06 06:22:12] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.3.0.tar.gz tmp/findmyorder-1.3.1.tar.gz --markdown 20230506/f/findmyorder/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-05-06 06:22:12] INFO root fetch - processPackages [spacetool]: Downloading https://files.pythonhosted.org/packages/45/60/a5c4e631ca3cb7cd8e51df4f9eec7750693ad968909ce9e7437b3933424c/spacetool-1.0.4.tar.gz
+[2023-05-06 06:22:12] INFO root fetch - processPackages [flatnet]: Downloading https://files.pythonhosted.org/packages/9b/be/89302309c6fd5acfe4419fbd13517c911c9a17637b35d560204d1c0bbcdf/flatnet-0.1.2.tar.gz
+[2023-05-06 06:22:12] INFO root fetch - processPackages [spacetool]: executing diffoscope
+[2023-05-06 06:22:12] INFO root fetch - processPackages [spacetool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacetool-1.0.3.tar.gz tmp/spacetool-1.0.4.tar.gz --markdown 20230506/s/spacetool/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-06 06:22:12] INFO root fetch - processPackages [flatnet]: executing diffoscope
+[2023-05-06 06:22:12] INFO root fetch - processPackages [flatnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatnet-0.1.1.tar.gz tmp/flatnet-0.1.2.tar.gz --markdown 20230506/f/flatnet/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-06 06:22:13] INFO root fetch - processPackages [callingcardstools]: Downloading https://files.pythonhosted.org/packages/d0/17/42b922a366299119313f06192c812d2b1101c994842e2be998d5a636a941/callingcardstools-0.1.1.tar.gz
+[2023-05-06 06:22:13] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-05-06 06:22:13] INFO root fetch - main [MainThread]: End processing [spacetool]: success
+[2023-05-06 06:22:13] INFO root fetch - main [MainThread]: End processing [flatnet]: success
+[2023-05-06 06:22:14] INFO root fetch - processPackages [callingcardstools]: executing diffoscope
+[2023-05-06 06:22:14] INFO root fetch - processPackages [callingcardstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/callingcardstools-0.1.0.tar.gz tmp/callingcardstools-0.1.1.tar.gz --markdown 20230506/c/callingcardstools/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 06:22:16] INFO root fetch - main [MainThread]: End processing [callingcardstools]: success
+[2023-05-06 06:22:16] INFO root fetch - main [MainThread]: Store serial: [17996822]
