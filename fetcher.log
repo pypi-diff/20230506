@@ -13302,3 +13302,57 @@ EOFError: EOF read where object expected
 [2023-05-06 20:25:41] INFO root fetch - main [MainThread]: End processing [kalm]: success
 [2023-05-06 20:25:42] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
 [2023-05-06 20:25:42] INFO root fetch - main [MainThread]: Store serial: [18001453]
+[2023-05-06 20:30:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001453]
+[2023-05-06 20:30:50] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 20:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alacorder
+[2023-05-06 20:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyspedas
+[2023-05-06 20:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: telebox
+[2023-05-06 20:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlgenotype
+[2023-05-06 20:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: evalAIRR
+[2023-05-06 20:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: common-image-tools
+[2023-05-06 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: solution-harsha
+[2023-05-06 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tg-botting
+[2023-05-06 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kalm
+[2023-05-06 20:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dank-mids
+[2023-05-06 20:30:51] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 20:30:51] INFO root fetch - processPackages [mlgenotype]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 20:30:51] WARNING root fetch - processPackages [common-image-tools]: Skipping, unable to determine old version
+[2023-05-06 20:30:51] INFO root fetch - main [MainThread]: End processing [common-image-tools] error
+[2023-05-06 20:30:51] INFO root fetch - processPackages [pyspedas]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-06 20:30:51] INFO root fetch - processPackages [telebox]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-06 20:30:51] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-05-06 20:30:51] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230506/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 20:30:51] INFO root fetch - processPackages [alacorder]: New version: [80.3.2] Old Version: [80.3.1]
+[2023-05-06 20:30:51] INFO root fetch - processPackages [mlgenotype]: executing diffoscope
+[2023-05-06 20:30:51] INFO root fetch - processPackages [mlgenotype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlgenotype-0.1.8.tar.gz tmp/mlgenotype-0.1.9.tar.gz --markdown 20230506/m/mlgenotype/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 20:30:51] INFO root fetch - processPackages [pyspedas]: executing diffoscope
+[2023-05-06 20:30:51] INFO root fetch - processPackages [pyspedas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspedas-1.4.8.tar.gz tmp/pyspedas-1.4.9.tar.gz --markdown 20230506/p/pyspedas/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-06 20:30:52] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/15/84/b094930d74ceef99de190b81e1614681405a3311954873e0aabcef8da817/alacorder-80.3.2.tar.gz
+[2023-05-06 20:30:52] INFO root fetch - processPackages [solution-harsha]: New version: [0.5] Old Version: [0.3]
+[2023-05-06 20:30:52] INFO root fetch - processPackages [kalm]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-06 20:30:52] INFO root fetch - processPackages [telebox]: executing diffoscope
+[2023-05-06 20:30:52] INFO root fetch - processPackages [telebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telebox-0.9.1.tar.gz tmp/telebox-0.9.2.tar.gz --markdown 20230506/t/telebox/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-06 20:30:52] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-05-06 20:30:52] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.1.5.tar.gz tmp/kalm-0.2.0.tar.gz --markdown 20230506/k/kalm/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 20:30:52] INFO root fetch - processPackages [tg-botting]: New version: [1.6] Old Version: [1.5.9]
+[2023-05-06 20:30:52] INFO root fetch - processPackages [solution-harsha]: executing diffoscope
+[2023-05-06 20:30:52] INFO root fetch - processPackages [solution-harsha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solution_harsha-0.3.tar.gz tmp/solution_harsha-0.5.tar.gz --markdown 20230506/s/solution-harsha/0.3-0.5/diff.md --exclude *.pyd
+[2023-05-06 20:30:52] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-05-06 20:30:52] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-06 20:30:52] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.3.1.tar.gz tmp/alacorder-80.3.2.tar.gz --markdown 20230506/a/alacorder/80.3.1-80.3.2/diff.md --exclude *.pyd
+[2023-05-06 20:30:52] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-05-06 20:30:52] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230506/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-05-06 20:30:52] INFO root fetch - processPackages [tg-botting]: Downloading https://files.pythonhosted.org/packages/14/66/72d219855571daaee5a6d932816d5d4c63815f9783b6cdd464525a80be6d/tg-botting-1.5.9.tar.gz
+[2023-05-06 20:30:52] INFO root fetch - processPackages [tg-botting]: Downloading https://files.pythonhosted.org/packages/53/59/6d3d3865aed0442cb00dd1b45354e4ec50bdbafcbc47036a991fe887c586/tg-botting-1.6.tar.gz
+[2023-05-06 20:30:52] INFO root fetch - processPackages [tg-botting]: executing diffoscope
+[2023-05-06 20:30:52] INFO root fetch - processPackages [tg-botting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tg-botting-1.5.9.tar.gz tmp/tg-botting-1.6.tar.gz --markdown 20230506/t/tg-botting/1.5.9-1.6/diff.md --exclude *.pyd
+[2023-05-06 20:30:52] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-05-06 20:30:52] INFO root fetch - main [MainThread]: End processing [mlgenotype]: success
+[2023-05-06 20:30:53] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-05-06 20:30:53] INFO root fetch - main [MainThread]: End processing [solution-harsha]: success
+[2023-05-06 20:30:53] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-06 20:30:53] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-05-06 20:30:54] INFO root fetch - main [MainThread]: End processing [tg-botting]: success
+[2023-05-06 20:30:54] INFO root fetch - main [MainThread]: End processing [telebox]: success
+[2023-05-06 20:30:56] INFO root fetch - main [MainThread]: End processing [pyspedas]: success
+[2023-05-06 20:30:56] INFO root fetch - main [MainThread]: Store serial: [18001487]
