@@ -8806,3 +8806,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 11:50:06] INFO root fetch - processPackages [cikuu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cikuu-2022.8.1.tar.gz tmp/cikuu-2022.8.2.tar.gz --markdown 20230506/c/cikuu/2022.8.1-2022.8.2/diff.md --exclude *.pyd
 [2023-05-06 11:50:13] INFO root fetch - main [MainThread]: End processing [cikuu]: success
 [2023-05-06 11:50:13] INFO root fetch - main [MainThread]: Store serial: [17998705]
+[2023-05-06 11:55:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998705]
+[2023-05-06 11:55:22] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 11:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nkust-ucl-k12-bot
+[2023-05-06 11:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: masonite-ready-auth
+[2023-05-06 11:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zero-3rdparty
+[2023-05-06 11:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: model-lib
+[2023-05-06 11:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docker-compose-parser
+[2023-05-06 11:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: compose-chart-export
+[2023-05-06 11:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wizata-dsapi
+[2023-05-06 11:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sysexecute
+[2023-05-06 11:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sysexecute
+[2023-05-06 11:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pants-py-deploy
+[2023-05-06 11:55:22] WARNING root fetch - processPackages [nkust-ucl-k12-bot]: Skipping, unable to determine old version
+[2023-05-06 11:55:22] INFO root fetch - processPackages [nkust-ucl-k12-bot]: Start processing: assistance-bot
+[2023-05-06 11:55:22] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot] error
+[2023-05-06 11:55:22] INFO root fetch - processPackages [compose-chart-export]: New version: [0.0.16] Old Version: [0.0.15rc4]
+[2023-05-06 11:55:22] INFO root fetch - processPackages [sysexecute]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-06 11:55:22] INFO root fetch - processPackages [docker-compose-parser]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-05-06 11:55:22] INFO root fetch - processPackages [pants-py-deploy]: New version: [0.0.15rc7] Old Version: [0.0.15rc6]
+[2023-05-06 11:55:22] INFO root fetch - processPackages [model-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 11:55:22] INFO root fetch - processPackages [zero-3rdparty]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 11:55:22] INFO root fetch - processPackages [masonite-ready-auth]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-06 11:55:22] INFO root fetch - processPackages [sysexecute]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-06 11:55:22] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 11:55:23] WARNING root fetch - processPackages [assistance-bot]: Skipping, unable to determine old version
+[2023-05-06 11:55:23] INFO root fetch - processPackages [pants-py-deploy]: executing diffoscope
+[2023-05-06 11:55:23] INFO root fetch - main [MainThread]: End processing [assistance-bot] error
+[2023-05-06 11:55:23] INFO root fetch - processPackages [pants-py-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pants_py_deploy-0.0.15rc6-py3-none-any.whl.zip tmp/pants_py_deploy-0.0.15rc7-py3-none-any.whl.zip --markdown 20230506/p/pants-py-deploy/0.0.15rc6-0.0.15rc7/diff.md --exclude *.pyd
+[2023-05-06 11:55:23] INFO root fetch - processPackages [sysexecute]: Downloading https://files.pythonhosted.org/packages/2d/b0/1bd2bcb43cbebcb4f6316021898b8da3324fa778cff51779f224121c821b/sysexecute-1.2.0.tar.gz
+[2023-05-06 11:55:23] INFO root fetch - processPackages [sysexecute]: Downloading https://files.pythonhosted.org/packages/2d/b0/1bd2bcb43cbebcb4f6316021898b8da3324fa778cff51779f224121c821b/sysexecute-1.2.0.tar.gz
+[2023-05-06 11:55:23] INFO root fetch - processPackages [compose-chart-export]: Downloading https://files.pythonhosted.org/packages/dd/3d/bcd6cb180f8a340fae6ef72897043288e3bdda290ee49fce9720b4c9d54c/compose_chart_export-0.0.16-py3-none-any.whl
+[2023-05-06 11:55:23] INFO root fetch - processPackages [masonite-ready-auth]: Downloading https://files.pythonhosted.org/packages/5f/fe/9bbe353bbf2a233338fd839b0bd15fa611832b00737be41d796a167c32e3/masonite-ready_auth-0.0.1.tar.gz
+[2023-05-06 11:55:23] INFO root fetch - processPackages [sysexecute]: Downloading https://files.pythonhosted.org/packages/6a/a6/9805c1f7bfb7c724914a4e9982a0ce08ada8429c03ceb473a262a19018f4/sysexecute-1.2.1.tar.gz
+[2023-05-06 11:55:23] INFO root fetch - processPackages [docker-compose-parser]: Downloading https://files.pythonhosted.org/packages/c7/d0/8998761dea67b3c8f6b6f789bc2c21309e481e70a1b2ddba539c3f9ee0c8/docker_compose_parser-0.0.16-py3-none-any.whl
+[2023-05-06 11:55:23] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-05-06 11:55:23] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230506/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 11:55:23] INFO root fetch - processPackages [compose-chart-export]: executing diffoscope
+[2023-05-06 11:55:23] INFO root fetch - processPackages [compose-chart-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compose_chart_export-0.0.15rc4-py3-none-any.whl.zip tmp/compose_chart_export-0.0.16-py3-none-any.whl.zip --markdown 20230506/c/compose-chart-export/0.0.15rc4-0.0.16/diff.md --exclude *.pyd
+[2023-05-06 11:55:23] INFO root fetch - processPackages [sysexecute]: Downloading https://files.pythonhosted.org/packages/6a/a6/9805c1f7bfb7c724914a4e9982a0ce08ada8429c03ceb473a262a19018f4/sysexecute-1.2.1.tar.gz
+[2023-05-06 11:55:23] INFO root fetch - processPackages [zero-3rdparty]: executing diffoscope
+[2023-05-06 11:55:23] INFO root fetch - processPackages [zero-3rdparty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zero_3rdparty-0.0.8-py3-none-any.whl.zip tmp/zero_3rdparty-0.0.9-py3-none-any.whl.zip --markdown 20230506/z/zero-3rdparty/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 11:55:23] INFO root fetch - processPackages [model-lib]: executing diffoscope
+[2023-05-06 11:55:23] INFO root fetch - processPackages [model-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_lib-0.0.8-py3-none-any.whl.zip tmp/model_lib-0.0.9-py3-none-any.whl.zip --markdown 20230506/m/model-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 11:55:23] INFO root fetch - processPackages [sysexecute]: executing diffoscope
+[2023-05-06 11:55:23] INFO root fetch - processPackages [sysexecute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sysexecute-1.2.0.tar.gz tmp/sysexecute-1.2.1.tar.gz --markdown 20230506/s/sysexecute/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-06 11:55:23] INFO root fetch - processPackages [docker-compose-parser]: executing diffoscope
+[2023-05-06 11:55:23] INFO root fetch - processPackages [docker-compose-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker_compose_parser-0.0.15-py3-none-any.whl.zip tmp/docker_compose_parser-0.0.16-py3-none-any.whl.zip --markdown 20230506/d/docker-compose-parser/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-05-06 11:55:23] INFO root fetch - processPackages [sysexecute]: executing diffoscope
+[2023-05-06 11:55:23] INFO root fetch - processPackages [sysexecute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sysexecute-1.2.0.tar.gz tmp/sysexecute-1.2.1.tar.gz --markdown 20230506/s/sysexecute/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-06 11:55:23] INFO root fetch - processPackages [masonite-ready-auth]: Downloading https://files.pythonhosted.org/packages/36/d9/a7340726bc14d2df8ab0a064ccd336aaed893243795cb39eab1e8b120a38/masonite-ready_auth-0.0.2.tar.gz
+[2023-05-06 11:55:23] INFO root fetch - processPackages [masonite-ready-auth]: executing diffoscope
+[2023-05-06 11:55:23] INFO root fetch - processPackages [masonite-ready-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masonite-ready_auth-0.0.1.tar.gz tmp/masonite-ready_auth-0.0.2.tar.gz --markdown 20230506/m/masonite-ready-auth/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-06 11:55:24] INFO root fetch - main [MainThread]: End processing [pants-py-deploy]: success
+[2023-05-06 11:55:24] INFO root fetch - main [MainThread]: End processing [compose-chart-export]: success
+[2023-05-06 11:55:24] INFO root fetch - main [MainThread]: End processing [model-lib]: success
+[2023-05-06 11:55:24] INFO root fetch - main [MainThread]: End processing [docker-compose-parser]: success
+[2023-05-06 11:55:24] INFO root fetch - main [MainThread]: End processing [zero-3rdparty]: success
+[2023-05-06 11:55:25] INFO root fetch - main [MainThread]: End processing [masonite-ready-auth]: success
+[2023-05-06 11:55:25] INFO root fetch - main [MainThread]: End processing [sysexecute]: success
+[2023-05-06 11:55:25] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-05-06 11:55:25] INFO root fetch - main [MainThread]: End processing [sysexecute]: success
+[2023-05-06 11:55:25] INFO root fetch - main [MainThread]: Store serial: [17998739]
