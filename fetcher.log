@@ -6990,3 +6990,87 @@
 [2023-05-06 09:10:04] INFO root fetch - main [MainThread]: End processing [pulumi-rancher2]: success
 [2023-05-06 09:10:12] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2023-05-06 09:10:12] INFO root fetch - main [MainThread]: Store serial: [17997647]
+[2023-05-06 09:15:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997647]
+[2023-05-06 09:15:21] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-06 09:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-models-nightly
+[2023-05-06 09:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cos-python-sdk-v5
+[2023-05-06 09:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-hub-nightly
+[2023-05-06 09:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyroporn
+[2023-05-06 09:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: napari-amdtrk
+[2023-05-06 09:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qgate-perf
+[2023-05-06 09:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: notion-vzhd1701-fork
+[2023-05-06 09:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Jlab
+[2023-05-06 09:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: np-queuey
+[2023-05-06 09:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: oregpt
+[2023-05-06 09:15:21] INFO root fetch - processPackages [cos-python-sdk-v5]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-06 09:15:21] INFO root fetch - processPackages [pyroporn]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 09:15:21] INFO root fetch - processPackages [napari-amdtrk]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-06 09:15:21] INFO root fetch - processPackages [oregpt]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-06 09:15:21] INFO root fetch - processPackages [qgate-perf]: New version: [0.1.7rc1] Old Version: [0.1.6]
+[2023-05-06 09:15:21] INFO root fetch - processPackages [notion-vzhd1701-fork]: New version: [0.0.37] Old Version: [0.0.36]
+[2023-05-06 09:15:21] INFO root fetch - processPackages [np-queuey]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-06 09:15:21] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-06 09:15:21] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-05-06 09:15:21] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-05-06 09:15:21] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-05-06 09:15:21] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230506/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-06 09:15:21] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-05-06 09:15:21] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230506/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-05-06 09:15:21] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/b4/5f/1385325cc283649001afaed91457454f2c951df5ea3de1ccfb6d58ec0beb/pyroporn-0.1.9.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/3c/de/7c45ccb0b6bb88e10feb82c71ed7b297ee4502e6a4a59618ebfec10b1d26/np_queuey-0.2.4.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [notion-vzhd1701-fork]: Downloading https://files.pythonhosted.org/packages/22/de/bf39964ff563671e066dce64d7503b9f693aa1a650234bb164be3a540e64/notion-vzhd1701-fork-0.0.36.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [napari-amdtrk]: Downloading https://files.pythonhosted.org/packages/05/42/2dcb7de6384c201b8421ac46cf39d5b10f36a7361496c358df7d59d9b766/napari-amdtrk-1.0.0.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [qgate-perf]: Downloading https://files.pythonhosted.org/packages/4b/01/c8590911044c9d891c1e562a569626e43669ce3db55a792ca29c7e55c7a5/qgate_perf-0.1.7rc1-py3-none-any.whl
+[2023-05-06 09:15:21] INFO root fetch - processPackages [cos-python-sdk-v5]: Downloading https://files.pythonhosted.org/packages/56/00/adfd8c15cfcfcbfbe41eef63d59bfc1e0a26a69de452322f18291be4eeff/cos-python-sdk-v5-1.9.8.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [oregpt]: Downloading https://files.pythonhosted.org/packages/c7/18/e30fd1ded1a994f1ba866262669735f267ba41b2e9075b4386a5d5f8b2ed/oregpt-0.1.0.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-06 09:15:21] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.1.8.tar.gz tmp/pyroporn-0.1.9.tar.gz --markdown 20230506/p/pyroporn/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 09:15:21] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-05-06 09:15:21] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230506/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-05-06 09:15:21] INFO root fetch - processPackages [qgate-perf]: executing diffoscope
+[2023-05-06 09:15:21] INFO root fetch - processPackages [qgate-perf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgate_perf-0.1.6-py3-none-any.whl.zip tmp/qgate_perf-0.1.7rc1-py3-none-any.whl.zip --markdown 20230506/q/qgate-perf/0.1.6-0.1.7rc1/diff.md --exclude *.pyd
+[2023-05-06 09:15:21] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/7c/07/542498b49fdfa56333abf2ad6f57d67f323ba626fc7fc9a8f4b5464495fc/np_queuey-0.2.5.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [notion-vzhd1701-fork]: Downloading https://files.pythonhosted.org/packages/77/5b/314816c876cae1dac143c3e0221a9b4b9b186576ef92e75e0aab041c179c/notion_vzhd1701_fork-0.0.37.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [oregpt]: Downloading https://files.pythonhosted.org/packages/9a/2f/b00afc858952736033a268b9cffe58eec8eefc8165567468811820d3ee58/oregpt-0.1.1.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [napari-amdtrk]: Downloading https://files.pythonhosted.org/packages/58/7b/945ebe99586158ee12744735b1378365f79708e93198517505350d3521a6/napari-amdtrk-1.1.0.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [notion-vzhd1701-fork]: executing diffoscope
+[2023-05-06 09:15:21] INFO root fetch - processPackages [notion-vzhd1701-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notion-vzhd1701-fork-0.0.36.tar.gz tmp/notion_vzhd1701_fork-0.0.37.tar.gz --markdown 20230506/n/notion-vzhd1701-fork/0.0.36-0.0.37/diff.md --exclude *.pyd
+[2023-05-06 09:15:21] INFO root fetch - processPackages [oregpt]: executing diffoscope
+[2023-05-06 09:15:21] INFO root fetch - processPackages [oregpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oregpt-0.1.0.tar.gz tmp/oregpt-0.1.1.tar.gz --markdown 20230506/o/oregpt/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-06 09:15:21] INFO root fetch - processPackages [cos-python-sdk-v5]: Downloading https://files.pythonhosted.org/packages/ba/cf/5aa5f8807b88ddce659de12bcae67c8043b9251ccbdbced11ac4a96c87e3/cos-python-sdk-v5-1.9.9.tar.gz
+[2023-05-06 09:15:21] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-05-06 09:15:21] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.2.4.tar.gz tmp/np_queuey-0.2.5.tar.gz --markdown 20230506/n/np-queuey/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-06 09:15:21] INFO root fetch - processPackages [napari-amdtrk]: executing diffoscope
+[2023-05-06 09:15:21] INFO root fetch - processPackages [napari-amdtrk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-amdtrk-1.0.0.tar.gz tmp/napari-amdtrk-1.1.0.tar.gz --markdown 20230506/n/napari-amdtrk/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-06 09:15:22] INFO root fetch - processPackages [cos-python-sdk-v5]: executing diffoscope
+[2023-05-06 09:15:22] INFO root fetch - processPackages [cos-python-sdk-v5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cos-python-sdk-v5-1.9.8.tar.gz tmp/cos-python-sdk-v5-1.9.9.tar.gz --markdown 20230506/c/cos-python-sdk-v5/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-06 09:15:22] INFO root fetch - processPackages [Jlab]: Start processing: discord-py-interactions
+[2023-05-06 09:15:22] INFO root fetch - main [MainThread]: End processing [Jlab]: success
+[2023-05-06 09:15:22] INFO root fetch - processPackages [discord-py-interactions]: New version: [5.3.0] Old Version: [5.2.0]
+[2023-05-06 09:15:22] INFO root fetch - processPackages [discord-py-interactions]: Downloading https://files.pythonhosted.org/packages/c9/80/204326fc4adc064f98068ac9da5d6650b3f166e446f98db267be8ded8ab6/discord-py-interactions-5.2.0.tar.gz
+[2023-05-06 09:15:22] INFO root fetch - processPackages [tf-hub-nightly]: Start processing: pulumi-oci
+[2023-05-06 09:15:22] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-05-06 09:15:22] INFO root fetch - processPackages [pulumi-oci]: New version: [0.9.1a1677791364] Old Version: [0.9.0]
+[2023-05-06 09:15:23] INFO root fetch - processPackages [pulumi-oci]: executing diffoscope
+[2023-05-06 09:15:23] INFO root fetch - processPackages [pulumi-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_oci-0.9.0.tar.gz tmp/pulumi_oci-0.9.1a1677791364.tar.gz --markdown 20230506/p/pulumi-oci/0.9.0-0.9.1a1677791364/diff.md --exclude *.pyd
+[2023-05-06 09:15:23] INFO root fetch - processPackages [qgate-perf]: Start processing: interactions.py
+[2023-05-06 09:15:23] INFO root fetch - main [MainThread]: End processing [qgate-perf]: success
+[2023-05-06 09:15:23] INFO root fetch - processPackages [discord-py-interactions]: Downloading https://files.pythonhosted.org/packages/ca/cb/9ee7805784aabec31c965ead44e804733f8f1d025fbb96666f574b856fe3/discord-py-interactions-5.3.0.tar.gz
+[2023-05-06 09:15:23] INFO root fetch - processPackages [interactions.py]: New version: [5.3.0] Old Version: [5.2.0]
+[2023-05-06 09:15:23] INFO root fetch - main [MainThread]: End processing [oregpt]: success
+[2023-05-06 09:15:23] INFO root fetch - processPackages [discord-py-interactions]: executing diffoscope
+[2023-05-06 09:15:23] INFO root fetch - processPackages [discord-py-interactions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-py-interactions-5.2.0.tar.gz tmp/discord-py-interactions-5.3.0.tar.gz --markdown 20230506/d/discord-py-interactions/5.2.0-5.3.0/diff.md --exclude *.pyd
+[2023-05-06 09:15:23] INFO root fetch - main [MainThread]: End processing [notion-vzhd1701-fork]: success
+[2023-05-06 09:15:23] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-05-06 09:15:23] INFO root fetch - processPackages [interactions.py]: Downloading https://files.pythonhosted.org/packages/b5/64/82ccb2630ecc4a7f15f7a3b2cedf26fe28b9f9439417fdb3eeee3eda7a2d/interactions.py-5.2.0.tar.gz
+[2023-05-06 09:15:23] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-06 09:15:23] INFO root fetch - main [MainThread]: End processing [napari-amdtrk]: success
+[2023-05-06 09:15:23] INFO root fetch - main [MainThread]: End processing [cos-python-sdk-v5]: success
+[2023-05-06 09:15:24] INFO root fetch - processPackages [interactions.py]: Downloading https://files.pythonhosted.org/packages/cf/cf/4da17e540b9f5392e64d2e2584be00f1acb2bb0d35bc9a7663860e37c2cb/interactions.py-5.3.0.tar.gz
+[2023-05-06 09:15:24] INFO root fetch - processPackages [interactions.py]: executing diffoscope
+[2023-05-06 09:15:24] INFO root fetch - processPackages [interactions.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interactions.py-5.2.0.tar.gz tmp/interactions.py-5.3.0.tar.gz --markdown 20230506/i/interactions.py/5.2.0-5.3.0/diff.md --exclude *.pyd
+[2023-05-06 09:15:26] INFO root fetch - main [MainThread]: End processing [discord-py-interactions]: success
+[2023-05-06 09:15:26] INFO root fetch - main [MainThread]: End processing [interactions.py]: success
+[2023-05-06 09:15:38] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-05-06 09:16:07] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
+[2023-05-06 09:16:07] INFO root fetch - main [MainThread]: Store serial: [17997686]
