@@ -11646,3 +11646,81 @@ EOFError: EOF read where object expected
 [2023-05-06 17:05:08] INFO root fetch - main [MainThread]: End processing [nanomock]: success
 [2023-05-06 17:05:09] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2023-05-06 17:05:09] INFO root fetch - main [MainThread]: Store serial: [18000431]
+[2023-05-06 17:10:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000431]
+[2023-05-06 17:10:18] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-06 17:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nwebclient
+[2023-05-06 17:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qgate-perf
+[2023-05-06 17:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dumpulator
+[2023-05-06 17:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pointclass
+[2023-05-06 17:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nwebclient
+[2023-05-06 17:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spotON_sdk
+[2023-05-06 17:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: prettynumbers
+[2023-05-06 17:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bytecodemanipulation
+[2023-05-06 17:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: scimap
+[2023-05-06 17:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PayEquity
+[2023-05-06 17:10:18] INFO root fetch - processPackages [nwebclient]: New version: [1.0.82] Old Version: [1.0.81]
+[2023-05-06 17:10:18] INFO root fetch - processPackages [bytecodemanipulation]: New version: [0.2.8] Old Version: [0.2.4]
+[2023-05-06 17:10:18] INFO root fetch - processPackages [pointclass]: New version: [0.6] Old Version: [0.5]
+[2023-05-06 17:10:18] INFO root fetch - processPackages [qgate-perf]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-06 17:10:18] INFO root fetch - processPackages [scimap]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-06 17:10:18] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2023-05-06 17:10:18] INFO root fetch - processPackages [nwebclient]: New version: [1.0.82] Old Version: [1.0.81]
+[2023-05-06 17:10:18] INFO root fetch - processPackages [prettynumbers]: New version: [0.1.4] Old Version: [0.1.3b0]
+[2023-05-06 17:10:18] INFO root fetch - processPackages [dumpulator]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-06 17:10:18] WARNING root fetch - processPackages [PayEquity]: Skipping, unable to determine old version
+[2023-05-06 17:10:18] INFO root fetch - processPackages [PayEquity]: Start processing: taskiq
+[2023-05-06 17:10:18] INFO root fetch - main [MainThread]: End processing [PayEquity] error
+[2023-05-06 17:10:18] INFO root fetch - processPackages [taskiq]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-06 17:10:18] INFO root fetch - processPackages [qgate-perf]: Downloading https://files.pythonhosted.org/packages/02/46/2e7d59a7951c222f7d48b5a2a2063f6174abd161f39d9dbb7f61c98ee89c/qgate_perf-0.2.0-py3-none-any.whl
+[2023-05-06 17:10:18] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/4d/d6/6d81cf899c63536ea8951ddb2057681d98a6a54e51049074b8f75c9b974f/spotON_sdk-0.0.1.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [nwebclient]: Downloading https://files.pythonhosted.org/packages/b7/20/d444501aae3822eb47557d99ac7b663af95699b44b0cae4719afd14e528e/nwebclient-1.0.81.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [pointclass]: Downloading https://files.pythonhosted.org/packages/9c/be/d5f0c4dfa50de02e19ad7138924c6edf98ee097b97e1c59eeca0def36ffb/pointclass-0.5.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [prettynumbers]: Downloading https://files.pythonhosted.org/packages/ef/93/c546f8ec625211f89784081a7a9b068f9e5a97c28dcb6231de1e2998ceed/prettynumbers-0.1.4.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [dumpulator]: Downloading https://files.pythonhosted.org/packages/21/19/a06c2881a9adda88a66a5582a1a873b09d122b268f66aefe9a236ed4d3a0/dumpulator-0.2.3.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [nwebclient]: Downloading https://files.pythonhosted.org/packages/b7/20/d444501aae3822eb47557d99ac7b663af95699b44b0cae4719afd14e528e/nwebclient-1.0.81.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [scimap]: Downloading https://files.pythonhosted.org/packages/dc/df/9fbc541d80ff9ced659aa755c8bc0107a29bb1e4d20f97928b3691bc64aa/scimap-1.1.0.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [bytecodemanipulation]: Downloading https://files.pythonhosted.org/packages/b8/89/4ff28beb61cc598d165e90084ebadeaeb2b64860f5fa608aebc0f00a6275/bytecodemanipulation-0.2.8.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [taskiq]: Downloading https://files.pythonhosted.org/packages/4a/c6/8c33e02a6d398657ea855b1e4d23ec51a7884b523fd5580fe962f37c98af/taskiq-0.4.1.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [qgate-perf]: executing diffoscope
+[2023-05-06 17:10:18] INFO root fetch - processPackages [qgate-perf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgate_perf-0.1.9-py3-none-any.whl.zip tmp/qgate_perf-0.2.0-py3-none-any.whl.zip --markdown 20230506/q/qgate-perf/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-06 17:10:18] INFO root fetch - processPackages [bytecodemanipulation]: executing diffoscope
+[2023-05-06 17:10:18] INFO root fetch - processPackages [bytecodemanipulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytecodemanipulation-0.2.4.tar.gz tmp/bytecodemanipulation-0.2.8.tar.gz --markdown 20230506/b/bytecodemanipulation/0.2.4-0.2.8/diff.md --exclude *.pyd
+[2023-05-06 17:10:18] INFO root fetch - processPackages [prettynumbers]: executing diffoscope
+[2023-05-06 17:10:18] INFO root fetch - processPackages [prettynumbers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettynumbers-0.1.3b0.tar.gz tmp/prettynumbers-0.1.4.tar.gz --markdown 20230506/p/prettynumbers/0.1.3b0-0.1.4/diff.md --exclude *.pyd
+[2023-05-06 17:10:18] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/4e/de/95b6cff112db9b3ff67feda79712f3805fb5b556579506f2cfd3f3c6efd9/spotON_sdk-0.0.1.1.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [nwebclient]: Downloading https://files.pythonhosted.org/packages/d6/f3/0eb39bcb942adb296bb01ac5c1a8066128bf657e214a186a448bdcd928c5/nwebclient-1.0.82.tar.gz
+[2023-05-06 17:10:18] INFO root fetch - processPackages [nwebclient]: Downloading https://files.pythonhosted.org/packages/d6/f3/0eb39bcb942adb296bb01ac5c1a8066128bf657e214a186a448bdcd928c5/nwebclient-1.0.82.tar.gz
+[2023-05-06 17:10:19] INFO root fetch - processPackages [dumpulator]: Downloading https://files.pythonhosted.org/packages/d5/d1/3cd6e46799a94c84d80240018e76bc1023b29cfcc9da0f2a7241e81add4f/dumpulator-0.2.4.tar.gz
+[2023-05-06 17:10:19] INFO root fetch - processPackages [pointclass]: Downloading https://files.pythonhosted.org/packages/9e/af/528dd04da7b939a4885d991ca9e2a8c4ce85340344112ddaf46c8db1c1c2/pointclass-0.6.tar.gz
+[2023-05-06 17:10:19] INFO root fetch - processPackages [scimap]: Downloading https://files.pythonhosted.org/packages/ee/29/edfe115e8d5a7cceec77a07858e07ef8252179ce0695422d9335fb2aaf5c/scimap-1.2.0.tar.gz
+[2023-05-06 17:10:19] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-05-06 17:10:19] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.81.tar.gz tmp/nwebclient-1.0.82.tar.gz --markdown 20230506/n/nwebclient/1.0.81-1.0.82/diff.md --exclude *.pyd
+[2023-05-06 17:10:19] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-05-06 17:10:19] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.81.tar.gz tmp/nwebclient-1.0.82.tar.gz --markdown 20230506/n/nwebclient/1.0.81-1.0.82/diff.md --exclude *.pyd
+[2023-05-06 17:10:19] INFO root fetch - processPackages [dumpulator]: executing diffoscope
+[2023-05-06 17:10:19] INFO root fetch - processPackages [dumpulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dumpulator-0.2.3.tar.gz tmp/dumpulator-0.2.4.tar.gz --markdown 20230506/d/dumpulator/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-06 17:10:19] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-06 17:10:19] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.1.tar.gz tmp/spotON_sdk-0.0.1.1.tar.gz --markdown 20230506/s/spotON_sdk/0.0.1-0.0.1.1/diff.md --exclude *.pyd
+[2023-05-06 17:10:19] INFO root fetch - processPackages [taskiq]: Downloading https://files.pythonhosted.org/packages/fb/54/ec32c8e0c1ecde1442b44c9a283359d8113c57f314c5cf89782f4d8a70f6/taskiq-0.4.2.tar.gz
+[2023-05-06 17:10:19] INFO root fetch - processPackages [scimap]: executing diffoscope
+[2023-05-06 17:10:19] INFO root fetch - processPackages [scimap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scimap-1.1.0.tar.gz tmp/scimap-1.2.0.tar.gz --markdown 20230506/s/scimap/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-06 17:10:19] INFO root fetch - processPackages [pointclass]: executing diffoscope
+[2023-05-06 17:10:19] INFO root fetch - processPackages [pointclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointclass-0.5.tar.gz tmp/pointclass-0.6.tar.gz --markdown 20230506/p/pointclass/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-06 17:10:19] INFO root fetch - processPackages [taskiq]: executing diffoscope
+[2023-05-06 17:10:19] INFO root fetch - processPackages [taskiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskiq-0.4.1.tar.gz tmp/taskiq-0.4.2.tar.gz --markdown 20230506/t/taskiq/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-06 17:10:20] INFO root fetch - processPackages [qgate-perf]: Start processing: pysensibo
+[2023-05-06 17:10:20] INFO root fetch - main [MainThread]: End processing [qgate-perf]: success
+[2023-05-06 17:10:20] INFO root fetch - processPackages [pysensibo]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 17:10:20] INFO root fetch - processPackages [pysensibo]: executing diffoscope
+[2023-05-06 17:10:20] INFO root fetch - processPackages [pysensibo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysensibo-1.0.8.tar.gz tmp/pysensibo-1.0.9.tar.gz --markdown 20230506/p/pysensibo/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 17:10:20] INFO root fetch - main [MainThread]: End processing [prettynumbers]: success
+[2023-05-06 17:10:20] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-05-06 17:10:20] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-05-06 17:10:20] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-06 17:10:20] INFO root fetch - main [MainThread]: End processing [pointclass]: success
+[2023-05-06 17:10:21] INFO root fetch - main [MainThread]: End processing [dumpulator]: success
+[2023-05-06 17:10:21] INFO root fetch - main [MainThread]: End processing [scimap]: success
+[2023-05-06 17:10:21] INFO root fetch - main [MainThread]: End processing [pysensibo]: success
+[2023-05-06 17:10:21] INFO root fetch - main [MainThread]: End processing [taskiq]: success
+[2023-05-06 17:10:22] INFO root fetch - main [MainThread]: End processing [bytecodemanipulation]: success
+[2023-05-06 17:10:22] INFO root fetch - main [MainThread]: Store serial: [18000468]
