@@ -7694,3 +7694,36 @@
 [2023-05-06 10:14:18] INFO root fetch - main [MainThread]: End processing [flux-python]: success
 [2023-05-06 10:14:19] INFO root fetch - main [MainThread]: End processing [ddreport]: success
 [2023-05-06 10:14:19] INFO root fetch - main [MainThread]: Store serial: [17998101]
+[2023-05-06 10:19:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998101]
+[2023-05-06 10:19:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 10:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlptoolssna
+[2023-05-06 10:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: convert-videos
+[2023-05-06 10:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anylabeling-gpu
+[2023-05-06 10:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anylabeling
+[2023-05-06 10:19:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easierfile
+[2023-05-06 10:19:28] INFO root fetch - processPackages [anylabeling]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 10:19:28] INFO root fetch - processPackages [anylabeling-gpu]: New version: [0.2.22] Old Version: [0.2.21]
+[2023-05-06 10:19:28] INFO root fetch - processPackages [easierfile]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-05-06 10:19:28] INFO root fetch - processPackages [convert-videos]: New version: [2.8.0] Old Version: [2.7.4]
+[2023-05-06 10:19:28] INFO root fetch - processPackages [nlptoolssna]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-06 10:19:29] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-05-06 10:19:29] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.2.8.tar.gz tmp/anylabeling-0.2.9.tar.gz --markdown 20230506/a/anylabeling/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 10:19:29] INFO root fetch - processPackages [anylabeling-gpu]: Downloading https://files.pythonhosted.org/packages/9e/cd/c485a7f9e1428380da517e51f71c1afe5a7fc44b03677b83e4baf1a41473/anylabeling_gpu-0.2.21-py3-none-any.whl
+[2023-05-06 10:19:29] INFO root fetch - processPackages [easierfile]: executing diffoscope
+[2023-05-06 10:19:29] INFO root fetch - processPackages [easierfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easierfile-2.1.0.tar.gz tmp/easierfile-2.2.0.tar.gz --markdown 20230506/e/easierfile/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-05-06 10:19:29] INFO root fetch - processPackages [convert-videos]: Downloading https://files.pythonhosted.org/packages/ca/53/151547ffca02de2ac9bab16b2a6d93fa5caea5f19a7ac2fb4acf543025ff/convert_videos-2.7.4.tar.gz
+[2023-05-06 10:19:29] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/29/7d/fb2b08d597d620425a10a6d31d0d8d191c52afa925307f6c5eb0787edf79/nlptoolssna-0.6.9.tar.gz
+[2023-05-06 10:19:29] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 10:19:29] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.6.8.tar.gz tmp/nlptoolssna-0.6.9.tar.gz --markdown 20230506/n/nlptoolssna/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-06 10:19:29] INFO root fetch - processPackages [anylabeling-gpu]: Downloading https://files.pythonhosted.org/packages/17/18/8d7b2789d662c3a0172f4f4d20c2b3d5a1d39b16f658e72f77b0022e2e01/anylabeling_gpu-0.2.22-py3-none-any.whl
+[2023-05-06 10:19:29] INFO root fetch - processPackages [convert-videos]: Downloading https://files.pythonhosted.org/packages/e1/97/64e4c8940b393ee839f723b32e19bdf2fa2678fb10082286aeaf7df1bc34/convert_videos-2.8.0.tar.gz
+[2023-05-06 10:19:29] INFO root fetch - processPackages [convert-videos]: executing diffoscope
+[2023-05-06 10:19:29] INFO root fetch - processPackages [convert-videos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convert_videos-2.7.4.tar.gz tmp/convert_videos-2.8.0.tar.gz --markdown 20230506/c/convert-videos/2.7.4-2.8.0/diff.md --exclude *.pyd
+[2023-05-06 10:19:29] INFO root fetch - processPackages [anylabeling-gpu]: executing diffoscope
+[2023-05-06 10:19:29] INFO root fetch - processPackages [anylabeling-gpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling_gpu-0.2.21-py3-none-any.whl.zip tmp/anylabeling_gpu-0.2.22-py3-none-any.whl.zip --markdown 20230506/a/anylabeling-gpu/0.2.21-0.2.22/diff.md --exclude *.pyd
+[2023-05-06 10:19:30] INFO root fetch - main [MainThread]: End processing [easierfile]: success
+[2023-05-06 10:19:30] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 10:19:30] INFO root fetch - main [MainThread]: End processing [convert-videos]: success
+[2023-05-06 10:19:30] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-05-06 10:19:34] INFO root fetch - main [MainThread]: End processing [anylabeling-gpu]: success
+[2023-05-06 10:19:34] INFO root fetch - main [MainThread]: Store serial: [17998114]
