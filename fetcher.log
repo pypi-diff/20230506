@@ -9200,3 +9200,33 @@ EOFError: EOF read where object expected
 [2023-05-06 12:27:28] INFO root fetch - main [MainThread]: End processing [pyNAVIS]: success
 [2023-05-06 12:27:28] INFO root fetch - main [MainThread]: End processing [typed-stream]: success
 [2023-05-06 12:27:28] INFO root fetch - main [MainThread]: Store serial: [17998882]
+[2023-05-06 12:32:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998882]
+[2023-05-06 12:32:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 12:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyberpay-utils-lib
+[2023-05-06 12:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TorchEase
+[2023-05-06 12:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gdb-plus
+[2023-05-06 12:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ruamel.yaml
+[2023-05-06 12:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-rahav-cert-1987-update-regTest
+[2023-05-06 12:32:36] INFO root fetch - processPackages [gdb-plus]: New version: [6.2.0] Old Version: [6.1.2]
+[2023-05-06 12:32:36] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: New version: [20230506.9.42.516242] Old Version: [20230506.2.36.941865]
+[2023-05-06 12:32:36] INFO root fetch - processPackages [cyberpay-utils-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 12:32:36] INFO root fetch - processPackages [TorchEase]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-06 12:32:37] INFO root fetch - processPackages [ruamel.yaml]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-06 12:32:37] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Downloading https://files.pythonhosted.org/packages/2c/8e/34647eef8ff7f6ed5b9beeb6df90ac32b6f31113507ff0b5f20651456635/certora-cli-alpha-rahav-cert-1987_update_regTest-20230506.2.36.941865.tar.gz
+[2023-05-06 12:32:37] WARNING root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Skipping package: exceeds size limit 38472912>=10485760
+[2023-05-06 12:32:37] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-rahav-cert-1987-update-regTest] error
+[2023-05-06 12:32:37] INFO root fetch - processPackages [cyberpay-utils-lib]: executing diffoscope
+[2023-05-06 12:32:37] INFO root fetch - processPackages [cyberpay-utils-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberpay-utils-lib-0.0.8.tar.gz tmp/cyberpay-utils-lib-0.0.9.tar.gz --markdown 20230506/c/cyberpay-utils-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 12:32:37] INFO root fetch - processPackages [ruamel.yaml]: executing diffoscope
+[2023-05-06 12:32:37] INFO root fetch - processPackages [ruamel.yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruamel.yaml-0.9.7.tar.gz tmp/ruamel.yaml-0.9.8.tar.gz --markdown 20230506/r/ruamel.yaml/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-06 12:32:37] INFO root fetch - processPackages [TorchEase]: Downloading https://files.pythonhosted.org/packages/4c/fa/a3a219b7b9613ddcdb4a86e822d631e2c4f830eeefe56e849b0c67f18a92/TorchEase-0.0.7.tar.gz
+[2023-05-06 12:32:37] INFO root fetch - processPackages [TorchEase]: executing diffoscope
+[2023-05-06 12:32:37] INFO root fetch - processPackages [TorchEase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TorchEase-0.0.6.tar.gz tmp/TorchEase-0.0.7.tar.gz --markdown 20230506/T/TorchEase/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-06 12:32:37] INFO root fetch - processPackages [gdb-plus]: Downloading https://files.pythonhosted.org/packages/7c/4f/1ceb9b91b5e1ee2c7f654df0bd1bbce71b43ed50612cc51da6977955be43/gdb_plus-6.2.0.tar.gz
+[2023-05-06 12:32:37] INFO root fetch - processPackages [gdb-plus]: executing diffoscope
+[2023-05-06 12:32:37] INFO root fetch - processPackages [gdb-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdb_plus-6.1.2.tar.gz tmp/gdb_plus-6.2.0.tar.gz --markdown 20230506/g/gdb-plus/6.1.2-6.2.0/diff.md --exclude *.pyd
+[2023-05-06 12:32:38] INFO root fetch - main [MainThread]: End processing [cyberpay-utils-lib]: success
+[2023-05-06 12:32:38] INFO root fetch - main [MainThread]: End processing [TorchEase]: success
+[2023-05-06 12:32:38] INFO root fetch - main [MainThread]: End processing [ruamel.yaml]: success
+[2023-05-06 12:32:38] INFO root fetch - main [MainThread]: End processing [gdb-plus]: success
+[2023-05-06 12:32:38] INFO root fetch - main [MainThread]: Store serial: [17998898]
