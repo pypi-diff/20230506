@@ -10256,3 +10256,49 @@ EOFError: EOF read where object expected
 [2023-05-06 14:12:02] INFO root fetch - main [MainThread]: End processing [type-inspector]: success
 [2023-05-06 14:12:03] INFO root fetch - main [MainThread]: End processing [happy-learning]: success
 [2023-05-06 14:12:03] INFO root fetch - main [MainThread]: Store serial: [17999488]
+[2023-05-06 14:17:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999488]
+[2023-05-06 14:17:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lambda-layer-version-cleaner
+[2023-05-06 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vanoma-api-utils
+[2023-05-06 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tremolo
+[2023-05-06 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydis-core
+[2023-05-06 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: frontengine
+[2023-05-06 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: frontengine-dev
+[2023-05-06 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: basic-poetry
+[2023-05-06 14:17:11] INFO root fetch - processPackages [lambda-layer-version-cleaner]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 14:17:11] INFO root fetch - processPackages [frontengine-dev]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 14:17:11] INFO root fetch - processPackages [tremolo]: New version: [0.0.88] Old Version: [0.0.86]
+[2023-05-06 14:17:11] INFO root fetch - processPackages [frontengine]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 14:17:12] INFO root fetch - processPackages [vanoma-api-utils]: New version: [0.93.0] Old Version: [0.92.0]
+[2023-05-06 14:17:12] INFO root fetch - processPackages [pydis-core]: New version: [9.6.0] Old Version: [9.5.1]
+[2023-05-06 14:17:12] WARNING root fetch - processPackages [basic-poetry]: Skipping, unable to determine old version
+[2023-05-06 14:17:12] INFO root fetch - main [MainThread]: End processing [basic-poetry] error
+[2023-05-06 14:17:12] INFO root fetch - processPackages [vanoma-api-utils]: Downloading https://files.pythonhosted.org/packages/c8/4c/f60b1bc7a88b443383e2bae3890d9c92abe3dc9bd9da90cfbf6ab9e378e6/vanoma_api_utils-0.92.0.tar.gz
+[2023-05-06 14:17:12] INFO root fetch - processPackages [lambda-layer-version-cleaner]: Downloading https://files.pythonhosted.org/packages/b0/4a/528e264be64554c7d3a9728b4e3ea0082581d65dd17b3498f6df5730ed1b/lambda-layer-version-cleaner-0.0.8.tar.gz
+[2023-05-06 14:17:12] INFO root fetch - processPackages [tremolo]: Downloading https://files.pythonhosted.org/packages/10/61/de8725830e6dbe2f37175595edf95d468f74390ed258d7a121cd94552d27/tremolo-0.0.86.tar.gz
+[2023-05-06 14:17:12] INFO root fetch - processPackages [frontengine-dev]: Downloading https://files.pythonhosted.org/packages/10/01/1ccb2bdca81d541f4f11110c76f87dbf87458e9c137a3e11134d8e487a4a/frontengine_dev-0.0.4.tar.gz
+[2023-05-06 14:17:12] INFO root fetch - processPackages [frontengine]: Downloading https://files.pythonhosted.org/packages/7e/eb/fcfecdf4ccfe7e8c9ac5b64f06277bbeebf088118964bef31e8a881dcd87/frontengine-0.0.4.tar.gz
+[2023-05-06 14:17:12] INFO root fetch - processPackages [pydis-core]: Downloading https://files.pythonhosted.org/packages/33/23/941b00c5eca5d657650324a70b9e67f6b0e83479addd4016a3eb88d50b26/pydis_core-9.5.1.tar.gz
+[2023-05-06 14:17:12] INFO root fetch - processPackages [frontengine-dev]: executing diffoscope
+[2023-05-06 14:17:12] INFO root fetch - processPackages [frontengine-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine_dev-0.0.3.tar.gz tmp/frontengine_dev-0.0.4.tar.gz --markdown 20230506/f/frontengine-dev/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 14:17:12] INFO root fetch - processPackages [frontengine]: executing diffoscope
+[2023-05-06 14:17:12] INFO root fetch - processPackages [frontengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frontengine-0.0.3.tar.gz tmp/frontengine-0.0.4.tar.gz --markdown 20230506/f/frontengine/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 14:17:12] INFO root fetch - processPackages [vanoma-api-utils]: Downloading https://files.pythonhosted.org/packages/32/10/c0fc11e4e50d9b503f9bbe8bc3b411e7f4d805db4e09864c26a6ae06cc12/vanoma_api_utils-0.93.0.tar.gz
+[2023-05-06 14:17:12] INFO root fetch - processPackages [vanoma-api-utils]: executing diffoscope
+[2023-05-06 14:17:12] INFO root fetch - processPackages [vanoma-api-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vanoma_api_utils-0.92.0.tar.gz tmp/vanoma_api_utils-0.93.0.tar.gz --markdown 20230506/v/vanoma-api-utils/0.92.0-0.93.0/diff.md --exclude *.pyd
+[2023-05-06 14:17:12] INFO root fetch - processPackages [tremolo]: Downloading https://files.pythonhosted.org/packages/d3/0f/cb3ee6ed3d765f1b8e5ef984039d3095f682f22e3a5c5e565dfb94740dfa/tremolo-0.0.88.tar.gz
+[2023-05-06 14:17:12] INFO root fetch - processPackages [lambda-layer-version-cleaner]: Downloading https://files.pythonhosted.org/packages/c1/ff/e772992e4687e3c15d5d08b46207b77e7130fd07cdbffc9bab5c7a04e993/lambda-layer-version-cleaner-0.0.9.tar.gz
+[2023-05-06 14:17:12] INFO root fetch - processPackages [pydis-core]: Downloading https://files.pythonhosted.org/packages/d0/e4/c441b727fe2f64af40e03d0d114675eb8f6a727f817b9031751b09f7df03/pydis_core-9.6.0.tar.gz
+[2023-05-06 14:17:12] INFO root fetch - processPackages [tremolo]: executing diffoscope
+[2023-05-06 14:17:12] INFO root fetch - processPackages [tremolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tremolo-0.0.86.tar.gz tmp/tremolo-0.0.88.tar.gz --markdown 20230506/t/tremolo/0.0.86-0.0.88/diff.md --exclude *.pyd
+[2023-05-06 14:17:12] INFO root fetch - processPackages [pydis-core]: executing diffoscope
+[2023-05-06 14:17:12] INFO root fetch - processPackages [pydis-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydis_core-9.5.1.tar.gz tmp/pydis_core-9.6.0.tar.gz --markdown 20230506/p/pydis-core/9.5.1-9.6.0/diff.md --exclude *.pyd
+[2023-05-06 14:17:12] INFO root fetch - processPackages [lambda-layer-version-cleaner]: executing diffoscope
+[2023-05-06 14:17:12] INFO root fetch - processPackages [lambda-layer-version-cleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambda-layer-version-cleaner-0.0.8.tar.gz tmp/lambda-layer-version-cleaner-0.0.9.tar.gz --markdown 20230506/l/lambda-layer-version-cleaner/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 14:17:13] INFO root fetch - main [MainThread]: End processing [frontengine-dev]: success
+[2023-05-06 14:17:13] INFO root fetch - main [MainThread]: End processing [frontengine]: success
+[2023-05-06 14:17:13] INFO root fetch - main [MainThread]: End processing [pydis-core]: success
+[2023-05-06 14:17:13] INFO root fetch - main [MainThread]: End processing [tremolo]: success
+[2023-05-06 14:17:14] INFO root fetch - main [MainThread]: End processing [vanoma-api-utils]: success
+[2023-05-06 14:17:14] INFO root fetch - main [MainThread]: End processing [lambda-layer-version-cleaner]: success
+[2023-05-06 14:17:14] INFO root fetch - main [MainThread]: Store serial: [17999516]
