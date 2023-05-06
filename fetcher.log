@@ -6342,3 +6342,62 @@
 [2023-05-06 08:11:20] INFO root fetch - main [MainThread]: End processing [alphaz]: success
 [2023-05-06 08:11:43] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
 [2023-05-06 08:11:43] INFO root fetch - main [MainThread]: Store serial: [17997279]
+[2023-05-06 08:16:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997279]
+[2023-05-06 08:16:52] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 08:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: framelink
+[2023-05-06 08:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addons-oca-pos
+[2023-05-06 08:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SavonchikSerializer
+[2023-05-06 08:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-mongodbatlas
+[2023-05-06 08:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: silero-api-server
+[2023-05-06 08:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-mysql
+[2023-05-06 08:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: knifes
+[2023-05-06 08:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-nomad
+[2023-05-06 08:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: age3d
+[2023-05-06 08:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-minio
+[2023-05-06 08:16:52] INFO root fetch - processPackages [framelink]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-06 08:16:52] INFO root fetch - processPackages [odoo14-addons-oca-pos]: New version: [14.0.20230505.0] Old Version: [14.0.20230504.0]
+[2023-05-06 08:16:52] WARNING root fetch - processPackages [SavonchikSerializer]: Skipping, unable to determine old version
+[2023-05-06 08:16:52] INFO root fetch - processPackages [silero-api-server]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-06 08:16:52] INFO root fetch - main [MainThread]: End processing [SavonchikSerializer] error
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-mongodbatlas]: New version: [3.9.0a1683352158] Old Version: [3.8.0a1683265974]
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-nomad]: New version: [0.4.2a1683266175] Old Version: [0.4.1a1682461165]
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-minio]: New version: [0.9.1a1682440158] Old Version: [0.9.1a1681933919]
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-mysql]: New version: [3.2.0a1683351911] Old Version: [3.2.0a1683266055]
+[2023-05-06 08:16:52] INFO root fetch - processPackages [knifes]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-06 08:16:52] INFO root fetch - processPackages [age3d]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-minio]: executing diffoscope
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-minio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_minio-0.9.1a1681933919.tar.gz tmp/pulumi_minio-0.9.1a1682440158.tar.gz --markdown 20230506/p/pulumi-minio/0.9.1a1681933919-0.9.1a1682440158/diff.md --exclude *.pyd
+[2023-05-06 08:16:52] INFO root fetch - processPackages [knifes]: executing diffoscope
+[2023-05-06 08:16:52] INFO root fetch - processPackages [knifes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knifes-0.8.8.tar.gz tmp/knifes-0.8.9.tar.gz --markdown 20230506/k/knifes/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-nomad]: executing diffoscope
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-nomad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_nomad-0.4.1a1682461165.tar.gz tmp/pulumi_nomad-0.4.2a1683266175.tar.gz --markdown 20230506/p/pulumi-nomad/0.4.1a1682461165-0.4.2a1683266175/diff.md --exclude *.pyd
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-mongodbatlas]: Downloading https://files.pythonhosted.org/packages/3c/ed/b18283fbe8a2cd22b670ab83255e8431a850029390ceb2fa1bbef9664dc2/pulumi_mongodbatlas-3.8.0a1683265974.tar.gz
+[2023-05-06 08:16:52] INFO root fetch - processPackages [silero-api-server]: Downloading https://files.pythonhosted.org/packages/52/4d/f998cafb1fd39bc36cb339542abc393c1c9bd7b9ce3086d23b11adf26e79/silero_api_server-0.0.7.tar.gz
+[2023-05-06 08:16:52] INFO root fetch - processPackages [framelink]: Downloading https://files.pythonhosted.org/packages/29/1e/4aa978c6ea05b0ff31384da773b9396aea843776c5b5477c6745d83f9341/framelink-0.2.2.tar.gz
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-mysql]: Downloading https://files.pythonhosted.org/packages/0f/d6/d533857b8f37d615fe77ccdb7a612bc0d61b3878355cf9fc8817551a76a9/pulumi_mysql-3.2.0a1683351911.tar.gz
+[2023-05-06 08:16:52] INFO root fetch - processPackages [silero-api-server]: executing diffoscope
+[2023-05-06 08:16:52] INFO root fetch - processPackages [silero-api-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silero_api_server-0.0.6.tar.gz tmp/silero_api_server-0.0.7.tar.gz --markdown 20230506/s/silero-api-server/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-mysql]: executing diffoscope
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mysql-3.2.0a1683266055.tar.gz tmp/pulumi_mysql-3.2.0a1683351911.tar.gz --markdown 20230506/p/pulumi-mysql/3.2.0a1683266055-3.2.0a1683351911/diff.md --exclude *.pyd
+[2023-05-06 08:16:52] INFO root fetch - processPackages [age3d]: Downloading https://files.pythonhosted.org/packages/2a/be/f25005e95b9e25c5ac39852dac6c981aa451b054c94df8f1d3b0d0a0c898/age3d-0.3.0.tar.gz
+[2023-05-06 08:16:52] INFO root fetch - processPackages [framelink]: executing diffoscope
+[2023-05-06 08:16:52] INFO root fetch - processPackages [framelink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/framelink-0.2.1.tar.gz tmp/framelink-0.2.2.tar.gz --markdown 20230506/f/framelink/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-06 08:16:52] INFO root fetch - processPackages [odoo14-addons-oca-pos]: Downloading https://files.pythonhosted.org/packages/cb/46/8b78bfa90697b9e18336f0dcbf7a8da861adcd1242f81c379723f6ae2ecc/odoo14_addons_oca_pos-14.0.20230505.0-py3-none-any.whl
+[2023-05-06 08:16:52] INFO root fetch - processPackages [odoo14-addons-oca-pos]: executing diffoscope
+[2023-05-06 08:16:52] INFO root fetch - processPackages [odoo14-addons-oca-pos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_pos-14.0.20230504.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_pos-14.0.20230505.0-py3-none-any.whl.zip --markdown 20230506/o/odoo14-addons-oca-pos/14.0.20230504.0-14.0.20230505.0/diff.md --exclude *.pyd
+[2023-05-06 08:16:52] INFO root fetch - processPackages [pulumi-mongodbatlas]: Downloading https://files.pythonhosted.org/packages/0f/1d/76b4fbf9e142f996e9f51da58e9b7c467b73552e1637fc6c5d706aa09efb/pulumi_mongodbatlas-3.9.0a1683352158.tar.gz
+[2023-05-06 08:16:53] INFO root fetch - processPackages [pulumi-mongodbatlas]: executing diffoscope
+[2023-05-06 08:16:53] INFO root fetch - processPackages [pulumi-mongodbatlas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mongodbatlas-3.8.0a1683265974.tar.gz tmp/pulumi_mongodbatlas-3.9.0a1683352158.tar.gz --markdown 20230506/p/pulumi-mongodbatlas/3.8.0a1683265974-3.9.0a1683352158/diff.md --exclude *.pyd
+[2023-05-06 08:16:53] INFO root fetch - processPackages [age3d]: Downloading https://files.pythonhosted.org/packages/b5/ca/c998f8e8b5ce73f3f6b1ea455b2590f9053aff7e169bfb3736c5f2418f4c/age3d-0.4.0.tar.gz
+[2023-05-06 08:16:53] INFO root fetch - processPackages [age3d]: executing diffoscope
+[2023-05-06 08:16:53] INFO root fetch - processPackages [age3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/age3d-0.3.0.tar.gz tmp/age3d-0.4.0.tar.gz --markdown 20230506/a/age3d/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-06 08:16:54] INFO root fetch - main [MainThread]: End processing [silero-api-server]: success
+[2023-05-06 08:16:54] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-pos]: success
+[2023-05-06 08:16:54] INFO root fetch - main [MainThread]: End processing [pulumi-nomad]: success
+[2023-05-06 08:16:54] INFO root fetch - main [MainThread]: End processing [knifes]: success
+[2023-05-06 08:16:54] INFO root fetch - main [MainThread]: End processing [pulumi-mysql]: success
+[2023-05-06 08:16:54] INFO root fetch - main [MainThread]: End processing [pulumi-minio]: success
+[2023-05-06 08:16:55] INFO root fetch - main [MainThread]: End processing [pulumi-mongodbatlas]: success
+[2023-05-06 08:16:55] INFO root fetch - main [MainThread]: End processing [framelink]: success
+[2023-05-06 08:16:56] INFO root fetch - main [MainThread]: End processing [age3d]: success
+[2023-05-06 08:16:56] INFO root fetch - main [MainThread]: Store serial: [17997306]
