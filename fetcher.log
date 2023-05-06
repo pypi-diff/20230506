@@ -12718,3 +12718,29 @@ EOFError: EOF read where object expected
 [2023-05-06 19:12:23] INFO root fetch - main [MainThread]: End processing [gql]: success
 [2023-05-06 19:12:25] INFO root fetch - main [MainThread]: End processing [deltalake]: success
 [2023-05-06 19:12:25] INFO root fetch - main [MainThread]: Store serial: [18001103]
+[2023-05-06 19:17:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001103]
+[2023-05-06 19:17:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 19:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nkust-ucl-k12-bot
+[2023-05-06 19:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Jlab
+[2023-05-06 19:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frankAllSkyCam
+[2023-05-06 19:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: semisup-segmentation
+[2023-05-06 19:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docker-sand
+[2023-05-06 19:17:34] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-06 19:17:34] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-05-06 19:17:34] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 19:17:34] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-06 19:17:34] INFO root fetch - processPackages [nkust-ucl-k12-bot]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-05-06 19:17:34] INFO root fetch - processPackages [docker-sand]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-05-06 19:17:35] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-05-06 19:17:35] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230506/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-06 19:17:35] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 19:17:35] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 19:17:35] INFO root fetch - processPackages [nkust-ucl-k12-bot]: executing diffoscope
+[2023-05-06 19:17:35] INFO root fetch - processPackages [nkust-ucl-k12-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkust-ucl-k12-bot-2.1.0.tar.gz tmp/nkust-ucl-k12-bot-2.2.0.tar.gz --markdown 20230506/n/nkust-ucl-k12-bot/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-05-06 19:17:35] INFO root fetch - processPackages [docker-sand]: executing diffoscope
+[2023-05-06 19:17:35] INFO root fetch - processPackages [docker-sand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker-sand-0.0.3.tar.gz tmp/docker-sand-0.0.5.tar.gz --markdown 20230506/d/docker-sand/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-05-06 19:17:36] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 19:17:36] INFO root fetch - main [MainThread]: End processing [Jlab]: success
+[2023-05-06 19:17:36] INFO root fetch - main [MainThread]: End processing [docker-sand]: success
+[2023-05-06 19:17:36] INFO root fetch - main [MainThread]: End processing [nkust-ucl-k12-bot]: success
+[2023-05-06 19:17:36] INFO root fetch - main [MainThread]: Store serial: [18001116]
