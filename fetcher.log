@@ -11993,3 +11993,34 @@ EOFError: EOF read where object expected
 [2023-05-06 17:52:20] INFO root fetch - main [MainThread]: End processing [almoststatic]: success
 [2023-05-06 17:52:21] INFO root fetch - main [MainThread]: End processing [cmap]: success
 [2023-05-06 17:52:21] INFO root fetch - main [MainThread]: Store serial: [18000627]
+[2023-05-06 17:57:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18000627]
+[2023-05-06 17:57:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 17:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: frykit
+[2023-05-06 17:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezmote-cmdserver
+[2023-05-06 17:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RobloxPyApi3
+[2023-05-06 17:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Resemblyzer
+[2023-05-06 17:57:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tinytuya
+[2023-05-06 17:57:30] INFO root fetch - processPackages [frykit]: New version: [0.2.0] Old Version: [0.1.7]
+[2023-05-06 17:57:30] INFO root fetch - processPackages [RobloxPyApi3]: New version: [2.0.722] Old Version: [2.0.7]
+[2023-05-06 17:57:30] INFO root fetch - processPackages [ezmote-cmdserver]: New version: [0.8.8] Old Version: [0.8.7]
+[2023-05-06 17:57:30] INFO root fetch - processPackages [tinytuya]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-06 17:57:30] INFO root fetch - processPackages [RobloxPyApi3]: executing diffoscope
+[2023-05-06 17:57:30] INFO root fetch - processPackages [RobloxPyApi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RobloxPyApi3-2.0.7.tar.gz tmp/RobloxPyApi3-2.0.722.tar.gz --markdown 20230506/R/RobloxPyApi3/2.0.7-2.0.722/diff.md --exclude *.pyd
+[2023-05-06 17:57:30] INFO root fetch - processPackages [Resemblyzer]: New version: [0.1.2] Old Version: [0.1.1.dev0]
+[2023-05-06 17:57:30] INFO root fetch - processPackages [frykit]: Downloading https://files.pythonhosted.org/packages/f0/7a/e2cdd8c0a5ce83676d24cecdaa9c18bd0db3b59cf94da2f09e133aec2d2e/frykit-0.1.7.tar.gz
+[2023-05-06 17:57:30] INFO root fetch - processPackages [ezmote-cmdserver]: Downloading https://files.pythonhosted.org/packages/3a/0c/41194fd70e60a40e96f0232dd1b37c2cf990d0b317dfd501ba0358f556a2/ezmote-cmdserver-0.8.8.tar.gz
+[2023-05-06 17:57:30] WARNING root fetch - processPackages [frykit]: Skipping package: exceeds size limit 39869123>=10485760
+[2023-05-06 17:57:30] INFO root fetch - main [MainThread]: End processing [frykit] error
+[2023-05-06 17:57:30] INFO root fetch - processPackages [ezmote-cmdserver]: executing diffoscope
+[2023-05-06 17:57:30] INFO root fetch - processPackages [ezmote-cmdserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezmote-cmdserver-0.8.7.tar.gz tmp/ezmote-cmdserver-0.8.8.tar.gz --markdown 20230506/e/ezmote-cmdserver/0.8.7-0.8.8/diff.md --exclude *.pyd
+[2023-05-06 17:57:30] INFO root fetch - processPackages [Resemblyzer]: Downloading https://files.pythonhosted.org/packages/27/da/c7a28b3620505b5bb05ded792dfc1f56a41eb0639daa7aa659da2e57b502/Resemblyzer-0.1.1.dev0.tar.gz
+[2023-05-06 17:57:30] INFO root fetch - processPackages [tinytuya]: Downloading https://files.pythonhosted.org/packages/22/7d/9d5fa82f83de2bc3db572f4410c55462fbeac68779f13c61ab259b930b3b/tinytuya-1.9.0-py2.py3-none-any.whl
+[2023-05-06 17:57:30] WARNING root fetch - processPackages [Resemblyzer]: Skipping package: exceeds size limit 15741925>=10485760
+[2023-05-06 17:57:30] INFO root fetch - main [MainThread]: End processing [Resemblyzer] error
+[2023-05-06 17:57:31] INFO root fetch - processPackages [tinytuya]: Downloading https://files.pythonhosted.org/packages/6b/dd/19d76df53a7c336d3c501f30b519cec78154f50351414491f01fa4ea7c75/tinytuya-1.9.1-py2.py3-none-any.whl
+[2023-05-06 17:57:31] INFO root fetch - processPackages [tinytuya]: executing diffoscope
+[2023-05-06 17:57:31] INFO root fetch - processPackages [tinytuya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinytuya-1.9.0-py2.py3-none-any.whl.zip tmp/tinytuya-1.9.1-py2.py3-none-any.whl.zip --markdown 20230506/t/tinytuya/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-06 17:57:31] INFO root fetch - main [MainThread]: End processing [RobloxPyApi3]: success
+[2023-05-06 17:57:31] INFO root fetch - main [MainThread]: End processing [ezmote-cmdserver]: success
+[2023-05-06 17:57:32] INFO root fetch - main [MainThread]: End processing [tinytuya]: success
+[2023-05-06 17:57:32] INFO root fetch - main [MainThread]: Store serial: [18000640]
