@@ -5216,3 +5216,64 @@
 [2023-05-06 05:29:37] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
 [2023-05-06 05:29:49] INFO root fetch - main [MainThread]: End processing [feffery-utils-components]: success
 [2023-05-06 05:29:49] INFO root fetch - main [MainThread]: Store serial: [17996531]
+[2023-05-06 05:34:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17996531]
+[2023-05-06 05:34:57] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 05:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyt-gpt
+[2023-05-06 05:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: editanything
+[2023-05-06 05:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mt-auto-minhon-mlt
+[2023-05-06 05:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tt-terminal-translator
+[2023-05-06 05:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: buildsys-dateversion
+[2023-05-06 05:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: editanything
+[2023-05-06 05:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: combine-gtfs-feeds
+[2023-05-06 05:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: editanything
+[2023-05-06 05:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hyt-gpt
+[2023-05-06 05:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: flatnet
+[2023-05-06 05:34:57] INFO root fetch - processPackages [hyt-gpt]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-06 05:34:57] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 05:34:57] INFO root fetch - processPackages [combine-gtfs-feeds]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-06 05:34:57] INFO root fetch - processPackages [mt-auto-minhon-mlt]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-06 05:34:57] INFO root fetch - processPackages [tt-terminal-translator]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-06 05:34:57] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 05:34:57] WARNING root fetch - processPackages [flatnet]: Skipping, unable to determine old version
+[2023-05-06 05:34:57] INFO root fetch - main [MainThread]: End processing [flatnet] error
+[2023-05-06 05:34:57] INFO root fetch - processPackages [editanything]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 05:34:57] INFO root fetch - processPackages [hyt-gpt]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-06 05:34:57] INFO root fetch - processPackages [buildsys-dateversion]: New version: [2023.5.6.3] Old Version: [2023.5.6]
+[2023-05-06 05:34:58] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 05:34:58] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 05:34:58] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 05:34:58] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 05:34:58] INFO root fetch - processPackages [editanything]: executing diffoscope
+[2023-05-06 05:34:58] INFO root fetch - processPackages [editanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/editanything-0.0.7.tar.gz tmp/editanything-0.0.8.tar.gz --markdown 20230506/e/editanything/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 05:34:58] INFO root fetch - processPackages [hyt-gpt]: Downloading https://files.pythonhosted.org/packages/1c/14/4ecb1515fbf6db012507b241a10f5c372bad577e29c7c554f22a5e264e1d/hyt-gpt-0.3.3.tar.gz
+[2023-05-06 05:34:58] INFO root fetch - processPackages [hyt-gpt]: Downloading https://files.pythonhosted.org/packages/1c/14/4ecb1515fbf6db012507b241a10f5c372bad577e29c7c554f22a5e264e1d/hyt-gpt-0.3.3.tar.gz
+[2023-05-06 05:34:58] INFO root fetch - processPackages [combine-gtfs-feeds]: Downloading https://files.pythonhosted.org/packages/be/e2/501dfe4c8ba63f9fe9b97c41afb8b2c7e6fe32780da28b27e8523395e263/combine_gtfs_feeds-0.1.5.tar.gz
+[2023-05-06 05:34:58] INFO root fetch - processPackages [mt-auto-minhon-mlt]: Downloading https://files.pythonhosted.org/packages/71/c9/6f75ca05c05085d1b8858d974c8d2814ea64e7a9750e650d2bdbe2ca5785/mt-auto-minhon-mlt-1.0.1.tar.gz
+[2023-05-06 05:34:58] INFO root fetch - processPackages [buildsys-dateversion]: Downloading https://files.pythonhosted.org/packages/6b/c8/1674fbdc186c3de08890f4e46951b68fe78daa77dc1e070cd767815cab20/buildsys-dateversion-2023.5.6.3.tar.gz
+[2023-05-06 05:34:58] INFO root fetch - processPackages [buildsys-dateversion]: executing diffoscope
+[2023-05-06 05:34:58] INFO root fetch - processPackages [buildsys-dateversion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildsys-dateversion-2023.5.6.tar.gz tmp/buildsys-dateversion-2023.5.6.3.tar.gz --markdown 20230506/b/buildsys-dateversion/2023.5.6-2023.5.6.3/diff.md --exclude *.pyd
+[2023-05-06 05:34:58] INFO root fetch - processPackages [hyt-gpt]: Downloading https://files.pythonhosted.org/packages/53/ef/dd4ef88fafd07c6ad4149aa9e363d81671084ec76896355bbc981d999da4/hyt-gpt-0.3.4.tar.gz
+[2023-05-06 05:34:58] INFO root fetch - processPackages [hyt-gpt]: Downloading https://files.pythonhosted.org/packages/53/ef/dd4ef88fafd07c6ad4149aa9e363d81671084ec76896355bbc981d999da4/hyt-gpt-0.3.4.tar.gz
+[2023-05-06 05:34:58] INFO root fetch - processPackages [mt-auto-minhon-mlt]: Downloading https://files.pythonhosted.org/packages/87/37/9bb470f2ee87a6eed7153b84db35cd9b9a97c5c4c3831a1d83e3dd02be24/mt-auto-minhon-mlt-1.0.2.tar.gz
+[2023-05-06 05:34:58] INFO root fetch - processPackages [tt-terminal-translator]: Downloading https://files.pythonhosted.org/packages/d2/82/1c2bbd1cf99b17cc61a6ac04d905b31ba719f703fad4d6a1c01c2bcbd68c/tt_terminal_translator-0.1.3.tar.gz
+[2023-05-06 05:34:58] INFO root fetch - processPackages [combine-gtfs-feeds]: Downloading https://files.pythonhosted.org/packages/8a/b2/f94cd4decc4ddce7119187556d346a9aaba92244bd30c4d1e2df650af903/combine_gtfs_feeds-0.1.6.tar.gz
+[2023-05-06 05:34:58] INFO root fetch - processPackages [mt-auto-minhon-mlt]: executing diffoscope
+[2023-05-06 05:34:58] INFO root fetch - processPackages [mt-auto-minhon-mlt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mt-auto-minhon-mlt-1.0.1.tar.gz tmp/mt-auto-minhon-mlt-1.0.2.tar.gz --markdown 20230506/m/mt-auto-minhon-mlt/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-06 05:34:58] INFO root fetch - processPackages [hyt-gpt]: executing diffoscope
+[2023-05-06 05:34:58] INFO root fetch - processPackages [hyt-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyt-gpt-0.3.3.tar.gz tmp/hyt-gpt-0.3.4.tar.gz --markdown 20230506/h/hyt-gpt/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-06 05:34:58] INFO root fetch - processPackages [hyt-gpt]: executing diffoscope
+[2023-05-06 05:34:58] INFO root fetch - processPackages [hyt-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyt-gpt-0.3.3.tar.gz tmp/hyt-gpt-0.3.4.tar.gz --markdown 20230506/h/hyt-gpt/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-06 05:34:58] INFO root fetch - processPackages [tt-terminal-translator]: executing diffoscope
+[2023-05-06 05:34:58] INFO root fetch - processPackages [tt-terminal-translator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tt_terminal_translator-0.1.2.tar.gz tmp/tt_terminal_translator-0.1.3.tar.gz --markdown 20230506/t/tt-terminal-translator/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-06 05:34:58] INFO root fetch - processPackages [combine-gtfs-feeds]: executing diffoscope
+[2023-05-06 05:34:58] INFO root fetch - processPackages [combine-gtfs-feeds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/combine_gtfs_feeds-0.1.5.tar.gz tmp/combine_gtfs_feeds-0.1.6.tar.gz --markdown 20230506/c/combine-gtfs-feeds/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-06 05:34:59] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 05:34:59] INFO root fetch - main [MainThread]: End processing [buildsys-dateversion]: success
+[2023-05-06 05:34:59] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 05:34:59] INFO root fetch - main [MainThread]: End processing [editanything]: success
+[2023-05-06 05:34:59] INFO root fetch - main [MainThread]: End processing [hyt-gpt]: success
+[2023-05-06 05:34:59] INFO root fetch - main [MainThread]: End processing [hyt-gpt]: success
+[2023-05-06 05:35:00] INFO root fetch - main [MainThread]: End processing [tt-terminal-translator]: success
+[2023-05-06 05:35:00] INFO root fetch - main [MainThread]: End processing [mt-auto-minhon-mlt]: success
+[2023-05-06 05:35:00] INFO root fetch - main [MainThread]: End processing [combine-gtfs-feeds]: success
+[2023-05-06 05:35:00] INFO root fetch - main [MainThread]: Store serial: [17996561]
