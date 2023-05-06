@@ -6284,3 +6284,61 @@
 [2023-05-06 08:06:01] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-05-06 08:06:04] INFO root fetch - main [MainThread]: End processing [libvsbsdl-python]: success
 [2023-05-06 08:06:04] INFO root fetch - main [MainThread]: Store serial: [17997255]
+[2023-05-06 08:11:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997255]
+[2023-05-06 08:11:12] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-06 08:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-Ayra
+[2023-05-06 08:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-ec
+[2023-05-06 08:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-github
+[2023-05-06 08:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alphaz
+[2023-05-06 08:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jiuming-tools
+[2023-05-06 08:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dokuwikidumper
+[2023-05-06 08:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-keycloak
+[2023-05-06 08:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-hcloud
+[2023-05-06 08:11:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: py-Ayiin
+[2023-05-06 08:11:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-docker
+[2023-05-06 08:11:13] INFO root fetch - processPackages [py-Ayra]: New version: [8.7.2] Old Version: [8.7.1]
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-ec]: New version: [0.5.2a1683351297] Old Version: [0.5.2a1683265085]
+[2023-05-06 08:11:13] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-06 08:11:13] INFO root fetch - processPackages [py-Ayiin]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-hcloud]: New version: [1.9.0a1657117726] Old Version: [1.9.0a1654086467]
+[2023-05-06 08:11:13] INFO root fetch - processPackages [alphaz]: New version: [0.7.7.9] Old Version: [0.7.7.8]
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-keycloak]: New version: [5.2.0a1683351485] Old Version: [5.2.0a1683265567]
+[2023-05-06 08:11:13] INFO root fetch - processPackages [jiuming-tools]: New version: [2.9] Old Version: [2.8]
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-github]: New version: [5.9.0a1683351090] Old Version: [5.9.0a1683265053]
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-docker]: New version: [4.3.0a1683265193] Old Version: [4.3.0a1683145388]
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-hcloud]: executing diffoscope
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-hcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_hcloud-1.9.0a1654086467.tar.gz tmp/pulumi_hcloud-1.9.0a1657117726.tar.gz --markdown 20230506/p/pulumi-hcloud/1.9.0a1654086467-1.9.0a1657117726/diff.md --exclude *.pyd
+[2023-05-06 08:11:13] INFO root fetch - processPackages [alphaz]: executing diffoscope
+[2023-05-06 08:11:13] INFO root fetch - processPackages [alphaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphaz-0.7.7.8.tar.gz tmp/alphaz-0.7.7.9.tar.gz --markdown 20230506/a/alphaz/0.7.7.8-0.7.7.9/diff.md --exclude *.pyd
+[2023-05-06 08:11:13] INFO root fetch - processPackages [jiuming-tools]: executing diffoscope
+[2023-05-06 08:11:13] INFO root fetch - processPackages [jiuming-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jiuming-tools-2.8.tar.gz tmp/jiuming-tools-2.9.tar.gz --markdown 20230506/j/jiuming-tools/2.8-2.9/diff.md --exclude *.pyd
+[2023-05-06 08:11:13] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-06 08:11:13] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230506/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-docker]: executing diffoscope
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_docker-4.3.0a1683145388.tar.gz tmp/pulumi_docker-4.3.0a1683265193.tar.gz --markdown 20230506/p/pulumi-docker/4.3.0a1683145388-4.3.0a1683265193/diff.md --exclude *.pyd
+[2023-05-06 08:11:13] INFO root fetch - processPackages [py-Ayiin]: Downloading https://files.pythonhosted.org/packages/76/43/41710ecfd0c662bd2eb64f4328b26ab91be2925b59005d62d4a388317e99/py-Ayiin-0.2.9.tar.gz
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-keycloak]: Downloading https://files.pythonhosted.org/packages/05/d1/3aee2a8258609c3b0c623ff7407e8167f5bf426b183a4ca233d4331a943b/pulumi_keycloak-5.2.0a1683351485.tar.gz
+[2023-05-06 08:11:13] INFO root fetch - processPackages [py-Ayra]: Downloading https://files.pythonhosted.org/packages/1a/54/44dc7eefeb6bc5db707d1d5e2aa0d37ec74ac174f923a6b9a67561f79a85/py-Ayra-8.7.2.tar.gz
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-github]: Downloading https://files.pythonhosted.org/packages/59/af/2a4133103ac4d3534d1838ee1fabd08016f3492a6081645f2f51b9ef0f9a/pulumi_github-5.9.0a1683351090.tar.gz
+[2023-05-06 08:11:13] INFO root fetch - processPackages [py-Ayra]: executing diffoscope
+[2023-05-06 08:11:13] INFO root fetch - processPackages [py-Ayra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayra-8.7.1.tar.gz tmp/py-Ayra-8.7.2.tar.gz --markdown 20230506/p/py-Ayra/8.7.1-8.7.2/diff.md --exclude *.pyd
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-github]: executing diffoscope
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_github-5.9.0a1683265053.tar.gz tmp/pulumi_github-5.9.0a1683351090.tar.gz --markdown 20230506/p/pulumi-github/5.9.0a1683265053-5.9.0a1683351090/diff.md --exclude *.pyd
+[2023-05-06 08:11:13] INFO root fetch - processPackages [py-Ayiin]: executing diffoscope
+[2023-05-06 08:11:13] INFO root fetch - processPackages [py-Ayiin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayiin-0.2.8.tar.gz tmp/py-Ayiin-0.2.9.tar.gz --markdown 20230506/p/py-Ayiin/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-keycloak]: executing diffoscope
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-keycloak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_keycloak-5.2.0a1683265567.tar.gz tmp/pulumi_keycloak-5.2.0a1683351485.tar.gz --markdown 20230506/p/pulumi-keycloak/5.2.0a1683265567-5.2.0a1683351485/diff.md --exclude *.pyd
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-ec]: Downloading https://files.pythonhosted.org/packages/32/ce/b2c3400f975820c2ae0fca39cf76b73089c6c0ac6f7f321cc75bb5ee88fd/pulumi_ec-0.5.2a1683351297.tar.gz
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-ec]: executing diffoscope
+[2023-05-06 08:11:13] INFO root fetch - processPackages [pulumi-ec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_ec-0.5.2a1683265085.tar.gz tmp/pulumi_ec-0.5.2a1683351297.tar.gz --markdown 20230506/p/pulumi-ec/0.5.2a1683265085-0.5.2a1683351297/diff.md --exclude *.pyd
+[2023-05-06 08:11:14] INFO root fetch - main [MainThread]: End processing [jiuming-tools]: success
+[2023-05-06 08:11:15] INFO root fetch - main [MainThread]: End processing [pulumi-ec]: success
+[2023-05-06 08:11:15] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-06 08:11:15] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
+[2023-05-06 08:11:16] INFO root fetch - main [MainThread]: End processing [py-Ayiin]: success
+[2023-05-06 08:11:16] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
+[2023-05-06 08:11:16] INFO root fetch - main [MainThread]: End processing [pulumi-hcloud]: success
+[2023-05-06 08:11:18] INFO root fetch - main [MainThread]: End processing [pulumi-keycloak]: success
+[2023-05-06 08:11:20] INFO root fetch - main [MainThread]: End processing [alphaz]: success
+[2023-05-06 08:11:43] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
+[2023-05-06 08:11:43] INFO root fetch - main [MainThread]: Store serial: [17997279]
