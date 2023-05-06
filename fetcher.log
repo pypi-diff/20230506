@@ -8462,3 +8462,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-06 11:17:57] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.7.tar.gz tmp/oakvar-2.9.9.tar.gz --markdown 20230506/o/oakvar/2.9.7-2.9.9/diff.md --exclude *.pyd
 [2023-05-06 11:18:02] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2023-05-06 11:18:02] INFO root fetch - main [MainThread]: Store serial: [17998499]
+[2023-05-06 11:23:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998499]
+[2023-05-06 11:23:11] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-06 11:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-05-06 11:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygrey
+[2023-05-06 11:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyswitchbee
+[2023-05-06 11:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: p-ttauto-crawler
+[2023-05-06 11:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-05-06 11:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qsi-tk
+[2023-05-06 11:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gravipython
+[2023-05-06 11:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-nightly-cpu-aws
+[2023-05-06 11:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cyberpay-utils-lib
+[2023-05-06 11:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: frankAllSkyCam
+[2023-05-06 11:23:11] INFO root fetch - processPackages [pygrey]: New version: [0.0.1a1] Old Version: [0.0.1a0]
+[2023-05-06 11:23:11] INFO root fetch - processPackages [p-ttauto-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 11:23:11] INFO root fetch - processPackages [pyswitchbee]: New version: [1.7.9] Old Version: [1.7.8]
+[2023-05-06 11:23:11] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-05-06 11:23:11] INFO root fetch - processPackages [gravipython]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 11:23:11] INFO root fetch - processPackages [frankAllSkyCam]: Start processing: pyproject-tag-check
+[2023-05-06 11:23:11] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-06 11:23:12] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-06 11:23:12] ERROR root fetch - processPackages [pygrey]: Unable to fetch info: No such project/version 'pygrey' 0.0.1a0
+[2023-05-06 11:23:12] INFO root fetch - processPackages [cyberpay-utils-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 11:23:12] INFO root fetch - main [MainThread]: End processing [pygrey] error
+[2023-05-06 11:23:12] INFO root fetch - processPackages [qsi-tk]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-05-06 11:23:12] INFO root fetch - processPackages [gravipython]: executing diffoscope
+[2023-05-06 11:23:12] INFO root fetch - processPackages [gravipython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravipython-0.0.3.tar.gz tmp/gravipython-0.0.4.tar.gz --markdown 20230506/g/gravipython/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 11:23:12] INFO root fetch - processPackages [pyproject-tag-check]: New version: [1.0.0] Old Version: [0.3.1]
+[2023-05-06 11:23:12] INFO root fetch - processPackages [pyswitchbee]: executing diffoscope
+[2023-05-06 11:23:12] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-06 11:23:12] INFO root fetch - processPackages [pyswitchbee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyswitchbee-1.7.8.tar.gz tmp/pyswitchbee-1.7.9.tar.gz --markdown 20230506/p/pyswitchbee/1.7.8-1.7.9/diff.md --exclude *.pyd
+[2023-05-06 11:23:12] INFO root fetch - processPackages [p-ttauto-crawler]: executing diffoscope
+[2023-05-06 11:23:12] INFO root fetch - processPackages [p-ttauto-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-ttauto-crawler-0.0.8.tar.gz tmp/p-ttauto-crawler-0.0.9.tar.gz --markdown 20230506/p/p-ttauto-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 11:23:12] INFO root fetch - processPackages [tf-nightly-cpu-aws]: New version: [2.14.0.dev20230506] Old Version: [2.14.0.dev20230505]
+[2023-05-06 11:23:12] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-06 11:23:12] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230506/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-06 11:23:12] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-06 11:23:12] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230506/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-06 11:23:12] INFO root fetch - processPackages [qsi-tk]: Downloading https://files.pythonhosted.org/packages/96/39/068a1848eca7eaa371eeddb0631f20133ea0deee294db0e195b9bdae801c/qsi-tk-0.4.5.tar.gz
+[2023-05-06 11:23:12] INFO root fetch - processPackages [pyproject-tag-check]: Downloading https://files.pythonhosted.org/packages/ee/1c/4a306c5cda42977891ede9a8d0d9b7f18c5195134e04fc2f9735099aef4e/pyproject_tag_check-0.3.1.tar.gz
+[2023-05-06 11:23:12] INFO root fetch - processPackages [tf-nightly-cpu-aws]: Downloading https://files.pythonhosted.org/packages/6d/8d/e308c45fb2d8f455422da19cd6cac381955e4b705f7936349cec5c1a3b62/tf_nightly_cpu_aws-2.14.0.dev20230505-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-05-06 11:23:12] INFO root fetch - processPackages [cyberpay-utils-lib]: executing diffoscope
+[2023-05-06 11:23:12] INFO root fetch - processPackages [cyberpay-utils-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberpay-utils-lib-0.0.8.tar.gz tmp/cyberpay-utils-lib-0.0.9.tar.gz --markdown 20230506/c/cyberpay-utils-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 11:23:12] WARNING root fetch - processPackages [tf-nightly-cpu-aws]: Skipping package: exceeds size limit 250597396>=10485760
+[2023-05-06 11:23:12] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu-aws] error
+[2023-05-06 11:23:12] WARNING root fetch - processPackages [qsi-tk]: Skipping package: exceeds size limit 58242571>=10485760
+[2023-05-06 11:23:12] INFO root fetch - main [MainThread]: End processing [qsi-tk] error
+[2023-05-06 11:23:12] INFO root fetch - processPackages [pyproject-tag-check]: Downloading https://files.pythonhosted.org/packages/0f/4d/75437fa251643dd532d3bb33439b50a6c3b6d57a3fb1269426785438bca5/pyproject_tag_check-1.0.0.tar.gz
+[2023-05-06 11:23:12] INFO root fetch - processPackages [pyproject-tag-check]: executing diffoscope
+[2023-05-06 11:23:12] INFO root fetch - processPackages [pyproject-tag-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_tag_check-0.3.1.tar.gz tmp/pyproject_tag_check-1.0.0.tar.gz --markdown 20230506/p/pyproject-tag-check/0.3.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 11:23:13] INFO root fetch - main [MainThread]: End processing [gravipython]: success
+[2023-05-06 11:23:13] INFO root fetch - main [MainThread]: End processing [p-ttauto-crawler]: success
+[2023-05-06 11:23:13] INFO root fetch - main [MainThread]: End processing [pyswitchbee]: success
+[2023-05-06 11:23:13] INFO root fetch - main [MainThread]: End processing [cyberpay-utils-lib]: success
+[2023-05-06 11:23:13] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-06 11:23:13] INFO root fetch - main [MainThread]: End processing [pyproject-tag-check]: success
+[2023-05-06 11:23:14] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-06 11:23:14] INFO root fetch - main [MainThread]: Store serial: [17998533]
