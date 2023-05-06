@@ -7727,3 +7727,151 @@
 [2023-05-06 10:19:30] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
 [2023-05-06 10:19:34] INFO root fetch - main [MainThread]: End processing [anylabeling-gpu]: success
 [2023-05-06 10:19:34] INFO root fetch - main [MainThread]: Store serial: [17998114]
+[2023-05-06 10:24:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17998114]
+[2023-05-06 10:24:44] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 10:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sinabs-dynapcnn
+[2023-05-06 10:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyroporn
+[2023-05-06 10:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: toollib
+[2023-05-06 10:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modelwhaleutils
+[2023-05-06 10:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modelwhaleutils
+[2023-05-06 10:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nlptoolssna
+[2023-05-06 10:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyproton
+[2023-05-06 10:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: limes-x
+[2023-05-06 10:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: msspeech
+[2023-05-06 10:24:44] INFO root fetch - processPackages [sinabs-dynapcnn]: New version: [1.0.9.dev97] Old Version: [1.0.9.dev9]
+[2023-05-06 10:24:44] INFO root fetch - processPackages [pyproton]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-06 10:24:44] INFO root fetch - processPackages [modelwhaleutils]: New version: [0.5.1.5] Old Version: [0.5.1.4]
+[2023-05-06 10:24:44] INFO root fetch - processPackages [pyroporn]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-06 10:24:44] INFO root fetch - processPackages [nlptoolssna]: New version: [0.7.0] Old Version: [0.6.9]
+[2023-05-06 10:24:44] INFO root fetch - processPackages [limes-x]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-06 10:24:44] INFO root fetch - processPackages [toollib]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-05-06 10:24:44] INFO root fetch - processPackages [modelwhaleutils]: New version: [0.5.1.5] Old Version: [0.5.1.4]
+[2023-05-06 10:24:44] INFO root fetch - processPackages [sinabs-dynapcnn]: executing diffoscope
+[2023-05-06 10:24:44] INFO root fetch - processPackages [sinabs-dynapcnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinabs-dynapcnn-1.0.9.dev9.tar.gz tmp/sinabs-dynapcnn-1.0.9.dev97.tar.gz --markdown 20230506/s/sinabs-dynapcnn/1.0.9.dev9-1.0.9.dev97/diff.md --exclude *.pyd
+[2023-05-06 10:24:44] INFO root fetch - processPackages [msspeech]: New version: [3.7.9] Old Version: [3.7.8]
+[2023-05-06 10:24:44] INFO root fetch - processPackages [modelwhaleutils]: Downloading https://files.pythonhosted.org/packages/89/c6/578f08b9a5de3c9edbf2759966b098e88837f7281bbf8bcb209e67fe14c2/modelwhaleutils-0.5.1.4-py3.7.egg
+[2023-05-06 10:24:44] INFO root fetch - processPackages [modelwhaleutils]: Downloading https://files.pythonhosted.org/packages/89/c6/578f08b9a5de3c9edbf2759966b098e88837f7281bbf8bcb209e67fe14c2/modelwhaleutils-0.5.1.4-py3.7.egg
+[2023-05-06 10:24:44] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/f8/ab/f02a58d248937858208775f8f741e3951d7bc49c5d092596c5a54f3d82fd/toollib-1.4.2-py3-none-any.whl
+[2023-05-06 10:24:44] INFO root fetch - processPackages [pyproton]: Downloading https://files.pythonhosted.org/packages/04/37/027dafe40db712ec22c21ec20d4141d9ab238af2877e28ff037106c5864a/pyproton-0.0.4.tar.gz
+[2023-05-06 10:24:44] INFO root fetch - processPackages [pyroporn]: Downloading https://files.pythonhosted.org/packages/7e/d4/3d1f1e0c5eb4f3bbe325ac8b59812f01e67785cbec976b0fae15269141e7/pyroporn-0.2.3.tar.gz
+[2023-05-06 10:24:44] INFO root fetch - processPackages [limes-x]: Downloading https://files.pythonhosted.org/packages/d3/72/9a45c022d7dd23c2b9e15da078a910058a61519567d853d9c7e498e053c3/limes_x-1.1.1-py3-none-any.whl
+[2023-05-06 10:24:44] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/d3/e5/7d93573b2dbf022632510e13f0fd96ab8481d58a103676c27f3d0ab1c56b/nlptoolssna-0.7.0.tar.gz
+[2023-05-06 10:24:44] INFO root fetch - processPackages [msspeech]: Downloading https://files.pythonhosted.org/packages/68/81/3077547c54082ddc65b383a5a39fd383bf83f7eb51f76993288c0ccd60cf/msspeech-3.7.8.tar.gz
+[2023-05-06 10:24:44] INFO root fetch - processPackages [pyproton]: executing diffoscope
+[2023-05-06 10:24:44] INFO root fetch - processPackages [pyproton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproton-0.0.3.tar.gz tmp/pyproton-0.0.4.tar.gz --markdown 20230506/p/pyproton/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-06 10:24:44] INFO root fetch - processPackages [pyroporn]: executing diffoscope
+[2023-05-06 10:24:44] INFO root fetch - processPackages [pyroporn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroporn-0.2.2.tar.gz tmp/pyroporn-0.2.3.tar.gz --markdown 20230506/p/pyroporn/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-06 10:24:44] INFO root fetch - processPackages [limes-x]: executing diffoscope
+[2023-05-06 10:24:44] INFO root fetch - processPackages [limes-x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limes_x-1.1.0-py3-none-any.whl.zip tmp/limes_x-1.1.1-py3-none-any.whl.zip --markdown 20230506/l/limes-x/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-06 10:24:44] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 10:24:44] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.6.9.tar.gz tmp/nlptoolssna-0.7.0.tar.gz --markdown 20230506/n/nlptoolssna/0.6.9-0.7.0/diff.md --exclude *.pyd
+[2023-05-06 10:24:44] INFO root fetch - processPackages [modelwhaleutils]: Downloading https://files.pythonhosted.org/packages/94/8b/935e1ff6c6314a62c5cd69af10b7980c72c7ea9225b5641b68bb179a2522/modelwhaleutils-0.5.1.5-py3.7.egg
+[2023-05-06 10:24:44] INFO root fetch - processPackages [modelwhaleutils]: Downloading https://files.pythonhosted.org/packages/94/8b/935e1ff6c6314a62c5cd69af10b7980c72c7ea9225b5641b68bb179a2522/modelwhaleutils-0.5.1.5-py3.7.egg
+[2023-05-06 10:24:45] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/00/60/c3c7bac0920efb4e9161e48a6a967e592012aa747ee8988d3d1425b8e687/toollib-1.4.3-py3-none-any.whl
+[2023-05-06 10:24:45] INFO root fetch - processPackages [modelwhaleutils]: executing diffoscope
+[2023-05-06 10:24:45] INFO root fetch - processPackages [modelwhaleutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelwhaleutils-0.5.1.4-py3.7.egg tmp/modelwhaleutils-0.5.1.5-py3.7.egg --markdown 20230506/m/modelwhaleutils/0.5.1.4-0.5.1.5/diff.md --exclude *.pyd
+[2023-05-06 10:24:45] INFO root fetch - processPackages [modelwhaleutils]: executing diffoscope
+[2023-05-06 10:24:45] INFO root fetch - processPackages [modelwhaleutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelwhaleutils-0.5.1.4-py3.7.egg tmp/modelwhaleutils-0.5.1.5-py3.7.egg --markdown 20230506/m/modelwhaleutils/0.5.1.4-0.5.1.5/diff.md --exclude *.pyd
+[2023-05-06 10:24:45] INFO root fetch - processPackages [toollib]: executing diffoscope
+[2023-05-06 10:24:45] INFO root fetch - processPackages [toollib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toollib-1.4.2-py3-none-any.whl.zip tmp/toollib-1.4.3-py3-none-any.whl.zip --markdown 20230506/t/toollib/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-05-06 10:24:45] INFO root fetch - processPackages [msspeech]: Downloading https://files.pythonhosted.org/packages/64/f1/8b182732b5b457549e01900b9fad6da96b8c5348cf100935d6c167dea6f0/msspeech-3.7.9.tar.gz
+[2023-05-06 10:24:45] INFO root fetch - processPackages [msspeech]: executing diffoscope
+[2023-05-06 10:24:45] INFO root fetch - processPackages [msspeech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msspeech-3.7.8.tar.gz tmp/msspeech-3.7.9.tar.gz --markdown 20230506/m/msspeech/3.7.8-3.7.9/diff.md --exclude *.pyd
+[2023-05-06 10:24:46] INFO root fetch - main [MainThread]: End processing [pyproton]: success
+[2023-05-06 10:24:46] INFO root fetch - main [MainThread]: End processing [pyroporn]: success
+[2023-05-06 10:24:46] INFO root fetch - main [MainThread]: End processing [limes-x]: success
+[2023-05-06 10:24:46] ERROR root fetch - processPackages [modelwhaleutils]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-05-06 10:24:46] INFO root fetch - main [MainThread]: End processing [modelwhaleutils] error
+[2023-05-06 10:24:46] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 10:24:46] ERROR root fetch - processPackages [modelwhaleutils]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-05-06 10:24:46] INFO root fetch - main [MainThread]: End processing [modelwhaleutils] error
+[2023-05-06 10:24:47] INFO root fetch - main [MainThread]: End processing [msspeech]: success
+[2023-05-06 10:24:47] INFO root fetch - main [MainThread]: End processing [toollib]: success
+[2023-05-06 10:24:48] INFO root fetch - main [MainThread]: End processing [sinabs-dynapcnn]: success
+[2023-05-06 10:24:48] INFO root fetch - main [MainThread]: Store serial: [17998140]
