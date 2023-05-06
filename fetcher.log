@@ -10202,3 +10202,57 @@ EOFError: EOF read where object expected
 [2023-05-06 14:06:51] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
 [2023-05-06 14:06:51] INFO root fetch - main [MainThread]: End processing [openrl]: success
 [2023-05-06 14:06:51] INFO root fetch - main [MainThread]: Store serial: [17999448]
+[2023-05-06 14:11:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999448]
+[2023-05-06 14:12:00] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 14:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: type-inspector
+[2023-05-06 14:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zerocs
+[2023-05-06 14:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: poetry-dependencies
+[2023-05-06 14:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lona-html5-qrcode
+[2023-05-06 14:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: type-inspector
+[2023-05-06 14:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-webperformers-humans
+[2023-05-06 14:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vanoma-api-utils
+[2023-05-06 14:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: happy-learning
+[2023-05-06 14:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: evalAIRR
+[2023-05-06 14:12:00] INFO root fetch - processPackages [vanoma-api-utils]: New version: [0.91.0] Old Version: [0.90.0]
+[2023-05-06 14:12:00] INFO root fetch - processPackages [evalAIRR]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 14:12:00] INFO root fetch - processPackages [vanoma-api-utils]: executing diffoscope
+[2023-05-06 14:12:00] INFO root fetch - processPackages [vanoma-api-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vanoma_api_utils-0.90.0.tar.gz tmp/vanoma_api_utils-0.91.0.tar.gz --markdown 20230506/v/vanoma-api-utils/0.90.0-0.91.0/diff.md --exclude *.pyd
+[2023-05-06 14:12:00] WARNING root fetch - processPackages [lona-html5-qrcode]: Skipping, unable to determine old version
+[2023-05-06 14:12:00] INFO root fetch - main [MainThread]: End processing [lona-html5-qrcode] error
+[2023-05-06 14:12:00] ERROR root fetch - processPackages [poetry-dependencies]: Unable to get metadata: No such project 'poetry-dependencies'
+[2023-05-06 14:12:00] INFO root fetch - main [MainThread]: End processing [poetry-dependencies] error
+[2023-05-06 14:12:00] INFO root fetch - processPackages [happy-learning]: New version: [0.5.0] Old Version: [0.4.9]
+[2023-05-06 14:12:00] INFO root fetch - processPackages [type-inspector]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-06 14:12:00] INFO root fetch - processPackages [type-inspector]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-06 14:12:00] INFO root fetch - processPackages [django-webperformers-humans]: New version: [0.3] Old Version: [0.2]
+[2023-05-06 14:12:00] INFO root fetch - processPackages [zerocs]: New version: [1.1] Old Version: [1.0]
+[2023-05-06 14:12:00] INFO root fetch - processPackages [evalAIRR]: executing diffoscope
+[2023-05-06 14:12:00] INFO root fetch - processPackages [evalAIRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evalAIRR-0.0.8.tar.gz tmp/evalAIRR-0.0.9.tar.gz --markdown 20230506/e/evalAIRR/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 14:12:01] INFO root fetch - processPackages [type-inspector]: Downloading https://files.pythonhosted.org/packages/be/fc/7f37de6d6a8e8d6d09205758542422de48ac0ad278b2d81f483cd07d3599/type_inspector-1.2.0.tar.gz
+[2023-05-06 14:12:01] INFO root fetch - processPackages [type-inspector]: Downloading https://files.pythonhosted.org/packages/be/fc/7f37de6d6a8e8d6d09205758542422de48ac0ad278b2d81f483cd07d3599/type_inspector-1.2.0.tar.gz
+[2023-05-06 14:12:01] INFO root fetch - processPackages [happy-learning]: Downloading https://files.pythonhosted.org/packages/de/a1/40b7b907090e44b3e128f21ecb43ef826081dee9b50f3060b83dfe506a4b/happy_learning-0.4.9.tar.gz
+[2023-05-06 14:12:01] INFO root fetch - processPackages [zerocs]: Downloading https://files.pythonhosted.org/packages/a8/2c/263c1de832da29f1cd1af563daab0dc1ac65659900f89d344c5a1ab12b50/zerocs-1.0.tar.gz
+[2023-05-06 14:12:01] INFO root fetch - processPackages [django-webperformers-humans]: Downloading https://files.pythonhosted.org/packages/49/1f/b8a1bd50bc3a5a4b9c7faca095dc9c63bdacf2b72ff45d988817c6c45929/django-webperformers-humans-0.2.tar.gz
+[2023-05-06 14:12:01] INFO root fetch - processPackages [django-webperformers-humans]: Downloading https://files.pythonhosted.org/packages/a5/c8/aa2dc17759c547b0eb17d3741557b29be5f3e25b60e924d836fc8a0818e5/django-webperformers-humans-0.3.tar.gz
+[2023-05-06 14:12:01] INFO root fetch - processPackages [happy-learning]: Downloading https://files.pythonhosted.org/packages/9a/40/70cb3eba749057af04b42d868831ed4cec2c5216c018d2c4b66d5c236ed3/happy_learning-0.5.0.tar.gz
+[2023-05-06 14:12:01] INFO root fetch - processPackages [zerocs]: Downloading https://files.pythonhosted.org/packages/d6/6d/d238d51945cfbde48987d7494cffe829113b52456dde1819857b5fd1cc52/zerocs-1.1.tar.gz
+[2023-05-06 14:12:01] INFO root fetch - processPackages [type-inspector]: Downloading https://files.pythonhosted.org/packages/62/45/fc3160643b1a8658b7ec9626d8fc0feada2c8f72ff37b2e8783386e954e6/type_inspector-1.2.1.tar.gz
+[2023-05-06 14:12:01] INFO root fetch - processPackages [type-inspector]: Downloading https://files.pythonhosted.org/packages/62/45/fc3160643b1a8658b7ec9626d8fc0feada2c8f72ff37b2e8783386e954e6/type_inspector-1.2.1.tar.gz
+[2023-05-06 14:12:01] INFO root fetch - processPackages [django-webperformers-humans]: executing diffoscope
+[2023-05-06 14:12:01] INFO root fetch - processPackages [django-webperformers-humans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-webperformers-humans-0.2.tar.gz tmp/django-webperformers-humans-0.3.tar.gz --markdown 20230506/d/django-webperformers-humans/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-06 14:12:01] INFO root fetch - processPackages [zerocs]: executing diffoscope
+[2023-05-06 14:12:01] INFO root fetch - processPackages [zerocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerocs-1.0.tar.gz tmp/zerocs-1.1.tar.gz --markdown 20230506/z/zerocs/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-06 14:12:01] INFO root fetch - processPackages [happy-learning]: executing diffoscope
+[2023-05-06 14:12:01] INFO root fetch - processPackages [happy-learning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/happy_learning-0.4.9.tar.gz tmp/happy_learning-0.5.0.tar.gz --markdown 20230506/h/happy-learning/0.4.9-0.5.0/diff.md --exclude *.pyd
+[2023-05-06 14:12:01] INFO root fetch - processPackages [type-inspector]: executing diffoscope
+[2023-05-06 14:12:01] INFO root fetch - processPackages [type-inspector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/type_inspector-1.2.0.tar.gz tmp/type_inspector-1.2.1.tar.gz --markdown 20230506/t/type-inspector/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-06 14:12:01] INFO root fetch - processPackages [type-inspector]: executing diffoscope
+[2023-05-06 14:12:01] INFO root fetch - processPackages [type-inspector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/type_inspector-1.2.0.tar.gz tmp/type_inspector-1.2.1.tar.gz --markdown 20230506/t/type-inspector/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-06 14:12:02] INFO root fetch - main [MainThread]: End processing [vanoma-api-utils]: success
+[2023-05-06 14:12:02] INFO root fetch - main [MainThread]: End processing [evalAIRR]: success
+[2023-05-06 14:12:02] INFO root fetch - main [MainThread]: End processing [zerocs]: success
+[2023-05-06 14:12:02] INFO root fetch - main [MainThread]: End processing [django-webperformers-humans]: success
+[2023-05-06 14:12:02] INFO root fetch - main [MainThread]: End processing [type-inspector]: success
+[2023-05-06 14:12:02] INFO root fetch - main [MainThread]: End processing [type-inspector]: success
+[2023-05-06 14:12:03] INFO root fetch - main [MainThread]: End processing [happy-learning]: success
+[2023-05-06 14:12:03] INFO root fetch - main [MainThread]: Store serial: [17999488]
