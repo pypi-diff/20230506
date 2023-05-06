@@ -13665,3 +13665,38 @@ EOFError: EOF read where object expected
 [2023-05-06 21:15:27] INFO root fetch - processPackages [pyaipersonality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaipersonality-0.0.6.tar.gz tmp/pyaipersonality-0.0.7.tar.gz --markdown 20230506/p/pyaipersonality/0.0.6-0.0.7/diff.md --exclude *.pyd
 [2023-05-06 21:15:28] INFO root fetch - main [MainThread]: End processing [pyaipersonality]: success
 [2023-05-06 21:15:28] INFO root fetch - main [MainThread]: Store serial: [18001678]
+[2023-05-06 21:20:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001678]
+[2023-05-06 21:20:36] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 21:20:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sum-pai
+[2023-05-06 21:20:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: micropython-rp2-pimoroni-picolipo-16mb-stubs
+[2023-05-06 21:20:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hotsos
+[2023-05-06 21:20:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: archcraftsman
+[2023-05-06 21:20:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: semisup-segmentation
+[2023-05-06 21:20:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyfastdownload
+[2023-05-06 21:20:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: termimal
+[2023-05-06 21:20:36] WARNING root fetch - processPackages [micropython-rp2-pimoroni-picolipo-16mb-stubs]: Skipping, unable to determine old version
+[2023-05-06 21:20:36] INFO root fetch - main [MainThread]: End processing [micropython-rp2-pimoroni-picolipo-16mb-stubs] error
+[2023-05-06 21:20:36] INFO root fetch - processPackages [sum-pai]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-06 21:20:36] INFO root fetch - processPackages [archcraftsman]: New version: [4.0.1] Old Version: [3.5.9]
+[2023-05-06 21:20:36] WARNING root fetch - processPackages [pyfastdownload]: Skipping, unable to determine old version
+[2023-05-06 21:20:36] INFO root fetch - main [MainThread]: End processing [pyfastdownload] error
+[2023-05-06 21:20:36] INFO root fetch - processPackages [semisup-segmentation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 21:20:36] INFO root fetch - processPackages [hotsos]: New version: [1.1.13.post9] Old Version: [1.1.13.post8]
+[2023-05-06 21:20:36] WARNING root fetch - processPackages [termimal]: Skipping, unable to determine old version
+[2023-05-06 21:20:36] INFO root fetch - main [MainThread]: End processing [termimal] error
+[2023-05-06 21:20:37] INFO root fetch - processPackages [semisup-segmentation]: executing diffoscope
+[2023-05-06 21:20:37] INFO root fetch - processPackages [semisup-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semisup-segmentation-0.0.8.tar.gz tmp/semisup-segmentation-0.0.9.tar.gz --markdown 20230506/s/semisup-segmentation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 21:20:37] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-05-06 21:20:37] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.13.post8.tar.gz tmp/hotsos-1.1.13.post9.tar.gz --markdown 20230506/h/hotsos/1.1.13.post8-1.1.13.post9/diff.md --exclude *.pyd
+[2023-05-06 21:20:37] INFO root fetch - processPackages [archcraftsman]: Downloading https://files.pythonhosted.org/packages/92/5f/1ff489e6da6f4f2a3cf75e57d11fa10b598b38f5ed55be92b8e4f9361f6e/archcraftsman-3.5.9-py3-none-any.whl
+[2023-05-06 21:20:37] INFO root fetch - processPackages [sum-pai]: Downloading https://files.pythonhosted.org/packages/00/ae/0351c7d3b0bdf629b0a6af173f70481cca7c992bd73d47c889ac5c983f14/sum_pai-0.3.0.tar.gz
+[2023-05-06 21:20:37] INFO root fetch - processPackages [sum-pai]: executing diffoscope
+[2023-05-06 21:20:37] INFO root fetch - processPackages [sum-pai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sum_pai-0.2.0.tar.gz tmp/sum_pai-0.3.0.tar.gz --markdown 20230506/s/sum-pai/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-06 21:20:37] INFO root fetch - processPackages [archcraftsman]: Downloading https://files.pythonhosted.org/packages/4c/47/0366239cedae424adc7fdeb4332b55921d334e63282c6b24b4499ff4e36c/archcraftsman-4.0.1-py3-none-any.whl
+[2023-05-06 21:20:37] INFO root fetch - processPackages [archcraftsman]: executing diffoscope
+[2023-05-06 21:20:37] INFO root fetch - processPackages [archcraftsman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archcraftsman-3.5.9-py3-none-any.whl.zip tmp/archcraftsman-4.0.1-py3-none-any.whl.zip --markdown 20230506/a/archcraftsman/3.5.9-4.0.1/diff.md --exclude *.pyd
+[2023-05-06 21:20:38] INFO root fetch - main [MainThread]: End processing [semisup-segmentation]: success
+[2023-05-06 21:20:38] INFO root fetch - main [MainThread]: End processing [sum-pai]: success
+[2023-05-06 21:20:39] INFO root fetch - main [MainThread]: End processing [archcraftsman]: success
+[2023-05-06 21:20:39] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-05-06 21:20:39] INFO root fetch - main [MainThread]: Store serial: [18001701]
