@@ -6503,3 +6503,46 @@
 [2023-05-06 08:27:24] INFO root fetch - main [MainThread]: End processing [pulumi-okta]: success
 [2023-05-06 08:27:27] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2023-05-06 08:27:27] INFO root fetch - main [MainThread]: Store serial: [17997364]
+[2023-05-06 08:32:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17997364]
+[2023-05-06 08:32:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-06 08:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-libvirt
+[2023-05-06 08:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: featuretoolsOnSparkX
+[2023-05-06 08:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OctoBot-Tulipy
+[2023-05-06 08:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simplegeomap
+[2023-05-06 08:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-pagerduty
+[2023-05-06 08:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: angry-logger
+[2023-05-06 08:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cal-tool
+[2023-05-06 08:32:36] INFO root fetch - processPackages [pulumi-libvirt]: New version: [0.4.1a1683352653] Old Version: [0.4.1a1683267861]
+[2023-05-06 08:32:36] INFO root fetch - processPackages [featuretoolsOnSparkX]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-06 08:32:36] INFO root fetch - processPackages [pulumi-pagerduty]: New version: [3.9.0a1678824312] Old Version: [3.9.0a1678231019]
+[2023-05-06 08:32:36] ERROR root fetch - processPackages [cal-tool]: Unable to get metadata: No such project 'cal-tool'
+[2023-05-06 08:32:36] INFO root fetch - processPackages [angry-logger]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-05-06 08:32:36] INFO root fetch - main [MainThread]: End processing [cal-tool] error
+[2023-05-06 08:32:36] INFO root fetch - processPackages [simplegeomap]: New version: [0.0.21] Old Version: [0.0.20]
+[2023-05-06 08:32:36] INFO root fetch - processPackages [OctoBot-Tulipy]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-05-06 08:32:36] INFO root fetch - processPackages [pulumi-pagerduty]: executing diffoscope
+[2023-05-06 08:32:36] INFO root fetch - processPackages [pulumi-pagerduty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_pagerduty-3.9.0a1678231019.tar.gz tmp/pulumi_pagerduty-3.9.0a1678824312.tar.gz --markdown 20230506/p/pulumi-pagerduty/3.9.0a1678231019-3.9.0a1678824312/diff.md --exclude *.pyd
+[2023-05-06 08:32:36] INFO root fetch - processPackages [pulumi-libvirt]: Downloading https://files.pythonhosted.org/packages/9c/a2/0a314d198646156d809d3710ec06bcff40a42cf04b5235b0e80e1f5971ee/pulumi_libvirt-0.4.1a1683352653.tar.gz
+[2023-05-06 08:32:36] INFO root fetch - processPackages [angry-logger]: Downloading https://files.pythonhosted.org/packages/24/a6/1e02df1af8ab94d5aecc8641cc84518efb9cb50645d3ce3b8b19a60f7369/angry-logger-0.1.0.tar.gz
+[2023-05-06 08:32:36] INFO root fetch - processPackages [simplegeomap]: Downloading https://files.pythonhosted.org/packages/3e/18/d84b29c5b166cbb55a8d8d5fd29c165553eedc876b031d3dd80b589857c3/simplegeomap-0.0.20.tar.gz
+[2023-05-06 08:32:36] INFO root fetch - processPackages [featuretoolsOnSparkX]: Downloading https://files.pythonhosted.org/packages/21/a4/d4e400faa74d2bccc433107114b05b35d8ac874c96092c6cc28e5e94334d/featuretoolsOnSparkX-0.4.0-py3-none-any.whl
+[2023-05-06 08:32:36] INFO root fetch - processPackages [pulumi-libvirt]: executing diffoscope
+[2023-05-06 08:32:36] INFO root fetch - processPackages [pulumi-libvirt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_libvirt-0.4.1a1683267861.tar.gz tmp/pulumi_libvirt-0.4.1a1683352653.tar.gz --markdown 20230506/p/pulumi-libvirt/0.4.1a1683267861-0.4.1a1683352653/diff.md --exclude *.pyd
+[2023-05-06 08:32:36] INFO root fetch - processPackages [OctoBot-Tulipy]: Downloading https://files.pythonhosted.org/packages/71/f6/2ce166e20e56b17ab86c5ffb365aeb6c66ff16eb02bfd382c8cebd1c038d/OctoBot-Tulipy-0.4.7.tar.gz
+[2023-05-06 08:32:36] INFO root fetch - processPackages [featuretoolsOnSparkX]: executing diffoscope
+[2023-05-06 08:32:36] INFO root fetch - processPackages [featuretoolsOnSparkX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featuretoolsOnSparkX-0.3.0.tar.gz tmp/featuretoolsOnSparkX-0.4.0-py3-none-any.whl.zip --markdown 20230506/f/featuretoolsOnSparkX/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-06 08:32:36] INFO root fetch - processPackages [OctoBot-Tulipy]: executing diffoscope
+[2023-05-06 08:32:36] INFO root fetch - processPackages [OctoBot-Tulipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Tulipy-0.4.6.tar.gz tmp/OctoBot-Tulipy-0.4.7.tar.gz --markdown 20230506/O/OctoBot-Tulipy/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-05-06 08:32:36] INFO root fetch - processPackages [simplegeomap]: Downloading https://files.pythonhosted.org/packages/ee/40/7c24d80c8518b86876908db27f81206e33bc30e088b5ef51829a2b8b53ee/simplegeomap-0.0.21.tar.gz
+[2023-05-06 08:32:36] INFO root fetch - processPackages [angry-logger]: Downloading https://files.pythonhosted.org/packages/dd/51/0ff6c9b7681fc725c3c3cfe1a6eed7a73147843708e0be89e47790b8306c/angry_logger-1.0.0.tar.gz
+[2023-05-06 08:32:36] INFO root fetch - processPackages [angry-logger]: executing diffoscope
+[2023-05-06 08:32:36] INFO root fetch - processPackages [angry-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angry-logger-0.1.0.tar.gz tmp/angry_logger-1.0.0.tar.gz --markdown 20230506/a/angry-logger/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 08:32:36] INFO root fetch - processPackages [simplegeomap]: executing diffoscope
+[2023-05-06 08:32:36] INFO root fetch - processPackages [simplegeomap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplegeomap-0.0.20.tar.gz tmp/simplegeomap-0.0.21.tar.gz --markdown 20230506/s/simplegeomap/0.0.20-0.0.21/diff.md --exclude *.pyd
+[2023-05-06 08:32:37] INFO root fetch - main [MainThread]: End processing [featuretoolsOnSparkX]: success
+[2023-05-06 08:32:37] INFO root fetch - main [MainThread]: End processing [pulumi-libvirt]: success
+[2023-05-06 08:32:37] INFO root fetch - main [MainThread]: End processing [OctoBot-Tulipy]: success
+[2023-05-06 08:32:37] INFO root fetch - main [MainThread]: End processing [angry-logger]: success
+[2023-05-06 08:32:37] INFO root fetch - main [MainThread]: End processing [simplegeomap]: success
+[2023-05-06 08:32:38] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
+[2023-05-06 08:32:38] INFO root fetch - main [MainThread]: Store serial: [17997393]
