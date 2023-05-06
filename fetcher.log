@@ -2054,3 +2054,35 @@
 [2023-05-06 03:05:11] INFO root fetch - main [MainThread]: End processing [texonomy]: success
 [2023-05-06 03:05:11] INFO root fetch - main [MainThread]: End processing [commandsgpt]: success
 [2023-05-06 03:05:11] INFO root fetch - main [MainThread]: Store serial: [17994651]
+[2023-05-06 03:10:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17994651]
+[2023-05-06 03:10:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 03:10:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdbx2df
+[2023-05-06 03:10:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: canonical
+[2023-05-06 03:10:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: types-pyvmomi
+[2023-05-06 03:10:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-subminute
+[2023-05-06 03:10:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyaprilaire
+[2023-05-06 03:10:21] INFO root fetch - processPackages [canonical]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-06 03:10:21] INFO root fetch - processPackages [pdbx2df]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-05-06 03:10:21] INFO root fetch - processPackages [pyaprilaire]: New version: [0.6.0b3] Old Version: [0.6.0b2]
+[2023-05-06 03:10:21] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-06 03:10:21] INFO root fetch - processPackages [types-pyvmomi]: New version: [8.0.0.2] Old Version: [8.0.0.1]
+[2023-05-06 03:10:21] INFO root fetch - processPackages [pyaprilaire]: executing diffoscope
+[2023-05-06 03:10:21] INFO root fetch - processPackages [pyaprilaire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaprilaire-0.6.0b2.tar.gz tmp/pyaprilaire-0.6.0b3.tar.gz --markdown 20230506/p/pyaprilaire/0.6.0b2-0.6.0b3/diff.md --exclude *.pyd
+[2023-05-06 03:10:21] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-05-06 03:10:21] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230506/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-06 03:10:21] INFO root fetch - processPackages [pdbx2df]: Downloading https://files.pythonhosted.org/packages/aa/51/e5397a6001f8137c0856c4e454184ce4a269af62f4634bb0c17db2448474/pdbx2df-0.2.3.tar.gz
+[2023-05-06 03:10:22] INFO root fetch - processPackages [types-pyvmomi]: Downloading https://files.pythonhosted.org/packages/b3/6c/7514ee3abc9b36530d8fda764339e56b1213e2fb4476a97aebf26032c4b4/types-pyvmomi-8.0.0.1.tar.gz
+[2023-05-06 03:10:22] INFO root fetch - processPackages [pdbx2df]: Downloading https://files.pythonhosted.org/packages/53/9e/5f0e62a8cd1801228e47be5a0b0ce00af411718375e9f988f2eb13f79def/pdbx2df-0.3.0.tar.gz
+[2023-05-06 03:10:22] INFO root fetch - processPackages [canonical]: executing diffoscope
+[2023-05-06 03:10:22] INFO root fetch - processPackages [canonical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canonical-0.8.0.tar.gz tmp/canonical-0.9.0.tar.gz --markdown 20230506/c/canonical/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-06 03:10:22] INFO root fetch - processPackages [pdbx2df]: executing diffoscope
+[2023-05-06 03:10:22] INFO root fetch - processPackages [pdbx2df]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdbx2df-0.2.3.tar.gz tmp/pdbx2df-0.3.0.tar.gz --markdown 20230506/p/pdbx2df/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-05-06 03:10:22] INFO root fetch - processPackages [types-pyvmomi]: Downloading https://files.pythonhosted.org/packages/dc/47/cd017a2922b635180cae199b01b180dc292e596672ef75c7f2ce64552ea7/types-pyvmomi-8.0.0.2.tar.gz
+[2023-05-06 03:10:22] INFO root fetch - processPackages [types-pyvmomi]: executing diffoscope
+[2023-05-06 03:10:22] INFO root fetch - processPackages [types-pyvmomi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-pyvmomi-8.0.0.1.tar.gz tmp/types-pyvmomi-8.0.0.2.tar.gz --markdown 20230506/t/types-pyvmomi/8.0.0.1-8.0.0.2/diff.md --exclude *.pyd
+[2023-05-06 03:10:23] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
+[2023-05-06 03:10:23] INFO root fetch - main [MainThread]: End processing [pyaprilaire]: success
+[2023-05-06 03:10:23] INFO root fetch - main [MainThread]: End processing [canonical]: success
+[2023-05-06 03:10:23] INFO root fetch - main [MainThread]: End processing [pdbx2df]: success
+[2023-05-06 03:10:23] INFO root fetch - main [MainThread]: End processing [types-pyvmomi]: success
+[2023-05-06 03:10:23] INFO root fetch - main [MainThread]: Store serial: [17994662]
