@@ -9704,3 +9704,52 @@ EOFError: EOF read where object expected
 [2023-05-06 13:19:26] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
 [2023-05-06 13:19:26] INFO root fetch - main [MainThread]: End processing [drf-openapi-schema]: success
 [2023-05-06 13:19:26] INFO root fetch - main [MainThread]: Store serial: [17999176]
+[2023-05-06 13:24:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999176]
+[2023-05-06 13:24:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-06 13:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb-nightly
+[2023-05-06 13:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaaql-monitor
+[2023-05-06 13:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nlptoolssna
+[2023-05-06 13:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inverter-connect
+[2023-05-06 13:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: weatherly
+[2023-05-06 13:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: convert-videos
+[2023-05-06 13:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchtnt-nightly
+[2023-05-06 13:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jupyter-ux
+[2023-05-06 13:24:35] INFO root fetch - processPackages [inverter-connect]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-06 13:24:35] INFO root fetch - processPackages [convert-videos]: New version: [2.8.4] Old Version: [2.8.2]
+[2023-05-06 13:24:35] INFO root fetch - processPackages [jaaql-monitor]: New version: [1.2.38] Old Version: [1.2.37]
+[2023-05-06 13:24:35] INFO root fetch - processPackages [weatherly]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-06 13:24:35] INFO root fetch - processPackages [nlptoolssna]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-06 13:24:35] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.5.5] Old Version: [2023.5.4]
+[2023-05-06 13:24:35] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-05-06 13:24:35] WARNING root fetch - processPackages [jupyter-ux]: Skipping, unable to determine old version
+[2023-05-06 13:24:35] INFO root fetch - main [MainThread]: End processing [jupyter-ux] error
+[2023-05-06 13:24:35] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-05-06 13:24:35] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230506/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-05-06 13:24:35] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/50/cc/99b73e6c33771ea2b226282892a2a65ba50ba0894dd8e6dfd3d169b68f6b/nlptoolssna-0.8.1.tar.gz
+[2023-05-06 13:24:35] INFO root fetch - processPackages [inverter-connect]: Downloading https://files.pythonhosted.org/packages/3e/e0/37b64794d24b5fa90e7ec56a55d055710531c18e79ce5c9e5859d5b4800b/inverter-connect-0.6.0.tar.gz
+[2023-05-06 13:24:35] INFO root fetch - processPackages [jaaql-monitor]: Downloading https://files.pythonhosted.org/packages/15/c1/6373e18ef1c1fc0d080bd91288aec5813219698382a58acbc4436757650a/jaaql-monitor-1.2.38.tar.gz
+[2023-05-06 13:24:35] INFO root fetch - processPackages [convert-videos]: Downloading https://files.pythonhosted.org/packages/80/f1/96794f4ef2299382e346b29e65b0b7d46258622f7c50272da56089318068/convert_videos-2.8.2.tar.gz
+[2023-05-06 13:24:35] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/3e/89/9fdc32c8d87ed315fe5b0e0980d04740b33be574f881ac5eefdd392454d1/torchtnt-nightly-2023.5.5.tar.gz
+[2023-05-06 13:24:35] INFO root fetch - processPackages [weatherly]: Downloading https://files.pythonhosted.org/packages/bf/d5/f11732dca49a812bbfc7df4a1c96ea2749f6be998eb4f8f5c3ca7bb43ee4/weatherly-0.8.0.tar.gz
+[2023-05-06 13:24:35] INFO root fetch - processPackages [inverter-connect]: executing diffoscope
+[2023-05-06 13:24:35] INFO root fetch - processPackages [inverter-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverter-connect-0.5.0.tar.gz tmp/inverter-connect-0.6.0.tar.gz --markdown 20230506/i/inverter-connect/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-06 13:24:35] INFO root fetch - processPackages [jaaql-monitor]: executing diffoscope
+[2023-05-06 13:24:35] INFO root fetch - processPackages [jaaql-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-monitor-1.2.37.tar.gz tmp/jaaql-monitor-1.2.38.tar.gz --markdown 20230506/j/jaaql-monitor/1.2.37-1.2.38/diff.md --exclude *.pyd
+[2023-05-06 13:24:35] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-05-06 13:24:35] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.5.4.tar.gz tmp/torchtnt-nightly-2023.5.5.tar.gz --markdown 20230506/t/torchtnt-nightly/2023.5.4-2023.5.5/diff.md --exclude *.pyd
+[2023-05-06 13:24:35] INFO root fetch - processPackages [weatherly]: executing diffoscope
+[2023-05-06 13:24:35] INFO root fetch - processPackages [weatherly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weatherly-0.7.0.tar.gz tmp/weatherly-0.8.0.tar.gz --markdown 20230506/w/weatherly/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-06 13:24:35] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/62/af/ecd35a2b5319a50ddddb1203f4c4153b4e36715ed59d979d92dab40377d9/nlptoolssna-0.8.2.tar.gz
+[2023-05-06 13:24:35] INFO root fetch - processPackages [convert-videos]: Downloading https://files.pythonhosted.org/packages/bd/47/ed56e888048e00fbfba17b175ec95b270c4d5bc95dbe2a2b1aad6a3bc130/convert_videos-2.8.4.tar.gz
+[2023-05-06 13:24:35] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-06 13:24:35] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.8.1.tar.gz tmp/nlptoolssna-0.8.2.tar.gz --markdown 20230506/n/nlptoolssna/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-06 13:24:35] INFO root fetch - processPackages [convert-videos]: executing diffoscope
+[2023-05-06 13:24:35] INFO root fetch - processPackages [convert-videos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convert_videos-2.8.2.tar.gz tmp/convert_videos-2.8.4.tar.gz --markdown 20230506/c/convert-videos/2.8.2-2.8.4/diff.md --exclude *.pyd
+[2023-05-06 13:24:36] INFO root fetch - main [MainThread]: End processing [weatherly]: success
+[2023-05-06 13:24:37] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-05-06 13:24:37] INFO root fetch - main [MainThread]: End processing [jaaql-monitor]: success
+[2023-05-06 13:24:37] INFO root fetch - main [MainThread]: End processing [convert-videos]: success
+[2023-05-06 13:24:37] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-06 13:24:38] INFO root fetch - main [MainThread]: End processing [inverter-connect]: success
+[2023-05-06 13:24:38] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-05-06 13:24:38] INFO root fetch - main [MainThread]: Store serial: [17999203]
