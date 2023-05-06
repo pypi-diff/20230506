@@ -10063,3 +10063,27 @@ EOFError: EOF read where object expected
 [2023-05-06 13:50:48] INFO root fetch - main [MainThread]: End processing [nlpashto]: success
 [2023-05-06 13:50:48] INFO root fetch - main [MainThread]: End processing [hcpdiff]: success
 [2023-05-06 13:50:48] INFO root fetch - main [MainThread]: Store serial: [17999381]
+[2023-05-06 13:55:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17999381]
+[2023-05-06 13:55:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-06 13:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamerate
+[2023-05-06 13:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlpashto
+[2023-05-06 13:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tripmaster
+[2023-05-06 13:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cxmlinvbot
+[2023-05-06 13:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cm2py
+[2023-05-06 13:55:57] INFO root fetch - processPackages [nlpashto]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-06 13:55:57] INFO root fetch - processPackages [cxmlinvbot]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-06 13:55:57] WARNING root fetch - processPackages [cm2py]: Skipping, unable to determine old version
+[2023-05-06 13:55:57] INFO root fetch - main [MainThread]: End processing [cm2py] error
+[2023-05-06 13:55:57] INFO root fetch - processPackages [tripmaster]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-06 13:55:57] WARNING root fetch - processPackages [streamerate]: Skipping, unable to determine old version
+[2023-05-06 13:55:57] INFO root fetch - main [MainThread]: End processing [streamerate] error
+[2023-05-06 13:55:57] INFO root fetch - processPackages [nlpashto]: executing diffoscope
+[2023-05-06 13:55:57] INFO root fetch - processPackages [nlpashto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpashto-0.0.7.tar.gz tmp/nlpashto-0.0.8.tar.gz --markdown 20230506/n/nlpashto/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-06 13:55:57] INFO root fetch - processPackages [cxmlinvbot]: executing diffoscope
+[2023-05-06 13:55:57] INFO root fetch - processPackages [cxmlinvbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxmlinvbot-1.0.1.tar.gz tmp/cxmlinvbot-1.0.2.tar.gz --markdown 20230506/c/cxmlinvbot/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-06 13:55:57] INFO root fetch - processPackages [tripmaster]: executing diffoscope
+[2023-05-06 13:55:57] INFO root fetch - processPackages [tripmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tripmaster-1.0.8-py3-none-any.whl.zip tmp/tripmaster-1.0.9-py3-none-any.whl.zip --markdown 20230506/t/tripmaster/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-06 13:55:58] INFO root fetch - main [MainThread]: End processing [nlpashto]: success
+[2023-05-06 13:55:59] INFO root fetch - main [MainThread]: End processing [tripmaster]: success
+[2023-05-06 13:56:27] INFO root fetch - main [MainThread]: End processing [cxmlinvbot]: success
+[2023-05-06 13:56:27] INFO root fetch - main [MainThread]: Store serial: [17999396]
