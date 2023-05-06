@@ -13174,3 +13174,45 @@ EOFError: EOF read where object expected
 [2023-05-06 20:10:09] INFO root fetch - main [MainThread]: End processing [dxsp]: success
 [2023-05-06 20:10:09] INFO root fetch - main [MainThread]: End processing [solution-harsha]: success
 [2023-05-06 20:10:09] INFO root fetch - main [MainThread]: Store serial: [18001362]
+[2023-05-06 20:15:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001362]
+[2023-05-06 20:15:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-06 20:15:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wgd
+[2023-05-06 20:15:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nuke-bot
+[2023-05-06 20:15:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chyp
+[2023-05-06 20:15:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypawcli
+[2023-05-06 20:15:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: masedb
+[2023-05-06 20:15:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: steammy
+[2023-05-06 20:15:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hypercli
+[2023-05-06 20:15:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: knowmath
+[2023-05-06 20:15:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: subaudit
+[2023-05-06 20:15:17] INFO root fetch - processPackages [chyp]: New version: [0.2.1] Old Version: [0.2]
+[2023-05-06 20:15:17] INFO root fetch - processPackages [masedb]: New version: [1.1.4] Old Version: [1.1.0]
+[2023-05-06 20:15:17] INFO root fetch - processPackages [chyp]: executing diffoscope
+[2023-05-06 20:15:17] INFO root fetch - processPackages [chyp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chyp-0.2.tar.gz tmp/chyp-0.2.1.tar.gz --markdown 20230506/c/chyp/0.2-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 20:15:17] WARNING root fetch - processPackages [wgd]: Skipping, unable to determine old version
+[2023-05-06 20:15:17] INFO root fetch - main [MainThread]: End processing [wgd] error
+[2023-05-06 20:15:17] WARNING root fetch - processPackages [nuke-bot]: Skipping, unable to determine old version
+[2023-05-06 20:15:17] INFO root fetch - processPackages [hypercli]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-06 20:15:17] INFO root fetch - processPackages [pypawcli]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-06 20:15:17] INFO root fetch - main [MainThread]: End processing [nuke-bot] error
+[2023-05-06 20:15:17] WARNING root fetch - processPackages [steammy]: Skipping, unable to determine old version
+[2023-05-06 20:15:17] INFO root fetch - main [MainThread]: End processing [steammy] error
+[2023-05-06 20:15:17] INFO root fetch - processPackages [masedb]: executing diffoscope
+[2023-05-06 20:15:17] INFO root fetch - processPackages [masedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masedb-1.1.0.tar.gz tmp/masedb-1.1.4.tar.gz --markdown 20230506/m/masedb/1.1.0-1.1.4/diff.md --exclude *.pyd
+[2023-05-06 20:15:17] WARNING root fetch - processPackages [subaudit]: Skipping, unable to determine old version
+[2023-05-06 20:15:17] INFO root fetch - main [MainThread]: End processing [subaudit] error
+[2023-05-06 20:15:17] WARNING root fetch - processPackages [knowmath]: Skipping, unable to determine old version
+[2023-05-06 20:15:17] INFO root fetch - main [MainThread]: End processing [knowmath] error
+[2023-05-06 20:15:18] INFO root fetch - processPackages [hypercli]: Downloading https://files.pythonhosted.org/packages/67/b4/007382b7f0cd264029cf3994ec517a05a360959359ccafee94fa5d5ef825/hypercli-0.1.7.tar.gz
+[2023-05-06 20:15:18] INFO root fetch - processPackages [pypawcli]: Downloading https://files.pythonhosted.org/packages/66/f9/2625ed8c8444ac60c71b78515c75746f40c506397fe170a7dcec5434aae3/pypawcli-1.0.0.tar.gz
+[2023-05-06 20:15:18] INFO root fetch - processPackages [hypercli]: Downloading https://files.pythonhosted.org/packages/8c/a5/71dfce972357917cb807cf54ce9032dc56e7abe3ee68117c8d425f447781/hypercli-0.1.8.tar.gz
+[2023-05-06 20:15:18] INFO root fetch - processPackages [pypawcli]: Downloading https://files.pythonhosted.org/packages/97/8e/3c2f9e7ac472a258ea7545408051a3f95d01cb0208f0c76cec04da82e2cb/pypawcli-1.1.0.tar.gz
+[2023-05-06 20:15:18] INFO root fetch - processPackages [hypercli]: executing diffoscope
+[2023-05-06 20:15:18] INFO root fetch - processPackages [hypercli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypercli-0.1.7.tar.gz tmp/hypercli-0.1.8.tar.gz --markdown 20230506/h/hypercli/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-06 20:15:18] INFO root fetch - processPackages [pypawcli]: executing diffoscope
+[2023-05-06 20:15:18] INFO root fetch - processPackages [pypawcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypawcli-1.0.0.tar.gz tmp/pypawcli-1.1.0.tar.gz --markdown 20230506/p/pypawcli/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-06 20:15:18] INFO root fetch - main [MainThread]: End processing [masedb]: success
+[2023-05-06 20:15:18] INFO root fetch - main [MainThread]: End processing [chyp]: success
+[2023-05-06 20:15:19] INFO root fetch - main [MainThread]: End processing [hypercli]: success
+[2023-05-06 20:15:19] INFO root fetch - main [MainThread]: End processing [pypawcli]: success
+[2023-05-06 20:15:19] INFO root fetch - main [MainThread]: Store serial: [18001397]
