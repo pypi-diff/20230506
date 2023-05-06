@@ -14032,3 +14032,31 @@ EOFError: EOF read where object expected
 [2023-05-06 21:57:37] INFO root fetch - main [MainThread]: End processing [mitzu]: success
 [2023-05-06 21:57:37] INFO root fetch - main [MainThread]: End processing [nanomock]: success
 [2023-05-06 21:57:37] INFO root fetch - main [MainThread]: Store serial: [18001861]
+[2023-05-06 22:02:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18001861]
+[2023-05-06 22:02:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-06 22:02:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arvan-dns
+[2023-05-06 22:02:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neon-homeassistant-skill
+[2023-05-06 22:02:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easy-pil
+[2023-05-06 22:02:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: el-decko-core
+[2023-05-06 22:02:47] INFO root fetch - processPackages [arvan-dns]: New version: [1.0.0] Old Version: [0.3.0]
+[2023-05-06 22:02:47] INFO root fetch - processPackages [neon-homeassistant-skill]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-06 22:02:47] INFO root fetch - processPackages [easy-pil]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-06 22:02:47] INFO root fetch - processPackages [el-decko-core]: New version: [2023.5.6] Old Version: [2023.1.5.1]
+[2023-05-06 22:02:47] INFO root fetch - processPackages [neon-homeassistant-skill]: executing diffoscope
+[2023-05-06 22:02:47] INFO root fetch - processPackages [neon-homeassistant-skill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_homeassistant_skill-0.0.8.tar.gz tmp/neon_homeassistant_skill-0.0.9.tar.gz --markdown 20230506/n/neon-homeassistant-skill/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-06 22:02:47] INFO root fetch - processPackages [arvan-dns]: Downloading https://files.pythonhosted.org/packages/3a/1a/4ad2fbf98d0d076b8569d40d4b40d2aca062fb90ca20cf6b6557e3b0af6a/arvan_dns-1.0.0.tar.gz
+[2023-05-06 22:02:47] INFO root fetch - processPackages [easy-pil]: Downloading https://files.pythonhosted.org/packages/27/28/ecc46c0cb30b8c42920a169d84661058fd5d167cb67d859b7de369941e54/easy-pil-0.2.0.tar.gz
+[2023-05-06 22:02:47] INFO root fetch - processPackages [el-decko-core]: Downloading https://files.pythonhosted.org/packages/5d/c6/322d6ccf4eb70e883df92af2885a975447c3d046d54b5550e4f98cc362d1/el_decko_core-2023.1.5.1.tar.gz
+[2023-05-06 22:02:47] INFO root fetch - processPackages [arvan-dns]: executing diffoscope
+[2023-05-06 22:02:47] INFO root fetch - processPackages [arvan-dns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arvan_dns-0.3.0.tar.gz tmp/arvan_dns-1.0.0.tar.gz --markdown 20230506/a/arvan-dns/0.3.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-06 22:02:47] INFO root fetch - processPackages [easy-pil]: Downloading https://files.pythonhosted.org/packages/4f/98/1520b589675395db46e86a1092c407b49bb5df57632508f1bfc2f926285f/easy-pil-0.2.1.tar.gz
+[2023-05-06 22:02:47] INFO root fetch - processPackages [el-decko-core]: Downloading https://files.pythonhosted.org/packages/92/be/214ccbbcb26ccc06f643be8c37c0417432835452a0aab3419af4e6bb0939/el_decko_core-2023.5.6.tar.gz
+[2023-05-06 22:02:47] INFO root fetch - processPackages [easy-pil]: executing diffoscope
+[2023-05-06 22:02:47] INFO root fetch - processPackages [easy-pil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy-pil-0.2.0.tar.gz tmp/easy-pil-0.2.1.tar.gz --markdown 20230506/e/easy-pil/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-06 22:02:47] INFO root fetch - processPackages [el-decko-core]: executing diffoscope
+[2023-05-06 22:02:47] INFO root fetch - processPackages [el-decko-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230506:/home/abi/fetcher/20230506:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/el_decko_core-2023.1.5.1.tar.gz tmp/el_decko_core-2023.5.6.tar.gz --markdown 20230506/e/el-decko-core/2023.1.5.1-2023.5.6/diff.md --exclude *.pyd
+[2023-05-06 22:02:48] INFO root fetch - main [MainThread]: End processing [neon-homeassistant-skill]: success
+[2023-05-06 22:02:49] INFO root fetch - main [MainThread]: End processing [el-decko-core]: success
+[2023-05-06 22:02:50] INFO root fetch - main [MainThread]: End processing [easy-pil]: success
+[2023-05-06 22:03:16] INFO root fetch - main [MainThread]: End processing [arvan-dns]: success
+[2023-05-06 22:03:16] INFO root fetch - main [MainThread]: Store serial: [18001876]
